@@ -1,0 +1,6 @@
+* Neovim
+** Keybindings
+*** Neorg
+    "za" - toggle fold
+    "==" - Intentation
+

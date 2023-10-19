@@ -1,0 +1,41 @@
+* Syllabus
+** Module 1
+*** *Operational amplifiers(Op Amps)*
+**** The 741 Op Amp, Block diagram
+**** Ideal op-amp parameters 
+**** typical parameter values for 741
+**** Equivalent circuit
+**** Open loop configurations
+**** Voltage transfer curve
+**** Frequency response curve.
+
+***  *Differential Amplifiers* 
+**** Differential amplifier configurations using BJT 
+**** DC Analysis- transfer characteristics
+**** AC analysis- differential and common mode gains
+**** CMRR, input and output resistance
+**** Voltage gain
+**** Constant current bias
+**** constant current source
+**** Concept of current mirror-the two transistor current mirror
+**** Wilson and Widlar current mirrors. 
+** Module 2
+*** *Op-amp with negative feedback*
+****  General concept of Voltage Series 
+**** Voltage Shunt, current series and current shunt negative feedback
+**** Op Amp circuits with voltage series and voltage shunt feedback, 
+**** Virtual ground Concept;
+**** analysis of practical inverting and non-inverting amplifiers for closed loop gain
+**** Input Resistance and Output Resistance.
+
+*** *Op-amp applications*
+**** Summer 
+**** Voltage Follower-loading effects 
+**** Differential and Instrumentation Amplifiers
+**** Voltage to current and Current to voltage converters 
+**** Integrator
+**** Differentiator
+**** Precision rectifiers 
+**** Comparators
+**** Schmitt Triggers
+**** Log and antilog amplifiers.
