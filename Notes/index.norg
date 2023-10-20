@@ -1,0 +1,54 @@
+* Neovim
+** Keybindings
+*** Neorg
+   - "za" - toggle fold
+   - "==" - Intentation
+   - "Ctrl + Space " - to toggle done undone
+
+** Vim
+   *** Substitute
+       - :.s/<oldText>/<NewText/ -- will work without the "."
+       - <linuNumber>/oldText>/<NewText>/
+       - :.s/<oT>/<nT>/g  -- g for global
+       - 3,5s/<oT>/<nT>/ - changes Line number 3 as well a 5
+       - :.,+3s/<oT>/<nT>/ - from current Line to +3 line
+         3;+5 .... - 3 to 8 Substitution
+         c - for confirmation *c - suffix
+         g - for global - suffix
+         "$" - last Line - prefix
+         % - Every Line - prefix
+       - "*" + :%s//<NewText>/g -- to change the word under the cursor 
+         
+       - :s/<oT>/\0s -- "\0" Means what ever is matched ie apple to apples = apple/\0s
+
+** Navigation
+   :11gg -- goto 11 
+   ** Delete
+   11,12d - to delete 11 to 12
+   11,+3d - to delete from 11 to 14
+** Intent
+   :11;+5<
+   :.> - intend right the current Line
+   :.< - Intent left the current Line
+
+
+
+ 
+* Linux 
+** Need to do cleanup
+
+
+
+
+
+
+
+
+* Movies
+** Sci-Fi
+
+** Romantic  
+   - Five Feet Apart
+   
+** Horror
+   
