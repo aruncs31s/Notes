@@ -1,5 +1,8 @@
 * Neovim
 ** Keybindings
+*** General
+    Shift + ` -- Capitalizes the letter
+      
 *** Neorg
    - "za" - toggle fold
    - "==" - Intentation
