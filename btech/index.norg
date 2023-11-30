@@ -1,0 +1,64 @@
+* ADC
+** Syllabus
+** Notes
+**** M1 - [PDF]{/ /home/aruncs/Documents/S5/ADC T/ADC_1.pdf} 
+**** M2 - [PDF]{/ /home/aruncs/Documents/S5/ADC T/Module 2.pdf} 
+**** M3 - [PDF]{/ /home/aruncs/Documents/S5/ADC T/HPF_091904.pptx} 
+**** M4 - 
+     - [PDF1]{/ /home/aruncs/Documents/S5/ADC T/Module_4(half).pdf}
+     - [PDF2]{/ /home/aruncs/Documents/S5/ADC T/Module 4 - Part 2.pdf}
+
+**** M5 - [PDF]{/ /home/aruncs/Documents/S5/ADC T/Module 5_BPSK.pdf} 
+
+
+* ADC
+** Syllabus
+
+*** M1 Analog Communnication
+    - ( ) [Analog Communication]{/ /home/aruncs/Documents/S5/ADC T/ADC_1.pdf} 
+    - ( ) Block diagram of a communication system.
+    - ( ) Need for analog modulation.
+    - ( ) Amplitude modulation.
+    - ( ) Equation and spectrum of AM signal.
+    - ( ) DSB-SC and SSB systems.
+    - ( ) Block diagram of SSB transmitter and receiver.
+    - ( ) Frequency and phase modulation.
+    - ( ) [Narrow and wide band FM and their spectra.]{/ /home/aruncs/Documents/S5/ADC T/Narrow Band FM.pdf}
+    - ( ) [FM transmitter and receiver.]{/ /home/aruncs/Documents/S5/ADC T/FM TX AND RX.pdf}
+*** M2 Review of Random Variables and Random Processes]{/ /home/aruncs/Documents/S5/ADC T/Module 2.pdf} 
+    - ( ) Review of random variables – both discrete and continuous.
+    - ( ) CDF and PDF, statistical averages. (Only definitions,
+          computations and significance)
+    - ( ) Entropy, differential entropy.
+    - ( ) Differential entropy of a Gaussian RV.
+    - ( ) Conditional entropy, mutual information.
+    - ( ) Stochastic processes, Stationarity.
+    - ( ) Conditions for WSS and SSS.
+    - ( ) Autocorrelation and power spectral density.
+    - ( ) LTI systems with WSS as input.
+*** M3 Source Coding
+    - ( ) [Source coding theorems I and II (Statements only).]{/ /home/aruncs/Documents/S5/ADC T/SOURCE CODING THEOREMS I & II_062401.pdf}
+    - ( ) Waveform coding.
+    - ( ) Sampling and Quantization.
+    - ( ) Pulse code modulation, Transmitter and receiver.
+    - ( ) Companding. Practical 15 level A and mu-law companders.
+    - ( ) DPCM transmitter and receiver.
+    - ( ) Design of linear predictor.
+    - ( ) Wiener-Hopf equation.
+    - ( ) Delta modulation.
+    - ( ) Slope overload.
+*** ( ) M4 G-S Procedure and Effects in the Channel [PDF1]{/ /home/aruncs/Documents/S5/ADC T/Module_4(half).pdf} [PDF2]{/ /home/aruncs/Documents/S5/ADC T/Module 4 - Part 2.pdf}
+
+    - ( ) [Gram-Schmitt procedure.]{/ /home/aruncs/Documents/S5/ADC T/Module_4(half).pdf}}
+    - ( ) Signal space.
+    - ( ) [Baseband transmission through AWGN channel.]{/ /home/aruncs/Documents/S5/ADC T/AWGN.pdf}
+    - ( ) Mathematical model of ISI. Nyquit criterion for zero ISI.
+    - ( ) Signal modeling for ISI, Raised cosine and Square-root raised cosine
+    spectrum, Partial response signalling and duobinary coding.
+    - ( ) Equalization.
+    - ( ) Design of zero forcing equalizer.
+    - ( ) Vector model of AWGN channel.
+    - ( ) Matched filter and correlation receivers.
+    - ( ) MAP receiver, Maximum likelihood receiver and probability of error.
+    - ( ) Capacity of an AWGN channel (Expression only) -- significance in the
+    design of communication schemes.
