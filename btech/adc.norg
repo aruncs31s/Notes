@@ -1,0 +1,101 @@
+* ADC
+* DSP
+** Syllabus
+   {*** Notes}
+*** ADC
+** Syllabus
+   [desc]{* location}
+*** M1 Analog Communnication{M1 PDF}
+    - ( ) Analog Communication 
+    - ( ) Block diagram of a communication system. 
+    - ( ) Need for analog modulation.
+    - ( ) Amplitude modulation.
+    - ( ) Equation and spectrum of AM signal.
+    - ( ) DSB-SC and SSB systems.
+    - ( ) Block diagram of SSB transmitter and receiver.
+    - ( ) Frequency and phase modulation.
+    - ( ) Narrow and wide band FM and their spectra. [NB AND WB FM]
+    - ( ) FM transmitter and receiver. [FM and AM]
+*** M2 Review of Random Variables and Random Processes {# M2}
+    ___
+    - ( ) Review of random variables – both discrete and continuous.
+    - ( ) CDF and PDF, statistical averages. (Only definitions,
+          computations and significance)
+    - ( ) Entropy, differential entropy.
+    - ( ) [Differential entropy of a Gaussian RV.]{/ ./pdf/ADC T/Differential entropy of gaussian RV.pdf}
+    - ( ) Conditional entropy, mutual information.
+    - ( ) Stochastic processes, Stationarity.
+    - ( ) Conditions for WSS and SSS.
+    - ( ) Autocorrelation and power spectral density.
+            - [Problem  acf]{/ /home/aruncs/Documents/S5/ADC T/Acf problems with solution.pdf}
+    - ( ) LTI systems with WSS as input.
+    ___
+*** M3 Source Coding
+    - ( ) [Source coding theorems I and II (Statements only).]{/ /home/aruncs/Documents/S5/ADC T/SOURCE CODING THEOREMS I & II_062401.pdf}
+    - ( ) Waveform coding.
+    - ( ) Sampling and Quantization.
+    - ( ) Pulse code modulation, Transmitter and receiver.
+    - ( ) Companding. Practical 15 level A and mu-law companders.
+    - ( ) DPCM transmitter and receiver.
+    - ( ) Design of linear predictor.
+    - ( ) Wiener-Hopf equation.
+    - ( ) Delta modulation.
+    - ( ) Slope overload.
+    ___
+***  M4 G-S Procedure and Effects in the Channel 
+     - ( ) Gram-Schmitt procedure. [GS PDF] [GS PR]
+     - ( ) Signal space.
+     - ( ) [Baseband transmission through AWGN channel.]{/ /home/aruncs/Documents/S5/ADC T/AWGN.pdf}
+     - ( ) Mathematical model of ISI. Nyquit criterion for zero ISI.
+     - ( ) Signal modeling for ISI, Raised cosine and Square-root raised cosine
+           spectrum, Partial response signalling and duobinary coding.
+     - ( ) Equalization.
+     - ( ) Design of zero forcing equalizer.
+     - ( ) Vector model of AWGN channel.
+     - ( ) Matched filter and correlation receivers.
+     - ( ) MAP receiver, Maximum likelihood receiver and probability of error.
+     - ( ) Capacity of an AWGN channel (Expression only) -- significance in the
+          design of communication scheme.
+          {*** m3 source coding}
+     ___
+***  M5 [Digital Modulation Schemes]{/ /home/aruncs/Documents/S5/ADC T/Module 5_BPSK.pdf} [PDF2]{/ /home/aruncs/Documents/S5/ADC T/ECT305 M5-Ktunotes.in.pdf} [PDF3]{/ /home/aruncs/Documents/S5/ADC T/ADC M5  note2.pdf}
+    - ( ) Digital Modulation Schemes
+    - ( ) Baseband BPSK system and the signal constellation.
+    - ( ) BPSK transmitter and receiver.
+    - ( ) Base band QPSK system and Signal constellations.
+    - ( ) Plots of BER Vs SNR with analysis.
+    - ( ) QPSK transmitter and receiver.
+    - ( ) Quadrature amplitude modulation and signal constellation.
+     ___
+     ____
+
+
+*** Notes
+**** M1 
+     - [M1 PDF]{/ /home/aruncs/Documents/S5/ADC T/ADC_1.pdf} 
+     - [NB AND WB FM]{/ /home/aruncs/Documents/S5/ADC T/Narrow Band FM.pdf}
+     - [FM and AM]{/ /home/aruncs/Documents/S5/ADC T/FM TX AND RX.pdf}
+
+
+     ___
+
+**** M2
+     - [PDF 1]{/ /home/aruncs/Documents/S5/ADC T/Module 2.pdf} 
+     - [PDF 2]{/ /home/aruncs/Documents/S5/ADC T/Module 2-1.pdf}
+     ___
+**** M3 
+     - [PDF]{/ /home/aruncs/Documents/S5/ADC T/HPF_091904.pptx} 
+     ___
+**** M4N1
+     - [PDF 1]{/ /home/aruncs/Documents/S5/ADC T/Module_4(half).pdf}
+     - [PDF 2]{/ /home/aruncs/Documents/S5/ADC T/Module 4 - Part 2.pdf}
+     - [GS PDF]{/ /home/aruncs/Documents/S5/ADC T/Module_4(half).pdf}
+     - [GS PR]{/ /home/aruncs/Documents/S5/ADC T/GS problem1.pdf}
+     ___
+**** M5N1 - [PDF]{/ /home/aruncs/Documents/S5/ADC T/Module 5_BPSK.pdf} 
+
+
+     ____
+     ____
+
+
