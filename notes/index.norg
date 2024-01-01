@@ -1,4 +1,2 @@
-* AWK
-
-**** {print $1 $2}
-***** $0 => the whole raw
+**** for i in /run/media/aruncs/STUDY/Books/* ; do FNAME=$( echo $i| cut -b 31- ) && ln -s $i $FNAME ; done;
+     - Used To create symlink of Bulk directories with the foldername is cut using "cut"

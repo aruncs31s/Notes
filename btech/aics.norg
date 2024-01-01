@@ -1,0 +1,24 @@
+** EXPT 1{/ /home/aruncs/Documents/S5/AICS/1.pdf}
+*** Familiarization of op-amp circuit
+**** Inverting Amp(Loop Gain 10)
+**** Non Inverting Amp (Loop Gain 11)
+**** Voltage Follower (Inverting)
+     - Short Vo and Inv Terminal (Rf/Ri = 1) , Gain = -1
+**** Summing Amp -(2v1+2v2+v3)
+
+**** Integrator 
+     - Replace Rf with Cf but in practical add Rf 
+
+**** Comparators
+     - Compares the input ref voltage and produces +Vsat or -Vsat
+
+** EXPT 2{/ /home/aruncs/Documents/S5/AICS/2.pdf}
+
+** EXPT 3{/ /home/aruncs/Documents/S5/AICS/3.pdf}
+** EXPT 4{/ /home/aruncs/Documents/S5/AICS/4.pdf}
+** EXPT 5{/ /home/aruncs/Documents/S5/AICS/5.pdf}
+** EXPT 6{/ /home/aruncs/Documents/S5/AICS/6.pdf}
+** EXPT 7{/ /home/aruncs/Documents/S5/AICS/7.pdf}
+** EXPT 8{/ /home/aruncs/Documents/S5/AICS/8.pdf}
+** EXPT 10{/ /home/aruncs/Documents/S5/AICS84.pdf}
+
