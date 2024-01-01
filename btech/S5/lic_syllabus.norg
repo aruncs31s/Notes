@@ -1,0 +1,89 @@
+* [Syllabus]{/ ~/Documents/S5/LIC/syllabus.pdf}
+    [PDF]{/ /home/aruncs/Documents/S5/LIC/syllabus.pdf}
+**** [M1]{/ ~/Documents/S5/LIC/LIC_module1.pdf}
+*****  ( ) Operation Amp 
+       - ( ) The 741 Op-amp 
+       - ( ) Block Diagram
+       - ( ) Ideal Op-amp parameters
+       - ( ) typical parameters values of ic741
+       - ( ) Equivalen Circuits
+       - ( ) Open Loop Configurations
+       - ( ) Voltage Transfer Curve
+       - ( ) Frequency Transfer Curve
+***** ( ) Diffrential Amp
+      - ( ) Differential amplifier configurations using BJT 
+      - ( ) DC Analysis- transfer characteristics - AC analysis
+      - ( ) differential and common mode gains
+      - ( ) CMRR, input and output resistance 
+      - ( ) Voltage gain. Constant current bias
+      - ( ) constant current source; Concept of current mirror
+      - ( ) the two transistor current mirror
+      - ( ) Wilson and Widlar current mirrors.
+**** [M2]
+***** ( ) Op-Amp With Negative Feedback 
+      - ( ) Voltage Series, 
+      - ( ) Voltage Shunt 
+      - ( ) current series 
+      - ( ) and current shunt negative feedback
+
+      - Op Amp circuits with voltage series and voltage shunt feedback
+      - Virtual ground Concept
+      -  analysis of practical inverting and non-inverting amplifiers for closed loop gain
+      -  Input Resistance and Output Resistance.
+***** ( ) Op-amp Application
+      - ( ) Summer
+      - ( ) Voltage Follower-loading Effects
+      - ( ) Diffrential amplifiers
+      - ( ) Instrumental Amplifiers
+      - ( ) V-I and I-V converters
+      - ( ) Integrators
+      - ( ) Diffrentiators
+      - ( ) Precision rectifiers
+      - ( ) Comparators
+      - ( ) Schmitt Triggers
+      - ( ) Log and AntiLog amplifiers
+
+**** ( ) [M3]
+***** ( ) Oscillator and Multivibrators
+      - ( ) Phase Shift and Wien-bridge Oscillators 
+      - ( ) Triangular and Sawtooth waveform generators
+      - ( ) Astable and monostable multivibrators
+***** ( ) Active Filters
+      - ( ) Comparison with passive filters
+      - ( ) First and second order low pass
+      - ( ) High pass, Band pass and band reject active filters
+      - ( ) state variable filters.
+**** ( ) [M4]
+***** ( ) Timer and VCO:
+      - ( ) Timer IC 555- Functional diagram
+      - ( ) Astable and monostable operations
+      - ( ) Basic concepts of Voltage Controlled Oscillator 
+      - ( ) Application of VCO IC LM566
+***** ( ) Phase Locked Loop: 
+      - ( ) Operation
+      - ( ) Closed loop analysis 
+      - ( ) Lock and capture range
+      - ( ) Basic building blocks
+      - ( ) PLL IC 565
+      - ( ) Applications of PLL.
+**** ( ) [M5]
+***** ( ) Voltage Regulators:
+      - ( ) Fixed and Adjustable voltage regulators
+****** ( ) IC 723 
+       -  ( ) Low voltage and high voltage configurations
+       - ( ) Current boosting
+       -  ( ) Current limiting
+       - ( ) Short circuit and Fold-back protection.
+
+
+***** ( ) Data Converters:
+****** ( ) Digital to Analog converters
+       - ( ) Specifications, 
+       - ( ) Weighted resistor 
+       - ( ) R-2R Ladder .
+****** ( ) ADC:
+       - ( ) Specifications, 
+       - ( ) Flash type 
+       - ( ) Successive approximation type.
+
+
