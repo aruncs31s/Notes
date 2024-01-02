@@ -1,13 +1,13 @@
 * [Syllabus]{/ ~/Documents/S5/LIC/syllabus.pdf}
     [PDF]{/ /home/aruncs/Documents/S5/LIC/syllabus.pdf}
 **** [M1]{/ ~/Documents/S5/LIC/LIC_module1.pdf}
-*****  ( ) Operation Amp 
-       - ( ) The 741 Op-amp 
-       - ( ) Block Diagram
-       - ( ) Ideal Op-amp parameters
-       - ( ) typical parameters values of ic741
+*****  ( ) Operation Amp {/ ./pdfs/LIC/LIC_module1.pdf}
+       - (x) The 741 Op-amp
+       - (x) Block Diagram
+       - (x) Ideal Op-amp parameters
+       - (x) typical parameters values of ic741
        - ( ) Equivalen Circuits
-       - ( ) Open Loop Configurations
+       - (x) Open Loop Configurations
        - ( ) Voltage Transfer Curve
        - ( ) Frequency Transfer Curve
 ***** ( ) Diffrential Amp
@@ -21,11 +21,10 @@
       - ( ) Wilson and Widlar current mirrors.
 **** [M2]
 ***** ( ) Op-Amp With Negative Feedback 
-      - ( ) Voltage Series, 
+      - ( ) Voltage Series 
       - ( ) Voltage Shunt 
       - ( ) current series 
       - ( ) and current shunt negative feedback
-
       - Op Amp circuits with voltage series and voltage shunt feedback
       - Virtual ground Concept
       -  analysis of practical inverting and non-inverting amplifiers for closed loop gain
@@ -44,11 +43,11 @@
       - ( ) Log and AntiLog amplifiers
 
 **** ( ) [M3]
-***** ( ) Oscillator and Multivibrators
+***** ( ) Oscillator and Multivibrators {/ ./pdfs/LIC/OSCRS_113424.pdf}
       - ( ) Phase Shift and Wien-bridge Oscillators 
       - ( ) Triangular and Sawtooth waveform generators
       - ( ) Astable and monostable multivibrators
-***** ( ) Active Filters
+***** ( ) Active Filters {/ ./pdfs/LIC/Active_Filters.pdf}
       - ( ) Comparison with passive filters
       - ( ) First and second order low pass
       - ( ) High pass, Band pass and band reject active filters
@@ -56,10 +55,10 @@
 **** ( ) [M4]
 ***** ( ) Timer and VCO:
       - ( ) Timer IC 555- Functional diagram
-      - ( ) Astable and monostable operations
+      - ( ) Astable and monostable operations {/ ./pdfs/LIC/AMV555_023723.pdf} {/ ./pdfs/LIC/MMV555_023820.pdf}
       - ( ) Basic concepts of Voltage Controlled Oscillator 
       - ( ) Application of VCO IC LM566
-***** ( ) Phase Locked Loop: 
+***** ( ) Phase Locked Loop: {/ ./pdfs/LIC/PLL_023539[1].pdf} 
       - ( ) Operation
       - ( ) Closed loop analysis 
       - ( ) Lock and capture range
@@ -67,7 +66,7 @@
       - ( ) PLL IC 565
       - ( ) Applications of PLL.
 **** ( ) [M5]
-***** ( ) Voltage Regulators:
+***** ( ) Voltage Regulators:{/ ./pdfs/LIC/regulator.pdf}
       - ( ) Fixed and Adjustable voltage regulators
 ****** ( ) IC 723 
        -  ( ) Low voltage and high voltage configurations
@@ -77,7 +76,7 @@
 
 
 ***** ( ) Data Converters:
-****** ( ) Digital to Analog converters
+****** ( ) Digital to Analog converters {/ ./pdfs/LIC/DAC[1].pdf}
        - ( ) Specifications, 
        - ( ) Weighted resistor 
        - ( ) R-2R Ladder .
