@@ -32,8 +32,8 @@
 ***** ( ) Op-amp Application
       - ( ) Summer
       - ( ) Voltage Follower-loading Effects
-      - ( ) Diffrential amplifiers
-      - ( ) Instrumental Amplifiers
+      - (-) Diffrential Amplifiers
+      - (-) Instrumental Amplifiers
       - ( ) V-I and I-V converters
       - ( ) Integrators
       - ( ) Diffrentiators
@@ -44,7 +44,7 @@
 
 **** ( ) [M3]
 ***** ( ) Oscillator and Multivibrators {/ ./pdfs/LIC/OSCRS_113424.pdf}
-      - ( ) Phase Shift and Wien-bridge Oscillators 
+      - (x) Phase Shift and Wien-bridge Oscillators 
       - ( ) Triangular and Sawtooth waveform generators
       - ( ) Astable and monostable multivibrators
 ***** ( ) Active Filters {/ ./pdfs/LIC/Active_Filters.pdf}
