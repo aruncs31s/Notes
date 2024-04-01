@@ -7,7 +7,7 @@ dg-publish: true
 ---
 # Study of the effect of Inland Water bodies on Line Of Sight Communication using Machine Learning at 5GHz
 
-**Abstract:** This paper studied the the effect of inland water bodies on 5GHz Communication and Modeled a Line Of Sight(LOS) communication channel over inland water bodies using **[[Machine Learning]]**, and shows that the attenuation of signal **during day** and less attenuation during **night**
+**Abstract:** This paper studied the the effect of inland water bodies on 5GHz Communication and Modeled a Line Of Sight(LOS) communication channel over inland water bodies using **[[03 Coding/Machine Learning/Machine Learning]]**, and shows that the attenuation of signal **during day** and less attenuation during **night**
 #summary
 - More attenuation during day
 - Less attenuation during night

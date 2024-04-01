@@ -1,15 +1,14 @@
 ---
-id: project template
-aliases: []
+title: "<% tp.file.title %>"
+description: "<% tp.file.title %>"
 tags:
-  - files
-  - templates
-  - templater
-creation_date: <% tp.file.creation_date() %>
-github: <% tp.system.prompt("GitHub Repo") %>
-modification_date: <% tp.file.last_modified_date("dddd Do MMMM YYYY HH:mm:ss") %>
-project_type: <% tp.system.suggester(["electronics", "linux", "web", "ai/ml", "other"], ["electronics", "linux", "web", "ai/ml", "other"]) %>
+  - ""
+cssclasses:
+  - wide-page
 dg-publish: true
+aliases: []
+created: 2025-11-04T00:33:55.770908
+updated: 2025-11-04T00:33:55.771079
 ---
 # <% tp.file.title %>
 
@@ -33,7 +32,7 @@ dg-publish: true
 > > ```
 
 >
-> > [!todo]+ Tasks
+> > [!todo]+Tasks
 > >
 > > ```dataview
 > > TASK
@@ -42,6 +41,7 @@ dg-publish: true
 > > ```
 
 <% tp.web.daily_quote() %>
+
 
 ## Tasks
 
