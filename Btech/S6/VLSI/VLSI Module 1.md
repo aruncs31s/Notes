@@ -141,6 +141,13 @@ A **field-programmable gate array** (**FPGA**) is a ==type of configurable int
 
 *FPGAs are often used in limited (low) quantity production of custom-made products, and in research and development, where the higher cost of individual FPGAs is not as important, and where creating and manufacturing a custom circuit wouldn't be feasible.* 
 
+- FPGA Will contain CLB(Configurable Logic Blocks)
+
+> [!NOTE] CLB
+> Configurable Logic Blocks will be consist of 4 componets
+> Contents
+
+
 #applications
 1. telecommunications
 2. automotive
