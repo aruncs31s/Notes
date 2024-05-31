@@ -1,9 +1,10 @@
 # Information theory and Coding
 
-- [Module 1](%20%20BTech/S6/Information%20Theory%20And%20Coding/Module%201.md)
-- [Module 2](Embedded%20Systems.md)
 
 ## Contents
+
+- [[Btech/S6/Information Theory And Coding/Module 1|Module 1]]
+- 
 
 - Shannon Limit
 

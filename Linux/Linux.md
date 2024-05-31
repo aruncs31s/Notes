@@ -4,43 +4,17 @@ aliases: []
 tags: []
 ---
 ## Contents
+ - [[Backup]]
 - [[Tui Apps]]
-- [[Usefull Apps]]
+- [[Obsidian]]
 - [[Fixes]]
 - [[Needs to remove]]
-### **Usefull Apps**
-
-1. mullvad vpn: Most based VPN(when tor is being slow)
-2. Brave: Secondary Browser( for work stuff and when firefox is not working for some sites. Looking at you twitch, netflix)
-
-### Protocols
-- [ ] Allways follow snake case
-```
-this_is_a_snake_case
-```
 
 
 
 
 - [BooksMarks](#bookmarks)
 
-
-- [Add existing repo to github]()
-```bash
-echo "# tic_tac_toe" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/BloBuster/tic_tac_toe.git
-git push -u origin main
-```
-
-## new note
-```bash
-git pull
-
-```
 
 ### Thejus pendrive
  usb 1-3: new high-speed USB device number 4 using xhci_hcd
@@ -65,9 +39,9 @@ ESP8266 sirs mac 40:91:51:52:ED:96
 Euler 40``
 
 
-##### BookMarks
+##### Bookmarks
+
 - [Lyvi](https://ok100.github.io/lyvi/)
 
 
 6295
-
