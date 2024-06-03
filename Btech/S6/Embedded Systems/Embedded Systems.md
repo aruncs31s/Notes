@@ -18,6 +18,7 @@ tags: []
 	- [[Serial Comm|Serial Communication]]
 	- [[Memory|Memory]]
 	- [[I_O Devices|I_O Devices]]
+- [[Module 5]]
 ## Concepts
 - [RTOS](RTOS.md)
 - [Context Switching]()

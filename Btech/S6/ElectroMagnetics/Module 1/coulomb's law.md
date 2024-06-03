@@ -34,8 +34,9 @@ $$
 > ,And the #equation for finding the force when dealing with multiple charge is 
 >$$
 \overrightarrow F ={Q \over 4\pi \epsilon_{0}} \sum_{k=1}^N \frac{Q_{k}\left(\overrightarrow{r} - \overrightarrow{r_k}\right)}{|\overrightarrow{r} - \overrightarrow{r_k}|^3}
-
 >$$
+
+
 
 
 #exampleProblem 
@@ -60,8 +61,6 @@ F &= \frac{k \cdot Q_1 \cdot Q_2}{R_{21}^{2}}  \overrightarrow a_{21}\tag{1} \\
 \end{align}
 >$$
 >Where magnitude of the force is $6N$ and $Q_1$ is attracted to $Q_2$ 
-
-
 
 
 

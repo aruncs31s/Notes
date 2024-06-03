@@ -13,7 +13,7 @@ Created : 2024-05-30 14:40
 - [ ] Bounds on average length
 - [ ] Uniquely decodable and prefix-free source codes.
 - [ ] Kraft Inequality (with proof), Huffman code.
-- [ ] Shannon’s source coding theorem (both achievability and converse) and operational meaning of entropy
+- [x] Shannon’s source coding theorem (both achievability and converse) and operational meaning of entropy ✅ 2024-05-31
 
 ## Contents
 
@@ -36,5 +36,8 @@ $$
 *Since p1 is continuous in the interval (0,1), logarithm of a continuous function is also continuous*.
 2.  $H(S) = 0$, if and only if the probability $P_k = 1$ for some k and the remaining probabilities in the set are all zero; this lower bound on entropy corresponds to no uncertainty.  
 3. $H(S) = \log_2K$, if and only if $P_k = \large{1\over K}$ for all k (i.e., all the symbols in the alphabet S are equiprobable); this upper bound on entropy ==corresponds to maximum uncertainty.==
+
+
+
 ## References
 1. 
