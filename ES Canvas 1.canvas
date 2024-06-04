@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"deefc2552a5a9746","x":-240,"y":-60,"width":250,"height":240,"type":"text","text":"# CPU\n"},
+		{"id":"8a37701420cde874","x":100,"y":26,"width":250,"height":69,"type":"text","text":"### Cache Controller\n"},
+		{"id":"10f7101f50ef31e1","x":480,"y":-200,"width":240,"height":174,"type":"text","text":"## Cache"},
+		{"id":"fb7c58367c8aec54","type":"text","text":"## Main Memory","x":800,"y":0,"width":250,"height":394}
+	],
+	"edges":[
+		{"id":"932b0fcca5e21855","fromNode":"deefc2552a5a9746","fromSide":"right","toNode":"8a37701420cde874","toSide":"left","fromEnd":"arrow"},
+		{"id":"28f11597c3e879e0","fromNode":"10f7101f50ef31e1","fromSide":"left","toNode":"8a37701420cde874","toSide":"right","label":"Data"},
+		{"id":"b78530ff44277028","fromNode":"8a37701420cde874","fromSide":"bottom","toNode":"10f7101f50ef31e1","toSide":"left"},
+		{"id":"3a28022f21f925c0","fromNode":"8a37701420cde874","fromSide":"bottom","toNode":"fb7c58367c8aec54","toSide":"left","label":"Address"},
+		{"id":"634b34b6c6c402f8","fromNode":"fb7c58367c8aec54","fromSide":"left","toNode":"8a37701420cde874","toSide":"top","label":"Data"}
+	]
+}

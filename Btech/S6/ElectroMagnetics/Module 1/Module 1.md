@@ -9,7 +9,7 @@ tags:
 ---
 # Module 1
 
-## [[Tasks]] 
+## [[Notes/Tasks]] 
 
 ```tasks
 due 2024-05-20 
