@@ -4,7 +4,6 @@ aliases: []
 tags: []
 mindmap-plugin: basic
 ---
-
 # VLSI Design Methodologies
 
 ## Prerequisites
