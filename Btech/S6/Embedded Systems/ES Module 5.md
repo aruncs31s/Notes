@@ -6,19 +6,23 @@ Created : 2024-05-13 11:53
 ## Contents
 
 ## Syllabus
-- Inter Process Communication and Synchronization
-	- Process
-	- Tasks
-	- Threads 
-	- Shared data
-	- Inter process communication 
-		- Signals 
-		- Semaphore 
-		- Message Queues 
-		- Mailboxes
-	- Pipes 
-	- Sockets 
-	- Remote Procedure Calls (RPCs)
+- [ ] Operating system basics
+	- [ ] Kernel
+	- [ ] types of operating systems.
+- [ ] Inter Process Communication and Synchronization
+	- [ ] Process
+	- [ ] Tasks
+	- [ ] Threads 
+	- [ ] Shared data
+	- [ ] Inter process communication 
+		- [ ] Signals 
+		- [ ] Semaphore 
+		- [ ] Message Queues 
+		- [ ] Mailboxes
+	- [ ] Pipes 
+	- [ ] Sockets 
+	- [ ] Remote Procedure Calls (RPCs)
+
 ### Contents
 
 #### Process

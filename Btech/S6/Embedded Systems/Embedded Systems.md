@@ -30,34 +30,6 @@ tags: []
 > If two task were tring to access the same resource at the same time ,This situation is known as `Dead Lock` 
 
 
-## Module 1
-### Contens
-- [Module 1 Syllabus](Embedded%20Systems.md#Module%201%20Syllabus)
-
-### Module 1 Syllabus 
-- Complex Systems and Microprocessors
-	- Embedding Computers
-	- Characteristics of Embedded computing Applications,
-	- Application of Microprocessors,
-	- The Physics of Software,
-	- Challenges in Embedded Computing System,
-	- Characteristics and quality attributes of an embedded system,
-	- Performance in Embedded Computing
-- The Embedded System Design Process
-	- Requirements,
-	- Specification ,
-	- Architecture Design,
-	- Designing Hardware and Software Components ,
-	- System Integration.
-- Formalisms for System Design
-	- Structural Description,
-	- Behavioral Description,
-	- An embedded system design example.
-- Embedded product development cycle (EDLC)
-	- Different phases of EDLC, EDLC models
----
-
-
 
 ## References
 1. 

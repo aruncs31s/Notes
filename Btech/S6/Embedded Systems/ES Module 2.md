@@ -5,20 +5,23 @@ Created : 2024-06-04 13:51
 ## Contents
 - [[#Syllabus]]
 ## Syllabus
-1. [x] Communication Device ✅ 2024-06-04
+- [ ] [[Communication Device]]
 	- [ ] Serial Communication Standards and Devices - UART, HDLC and SPI.
 	- [ ] Serial Bus Protocols -I2C Bus, CAN Bus and USB Bus.
 	- [ ] Parallel communication standards ISA, PCI and PCI-X Bus
-1. [ ] [[Btech/S6/Embedded Systems/Module 2/Memory|Memory]]
+- [ ] Memory
 	- [ ] Memory devices and systems – ROM-Flash, EEPROM,RAM- SRAM, DRAM, Cache memory, memory mapping and addresses,
 	- [ ] memory management unit– DMA
-2. [ ] [I/O Devices](#i/o%20devices)
-	- [ ] Interrupts
-	- [ ] Interrupt sources,
-	- [ ] recognizing an interrupt 
-3. [ ] ISR 
+- [ ] I/O Devices
+		- [ ] Interrupts
+		- [ ] Interrupt sources,
+		- [ ] recognizing an interrupt 
+- [ ] ISR 
 	- [ ] Device drivers for handling ISR
 	- [ ] Shared data problem, Interrupt latency
+
+
+
 
 ### I/O Devices
 
