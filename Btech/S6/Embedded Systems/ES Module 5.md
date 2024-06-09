@@ -6,15 +6,15 @@ Created : 2024-05-13 11:53
 ## Contents
 
 ## Syllabus
-- [ ] Operating system basics
-	- [ ] Kernel
-	- [ ] types of operating systems.
+- [x] Operating system basics ✅ 2024-06-06
+	- [x] Kernel ✅ 2024-06-06
+	- [x] types of operating systems. ✅ 2024-06-06
 - [ ] Inter Process Communication and Synchronization
 	- [ ] Process
 	- [ ] Tasks
 	- [ ] Threads 
-	- [ ] Shared data
-	- [ ] Inter process communication 
+	- [x] Shared data ✅ 2024-06-06
+	- [x] Inter process communication ✅ 2024-06-06
 		- [ ] Signals 
 		- [ ] Semaphore 
 		- [ ] Message Queues 

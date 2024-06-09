@@ -6,8 +6,8 @@ Created : 2024-06-05 13:17
 - 
 ## Syllabus
 - [ ] Architectural Support for High-Level Languages
-	- [ ] Abstraction in software design
-	- [ ] Data types
+	- [x] Abstraction in software design ✅ 2024-06-06
+	- [x] Data types ✅ 2024-06-06
 	- [ ] Floating-point data types
 	- [ ] The ARM floating-point architecture,
 	- [ ] Expressions,

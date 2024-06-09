@@ -13,7 +13,7 @@ tags: []
         - [Adding local directory to git](Linux/Tools/1709452138-SMNE.md)
         - [Cloning a repo]()
     - [Submitting that change]()
-
+- [[#Dropping Commits]]
 
 ### **Introduction**
 
@@ -120,3 +120,42 @@ git push -u origin main
 
 
 #### Merge Conflict
+
+
+#### Dropping Commits
+Consider if you added your password file in you commit accidentally(like i did once) and want to delete that `commit history` from git 
+1. **Identity the commit**
+```bash
+git log
+```
+2. **Start interactive Rebase**
+```bash
+git rebase -i HEAD~x
+```
+*where x is the no. of commits back*
+3. **Use `drop` to drop the commit**
+```
+drop xyz123123 
+```
+save the file and exit
+4. 
+```bash
+git rebase --continue
+```
+5. 
+```bash
+git push origin <branch name>
+```
+
+##### Deleting the most recent commit
+1. **Delete it from local**
+```bash
+git reset --hard HEAD~1
+```
+2. Force push to remote
+```bash
+git push origin <branch_name> --force
+```
+
+[Source](https://graphite.dev/guides/how-to-delete-a-git-commit)
+

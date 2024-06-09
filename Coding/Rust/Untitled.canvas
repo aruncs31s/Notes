@@ -1,6 +1,0 @@
-{
-	"nodes":[
-		{"id":"424a3bedf101a517","x":-260,"y":-220,"width":400,"height":400,"type":"link","url":"https://stackoverflow.com/questions/30355185/how-to-read-an-integer-input-from-the-user-in-rust-1-0"}
-	],
-	"edges":[]
-}
