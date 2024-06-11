@@ -101,6 +101,8 @@ A CMOS inverter ==consists of two opposite polarity MOSFETs== Mn(nMOS) and Mp(pM
 
 
 
+
+
 ![[Pasted image 20240527024525.png]]![[Pasted image 20240527024518.png]]
 
 ﻿  
