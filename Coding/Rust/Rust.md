@@ -7,6 +7,7 @@
 - [[#Format Specifiers]]
 - [[#If Else]]
 - [Vectors](#vectors)
+- [[Borrow Checker]]
 
 ### Directives
 ```rust

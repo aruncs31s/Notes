@@ -1,7 +1,7 @@
 # Digital Signal Processing
 ## Syllabus
 - [PDF](~/k.pdf)
-1. [Module 1](%20%20BTech/S5/Digital%20Signal%20Processing/Module%201.md)
+1. [Module 1](BTech/S5/Digital%20Signal%20Processing/Module%201.md)
 	- Basic Elements of a DSP system
 	- Typical DSP applications
 	- Finite-length discrete transforms
