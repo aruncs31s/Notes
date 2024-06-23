@@ -51,3 +51,27 @@ $$
 
 > [!NOTE] Antipodal Signals
 > Since $S_1(t)$ and $S_2(t)$ are in $180^o$ out of phase they are called Antipodal Signals
+
+---
+
+$$
+\begin{align}
+\Phi_1(t) &= {S_1(t) \over \sqrt{E_b} \\
+S_1(t) 7= \sqrt{Eb} \frav{2}{T_b} \cos(\pi f_c t) \\
+\end{align}
+$$
+
+by comparing above equation
+
+$$
+\Phi_1(t) = \sqrt{{2\over T_b}  \cos(\pi f_c t)  }
+$$
+
+$$
+\boxed{
+S_1(t) = \sqrt{E_b} \Phi_1(t) \tag{a}
+S_2(t) = -\sqrt{E_b} \Phi_1(t) \tag{b}
+}
+$$
+
+\*For BPSK we only need 1 orthonormal basis function => $\Phi_1{t}$
