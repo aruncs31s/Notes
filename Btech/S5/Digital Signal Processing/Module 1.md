@@ -122,9 +122,35 @@ $$
 
 #### Overlap - save method  
 Let's consider an input sequence $x(n)$ of length $L$, and response $h(n)$ of length $M$, the steps to follow overlap - save method is  
-1. : input $x(n)$ is divided into length $L (L>M)$  
-2. : Calculate the length $N=L+M-1$  
-3. : Add $M-1$ zeros to the start to first segment, each segment (length = L) has its first $M-1$ points coming from previous segment, making each of length $N$  
-4. : Make impulse response to length N by adding zeros  
-5. ; Find the circular convolution of each new segments with new $h(n)$  
+1. : Input $x(n)$ is ==divided into length== $L (L>M)$  
+2. : ==Calculate the length== $N=L+M-1$  
+3. : ==Add $M-1$ zeros to the start of first segment==, each segment (length = L) has its ==first $M-1$ points coming from previous segment==, making each of length $N$  
+4. : Make ==impulse response to length N by adding zeros==  
+5. : ==Find== the ==circular convolution== of each new segments with new $h(n)$  
 6. : Linearly combine each results and take sequence of length L+M-1 from that by discarding/removing first $M-1$ points
+
+﻿  
+#### Overlap - add method  
+Filtering of long duration sequences  
+Let's consider an input sequence x(n) of length L, and response h(n) of length M, the steps to follow overlap - save method is  
+1. : Input $x(n)$ is divided into length $L (L> M)$    
+2. : Calculate the length N=L+M-1  
+3. : Add $M-1$ zeros on each segment (length = L) of $x(n)$  
+4. : Make impulse response to length $N$ by adding zeros  
+5. : Find the circular convolution of each new segments with new $h(n)$  
+6. : Add last and first $M-1$ points of each segments, discard/remove excess point than $L,+M-1$ 
+[Source](implearn)
+
+
+
+### FFT
+
+#### DIT
+![[4 Point FFT DIT Drawing 2024-06-22 04.38.45.excalidraw]]
+
+
+> [!NOTE] Input order
+> Here the inputs $x(0),x(1),x(2),x(3)$ are given in bit reversed order and the output are in `inorder` 
+
+
+
