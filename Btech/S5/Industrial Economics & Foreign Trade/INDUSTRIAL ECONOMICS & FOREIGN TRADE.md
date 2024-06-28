@@ -1,12 +1,6 @@
 # INDUSTRIAL ECONOMICS & FOREIGN Trade
 - [[IEFT Module 1]]
-
-Module 2 (Production and cost)
-Production function – law of variable proportion – economies of scale – internal and external
-economies – Isoquants, isocost line and producer’s equilibrium – Expansion path – Technical
-progress and its implications – Cobb-Douglas production function - Cost concepts – Social cost:
-private cost and external cost – Explicit and implicit cost – sunk cost - Short run cost curves -
-long run cost curves – Revenue (concepts) – Shutdown point – Break-even point.
+- [[IEFT Module 2]]
 Module 3 (Market Structure)
 Perfect and imperfect competition – monopoly, regulation of monopoly, monopolistic completion
 (features and equilibrium of a firm) – oligopoly – Kinked demand curve – Collusive oligopoly
