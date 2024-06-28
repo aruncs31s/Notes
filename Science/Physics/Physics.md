@@ -10,3 +10,5 @@
 > - One thing that the strong Nuclear force experienced by protons and nutrons so the `strong nuclear force` will exceed force experienced due to the charges(electric force)
 
 
+
+calculator

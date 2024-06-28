@@ -1,0 +1,16 @@
+# Basic Concepts and Demand and Supply Analysis
+- [ ] Scarcity and choice 
+- [ ] Basic economic problems
+- [ ] PPC – Firms and its objectives 
+- [ ]  types of firms
+- [ ] Utility 
+	- [ ] Law of diminishing marginal utility 
+	- [ ] Demand and its determinants 
+	- [ ] law of demand
+	- [ ] elasticity of demand 
+	- [ ] measurement of elasticity and its applications
+- [ ]  Supply
+	- [ ] law of supply
+	- [ ] determinants of supply – Equilibrium – Changes in demand and supply and its effects –
+- [ ] Consumer surplus
+- [ ] and producer surplus (Concepts) – Taxation and deadweight loss.
