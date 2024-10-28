@@ -1,0 +1,311 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%333
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+\documentclass[xcolor=dvipsnames]{beamer} % dvipsnames gives more built-in colors
+
+\usetheme{Madrid}  	%% Used in all my presentns
+%\useoutertheme{miniframes} % Alternatively: miniframes, infolines, split
+%\useinnertheme{circles}
+
+\definecolor{UBCblue}{rgb}{0.04706, 0.13725, 0.26667} % UBC Blue (primary)
+
+\usecolortheme[named=UBCblue]{structure}
+
+\definecolor{mygrey}{RGB}{125,125,125}
+\definecolor{myblue}{RGB}{15,77,147}
+\setbeamercolor{block title}{fg=black,bg=UBCblue!40!white}
+\setbeamercolor{block body}{fg=black, bg=mygrey!240!white}
+
+\setbeamertemplate{caption}[numbered]
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{ragged2e}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,adjustbox,mathtools}
+\usepackage{amsfonts}
+\usepackage{algorithm} 
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage{epstopdf}
+\usepackage{placeins}
+\usepackage{epsfig}
+%\usepackage{hyperlink}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{multirow}
+%\definecolor{steelblue}{RGB}{70, 130, 180}
+%\definecolor{myblue2}{RGB}{95,179,238}
+%\definecolor{myblue3}{RGB}{129,168,207}
+%\definecolor{myblue4}{RGB}{26,89,142}
+\setbeamertemplate{theorems}[nonumbered]
+%\setbeamertemplate{bibliography item}[text]}
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[ ]{Environmental effects Modeling in 5Ghz communication using Machine Learning} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{ Arun CS LKNR21EC105 \newline Navaneeth P KNR21EC064\newline Arjun Das K KNR21EC019\newline Krishnendu SR KNR21EC054} % Your name
+\institute[GCEK] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+	
+	{\large Department of Electronics \& Communication Engineering}\\
+	\medskip
+	%\includegraphics[height=1.5cm]{nitc1.eps}\\
+	\large{Government College of Engg., Kannur.\newline \newline Guide : \newline Dr. V. Vinod Kumar }
+	\vspace{0.25cm}
+	\date{\today} % Date, can be changed to a custom date
+}
+
+\begin{document}
+	
+	\begin{frame}
+	\titlepage % Print the title page as the first slide
+        \end{frame}
+
+
+%------------------------------------------------------------
+\begin{frame}{Outline}
+\tableofcontents
+
+\end{frame}
+%-------------------------------------------------------------
+
+\section{Introduction}
+\begin{frame}{Introduction}
+\begin{itemize}
+
+\item Communication has become a integral part of human life\vspace{0.4cm}
+\item As user increases demand for reliable comm.. increases
+\vspace{0.4cm}
+\item Static way of handling communication has severe disadvantages\vspace{0.4cm}
+\item By implementing \bold{adaptive} handling of communication we can overcome this disadvantages\vspace{0.4cm}
+\end{itemize}
+\end{frame}
+
+%-----
+
+\section{Motivation}
+\begin{frame}{Motivation}
+\begin{itemize}
+\item Continuously changing environmental condition\vspace{0.4cm}
+\item  Inefficiency of Static systems\vspace{0.4cm}
+\item  High Demand for reliable communication\vspace{0.4cm}
+\item  Potential of Machine Learning\vspace{0.4cm}
+\item  Need of Energy Eficient Communication\vspace{0.4cm}
+\end{itemize}
+\end{frame}
+
+%-----
+
+\section{Objective}
+\begin{frame}{Objective}
+\begin{itemize}
+
+\item Develop an adaptive communication system\vspace{0.4cm}
+\item Predict Critical factors such as CSI.\vspace{0.4cm}
+\item To Enhanced energy Efficiency\vspace{0.4cm}
+\item To Simulate entire communication system using the help of Simulation software(NS3,MATLAB)\vspace{0.4cm}
+\item Integrate Machine learning to make it dynamic
+\end{itemize}
+\end{frame}
+
+%-----
+
+\section{Literature Review}
+\begin{frame}{Literature Review}
+\begin{itemize}
+\item Ancy P V, V Vinod Kumar, U.Sajesh Kumar,Senior, P.Sooraj, "Study of the effect of Inland Water bodies on Line Of Sight Communication using Machine Learning at 5GHz"
+\begin{itemize}
+\item Effects of Environmental factors on 5Ghz Communication \vspace{0.3cm}
+\item Effectiveness of Machine learning in Channel Modeling
+\end{itemize}
+\vspace{0.4cm}
+ \item MINSEUK KIM 1, DONGSOO HAN 2, AND JUNE-KOO KEVIN RHEE , "Machine Learning for Practical Localization
+System Using Multiview CSI" ,2020 \vspace{0.4cm}
+\begin{itemize}
+\item Application of Machine learning in optimization of communication\vspace{0.4cm}
+\item Channel State Information can provide acurate location of the transmitter\vspace{0.4cm}
+\end{itemize}
+\end{itemize}
+\end{frame}
+%---
+\section{Objective}
+\begin{frame}{Objective}
+\begin{itemize}
+\item Arne Svensson, "An Introduction to Adaptive QAM Modulation Schemes for Known and Predicted Channels" ,2007 \vspace{0.4cm}
+\begin{itemize}
+    \item 
+ Adaptive Modulation technique can improve Communication Quality\vspace{0.4cm}
+\end{itemize} 
+\item Avishek Mukherjee and Zhenghao Zhang , "Fast compression of OFDM channel state information with constant frequency sinusoidal approximation" , 2019 \vspace{0.4cm}
+\begin{itemize}
+    \item Effects of Channel State Information on Data rate and Reliability \vspace{0.4cm}
+\end{itemize}
+
+\end{itemize}
+\end{frame}
+
+% \section{Literature Review}
+% \begin{frame}{Literature Review}
+% \begin{itemize}
+%     \item 
+
+% \item Arne Svensson, "An Introduction to Adaptive QAM Modulation Schemes for Known and Predicted Channels" ,2007 
+% \begin{itemize}
+%     \item 
+%  Adaptive Modulation technique can improve Communication Quality
+% \end{itemize} 
+% \vspace{0.4cm}
+
+% \item Fast compression of OFDM channel state information with constant frequency sinusoidal approximation : Effects of Channel State Information on Data rate and Reliability\vspace{0.4cm}\end{}
+% \end{frame}
+
+%-----
+%-----
+\section{Block Diagram}
+\begin{frame}{Block Diagram}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{image_7.png}
+    \caption{Transmitter Side}
+    \label{fig:enter-label}
+\end{figure}
+\end{frame}
+
+%----
+\begin{frame}{Block Diagram}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.4\linewidth]{image_5.png}
+    \caption{Receiver Side}
+    \label{fig:enter-label}
+\end{figure}
+\end{frame}
+%-----
+\section{Methodology}
+\begin{frame}{Methodology}
+\begin{itemize}
+ \item Simulate the Communication System with the help of Software (NS3) \vspace{0.4cm}
+\item Tweak the parameters accordingly to get maximum reliability and efficiency\vspace{0.4cm}
+\item Practical testing using known systems (Powerbeam M5 400)\vspace{0.4cm}
+\item Obtain Data by automated measurement using ESP32 and Raspberry Pi\vspace{0.4cm}
+\item Train Machine Learning Model and Optimze the model to get Accurate result\vspace{0.4cm}
+\item  Design a 5Ghz antenna and compare it with experimental values\vspace{0.4cm}
+
+\end{itemize}
+\end{frame}
+%---- 
+%-----
+\section{Software and Hardware Specification}
+\begin{frame}{Software and Hardware Specification}
+ \text \bold{Software:} 
+
+\begin{itemize}
+ \item \bold{HFSS:} for antenna design and Modeling
+\vspace{0.4cm}
+\item \bold{MATLAB:} Channel Modeling and Data Processing \vspace{0.4cm}
+
+\item \bold{Python:} Programming Language used to Implement Machine learning and Data Analysis and processing\vspace{0.4cm}
+
+\end{itemize}
+\text \bold{Hardwares:}
+\begin{itemize}
+    \item ESP32 : To get CSI Datas\vspace{0.4cm}
+    \item Ubiquity Powerbeam M5 400 \vspace{0.4cm}
+  \item Adalam Pluto : To interface Antenna \vspace{0.4cm}
+  
+\end{itemize}
+
+\end{frame}
+
+%-----
+\section{Cost}
+\begin{frame}{Cost}
+\begin{itemize}
+ \item Adalam Pluto : \bold{Rs 19,000}\vspace{0.4cm}
+  \item Ubiquity Powerbeam M5 400 :  \bold{Rs 23,000}\vspace{0.4cm}
+  \item ESP32 x2 : \bold{Rs 1000}\vspace{0.4cm}
+  \item Raspberry Pi 4 8GB \bold{Rs 8,000}\vspace{0.4cm}
+  \item Miscellaneous : \bold{2000}\vspace{0.4cm}
+
+  
+\centering{ \bold{Total: } Rs 53000}
+
+\end{itemize}
+\end{frame}
+
+%----
+
+
+\section{Timeline}
+\begin{frame}{Timeline}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{image.png}
+    \label{fig:enter-label}
+\end{figure}
+
+\end{frame}
+%-----
+
+%-----
+\section{Work Distribution}
+\begin{frame}{Work Distribution}
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{image_12.png}
+    \label{fig:enter-label}
+\end{figure}
+\end{frame}
+%-----
+%-----
+\section{Conclusion}
+\begin{frame}{Conclusion}
+
+
+\begin{justify}
+By the use of  Machine Learning we are going to create a dynamic communication system which can  adjust it's transmission parameters according to environmental factors such as rain,humdity and using Channel State Information etc. to provide a reliable communication.
+\end{justify}
+     
+
+
+\end{frame}
+
+%-----
+
+\section{References}
+\begin{frame}{References}
+\begin{itemize}
+\item MINSEUK KIM, DONGSOO HAN, AND JUNE-KOO KEVIN RHEE "Machine Learning for Practical Localization System Using Multiview CSI", IEEE Access ( Volume: 8) , 2020 \vspace{0.4cm}
+\item ARNE SVENSSON, "An Introduction to Adaptive QAM Modulation Schemes for Known and Predicted Channels"  Proceedings of the IEEE ,Vol 95, 2007  \vspace{0.4cm}
+\item Ancy P V, Vinod Kumar V ,  Sajesh Kumar U, P. Sooraj "Study of the effect of Inland Water bodies on Line Of Sight Communication using Machine Learning at 5GHz" , 2022 
+\item  Dr Zhenghao Zhang, "Fast compression of OFDM channel state information with constant frequency sinusoidal approximation",2019 \vspace{0.4cm}
+\end{itemize}
+\end{frame}
+%-----
+
+
+\begin{frame}
+\Huge{\centerline{Thank You}}
+\end{frame}
+
+%---------------------------------------------------
+
+\end{document}

@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"id":"b27afb76e942c76c","x":-240,"y":-120,"width":400,"height":400,"type":"group","label":"Production System"},
+		{"id":"93319658a599245d","x":-240,"y":-440,"width":400,"height":240,"type":"group","label":"Productivity"},
+		{"id":"85c18903ebaaa2de","x":-160,"y":0,"width":250,"height":100,"type":"text","text":"#### Transmission Process or value addition\n"},
+		{"id":"c9e71011bbac6c77","x":-760,"y":50,"width":250,"height":60,"type":"text","text":"# Input"},
+		{"id":"c231b1460b37915f","x":-160,"y":-360,"width":250,"height":100,"type":"text","text":"### Input/Output"},
+		{"id":"985058f5e5531720","type":"text","text":"# Output","x":360,"y":40,"width":250,"height":60},
+		{"id":"4ebb4e7aa2e60be6","type":"text","text":"# Endcustomer\n","x":720,"y":40,"width":280,"height":60},
+		{"id":"ab523b6858ba6b5b","x":-1066,"y":-220,"width":431,"height":171,"type":"text","text":"### Land, Workforce, Material, Facilitates, Capital, Technology Equipments & Tools"}
+	],
+	"edges":[
+		{"id":"3c3d762f7ca0c3fc","fromNode":"c9e71011bbac6c77","fromSide":"right","toNode":"b27afb76e942c76c","toSide":"left"},
+		{"id":"197ca6efffbe14c4","fromNode":"b27afb76e942c76c","fromSide":"right","toNode":"985058f5e5531720","toSide":"left"},
+		{"id":"419a840479fcfd72","fromNode":"93319658a599245d","fromSide":"right","toNode":"b27afb76e942c76c","toSide":"right"},
+		{"id":"42d6675ab0e8b177","fromNode":"93319658a599245d","fromSide":"left","toNode":"b27afb76e942c76c","toSide":"left"},
+		{"id":"f2f0d171d67a39d7","fromNode":"985058f5e5531720","fromSide":"right","toNode":"4ebb4e7aa2e60be6","toSide":"left"},
+		{"id":"459064391c6fb3eb","fromNode":"ab523b6858ba6b5b","fromSide":"bottom","toNode":"c9e71011bbac6c77","toSide":"top"}
+	]
+}

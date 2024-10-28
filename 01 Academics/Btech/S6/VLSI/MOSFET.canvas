@@ -1,0 +1,41 @@
+{
+	"nodes":[
+		{"id":"1776ff08a5729463","type":"text","text":"#### N-Channel","x":960,"y":-664,"width":180,"height":50},
+		{"id":"a3bbdf5523d4df04","type":"text","text":"### JFET","x":720,"y":-580,"width":180,"height":60},
+		{"id":"249c672dfa124ea0","type":"text","text":"#### P-Channel","x":960,"y":-580,"width":180,"height":60},
+		{"id":"f3524e8f29a88274","type":"text","text":"##### P-Channel","x":1240,"y":-520,"width":180,"height":60},
+		{"id":"ff8965c4671f329c","type":"text","text":"### MOSFET","x":720,"y":-410,"width":180,"height":60},
+		{"id":"6ac27ae7eb971d2d","type":"text","text":"#### Depletion Type","x":951,"y":-410,"width":229,"height":90},
+		{"id":"e4fbc98c5e805413","type":"text","text":"##### N-Channel","x":1240,"y":-410,"width":180,"height":60},
+		{"id":"b9445ca14a3b7b67","type":"text","text":"#### Enhancement Type","x":951,"y":-280,"width":229,"height":100},
+		{"id":"3d7117cb9578c1fb","type":"text","text":"##### N-Channel","x":1240,"y":-280,"width":180,"height":60},
+		{"id":"2200ed790e2689b2","type":"text","text":"##### P-Channel","x":1240,"y":-180,"width":180,"height":60},
+		{"id":"cb603905522eee2d","type":"text","text":"## FET","x":320,"y":-520,"width":250,"height":60},
+		{"id":"6a12bce8c5656ff5","type":"text","text":"#### NPN","x":-1680,"y":-561,"width":250,"height":110},
+		{"id":"16b33a2632adcfc0","type":"text","text":"#### PNP","x":-1680,"y":-350,"width":250,"height":60},
+		{"id":"8acc36a7f2d527e2","type":"file","file":"BJT.jpg","x":-1320,"y":-40,"width":400,"height":210},
+		{"id":"6ad310e6a57fc9c7","type":"text","text":"# BJT\n- It is a current controlled","x":-920,"y":-649,"width":410,"height":397},
+		{"id":"33381626d7d06309","type":"text","text":"# Transistor","x":-320,"y":-590,"width":510,"height":260},
+		{"id":"63b58a1954c4797b","type":"link","url":"https://www.shindengen.com/products/semi/column/files/images/231804414baa0828bed1d3eaf067b3dd.png","x":-920,"y":-1680,"width":885,"height":520}
+	],
+	"edges":[
+		{"id":"79639487b92840e3","fromNode":"6ad310e6a57fc9c7","fromSide":"left","toNode":"6a12bce8c5656ff5","toSide":"top"},
+		{"id":"2a82c3b9d38f1907","fromNode":"6ad310e6a57fc9c7","fromSide":"left","toNode":"16b33a2632adcfc0","toSide":"top"},
+		{"id":"d4d1d7c543220dad","fromNode":"a3bbdf5523d4df04","fromSide":"right","toNode":"1776ff08a5729463","toSide":"left"},
+		{"id":"4722698a94494418","fromNode":"a3bbdf5523d4df04","fromSide":"right","toNode":"249c672dfa124ea0","toSide":"left"},
+		{"id":"5549434058e8c09f","fromNode":"cb603905522eee2d","fromSide":"right","toNode":"a3bbdf5523d4df04","toSide":"left"},
+		{"id":"c23de51d3f60a8ea","fromNode":"cb603905522eee2d","fromSide":"right","toNode":"ff8965c4671f329c","toSide":"left"},
+		{"id":"2ff05f1064de8d91","fromNode":"6ac27ae7eb971d2d","fromSide":"right","toNode":"f3524e8f29a88274","toSide":"left"},
+		{"id":"90343a622183f085","fromNode":"6ac27ae7eb971d2d","fromSide":"right","toNode":"e4fbc98c5e805413","toSide":"left"},
+		{"id":"979d675a5b5296d9","fromNode":"b9445ca14a3b7b67","fromSide":"right","toNode":"3d7117cb9578c1fb","toSide":"left"},
+		{"id":"fcab771f6b987da2","fromNode":"b9445ca14a3b7b67","fromSide":"right","toNode":"2200ed790e2689b2","toSide":"left"},
+		{"id":"634f81beb81fdd39","fromNode":"ff8965c4671f329c","fromSide":"right","toNode":"b9445ca14a3b7b67","toSide":"left"},
+		{"id":"e160acd092840bea","fromNode":"ff8965c4671f329c","fromSide":"right","toNode":"6ac27ae7eb971d2d","toSide":"left"},
+		{"id":"6deebdb99225211e","fromNode":"6a12bce8c5656ff5","fromSide":"right","toNode":"8acc36a7f2d527e2","toSide":"top"},
+		{"id":"6da463a4a859de4d","fromNode":"16b33a2632adcfc0","fromSide":"right","toNode":"8acc36a7f2d527e2","toSide":"top"},
+		{"id":"daa085a6f88a6fa2","fromNode":"33381626d7d06309","fromSide":"left","toNode":"6ad310e6a57fc9c7","toSide":"right"},
+		{"id":"b09268583ceb3f39","fromNode":"33381626d7d06309","fromSide":"right","toNode":"cb603905522eee2d","toSide":"left"},
+		{"id":"285f8a028238989b","fromNode":"6ad310e6a57fc9c7","fromSide":"top","toNode":"63b58a1954c4797b","toSide":"bottom"},
+		{"id":"e1c1586a26bf8f19","fromNode":"cb603905522eee2d","fromSide":"top","toNode":"63b58a1954c4797b","toSide":"bottom"}
+	]
+}
