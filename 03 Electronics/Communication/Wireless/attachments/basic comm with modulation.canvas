@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"18e7ce5411893d32","type":"text","text":"# Source ","x":-925,"y":-270,"width":250,"height":60},
+		{"id":"9c532b711dd26522","type":"text","text":"# Channel","x":-120,"y":-270,"width":250,"height":60},
+		{"id":"4accfb6e7f307738","type":"text","text":"# Modulator","x":-485,"y":-150,"width":250,"height":60},
+		{"id":"ea443fbcce649e09","type":"text","text":"# Destination","x":675,"y":-270,"width":250,"height":60},
+		{"id":"d54c214aa8cb4a70","type":"text","text":"# Demodulator","x":350,"y":-50,"width":250,"height":60},
+		{"id":"3c1243c879d77458","type":"text","text":"## Carrier Generator","x":-495,"y":70,"width":260,"height":100},
+		{"id":"eb99e31d6ff5bec8","type":"text","text":"## Local Oscillator","x":275,"y":170,"width":260,"height":100}
+	],
+	"edges":[
+		{"id":"ff6044e40fd3d9db","fromNode":"18e7ce5411893d32","fromSide":"right","toNode":"4accfb6e7f307738","toSide":"left","label":"m(t)"},
+		{"id":"6049e8f9c9795352","fromNode":"9c532b711dd26522","fromSide":"right","toNode":"d54c214aa8cb4a70","toSide":"left","label":"s(t) + n"},
+		{"id":"1f2520c8c3382536","fromNode":"4accfb6e7f307738","fromSide":"right","toNode":"9c532b711dd26522","toSide":"left","label":"s(t)"},
+		{"id":"36376d4f75c27512","fromNode":"3c1243c879d77458","fromSide":"top","toNode":"4accfb6e7f307738","toSide":"bottom","label":"fc(t)"},
+		{"id":"64d2e5a7cb5900d8","fromNode":"d54c214aa8cb4a70","fromSide":"right","toNode":"ea443fbcce649e09","toSide":"left"},
+		{"id":"6419fa04a356dee4","fromNode":"eb99e31d6ff5bec8","fromSide":"top","toNode":"d54c214aa8cb4a70","toSide":"bottom","label":"fc(t)"}
+	]
+}
