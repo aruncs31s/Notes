@@ -2,7 +2,11 @@
 id: 1719156550-RSGW
 aliases:
   - ADC Module 5
-tags: []
+tags:
+  - communicaiton
+cssclasses:
+  - wide-page
+ExamDate: 2024-12-02
 ---
 
 # Analog and Digital Communication
@@ -82,6 +86,8 @@ Created : 2024-04-16 01:00
 
 #### BPSK
 
+^77bd04
+
 Coherent Binary Phase Shift Keying
 
 $$
@@ -129,8 +135,8 @@ $$
 
 $$
 \begin{align}
-\Phi_1(t) &= {S_1(t) \over \sqrt{E_b} \\
-S_1(t) 7= \sqrt{Eb} \frav{2}{T_b} \cos(\pi f_c t) \\
+\Phi_1(t) &= {S_1(t) \over \sqrt{E_b}} \\
+S_1(t) &= \sqrt{Eb} \frac{2}{T_b} \cos(\pi f_c t) \\
 \end{align}
 $$
 
@@ -141,10 +147,10 @@ $$
 $$
 
 $$
-\boxed{
-S_1(t) = \sqrt{E_b} \Phi_1(t) \tag{a}
-S_2(t) = -\sqrt{E_b} \Phi_1(t) \tag{b}
-}
+\begin{align}
+S_1(t) = \sqrt{E_b} \Phi_1(t) \tag{a}\\
+S_2(t) = -\sqrt{E_b} \Phi_1(t) \tag{b}\\
+\end{align}
 $$
 
 \*For BPSK we only need 1 orthonormal basis function => $\Phi_1{t}$

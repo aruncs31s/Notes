@@ -5,6 +5,7 @@ aliases:
 tags: 
 cssclasses:
   - wide-page
+ExamDate: 2025-01-02
 ---
 # Embedded Systems
 

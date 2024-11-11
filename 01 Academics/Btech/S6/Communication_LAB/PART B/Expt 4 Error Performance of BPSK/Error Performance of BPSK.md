@@ -1,6 +1,16 @@
+---
+tags:
+  - modulationSchemes
+aliases:
+  - bpsk
+---
 # Error Performance of BPSK
+- [[pySDR#^c938fb|Using Python]]
 ## Contents
-- [CodeFile Github](https://github.com/aruncs31s/BtechEC/blob/S6/Communication%20Lab/Expt_1_Generation_and_Detection_of_BPSK/generation_and_Detection_of_BPSK.md)
+- [[#Aim]]
+- [[#Theory]]
+- [[#Algorithm]]
+- [[#Code]]
 ---
 
 #### **Aim:** 
@@ -46,6 +56,8 @@ recieved_Signal = (x>0)? 1 : 0
 
 
 ---
+
+---
 #### Algorithm
 1. **Generate a sequence** : Generate a sequence of random bits of ones and zeros of certain length ($N_{sym}$ typically set in the order of 10000)
 
@@ -63,7 +75,7 @@ for BPSK over AWGN
 - Demodulation : bpskDemod()
 
 ---
-
+#### Code 
 #wholeCode
 ```python
 N=10000000;
@@ -226,7 +238,8 @@ theoreticalBER = 0.5 * erfc(sqrt(10.^(EbN0dB / 10)));
 
 #output
 
-![output](https://github.com/aruncs31s/BtechEC/blob/S6/Communication%20Lab/Expt_1_Error_Performance_of_BPSK/expt1_graph.png?raw=true)
+![[expt1_graph.png]]
+
 
 
 
@@ -245,10 +258,10 @@ theoreticalBER = 0.5 * erfc(sqrt(10.^(EbN0dB / 10)));
 data = randn(1,N)>=0 ;
 
 ```
-<details><summary>Explanation</summary>
+
+#### Explanation
 `data = randn(1,N)>=0` Sets the data variable if the generated randn()'s output > mdcmd
  0 and resets(value will be equal to 0) if its output < 0
-</summary>
 
 2. Make data => 1,-1
 
@@ -280,18 +293,7 @@ estimatedBits = (received>=0)
 
 - Detect No of Error Bits
 XOR Tx and Rx , take sum = Bit error
-### Aim
-1. Plot [[SNR]] vs [[Bit error rate]]
-SNR 1/o< Bit Error rate (o< = propotional)
-- Specs
 
-- Steps
-DB <= Linear Scale ; 10 .^(k/20)
- 
-Notes -
-
-#?define
-```matlab
- BER = zeros(1,length(EbN0dB))
-```
-		
+## Resources 
+2. [CodeFile Github](https://github.com/aruncs31s/BtechEC/blob/S6/Communication%20Lab/Expt_1_Generation_and_Detection_of_BPSK/generation_and_Detection_of_BPSK.md)
+		   

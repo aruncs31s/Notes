@@ -1,15 +1,17 @@
 ---
 id: MW
-aliases: []
+aliases: 
 tags:
   - ECT401
-Created: "2024-07-20"
+Created: 2024-07-20
 cssclasses:
   - wide-page
+ExamDate: 2024-11-22
 ---
 
 # Micro Wave and Antenas
 - [[MWA Series Exam 2]]
+- [[30-10-2024]]
 
 > [!multi-column]
 >

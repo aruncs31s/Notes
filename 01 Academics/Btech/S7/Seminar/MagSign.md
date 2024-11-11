@@ -9,8 +9,7 @@ cssclasses:
 - [[Report]]
 - [[MagSign Canvas.canvas|MagSign Canvas]]
 - [[MagSign Drawing.excalidraw]]
-
-
+- [[DWT-Transform]]
 ## 1. Introduction
 - The rapid growth of **IoT devices**
 - These IoT devices often **shares sensitive information**.
@@ -59,8 +58,8 @@ So what is the need for authentication
   - **Limited User Interface**
     - Many Iot devices dont have a good `User Interface` Where they can interact
   - **Vulnerable to attack**
-    - Passwords can be stollen
-    - Biometrics data Can be spoofed
+    - Passwords can be **stollen**
+    - **Biometrics data Can be spoofed**
   - **High Resource Requirement**: The Amazon Echo requires $1GHz$ ARM processor and $256MB$ ram to support voice signal analysis
 
 

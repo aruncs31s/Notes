@@ -4,7 +4,8 @@ aliases:
   - EMT
 tags:
   - s6
-Created: "17-08-2024"
+Created: 17-08-2024
+ExamDate: 2024-12-17
 ---
 
 # ElectroMagnetics Theory
@@ -28,3 +29,5 @@ Created: "17-08-2024"
 > 5. H = the magnetic field intensity
 > 6. $\rho$v = the volume charge density
 > 7. J = the current density
+
+^a4c15d

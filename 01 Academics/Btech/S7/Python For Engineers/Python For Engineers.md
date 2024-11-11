@@ -3,10 +3,11 @@ id: Python For Engineers
 aliases:
   - cst445
   - python
-tags: []
-Created: "2024-07-23"
+tags: 
+Created: 2024-07-23
 cssclasses:
   - wide-page
+ExamDate: 2024-11-29
 ---
 
 # Python For Engineers
