@@ -5,13 +5,14 @@ tags: []
 ---
 
 # Python
-
+- [[pySDR]]
 ## Modules
 
 - [Numpy](numpy.md)
 - [matplotlib](./matplotlib.md)
 - [[Pyaudio]]
 - [[Python Regex]]
+- 
 ## Contents
 
 - [ ]

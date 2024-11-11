@@ -1,0 +1,6 @@
+---
+aliases: 
+Date: "{{date}}"
+---
+# {{title}}
+ 

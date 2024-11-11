@@ -1,0 +1,28 @@
+{
+	"nodes":[
+		{"id":"0f3f447c1d70e057","type":"text","text":"<h2 align=\"center\">ESP32</h2>\n","x":-40,"y":-1900,"width":155,"height":120},
+		{"id":"8e2ec9d978473826","type":"text","text":"<h2 align=\"center\">LDR</h2>\n","x":-193,"y":-1580,"width":153,"height":50,"color":"5"},
+		{"id":"9162378a6241cb8f","type":"file","file":"Solar Tracking/Solar Tracking.md","x":-516,"y":-1280,"width":400,"height":400},
+		{"id":"f134444b563927d7","type":"text","text":"<h2 align=\"center\">Servo Motor</h2>\n","x":128,"y":-1571,"width":149,"height":80,"color":"5"},
+		{"id":"c8ba78121928f0eb","type":"text","text":"<h2 align=\"center\">LDR</h2>\n","x":-243,"y":-2184,"width":155,"height":50},
+		{"id":"71986ffa1700da23","type":"text","text":"<h2 align=\"center\">Relay Module</h2>\n","x":-46,"y":-2179,"width":168,"height":90},
+		{"id":"58bde5f0b32fefc5","type":"text","text":"<h2 align=\"center\">PIR</h2>\n","x":122,"y":-2030,"width":155,"height":50},
+		{"id":"89070cf4d0e67e98","type":"text","text":"<h2 align=\"center\">PWM</h2>\n","x":128,"y":-1690,"width":149,"height":50},
+		{"id":"30f0a15dc1db1df3","type":"text","text":"<h2 align=\"center\">ADC</h2>\n\t\t   ","x":-193,"y":-2030,"width":155,"height":50},
+		{"id":"207fd7f06b82fe67","type":"text","text":"<h2 align=\"center\">ADC</h2>\n","x":-193,"y":-1690,"width":155,"height":50},
+		{"id":"73b1a81ce3589af3","x":520,"y":-2205,"width":400,"height":400,"type":"file","file":"Sensors/PIR Sensor.md"}
+	],
+	"edges":[
+		{"id":"d1e724353b3d160a","fromNode":"0f3f447c1d70e057","fromSide":"bottom","toNode":"89070cf4d0e67e98","toSide":"top"},
+		{"id":"24e1b6c773278d46","fromNode":"8e2ec9d978473826","fromSide":"top","toNode":"207fd7f06b82fe67","toSide":"bottom"},
+		{"id":"ce584a860a2b0133","fromNode":"207fd7f06b82fe67","fromSide":"top","toNode":"0f3f447c1d70e057","toSide":"bottom"},
+		{"id":"e14e231d6fa26db7","fromNode":"30f0a15dc1db1df3","fromSide":"bottom","toNode":"0f3f447c1d70e057","toSide":"top"},
+		{"id":"cfe6050e0c5284fa","fromNode":"c8ba78121928f0eb","fromSide":"bottom","toNode":"30f0a15dc1db1df3","toSide":"top"},
+		{"id":"1747b187e93672e3","fromNode":"58bde5f0b32fefc5","fromSide":"bottom","toNode":"0f3f447c1d70e057","toSide":"top"},
+		{"id":"4a7cad5ed9e6a84a","fromNode":"0f3f447c1d70e057","fromSide":"top","toNode":"71986ffa1700da23","toSide":"bottom"},
+		{"id":"4f189c9c41f09206","fromNode":"89070cf4d0e67e98","fromSide":"bottom","toNode":"f134444b563927d7","toSide":"top"},
+		{"id":"7f8b8d90de88ef38","fromNode":"f134444b563927d7","fromSide":"bottom","toNode":"9162378a6241cb8f","toSide":"top"},
+		{"id":"4e1d964bf4acdedb","fromNode":"8e2ec9d978473826","fromSide":"bottom","toNode":"9162378a6241cb8f","toSide":"top"},
+		{"id":"5814514da6f4f38e","fromNode":"58bde5f0b32fefc5","fromSide":"right","toNode":"73b1a81ce3589af3","toSide":"left"}
+	]
+}

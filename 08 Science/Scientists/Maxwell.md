@@ -24,7 +24,7 @@ $$
 $$
 \nabla \cdot E = \frac{\rho}{\epsilon_{o}}  
 $$
-- Left side we have  **[[Divergence]]** of [[Electromagnetics#^a4c15d|Electric Field]] 
+- Left side we have  **[[Divergence]]** of [[01 Academics/Btech/S6/ElectroMagnetics/Electromagnetics#^a4c15d|Electric Field]] 
 
 *It says that electric flux through closed surface is proportional to total charge enclosed by that surface *
 
