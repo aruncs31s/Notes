@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"72dccbc53d84c1c1","x":-700,"y":-460,"width":1260,"height":940,"type":"group","label":"Transmitter"},
+		{"id":"d67287e3dbc4401a","x":940,"y":-460,"width":890,"height":237,"type":"group","label":"Receiver"},
+		{"id":"2ffd544334b36831","x":960,"y":-440,"width":400,"height":197,"type":"file","file":"01 Academics/Btech/S7/MW/Diagrams/Dipole_receiving_antenna_animation_6_300ms.gif"},
+		{"id":"81cb7bb34c8bd03f","type":"text","text":"# Source","x":-680,"y":120,"width":320,"height":120},
+		{"id":"8fd1b78b90a49239","x":40,"y":-440,"width":417,"height":400,"type":"text","text":"# Tx [[Antenna]]\n![[Dipole_xmting_antenna_animation_4_408x318x150ms.gif]]"},
+		{"id":"97d64b5a64676b59","x":1560,"y":-371,"width":250,"height":60,"type":"text","text":"## Destination"},
+		{"id":"780574e785a5be66","x":710,"y":320,"width":500,"height":280,"type":"text","text":"$$\n\\nabla \\times E = \\frac{ - \\partial B}{\\partial t} \\tag{Faraday's Law}\n$$\n$$\n\\nabla \\times B = \\mu_{o} \\left(J + \\epsilon_{0} \\frac{\\partial E}{\\partial t} \\right) \\tag{Ampere's Law }\n$$\n"}
+	],
+	"edges":[
+		{"id":"18dfa9d054aa11b6","fromNode":"81cb7bb34c8bd03f","fromSide":"right","toNode":"8fd1b78b90a49239","toSide":"left","label":"Current"},
+		{"id":"7932c34d91732e46","fromNode":"2ffd544334b36831","fromSide":"right","toNode":"97d64b5a64676b59","toSide":"left"},
+		{"id":"e2b4377e038fd36c","fromNode":"8fd1b78b90a49239","fromSide":"right","toNode":"2ffd544334b36831","toSide":"left","label":"Air"},
+		{"id":"f8fe19736f763fbc","fromNode":"780574e785a5be66","fromSide":"top","toNode":"8fd1b78b90a49239","toSide":"bottom","label":"Governing Principles"},
+		{"id":"88666f8e1572629f","fromNode":"780574e785a5be66","fromSide":"right","toNode":"2ffd544334b36831","toSide":"bottom"}
+	]
+}

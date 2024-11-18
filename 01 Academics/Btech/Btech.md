@@ -44,9 +44,9 @@ SORT ExamDate asc
 
 | Course                               | Date       |
 | ------------------------------------ | ---------- |
-| [[DM]]                            | 12/12/2024 |
+| [[DM]]                               | 12/12/2024 |
 | [[Analog and Digital Communication]] | 2/12/2024  |
-| [[Control Systems]]               | 5/12/2024  |
+| [[Control Systems]]                  | 5/12/2024  |
 | [[Digital Signal Processing]]        | 28/11/2024 |
 |                                      |            |
 

@@ -5,16 +5,19 @@ aliases:
 tags:
   - project,embedded,crypto
 Completed: false
-Starting Date: "12-10-2024"
+Starting Date: 12-10-2024
 Status: true
 Target Date: ""
+GithubLink: https://github.com/aruncs31s/Amplifier-Circuit-For-Side-Channel-DPA-
 ---
 
 # Side Channel Attack Current Monitor
 
-## Components USed
-
-- Nexys A7
+> [!float|right-small] Components
+> **Components USed**
+>
+> - Nexys A7
+> - [[LM358]]
 
 ### Nexys A7
 
@@ -59,17 +62,55 @@ Target Date: ""
 
 - Selecting 1k$\ohm$ ohm with series `5v`
 
+### Using Shunt Resistor
 
-### Using Shunt Resistor 
 ![](kicad1.png)
-- In this sketch we can adjust the `Ri` and `Rs`(Rf) to get a good measure of the voltage drop across the shunt resistor 
-- Can use shunt resistor as small as 1kohm 
+
+- In this sketch we can adjust the `Ri` and `Rs`(Rf) to get a good measure of the voltage drop across the shunt resistor
+- Can use shunt resistor as small as 1kohm
 - Need to use a voltage divider or use 3.3 V for the power supply for the opamp if it works on 3.3V
 
-
-### Measurement using DSO 
+### Measurement using DSO
 
 ![[scope_5.png]]
 
 ![[scope_1.bmp]]
 
+## Amplifier Design 1
+
+Designing a Differential amplifier like [[LM358#Differential Amplifier]] this
+
+- Required Gain ? $x$
+  > - Let required gain be $10$
+  > - According to the relationship
+  $$
+  V_{out} = \left(V_{in2}  - V_{in1}\right) \frac{R_{f}}{R_{i}}
+  $$
+  > - taking $R_{f}$ as $10 \times R_{i}$ -> if $R_{f}$ is $100k$ then $R_{i}$ is $10k$
+
+![[diff amp.png]]
+
+
+
+#### Analysis 
+- Consider the Nexys A7 Draws $.65 Amps$  
+
+![[current measre]]
+$$
+\begin{align} \\
+\hspace{1cm}
+R &= 7.69  \\
+\text{We know } R &= R_{shunt} + R_{load}  \\
+\text{Where}  R_{shunt} & = .22 \ohm \\
+R_{load} &= R - .22\ohm  \\
+\newline \\
+R &=  7.47 \ohm \\
+
+\end{align}
+$$
+
+
+
+## Amplifier Design 2
+Considering An Instumentation Amplifier 
+![[Instrumentation Amp.excalidraw|900x200]] ^a111b9

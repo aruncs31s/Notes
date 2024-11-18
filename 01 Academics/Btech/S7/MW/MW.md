@@ -10,26 +10,16 @@ ExamDate: 2024-11-22
 ---
 
 # Micro Wave and Antenas
+- [[Module 1]]
 - [[MWA Series Exam 2]]
 - [[30-10-2024]]
+
+## Syllabus 
 
 > [!multi-column]
 >
 > > [!info]+ Module 1
-> > Basic antenna parameters:
-> >
-> > - gain
-> > - directivity,
-> > - beam width
-> > - and effective aperture calculations,
-> > - effective height,
-> > - wave polarization,
-> > - radiation resistance,
-> > - radiation efficiency,
-> > - antenna field zones.
-> > - Duality and Principles of reciprocity,
-> > - Helmholtz theorem (derivation required),
-> > - Field, directivity and radiation resistance of a short dipole and half wave dipole (far field derivation).
+> 
 >
 > > [!info]+ Module 5
 > > **Microwaves:**
@@ -95,6 +85,23 @@ ExamDate: 2024-11-22
 1. [[#Resonator|07.08.2024 9:05AM]]
 
 ## Module 1 
+
+**Syllabus**
+> Basic antenna parameters:
+> >
+> > - gain
+> > - directivity,
+> > - beam width
+> > - and effective aperture calculations,
+> > - effective height,
+> > - wave polarization,
+> > - radiation resistance,
+> > - radiation efficiency,
+> > - antenna field zones.
+> > - Duality and Principles of reciprocity,
+> > - Helmholtz theorem (derivation required),
+> > - Field, directivity and radiation resistance of a short dipole and half wave dipole (far field derivation).
+
 
 ```mermaid
 graph LR 

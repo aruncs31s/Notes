@@ -78,7 +78,15 @@ f(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty} F(\omega) e^{j\omega t} d
 \omega\
 $$
 
-#### Discrete Fourier Transform(DFT)
+### Discrete Time Fourier Transform
+
+The discrete time fourier transform of $x[n]$ is
+
+$$
+X(e^{j\omega}) = \sum_{n = -\infty} ^ {\infty} x[n] e^{-j \omega n}
+$$
+
+### Discrete Fourier Transform(DFT)
 
 - **DFT** of a finite duration sequence $x[n]$ is obtained by sampling **[[#Discrete-Time Fourier Transform|DTFT]]** at **N** equally spaced points over the interval $0\le \omega \le 2\pi$ with spacing $2\pi \over N$
 
