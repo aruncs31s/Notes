@@ -7,6 +7,7 @@ tags: []
 # Linux
 
 - [[Backup]]
+- [[Linux Customization]]
 - [[Tui Apps]]
 - [[Obsidian]]
 - [[Fixes]]

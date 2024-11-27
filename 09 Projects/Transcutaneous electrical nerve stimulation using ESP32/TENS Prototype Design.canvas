@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"925de5990edc712d","type":"text","text":"# TNES Prototype","x":-199,"y":-86,"width":300,"height":80},
+		{"id":"c7059c2e0f9b3b26","type":"file","file":"09 Projects/Transcutaneous electrical nerve stimulation using ESP32/TENS Design.excalidraw.md","x":340,"y":-500,"width":429,"height":414}
+	],
+	"edges":[
+		{"id":"a6579580a943977b","fromNode":"925de5990edc712d","fromSide":"right","toNode":"c7059c2e0f9b3b26","toSide":"left"}
+	]
+}

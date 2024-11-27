@@ -3,10 +3,13 @@ id: 1719156550-RSGW
 aliases:
   - ADC Module 5
 tags:
-  - communicaiton
+  - communicaiton,S5
 cssclasses:
   - wide-page
 ExamDate: 2024-12-02
+Attendance: 81%
+Internal: 30
+
 ---
 
 # Analog and Digital Communication

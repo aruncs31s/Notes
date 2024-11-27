@@ -11,5 +11,14 @@ Created : 2024-04-11 00:55
 ```css
 
 ```
+## XFCE4
+i have installed this and i need to remove it using `pacman -Rns`
+```bash
+compiz-core 
+vala-panel-appmenu
+appmenu-gtk-module
+
+
+```
 ## References
 1. 

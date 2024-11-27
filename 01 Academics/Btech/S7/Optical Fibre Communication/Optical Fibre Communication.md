@@ -3,8 +3,7 @@ ExamDate: 2024-11-26
 ---
 
 
-- [[Module_1]]
-## Module 1
+# Module 1
 
 #### Refractive Index
 - A ray of light travels more slowly in an optically dense medium
@@ -61,3 +60,14 @@ NA = \sqrt{n_1 ^ 2 - n_2 ^ 2 }
 }
 $$
 
+
+
+
+# Module 5
+- [ ] Wavelength Division Multiplexing (WDM)
+
+
+#### WDM 
+*Combining number of info carrying wavelength on the same fiber*
+- Used to increase the capacity 
+- 

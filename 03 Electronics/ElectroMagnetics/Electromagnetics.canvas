@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"be67f071c2994e8b","type":"file","file":"08 Science/Maths/Del Operator.md","x":319,"y":311,"width":400,"height":400},
+		{"id":"5f7a9caf042a573a","type":"file","file":"08 Science/Scientists/Maxwell.md","x":-240,"y":-220,"width":380,"height":400},
+		{"id":"dc9fc7e8f68473ae","type":"file","file":"08 Science/Maths/Vector Calculus/Divergence.md","x":300,"y":-220,"width":400,"height":400},
+		{"id":"7851ebd838895e52","type":"file","file":"08 Science/Maths/Vector Calculus/Curl.md","x":300,"y":-800,"width":400,"height":400},
+		{"id":"3022afcf1b56e099","type":"text","text":"$$\nc = \\frac{1}{\\sqrt{ \\mu_{0} \\epsilon_{0} }}\n$$","x":-177,"y":273,"width":250,"height":87},
+		{"id":"a752c2b3b8afb0df","x":-800,"y":-127,"width":420,"height":400,"type":"file","file":"03 Electronics/ElectroMagnetics/ElectroMagnetics.md"}
+	],
+	"edges":[
+		{"id":"6d721fd40be7f603","fromNode":"dc9fc7e8f68473ae","fromSide":"left","toNode":"5f7a9caf042a573a","toSide":"right"},
+		{"id":"6b37118d022e3095","fromNode":"dc9fc7e8f68473ae","fromSide":"bottom","toNode":"be67f071c2994e8b","toSide":"top"},
+		{"id":"becf93037ee952f0","fromNode":"7851ebd838895e52","fromSide":"left","toNode":"5f7a9caf042a573a","toSide":"right"},
+		{"id":"c8cabf6b45c561e8","fromNode":"5f7a9caf042a573a","fromSide":"bottom","toNode":"3022afcf1b56e099","toSide":"top","label":"Speed of Light"},
+		{"id":"6e999616d37bdfad","fromNode":"a752c2b3b8afb0df","fromSide":"right","toNode":"5f7a9caf042a573a","toSide":"left"}
+	]
+}

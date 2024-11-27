@@ -1,16 +1,21 @@
 ---
-id: FreshRss
-aliases: []
-tags: []
+aliases: 
+Date: 12-10-2024
 ---
 
+
+# FreshRSS
+
+## Contents
+
+
+1. Installing depentencies
 ```bash
-sudo pacman -Syu
-sudo pacman -S php php-fpm php-cgi php-gd php-intl php-tidy php-xmlrpc php-curl php-mbstring php-mcrypt php-pdo php-sqlite
+sudo apt install apache2 php libapache2-mod-php php-mysql php-xml php-curl php-mbstring git
 ```
-
-- /etc/nginx/config.d/freshrss.conf
-
+2. Goto `/var/www/html`
 ```bash
-server { listen 80; server_name freshrss.example.com; root /var/www/html/freshrss; index index.php; location / { try_files $uri /index.php$is_args$args; } location ~ \.php$ { include fastcgi.conf; fastcgi_pass unix:/run/php-fpm/php-fpm.sock; } }
+cd /var/www/html
+wget https://github.com/FreshRSS/FreshRSS/archive/latest.zip
+unzip Fresh*
 ```

@@ -55,7 +55,7 @@ Target Date: "2024-10-28"
 ---
 
 
-## Components Used
+### Components Used
 - There are 2 revisions for this project
   1. Using [[Electronics/Embedded Systems/Micro Controllers/ESP32/ESP32|ESP32]]
   2. Using [[ESP8266]]
@@ -85,3 +85,29 @@ Target Date: "2024-10-28"
 
 
 
+
+
+
+## Timeline 
+```timeline
+[line-3, body-1]
++ Start</br>31 Aug 2024 
++ Problem Statement
++ 
+- To measure environmental factors like rand fall , humidity , light intensity etc 
+- Created [Git repo](https://github.com/aruncs31s/GCEK_Weather_Station/) 
+- 
++ 2 Sep 2024 
++ Initial Aproach
++ Due to miss communication inital approach does not meat the requrement because i implemented [[ESP_NOW]] on to this but they were expecting a long range communication 
+
+
++ 10 Sep 2024 
++ Correction 
++ Misconsumption was corrected and working on a server hosted in the [[03 Electronics/Embedded Systems/Micro Controllers/ESP32/ESP32|ESP32]] which shows the battery voltage and the rain fall , humidity , wind direction wind speed 
+
++ Version 0.0.1 </br>12 Sep 2024 
++ Big Change
++ Now this version only shows the battery voltage more here [[Version 1]]
+- Also changed the project name to  **"Kannur Solar Battery Monitoring System** and [Git repo](https://github.com/aruncs31s/Kannur-Solar-Battery-Monitoring-System)
+```

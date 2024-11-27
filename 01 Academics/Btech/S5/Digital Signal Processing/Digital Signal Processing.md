@@ -3,6 +3,8 @@ id: Digital Signal Processing
 aliases: []
 tags: []
 ExamDate: "2024-11-28"
+Attendance: 86%
+Internal: 27
 ---
 
 # Digital Signal Processing

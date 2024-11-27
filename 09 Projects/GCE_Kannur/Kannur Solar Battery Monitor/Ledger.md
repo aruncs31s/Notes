@@ -4,7 +4,7 @@ Date: 23-10-2024
 tags:
   - money
 ---
-# Ledger
+# Ledger Kannur Solar Battery Meter
 - [[Documents]]
 #### 5-10-2024
 
@@ -33,3 +33,10 @@ tags:
 | 2 RMC (Connectors)      | 6        | 5                | 30         |
 | 3 Gxen Connectors       | 6        | 6                | 36         |
 |                         |          |                  |            |
+# TENS 
+
+#### 22-11-2024 
+
+- Travel Cost 2 * 23 
+
+
