@@ -16,6 +16,7 @@ Created : 2024-07-28 15:08
   - [[#Voltage Divider Rule]]
 - [[Analog Circuits]]
 - [[03 Electronics/Embedded Systems/Embedded Systems|Embedded Systems]]
+- [[Electronics Circuits]]
 ## Basics
 
 #### Flow of Energy
