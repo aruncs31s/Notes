@@ -13,7 +13,7 @@ Status:
 GithubLink:
 cssClasses: wide-page
 ---
-# Transcutaneous electrical nerve stimulation using ESP32
+# Transcutaneous electrical nerve stimulation 
 - [[Ledger]]
 - [[TENS Versions]]
 
@@ -39,7 +39,12 @@ cssClasses: wide-page
 
 + 22 Nov AN 
 + Purchase 
-+ 
++ Add something
+
++ Version 1</br>28 Nov 2024
++ Delay Circuit and Inverter 
++ New Version ![[Tens Version 1.excalidraw]] Contains an inverter circuit and a delay control mechanism , it is hard to control the frequency output of the overall circuit or the output of the transformer , instead we can control the power to the inverter circuit using a [[MonoStable Multi-Vibrator]] and use a potentiometer to control its duration and frequency.
+
 ```
 
 

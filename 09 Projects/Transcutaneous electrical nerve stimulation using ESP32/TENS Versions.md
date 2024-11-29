@@ -23,6 +23,19 @@ Date: 23-11-2024
 ## Version 1 
 In this version i am planing to use mosquito bat circuit 
 
+![[Tens Version 1.excalidraw|900x300]]
+#### Inverter Circuit
+![[Inverter Circuit.excalidraw]]
+
+#### Duration Circuit 
+![[Duration Control.excalidraw]]
+ 
+| Components  | Value |
+| ----------- | ----- |
+| Rb          | 200k  |
+| Transformer | x:x   |
+
+
 
 
 #### References

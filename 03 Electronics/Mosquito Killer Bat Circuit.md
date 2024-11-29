@@ -4,7 +4,6 @@ aliases: []
 tags: []
 Date: "28-11-2024"
 ---
-	
 # Mosquito Killer Bat Circuit
 
 The Mosquito killer bat uses a single 4V battery to achieve really high output voltage , it is an inverter which uses a high frequency(~44Khz) transformer to conver 4 V to ? 600V ?
