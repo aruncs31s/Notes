@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"6ffe5d7a9380f3e1","x":460,"y":-612,"width":972,"height":512,"type":"group","label":"Speech"},
+		{"id":"b76b62e20bb41a40","x":-720,"y":-100,"width":631,"height":432,"type":"text","text":"![[Smart Watch for Ladies Protection|Smart Watch]]"},
+		{"id":"ee425a9f6135af69","x":0,"y":-400,"width":400,"height":400,"type":"file","file":"09 Projects/Smart Watch/Drawings/Initial Design Smart Watch.excalidraw.md"},
+		{"id":"63b3968dff2ff444","x":480,"y":-560,"width":440,"height":440,"color":"2","type":"text","text":"![[Smart Watch Versions#SOS Module]]"},
+		{"id":"9187ab2c34636116","x":1012,"y":-592,"width":400,"height":120,"color":"2","type":"text","text":"## Speech recognition"},
+		{"id":"64195b28eec49a92","x":480,"y":-25,"width":428,"height":283,"type":"text","text":"\n![[Smart Watch Versions#Heart Rate Monitoring]]"},
+		{"id":"864eed2a6dab471b","type":"text","text":"## Push Button","x":1012,"y":-460,"width":400,"height":120,"color":"2"},
+		{"id":"719ca3246cbd0a19","x":1580,"y":-280,"width":250,"height":60,"type":"text","text":"### SOS Message"}
+	],
+	"edges":[
+		{"id":"73d3f93b9d3db30b","fromNode":"b76b62e20bb41a40","fromSide":"right","toNode":"ee425a9f6135af69","toSide":"left"},
+		{"id":"07466d935c5fe090","fromNode":"ee425a9f6135af69","fromSide":"right","toNode":"63b3968dff2ff444","toSide":"left"},
+		{"id":"6b9ae7b570ba88b7","fromNode":"63b3968dff2ff444","fromSide":"right","toNode":"864eed2a6dab471b","toSide":"left"},
+		{"id":"e44cabfbc4847133","fromNode":"63b3968dff2ff444","fromSide":"right","toNode":"9187ab2c34636116","toSide":"left"},
+		{"id":"fa8ee5f4139bbe6c","fromNode":"864eed2a6dab471b","fromSide":"right","toNode":"719ca3246cbd0a19","toSide":"left"},
+		{"id":"3beb80ad624ba558","fromNode":"9187ab2c34636116","fromSide":"right","toNode":"719ca3246cbd0a19","toSide":"left"},
+		{"id":"fd2718a0e4d6994b","fromNode":"ee425a9f6135af69","fromSide":"right","toNode":"64195b28eec49a92","toSide":"left"},
+		{"id":"d446406febbc4452","fromNode":"64195b28eec49a92","fromSide":"right","toNode":"719ca3246cbd0a19","toSide":"left"}
+	]
+}
