@@ -18,6 +18,9 @@ cssclasses:
 
 # Smart Watch for Ladies  Protection
 - [[Smart Watch Versions]]
+- [[Smart Watch Canvas.canvas|Smart Watch Canvas]]
+- [[Initial Design Smart Watch.excalidraw|Initial Drawing]]
+- [[Initial Design Smart Watch Prototype.excalidraw|Prototype]]
 
 ```timeline
 [line-3, body-2]
