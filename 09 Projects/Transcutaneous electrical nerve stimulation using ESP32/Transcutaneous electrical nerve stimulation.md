@@ -12,6 +12,7 @@ Status:
   Completed: false
 GithubLink:
 cssClasses: wide-page
+cssClass: image-gallery
 ---
 # Transcutaneous electrical nerve stimulation 
 - [[Ledger]]
@@ -41,10 +42,27 @@ cssClasses: wide-page
 + Purchase 
 + Add something
 
-+ Version 1</br>28 Nov 2024
++ Modules</br>28 Nov 2024
 + Delay Circuit and Inverter 
 + New Version ![[Tens Version 1.excalidraw]] Contains an inverter circuit and a delay control mechanism , it is hard to control the frequency output of the overall circuit or the output of the transformer , instead we can control the power to the inverter circuit using a [[MonoStable Multi-Vibrator]] and use a potentiometer to control its duration and frequency.
 
++ Verison 0.1.1</br> 5 Dec 2024 
++ First Prototype
++ ![[version 0.1.0.canvas|version 0.1.0]]
+![[Tens Device.png]]
+
+
+> [!multi-column]
+>
+>>![[Astable.png]]
+>
+>>![[Monostable.png]]
+
+> [!multi-column]
+>
+>>![[Inverter.png]]
+>
+>>![[Power Supply.png]]
 ```
 
 

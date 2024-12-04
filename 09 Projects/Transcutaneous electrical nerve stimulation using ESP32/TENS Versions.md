@@ -20,10 +20,10 @@ Date: 23-11-2024
 | Battery Management System<br> | 40/-<br>     |
 | Total                         | 1040/-       |
 
-## Version 1 
+## Version 0.1.0
 In this version i am planing to use mosquito bat circuit 
 
-![[Tens Version 1.excalidraw|900x300]]
+![[Tens Version 0.1.0.excalidraw|900x300]]
 ### Inverter Circuit
 ![[Inverter Circuit.excalidraw]]
 
@@ -32,8 +32,29 @@ In this version i am planing to use mosquito bat circuit
 
 #### Design 
 
+Required Duration : 
 
- 
+![[555#^aeeb05]]
+
+Using this relation to obtain 1seconds to 30 seconds duration 
+
+$$
+\begin {align}
+30 \text{ sec} &= 1.1 R \times C \\
+\text{let C = 0.01uF} \\
+R &= \frac{30}{1.1 \times 0.01 \times 10^{-6} } = 2.727 \times 10^{7}K \ohm \\
+\text{the resistance value is too high so } \\
+\text{taking C = 680 uF} \\
+R &= \frac{30}{1.1 \times 680 \times 10^{-6}} = 40.1K\ohm
+\end{align}
+$$
+*we can use 100k pot to adjust an obtain duration 30sec and 1 sec*
+
+### Astable Multivibrator 
+
+#### Design 
+Required Freq : $1 Hz \text{ to } 50 Hz$
+
 | Components  | Value |
 | ----------- | ----- |
 | Rb          | 200k  |
