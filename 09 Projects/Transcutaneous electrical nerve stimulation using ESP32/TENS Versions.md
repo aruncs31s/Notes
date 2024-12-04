@@ -20,10 +20,10 @@ Date: 23-11-2024
 | Battery Management System<br> | 40/-<br>     |
 | Total                         | 1040/-       |
 
-## Version 1 
+## Version 0.1.0
 In this version i am planing to use mosquito bat circuit 
 
-![[Tens Version 1.excalidraw|900x300]]
+![[Tens Version 0.1.0.excalidraw|900x300]]
 ### Inverter Circuit
 ![[Inverter Circuit.excalidraw]]
 
