@@ -12,8 +12,8 @@ cssclasses:
 - [[WLAN In MATLAB]]
 - 
 ## **Tasks**
-1. [ ] Defining the requirements 
-2. [ ] Choosing a good Modulation scheme 
+1. [x] Defining the requirements ✅ 2024-12-09
+2. [x] Choosing a good Modulation scheme ✅ 2024-12-09
 3. [ ] Designing Transmitter and Receiver in GNU Radio 
 4. [ ] Measuring SNR and BER to evaluate the performance 
 5. [ ] Optimization 
