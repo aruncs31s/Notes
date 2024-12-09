@@ -4,7 +4,10 @@ aliases: []
 tags: []
 ---
 
-#### Analog Interfacing
+# Analog Interfacing
+- [[#Introduction]]
+- [[#Programming]]
+This is same for [[ESP32]] and [[ESP8266]] as well as the [[Arduino]] with only change is being `ADC_MAX` for `ESP8266` and `ESP32` is $2^{32} -1$
 
 > [!blank|right-small]
 > ![[esp32 non linear.excalidraw]]
@@ -18,21 +21,25 @@ tags: []
 analogRead(pin_number);
 ```
 
-### Usefull Functions
 
-1. analogReadMilliVolts(pin)
+## Programming
+
+1. `analogReadMilliVolts(_pin)`
 
 ```c
 analogReadMilliVolts()
 ```
 
+
+</br>
+
+
 > [!float|right-small] ADC2
 > **ADC2** can't be used while using wifi
 > [25,26,14,12,13,04,02,15]
-
 > [!blank|left-small] > ![](https://lastminuteengineers.com/wp-content/uploads/iot/ESP32-ADC-Pins.png)
 
-- Has 2 12-bit SAR ADCs {ADC1 , ADC2}
+- Has 2 12-bit SAR ADCs {ADC1 , ADC2} but the ADC2 is not accessible when  using wifi-features 
 - ADC will have a defined resolution and a reference voltage which is usually the supply voltage
 - Maximum Possible Value
 

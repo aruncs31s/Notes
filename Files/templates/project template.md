@@ -11,6 +11,7 @@ Status:
   Working_ON: true
   Completed: false
 GithubLink:
+cssClasses: wide-page
 ---
 # {{title}}
 

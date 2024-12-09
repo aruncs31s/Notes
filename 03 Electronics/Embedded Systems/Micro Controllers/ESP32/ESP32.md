@@ -11,6 +11,7 @@ cssclasses:
 
 - [Introduction](#introduction)
 - [Programming](#programming)
+  - [[Analog Interfacing]]
   - [ESP IDF](./ESP_IDF.md)
   - [ADC](./ESP-ADC.md)
   - [WiFi Programming](./programming/WiFi%20Programming.md)
@@ -19,10 +20,12 @@ cssclasses:
   - [ESP-NOW](./ESP-NOW.md)
   - [Interrupt Programming](./programming/Interrupt%20Programming.md)
   - [ESP32 Web Programming|Web Programming](./programming/Web%20Programming.md)
+  - [[ESP32 PWM|PWM]]
 
 # Introduction
 
-![](https://lastminuteengineers.com/wp-content/uploads/iot/ESP32-Pinout.png)
+> [!blank|right-small]
+> ![[esp32_image.png]]
 
 - Built with TSMC low-power 40 nm technology
 - Designed to achieve best power and RF Performance?
@@ -56,3 +59,5 @@ cssclasses:
 - [ESP-NOW](./ESP-NOW.md)
 - [Interrupt Programming](./programming/Interrupt%20Programming.md)
 - [ESP32 Web Programming|Web Programming](./programming/Web%20Programming.md)
+
+  - [[ESP32 PWM|PWM]]

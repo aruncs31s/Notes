@@ -86,7 +86,7 @@ Rain Fall ^UBNorBod
 Top View ^CwtrTO5l
 
 ## Embedded Files
-5c4e6605f4be7ba93e8fb94d90387c461563454f: [[03 Electronics/Embedded Systems/Micro Controllers/ESP32/image.png]]
+5c4e6605f4be7ba93e8fb94d90387c461563454f: [[esp32_image.png]]
 
 %%
 ## Drawing

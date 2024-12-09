@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"ca0df9b2bdd22b9c","type":"file","file":"03 Electronics/Embedded Systems/Micro Controllers/esp8266.png","x":360,"y":-380,"width":198,"height":399},
+		{"id":"b625daa9a54042e7","type":"text","text":"# ESP32","x":-300,"y":-100,"width":260,"height":97},
+		{"id":"3561a706984a4d68","type":"file","file":"03 Electronics/Embedded Systems/Micro Controllers/ESP32/esp32_image.png","x":360,"y":100,"width":192,"height":400},
+		{"id":"93e8f09eaa895aa4","x":-165,"y":180,"width":250,"height":60,"type":"text","text":"## Features"},
+		{"id":"ad027704e08013c9","x":-920,"y":210,"width":495,"height":310,"type":"text","text":"## Programming\n![[03 Electronics/Embedded Systems/Micro Controllers/ESP32/ESP32#Programming|ESP32]]"}
+	],
+	"edges":[
+		{"id":"7962597d1eb7007a","fromNode":"b625daa9a54042e7","fromSide":"right","toNode":"ca0df9b2bdd22b9c","toSide":"left","label":"8266"},
+		{"id":"1725b41470bd0b4b","fromNode":"b625daa9a54042e7","fromSide":"right","toNode":"3561a706984a4d68","toSide":"left","label":"Devkit"},
+		{"id":"b3fc11467a22e77e","fromNode":"b625daa9a54042e7","fromSide":"bottom","toNode":"ad027704e08013c9","toSide":"top"},
+		{"id":"4f44d94c14e96b7a","fromNode":"b625daa9a54042e7","fromSide":"bottom","toNode":"93e8f09eaa895aa4","toSide":"top"}
+	]
+}

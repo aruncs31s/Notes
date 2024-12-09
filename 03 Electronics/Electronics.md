@@ -14,6 +14,7 @@ Created : 2024-07-28 15:08
     - [[#In Series]]
     - [[#In parallel]]
   - [[#Voltage Divider Rule]]
+- [[Capacitor]]
 - [[Analog Circuits]]
 - [[03 Electronics/Embedded Systems/Embedded Systems|Embedded Systems]]
 - [[Electronics Circuits]]
