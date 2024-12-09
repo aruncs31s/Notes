@@ -10,6 +10,7 @@ GithubLink: https://github.com/aruncs31s/Amplifier-Circuit-For-Side-Channel-DPA-
 Status:
   Completed: false
   Working_ON: true
+cssClasses: wide-page
 ---
 
 # Side Channel Attack Current Monitor
