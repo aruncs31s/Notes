@@ -1,15 +1,14 @@
 ---
 id: TENS Versions
-aliases: 
+aliases: []
 tags:
   - Regular_Note,
 Date:
-  Created: 08-12-2024
-cssclasses:
-  - wide-page
+  Created: "08-12-2024"
 Status:
   Completed: false
-GithubLink:
+cssclasses:
+  - wide-page
 ---
 
 # TENS Versions
@@ -83,21 +82,37 @@ Required Freq : $1 Hz \text{ to } 50 Hz$
 
 The [[#Version 0.1.0]] has severe issues that , when the transformer is on it messes up the whole circuit.</br> So going to use the Arduino instead of the [[555]] timer
 
-### Logic 
-- The $\micro C$ will control the output , ie turn on and off the transformer 
-	- **Required frequency** : *2 to 105Hz* 
+### Components Used
+
+| Name        | Cost   |
+| ----------- | ------ |
+| ESP8266     | 300/-  |
+| Transformer | (90- ) |
+| IRF9640     | 45/-   |
+
+| Push buttens
+
+### Logic
+
+- The $\micro C$ will control the output , ie turn on and off the transformer
+  - **Required frequency** : _2 to 105Hz_
+  - **Required Time Delay** : 1 to 60 Seconds
+
 ```cpp
 digitalWrite(pin,HIGH);
 delay(duration)
 digitalWrite(pin,LOW);
 delay(duration)
 ```
-Here `ON time == OFF time` gives 50% duty Cycle 
+
+Here `ON time == OFF time` gives 50% duty Cycle
+
 ```python
 required_delay = (2,105)
 required_delay_in_ms = required_delay[0] * 1000 , required_delay[1] * 1000
 print(required_delay_in_ms)
 ```
+
 ### Coding
 
 ```c
@@ -157,6 +172,80 @@ Serial.println("Current Delay : " + String(current_delay));
 }
 ```
 
+```cpp
+/* Final Code
+* Date : 2024-12-09
+*/
+#include <stdint.h>
+#include <stdlib.h>
+
+#define ADC_MAX 1023
+
+// Requirements Definitions
+const uint8_t required_delay[] = {1, 60}; // Min Max
+const uint8_t required_freq[] = {3, 105}; // 3 to 105 Hz
+
+// Pins Definitions
+
+const uint8_t ADC_PIN = A0;
+const uint8_t FREQUENCY_CHANGE_PIN = D1;
+const uint8_t OUTPUT_PIN = D2;
+const uint8_t RESET_PIN = D3;
+bool reset = false;
+
+// To store the delay  and frequency
+uint16_t current_delay = 1; // To store the delay
+uint8_t current_freq = 1;   // To store the frequency
+
+void get_delay(uint16_t *_current_delay) {
+  uint16_t _raw_adc_value = analogRead(ADC_PIN);
+  *_current_delay = (_raw_adc_value / 17) * 1000; // 60 / 1023(adc_max)  = ~17
+  Serial.println("delay changed to : " + String(*_current_delay));
+}
+void IRAM_ATTR change_freq() {
+  Serial.println("Changing Frequency");
+  if (current_freq > required_freq[1]) {
+    current_freq = required_freq[0];
+  }
+  current_freq += 2;
+  Serial.println("Frequency Changed to : " + String(current_freq));
+}
+void IRAM_ATTR do_reset() {
+
+  reset = reset ^ 1;
+  get_delay(&current_delay);
+
+  Serial.println("Resetting" );
+}
+void setup() {
+  Serial.begin(9600);
+  pinMode(OUTPUT_PIN, OUTPUT);
+  pinMode(FREQUENCY_CHANGE_PIN, INPUT_PULLUP);
+  pinMode(RESET_PIN, INPUT_PULLUP);
+  attachInterrupt(FREQUENCY_CHANGE_PIN, change_freq, FALLING);
+  attachInterrupt(RESET_PIN, do_reset, FALLING);
+  pinMode(ADC_PIN, INPUT);
+  get_delay(&current_delay);
+}
+void loop() {
+  Serial.println("Current Delay " + String(current_delay));
+  delay(2000);
+  while (reset == 0) {
+  Serial.println("Inside While");
+  uint16_t step_delay = current_delay;
+  while (step_delay > 0) {
+  Serial.println("Step Delay : " + String(step_delay));
+    digitalWrite(OUTPUT_PIN, HIGH);
+    delay(1000 / (current_freq  *2));
+    digitalWrite(OUTPUT_PIN, LOW);
+    delay(1000 / ( current_freq *  2));
+    step_delay -= 1000 / (current_freq * 2);
+  }
+  reset = true;
+}
+}
+
+```
 
 #### References
 
