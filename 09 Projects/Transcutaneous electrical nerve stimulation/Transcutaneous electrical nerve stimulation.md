@@ -15,7 +15,7 @@ cssClasses: wide-page
 cssClass: image-gallery
 ---
 # Transcutaneous electrical nerve stimulation 
-- [[Ledger]]
+- [[09 Projects/GCE_Kannur/Kannur Solar Battery Monitor/Ledger]]
 - [[TENS Versions]]
 
 

@@ -33,7 +33,7 @@ cssclasses:
 - [[01 Academics/Btech/Projects/New Final Year Project/Constellation]]
 
 ## References
-- [[PySDR _ SDR and DSP using Python old]]
+- [[PySDR _ SDR and DSP using Python]]
 - [[SER Performance of Reed-Solomon Codes With QAM Modulation Scheme in AWGN Channel]]
 - [[Communication Simulation with Error Correcting Code using Matlab]]
 - [[Design and implementation of a prototype with a low-cost SDR platform for the next generation of maritime communications]]

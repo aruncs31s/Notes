@@ -10,7 +10,7 @@ tags:
 # AI Robot
 - [[Robot Design]]
 - [[AI Interactive Robot]] Design
-
+- [[Self Balancing]]
 ```tasks
 path includes 09 Projects/AI Robot 
 ```
@@ -33,5 +33,6 @@ path includes 09 Projects/AI Robot
 ## Story
 
 ## Members 
-1. Me
-2. [x] Find Her Name ✅ 2024-11-20 , Swathika
+1. Arun CS 
+2. 
+3. [x] Find Her Name ✅ 2024-11-20 , Swathika

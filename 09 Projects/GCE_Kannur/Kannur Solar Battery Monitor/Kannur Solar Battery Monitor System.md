@@ -10,7 +10,7 @@ Status: true
 Target Date: "2024-10-28"
 ---
 # Kannur Solar Battery Monitor System
-- [[Ledger]]
+- [[09 Projects/GCE_Kannur/Kannur Solar Battery Monitor/Ledger]]
 - [[#Components Used]]
 - [[#3D Printing The case]]
 - [[#Diagram]]
