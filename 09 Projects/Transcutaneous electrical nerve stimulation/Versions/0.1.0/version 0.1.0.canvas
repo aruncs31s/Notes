@@ -1,0 +1,41 @@
+{
+	"nodes":[
+		{"id":"a87b207de1b61e49","type":"group","x":2900,"y":-1380,"width":1040,"height":1081,"label":"TENS Modules"},
+		{"id":"14d5fbe5abb1d59d","type":"group","x":660,"y":-384,"width":1650,"height":424,"label":"Circuit"},
+		{"id":"e5453581ddbe01bd","type":"text","text":"## Circuit\n### Specs\n\n","x":360,"y":-140,"width":200,"height":220},
+		{"id":"54847ef752ad50e2","type":"text","text":"### Switch","x":1115,"y":-248,"width":137,"height":71},
+		{"id":"6265a9cdf9efbbbe","type":"text","text":"### Switch","x":680,"y":-262,"width":163,"height":58},
+		{"id":"9d7d21b3593befea","type":"file","file":"09 Projects/Transcutaneous electrical nerve stimulation/Versions/Tens Version 0.1.0.excalidraw.md","x":1122,"y":-1040,"width":1478,"height":521},
+		{"id":"493478a955c8502c","type":"file","file":"09 Projects/Transcutaneous electrical nerve stimulation/attachments/Astable.png","x":2920,"y":-1040,"width":400,"height":292},
+		{"id":"0b59d281c6086d21","type":"file","file":"09 Projects/Transcutaneous electrical nerve stimulation/attachments/Monostable.png","x":2920,"y":-1360,"width":400,"height":263},
+		{"id":"26b01c3d901814e7","type":"file","file":"09 Projects/Transcutaneous electrical nerve stimulation/attachments/Inverter.png","x":2920,"y":-673,"width":400,"height":354},
+		{"id":"4e762d4f7b7d6b4b","type":"file","file":"09 Projects/Transcutaneous electrical nerve stimulation/attachments/Power Supply.png","x":3520,"y":-1003,"width":400,"height":219},
+		{"id":"2c8ff4c6f22cc9b4","type":"file","file":"09 Projects/Transcutaneous electrical nerve stimulation/attachments/Tens Device.png","x":1122,"y":-1800,"width":1484,"height":608},
+		{"id":"a19faa14717bc27c","type":"text","text":"#### Power","x":1122,"y":-364,"width":123,"height":36},
+		{"id":"185760a64d55242a","type":"text","text":"### Astable Multivibrator","x":1308,"y":-263,"width":199,"height":80},
+		{"id":"ac296e9e73d15d8d","type":"text","text":"### Inverter","x":1720,"y":-265,"width":199,"height":80},
+		{"id":"70b85e5a9472af52","type":"text","text":"#### Electrod 1","x":2040,"y":-295,"width":250,"height":60},
+		{"id":"99a160b1cd8ba2c7","type":"text","text":"#### Electrod 2\n","x":2040,"y":-183,"width":250,"height":60},
+		{"id":"2bc0875562810266","type":"text","text":"# Version 0.1.0","x":-9,"y":-21,"width":250,"height":60},
+		{"id":"b29b502dbee5c7ef","type":"text","text":"### Monostable Multivibrator","x":923,"y":-84,"width":199,"height":109}
+	],
+	"edges":[
+		{"id":"32d9c22f6908bd76","fromNode":"2bc0875562810266","fromSide":"right","toNode":"e5453581ddbe01bd","toSide":"left"},
+		{"id":"9a3180712168abe3","fromNode":"e5453581ddbe01bd","fromSide":"right","toNode":"6265a9cdf9efbbbe","toSide":"left"},
+		{"id":"74134aa4fc394483","fromNode":"6265a9cdf9efbbbe","fromSide":"right","toNode":"b29b502dbee5c7ef","toSide":"left","label":"Trigger"},
+		{"id":"06e99bf530cad62c","fromNode":"b29b502dbee5c7ef","fromSide":"right","toNode":"54847ef752ad50e2","toSide":"bottom","label":"3.2 Second Pulse"},
+		{"id":"0b53f71f42158e0f","fromNode":"54847ef752ad50e2","fromSide":"right","toNode":"185760a64d55242a","toSide":"left","label":"EN"},
+		{"id":"128ad7c80adfdbc3","fromNode":"a19faa14717bc27c","fromSide":"bottom","toNode":"54847ef752ad50e2","toSide":"top","label":"Power Supply"},
+		{"id":"5b48a447517bff32","fromNode":"185760a64d55242a","fromSide":"right","toNode":"ac296e9e73d15d8d","toSide":"left","label":"Frequency\nControl"},
+		{"id":"5a5464fca7220796","fromNode":"ac296e9e73d15d8d","fromSide":"right","toNode":"70b85e5a9472af52","toSide":"left"},
+		{"id":"8b5880cf98a88c9e","fromNode":"ac296e9e73d15d8d","fromSide":"right","toNode":"99a160b1cd8ba2c7","toSide":"left"},
+		{"id":"f17b8b57aa571314","fromNode":"14d5fbe5abb1d59d","fromSide":"top","toNode":"9d7d21b3593befea","toSide":"bottom"},
+		{"id":"ec6340c7496ae40a","fromNode":"9d7d21b3593befea","fromSide":"right","toNode":"493478a955c8502c","toSide":"left"},
+		{"id":"0ac0d870cc6adde8","fromNode":"9d7d21b3593befea","fromSide":"right","toNode":"0b59d281c6086d21","toSide":"left"},
+		{"id":"ecef7a188664239e","fromNode":"9d7d21b3593befea","fromSide":"right","toNode":"26b01c3d901814e7","toSide":"left"},
+		{"id":"6864abecd15fc085","fromNode":"4e762d4f7b7d6b4b","fromSide":"left","toNode":"493478a955c8502c","toSide":"right"},
+		{"id":"c317010b8519ba3f","fromNode":"4e762d4f7b7d6b4b","fromSide":"left","toNode":"0b59d281c6086d21","toSide":"right"},
+		{"id":"c1886ca53aba8fc8","fromNode":"4e762d4f7b7d6b4b","fromSide":"left","toNode":"26b01c3d901814e7","toSide":"right"},
+		{"id":"f139264bf8430732","fromNode":"a87b207de1b61e49","fromSide":"left","toNode":"2c8ff4c6f22cc9b4","toSide":"bottom"}
+	]
+}

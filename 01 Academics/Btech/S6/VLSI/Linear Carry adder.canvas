@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"id":"58831275c66628d5","type":"text","text":"##### Setup","x":-140,"y":-180,"width":250,"height":60},
+		{"id":"69bd2af7d63bfc6e","type":"text","text":"##### 0 carry propagation","x":-140,"y":-60,"width":250,"height":74},
+		{"id":"13a188c2e7ccb07b","type":"text","text":"##### 1 carry propagation","x":-140,"y":80,"width":250,"height":74},
+		{"id":"0cf44a2a8608f102","type":"text","text":"##### multiplexer","x":-140,"y":240,"width":250,"height":36},
+		{"id":"76bfd54b59a6d876","type":"text","text":"##### Sum Generation","x":-140,"y":340,"width":250,"height":60},
+		{"id":"140290b2889e4a90","type":"text","text":"###### CO,K-1","x":-520,"y":228,"width":200,"height":60},
+		{"id":"ca54eda6e1c26900","type":"text","text":"###### CO,K+3","x":240,"y":228,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"ddb457375c5d43d3","fromNode":"58831275c66628d5","fromSide":"right","toNode":"69bd2af7d63bfc6e","toSide":"right"},
+		{"id":"cd031e2199718468","fromNode":"13a188c2e7ccb07b","fromSide":"left","toNode":"0cf44a2a8608f102","toSide":"left","label":"Directly \nPass to \nMUX"},
+		{"id":"26b48e32013d727a","fromNode":"0cf44a2a8608f102","fromSide":"bottom","toNode":"76bfd54b59a6d876","toSide":"top"},
+		{"id":"eed9bb9a6ab344b5","fromNode":"140290b2889e4a90","fromSide":"right","toNode":"0cf44a2a8608f102","toSide":"left"},
+		{"id":"0364c06b4ab90f9d","fromNode":"0cf44a2a8608f102","fromSide":"right","toNode":"ca54eda6e1c26900","toSide":"left"},
+		{"id":"4232817269c089cb","fromNode":"69bd2af7d63bfc6e","fromSide":"right","toNode":"0cf44a2a8608f102","toSide":"right","label":"Directly \nPass to \nMUX"},
+		{"id":"6915b8a7ea7e164f","fromNode":"58831275c66628d5","fromSide":"left","toNode":"13a188c2e7ccb07b","toSide":"left"}
+	]
+}
