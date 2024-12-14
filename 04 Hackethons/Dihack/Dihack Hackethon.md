@@ -5,3 +5,6 @@ The first round involves solving a problem in tinkercad and submitting it online
  ![[Problem Statement#Problem Statements]]
 
 ## Round 2 
+**Requirements**:
+- Familiarize with **Atmega328**
+- **I2C** , **SPI** , **Timers**, **ADC**
