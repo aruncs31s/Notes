@@ -6,14 +6,16 @@ tags:
 ---
 # Question 3
 Construct a system for below home garden.
-![[Pasted image 20241014001145.png]]
-- **I2C Master** side controls the **water pump and water valves**.
+![[Pasted image 20241014001145.png]] ^c180d7
+- **I2C Master** side controls the **water pump and water valves**. ^8c7ea1
 - All I2C slaves are on **same bus**, collects Moisture data individually.
-
-- I2C master collects Moisture data every 5 seconds and runs the motor for 2 seconds if moisture level is low, enabling the required valve only.
+ ^39932c
+- I2C master collects Moisture data every 5 seconds and runs the motor for 2 seconds if moisture level is low, enabling the required valve only. ^7c2864
 
 >Water Pump- 28VDC, 500mA
 >Water Valve- 12VDC, 300mA (Normally closed.)
+
+^4d180f
 
 ## Answers 
 - [[Method 1]]

@@ -13,5 +13,12 @@ cssClasses: wide-page
 
 ![[Pasted image 20241212071348.png]]
 
+
+## Analog Interfacing 
+
+- `ADSC` set one to start the conversion 
+```c
+ADCSRA = 1 << ADSC;
+```
 ### References
 1.  “Make: AVR Programming by Elliot Williams (MAKE). Copyright 2014 Elliot Williams, 978-1-4493-5578-4.”
