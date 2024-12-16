@@ -1,18 +1,25 @@
 ---
+id: Make AVR Programming
+aliases: []
+tags: []
 Date:
-  Started: 2024-12-12
+  Started: "2024-12-12"
 cssClasses: wide-page
 ---
- Make: AVR Programming 
-**Requirement**: 
-1. BreadBoard 
+
+Make: AVR Programming
+**Requirement**:
+
+1. BreadBoard
+
 ### Atmega168
+
 **Specs**:
-1. **1kb** Ram -> use external Ram 
+
+1. **1kb** Ram -> use external Ram
 2. No **FPU**
 
 ![[Pasted image 20241212071348.png]]
-
 
 ```
 stty -F /dev/tty.iap ispeed 19200
@@ -60,8 +67,7 @@ int main(void) {
 }
 ```
 
-
-```
+````
 // ---------------
 //   Pin Defines
 // ---------------
@@ -153,8 +159,14 @@ int main(void) {
 #define I2C_SCL_PORT                PORTC
 #define I2C_SCL_PIN                 PINC
 #define I2C_SCL_DDR                 DDRC
-```
-### References
 
+## Analog Interfacing
+
+- `ADSC` set one to start the conversion
+```c
+ADCSRA = 1 << ADSC;
+````
+
+### References
 
 1.  “Make: AVR Programming by Elliot Williams (MAKE). Copyright 2014 Elliot Williams, 978-1-4493-5578-4.”

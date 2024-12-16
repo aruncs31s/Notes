@@ -3,9 +3,12 @@ aliases:
 Date: 31-10-2024
 ---
 # Question 1
-Your friend needs some help from you for creating a circuit **without the use of any micro-controllers** (can use simple ICs and basic electronic components). 
-- Whenever an obstacle is in a vicinity of 30 cm of [[HC-SR04]] sensor, run a motor for 5s and then stop.
-- The motor should only be retriggered when the existing obstacle is moved away from the vicinity of 30cm and re-enter the 30 cm range.
+Your friend needs some help from you for creating a circuit **without the use of any micro-controllers** (can use simple ICs and basic electronic components).  ^ef38c6
+- Whenever an obstacle is in a vicinity of 30 cm of [[HC-SR04]] sensor, run a motor for 5s and then stop. ^5bac7b
+- The motor should only be retriggered when the existing obstacle is moved away from the vicinity of 30cm and re-enter the 30 cm range. ^645359
+
+
+</br>
 
 ## Method 1
 
