@@ -9,7 +9,6 @@ tags: []
 ^e20f4d
 
 You are given two Arduino boards (Arduino A and Arduino B) that are communicating with each other using the [[I2C]] protocol. **Arduino A is acting as the master**, and **B acting as a I2C slave**.
-
 - Your task is to introduce a third Arduino (Arduino C) to intercept the I2C communication between Arduino A and Arduino B.
 - Arduino C should listen to the communication without disrupting the original data exchange, capture the messages being transmitted by Arduino A & B, and print the intercepted messages to the serial monitor of Arduino C.
 

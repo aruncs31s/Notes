@@ -10,19 +10,10 @@ Dihack is a electronic hackathon organized by **IEEE Kerala Section and Digital 
 + 
 + ![[Problem Statement]]
 **Problem 1**
-![[Question 1#^ef38c6]]
-![[Question 1#^5bac7b]]
-![[Question 1#^645359]]
-**Problem 2**
-![[Question 2#^423454]]
-![[Question 2#^5f61b8]]
-![[Question 2#^e44026]]
-**Problem 3**
-![[Question 3#^c180d7]]
-![[Question 3#^8c7ea1]]
-![[Question 3#^39932c]]
-![[Question 3#^7c2864]]
-![[Question 3#^4d180f]]
+![[Question 1#Question 1]]
+![[Question 2#Question 2]]
+![[Question 3#Question 3]]
+
 
 + 18-10-2024 </br>Solutions 
 + Problem 1
