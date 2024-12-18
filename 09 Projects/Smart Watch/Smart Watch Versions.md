@@ -6,6 +6,7 @@ tags:
 # Smart Watch Versions 
 
 ## Version 1 
+- [[Speech Processing]]
 
 **Requirements**:
 - SOS 
@@ -31,5 +32,3 @@ It consist of single button in which when it is pressed it will send signal to *
 - Sense if the heart beat is too high 
 	- if yes send the same SOS Message to -> **Police** and **Parents** 
 #### Components 
-
-**Microphone** :  [INMP441](https://amzn.in/d/3g1rlUh) -> 2267/- 
