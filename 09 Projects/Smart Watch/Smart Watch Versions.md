@@ -6,14 +6,15 @@ tags:
 # Smart Watch Versions 
 
 ## Version 1 
-
+- [[Speech Processing]]
+- [[#Sim800l]]
 **Requirements**:
 - SOS 
 - Trigger SOS When the button is not available using Heart Rate 
 
 ### Modules 
 1. SOS Module 
-
+2. [[#Sim800l]]
 
 
 #### SOS Module 
@@ -32,4 +33,6 @@ It consist of single button in which when it is pressed it will send signal to *
 	- if yes send the same SOS Message to -> **Police** and **Parents** 
 #### Components 
 
-**Microphone** :  [INMP441](https://amzn.in/d/3g1rlUh) -> 2267/- 
+### SIM800l
+[Source](https://lastminuteengineers.com/sim800l-gsm-module-arduino-tutorial/)
+![[Pasted image 20241220005901.png]]
