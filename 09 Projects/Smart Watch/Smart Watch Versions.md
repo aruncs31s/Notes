@@ -1,38 +1,51 @@
 ---
-Created: 29-10-2024
-tags:
-  - smart-watch
+Date:
+  Created: 2024-12-20
+cssclasses:
+  - wide-page
 ---
 # Smart Watch Versions 
+#### Requirements 
+1. [ ] Should contain a sos button 
+2. [ ] Should detect "HELP" command 
+3. [ ] Should Send location to the parents 
+4. [ ] Should measure the heart rate 
+## Version 1
 
-## Version 1 
-- [[Speech Processing]]
-- [[#Sim800l]]
-**Requirements**:
-- SOS 
-- Trigger SOS When the button is not available using Heart Rate 
+> [!multi-column]
+>
+>> [!blank]+ Use Case
+>> ![[Smart Watch PCB Board GPS.excalidraw]]
+>
+>> [!blank]+ Resources
+![[Smart Watch PCB Board GSM.excalidraw]]
+>
+>
 
-### Modules 
-1. SOS Module 
-2. [[#Sim800l]]
 
 
-#### SOS Module 
-It consist of single button in which when it is pressed it will send signal to **Police** and **Parents**
-- In worst case it should detect when the lady says **HELP!** and send corresponding signal?(location? ) to **Police** and **Parents**
 
-###### **Requirements**:
-- Send Message : -> `GSM` Module 
 
-#### Heart Rate Monitoring 
-- [[SEN-11574]]
-- Used PN **VP** -> 36
+### MIC Interfacing 
+![[Drawing 2024-12-20 22.44.37.excalidraw]]
 
-######  **Requirements**
-- Sense if the heart beat is too high 
-	- if yes send the same SOS Message to -> **Police** and **Parents** 
-#### Components 
+![[Pasted image 20241220232146.png]]
 
-### SIM800l
-[Source](https://lastminuteengineers.com/sim800l-gsm-module-arduino-tutorial/)
-![[Pasted image 20241220005901.png]]
+number of points/samples = **4581**
+
+> starting of help 
+$$
+(4581 / 3 ) \times 1.86 = 2840.22 \tag{1}
+$$
+let this be $\large s_{start}$
+> Ending of help
+>  
+$$
+\left( \frac{4581}{3} \right) \times 1.96 = 2992.92 \tag{2}
+$$
+
+let this be $S_{stop}$
+
+
+help took  $S_{stop} - S_{start} = 152$ samples 
+
