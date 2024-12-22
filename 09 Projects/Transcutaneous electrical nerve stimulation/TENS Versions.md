@@ -1,7 +1,9 @@
 ---
 aliases: 
 Date: 23-11-2024
+cssClasses: wide-page
 ---
+
 # TENS Versions
 ## Initial Design 
 ![[TENS Design.excalidraw|900x100]]
@@ -21,9 +23,22 @@ Date: 23-11-2024
 | Total                         | 1040/-       |
 
 ## Version 0.1.0
-In this version i am planing to use mosquito bat circuit 
+Version 1 -> 0.1.0 in this version i'm planning to use the monostable followed by astable , switch , inverter 
 
-![[Tens Version 0.1.0.excalidraw|900x300]]
+```mermaid 
+graph LR
+A[Monostobele] -- Reset Pin--> B[Astable] -->C[Mosfet SWITCH] --> D[Inverter]  
+```
+
+**Monostable Multivibrator**:  [[555]]
+>The monostable will provide a varying duration , it is best not exceed the duration morethan 10 second and less than one second 
+
+**Astable Multivibrator**: [[555]] , 
+>The [[Astable Multivibrator]] is used to control the turning on and turning of of the inverter , in theory the inverter will run only on the frequency which is able to work , which is the same frequency as the oscillation of the **feedback transistor** , so this **Astable Multivibrator** is not actually controlling the output frequency of the transformer which is high voltage , but rather turning on and of the transformer , which simulates the a low frequency turning on and off.
+
+**Inverter Circuit**: SMPS [[Transformer]]
+Here i have used a high frequency transformer from the [Mosquito Bat](https://www.electrothinks.com/2019/09/mosquito-killer-bat-circuit-working-explanation.html)
+ ![[Tens Version 0.1.0.excalidraw|900x300]]
 ### Inverter Circuit
 ![[Inverter Circuit.excalidraw]]
 
@@ -59,8 +74,6 @@ Required Freq : $1 Hz \text{ to } 50 Hz$
 | ----------- | ----- |
 | Rb          | 200k  |
 | Transformer | x:x   |
-
-
 
 
 #### References

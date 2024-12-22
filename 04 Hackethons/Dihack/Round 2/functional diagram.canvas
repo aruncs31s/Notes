@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"29f978a2ac2109f6","type":"text","text":"# main program","x":-160,"y":120,"width":260,"height":80},
+		{"id":"86e5164a97977b7c","type":"text","text":"## difference calculation","x":160,"y":220,"width":280,"height":80},
+		{"id":"18d7aa6342cd7bb7","type":"text","text":"## flow monitoring","x":160,"y":0,"width":280,"height":80},
+		{"id":"2ee8e5fd0b6ac122","type":"text","text":"## Fan Control","x":-155,"y":320,"width":250,"height":60},
+		{"id":"58917d6cf4fba18d","x":460,"y":130,"width":250,"height":60,"type":"text","text":"### control system"}
+	],
+	"edges":[
+		{"id":"fcae58da0e6b46e0","fromNode":"18d7aa6342cd7bb7","fromSide":"left","toNode":"29f978a2ac2109f6","toSide":"right"},
+		{"id":"6e02e34fdd5cdaa8","fromNode":"86e5164a97977b7c","fromSide":"left","toNode":"29f978a2ac2109f6","toSide":"right"},
+		{"id":"1c1fb3e0133d29ce","fromNode":"29f978a2ac2109f6","fromSide":"bottom","toNode":"2ee8e5fd0b6ac122","toSide":"top"},
+		{"id":"21a30d0c92982428","fromNode":"18d7aa6342cd7bb7","fromSide":"right","toNode":"58917d6cf4fba18d","toSide":"left"},
+		{"id":"0abdffc797f19b58","fromNode":"86e5164a97977b7c","fromSide":"right","toNode":"58917d6cf4fba18d","toSide":"left"},
+		{"id":"c6bbd054db122b45","fromNode":"58917d6cf4fba18d","fromSide":"left","toNode":"29f978a2ac2109f6","toSide":"right"}
+	]
+}
