@@ -17,17 +17,23 @@ cssclasses:
 ---
 
 # Smart Watch for Ladies Protection
-
 - [[Smart Watch Versions]]
-- [[Smart Watch Canvas.canvas|Smart Watch Canvas]]
-- [[Initial Design Smart Watch.excalidraw|Initial Drawing]]
-- [[Initial Design Smart Watch Prototype.excalidraw|Prototype]]
+- [[#Tasks]]
+- [[#Timeline]]
+---
+## Tasks
+![[Tasks]]
+
+## Timeline 
 
 ```timeline
 [line-3, body-2]
 + Started</br> 29th Nov 2024
 + Problem Statement
-+ **Requirements**
++ I have told to make a smart watch for ladies protection , which sends a sos message containing the current locatio to the parrent and the police in the following senarios 
+  - A button is pressed 
+  - Heart rate is unusual that normal and "HELP" command is detected
+ **Requirements**
 - Heart Beat -> to Sense
 - SOS Switch
 - Voice Detection
