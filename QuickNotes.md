@@ -11,8 +11,8 @@ o sudo dnf install ffmpeg gstreamer1-plugins-good gstreamer1-plugins-bad-free gs
 
 installed 04-12-2024 lxappearance gtk-chtheme qt4-qtconfig
 
-- [ ] meet amarnath after exam
-- [ ] Meet amarnath after exam
+- [x] meet amarnath after exam ✅ 2024-12-25
+- [x] Meet amarnath after exam ✅ 2024-12-25
 
 nump
 pip install numpy opencv-python opencv-contrib-python RPi.GPIO
