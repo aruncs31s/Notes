@@ -9,7 +9,6 @@ Date: 26-12-2024
 - the Digital signal has only 1 and 0 easy to differentiate 
 - Identifying analog signals is more difficult than identifying digital signals , even with the noise 
 ![[Drawing 2024-12-26 13.31.25.excalidraw]]
-
 ```mermaid
 graph LR
 A[Bits] --modulation-->B[Waveform]
@@ -38,7 +37,8 @@ A[Options] --> B[ID] --> python_file_name
 
 #### Complex 
 Gnu Radio always interprets comples signal as $e^{jw_{0}t}$ which causes a generation of $\cos(\omega_{0}t)$ as well as $j \sin (\omega_{0}t)$
-![[Drawing 2024-12-26 13.55.03.excalidraw]]
+![[realimg1.excalidraw]]
+
 
 ### Sampling 
 - [[Nyquist Sampling Theorem#Nyquist Sampling Theorem]]

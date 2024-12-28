@@ -4,16 +4,25 @@ aliases: []
 tags: []
 ---
 
-### Interfacing
+# Interfacing
 
+- [[#Sensors]]
 - [[#LDR Interfacing]]
 - [[#PIR Interfacing]]
 - [[#Servo Motor Interfacing]]
 - [[#Servo Motor Interfacing 2]]
 - [[#Ultrasonic Sensor Interfacing]]
 - [[#Light Intensity Sensor]] VEML7700
+- [[#SIM800L|SIM800L ,GSM Module]]
 
-#### LDR Interfacing
+## Sensors
+
+### LDR Interfacing
+
+LDR is basicly a photo sensitive resistor , ie it varies resistance according to the available light
+
+- Uses ADC
+- Use Voltage Devider
 
 ```c
 const int LDR_PIN = 36;
@@ -29,7 +38,7 @@ void loop() {
 
 ```
 
-#### PIR Interfacing
+### PIR Interfacing
 
 [Source](https://www.electronicwings.com/esp32/pir-sensor-interfacing-with-esp32)
 
@@ -64,9 +73,7 @@ void loop() {
 }
 ```
 
-- [ ] ***
-
-#### Servo Motor Interfacing
+### Servo Motor Interfacing
 
 ```c
 /*********
@@ -95,7 +102,7 @@ void loop() {
 
 ```
 
-#### Servo Motor Interfacing 2
+### Servo Motor Interfacing 2
 
 #TestCode
 [Source](https://chat.openai.com/)
@@ -190,9 +197,9 @@ void loop() {
 ---
 
 #### VEML7700 Light Sensor
->[!blank|right-small]
->![[Pasted image 20241006204642.png]]
 
+> [!blank|right-small]
+> ![[Pasted image 20241006204642.png]]
 
 - Connect Sensor's VCC to 3.3
 - Connect GND
@@ -200,9 +207,11 @@ void loop() {
 - Connect Sensor's SCL to ESP32's SCL
 
 **Dimensions**
+
 - 16.6mm x 16.5mm x 4.0mm
 
 #exampleCode
+
 ```c
 #include <Wire.h>
 #include "DFRobot_VEML7700.h"
@@ -223,4 +232,65 @@ void loop() {
   delay(200);
 }
 
+```
+
+### SIM800L
+
+```c
+#define BAUD_RATE 9600
+#define GSM_TX D5
+#define GSM_RX D6
+/* Source: https://lastminuteengineers.com/sim800l-gsm-module-arduino-tutorial/
+ */
+
+#include <Arduino.h>
+#include <SoftwareSerial.h>
+
+// #if defined(ARDUINO)
+SoftwareSerial gsmSerial(GSM_TX, GSM_RX); // 3 -> SIM800L Tx & 2 -> SIM800L Rx
+// #elif defined(ESP8266)
+// SoftwareSerial gsmSerial(D5, D6); // D5 -> SIM800L Tx & D6 -> SIM800L Rx
+// #endif
+
+void updateSerial() {
+  delay(500);
+  while (Serial.available()) {
+    gsmSerial.write(
+        Serial.read()); // Forward what Serial received to Software Serial Port
+  }
+  while (gsmSerial.available()) {
+    Serial.write(
+        gsmSerial
+            .read()); // Forward what Software Serial received to Serial Port
+  }
+}
+void setup() {
+  Serial.begin(9600);
+
+  // Start GSM Serial
+  gsmSerial.begin(9600);
+
+  Serial.println("Initializing...");
+  delay(1000);
+
+  gsmSerial.println(
+      "AT"); // Once the handshake test is successful, it will back to OK
+  updateSerial();
+
+  gsmSerial.println("AT+CMGF=1"); // Configuring TEXT mode
+  updateSerial();
+  gsmSerial.println(
+      "AT+CMGS=\"+917902504188\""); // change ZZ with country code and
+                                    // xxxxxxxxxxx with phone number to sms
+  updateSerial();
+  gsmSerial.print(
+      "Last Minute Engineers | lastminuteengineers.com"); // text content
+  updateSerial();
+  gsmSerial.write(26);
+}
+
+void loop() {
+  updateSerial();
+  delay(1000);
+}
 ```
