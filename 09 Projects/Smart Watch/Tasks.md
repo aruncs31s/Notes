@@ -11,6 +11,7 @@ kanban-plugin: board
 - [ ] Heart Sensor Interfacing
 - [ ] Parse GPS data and send it as SMS
 - [ ] Detect "HELP"
+- [ ] Raspberry pi Mic Interfacing
 
 
 ## Tasks Done

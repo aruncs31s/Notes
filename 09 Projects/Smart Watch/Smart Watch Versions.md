@@ -18,6 +18,8 @@ cssclasses:
 4. [ ] Should measure the heart rate
 
 ## Version 1
+![[Smart Watch.canvas|Smart Watch]]
+
 
 > [!multi-column]
 >

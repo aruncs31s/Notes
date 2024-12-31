@@ -1,4 +1,5 @@
 ---
+aliases: {Itc}
 ExamDate: 2024-12-31
 ---
 
@@ -9,7 +10,8 @@ ExamDate: 2024-12-31
 
 - [[Old_NOTES/Academics/Btech/S6/Information Theory And Coding/Module 1|Module 1]]
 - [[01 Academics/Btech/S6/Information Theory And Coding/Module 2|Module 2]]
-
+- [[Module 5]]
+- [[PYQ]]
 - Shannon Limit
 
 
