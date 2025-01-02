@@ -15,14 +15,14 @@ ExamDate: 2025-01-02
 
 
 ## Contents
-- [Module 1](Old_NOTES/Academics/Btech/S6/Embedded%20Systems/Embedded%20Systems.md#Module%201)
+- [[ES Module 1]]
 	- - [Module 1 Syllabus](Old_NOTES/Academics/Btech/S6/Embedded%20Systems/Embedded%20Systems.md#Module%201%20Syllabus)
 	- 
-- [[Old_NOTES/Academics/Btech/S6/ElectroMagnetics/Module 2/Module 2|Module 2]]
+- [[ES Module 2]]
 	- [[Academics/S6/Embedded Systems/Module 2/Serial Comm|Serial Communication]]
 	- [[Btech/S6/Embedded Systems/Files/Module 2/Memory|Memory]]
 	- [[Academics/S6/Embedded Systems/Module 2/I_O Devices|I_O Devices]]
-- [[Academics/S6/Embedded Systems/ES Module 3|Module 3]]
+- [[]|Module]]
 - [[Academics/S6/Embedded Systems/ES Module 5]]
 ## Concepts
 - [RTOS](Academics/S6/Embedded%20Systems/RTOS.md)

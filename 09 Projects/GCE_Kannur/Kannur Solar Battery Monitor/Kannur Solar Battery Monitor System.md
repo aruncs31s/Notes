@@ -28,6 +28,14 @@ Target Date: "2024-10-28"
 + October 2024  
 + Initial Solution 
 + The initial solution is to use a [[03 Electronics/Embedded Systems/Micro Controllers/ESP32/ESP32|ESP32]] which is a micro-controller , and utilize it [[analog_interfacing|Analog Interfacign]] capability to measure the voltage. But the problem is the **ESP32** can only be used to measure
++ 6 December 2024 
++ Got MIC Module 
++ Got [This MIC](https://amzn.in/d/6NxP8SB) from amazon , costing **149.00** 
++ 11 December 2024 
++ Got [This Jumper wires](https://amzn.in/d/bD7D3cX) ->  Costing 189.00
+and [This Pulse Heart Rate Sensor](https://amzn.in/d/8qyQaEn) -> 219.00
+
+
 ```
 **Aim**: 
 >**Revision 1**:

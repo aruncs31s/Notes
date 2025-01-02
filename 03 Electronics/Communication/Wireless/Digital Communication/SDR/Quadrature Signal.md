@@ -50,3 +50,5 @@ $$
 ![[Drawing 2024-12-26 01.45.05.excalidraw]]
 "If you have a single complex number, represented by a point on the complex plane, multiplying that number by j or by e jπ/2 will result in a new complex number that's rotated 90 o counterclockwise (CCW) on the complex plane"
 ![[Pasted image 20241226015603.png]]
+
+

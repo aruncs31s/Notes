@@ -52,5 +52,69 @@ Interrupt Handling is done by following stages
 5. **Restoring the processor state**: After handling the interrupt, the ISR restores the saved processor state, allowing the interrupted program to resume execution from the point where it was interrupted.
 
 
+
+
+
+### Memory
+
+the set of active locations is often called the working set
+```mermaid
+graph TB
+
+A[Memory]
+B[Cahe] 
+C[Main Memory]
+A --> B & C
+```
+#### Cache Memory 
+```mermaid
+graph LR
+L1_fast --> L2 --> L3 --> Main_Memory_slow
+```
+
+
+**Accessing model**
+
+```mermaid
+graph LR
+A[CPU]
+B[Cache]
+C[Cache Controller]
+D[Main Memory]
+
+A-->C 
+C-->A
+B -- Data --> C 
+C -- Address --> D 
+D -- Data --> C
+```
+
+The **cache controller** mediates between the CPU and the memory system comprised of the **main memory**. The cache controller sends a memory request to the cache and main memory. 
+```c
+if location in cache:
+	forward location.content --> CPU 
+	abort(main_mem_request)
+	return CACHE_HIT
+if not : 
+	controller.waite(){
+	main_memory.value --> CPU
+	}
+	return CHCHE_MISS
+```
+
+
+```mermaid
+graph TB
+A[Cache Miss]
+A --> B[Compulsory Miss] & C[Capacity Miss] & D[Conflict Miss]
+
+```
+**Compulsory Miss**: aka **Cold miss** occurs when first time a location is used 
+**Capacity Miss**: caused by too large working set
+**Conflict Miss**: when two locations map to the same location in the cache
+
+
+
+
 ## References
 1. 

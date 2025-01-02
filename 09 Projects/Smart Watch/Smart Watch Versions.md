@@ -18,6 +18,17 @@ cssclasses:
 4. [ ] Should measure the heart rate
 
 ## Version 1
+### Modules 
+1. MIC Module 
+![MIC Module ](https://m.media-amazon.com/images/I/61CBiwxtKQL._SX342_.jpg)
+
+
+2. Jumper Wires 
+![](https://m.media-amazon.com/images/I/71oTYNRzrZL._SX342_.jpg)
+3. Pulse sensor 
+![](https://m.media-amazon.com/images/I/517x272SrgL._SX342_.jpg)
+
+
 ![[Smart Watch.canvas|Smart Watch]]
 
 
@@ -176,7 +187,18 @@ void loop() {
       Serial.println(gps.location.lng(), 6);
 ```
 
-### MIC Interfacing
+
+
+### Speech Processing
+Going to use raspberry pi for now 
+```bash 
+nmap  10.42.0.1-255
+```
+- ip address of pi `10.42.0.122`
+- username `multimediaextension` <-- Shrink 
+- passwd `2xsp` <-- expand 
+
+#### MIC Interfacing
 
 ![[Drawing 2024-12-20 22.44.37.excalidraw]]
 

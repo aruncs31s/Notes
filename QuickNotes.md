@@ -28,3 +28,4 @@ https://docs.platformio.org/en/latest/core/installation/udev-rules.html
 
 
 https://community.platformio.org/t/upload-latest-build-without-a-compile-link/9520
+sudo pacman -S ffmpeg cairo pango pkg-config gcc

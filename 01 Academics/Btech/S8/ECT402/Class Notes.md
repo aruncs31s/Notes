@@ -7,6 +7,8 @@ Date:
 cssClasses: wide-page
 ---
 
+# Class Notes
+
 ### 2024-12-17
 
 - Multi carrier Modulation

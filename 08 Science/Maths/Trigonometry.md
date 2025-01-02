@@ -21,6 +21,19 @@ $$
 $$
    \cos\left(x+y\right) = \cos x \cos y - \sin x \sin y
 $$
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0, 4 * np.pi, 1000)
+y = np.cos(x + np.pi / 4)
+y2 = np.cos(x) * np.cos(np.pi / 4) - np.sin(x) * np.sin(np.pi / 4)
+plt.plot(x, y, "b-", label="cos(x + y)")
+plt.plot(x, y2, "r--", label="cos(x)cos(y) + sin(x)sin(y)")
+plt.legend()
+plt.grid(True)
+plt.show()
+```
 
 ### Properties
 1. $\sin(90-x) = \cos(x)$

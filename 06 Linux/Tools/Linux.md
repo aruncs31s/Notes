@@ -3,9 +3,8 @@ id: Linux
 aliases: []
 tags: []
 ---
-
 # Linux
-
+- [[Tools]]
 - [[Backup]]
 - [[Linux Customization]]
 - [[Tui Apps]]
@@ -26,12 +25,6 @@ Euler 40``
 - [Lyvi](https://ok100.github.io/lyvi/)
 
 6295
-
-#### Alacritty
-
-`C-p` : for file select helpful when editing and selecting files
-`A-c` : for navigating to directories
-
 ### Installed Depentencies
 
 ```bash
