@@ -5,7 +5,7 @@ Created : 2024-06-04 13:51
 ## Contents
 - [[#Syllabus]]
 ## Syllabus
-- [ ] [[Academics/S6/Embedded Systems/Module 2/Communication Device]]
+- [ ] [[Communication Device]]
 	- [ ] Serial Communication Standards and Devices - UART, HDLC and SPI.
 	- [ ] Serial Bus Protocols -I2C Bus, CAN Bus and USB Bus.
 	- [ ] Parallel communication standards ISA, PCI and PCI-X Bus

@@ -11,17 +11,17 @@ Created : 2024-06-04 16:14
 ## Contents
 
 - [[#Syllabus]]
-- [[Academics/S6/Embedded Systems/Module 3/Arm Architecture]]
+- [[Arm Architecture]]
 - [[ARM Assembly Language Programming]]
 - [[ARM Organization and Implementation]]
 -
 
 ## Syllabus
 
-1. [x] ARM Processor architecture ✅ 2024-06-04
+1. [ ] ARM Processor architecture
 
-   - [x] The Acorn RISC Machine. ✅ 2024-06-04
-   - [x] Architectural inheritance ✅ 2024-06-04
+   - [ ] The Acorn RISC Machine.
+   - [ ] Architectural inheritance
    - [ ] The ARM programmer's model
    - [ ] ARM development tools.
 
@@ -38,6 +38,8 @@ Created : 2024-06-04 16:14
    - [ ] ARM instruction execution
    - [ ] ARM implementation
    - [ ] The ARM coprocessor interface.
+
+
 
 ## References
 

@@ -9,6 +9,7 @@ tags: []
 Created : 2024-07-28 15:08
 
 - [[#Basics]]
+- [[#Energy]]
   - [[#Flow of Energy]]
   - [[#Resisters]]
     - [[#In Series]]
@@ -19,7 +20,19 @@ Created : 2024-07-28 15:08
 - [[Electronics Circuits]]
 ## Basics
 
-#### Flow of Energy
+## Energy
+
+![[energy_time.excalidraw]]
+$$
+V_{rms} = {Vp \over \sqrt{2}} \tag{1}$$
+accoring to equation 1 we can say  that
+$$
+V_{rms} = 330 \times 0.707 = 231 V
+$$
+
+
+
+### Flow of Energy
 
 There is a miss conception that the electrons flowing in the wire that carries the energy but in reality the `Electric` and `Magnetic field` that carries the energy.
 

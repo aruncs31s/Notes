@@ -19,11 +19,12 @@ ExamDate: 2025-01-02
 	- - [Module 1 Syllabus](Old_NOTES/Academics/Btech/S6/Embedded%20Systems/Embedded%20Systems.md#Module%201%20Syllabus)
 	- 
 - [[ES Module 2]]
-	- [[Academics/S6/Embedded Systems/Module 2/Serial Comm|Serial Communication]]
-	- [[Btech/S6/Embedded Systems/Files/Module 2/Memory|Memory]]
-	- [[Academics/S6/Embedded Systems/Module 2/I_O Devices|I_O Devices]]
+	- [[Serial Communication]]
+	- [[Memory|Memory]]
+	- [[I_O Devices|I_O Devices]]
 - [[]|Module]]
 - [[Academics/S6/Embedded Systems/ES Module 5]]
+- [[ES PYQ]]
 ## Concepts
 - [RTOS](Academics/S6/Embedded%20Systems/RTOS.md)
 - [Context Switching]()

@@ -1,5 +1,6 @@
 ### Contents 
 
+- [[Math Basics|Basics]]
 - [[Priliminary]]
 - [[Trigonometry]]
 - [[Logerithemic]]

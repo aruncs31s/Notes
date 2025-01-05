@@ -6,17 +6,17 @@ Created : 2024-06-05 13:25
 - [ ] Complex Systems and Microprocessors
 	- [x] Embedding Computers ✅ 2025-01-02
 	- [x] Characteristics of Embedded computing Applications, ✅ 2025-01-02
-	- [ ] Application of Microprocessors,
+	- [x] Application of Microprocessors,
 	- [ ] The Physics of Software,
 	- [ ] Challenges in Embedded Computing System,
 	- [ ] Characteristics and quality attributes of an embedded system,
 	- [ ] Performance in Embedded Computing
-- [ ] The Embedded System Design Process
-	- [ ] Requirements,
-	- [ ] Specification ,
-	- [ ] Architecture Design,
-	- [ ] Designing Hardware and Software Components ,
-	- [ ] System Integration.
+- [x] The Embedded System Design Process
+	- [x] Requirements,
+	- [x] Specification ,
+	- [x] Architecture Design,
+	- [x] Designing Hardware and Software Components ,
+	- [x] System Integration.
 - [ ] Formalisms for System Design
 	- [ ] Structural Description,
 	- [ ] Behavioral Description,
@@ -25,7 +25,7 @@ Created : 2024-06-05 13:25
 	- [ ] Different phases of EDLC, EDLC models
 
 
-#### Embedded System
+### Embedded System
 
 *It an Electro-mechanical which is a ==combination of software and hardware design(working together) to do a specific task==*
 *It is any device that includes a programmable computer but is not itself intended to be a general-purpose computer. Thus, a PC is not itself an embedded computing system, although PCs are often used to build embedded computing systems. But a fax machine or a clock built from a microprocessor is an embedded computing system.*
@@ -64,7 +64,7 @@ Embedded System that execute limited number of fixed tasks, because the tasks do
 7. Limited Observability and controllability.
 8. Restricted development environment
 
-#### Design Proccess
+### Design Process
 
 1. **Requirement Analysis**
 	1. Define the problem : Understand the needs and constrains of the project
@@ -104,6 +104,8 @@ Embedded System that execute limited number of fixed tasks, because the tasks do
 3. A design methodology makes it much easier for members of a design team to communicate. By defining the overall process, ==team members can more easily understand what they are supposed to do==,what they should receive from other team members at certain times, and what they are to hand off when they complete their assigned steps.
 *Since most embedded systems are designed by teams, coordination is perhaps the most important role of a well-defined design methodology**
 *
+
+
 
 
 ## References

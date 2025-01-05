@@ -34,11 +34,11 @@ cssclasses:
 
 > [!multi-column]
 >
-> > [!blank]+ Use Case
+> > [!blank]
 > > ![[Smart Watch PCB Board GPS.excalidraw]]
 >
-> > [!blank]+ Resources
-> > ![[Smart Watch PCB Board GSM.excalidraw]]
+> > [!blank]
+> > ![[Smart Watch PCdDirectionPin = 35;B Board GSM.excalidraw]]
 
 #### SIM800L Interfacing
 
@@ -233,6 +233,20 @@ help took $S_{stop} - S_{start} = 152$ samples
 sudo apt-get install libasound-dev
 # Fedora
 sudo dnf install portaudio-devel
+```
+
+
+### D1 Button Test 
+```c
+#include <Arduino.h>
+void setup() {
+  pinMode(D1, INPUT);
+  Serial.begin(9600);
+}
+void loop() {
+  Serial.println(digitalRead(D1));
+  delay(500);
+}
 ```
 
 ## Sajesh Kumar Sir Suggestions

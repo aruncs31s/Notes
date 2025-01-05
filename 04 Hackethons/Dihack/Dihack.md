@@ -3,7 +3,7 @@ cssClasses: wide-page
 ---
 # Dihack
 Dihack is a electronic hackathon organized by **IEEE Kerala Section and Digital Core Technologies** 
-
+``
 ```timeline
 [line-3, body-2]
 + Started</br> 11th October 2024

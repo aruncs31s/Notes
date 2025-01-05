@@ -1,14 +1,32 @@
+---
+aliases: 
+Date: 04-01-25
+---
 
-#### Topics
-- [Parity Bit]()
+# Parity
+Parity bits redendant  bits that are added to the data while transmission or storage.
+They are used in [[Serial Communication]] protocolls like [[03 Electronics/Embedded Systems/communication/UART|UART]] 
+## **Odd Parity**
+The total number of 1's in the code , including parity bit should be odd  
+
+```
+|<-Data Bits->|
+|1|0|1|1|0|0|1|1|
+              ^
+              |
+         Parity Bit
+```
+Here if we consider only the databits the total number of 1's is 4 , and if we are using the odd parity then the total number of 1's should be odd so `parity bit =1` making the total number of ones as **odd** 
 
 
-##### Parity Bit
-![[Academics/S6/Embedded Systems/Files/Images/Pasted image 20240311232123.png]]
-#eg
-- odd Parity
+```
+|<-Data Bits->|
+|1|1|0|1|0|1|1|0|
+              ^
+              |
+         Parity Bit
+```
+Here the total number of 1's in the data is odd so the **parity bit** is **0**
 
-![[Academics/S6/Embedded Systems/Files/Images/Pasted image 20240311232236.png]]
-![[Academics/S6/Embedded Systems/Files/Images/Pasted image 20240311232254.png]]
-- Even Parity
-![[Academics/S6/Embedded Systems/Files/Images/Pasted image 20240311232409.png]]
+## **Even Parity**
+The total number of 1's in the code including the parity bit should be even 

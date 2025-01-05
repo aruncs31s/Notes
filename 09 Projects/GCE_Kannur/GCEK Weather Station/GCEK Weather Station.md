@@ -182,3 +182,9 @@ Name: 7semi SHT40 Humidity and Temperature Sensor Probe I2C
 | Batter Monitor   | ADC 1          | 36         |
 | SHT40            | {VEML7700}     | SDA        |
 
+##### 
+- Light Sensor 
+SDA -> D2 
+SCL -> D1 
+
+- We
