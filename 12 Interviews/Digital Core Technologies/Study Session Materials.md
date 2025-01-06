@@ -112,7 +112,38 @@ or $\text{Potential} * \text{Current (integrated over time)}$
 **Voltage Source:** They regulate the output voltage 
 **Current Source:** They regulate the output current 
 
+**Q:** How the current source is limiting the current?
 
+
+### Resistance 
+Parameters when choosing  -> Tolerence,Power,Size,Cost 
+
+When current flows through it it there will be a voltage drop across it , The current flow causes heating up the resistor 
+### Capacitors
+Unit -> Farada
+Reactance/Impedence
+Params -> Voltage,Capacity,ESR,Size,Cost
+It does not allow suddent change in **voltage** across the capacitor.
+- It stores energy in electric field
+$$
+X_C = \frac{1}{2\pi f c}
+$$
+- When the frequency increases Reactance/Impedence decreases
+- That cause it to act as short circuit in high frequency 
+### Inductor
+Unit -> Henry
+Reactance/Impedance
+Param -> Tolerence,Current,ESR,Size,Cost,
+Inductor does not like sudden **change** in **Current** through it. 
+- Change in **current flow through** an inductor causes change in **Magnetic field** around it  , It oposes current by inducing a voltage around it.
+
+$$
+X_L = 2\pi fL
+$$
+- This is directly contredictory to the capacitor 
+- when the frequency increases the **Reactance/Impedance** also increases , causing to act as **open circuit** in high frequency and **short circuit in low frequency** 
+>[!Important] Inductor on Steady Currents 
+>Steady current does not effect the inductor , only the **change** in current that effects the inductor 
 
 
 

@@ -108,4 +108,63 @@ Hypothetical
 
 #### PathLoss , Shadowing , Doplar Shift
 
+
+### 06-01-25
+
+#### Path loss
+
+$$
+PL(dB) = 10 \log_{10} \left(\frac{4 \pi d}{\lambda}\right)^2
+$$
+- inv.prop Wavelength 
+
+#### Shadowing 
+Cause-> **Scattering**, **reflection**,and **diffration**  -> results in signal degredation
+eg: indor wifi signal cant penetrate through walls
+
+[[#Path loss]] & [[#Shadowing]] -> Large scale fading
+
+#### Multi path effect
+- [ ]
+- Due to reflections 
+- Causes: Fading , phase change 
+
+
+#### Diversity Techniques 
+- Used to compensate for fading channels 
+- implemented by using two or more receiving antenas,
+- done by transmitting ultiple copies 
+
+- [[#Space Diversity]]
+- [[#Freq Diversity]]
+- [[#Angle Diversity]]
+- [[#Time Diversity]]
+
+##### Space Diversity
+```mermaid
+graph LR
+Tx -- path --> Rx
+```
+- Multiple antennas are used to receive **Rx**
+
+##### Freq Diversity 
+- Some freq. fading will be more 
+- Same info send using multiple carriers 
+- ie $s_1(t)$ and $s_2(t)$ will carry the same info.
+
+
+##### Angle Diversity 
+
+##### Time Diversity
+- Uses different timeslots , 
+
+
+##### Polarization Diversity 
+- Uses antennas with different polarization 
+
+```mermaid 
+graph LR
+
+```
+
 ---
