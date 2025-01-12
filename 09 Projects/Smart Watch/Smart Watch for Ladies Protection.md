@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 id: 29-11-2024-Project
 aliases:
   - Smart Watch

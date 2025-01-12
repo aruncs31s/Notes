@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 id: Class Notes
 aliases: []
 tags: []
@@ -6,6 +7,7 @@ Date:
   Created: "2024-12-17"
 cssClasses: wide-page
 ---
+
 
 # Class Notes
 
@@ -98,9 +100,6 @@ Hypothetical
 
 ### Sub carrier mapping in SC-FDMA
 
-```mermaid
-
-```
 
 > [!Series]
 >

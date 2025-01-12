@@ -2,7 +2,7 @@
 aliases: 
 Date: 01-01-2025
 ---
-# Digital Communication
+a Digital Communication
 ```mermaid
 graph LR
 A[Source]
@@ -19,3 +19,7 @@ A --> SE --> CE
 CD --> SD --> B
 ```
 
+
+## Modulation Schemes
+- [ ] When the higher modulations are not used????
+- [ ] ``

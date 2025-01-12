@@ -104,6 +104,7 @@ aka **complex sampling** or **quadrature sampling**
 ### Quadrature Sampling
 
 In the context of DSP and SDR it refers to two waves that are 90 degrees out of phase^[https://pysdr.org/content/sampling.html#quadrature-sampling]
+
 - The 90 degree phase shift make them [[Quadrature Signal|Orthogonal Signal]]
 
 Consider 2 Signals
@@ -115,13 +116,15 @@ I\cos(2\pi ft) \tag{I} \\
 Q \sin (2\pi ft) \tag{Q}
 \end{align}
 $$
+
 Where
-> the $\cos()$ -> In **phase component** 
-> $\sin()$ -> **quadrature component**
+
+> the $\cos()$ -> In **phase component** > $\sin()$ -> **quadrature component**
 
 $$
 x(t) = I\cos(2\pi ft ) + Q \sin(2\pi ft) \tag{1}
 $$
+
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
@@ -141,15 +144,12 @@ plt.legend()
 plt.grid(True)
 plt.show()
 ```
-Think of it like adding **sine** and **cosine** waves which are made to align with each other for a specific values 
+
+Think of it like adding **sine** and **cosine** waves which are made to align with each other for a specific values
 
 ![](https://pysdr.org/_images/IQ3.gif)
 
-
-
-
-
------
+---
 
 $$
 \begin{align}

@@ -1,7 +1,5 @@
 ---
-id: Electronics
-aliases: []
-tags: []
+dg-publish: true
 ---
 
 # Electronics
@@ -21,8 +19,8 @@ Created : 2024-07-28 15:08
 ## Basics
 
 ## Energy
+![[energy_time.excalidraw|300x300]]
 
-![[energy_time.excalidraw]]
 $$
 V_{rms} = {Vp \over \sqrt{2}} \tag{1}$$
 accoring to equation 1 we can say  that

@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 id: 20-11-2024-Project
 aliases: 
 tags:
@@ -15,12 +16,18 @@ cssClasses: wide-page
 cssClass: image-gallery
 ---
 # Transcutaneous electrical nerve stimulation 
-- [[09 Projects/GCE_Kannur/Kannur Solar Battery Monitor/Ledger]]
 - [[TENS Versions]]
 - [[09 Projects/Transcutaneous electrical nerve stimulation/Ledger|Ledger]]
 
 ### Timeline
+```timeline
+[line-3, body-2]
++ Started</br> 20th Nov 2024
++ Problem Statement 
++ To design a period pain releaver based on the principle of Transcutaneous electrical nerve stimulation(TENS) is a technique to stimulate the body's nerves.
 
+```
+---
 ```timeline
 [line-3, body-2]
 + Started</br> 20th Nov 2024

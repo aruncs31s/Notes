@@ -1,5 +1,4 @@
 # Ledger
-
 ### Version 1
 Purchased Dates : 
 

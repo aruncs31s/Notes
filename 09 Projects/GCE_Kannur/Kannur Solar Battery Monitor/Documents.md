@@ -52,7 +52,6 @@ Date: 23-10-2024
 | Dharmassala | Kannur      | 23   |
 | Kannur      | Dharmassala | 23   |
 |             | Total       | 46/- |
-
 #### Electronics Components Cost
 
 
@@ -78,22 +77,11 @@ Date: 23-10-2024
 | 3 Gxen Connectors       | 6        | 6                | 36         |
 ##### Not In the Bil 
 - **Glue Gun Glue** * 3  = 30 
-
 #### Material Cost 
 
 | Item                    | Quantity | Single Unit Cost | Total Cost |
 | ----------------------- | -------- | ---------------- | ---------- |
 | Single Switch (PVC Box) | 2        | 18               | 36         |
-
-
-
-
-
-
-
-
-
-
 #### Total Cost 
 - **Travel Cost** : 46/-
 - **Electronics Components Cost**: 1539  

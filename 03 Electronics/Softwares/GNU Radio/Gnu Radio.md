@@ -6,8 +6,12 @@ tags:
 Created: 09-10-2024
 Status:
 ---
-# Gnu Radio
-
+# Gnu Radio---
+dg-home: true
+dg-publish: true
+---
+- [[Pluto SDR]]
+- 
 ![[GNU FM.canvas|GNU FM]]
 
 **Throttle**: The _Throttle_ block is used for flow control in the **absence** of radio hardware

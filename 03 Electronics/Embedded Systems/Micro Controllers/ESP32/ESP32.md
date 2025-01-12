@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 id: ESP32
 aliases: []
 tags: []

@@ -4,12 +4,11 @@ aliases:
   - ADC Module 5
 tags:
   - communicaiton,S5
+Attendance: 81%
+ExamDate: "2024-12-02"
+Internal: 30
 cssclasses:
   - wide-page
-ExamDate: 2024-12-02
-Attendance: 81%
-Internal: 30
-
 ---
 
 # Analog and Digital Communication
@@ -19,7 +18,6 @@ Created : 2024-04-16 01:00
 ## Contents
 
 [[#ADC Module 5]]
-
 
 ## Syllabus
 
@@ -80,10 +78,6 @@ Created : 2024-04-16 01:00
 ## References
 
 1.
-
-
-
-
 
 # ADC Module 5
 

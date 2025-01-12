@@ -1,19 +1,22 @@
 ---
+dg-publish: true
 aliases:
 Date: 24-10-2024
 ---
 
 # Version 1
 
-## Only Volt Meter -> Version 1
+- [ ] change to h2
+##### Only Volt Meter -> Version 1
 
-### Requirements
+## Requirements
 
 1. **Should Display Voltage** : [[03 Electronics/Embedded Systems/Micro Controllers/ESP32/ESP32|ESP32]] or [[ESP8266]] can be used
 2. **Remote Control** : Both
 3. **Dash Board** : Both
 
-### Components Required
+## Components Required
+^51726b
 
 | Components       | Cost      |
 | ---------------- | --------- |
@@ -29,10 +32,16 @@ Date: 24-10-2024
 | Dot PCB          | 1/2 -> 25 |
 | PVC Box          | 18        |
 | miscellaneous    | 20        |
-| ----             | ----      |
 | Total            | 561/-     |
+|                  |           |
 
-#### Module Wise Cost
+^dc412a
+
+
+</br>
+
+
+## Module Wise Cost
 
 1. Relay Module
 

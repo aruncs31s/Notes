@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 banner: "09 Projects/Common/banner.jpg"
 banner_y: 0.552
 cssclasses:

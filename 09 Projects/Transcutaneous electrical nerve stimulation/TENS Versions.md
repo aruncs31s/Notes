@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 aliases: 
 Date: 23-11-2024
 cssClasses: wide-page

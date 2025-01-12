@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 aliases: 
 Date: 30-10-2024
 cssclasses:

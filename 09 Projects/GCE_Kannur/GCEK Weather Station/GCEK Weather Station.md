@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 id: project_template
 aliases: 
 tags:

@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 id: Smart City
 aliases:
   - Smart city
@@ -10,33 +11,12 @@ Status: true
 Target Date: "2024-10-28"
 ---
 # Kannur Solar Battery Monitor System
-- [[09 Projects/GCE_Kannur/Kannur Solar Battery Monitor/Ledger]]
+- [[09 Projects/GCE_Kannur/Kannur Solar Battery Monitor/Ledger|Ledger]]
 - [[#Components Used]]
 - [[#3D Printing The case]]
 - [[#Diagram]]
 - [[Versions]]
 
-## Timeline 
-
-```timeline 
-[line-3, body-4]
-+ 06 October 2024
-+ Problem Statement
-+ To measure the **SOC** of the Solar Battery </br>
- The initial task is to measure the voltage of the Solar bettery and provide a way for the user to check the battery voltage through web. 
-
-+ October 2024  
-+ Initial Solution 
-+ The initial solution is to use a [[03 Electronics/Embedded Systems/Micro Controllers/ESP32/ESP32|ESP32]] which is a micro-controller , and utilize it [[analog_interfacing|Analog Interfacign]] capability to measure the voltage. But the problem is the **ESP32** can only be used to measure
-+ 6 December 2024 
-+ Got MIC Module 
-+ Got [This MIC](https://amzn.in/d/6NxP8SB) from amazon , costing **149.00** 
-+ 11 December 2024 
-+ Got [This Jumper wires](https://amzn.in/d/bD7D3cX) ->  Costing 189.00
-and [This Pulse Heart Rate Sensor](https://amzn.in/d/8qyQaEn) -> 219.00
-
-
-```
 **Aim**: 
 >**Revision 1**:
 >- Measure the voltage using a Micro-Controller and show that on a website 
@@ -47,38 +27,10 @@ and [This Pulse Heart Rate Sensor](https://amzn.in/d/8qyQaEn) -> 219.00
 >*{extends the Revision 2}*>
 >- WebSite should include a relay which control the `stree light ` 
 
-[line-3, body-4]
-+ 06 October 2024
-+ Problem Statement
-+ Measure the current consumed by the [[nexysa7.png|Nexys A7]] for the **Differential Power Analysis**
-**Components**:
 >[!Note|right-small] Relay Module 
 >Note that i have used 2 channel relay module because by the time i only have 2 channel relay module and it can be also used to control additional load ;
 
-
->**Revision 1**:
->- A Micro-Controller Which has an ADC Pin exposed
->**Suited Micro-Controller** :
->- [[Electronics/Embedded Systems/Micro Controllers/ESP32/ESP32|ESP32]] or [[ESP8266]] 
-**Revision 2**: 
-*{extends the Revision 1}*
->- A $\mu C$ With [[Interrupts|Interrupt pin]]
->**Suited Micro-Controller and Sensor** :
->- [[Electronics/Embedded Systems/Micro Controllers/ESP32/ESP32|ESP32]] and [[ESP8266]]
->- [[GCEK Weather Station#^c08e06|This Rain Sensor]]  
-**Revison 3**:
->*{extends the Revision 2}*
->- A [[Electronics/Embedded Systems/Sensors/Relay Module|Relay Module]]  and pin supports outputing `LOW` and `HIGH`
-**Suited Compontent**
->- [[Electronics/Embedded Systems/Sensors/Relay Module|Relay Module]] 
-
-
-
-
-
 ---
-
-
 ### Components Used
 - There are 2 revisions for this project
   1. Using [[Electronics/Embedded Systems/Micro Controllers/ESP32/ESP32|ESP32]]
@@ -96,7 +48,6 @@ and [This Pulse Heart Rate Sensor](https://amzn.in/d/8qyQaEn) -> 219.00
 
 ### 3D Printing The case 
 
-
 | Dimensions | value | accounted | +accouting |
 | ---------- | ----- | --------- | ---------- |
 | Length     | 7.5cm | 1.5mm     | 7.8cm      |
@@ -106,10 +57,6 @@ and [This Pulse Heart Rate Sensor](https://amzn.in/d/8qyQaEn) -> 219.00
 
 ### Diagram
 ![[initial circuit diagram.png]]
-
-
-
-
 
 
 ## Timeline 

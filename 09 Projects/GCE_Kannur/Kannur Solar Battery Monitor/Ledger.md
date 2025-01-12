@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 aliases: 
 Date: 23-10-2024
 tags:
@@ -10,7 +11,6 @@ tags:
 
 - Cost: **310/-** for 10 Pics DC Connectors 
 #### 22-10-2024
-
 
 | Item                    | Quantity | Single Unit Cost | Total Cost |
 | ----------------------- | -------- | ---------------- | ---------- |
@@ -33,10 +33,6 @@ tags:
 | 2 RMC (Connectors)      | 6        | 5                | 30         |
 | 3 Gxen Connectors       | 6        | 6                | 36         |
 |                         |          |                  |            |
-# TENS 
 
-#### 22-11-2024 
-
-- Travel Cost 2 * 23 
 
 

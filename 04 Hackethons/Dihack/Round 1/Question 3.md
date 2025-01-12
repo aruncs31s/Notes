@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 aliases: 
 Date: 29-10-2024
 tags:

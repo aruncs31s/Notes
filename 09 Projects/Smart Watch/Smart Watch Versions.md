@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 id: Smart Watch Versions
 aliases: []
 tags: []

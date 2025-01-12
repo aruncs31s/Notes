@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 aliases: 
 Date: 31-10-2024
 ---
@@ -82,6 +83,7 @@ R_{1} &= \frac{0.0016\times 1.74 \times 10^{-3} }{0.01 \times 10^{-6}} \\
 $$
 
 ![[rc differentiator.excalidraw]]
+
 #### Designing a Duty Cycle Detector 
 In this i will use the theory that `capacitor` will take some time to **charge** which can be utilized get to the $T_{on}$ of a **certain frequency** 
 - So the Voltage across a Capacitor is
@@ -92,8 +94,10 @@ $$
 ^b7e9da
 
 ![[voltage charging.excalidraw]]
+
 According to [[#^b7e9da|Equation 1]] if we take 
 - $R = 1k$ and $C=10uF$ and $V_{in} = 5V$
+
 $$
 \begin{align}
 V_{c} &= V_{in}\left( 1-e^{\frac{-t}{RC}} \right)  \\ \\
