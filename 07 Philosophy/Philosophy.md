@@ -30,3 +30,8 @@ bind -n M-f run-shell "/home/aruncs/.tmux/plugins/tmux-fzf/main.sh"
 These are the bindings 
 1. `M-S` which is the `Alt+Shift+s` -> which opens a small floating windows i which i can select which opened `pane` that is want to switch with
 2.  
+
+## Study 
+- What is important is what assemptions in the problem leads to conclusion.
+- Something becomes simple after you understand it -> It is not simple because  you dont understand 
+- 

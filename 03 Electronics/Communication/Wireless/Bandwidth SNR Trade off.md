@@ -19,7 +19,7 @@ $$
 - Then [[Channel Capacity]]  $C$ 
 $$
 C_{1} = B_{1 } \log \left( 1 + \frac{S_{1}}{N_{1}} \right) 
-$$
+$$ ^53755f ^4070f4 ^3bb781
 - After plugin the values 
 $$
 C_{1} = 12 Khz
