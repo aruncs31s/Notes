@@ -14,6 +14,7 @@ Status:
 
 # Side Channel Attack Current Monitor
 
+- [[09 Projects/GCE_Kannur/Kannur Solar Battery Monitor/Versions]]
 > [!float|right-small] Components
 > **Components USed**
 >
