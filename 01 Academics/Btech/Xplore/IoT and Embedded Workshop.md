@@ -1,5 +1,15 @@
+---
+dg-publish: true,
+---
+
 # Xplore Exhibition
 - [[#Competitions]]
+### **Embedded System Project Contest**
+Dates: **6**,**7**,**8** Feb
+1st price: 
+2nd price: 
+3rd Price: 
+
 Electronics and Communication engineering projects for Upcomming Xplore Exhibition. 
 **How to participate**
 1. Gather a team (optional)
@@ -24,8 +34,6 @@ Electronics and Communication engineering projects for Upcomming Xplore Exhibiti
 
 ## Competitions
 There is a competition also in which the winner can receive __amount__ 
-
-
 
 | Competiotions | Participants | Total Number of Candidates |
 | ------------- | ------------ | -------------------------- |

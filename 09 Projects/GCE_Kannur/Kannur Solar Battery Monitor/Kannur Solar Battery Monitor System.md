@@ -15,7 +15,7 @@ Target Date: "2024-10-28"
 - [[#Components Used]]
 - [[#3D Printing The case]]
 - [[#Diagram]]
-- [[Versions]]
+- [[09 Projects/GCE_Kannur/Kannur Solar Battery Monitor/Versions]]
 
 **Aim**: 
 >**Revision 1**:
