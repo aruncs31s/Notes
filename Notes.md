@@ -5,6 +5,8 @@ aliases:
 Date: 09-01-25
 ---
 # Notes
+- [[Btech]]
+	- [[IoT and Embedded Workshop]]  
 - [[Projects]]
 	- [[Kannur Solar Battery Monitor System]]
 	- [[Transcutaneous electrical nerve stimulation]]
