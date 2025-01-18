@@ -9,3 +9,4 @@ Date: 23-10-2024
 - [[Version 1 Without Relay]]
 
 - [[Version 2]]
+- [[Version 2 with MQTT]]

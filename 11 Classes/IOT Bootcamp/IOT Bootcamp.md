@@ -18,3 +18,9 @@ Date: "14-01-25"
 
 - [RP2350 Datasheet](https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf)
 - Raspberry Pi PICO W
+
+### 18-01-25
+
+- Mosquito
+- Online MQTT Services
+- HiveMQ
