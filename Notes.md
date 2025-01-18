@@ -18,3 +18,5 @@ Date: 09-01-25
 	- [[Dihack Hackethon]]
 - [[Intervews]]
 	- [[Digital Core Technologies]]
+- [[Kubernatis]]
+- 
