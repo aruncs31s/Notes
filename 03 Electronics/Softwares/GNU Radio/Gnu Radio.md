@@ -7,9 +7,7 @@ Created: 09-10-2024
 Status:
 ---
 # Gnu Radio---
-dg-home: true
-dg-publish: true
----
+- [[Simulation Of Wireless Communication]]
 - [[Pluto SDR]]
 - 
 ![[GNU FM.canvas|GNU FM]]
