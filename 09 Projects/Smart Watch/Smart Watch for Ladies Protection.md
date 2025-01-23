@@ -16,7 +16,6 @@ GithubLink: https://github.com/aruncs31s/Smart-Watch-for-Ladies-Protection
 cssclasses:
   - wide-page
 ---
-
 # Smart Watch for Ladies Protection
 - [[Smart Watch Versions]]
 - [[#Tasks]]
