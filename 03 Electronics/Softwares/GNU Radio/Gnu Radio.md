@@ -6,28 +6,26 @@ tags:
 Created: 09-10-2024
 Status:
 ---
-# Gnu Radio---
-dg-home: true
-dg-publish: true
----
-- [[Pluto SDR]]
-- 
-![[GNU FM.canvas|GNU FM]]
+# Gnu Radio
+- [[Old Notes ]]
 
-**Throttle**: The _Throttle_ block is used for flow control in the **absence** of radio hardware
-```bash
-grmod  tool  -> block_name -> 
-cd block_name
+## Tutorial
+- Integer data type `int(10e3) -> 10000` , `int(3.2222) -> 3`
+- `this is string`
+- `.25` is `250m` -> converted to milli
+- Lists -> [1,2,4,'k',4]
+- Tuples -> (1,2,3,4)
 
-```
-
-- whitening 
-
-source , sink -> Decimater , interpolator 
-
-```bash
-mkdir build 
-cd build 
-cmake ..
-
+```python
+>>> (1,2,3)[:]
+(1, 2, 3)
+>>> (1,2,3,(2,3,4))
+(1, 2, 3, (2, 3, 4))
+>>> (1,2,3,(2,3,4))[3]
+(2, 3, 4)
+>>> (1,2,3,(2,3,4))[3][2]
+4
+>>> (1,2,3,(2,3,4))[3][:]
+(2, 3, 4)
+>>>
 ```

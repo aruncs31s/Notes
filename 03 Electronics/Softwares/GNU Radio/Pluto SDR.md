@@ -64,3 +64,10 @@ PLuto_sdr --> Rational_Resampler --> FM_Demod --> Multiply_by_const --> Audio_si
 | Sample Rate    | 987                             |
 
 
+
+## Tweaking
+```bash
+fw_setenv attr_name compatible
+fw_setenv attr_val ad9364
+reboot
+```

@@ -13,33 +13,28 @@ cssclasses:
 
 #### Requirements
 
-1. [ ] Should contain a sos button
+1. [x] Should contain a sos button
 2. [ ] Should detect "HELP" command
 3. [ ] Should Send location to the parents
 4. [ ] Should measure the heart rate
 
+## PINS
+
+| D5  | Tx of GPS |
+| --- | --------- |
+| D4  | Rx of GPS |
+|     |           |
+
 ## Version 1
-### Modules 
-1. MIC Module 
-![MIC Module ](https://m.media-amazon.com/images/I/61CBiwxtKQL._SX342_.jpg)
-
-
-2. Jumper Wires 
-![](https://m.media-amazon.com/images/I/71oTYNRzrZL._SX342_.jpg)
-3. Pulse sensor 
-![](https://m.media-amazon.com/images/I/517x272SrgL._SX342_.jpg)
-
-
-![[Smart Watch.canvas|Smart Watch]]
 
 
 > [!multi-column]
 >
 > > [!blank]
 > > ![[Smart Watch PCB Board GPS.excalidraw]]
->
-> > [!blank]
-> > ![[Smart Watch PCdDirectionPin = 35;B Board GSM.excalidraw]]
+
+
+![](https://github.com/aruncs31s/Smart-Watch-for-Ladies-Protection-Schematics/raw/main/23-01-2025.png?raw=true)
 
 #### SIM800L Interfacing
 
