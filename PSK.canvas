@@ -1,9 +1,0 @@
-{
-	"nodes":[
-		{"id":"e5e53ed51ec5819a","x":-720,"y":-200,"width":240,"height":160,"type":"text","text":"Variable\n"},
-		{"id":"5c753e575cd8482c","type":"text","text":"Variable\n","x":-420,"y":-200,"width":240,"height":160},
-		{"id":"37124ddf9c1d737b","type":"text","text":"Variable\n","x":-720,"y":0,"width":240,"height":160},
-		{"id":"7d1b6a13315ab629","type":"text","text":"Variable\n","x":-420,"y":0,"width":240,"height":160}
-	],
-	"edges":[]
-}

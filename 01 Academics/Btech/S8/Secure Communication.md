@@ -30,3 +30,13 @@ eg : { pins, passwd}
 | Authentication       |                                   |
 | Non-reproduction     |                                   |
 | Access Control       |                                   |
+
+
+#### 27-01-25
+- Hill Cypher
+- [[Hill Cypher]]
+$$
+
+$$
+
+
