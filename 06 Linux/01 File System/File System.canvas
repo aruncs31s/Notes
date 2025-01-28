@@ -28,13 +28,14 @@
 		{"id":"d4f43a205a25dfcb","type":"text","text":"## Notes","x":-760,"y":356,"width":200,"height":60,"color":"2"},
 		{"id":"9a000657abea37af","x":-760,"y":36,"width":200,"height":90,"color":"2","type":"text","text":"## Hacking"},
 		{"id":"60a391e0ac61b938","type":"text","text":"## Downloads","x":-760,"y":-197,"width":200,"height":60,"color":"2"},
-		{"id":"be4077e52bab48b0","x":-359,"y":-219,"width":250,"height":60,"type":"text","text":"### Files"},
 		{"id":"06e1a39618f32a77","type":"text","text":"## Videos","x":-760,"y":860,"width":200,"height":60,"color":"2"},
 		{"id":"aec97e1d8a1f9de0","type":"text","text":"## Projects","x":-760,"y":760,"width":200,"height":60,"color":"2"},
-		{"id":"5b00406f78dfbd12","type":"text","text":"### Pictures ","x":-359,"y":-47,"width":250,"height":60},
-		{"id":"4831bb50bd18614b","type":"text","text":"### Videos ","x":-359,"y":36,"width":250,"height":60},
+		{"id":"eb0de9fe9d82d596","x":-410,"y":1000,"width":250,"height":60,"type":"text","text":"### Movies"},
 		{"id":"d78886a4174b8841","type":"text","text":"### Music","x":-410,"y":860,"width":250,"height":60},
-		{"id":"eb0de9fe9d82d596","x":-410,"y":1000,"width":250,"height":60,"type":"text","text":"### Movies"}
+		{"id":"be4077e52bab48b0","x":-10,"y":-151,"width":250,"height":60,"type":"text","text":"### Files"},
+		{"id":"5b00406f78dfbd12","type":"text","text":"### Pictures ","x":-10,"y":21,"width":250,"height":60},
+		{"id":"4831bb50bd18614b","type":"text","text":"### Videos ","x":-10,"y":104,"width":250,"height":60},
+		{"id":"f7999b565ecfecd1","type":"text","text":"### Music","x":-10,"y":-69,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"c05382a8d02d2437","fromNode":"81ab24b8546cd7bf","fromSide":"right","toNode":"ca1fdccb21b07781","toSide":"left","color":"2"},
@@ -67,6 +68,12 @@
 		{"id":"ff940844550fb46e","fromNode":"81ab24b8546cd7bf","fromSide":"right","toNode":"d4f43a205a25dfcb","toSide":"left"},
 		{"id":"60771b392b4716f4","fromNode":"60a391e0ac61b938","fromSide":"right","toNode":"be4077e52bab48b0","toSide":"left"},
 		{"id":"6829be1690330fe2","fromNode":"06e1a39618f32a77","fromSide":"right","toNode":"eb0de9fe9d82d596","toSide":"left"},
-		{"id":"59982c58f3d86f65","fromNode":"06e1a39618f32a77","fromSide":"right","toNode":"d78886a4174b8841","toSide":"left"}
+		{"id":"59982c58f3d86f65","fromNode":"06e1a39618f32a77","fromSide":"right","toNode":"d78886a4174b8841","toSide":"left"},
+		{"id":"c2b9f4ba608bde82","fromNode":"60a391e0ac61b938","fromSide":"right","toNode":"5b00406f78dfbd12","toSide":"left"},
+		{"id":"eced6ece76789973","fromNode":"60a391e0ac61b938","fromSide":"right","toNode":"4831bb50bd18614b","toSide":"left"},
+		{"id":"91b77508ee96cf72","fromNode":"4831bb50bd18614b","fromSide":"bottom","toNode":"06e1a39618f32a77","toSide":"right","label":"Link"},
+		{"id":"73ce8fdf5b804128","fromNode":"5b00406f78dfbd12","fromSide":"left","toNode":"65c670223ee49467","toSide":"right","label":"Link"},
+		{"id":"8d39fe65f4907724","fromNode":"f7999b565ecfecd1","fromSide":"left","toNode":"81e5c5bf5d415403","toSide":"right","label":"Link"},
+		{"id":"5bba16092dcb67c4","fromNode":"60a391e0ac61b938","fromSide":"right","toNode":"f7999b565ecfecd1","toSide":"left"}
 	]
 }
