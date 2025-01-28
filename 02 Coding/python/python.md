@@ -23,6 +23,9 @@ a
 
 ```python 
 a = [ 1,2,3]
+b = [a,a,a]
+print(a)
+print(b)
 ```
 #### Zip
 
