@@ -31,8 +31,10 @@
 		{"id":"be4077e52bab48b0","x":-359,"y":-219,"width":250,"height":60,"type":"text","text":"### Files"},
 		{"id":"06e1a39618f32a77","type":"text","text":"## Videos","x":-760,"y":860,"width":200,"height":60,"color":"2"},
 		{"id":"aec97e1d8a1f9de0","type":"text","text":"## Projects","x":-760,"y":760,"width":200,"height":60,"color":"2"},
-		{"id":"5b00406f78dfbd12","type":"text","text":"### Pictures ","x":-359,"y":-137,"width":250,"height":60},
-		{"id":"4831bb50bd18614b","type":"text","text":"### Videos ","x":-359,"y":-54,"width":250,"height":60}
+		{"id":"5b00406f78dfbd12","type":"text","text":"### Pictures ","x":-359,"y":-47,"width":250,"height":60},
+		{"id":"4831bb50bd18614b","type":"text","text":"### Videos ","x":-359,"y":36,"width":250,"height":60},
+		{"id":"d78886a4174b8841","type":"text","text":"### Music","x":-410,"y":860,"width":250,"height":60},
+		{"id":"eb0de9fe9d82d596","x":-410,"y":1000,"width":250,"height":60,"type":"text","text":"### Movies"}
 	],
 	"edges":[
 		{"id":"c05382a8d02d2437","fromNode":"81ab24b8546cd7bf","fromSide":"right","toNode":"ca1fdccb21b07781","toSide":"left","color":"2"},
@@ -63,6 +65,8 @@
 		{"id":"e3cae2c52983ba01","fromNode":"81ab24b8546cd7bf","fromSide":"right","toNode":"81e5c5bf5d415403","toSide":"left"},
 		{"id":"5207baad0c7cc69f","fromNode":"81ab24b8546cd7bf","fromSide":"right","toNode":"aec97e1d8a1f9de0","toSide":"left"},
 		{"id":"ff940844550fb46e","fromNode":"81ab24b8546cd7bf","fromSide":"right","toNode":"d4f43a205a25dfcb","toSide":"left"},
-		{"id":"60771b392b4716f4","fromNode":"60a391e0ac61b938","fromSide":"right","toNode":"be4077e52bab48b0","toSide":"left"}
+		{"id":"60771b392b4716f4","fromNode":"60a391e0ac61b938","fromSide":"right","toNode":"be4077e52bab48b0","toSide":"left"},
+		{"id":"6829be1690330fe2","fromNode":"06e1a39618f32a77","fromSide":"right","toNode":"eb0de9fe9d82d596","toSide":"left"},
+		{"id":"59982c58f3d86f65","fromNode":"06e1a39618f32a77","fromSide":"right","toNode":"d78886a4174b8841","toSide":"left"}
 	]
 }
