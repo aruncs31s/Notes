@@ -13,7 +13,6 @@
 		{"id":"4831bb50bd18614b","type":"text","text":"### Videos ","x":-10,"y":104,"width":250,"height":60,"color":"5"},
 		{"id":"f7999b565ecfecd1","type":"text","text":"### Music","x":-10,"y":-69,"width":250,"height":60,"color":"5"},
 		{"id":"d4f43a205a25dfcb","type":"text","text":"## Notes","x":-760,"y":700,"width":200,"height":60,"color":"2"},
-		{"id":"aec97e1d8a1f9de0","type":"text","text":"## Projects","x":-760,"y":1104,"width":200,"height":60,"color":"2"},
 		{"id":"06e1a39618f32a77","type":"text","text":"## Videos","x":-760,"y":1204,"width":200,"height":60,"color":"2"},
 		{"id":"eb0de9fe9d82d596","type":"text","text":"### Movies","x":-410,"y":1344,"width":250,"height":60},
 		{"id":"d78886a4174b8841","type":"text","text":"### Music","x":-410,"y":1204,"width":250,"height":60},
@@ -38,8 +37,10 @@
 		{"id":"46d4690d7c3749e6","type":"text","text":"### Electronics","x":-340,"y":-635,"width":260,"height":70},
 		{"id":"67e529adc5a96294","type":"text","text":"### Reasearch Papers","x":-340,"y":-533,"width":217,"height":101,"color":"2"},
 		{"id":"ca1fdccb21b07781","type":"text","text":"## Documents\n- all pdf and docx* \n- ","x":-760,"y":-671,"width":220,"height":189,"color":"1"},
-		{"id":"9a53ba5d882f2eb7","x":-340,"y":-392,"width":250,"height":60,"color":"1","type":"text","text":"### Books"},
-		{"id":"1f9f1646ec6f4cbd","x":71,"y":-369,"width":250,"height":60,"color":"1","type":"text","text":"#### Hacking"}
+		{"id":"9a53ba5d882f2eb7","type":"text","text":"### Books","x":-340,"y":-392,"width":250,"height":60,"color":"1"},
+		{"id":"1f9f1646ec6f4cbd","type":"text","text":"#### Hacking","x":71,"y":-369,"width":250,"height":60,"color":"1"},
+		{"id":"aec97e1d8a1f9de0","type":"text","text":"## Projects","x":-760,"y":940,"width":200,"height":60,"color":"2"},
+		{"id":"017b3b6e4b28c907","type":"text","text":"###  Kannur Solar Battery Monitoring Syste","x":-360,"y":940,"width":560,"height":60}
 	],
 	"edges":[
 		{"id":"c05382a8d02d2437","fromNode":"81ab24b8546cd7bf","fromSide":"right","toNode":"ca1fdccb21b07781","toSide":"left","color":"2"},
@@ -84,6 +85,7 @@
 		{"id":"31402a7c2a52d5f7","fromNode":"9a000657abea37af","fromSide":"right","toNode":"d1e7b21cd97457eb","toSide":"left"},
 		{"id":"789e13c166aea6a1","fromNode":"ca1fdccb21b07781","fromSide":"right","toNode":"9a53ba5d882f2eb7","toSide":"left","color":"1"},
 		{"id":"046a1c709659cc14","fromNode":"9a53ba5d882f2eb7","fromSide":"right","toNode":"1f9f1646ec6f4cbd","toSide":"left","color":"1"},
-		{"id":"6a0ee7da9f9472c6","fromNode":"1f9f1646ec6f4cbd","fromSide":"bottom","toNode":"9a000657abea37af","toSide":"top","color":"1"}
+		{"id":"6a0ee7da9f9472c6","fromNode":"1f9f1646ec6f4cbd","fromSide":"bottom","toNode":"9a000657abea37af","toSide":"top","color":"1"},
+		{"id":"0386e6a6dbbdac83","fromNode":"aec97e1d8a1f9de0","fromSide":"right","toNode":"017b3b6e4b28c907","toSide":"left"}
 	]
 }
