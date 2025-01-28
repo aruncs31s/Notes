@@ -18,9 +18,11 @@
 		{"id":"60a391e0ac61b938","type":"text","text":"## Downloads","x":-760,"y":-333,"width":200,"height":60,"color":"2"},
 		{"id":"ca1fdccb21b07781","type":"text","text":"## Documents","x":-760,"y":-455,"width":200,"height":53,"color":"2"},
 		{"id":"73d7b9285aa47877","type":"text","text":"## Coding","x":-760,"y":-920,"width":200,"height":53,"color":"2"},
-		{"id":"7ab2c0eed10054d5","type":"text","text":"### C","x":-438,"y":-1340,"width":78,"height":60},
-		{"id":"f8ed03e7533c3057","type":"text","text":"","x":-438,"y":-1221,"width":200,"height":100},
-		{"id":"07ce0363e1c23460","type":"text","text":"","x":-438,"y":-1082,"width":200,"height":100}
+		{"id":"7ab2c0eed10054d5","type":"text","text":"### C","x":-438,"y":-1560,"width":78,"height":60},
+		{"id":"f8ed03e7533c3057","type":"text","text":"### Cpp","x":-438,"y":-1441,"width":200,"height":100},
+		{"id":"07ce0363e1c23460","type":"text","text":"### Python","x":-438,"y":-1302,"width":200,"height":100},
+		{"id":"d3196121c22e0e4b","type":"text","text":"### Rust","x":-386,"y":-1140,"width":250,"height":60},
+		{"id":"a1367e22e43a35dd","x":-373,"y":-1014,"width":250,"height":60,"type":"text","text":"### Javascript"}
 	],
 	"edges":[
 		{"id":"c05382a8d02d2437","fromNode":"81ab24b8546cd7bf","fromSide":"right","toNode":"ca1fdccb21b07781","toSide":"left","color":"2"},
@@ -42,6 +44,8 @@
 		{"id":"fd1a4c57844df73b","fromNode":"81ab24b8546cd7bf","fromSide":"right","toNode":"73d7b9285aa47877","toSide":"left"},
 		{"id":"786a9afd759fa6fd","fromNode":"73d7b9285aa47877","fromSide":"right","toNode":"7ab2c0eed10054d5","toSide":"left"},
 		{"id":"a09e8e5a73353c5f","fromNode":"73d7b9285aa47877","fromSide":"right","toNode":"f8ed03e7533c3057","toSide":"left"},
-		{"id":"6acf965b88aee5e6","fromNode":"73d7b9285aa47877","fromSide":"right","toNode":"07ce0363e1c23460","toSide":"left"}
+		{"id":"6acf965b88aee5e6","fromNode":"73d7b9285aa47877","fromSide":"right","toNode":"07ce0363e1c23460","toSide":"left"},
+		{"id":"3e2ed30270e4bf70","fromNode":"73d7b9285aa47877","fromSide":"right","toNode":"d3196121c22e0e4b","toSide":"left"},
+		{"id":"cf7968c389991ed2","fromNode":"73d7b9285aa47877","fromSide":"right","toNode":"a1367e22e43a35dd","toSide":"left"}
 	]
 }
