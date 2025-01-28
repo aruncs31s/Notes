@@ -7,7 +7,10 @@
 		{"id":"60a391e0ac61b938","type":"text","text":"## Downloads","x":-760,"y":-273,"width":200,"height":60,"color":"2"},
 		{"id":"81ab24b8546cd7bf","type":"text","text":"# HOME","x":-1080,"y":-442,"width":160,"height":80,"color":"2"},
 		{"id":"67e529adc5a96294","type":"text","text":"","x":-360,"y":-323,"width":200,"height":50,"color":"2"},
-		{"id":"000d62c2bf008013","type":"text","text":"Btec","x":40,"y":-640,"width":200,"height":100}
+		{"id":"bf5e80a989a96a5d","type":"text","text":"### Poly Technique","x":40,"y":-740,"width":200,"height":80},
+		{"id":"000d62c2bf008013","type":"text","text":"### Btech","x":40,"y":-615,"width":200,"height":50},
+		{"id":"8788e43a4dbb9bb8","x":307,"y":-698,"width":250,"height":60,"type":"text","text":"#### Certificates"},
+		{"id":"15bd253493b3ba2c","type":"text","text":"#### Certificates","x":307,"y":-595,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"c05382a8d02d2437","fromNode":"81ab24b8546cd7bf","fromSide":"right","toNode":"ca1fdccb21b07781","toSide":"left","color":"2"},
@@ -16,6 +19,8 @@
 		{"id":"a81c06dc2fd9e0db","fromNode":"ca1fdccb21b07781","fromSide":"right","toNode":"350e42e8982bdd17","toSide":"left","color":"2"},
 		{"id":"c62e6dc1510c5886","fromNode":"ca1fdccb21b07781","fromSide":"right","toNode":"7a067448f7db87cb","toSide":"left","color":"2"},
 		{"id":"edd668cae7a9f706","fromNode":"ca1fdccb21b07781","fromSide":"right","toNode":"67e529adc5a96294","toSide":"left","color":"2"},
-		{"id":"52ed079f9b5f0eaa","fromNode":"b442bae5c93fd3dd","fromSide":"right","toNode":"000d62c2bf008013","toSide":"left"}
+		{"id":"52ed079f9b5f0eaa","fromNode":"b442bae5c93fd3dd","fromSide":"right","toNode":"000d62c2bf008013","toSide":"left"},
+		{"id":"93c482bbf49138e3","fromNode":"b442bae5c93fd3dd","fromSide":"right","toNode":"bf5e80a989a96a5d","toSide":"left"},
+		{"id":"8c1f4f514ec5ff39","fromNode":"000d62c2bf008013","fromSide":"right","toNode":"8788e43a4dbb9bb8","toSide":"left"}
 	]
 }
