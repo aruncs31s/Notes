@@ -40,7 +40,7 @@
 		{"id":"9a53ba5d882f2eb7","type":"text","text":"### Books","x":-340,"y":-392,"width":250,"height":60,"color":"1"},
 		{"id":"1f9f1646ec6f4cbd","type":"text","text":"#### Hacking","x":71,"y":-369,"width":250,"height":60,"color":"1"},
 		{"id":"aec97e1d8a1f9de0","type":"text","text":"## Projects","x":-760,"y":940,"width":200,"height":60,"color":"2"},
-		{"id":"017b3b6e4b28c907","type":"text","text":"###  Kannur Solar Battery Monitoring Syste","x":-360,"y":940,"width":560,"height":60}
+		{"id":"017b3b6e4b28c907","type":"text","text":"###  Kannur Solar Battery Monitoring System","x":-360,"y":940,"width":560,"height":60}
 	],
 	"edges":[
 		{"id":"c05382a8d02d2437","fromNode":"81ab24b8546cd7bf","fromSide":"right","toNode":"ca1fdccb21b07781","toSide":"left","color":"2"},
