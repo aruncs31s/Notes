@@ -29,9 +29,10 @@
 		{"id":"9a000657abea37af","x":-760,"y":36,"width":200,"height":90,"color":"2","type":"text","text":"## Hacking"},
 		{"id":"60a391e0ac61b938","type":"text","text":"## Downloads","x":-760,"y":-197,"width":200,"height":60,"color":"2"},
 		{"id":"be4077e52bab48b0","x":-359,"y":-219,"width":250,"height":60,"type":"text","text":"### Files"},
-		{"id":"5b00406f78dfbd12","type":"text","text":"### ","x":-359,"y":-137,"width":250,"height":60},
 		{"id":"06e1a39618f32a77","type":"text","text":"## Videos","x":-760,"y":860,"width":200,"height":60,"color":"2"},
-		{"id":"aec97e1d8a1f9de0","type":"text","text":"## Projects","x":-760,"y":760,"width":200,"height":60,"color":"2"}
+		{"id":"aec97e1d8a1f9de0","type":"text","text":"## Projects","x":-760,"y":760,"width":200,"height":60,"color":"2"},
+		{"id":"5b00406f78dfbd12","type":"text","text":"### Pictures ","x":-359,"y":-137,"width":250,"height":60},
+		{"id":"4831bb50bd18614b","type":"text","text":"### Videos ","x":-359,"y":-54,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"c05382a8d02d2437","fromNode":"81ab24b8546cd7bf","fromSide":"right","toNode":"ca1fdccb21b07781","toSide":"left","color":"2"},
