@@ -1,13 +1,13 @@
 {
 	"nodes":[
 		{"id":"81ab24b8546cd7bf","type":"text","text":"# HOME","x":-1420,"y":-385,"width":160,"height":80,"color":"1"},
-		{"id":"b442bae5c93fd3dd","type":"text","text":"### Academics","x":-660,"y":-596,"width":200,"height":50,"color":"3"},
-		{"id":"350e42e8982bdd17","type":"text","text":"### Project","x":-660,"y":-506,"width":200,"height":57,"color":"3"},
-		{"id":"7a067448f7db87cb","type":"text","text":"### Dataseets","x":-660,"y":-409,"width":200,"height":55,"color":"3"},
-		{"id":"68755dc19c6e21ef","type":"text","text":"### Downloads","x":-660,"y":-314,"width":200,"height":50,"color":"3"},
+		{"id":"b442bae5c93fd3dd","type":"text","text":"### Academics","x":-660,"y":-596,"width":200,"height":50,"color":"1"},
+		{"id":"350e42e8982bdd17","type":"text","text":"### Project","x":-660,"y":-506,"width":200,"height":57,"color":"1"},
+		{"id":"7a067448f7db87cb","type":"text","text":"### Dataseets","x":-660,"y":-409,"width":200,"height":55,"color":"1"},
+		{"id":"68755dc19c6e21ef","type":"text","text":"### Downloads","x":-660,"y":-314,"width":200,"height":50,"color":"1"},
 		{"id":"ca1fdccb21b07781","type":"text","text":"## Documents","x":-1060,"y":-411,"width":200,"height":53,"color":"3"},
 		{"id":"60a391e0ac61b938","type":"text","text":"## Downloads","x":-1060,"y":-134,"width":200,"height":60,"color":"1"},
-		{"id":"67e529adc5a96294","type":"text","text":"","x":-660,"y":-224,"width":200,"height":50}
+		{"id":"67e529adc5a96294","type":"text","text":"","x":-660,"y":-224,"width":200,"height":50,"color":"1"}
 	],
 	"edges":[
 		{"id":"c05382a8d02d2437","fromNode":"81ab24b8546cd7bf","fromSide":"right","toNode":"ca1fdccb21b07781","toSide":"left","color":"1"},
@@ -16,6 +16,6 @@
 		{"id":"a81c06dc2fd9e0db","fromNode":"ca1fdccb21b07781","fromSide":"right","toNode":"350e42e8982bdd17","toSide":"left","color":"3"},
 		{"id":"f3e4cc83f6ae8849","fromNode":"ca1fdccb21b07781","fromSide":"right","toNode":"68755dc19c6e21ef","toSide":"left","color":"3"},
 		{"id":"c62e6dc1510c5886","fromNode":"ca1fdccb21b07781","fromSide":"right","toNode":"7a067448f7db87cb","toSide":"left","color":"3"},
-		{"id":"edd668cae7a9f706","fromNode":"ca1fdccb21b07781","fromSide":"right","toNode":"67e529adc5a96294","toSide":"left"}
+		{"id":"edd668cae7a9f706","fromNode":"ca1fdccb21b07781","fromSide":"right","toNode":"67e529adc5a96294","toSide":"left","color":"1"}
 	]
 }
