@@ -1,13 +1,13 @@
 {
 	"nodes":[
-		{"id":"81ab24b8546cd7bf","type":"text","text":"# HOME","x":-1400,"y":-309,"width":160,"height":80,"color":"3"},
-		{"id":"ca1fdccb21b07781","type":"text","text":"## Documents","x":-1040,"y":-335,"width":200,"height":53,"color":"3"},
-		{"id":"b442bae5c93fd3dd","type":"text","text":"### Academics","x":-640,"y":-520,"width":200,"height":50,"color":"3"},
-		{"id":"350e42e8982bdd17","type":"text","text":"### Project","x":-640,"y":-430,"width":200,"height":57,"color":"3"},
-		{"id":"7a067448f7db87cb","type":"text","text":"### Dataseets","x":-640,"y":-333,"width":200,"height":55,"color":"3"},
-		{"id":"68755dc19c6e21ef","type":"text","text":"### Downloads","x":-640,"y":-238,"width":200,"height":50,"color":"3"},
-		{"id":"67e529adc5a96294","type":"text","text":"","x":-640,"y":-148,"width":200,"height":50,"color":"3"},
-		{"id":"60a391e0ac61b938","type":"text","text":"## Downloads","x":-1040,"y":-58,"width":200,"height":60,"color":"3"}
+		{"id":"81ab24b8546cd7bf","type":"text","text":"# HOME","x":-1140,"y":-429,"width":160,"height":80,"color":"3"},
+		{"id":"ca1fdccb21b07781","type":"text","text":"## Documents","x":-780,"y":-455,"width":200,"height":53,"color":"3"},
+		{"id":"b442bae5c93fd3dd","type":"text","text":"### Academics","x":-380,"y":-640,"width":200,"height":50,"color":"3"},
+		{"id":"350e42e8982bdd17","type":"text","text":"### Project","x":-380,"y":-550,"width":200,"height":57,"color":"3"},
+		{"id":"7a067448f7db87cb","type":"text","text":"### Dataseets","x":-380,"y":-453,"width":200,"height":55,"color":"3"},
+		{"id":"68755dc19c6e21ef","type":"text","text":"### Downloads","x":-380,"y":-358,"width":200,"height":50,"color":"3"},
+		{"id":"67e529adc5a96294","type":"text","text":"","x":-380,"y":-268,"width":200,"height":50,"color":"3"},
+		{"id":"60a391e0ac61b938","type":"text","text":"## Downloads","x":-780,"y":-178,"width":200,"height":60,"color":"3"}
 	],
 	"edges":[
 		{"id":"c05382a8d02d2437","fromNode":"81ab24b8546cd7bf","fromSide":"right","toNode":"ca1fdccb21b07781","toSide":"left","color":"3"},
