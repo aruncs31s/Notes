@@ -30,9 +30,6 @@
 		{"id":"9fcdc52e3327b99f","type":"text","text":"### Downloads","x":-2071,"y":-388,"width":250,"height":60,"color":"1"},
 		{"id":"e40d394e427578e6","type":"text","text":"### Pictures","x":-1737,"y":-388,"width":250,"height":60,"color":"1"},
 		{"id":"757c7f0a12dd3059","type":"text","text":"### Projects","x":-1904,"y":-220,"width":250,"height":60,"color":"1"},
-		{"id":"c05b286838675194","type":"text","text":"#### Electronics","x":-1612,"y":-66,"width":250,"height":60,"color":"1"},
-		{"id":"a606c55d3c014782","type":"text","text":"#### Git","x":-1612,"y":54,"width":250,"height":60,"color":"1"},
-		{"id":"9d71b5794b770b92","type":"text","text":"#### Linux","x":-1612,"y":174,"width":250,"height":60,"color":"1"},
 		{"id":"f59a18a9dac1e371","type":"text","text":"### Academics ","x":-80,"y":219,"width":250,"height":60},
 		{"id":"7a6654d4dea4f7dc","type":"text","text":"### Reasearch Papers ","x":-80,"y":399,"width":295,"height":60},
 		{"id":"d8139dbfaed37369","type":"text","text":"#### Btech","x":110,"y":309,"width":250,"height":60},
@@ -45,7 +42,9 @@
 		{"id":"a5779deafa0d70bb","type":"text","text":"## STUDY\n```\n/mnt/STUDY\n```\n\n","x":-2182,"y":964,"width":236,"height":145},
 		{"id":"39b786e9f94f9017","type":"text","text":"### ENC Photos","x":-2182,"y":1320,"width":250,"height":60},
 		{"id":"6a9dd96854055e8c","type":"text","text":"### ENC Videos","x":-2181,"y":1416,"width":250,"height":60},
-		{"id":"f3669e913247a3b2","type":"text","text":"### Media ","x":-2181,"y":1536,"width":250,"height":60}
+		{"id":"f3669e913247a3b2","type":"text","text":"### Media ","x":-2181,"y":1536,"width":250,"height":60},
+		{"id":"c05b286838675194","type":"text","text":"#### Electronics","x":-1487,"y":-65,"width":250,"height":54,"color":"1"},
+		{"id":"09c0724565257124","x":-1546,"y":87,"width":250,"height":60,"type":"text","text":"#### cO"}
 	],
 	"edges":[
 		{"id":"1bc829353cff9728","fromNode":"dff211fd03f558d4","fromSide":"right","toNode":"648b2700dca4de9c","toSide":"left","label":"ntfs"},
@@ -103,13 +102,12 @@
 		{"id":"77d049dffb9bcd54","fromNode":"dff211fd03f558d4","fromSide":"right","toNode":"6a9dd96854055e8c","toSide":"left","label":"Luks"},
 		{"id":"a62f7d240248d229","fromNode":"dff211fd03f558d4","fromSide":"right","toNode":"f3669e913247a3b2","toSide":"left","label":"True Crypt"},
 		{"id":"29c8be2967ef58d3","fromNode":"757c7f0a12dd3059","fromSide":"bottom","toNode":"c05b286838675194","toSide":"left"},
-		{"id":"3d6043a9b46c9e76","fromNode":"757c7f0a12dd3059","fromSide":"bottom","toNode":"a606c55d3c014782","toSide":"left"},
-		{"id":"6eac2f15154162f0","fromNode":"757c7f0a12dd3059","fromSide":"bottom","toNode":"9d71b5794b770b92","toSide":"left"},
 		{"id":"e0232a745d9cf49f","fromNode":"49ab6fb938366259","fromSide":"left","toNode":"67b59d87729915f5","toSide":"right"},
 		{"id":"dce46032d38242ae","fromNode":"49ab6fb938366259","fromSide":"left","toNode":"306647f8e5a21316","toSide":"right"},
 		{"id":"02f71c00f5806714","fromNode":"49ab6fb938366259","fromSide":"left","toNode":"04fe9df0668decab","toSide":"right"},
 		{"id":"a5755c7404992e69","fromNode":"49ab6fb938366259","fromSide":"left","toNode":"c332f76efab1bd73","toSide":"right"},
 		{"id":"8ce3805b4b431d4d","fromNode":"49ab6fb938366259","fromSide":"left","toNode":"08a56276d3c90047","toSide":"right"},
-		{"id":"6358ac9d28b1bac9","fromNode":"49ab6fb938366259","fromSide":"left","toNode":"ef5922fb6720cdcd","toSide":"right"}
+		{"id":"6358ac9d28b1bac9","fromNode":"49ab6fb938366259","fromSide":"left","toNode":"ef5922fb6720cdcd","toSide":"right"},
+		{"id":"be99922ea7c764fd","fromNode":"757c7f0a12dd3059","fromSide":"bottom","toNode":"09c0724565257124","toSide":"top"}
 	]
 }
