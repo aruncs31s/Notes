@@ -1,9 +1,14 @@
 {
 	"nodes":[
 		{"id":"ff5fbff6518a659f","type":"text","text":"# Smart Watch","x":-200,"y":-80,"width":250,"height":60},
-		{"id":"ecf9b36e51fbc732","type":"text","text":"## ","x":250,"y":-80,"width":200,"height":100}
+		{"id":"ecf9b36e51fbc732","type":"text","text":"## Speech Detection","x":250,"y":-240,"width":200,"height":100},
+		{"id":"b37498153a2d4745","type":"text","text":"## Heart Rate Monitor","x":250,"y":-100,"width":200,"height":140},
+		{"id":"1a1bdede55d36231","type":"text","text":"## SOS Trigger","x":250,"y":80,"width":200,"height":100},
+		{"id":"572783db437f35dd","x":325,"y":-400,"width":250,"height":60,"type":"text","text":"## ESP8266"}
 	],
 	"edges":[
-		{"id":"4e3f39ddadd2f6f3","fromNode":"ff5fbff6518a659f","fromSide":"right","toNode":"ecf9b36e51fbc732","toSide":"left"}
+		{"id":"4e3f39ddadd2f6f3","fromNode":"ff5fbff6518a659f","fromSide":"right","toNode":"ecf9b36e51fbc732","toSide":"left"},
+		{"id":"f03df07db3e1f718","fromNode":"ff5fbff6518a659f","fromSide":"right","toNode":"b37498153a2d4745","toSide":"left"},
+		{"id":"93ed6a125a91ca6f","fromNode":"ff5fbff6518a659f","fromSide":"right","toNode":"1a1bdede55d36231","toSide":"left"}
 	]
 }
