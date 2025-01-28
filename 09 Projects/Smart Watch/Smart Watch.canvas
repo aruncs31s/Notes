@@ -1,16 +1,19 @@
 {
 	"nodes":[
-		{"id":"ecf9b36e51fbc732","type":"text","text":"### Speech Detection","x":250,"y":-240,"width":200,"height":100},
-		{"id":"b37498153a2d4745","type":"text","text":"### Heart Rate Monitor","x":250,"y":-100,"width":200,"height":140},
-		{"id":"1a1bdede55d36231","type":"text","text":"### SOS Trigger","x":250,"y":80,"width":200,"height":100},
+		{"id":"5f40c2c3795994c0","x":174,"y":-210,"width":290,"height":300,"type":"group"},
 		{"id":"ff5fbff6518a659f","type":"text","text":"# Smart Watch","x":-340,"y":-130,"width":250,"height":60},
 		{"id":"572783db437f35dd","x":575,"y":-480,"width":250,"height":200,"type":"text","text":"## ESP8266"},
-		{"id":"5aabbdece2b60f6b","x":575,"y":-620,"width":250,"height":60,"type":"text","text":"### SOS"}
+		{"id":"5aabbdece2b60f6b","x":575,"y":-620,"width":250,"height":60,"type":"text","text":"### SOS"},
+		{"id":"1a1bdede55d36231","type":"text","text":"### SOS Trigger","x":900,"y":-70,"width":200,"height":100},
+		{"id":"b37498153a2d4745","type":"text","text":"### Heart Rate Monitor","x":575,"y":-70,"width":200,"height":140},
+		{"id":"8c9e847fbba6bb28","x":194,"y":-190,"width":250,"height":60,"type":"text","text":"## Raspberry Pi"},
+		{"id":"ecf9b36e51fbc732","type":"text","text":"### Microphone","x":219,"y":-30,"width":200,"height":100}
 	],
 	"edges":[
-		{"id":"ac24837c965e18c6","fromNode":"ecf9b36e51fbc732","fromSide":"right","toNode":"572783db437f35dd","toSide":"bottom"},
 		{"id":"9bc6ab1264f53f76","fromNode":"b37498153a2d4745","fromSide":"right","toNode":"572783db437f35dd","toSide":"bottom"},
 		{"id":"b26a9c7042aa5c38","fromNode":"1a1bdede55d36231","fromSide":"right","toNode":"572783db437f35dd","toSide":"bottom"},
-		{"id":"b061563fd132a62b","fromNode":"572783db437f35dd","fromSide":"top","toNode":"5aabbdece2b60f6b","toSide":"bottom"}
+		{"id":"b061563fd132a62b","fromNode":"572783db437f35dd","fromSide":"top","toNode":"5aabbdece2b60f6b","toSide":"bottom"},
+		{"id":"d55573839fa25f68","fromNode":"ecf9b36e51fbc732","fromSide":"top","toNode":"8c9e847fbba6bb28","toSide":"bottom"},
+		{"id":"ff3ef9e74b726ef8","fromNode":"8c9e847fbba6bb28","fromSide":"right","toNode":"572783db437f35dd","toSide":"left","label":"Interrupt"}
 	]
 }
