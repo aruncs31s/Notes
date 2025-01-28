@@ -15,14 +15,16 @@
 		{"id":"102db6f36a831b61","type":"text","text":"##### S6","x":732,"y":-386,"width":88,"height":50},
 		{"id":"9c92ac5183825a99","type":"text","text":"##### S7","x":732,"y":-317,"width":88,"height":50},
 		{"id":"16c8574001c3a419","type":"text","text":"##### S8","x":732,"y":-247,"width":88,"height":50},
-		{"id":"60a391e0ac61b938","type":"text","text":"## Downloads","x":-760,"y":-333,"width":200,"height":60,"color":"2"},
 		{"id":"ca1fdccb21b07781","type":"text","text":"## Documents","x":-760,"y":-455,"width":200,"height":53,"color":"2"},
 		{"id":"73d7b9285aa47877","type":"text","text":"## Coding","x":-760,"y":-920,"width":200,"height":53,"color":"2"},
 		{"id":"d3196121c22e0e4b","type":"text","text":"### Rust","x":-400,"y":-1100,"width":190,"height":69},
 		{"id":"a1367e22e43a35dd","x":-420,"y":-1000,"width":230,"height":69,"type":"text","text":"### Javascript"},
 		{"id":"07ce0363e1c23460","type":"text","text":"### Python","x":-381,"y":-1260,"width":152,"height":114},
 		{"id":"f8ed03e7533c3057","type":"text","text":"### Cpp","x":-381,"y":-1420,"width":152,"height":114},
-		{"id":"7ab2c0eed10054d5","type":"text","text":"### C","x":-335,"y":-1540,"width":60,"height":69}
+		{"id":"7ab2c0eed10054d5","type":"text","text":"### C","x":-335,"y":-1540,"width":60,"height":69},
+		{"id":"60a391e0ac61b938","type":"text","text":"## Downloads","x":-760,"y":-333,"width":200,"height":60,"color":"2"},
+		{"id":"65c670223ee49467","type":"text","text":"## Photos","x":-760,"y":-220,"width":200,"height":60,"color":"2"},
+		{"id":"06e1a39618f32a77","type":"text","text":"## Media","x":-760,"y":-120,"width":200,"height":60,"color":"2"}
 	],
 	"edges":[
 		{"id":"c05382a8d02d2437","fromNode":"81ab24b8546cd7bf","fromSide":"right","toNode":"ca1fdccb21b07781","toSide":"left","color":"2"},
