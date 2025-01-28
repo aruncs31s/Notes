@@ -5,8 +5,6 @@ tags: []
 kanban-plugin: board
 ---
 
-## 
-
 ## Current Arrangement
 
 ```
