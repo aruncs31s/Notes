@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"ff5fbff6518a659f","type":"text","text":"# Smart Watch","x":-200,"y":-80,"width":250,"height":60},
+		{"id":"ecf9b36e51fbc732","type":"text","text":"## ","x":250,"y":-80,"width":200,"height":100}
+	],
+	"edges":[
+		{"id":"4e3f39ddadd2f6f3","fromNode":"ff5fbff6518a659f","fromSide":"right","toNode":"ecf9b36e51fbc732","toSide":"left"}
+	]
+}
