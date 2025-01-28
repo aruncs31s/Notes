@@ -4,6 +4,7 @@ aliases: []
 tags: []
 ---
 # Linux
+- [[Automation]]
 - [[Tools]]
 - [[Backup]]
 - [[Linux Customization]]
