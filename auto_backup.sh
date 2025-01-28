@@ -5,5 +5,5 @@ git commit -m "update $(date)"
 
 git pull origin main
 
-git push orign main
+git push origin main
 # echo "update $(date)"
