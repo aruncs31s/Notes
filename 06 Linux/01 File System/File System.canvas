@@ -24,14 +24,14 @@
 		{"id":"7ab2c0eed10054d5","type":"text","text":"### C","x":-335,"y":-1540,"width":60,"height":69},
 		{"id":"76f20a76726382b5","type":"text","text":"## Encrypted","x":-760,"y":-84,"width":200,"height":60,"color":"2"},
 		{"id":"65c670223ee49467","type":"text","text":"## Photos","x":-760,"y":176,"width":200,"height":60,"color":"2"},
-		{"id":"06e1a39618f32a77","type":"text","text":"## Videos","x":-760,"y":556,"width":200,"height":60,"color":"2"},
-		{"id":"aec97e1d8a1f9de0","type":"text","text":"## Projects","x":-760,"y":456,"width":200,"height":60,"color":"2"},
 		{"id":"81e5c5bf5d415403","type":"text","text":"## Music","x":-760,"y":256,"width":200,"height":60,"color":"2"},
 		{"id":"d4f43a205a25dfcb","type":"text","text":"## Notes","x":-760,"y":356,"width":200,"height":60,"color":"2"},
 		{"id":"9a000657abea37af","x":-760,"y":36,"width":200,"height":90,"color":"2","type":"text","text":"## Hacking"},
 		{"id":"60a391e0ac61b938","type":"text","text":"## Downloads","x":-760,"y":-197,"width":200,"height":60,"color":"2"},
 		{"id":"be4077e52bab48b0","x":-359,"y":-219,"width":250,"height":60,"type":"text","text":"### Files"},
-		{"id":"5b00406f78dfbd12","type":"text","text":"### ","x":-359,"y":-137,"width":250,"height":60}
+		{"id":"5b00406f78dfbd12","type":"text","text":"### ","x":-359,"y":-137,"width":250,"height":60},
+		{"id":"06e1a39618f32a77","type":"text","text":"## Videos","x":-760,"y":860,"width":200,"height":60,"color":"2"},
+		{"id":"aec97e1d8a1f9de0","type":"text","text":"## Projects","x":-760,"y":760,"width":200,"height":60,"color":"2"}
 	],
 	"edges":[
 		{"id":"c05382a8d02d2437","fromNode":"81ab24b8546cd7bf","fromSide":"right","toNode":"ca1fdccb21b07781","toSide":"left","color":"2"},
