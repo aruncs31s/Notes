@@ -2,16 +2,16 @@
 	"nodes":[
 		{"id":"81ab24b8546cd7bf","type":"text","text":"# HOME","x":-1440,"y":-520,"width":160,"height":80,"color":"1"},
 		{"id":"ca1fdccb21b07781","type":"text","text":"## Documents","x":-1080,"y":-590,"width":200,"height":100,"color":"1"},
-		{"id":"60a391e0ac61b938","type":"text","text":"## Downloads","x":-1080,"y":-361,"width":200,"height":100,"color":"1"},
-		{"id":"b442bae5c93fd3dd","type":"text","text":"### Academics","x":-680,"y":-679,"width":200,"height":70,"color":"1"},
-		{"id":"350e42e8982bdd17","type":"text","text":"### Document","x":-680,"y":-569,"width":200,"height":63,"color":"1"},
-		{"id":"68755dc19c6e21ef","type":"text","text":"","x":-680,"y":-466,"width":200,"height":65,"color":"1"}
+		{"id":"b442bae5c93fd3dd","type":"text","text":"### Academics","x":-680,"y":-685,"width":200,"height":70,"color":"1"},
+		{"id":"350e42e8982bdd17","type":"text","text":"### Document","x":-680,"y":-575,"width":200,"height":75,"color":"1"},
+		{"id":"68755dc19c6e21ef","type":"text","text":"### Downloads","x":-680,"y":-460,"width":200,"height":66,"color":"1"},
+		{"id":"60a391e0ac61b938","type":"text","text":"## Downloads","x":-1080,"y":-320,"width":200,"height":100,"color":"1"}
 	],
 	"edges":[
 		{"id":"c05382a8d02d2437","fromNode":"81ab24b8546cd7bf","fromSide":"right","toNode":"ca1fdccb21b07781","toSide":"left","color":"1"},
 		{"id":"36ed5e7a666fac48","fromNode":"81ab24b8546cd7bf","fromSide":"right","toNode":"60a391e0ac61b938","toSide":"left","color":"1"},
 		{"id":"5d415372941f8dbd","fromNode":"ca1fdccb21b07781","fromSide":"right","toNode":"b442bae5c93fd3dd","toSide":"left","color":"1"},
 		{"id":"a81c06dc2fd9e0db","fromNode":"ca1fdccb21b07781","fromSide":"right","toNode":"350e42e8982bdd17","toSide":"left","color":"1"},
-		{"id":"f3e4cc83f6ae8849","fromNode":"ca1fdccb21b07781","fromSide":"right","toNode":"68755dc19c6e21ef","toSide":"left"}
+		{"id":"f3e4cc83f6ae8849","fromNode":"ca1fdccb21b07781","fromSide":"right","toNode":"68755dc19c6e21ef","toSide":"left","color":"1"}
 	]
 }
