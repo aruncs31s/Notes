@@ -24,8 +24,6 @@ a
 ```python 
 a = [ 1,2,3]
 b = [a,a,a]
-print(a)
-print(b)
 print(b[1][1])
 ```
 #### Zip
