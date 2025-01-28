@@ -12,7 +12,6 @@
 		{"id":"4c88ce44316395df","type":"text","text":"### 04 Codes","x":-609,"y":876,"width":250,"height":60},
 		{"id":"a8fb91862d47a531","type":"text","text":"### 03 Books","x":-1140,"y":1396,"width":250,"height":60},
 		{"id":"ed59f61809d7d5ce","type":"text","text":"### 00 Documents","x":-609,"y":436,"width":250,"height":60},
-		{"id":"27b1314c7a04940f","type":"text","text":"## Desktop","x":-1815,"y":446,"width":250,"height":50},
 		{"id":"67b59d87729915f5","type":"text","text":"#### 802.11","x":-2736,"y":-98,"width":250,"height":60,"color":"1"},
 		{"id":"ef5922fb6720cdcd","type":"text","text":"#### Networking","x":-2736,"y":342,"width":250,"height":60,"color":"1"},
 		{"id":"306647f8e5a21316","type":"text","text":"#### Hacking","x":-2736,"y":-12,"width":250,"height":70,"color":"1"},
@@ -35,7 +34,6 @@
 		{"id":"6a9dd96854055e8c","type":"text","text":"### ENC Videos","x":-2181,"y":1416,"width":250,"height":60},
 		{"id":"f3669e913247a3b2","type":"text","text":"### Media ","x":-2181,"y":1536,"width":250,"height":60},
 		{"id":"09c0724565257124","x":-1236,"y":55,"width":250,"height":60,"color":"6","type":"text","text":"#### Coding"},
-		{"id":"c05b286838675194","type":"text","text":"#### Electronics","x":-1319,"y":-68,"width":250,"height":54,"color":"6"},
 		{"id":"216887e62a54889b","x":-862,"y":78,"width":250,"height":60,"type":"text","text":"##### WebPages"},
 		{"id":"b40d75638606b4e2","x":-862,"y":160,"width":250,"height":60,"type":"text","text":"##### Linux"},
 		{"id":"757c7f0a12dd3059","type":"text","text":"### Projects","x":-1900,"y":-220,"width":250,"height":60,"color":"6"},
@@ -49,7 +47,9 @@
 		{"id":"49ab6fb938366259","type":"text","text":"### Books","x":-2238,"y":-128,"width":250,"height":60,"color":"6"},
 		{"id":"b4668cf6222e4d97","x":-890,"y":-14,"width":250,"height":60,"type":"text","text":"##### Embedded"},
 		{"id":"cc6c6f29fdf61f95","type":"text","text":"##### IOT","x":-580,"y":-14,"width":250,"height":60},
-		{"id":"7e042ef89b4bce64","x":215,"y":-250,"width":250,"height":60,"type":"text","text":"## Git"}
+		{"id":"7e042ef89b4bce64","x":215,"y":-250,"width":250,"height":60,"type":"text","text":"## Git"},
+		{"id":"c05b286838675194","type":"text","text":"#### Electronics","x":-1319,"y":-68,"width":250,"height":54,"color":"6"},
+		{"id":"27b1314c7a04940f","type":"text","text":"## Desktop","x":-1815,"y":231,"width":250,"height":50}
 	],
 	"edges":[
 		{"id":"1bc829353cff9728","fromNode":"dff211fd03f558d4","fromSide":"right","toNode":"648b2700dca4de9c","toSide":"left","label":"ntfs"},
