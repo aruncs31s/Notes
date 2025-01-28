@@ -2,9 +2,7 @@
 	"nodes":[
 		{"id":"b442bae5c93fd3dd","type":"text","text":"### Academics","x":-360,"y":-640,"width":200,"height":50,"color":"2"},
 		{"id":"350e42e8982bdd17","type":"text","text":"### Project","x":-360,"y":-550,"width":200,"height":57,"color":"2"},
-		{"id":"7a067448f7db87cb","type":"text","text":"### Dataseets","x":-360,"y":-453,"width":200,"height":55,"color":"2"},
 		{"id":"81ab24b8546cd7bf","type":"text","text":"# HOME","x":-1080,"y":-442,"width":160,"height":80,"color":"2"},
-		{"id":"67e529adc5a96294","type":"text","text":"","x":-360,"y":-323,"width":200,"height":50,"color":"2"},
 		{"id":"bf5e80a989a96a5d","type":"text","text":"### Poly Technique","x":40,"y":-740,"width":200,"height":80,"color":"6"},
 		{"id":"000d62c2bf008013","type":"text","text":"### Btech","x":40,"y":-615,"width":200,"height":50,"color":"6"},
 		{"id":"8788e43a4dbb9bb8","type":"text","text":"#### Certificates","x":307,"y":-698,"width":250,"height":60,"color":"6"},
@@ -35,14 +33,16 @@
 		{"id":"4831bb50bd18614b","type":"text","text":"### Videos ","x":-10,"y":104,"width":250,"height":60,"color":"5"},
 		{"id":"f7999b565ecfecd1","type":"text","text":"### Music","x":-10,"y":-69,"width":250,"height":60,"color":"5"},
 		{"id":"eb0de9fe9d82d596","x":-410,"y":1000,"width":250,"height":60,"type":"text","text":"### Movies"},
-		{"id":"d78886a4174b8841","type":"text","text":"### Music","x":-410,"y":860,"width":250,"height":60}
+		{"id":"d78886a4174b8841","type":"text","text":"### Music","x":-410,"y":860,"width":250,"height":60},
+		{"id":"67e529adc5a96294","type":"text","text":"### Reasearch Papers","x":-360,"y":-368,"width":200,"height":101,"color":"2"},
+		{"id":"7a067448f7db87cb","type":"text","text":"### Dataseets","x":15,"y":-455,"width":200,"height":55,"color":"2"},
+		{"id":"46d4690d7c3749e6","x":-360,"y":-470,"width":240,"height":70,"type":"text","text":"### Electronics"}
 	],
 	"edges":[
 		{"id":"c05382a8d02d2437","fromNode":"81ab24b8546cd7bf","fromSide":"right","toNode":"ca1fdccb21b07781","toSide":"left","color":"2"},
 		{"id":"36ed5e7a666fac48","fromNode":"81ab24b8546cd7bf","fromSide":"right","toNode":"60a391e0ac61b938","toSide":"left","color":"2"},
 		{"id":"5d415372941f8dbd","fromNode":"ca1fdccb21b07781","fromSide":"right","toNode":"b442bae5c93fd3dd","toSide":"left","color":"1"},
 		{"id":"a81c06dc2fd9e0db","fromNode":"ca1fdccb21b07781","fromSide":"right","toNode":"350e42e8982bdd17","toSide":"left","color":"1"},
-		{"id":"c62e6dc1510c5886","fromNode":"ca1fdccb21b07781","fromSide":"right","toNode":"7a067448f7db87cb","toSide":"left","color":"1"},
 		{"id":"edd668cae7a9f706","fromNode":"ca1fdccb21b07781","fromSide":"right","toNode":"67e529adc5a96294","toSide":"left","color":"1"},
 		{"id":"52ed079f9b5f0eaa","fromNode":"b442bae5c93fd3dd","fromSide":"right","toNode":"000d62c2bf008013","toSide":"left"},
 		{"id":"93c482bbf49138e3","fromNode":"b442bae5c93fd3dd","fromSide":"right","toNode":"bf5e80a989a96a5d","toSide":"left"},
@@ -74,6 +74,7 @@
 		{"id":"91b77508ee96cf72","fromNode":"4831bb50bd18614b","fromSide":"bottom","toNode":"06e1a39618f32a77","toSide":"right","color":"5","label":"Link"},
 		{"id":"73ce8fdf5b804128","fromNode":"5b00406f78dfbd12","fromSide":"left","toNode":"65c670223ee49467","toSide":"right","color":"5","label":"Link"},
 		{"id":"8d39fe65f4907724","fromNode":"f7999b565ecfecd1","fromSide":"left","toNode":"81e5c5bf5d415403","toSide":"right","color":"5","label":"Link"},
-		{"id":"5bba16092dcb67c4","fromNode":"60a391e0ac61b938","fromSide":"right","toNode":"f7999b565ecfecd1","toSide":"left","color":"5"}
+		{"id":"5bba16092dcb67c4","fromNode":"60a391e0ac61b938","fromSide":"right","toNode":"f7999b565ecfecd1","toSide":"left","color":"5"},
+		{"id":"78c2d9af17371e34","fromNode":"ca1fdccb21b07781","fromSide":"right","toNode":"46d4690d7c3749e6","toSide":"left"}
 	]
 }
