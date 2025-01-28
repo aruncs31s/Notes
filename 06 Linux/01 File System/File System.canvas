@@ -2,11 +2,7 @@
 	"nodes":[
 		{"id":"81ab24b8546cd7bf","type":"text","text":"# HOME","x":-1080,"y":-442,"width":160,"height":80,"color":"2"},
 		{"id":"73d7b9285aa47877","type":"text","text":"## Coding","x":-760,"y":-920,"width":200,"height":53},
-		{"id":"d3196121c22e0e4b","type":"text","text":"### Rust","x":-401,"y":-1100,"width":181,"height":69},
-		{"id":"a1367e22e43a35dd","type":"text","text":"### Javascript","x":-420,"y":-1000,"width":220,"height":69},
-		{"id":"07ce0363e1c23460","type":"text","text":"### Python","x":-382,"y":-1260,"width":146,"height":114},
-		{"id":"f8ed03e7533c3057","type":"text","text":"### Cpp","x":-382,"y":-1420,"width":146,"height":114},
-		{"id":"7ab2c0eed10054d5","type":"text","text":"### C","x":-339,"y":-1540,"width":57,"height":69},
+		{"id":"07ce0363e1c23460","type":"text","text":"### Python","x":-410,"y":-1260,"width":174,"height":114,"color":"2"},
 		{"id":"60a391e0ac61b938","type":"text","text":"## Downloads","x":-760,"y":-197,"width":200,"height":60,"color":"5"},
 		{"id":"be4077e52bab48b0","type":"text","text":"### Files","x":-10,"y":-151,"width":250,"height":60,"color":"5"},
 		{"id":"5b00406f78dfbd12","type":"text","text":"### Pictures ","x":-10,"y":21,"width":250,"height":60,"color":"5"},
@@ -40,7 +36,11 @@
 		{"id":"9a53ba5d882f2eb7","type":"text","text":"### Books","x":-340,"y":-392,"width":250,"height":60,"color":"1"},
 		{"id":"1f9f1646ec6f4cbd","type":"text","text":"#### Hacking","x":71,"y":-369,"width":250,"height":60,"color":"1"},
 		{"id":"aec97e1d8a1f9de0","type":"text","text":"## Projects","x":-760,"y":940,"width":200,"height":60,"color":"2"},
-		{"id":"017b3b6e4b28c907","type":"text","text":"###  Kannur Solar Battery Monitoring System","x":-360,"y":940,"width":580,"height":80}
+		{"id":"017b3b6e4b28c907","type":"text","text":"###  Kannur Solar Battery Monitoring System","x":-360,"y":940,"width":580,"height":80},
+		{"id":"f8ed03e7533c3057","type":"text","text":"### Cpp","x":-339,"y":-1362,"width":108,"height":92,"color":"2"},
+		{"id":"7ab2c0eed10054d5","type":"text","text":"### C","x":-410,"y":-1362,"width":57,"height":69,"color":"2"},
+		{"id":"d3196121c22e0e4b","type":"text","text":"### Rust","x":-407,"y":-1120,"width":176,"height":69,"color":"2"},
+		{"id":"a1367e22e43a35dd","type":"text","text":"### Javascript","x":-410,"y":-1020,"width":200,"height":69,"color":"2"}
 	],
 	"edges":[
 		{"id":"c05382a8d02d2437","fromNode":"81ab24b8546cd7bf","fromSide":"right","toNode":"ca1fdccb21b07781","toSide":"left","color":"2"},
