@@ -21,15 +21,9 @@
 		{"id":"04fe9df0668decab","type":"text","text":"#### Coding","x":-2736,"y":84,"width":250,"height":60,"color":"1"},
 		{"id":"c332f76efab1bd73","type":"text","text":"#### CTF","x":-2736,"y":170,"width":250,"height":60,"color":"1"},
 		{"id":"08a56276d3c90047","type":"text","text":"#### TCP_IP","x":-2736,"y":256,"width":250,"height":60,"color":"1"},
-		{"id":"efa7429063170974","type":"text","text":"### Coding","x":-1570,"y":-250,"width":250,"height":60,"color":"6"},
 		{"id":"6b523e269ab0be33","type":"text","text":"# Arch Linux","x":-1403,"y":-686,"width":250,"height":80,"color":"6"},
-		{"id":"4d05b747c94a2df7","type":"text","text":"### Music","x":-1236,"y":-388,"width":250,"height":60,"color":"6"},
 		{"id":"e09e1158e49defbb","type":"text","text":"### Notes","x":-1069,"y":-250,"width":250,"height":60,"color":"6"},
-		{"id":"6c6c9ac17f4b8b83","type":"text","text":"### Videos","x":-902,"y":-388,"width":250,"height":60,"color":"6"},
-		{"id":"f6a1b8eaaae39ef8","type":"text","text":"### Movies","x":-734,"y":-250,"width":250,"height":60,"color":"6"},
 		{"id":"9fcdc52e3327b99f","type":"text","text":"### Downloads","x":-2071,"y":-388,"width":250,"height":60,"color":"6"},
-		{"id":"e40d394e427578e6","type":"text","text":"### Pictures","x":-1737,"y":-388,"width":250,"height":60,"color":"6"},
-		{"id":"757c7f0a12dd3059","type":"text","text":"### Projects","x":-1904,"y":-220,"width":250,"height":60,"color":"6"},
 		{"id":"f59a18a9dac1e371","type":"text","text":"### Academics ","x":-80,"y":219,"width":250,"height":60},
 		{"id":"7a6654d4dea4f7dc","type":"text","text":"### Reasearch Papers ","x":-80,"y":399,"width":295,"height":60},
 		{"id":"d8139dbfaed37369","type":"text","text":"#### Btech","x":110,"y":309,"width":250,"height":60},
@@ -47,7 +41,14 @@
 		{"id":"c05b286838675194","type":"text","text":"#### Electronics","x":-1319,"y":-68,"width":250,"height":54,"color":"6"},
 		{"id":"b4668cf6222e4d97","x":-975,"y":-105,"width":250,"height":60,"type":"text","text":"##### Embedded"},
 		{"id":"cc6c6f29fdf61f95","type":"text","text":"##### IOT","x":-640,"y":-98,"width":250,"height":60},
-		{"id":"216887e62a54889b","x":-862,"y":78,"width":250,"height":60,"type":"text","text":""}
+		{"id":"216887e62a54889b","x":-862,"y":78,"width":250,"height":60,"type":"text","text":"##### WebPages"},
+		{"id":"b40d75638606b4e2","x":-862,"y":160,"width":250,"height":60,"type":"text","text":"##### Linux"},
+		{"id":"757c7f0a12dd3059","type":"text","text":"### Projects","x":-1900,"y":-220,"width":250,"height":60,"color":"6"},
+		{"id":"efa7429063170974","type":"text","text":"### Coding","x":-1486,"y":-220,"width":250,"height":60,"color":"6"},
+		{"id":"6c6c9ac17f4b8b83","type":"text","text":"### Videos","x":-862,"y":-418,"width":250,"height":60,"color":"6"},
+		{"id":"f6a1b8eaaae39ef8","type":"text","text":"### Movies","x":-580,"y":-310,"width":250,"height":60,"color":"6"},
+		{"id":"4d05b747c94a2df7","type":"text","text":"### Music","x":-1319,"y":-388,"width":250,"height":60,"color":"6"},
+		{"id":"e40d394e427578e6","type":"text","text":"### Pictures","x":-1611,"y":-388,"width":250,"height":60,"color":"6"}
 	],
 	"edges":[
 		{"id":"1bc829353cff9728","fromNode":"dff211fd03f558d4","fromSide":"right","toNode":"648b2700dca4de9c","toSide":"left","label":"ntfs"},
@@ -55,7 +56,6 @@
 		{"id":"8b561afd09596d1d","fromNode":"6b523e269ab0be33","fromSide":"bottom","toNode":"e40d394e427578e6","toSide":"top"},
 		{"id":"a45320e289941038","fromNode":"6b523e269ab0be33","fromSide":"bottom","toNode":"4d05b747c94a2df7","toSide":"top"},
 		{"id":"c70ad4c6320749fc","fromNode":"648b2700dca4de9c","fromSide":"right","toNode":"ed59f61809d7d5ce","toSide":"left"},
-		{"id":"f2c854cbb063a983","fromNode":"6c6c9ac17f4b8b83","fromSide":"bottom","toNode":"f6a1b8eaaae39ef8","toSide":"top"},
 		{"id":"3f5ed6f32cfa6c9d","fromNode":"6b523e269ab0be33","fromSide":"bottom","toNode":"6c6c9ac17f4b8b83","toSide":"top"},
 		{"id":"268a3dc35cb73f8d","fromNode":"648b2700dca4de9c","fromSide":"right","toNode":"fa733a9bec28f98d","toSide":"left"},
 		{"id":"eca5b2a890b2aa92","fromNode":"648b2700dca4de9c","fromSide":"right","toNode":"e2eac0a5c7d47122","toSide":"left"},
@@ -114,6 +114,8 @@
 		{"id":"d394e7f6ff5da9e3","fromNode":"757c7f0a12dd3059","fromSide":"bottom","toNode":"09c0724565257124","toSide":"left"},
 		{"id":"a7c3966665413450","fromNode":"c05b286838675194","fromSide":"right","toNode":"b4668cf6222e4d97","toSide":"left"},
 		{"id":"87f37b81a65f371c","fromNode":"b4668cf6222e4d97","fromSide":"right","toNode":"cc6c6f29fdf61f95","toSide":"left"},
-		{"id":"dfd434e61e75a482","fromNode":"09c0724565257124","fromSide":"right","toNode":"216887e62a54889b","toSide":"left"}
+		{"id":"dfd434e61e75a482","fromNode":"09c0724565257124","fromSide":"right","toNode":"216887e62a54889b","toSide":"left"},
+		{"id":"7f1d2562e5659ec5","fromNode":"09c0724565257124","fromSide":"right","toNode":"b40d75638606b4e2","toSide":"left"},
+		{"id":"ebd9b2f227011fc2","fromNode":"6c6c9ac17f4b8b83","fromSide":"right","toNode":"f6a1b8eaaae39ef8","toSide":"left"}
 	]
 }
