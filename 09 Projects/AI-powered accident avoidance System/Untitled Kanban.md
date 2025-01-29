@@ -6,7 +6,8 @@ kanban-plugin: board
 
 ## Todo
 
-- [ ] Detect Objects
+- [ ] Detect normal objects
+- [ ] Detect Pedestrians
 
 
 ## Ongoing
