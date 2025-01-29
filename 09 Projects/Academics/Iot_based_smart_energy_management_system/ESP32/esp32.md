@@ -6,7 +6,7 @@ tags: []
 ## ESP32
 
 #### Contents
-- [Specs](#esp32%20specs)
+- [Specs](#esp32%20specs) ^2ebfc7
 - [[Projects/Iot_based_smart_energy_management_system/Files/Diagrams/Pinout.canvas|Pinout]]
 - [ADC Interfacing](/ESP32/analog_interfacing)
 * Interfacing
@@ -21,7 +21,6 @@ tags: []
 - [Multi Threding](#multi%20threding)
 - 
 ##### Esp32 Specs
-
 - Single or Dual-Core ==32-bit== LX6 Microprocessor with clock frequency up to ==240 MHz==.
 - 520 KB of SRAM, 448 KB of ROM and 16 KB of RTC SRAM.
 - Supports 802.11 b/g/n Wi-Fi connectivity with speeds up to 150 Mbps.

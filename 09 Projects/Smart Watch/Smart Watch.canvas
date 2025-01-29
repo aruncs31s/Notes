@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"id":"7deb99b3fc68b3f7","x":-390,"y":435,"width":940,"height":375,"type":"group","label":"Speech Recognition??"},
+		{"id":"e79bd3b8a007be83","type":"text","text":"### Heart Rate Monitoring","x":-370,"y":180,"width":240,"height":120},
+		{"id":"24eb54d73ed147e6","x":-370,"y":455,"width":250,"height":60,"type":"text","text":"##### Detected Speech"},
+		{"id":"5bcd1399b9f5c0b4","x":280,"y":740,"width":250,"height":50,"type":"text","text":"#### MIC"},
+		{"id":"07a4c8f5780a8c93","x":-80,"y":595,"width":280,"height":170,"type":"text","text":"### Rasppberry Pi"},
+		{"id":"14d883d0a70cfe08","x":440,"y":40,"width":250,"height":60,"type":"text","text":"###### SIM 800L"},
+		{"id":"75ff74844edb4b3b","type":"text","text":"# Smart Watch\n","x":-940,"y":-20,"width":340,"height":120},
+		{"id":"aec19dbae2b5c5a9","type":"text","text":"### PUSH BUTTON","x":-340,"y":-20,"width":260,"height":60},
+		{"id":"b960e7ec0ec79680","type":"text","text":"## SOS(number)\n- Location -> Lat, Long","x":45,"y":-280,"width":310,"height":140}
+	],
+	"edges":[
+		{"id":"1a788bb56c4c61d1","fromNode":"aec19dbae2b5c5a9","fromSide":"right","toNode":"b960e7ec0ec79680","toSide":"left"},
+		{"id":"045863f23d56762d","fromNode":"aec19dbae2b5c5a9","fromSide":"left","toNode":"75ff74844edb4b3b","toSide":"right","label":"Interrupt"},
+		{"id":"7ee279b5f0526da6","fromNode":"e79bd3b8a007be83","fromSide":"right","toNode":"b960e7ec0ec79680","toSide":"left"},
+		{"id":"1d0ab8fd2f81e00b","fromNode":"e79bd3b8a007be83","fromSide":"left","toNode":"75ff74844edb4b3b","toSide":"right","label":"Analog In"},
+		{"id":"cf3b14956328a0af","fromNode":"5bcd1399b9f5c0b4","fromSide":"left","toNode":"07a4c8f5780a8c93","toSide":"right","label":"Audio IN"},
+		{"id":"f3a5b9ecf9848e73","fromNode":"07a4c8f5780a8c93","fromSide":"left","toNode":"24eb54d73ed147e6","toSide":"right"},
+		{"id":"733a989e798e4a7c","fromNode":"24eb54d73ed147e6","fromSide":"left","toNode":"75ff74844edb4b3b","toSide":"right","label":"UART"},
+		{"id":"79e2b31ee74cd9d3","fromNode":"14d883d0a70cfe08","fromSide":"left","toNode":"b960e7ec0ec79680","toSide":"right","label":"Software Serial"}
+	]
+}

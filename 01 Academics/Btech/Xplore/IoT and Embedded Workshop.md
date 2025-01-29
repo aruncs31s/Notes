@@ -38,3 +38,23 @@ There is a competition also in which the winner can receive __amount__
 | Competiotions | Participants | Total Number of Candidates |
 | ------------- | ------------ | -------------------------- |
 |               |              |                            |
+
+
+
+### S8 ECE B 
+- Gesture Controlled Robot 
+- Bird Game 
+
+### S6 ECE B
+
+### S6 ECE A
+
+### S6 ECE B
+
+- Maze finding Robot -> Ebin 
+- Line Following Robot 
+- Object Avoidance Robot 
+- Object Tracking Robot 
+
+
+
