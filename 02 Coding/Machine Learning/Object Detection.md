@@ -12,3 +12,7 @@ pip install ultralytics
 ```
 
 "A dataset with annotated objects is critical for understanding and implementing YOLO object detection"^[https://pyimagesearch.com/2018/11/12/yolo-object-detection-with-opencv/]
+
+## Detecting Objects
+
+![](https://b2633864.smushcdn.com/2633864/wp-content/uploads/2018/11/yolo_design.jpg?lossy=2&strip=1&webp=1)
