@@ -4,11 +4,12 @@ kanban-plugin: board
 
 ---
 
-## Ongoing
-
-
-
 ## Todo
+
+- [ ] Detect Objects
+
+
+## Ongoing
 
 
 
