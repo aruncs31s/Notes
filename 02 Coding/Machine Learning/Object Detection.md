@@ -20,4 +20,5 @@ pip install ultralytics
 ```mermaid
 graph LR
 Detectors --> R-CNN & Fast_R-CNN & YOLO & Single_Short_Detector(SSDs)
+R-CNN --> Selective_Search
 ```
