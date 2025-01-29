@@ -15,8 +15,8 @@ cssclasses:
 
 1. [x] Should contain a sos button
 2. [ ] Should detect "HELP" command
-3. [ ] Should Send location to the parents
-4. [ ] Should measure the heart rate
+3. [x] Should Send location to the parents
+4. [x] Should measure the heart rate
 
 ## PINS
 
@@ -38,7 +38,7 @@ cssclasses:
 
 #### SIM800L Interfacing
 
-```c
+```cpp
 #define BAUD_RATE 9600
 #define MIC_PIN A0
 
@@ -242,6 +242,20 @@ void setup() {
 void loop() {
   Serial.println(digitalRead(D1));
   delay(500);
+}
+```
+
+```cpp
+#include <Arduino.h>
+void IRAM_ATTR theISR(){
+	Serial.println("Button Pressed");
+}
+void setup(){
+	Serial.begin(9600);
+	attachInterrupt(D1,theISR,FALLING);
+}
+void loop(){
+	delay(1000);
 }
 ```
 

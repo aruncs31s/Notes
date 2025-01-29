@@ -68,4 +68,25 @@ Few points to remember
 
 ![[Bandwidth SNR Trade off#Bandwidth SNR Trade off]]
 
+"**The word Complex is an extraordinarly complex word , none of us know what it means because it means so meny things**"
 
+```python
+import numpy as np 
+print(np.pi)
+```
+
+
+### Complex Systems
+
+1. Low cost with high complexity requires large volume, long development time, and careful design.
+2. Complex systems are often dont work or are not robust
+3. Special applications, since they involve small numbers, must extend the chips used in more general systems with relatively simple extensions.
+
+
+## Source Coding 
+**Requirements**: Probability
+
+#### Why Binary interface
+- Standardization
+- Layering
+- No perfomance loss 

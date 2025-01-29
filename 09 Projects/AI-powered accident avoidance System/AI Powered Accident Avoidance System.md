@@ -70,4 +70,7 @@ video.release()
 cv2.destroyAllWindows()
 ```
 
+
 <details> <summmary></summary> </details>
+
+	
