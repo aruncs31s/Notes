@@ -6,16 +6,20 @@ kanban-plugin: board
 
 ## Todo
 
-- [ ] Detect normal objects
-- [ ] Detect Pedestrians
+- [ ] Design the circuit
+- [ ] Complete The Circuit
 
 
 ## Ongoing
 
+- [ ] Detect Pedestrians
+- [ ] Decide the components
+- [ ] Purchase the components
 
 
 ## Completed
 
+- [ ] Detect normal objects
 
 
 
