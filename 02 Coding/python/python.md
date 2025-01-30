@@ -14,11 +14,18 @@ tags: []
 - [[Python Regex]]
 - 
 ## Contents
-
+a
 - [ ]
 - [Zip](#zip)
 - [List](#list)
 
+### Arrays
+
+```python 
+a = [ 1,2,3]
+b = [a,a,a]
+print(b[1][1])
+```
 #### Zip
 
 - [Iterating over the zip objects](#iterating%20over%20the%20zip%20objects)

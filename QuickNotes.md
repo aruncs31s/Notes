@@ -29,3 +29,8 @@ https://docs.platformio.org/en/latest/core/installation/udev-rules.html
 
 https://community.platformio.org/t/upload-latest-build-without-a-compile-link/9520
 sudo pacman -S ffmpeg cairo pango pkg-config gcc
+
+
+
+A side effect of the RRC filter is to create inter-symbol interference (ISI). ISI is bad for a received signal because it blurs the symbols together. We'll look into this in-depth during the timing recovery section.
+
