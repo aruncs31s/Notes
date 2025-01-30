@@ -7,12 +7,12 @@ tags:
   - project,
 Date:
   Started: 29-11-2024
-  Target: 1-1-2025
+  Target: 01-01-2025
   End:
 Status:
   Working_ON: true
   Completed: false
-GithubLink: https://github.com/aruncs31s/Smart-Watch-for-Ladies-Protection
+github: https://github.com/aruncs31s/Smart-Watch-for-Ladies-Protection
 cssclasses:
   - wide-page
 ---

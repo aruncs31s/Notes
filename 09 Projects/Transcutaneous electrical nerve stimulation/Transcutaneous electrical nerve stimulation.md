@@ -3,19 +3,26 @@ dg-publish: true
 id: 20-11-2024-Project
 aliases: 
 tags:
- - project,
+ - project,Electronics
 Date:
   Starting: 20-11-2024
   Target: 03-12-2024
-  End: 
+  End: 17-12-2024
 Status:
   Working_ON: true
   Completed: false
-GithubLink:
+github: 
 cssClasses: wide-page
 cssClass: image-gallery
 ---
 # Transcutaneous electrical nerve stimulation 
+
+```dataview
+Table 
+file.ctime as "Created" , Date.Started as "Started" , Date.Target as "Completed"
+Where file = this.file
+```
+
 - [[TENS Versions]]
 - [[09 Projects/Transcutaneous electrical nerve stimulation/Ledger|Ledger]]
 

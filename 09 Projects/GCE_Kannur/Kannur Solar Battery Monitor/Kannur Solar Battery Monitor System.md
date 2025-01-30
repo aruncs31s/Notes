@@ -1,16 +1,28 @@
 ---
 dg-publish: true
-id: Smart City
+id: 06010-2024-Smart-City
 aliases:
   - Smart city
 tags:
-  - project,embedded
-Completed: false
-Starting Date: "6-10-2024"
+  - project,embedded,iot
+Date:
+  Started: 06-10-2024
+  Target: 28-10-2024
+  Completed: 
+Status:
+  isCompelete: false
+  isWorkingOn: true
+  isStall: false
 Status: true
-Target Date: "2024-10-28"
+github: 
+  - https://github.com/aruncs31s/Kannur-Solar-Battery-Monitoring-System
 ---
 # Kannur Solar Battery Monitor System
+```dataview
+Table 
+file.ctime as "Created" , Date.Started as "Started" , Date.Target as "Completed"
+Where file = this.file
+```
 - [[09 Projects/GCE_Kannur/Kannur Solar Battery Monitor/Ledger|Ledger]]
 - [[#Components Used]]
 - [[#3D Printing The case]]
