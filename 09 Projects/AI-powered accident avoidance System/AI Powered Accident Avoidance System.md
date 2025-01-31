@@ -33,13 +33,13 @@ dg-publish: true
 | Total                                        | -   | 10095/-<br> |
 **Actuall Selection**
 
-| Sl No. | Component                                      | Cost  |
-| ------ | ---------------------------------------------- | ----- |
-| 1      | [L298 Motor Driver](https://amzn.in/d/70eW6LH) | 189/- |
-| 2      |                                                |       |
-|        |                                                |       |
-|        |                                                |       |
-|        |                                                |       |
+| Sl No. | Component                                           | Cost  |
+| ------ | --------------------------------------------------- | ----- |
+| 1      | [L298 Motor Driver](https://amzn.in/d/70eW6LH)      | 189/- |
+| 2      | [CP PLUS 64GB microSDXC](https://amzn.in/d/40ZthjA) | 549/- |
+| 3      | [# Raspberry Pi 5 8GB RAM]                          |       |
+|        |                                                     |       |
+|        |                                                     |       |
 
 
 ## Case Study 
