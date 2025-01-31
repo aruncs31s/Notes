@@ -5,11 +5,14 @@ tags: []
 ---
 
 # Object Detection
+object detection draws bounding boxes around each detected object, specifying its location.^[https://www.ultralytics.com/glossary/object-detection]
+
 **Prerequisites**
 - [[CNN]]
 - [[Intersection over Union|Intersection over Union (IoU)]]
-- [[]]
-object detection draws bounding boxes around each detected object, specifying its location.^[https://www.ultralytics.com/glossary/object-detection]
+- [[Mean average precision(mAP)]]
+
+
 
 There are 2 process
 1. Classification: Identifies what objects are present
