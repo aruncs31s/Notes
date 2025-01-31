@@ -5,6 +5,10 @@ tags: []
 ---
 
 # Object Detection
+**Prerequisites**
+- [[CNN]]
+- [[Intersection over Union|Intersection over Union (IoU)]]
+- [[]]
 object detection draws bounding boxes around each detected object, specifying its location.^[https://www.ultralytics.com/glossary/object-detection]
 
 There are 2 process
