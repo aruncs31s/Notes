@@ -33,9 +33,13 @@ dg-publish: true
 | Total                                        | -   | 10095/-<br> |
 **Actuall Selection**
 
-| Sl No.                                                | Comp | Cost |
-| ----------------------------------------------------- | ---- | ---- |
-| 1. [L298 Motor Driver](https://amzn.in/d/70eW6LH)<br> |      |      |
+| Sl No. | Component                                      | Cost  |
+| ------ | ---------------------------------------------- | ----- |
+| 1      | [L298 Motor Driver](https://amzn.in/d/70eW6LH) | 189/- |
+| 2      |                                                |       |
+|        |                                                |       |
+|        |                                                |       |
+|        |                                                |       |
 
 
 ## Case Study 
