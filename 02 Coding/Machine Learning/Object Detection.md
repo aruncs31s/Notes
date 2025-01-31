@@ -8,8 +8,8 @@ tags: []
 object detection draws bounding boxes around each detected object, specifying its location.^[https://www.ultralytics.com/glossary/object-detection]
 
 There are 2 process
-1. Classification: Identifies what on
-2. Localization
+1. Classification: Identifies what objects are present
+2. Localization: where it is present , and draws a bounding box around them.
 
 
 ## Detecting Objects
