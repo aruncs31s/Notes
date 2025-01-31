@@ -4,9 +4,8 @@ Date: 30-01-25
 ---
 # YOLO
 
-## Using pre trained Model
-
 ### Installition
+Yolo also requiers pytorch
 #### Mac OS
   
 ```bash
