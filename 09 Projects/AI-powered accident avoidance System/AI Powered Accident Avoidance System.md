@@ -20,6 +20,7 @@ dg-publish: true
 # APAAS
 
 ## Components
+**Initial selection**
 
 | Components                                   | Qty | Cost        |
 | -------------------------------------------- | --- | ----------- |
@@ -30,6 +31,9 @@ dg-publish: true
 | [Boost Converter](https://amzn.in/d/dno182p) | 1   | 296/-       |
 | Miscellaneous                                |     | 300/-       |
 | Total                                        | -   | 10095/-<br> |
+**Actuall Selection**
+1. []
+
 ## Case Study 
 
 #### Problem Statement 
@@ -39,12 +43,12 @@ Accidents involving vehicles often occur due to blind spots, lack of pedestrian 
 ==Attach a camera to the car's bonnet== equipped with AI-powered image recognition and real-time processing. This system can ==detect pedestrians, cyclists, and obstacles,== alerting the driver with audible and visual signals. It can also integrate advanced security features such as ==automatic braking, lane departure warnings, and adaptive cruise control==, ensuring pedestrian safety and reducing the likelihood of accidents.
 
 
-1. Collision Avoidance (CA)
-2. AI-based driving assistance system (AI-DAS)
-3. Raspberry Pi; OpenCV
-4. safety message dissemination
-5. multihop broadcast protocol for dissemination^[the action or fact of spreading something] of time-critical emergency messages (EMs) in vehicular ad hoc networks (VANETs)^[https://ieeexplore.ieee.org/document/6675860]
-6.  medium access control (MAC)(check this out with the article)
+2. Collision Avoidance (CA)
+3. AI-based driving assistance system (AI-DAS)
+4. Raspberry Pi; OpenCV
+5. safety message dissemination
+6. multihop broadcast protocol for dissemination^[the action or fact of spreading something] of time-critical emergency messages (EMs) in vehicular ad hoc networks (VANETs)^[https://ieeexplore.ieee.org/document/6675860]
+7.  medium access control (MAC)(check this out with the article)
 
 
 
