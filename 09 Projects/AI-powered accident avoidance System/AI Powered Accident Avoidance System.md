@@ -32,7 +32,11 @@ dg-publish: true
 | Miscellaneous                                |     | 300/-       |
 | Total                                        | -   | 10095/-<br> |
 **Actuall Selection**
-1. []
+
+| Sl No.                                                | Comp | Cost |
+| ----------------------------------------------------- | ---- | ---- |
+| 1. [L298 Motor Driver](https://amzn.in/d/70eW6LH)<br> |      |      |
+
 
 ## Case Study 
 
