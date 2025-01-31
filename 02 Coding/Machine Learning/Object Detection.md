@@ -5,7 +5,7 @@ tags: []
 ---
 
 # Object Detection
-object detection draws bounding boxes around each detected object, specifying its location.^[1]
+object detection draws bounding boxes around each detected object, specifying its location.^[https://www.ultralytics.com/glossary/object-detection]
 "A dataset with annotated objects is critical for understanding and implementing YOLO object detection"^[https://pyimagesearch.com/2018/11/12/yolo-object-detection-with-opencv/]
 
 
@@ -20,6 +20,4 @@ R-CNN --> Selective_Search
 ```
 
 
-## References
-1. https://www.ultralytics.com/glossary/object-detection
 
