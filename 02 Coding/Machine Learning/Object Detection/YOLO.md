@@ -6,6 +6,10 @@ Date: 30-01-25
 
 ### Installition
 Yolo also requiers pytorch
+```bash
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+```
+
 #### Mac OS
   
 ```bash
