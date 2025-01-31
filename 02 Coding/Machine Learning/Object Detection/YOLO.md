@@ -11,6 +11,7 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 ```
 *Note that i have used only cpu, there is a cuda version -> [Check this](https://pytorch.org/get-started/locally/) out when i get a gpu*
 
+
 ```bash
 pip install ultralytics opencv-python
 ```
@@ -18,7 +19,7 @@ pip install ultralytics opencv-python
 
 
 --- Old 
-
+- [ ] Need to check weather the notes down are actually usefull?
 
 #### Mac OS
   
