@@ -35,14 +35,12 @@ dg-publish: true
 
 **Actuall Selection**
 
-| Sl No. | Component                                           | Cost    |
-| ------ | --------------------------------------------------- | ------- |
-| 1      | [L298 Motor Driver](https://amzn.in/d/70eW6LH)      | 189/-   |
-| 2      | [CP PLUS 64GB microSDXC](https://amzn.in/d/40ZthjA) | 549/-   |
-| 3      | [Raspberry Pi 5 8GB RAM](https://amzn.in/d/3ER0EV6) | 8,135/- |
-| 4      | [4-wheel Drive Robot Smart Car Chassis]             |         |
-
-
+| Sl No. | Component                                                          | Cost    |
+| ------ | ------------------------------------------------------------------ | ------- |
+| 1      | [L298 Motor Driver](https://amzn.in/d/70eW6LH)                     | 189/-   |
+| 2      | [CP PLUS 64GB microSDXC](https://amzn.in/d/40ZthjA)                | 549/-   |
+| 3      | [Raspberry Pi 5 8GB RAM](https://amzn.in/d/3ER0EV6)                | 8,135/- |
+| 4      | [4-wheel Drive Robot Smart Car Chassis](https://amzn.in/d/aAF5WfR) |         |
 
 ## Case Study
 
