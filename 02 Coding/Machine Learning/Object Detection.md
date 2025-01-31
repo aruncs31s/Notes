@@ -6,7 +6,10 @@ tags: []
 
 # Object Detection
 object detection draws bounding boxes around each detected object, specifying its location.^[https://www.ultralytics.com/glossary/object-detection]
-"A dataset with annotated objects is critical for understanding and implementing YOLO object detection"^[https://pyimagesearch.com/2018/11/12/yolo-object-detection-with-opencv/]
+
+There are 2 process
+1. Classification: Identifies what on
+2. Localization
 
 
 ## Detecting Objects
