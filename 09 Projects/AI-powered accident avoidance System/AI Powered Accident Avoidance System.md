@@ -19,6 +19,8 @@ dg-publish: true
 
 # APAAS
 
+- [[Coding]]
+
 ## Components
 
 **Initial selection**
@@ -86,7 +88,9 @@ cv2.destroyAllWindows()
 <details> <summmary></summary> </details>
 
 ### Using YOLO
+
 - Trainer Kit
+
 ```python
 from multiprocessing import freeze_support
 
@@ -114,7 +118,8 @@ if __name__ == "__main__":
     main()
 ```
 
-- Model run 
+- Model run
+
 ```python
 import cv2
 import numpy as np
@@ -162,6 +167,7 @@ cv2.destroyAllWindows()
 ```
 
 - Convert.py
+
 ```python
 from ultralytics import YOLO
 
