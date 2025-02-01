@@ -8,4 +8,7 @@ tags: []
 
 ```bash
 pip install ultralytics
+
 ```
+
+_note that after some time i have to reinstall ultralytics_
