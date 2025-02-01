@@ -86,13 +86,7 @@ cv2.destroyAllWindows()
 <details> <summmary></summary> </details>
 
 ### Using YOLO
+- Trainer Kit
+```python
 
-```bash
-python -m venv venv
-source venv/bin/activate
-```
-
-```bash
-pip install opencv-python
-pip install ultralytics
 ```
