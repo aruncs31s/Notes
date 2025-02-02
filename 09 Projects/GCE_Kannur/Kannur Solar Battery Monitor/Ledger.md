@@ -52,9 +52,12 @@ from sundar electronics
 
 ### 14-01-2025
 
-|     |     |
-| --- | --- |
-|     |     |
+| Component  | Cost x Qty | Amount |
+| ---------- | ---------- | ------ |
+| 2n2222     | 10         | 50     |
+| Heat Sleev | 5          | 25     |
+| Heat Sleev | 2 1/2      | 25     |
+| 3 Wire Pin |            |        |
 
 
 [^1]: 
