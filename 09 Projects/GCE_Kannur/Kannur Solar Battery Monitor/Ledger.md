@@ -35,4 +35,19 @@ tags:
 |                         |          |                  |            |
 
 
+### 10-01-2025
+
+| Component        | Cost x Qty | Amount |
+| ---------------- | ---------- | ------ |
+| Dot PCB          | 45 x 5     | 225/-  |
+| Small PCB        | 20 x 2     |        |
+| Bar Connector    |            |        |
+| 7805 IC          |            |        |
+| Capacitor(4.7uF) |            |        |
+| Resistor 1K,4.7k |            |        |
+| Disc Caps        |            |        |
+| Crocadile Pin    |            |        |
+|                  |            |        |
+|                  |            |        |
+
 
