@@ -37,17 +37,24 @@ tags:
 
 ### 10-01-2025
 
-| Component        | Cost x Qty | Amount |
-| ---------------- | ---------- | ------ |
-| Dot PCB          | 45 x 5     | 225/-  |
-| Small PCB        | 20 x 2     |        |
-| Bar Connector    |            |        |
-| 7805 IC          |            |        |
-| Capacitor(4.7uF) |            |        |
-| Resistor 1K,4.7k |            |        |
-| Disc Caps        |            |        |
-| Crocadile Pin    |            |        |
-|                  |            |        |
-|                  |            |        |
+from sundar electronics 
+
+| Component        | Cost x Qty | Amount          |
+| ---------------- | ---------- | --------------- |
+| Dot PCB          | 45 x 5     | 225/-           |
+| Small PCB        | 20 x 2     | 30              |
+| Bar Connector    | 10 x 2     | 20              |
+| 7805 IC          | 10 x 23    | 230             |
+| Capacitor(4.7uF) | 3 x 25     | 75              |
+| Resistor 1K,4.7k | 80 x 1     | 40 ( 50 % disc) |
+| Disc Caps        | 25         | 25              |
+| Crocadile Pin    | 1          | 20              |
+
+### 14-01-2025
+
+|     |     |
+| --- | --- |
+|     |     |
 
 
+[^1]: 
