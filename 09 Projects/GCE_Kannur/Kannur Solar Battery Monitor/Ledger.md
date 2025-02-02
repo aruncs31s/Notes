@@ -57,7 +57,8 @@ from sundar electronics
 | 2n2222     | 10         | 50     |
 | Heat Sleev | 5          | 25     |
 | Heat Sleev | 2 1/2      | 25     |
-| 3 Wire Pin |            |        |
+| 3 Wire Pin | 18         | 108    |
+| 2 Wire Pin | 25         | 125    |
 
 
 [^1]: 
