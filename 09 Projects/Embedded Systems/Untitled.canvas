@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"4886cf7588715bc2","type":"text","text":"# Embedded Systems","x":80,"y":140,"width":280,"height":100},
+		{"id":"afe15256c88b656f","type":"text","text":"## Codes","x":560,"y":140,"width":200,"height":100},
+		{"id":"65322ad25f512f7e","type":"text","text":"### ESP32","x":960,"y":70,"width":200,"height":100},
+		{"id":"bbb17c7ad454aa3a","type":"text","text":"#### Basics","x":1360,"y":70,"width":200,"height":100},
+		{"id":"c1da4603717236ac","type":"text","text":"### ESP8266","x":960,"y":210,"width":200,"height":100},
+		{"id":"a4f7371ee35eb60e","type":"text","text":" #### Basics","x":1360,"y":210,"width":200,"height":100},
+		{"id":"1a1b30e6312ab591","type":"text","text":"### Baics","x":1110,"y":460,"width":170,"height":80},
+		{"id":"ba55248e28dc5251","type":"text","text":"#### ESP32","x":1460,"y":360,"width":200,"height":100},
+		{"id":"6a948091a5b1bc55","type":"text","text":"#### ESP8266","x":1460,"y":540,"width":200,"height":100}
+	],
+	"edges":[
+		{"id":"d39a2051876ac391","fromNode":"4886cf7588715bc2","fromSide":"right","toNode":"afe15256c88b656f","toSide":"left"},
+		{"id":"ab14414e0705a882","fromNode":"afe15256c88b656f","fromSide":"right","toNode":"65322ad25f512f7e","toSide":"left"},
+		{"id":"bc8447d301acb63f","fromNode":"65322ad25f512f7e","fromSide":"right","toNode":"bbb17c7ad454aa3a","toSide":"left"},
+		{"id":"f77830ac65be5db8","fromNode":"afe15256c88b656f","fromSide":"right","toNode":"c1da4603717236ac","toSide":"left"},
+		{"id":"0d25fc195bd7acf2","fromNode":"c1da4603717236ac","fromSide":"right","toNode":"a4f7371ee35eb60e","toSide":"left"},
+		{"id":"fcee68e4396e1cbc","fromNode":"1a1b30e6312ab591","fromSide":"right","toNode":"ba55248e28dc5251","toSide":"left"},
+		{"id":"6902a40a7d5c7e2b","fromNode":"1a1b30e6312ab591","fromSide":"right","toNode":"6a948091a5b1bc55","toSide":"left"}
+	]
+}
