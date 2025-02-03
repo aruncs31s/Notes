@@ -1,15 +1,20 @@
 ---
-dg-publish: true
-aliases: 
-Date: 23-10-2024
+id: Ledger
+aliases: []
 tags:
   - money
+Date: "23-10-2024"
+dg-publish: true
 ---
+
 # Ledger Kannur Solar Battery Meter
+
 - [[Documents]]
+
 #### 5-10-2024
 
-- Cost: **310/-** for 10 Pics DC Connectors 
+- Cost: **310/-** for 10 Pics DC Connectors
+
 #### 22-10-2024
 
 | Item                    | Quantity | Single Unit Cost | Total Cost |
@@ -34,10 +39,9 @@ tags:
 | 3 Gxen Connectors       | 6        | 6                | 36         |
 |                         |          |                  |            |
 
-
 ### 10-01-2025
 
-from sundar electronics 
+from sundar electronics
 
 | Component        | Cost x Qty | Amount          |
 | ---------------- | ---------- | --------------- |
@@ -60,5 +64,8 @@ from sundar electronics
 | 3 Wire Pin | 18         | 108    |
 | 2 Wire Pin | 25         | 125    |
 
+### 2025-02-03
 
-[^1]: 
+| Component           | Cost x Qty | Amount |
+| ------------------- | ---------- | ------ |
+| Single Switch Cover | 25 x 20    | 500    |
