@@ -3,6 +3,7 @@ id: tmux
 aliases: []
 tags: []
 ---
+# TMUX 
 
 #git [Github](https://github.com/tmux/tmux)
 
