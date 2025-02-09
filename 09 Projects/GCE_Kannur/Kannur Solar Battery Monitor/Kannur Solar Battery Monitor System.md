@@ -28,7 +28,7 @@ Where file = this.file
 - [[#3D Printing The case]]
 - [[#Diagram]]
 - [[09 Projects/GCE_Kannur/Kannur Solar Battery Monitor/Versions]]
-
+- [[Reasearch And Development]]
 **Aim**: 
 >**Revision 1**:
 >- Measure the voltage using a Micro-Controller and show that on a website 
