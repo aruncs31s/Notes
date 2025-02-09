@@ -45,10 +45,10 @@ Where file = this.file
 ---
 ### Components Used
 - There are 2 revisions for this project
-  1. Using [[Electronics/Embedded Systems/Micro Controllers/ESP32/ESP32|ESP32]]
-  2. Using [[ESP8266]]
+  1. Using [[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/ESP32|ESP32]]
+  2. Using [[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/ESP8266]]
 
-*This is just initial cost for testing and prototype and does not reflect on the actual cost of the final project , for example `esp32` is in the first table costs `546/-` INR   Which can be reduced also if we're planning to use `ESP8266` the cost will be even less but we will be only getting 1 [[Analog Interfacing|ADC]] Pin*  
+*This is just initial cost for testing and prototype and does not reflect on the actual cost of the final project , for example `esp32` is in the first table costs `546/-` INR   Which can be reduced also if we're planning to use `ESP8266` the cost will be even less but we will be only getting 1 [[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/programming/Analog Interfacing|ADC]] Pin*  
 
 | Component Name                                                                                      | Quantity | Price | Total |
 | --------------------------------------------------------------------------------------------------- | -------- | ----- | ----- |

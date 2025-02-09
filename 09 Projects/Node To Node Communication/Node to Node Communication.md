@@ -16,7 +16,7 @@ cssclasses: []
 
 > - Going to use [[ESP_NOW]]
 > - There Will Be 5 Nodes
-> - Going to use [[Electronics/Embedded Systems/Micro Controllers/ESP32/ESP32|ESP32]]
+> - Going to use [[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/ESP32|ESP32]]
 
 **Sensors**:
 
@@ -26,7 +26,7 @@ cssclasses: []
 ##### Light Sensor
 
 - It Uses `I2C`
-- Sample Programming [[Interfacing#Light Intensity Sensor|Light Intensity Sensor]]
+- Sample Programming [[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/programming/Interfacing#Light Intensity Sensor|Light Intensity Sensor]]
 - Supply voltage range VDD: **2.5 V to 3.6 V**
 
 ##### Wind Direction
@@ -168,7 +168,7 @@ delay(1000);
 
 ##### Single Node Sender Side
 
-You can use [[WiFi Programming#Get MAC Address|Get Mac]] to get mac address
+You can use [[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/programming/WiFi Programming#Get MAC Address|Get Mac]] to get mac address
 
 ```c
 #include <esp_now.h>

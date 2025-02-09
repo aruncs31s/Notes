@@ -109,7 +109,7 @@ if ((WiFi.status) != WL_CONNECTED ){
 
 
 #### CSI
-- First complete [[ESP_IDF]]
+- First complete [[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/ESP_IDF]]
 - Then complete [[ESP_CSI]]
 HACK: 
 ```c

@@ -12,14 +12,14 @@ cssclasses:
 
 - [Introduction](#introduction)
 - [Programming](#programming)
-  - [ESP IDF](ESP_IDF.md)
-  - [ADC](ESP-ADC.md)
-  - [WiFi Programming](WiFi%20Programming.md)
-  - [Interfacing](Interfacing.md)
-  - [Multitasking](MultiTasking.md)
-  - [ESP-NOW](ESP-NOW.md)
-  - [Interrupt Programming](Interrupt%20Programming.md)
-  - [ESP32 Web Programming|Web Programming](Web%20Programming.md)
+  - [ESP IDF](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/ESP_IDF.md)
+  - [ADC](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/ESP-ADC.md)
+  - [WiFi Programming](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/programming/WiFi%20Programming.md)
+  - [Interfacing](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/programming/Interfacing.md)
+  - [Multitasking](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/programming/MultiTasking.md)
+  - [ESP-NOW](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/ESP-NOW.md)
+  - [Interrupt Programming](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/programming/Interrupt%20Programming.md)
+  - [ESP32 Web Programming|Web Programming](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/programming/Web%20Programming.md)
 
 # Introduction
 
@@ -50,10 +50,10 @@ cssclasses:
 
 ## Programming
 
-- [ESP IDF](ESP_IDF.md)
-- [WiFi Programming](WiFi%20Programming.md)
-- [Interfacing](Interfacing.md)
-- [Multitasking](MultiTasking.md)
-- [ESP-NOW](ESP-NOW.md)
-- [Interrupt Programming](Interrupt%20Programming.md)
-- [ESP32 Web Programming|Web Programming](Web%20Programming.md)
+- [ESP IDF](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/ESP_IDF.md)
+- [WiFi Programming](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/programming/WiFi%20Programming.md)
+- [Interfacing](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/programming/Interfacing.md)
+- [Multitasking](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/programming/MultiTasking.md)
+- [ESP-NOW](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/ESP-NOW.md)
+- [Interrupt Programming](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/programming/Interrupt%20Programming.md)
+- [ESP32 Web Programming|Web Programming](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/programming/Web%20Programming.md)

@@ -37,6 +37,10 @@ The **GPIO 0** needs to be low in Programming or downlading mode and high in **r
 | ------ | --- |
 
 *Other pins are same.*
+![[Screenshot 2025-02-08 at 12.04.06 AM.png]]
+![[Screenshot 2025-02-08 at 12.05.30 AM.png]]
+![[Screenshot 2025-02-08 at 12.10.49 AM.png]]
+
 
 
 ## Power Supply
@@ -54,4 +58,3 @@ f_{c} &= \frac{1}{2\pi 10^{-5}}  \\
 fc &\approx 16 KHz 
 \end{align}
 $$
-rr

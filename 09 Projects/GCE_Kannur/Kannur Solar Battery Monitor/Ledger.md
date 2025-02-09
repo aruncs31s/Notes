@@ -7,10 +7,10 @@ tags:
 ---
 # Ledger Kannur Solar Battery Meter
 - [[Documents]]
-#### 5-10-2024
+### 5-10-2024
 
 - Cost: **310/-** for 10 Pics DC Connectors 
-#### 22-10-2024
+### 22-10-2024
 
 | Item                    | Quantity | Single Unit Cost | Total Cost |
 | ----------------------- | -------- | ---------------- | ---------- |
@@ -33,6 +33,14 @@ tags:
 | 2 RMC (Connectors)      | 6        | 5                | 30         |
 | 3 Gxen Connectors       | 6        | 6                | 36         |
 |                         |          |                  |            |
+|                         |          |                  |            |
 
 
 
+### 10-01-25
+
+| Component     | Qty    | Amount |
+| ------------- | ------ | ------ |
+| Dot PCB       | 5 * 45 | 225    |
+| Bar Connector | 2 * 2  |        |
+|               |        |        |
