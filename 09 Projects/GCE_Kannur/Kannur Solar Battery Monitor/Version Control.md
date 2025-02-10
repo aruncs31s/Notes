@@ -14,5 +14,6 @@ for example, If i have `project-x` and it has coding part and circuit design par
 
 
 ```mermaid
-
+graph LR
+project-x --> 
 ```
