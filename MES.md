@@ -22,7 +22,7 @@ Feest Count
 
 | Room No      | No. Of Memebers | From Mess Count | Names | Total |
 | ------------ | --------------- | --------------- | ----- | ----- |
-| 100          | NILL            | -               | -     | -     |
+| 100          | NILL            | -               |       | -     |
 | 101          |                 | 3               |       |       |
 | 102          |                 | 3               |       |       |
 | 103          |                 | -               |       |       |
