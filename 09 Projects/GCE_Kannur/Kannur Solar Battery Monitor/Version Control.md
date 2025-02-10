@@ -15,5 +15,8 @@ for example, If i have `project-x` and it has coding part and circuit design par
 
 ```mermaid
 graph LR
-project-x --> 
+project-x --> Codes & Circuit
+
 ```
+
+So the main repo contains all the supporting documentation and credits 
