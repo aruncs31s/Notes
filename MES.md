@@ -6,7 +6,7 @@ tags: []
 
 # MESS
 
-Rooms that are not putting Count -> 318(2) ,300(?)
+Rooms that are not putting Count -> 318(2)
 
 ##### VEG
 
@@ -33,7 +33,7 @@ Feest Count
 | 109          |                 | 3               |       |       |
 | 110          |                 | 3               |       |       |
 | 111          |                 | 9               |       |       |
-| 112          |                 |                 |       |       |
+| 112          |                 | 6               |       |       |
 | 113          |                 |                 |       |       |
 | 114          |                 | 5               |       |       |
 | 115          |                 | 4               |       |       |
