@@ -28,6 +28,7 @@ Where file = this.file
 - [[#3D Printing The case]]
 - [[#Diagram]]
 - [[09 Projects/GCE_Kannur/Kannur Solar Battery Monitor/Versions]]
+	- [[Version Control]]
 - [[Reasearch And Development]]
 **Aim**: 
 >**Revision 1**:
