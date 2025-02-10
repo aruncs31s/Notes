@@ -17,3 +17,4 @@ The version 2 and 3 are in parallel and tries to bring different technologies th
 > The version 2 tries to bring industry standard [[MQTT]] into the project
 
 - [[Version 3]]
+
