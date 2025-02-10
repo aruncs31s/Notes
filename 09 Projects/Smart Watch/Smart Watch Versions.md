@@ -259,3 +259,11 @@ void loop(){
 ```
 
 ## Sajesh Kumar Sir Suggestions
+
+## Version 2
+Version 2 changes the design and includes a new lcd screen , 
+**Componnets**
+
+| Component | Individual Cost |
+| --------- | --------------- |
+|           |                 |
