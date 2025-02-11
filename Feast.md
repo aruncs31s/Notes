@@ -7,6 +7,7 @@ kanban-plugin: board
 ## Pending
 
 - [ ] 104
+- [ ] 319
 
 
 ## Given
@@ -14,9 +15,11 @@ kanban-plugin: board
 - [ ] 113
 	- [ ] 2
 - [ ] 102
+- [ ] Shafi
 
 
 ## Half Given
+
 - [ ] 101 - 2
 - [ ] 309 
 	- [ ] 2 Pending
@@ -24,8 +27,6 @@ kanban-plugin: board
 	- [ ] 2 Pending
 - [ ] 317 
 	*Full pending*
-- [ ] 303
-	- [ ] Sony
 - [ ] 318 
 	- [ ] Yadhu Krishna(not there)
 - [ ] 301 
@@ -33,8 +34,28 @@ kanban-plugin: board
 - [ ] 302 -> 2 Pending
 	- [ ] Arjun 9946838616
 	- [ ] Ananthu 9318404032
+- [ ] 111 
+	- [ ] Karthik
+	- [ ] Shyam
+- [ ] 105 
+	- [ ] 2 Pending
+
 
 ## Already Asked
+
+- [ ] 303
+	- [ ] Sony
+	- [ ] Agastin
+	- [ ] Goutham 
+	- [ ] Kandan
+- [ ] 114 -> Anandu eee 3rd Year
+- [ ] 107 
+	- [ ] Shashi
+	- [ ] Goutham 
+	- [ ] Amit
+- [ ] Navanneth eee 2k21
+
+
 
 
 %% kanban:settings
