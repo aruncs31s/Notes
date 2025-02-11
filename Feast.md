@@ -12,12 +12,15 @@ kanban-plugin: board
 ## Given
 
 - [ ] 113
+	- [ ] 2
 - [ ] 102
 
 
 ## Half Given
 
 - [ ] 101 - 2
+- [ ] 309 
+	- [ ] 2 Pending
 
 
 
