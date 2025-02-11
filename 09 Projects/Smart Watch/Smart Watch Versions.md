@@ -331,3 +331,5 @@ void loop() {
 
 ```
 
+### 12-02-25
+- [ ] Find Neo 6m connected pins 
