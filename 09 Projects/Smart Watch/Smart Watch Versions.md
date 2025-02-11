@@ -5,9 +5,7 @@ aliases: []
 tags: []
 Date:
   Created: "2024-12-20"
-  - wide-page
 ---
-
 # Smart Watch Versions
 
 #### Requirements
@@ -267,6 +265,7 @@ Version 2 changes the design and includes a new lcd screen ,
 | Component | Individual Cost |
 | --------- | --------------- |
 |           |                 |
+|           |                 |
 
 ```cpp
 #include "ESP8266WiFi.h"
@@ -331,3 +330,4 @@ void loop() {
 }
 
 ```
+
