@@ -1,7 +1,7 @@
 ---
 
 kanban-plugin: board
-
+dg-publish: true
 ---
 
 ## Pending
