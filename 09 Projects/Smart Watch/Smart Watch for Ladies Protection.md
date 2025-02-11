@@ -21,10 +21,6 @@ cssclasses:
 - [[#Tasks]]
 - [[#Timeline]]
 ---
-## Tasks
-![[Tasks]]
-
-## Timeline 
 
 ```timeline
 [line-3, body-2]
