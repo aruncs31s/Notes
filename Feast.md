@@ -2,6 +2,7 @@
 
 kanban-plugin: board
 dg-publish: true
+
 ---
 
 ## Pending
@@ -25,6 +26,8 @@ dg-publish: true
 	- [ ] Amit
 - [ ] 114 -> Anandu eee 3rd Year
 - [ ] Navanneth eee 2k21
+- [ ] 206 
+	- 1 Junior
 
 
 ## Half Given
