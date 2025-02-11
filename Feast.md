@@ -8,6 +8,8 @@ kanban-plugin: board
 
 - [ ] 104
 - [ ] 319
+- [ ] 317
+- [ ] 316
 
 
 ## Given
@@ -16,6 +18,8 @@ kanban-plugin: board
 	- [ ] 2
 - [ ] 102
 - [ ] Shafi
+- [ ] 312
+- [ ] 311
 
 
 ## Half Given
@@ -39,6 +43,8 @@ kanban-plugin: board
 	- [ ] Shyam
 - [ ] 105 
 	- [ ] 2 Pending
+- [ ] 310
+	- [ ] 1 Pending
 
 
 ## Already Asked
