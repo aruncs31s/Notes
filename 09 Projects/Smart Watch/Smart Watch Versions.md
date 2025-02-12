@@ -262,10 +262,12 @@ void loop(){
 Version 2 changes the design and includes a new lcd screen , 
 **Componnets**
 
-| Component | Individual Cost |
+| Pins Used | Purpose|
 | --------- | --------------- |
-|           |                 |
-|           |                 |
+|   D8        |         help Interrupt         |
+|      D7     |        Rx GSM         |
+| D6 | Tx GSM | 
+| D1 , D2 | I2C Lcd|
 
 ```cpp
 #include "ESP8266WiFi.h"
