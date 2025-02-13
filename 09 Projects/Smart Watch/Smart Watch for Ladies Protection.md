@@ -42,3 +42,5 @@ cssclasses:
 
 ```
 
+
+![[whole_system.png]]
