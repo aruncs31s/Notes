@@ -39,4 +39,4 @@ cssclasses:
 ![](https://wiki.gnuradio.org/images/7/7c/Types.png)
 
 #### freq shifting
- 
+done by multiplication by a complex sinusoid.
