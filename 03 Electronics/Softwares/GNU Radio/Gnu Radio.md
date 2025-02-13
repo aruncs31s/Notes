@@ -34,3 +34,9 @@ cssclasses:
 (2, 3, 4)
 >>>
 ```
+
+#### Types
+![](https://wiki.gnuradio.org/images/7/7c/Types.png)
+
+#### freq shifting
+ 
