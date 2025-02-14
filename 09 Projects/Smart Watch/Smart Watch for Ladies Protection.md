@@ -1,33 +1,35 @@
 ---
-dg-publish: true
 id: 29-11-2024-Project
 aliases:
   - Smart Watch
 tags:
   - project,
 Date:
-  Started: 29-11-2024
-  Target: 01-01-2025
-  End:
+  Started: "03-04-2024"
+  Target: "01-01-2025"
 Status:
-  Working_ON: true
   Completed: false
-github: https://github.com/aruncs31s/Smart-Watch-for-Ladies-Protection
+  Working_ON: true
 cssclasses:
   - wide-page
+dg-publish: true
+github: https://github.com/aruncs31s/Smart-Watch-for-Ladies-Protection
 ---
+
 # Smart Watch for Ladies Protection
+
 - [[Smart Watch Versions]]
 - [[#Tasks]]
 - [[#Timeline]]
+
 ---
 
 ```timeline
 [line-3, body-2]
 + Started</br> 29th Nov 2024
 + Problem Statement
-+ I have told to make a smart watch for ladies protection , which sends a sos message containing the current locatio to the parrent and the police in the following senarios 
-  - A button is pressed 
++ I have told to make a smart watch for ladies protection , which sends a sos message containing the current locatio to the parrent and the police in the following senarios
+  - A button is pressed
   - Heart rate is unusual that normal and "HELP" command is detected
  **Requirements**
 - Heart Beat -> to Sense
@@ -41,6 +43,5 @@ cssclasses:
 - Continuesly monitor for the command **HELP!** if help is found do the sos thing
 
 ```
-
 
 ![[whole_system.png]]
