@@ -178,6 +178,21 @@ graph LR
 
 ##### 802.11a 
 - Intr OFDM
-- 5Ghz Op range
+- 5Ghz Op band
 -  54 Mbps 
-- 
+
+5Ghz bandwidth is devided into 3 -> {UNIT[1:3]}
+
+##### 802.11b
+- 2.4GHz
+- upto **11Mbps**
+- Uses **Complementary COde Keying(CCK)**
+
+##### 802.11g
+- 2.4GHz
+- 1Mbps to 54Mbps
+- Intr FEC(Fwd Error Correction)
+- Lower DR{1,2,5.5 & 11}
+- High {6,9,12,18,24,36,48,54} <- By using OFDM 
+
+| param | 802.11 |  
