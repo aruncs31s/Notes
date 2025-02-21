@@ -211,4 +211,20 @@ graph LR
 
 ##### 802.11 ax(WiFi 6)
 - More efficient 
+#### Hyperlan 
+- alt{[[#802.11]]}
+- div{Hyperlan[1:3], Hyperaccess, HiperLink}
 
+##### Hyperlan1 
+- 20Mbps in **5GHz** Range
+##### 2
+- 54Mbps <- Infrastruycture model
+##### Hyper access
+ - Used to provide remote access upto 5Km range
+##### Hyper link
+used to connect to the backbone
+
+
+
+```me
+```
