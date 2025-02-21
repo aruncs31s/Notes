@@ -173,3 +173,11 @@ graph LR
 
 ### 21-02-25
 #### 802.11 
+- DSSS or FHSS -> 802.11(old) -> 1,2 Mbps
+
+
+##### 802.11a 
+- Intr OFDM
+- 5Ghz Op range
+-  54 Mbps 
+- 
