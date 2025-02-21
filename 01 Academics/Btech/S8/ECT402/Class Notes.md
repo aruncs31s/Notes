@@ -195,4 +195,20 @@ graph LR
 - Lower DR{1,2,5.5 & 11}
 - High {6,9,12,18,24,36,48,54} <- By using OFDM 
 
-| param | 802.11 |  
+| param     | 802.11           | a                                   | b              | g              |     |
+| --------- | ---------------- | ----------------------------------- | -------------- | -------------- | --- |
+| Freq Band | 2.4 - 2.4835 Ghz | 5.15 - 5.25 Ghz & 5.725 - 5.825 Ghz | same as 802.11 | same as 802.11 |     |
+| Av BW     | 83.5Mhz          | 3000Mhz                             | 83.5 Mhz       |                |     |
+
+
+##### 802.11n
+- upto 100Mbps
+- Introduced [[MIMO]]
+
+##### 802.11ac( WiFi 5)
+- 5Ghz Band 
+- Multi User MIMO , 256 QAM
+
+##### 802.11 ax(WiFi 6)
+- More efficient 
+
