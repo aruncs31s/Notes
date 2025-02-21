@@ -226,5 +226,12 @@ used to connect to the backbone
 
 
 
-```me
+```mermaid
+graph LR
+node_1 --> node_2 & node_3 --> node_4 --> node_5 & node_6 
 ```
+
+- [ ] Multihub topology with ?
+- to 
+
+
