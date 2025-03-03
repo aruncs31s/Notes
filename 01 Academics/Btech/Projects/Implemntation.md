@@ -40,7 +40,9 @@ This initializes the flow graph and sets up the gui
 ```python
 def __init__(self, InFile='default'):
 ```
-- `InFile` is the file that used to 
+- `InFile` is the file that the class might need to process or use during its operation.
+- [ ] Find more about this 
+
 
 ## Receiver
 
