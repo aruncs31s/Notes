@@ -4,11 +4,14 @@ aliases: []
 tags: []
 Date:
   Created: "2024-12-17"
-cssClasses: wide-page
 dg-publish: true
 ---
 
 # Class Notes
+```tasks
+not done
+path includes ECT402/Class Notes
+```
 
 ### 2024-12-17
 
@@ -232,6 +235,57 @@ node_1 --> node_2 & node_3 --> node_4 --> node_5 & node_6
 ```
 
 - [ ] Multihub topology with ?
-- to 
+- [ ] Complete WiMax and Wi??? form other notes
 
 
+### 06-03-25
+#### DES (Data Encryption Standard)
+AES <-  DES 
+- Block  Cipher  
+- Block  size 64 bits , KKey size 56 bits
+
+```mermaid
+graph LR
+A[Plaintext] --> B[Initial Permutation]
+B --> C[16 Rounds]
+C --> D[Final Permutation]
+
+```
+##### Single  Round DES 
+- Split the  64 bit block into two 32 bit blocks 
+- Key is split 28  bits each 
+
+- [ ] Keep track of permutation? 
+- [ ] Complete below
+- [ ] 
+```mermaid
+graph TD
+subgraph DES Round
+A[32 bit block] --> B[Expansion]
+B --> C[XOR with Key]
+C --> D[Substitution]
+D --> E[Permutation]
+end
+subgraph  Key Schedule
+F[56 bit key] --> G[Split]
+G --> H[Shift]
+H --> I[Compression]
+end
+```
+
+
+##### Avelaanche Effect
+
+```mermaid
+flowchart TB 
+c1-->a2 
+subgraph one 
+a1-->a2 
+end 
+subgraph two 
+b1-->b2 
+end 
+subgraph three 
+c1-->c2 
+end
+```
