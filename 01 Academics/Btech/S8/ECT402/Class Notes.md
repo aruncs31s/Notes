@@ -239,4 +239,16 @@ node_1 --> node_2 & node_3 --> node_4 --> node_5 & node_6
 
 
 ### 06-03-25
-#### DES (Data encryption Standa)
+#### DES (Data Encryption Standard)
+AES <-  DES 
+- Block  Cipher  
+- Block  size 64 bits , KKey size 56 bits
+
+```mermaid
+graph LR
+A[Plaintext] --> B[Initial Permutation]
+B --> C[16 Rounds]
+C --> D[Final Permutation]
+
+```
+##### Single  Round DES 
