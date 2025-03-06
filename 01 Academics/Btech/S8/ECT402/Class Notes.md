@@ -4,11 +4,14 @@ aliases: []
 tags: []
 Date:
   Created: "2024-12-17"
-cssClasses: wide-page
 dg-publish: true
 ---
 
 # Class Notes
+```tasks
+not done
+path includes ECT402/Class Notes
+```
 
 ### 2024-12-17
 
@@ -232,6 +235,8 @@ node_1 --> node_2 & node_3 --> node_4 --> node_5 & node_6
 ```
 
 - [ ] Multihub topology with ?
-- to 
+- [ ] Complete WiMax and Wi??? form other notes
 
+
+### 06-03-25
 
