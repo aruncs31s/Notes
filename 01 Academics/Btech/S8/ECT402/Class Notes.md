@@ -254,3 +254,26 @@ C --> D[Final Permutation]
 ##### Single  Round DES 
 - Split the  64 bit block into two 32 bit blocks 
 - Key is split 28  bits each 
+
+- [ ] Keep track of permutation? 
+- [ ] Complete below
+- [ ] 
+```mermaid
+graph TD
+subgraph DES Round
+A[32 bit block] --> B[Expansion]
+B --> C[XOR with Key]
+C --> D[Substitution]
+D --> E[Permutation]
+end
+subgraph  Key Schedule
+F[56 bit key] --> G[Split]
+G --> H[Shift]
+H --> I[Compression]
+end
+```
+
+
+##### Avelaanche Effect
+
+
