@@ -252,3 +252,5 @@ C --> D[Final Permutation]
 
 ```
 ##### Single  Round DES 
+- Split the  64 bit block into two 32 bit blocks 
+- Key is split 28  bits each 
