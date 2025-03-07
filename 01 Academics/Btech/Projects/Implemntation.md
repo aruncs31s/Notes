@@ -47,3 +47,8 @@ def __init__(self, InFile='default'):
 ## Receiver
 
 [^1]: Frequency Shift Keying(FSK) is a modulation scheme which involves changing the carrier frequency to transmit digital data.
+
+
+## Transmitting a file with qpsk
+c:
+
