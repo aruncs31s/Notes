@@ -59,5 +59,7 @@ graph LR
 binary --> |2 bits| QPSK | 
 ```
 
-> Do i have to provide 2 binary bits to qpsk at a time 
+> Do i have to provide 2 binary bits to qpsk[^2] at a time 
 > it does work with 2 bits at a time (dibits)
+
+[^2]: 
