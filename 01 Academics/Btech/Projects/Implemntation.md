@@ -50,5 +50,5 @@ def __init__(self, InFile='default'):
 
 
 ## Transmitting a file with qpsk
-c:
+- `xxd -p` can be used to show the binary .
 
