@@ -52,3 +52,12 @@ def __init__(self, InFile='default'):
 ## Transmitting a file with qpsk
 - `xxd -p` can be used to show the binary .
 
+In my knowledge the the qpsk works like this 
+
+```mermaid 
+graph LR
+binary --> |2 bits| QPSK | 
+```
+
+> Do i have to provide 2 binary bits to qpsk at a time 
+> it does work with 2 bits at a time (dibits)
