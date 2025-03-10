@@ -67,6 +67,9 @@ PLuto_sdr --> Rational_Resampler --> FM_Demod --> Multiply_by_const --> Audio_si
 
 ## Tweaking
 ```bash
+ssh root@192.168.2.1
+# passwd: analog 
+
 fw_setenv attr_name compatible
 fw_setenv attr_val ad9364
 reboot

@@ -10,6 +10,10 @@ dg-publish: true
 
 # Class Notes
 
+```tasks
+not done
+path includes ECT402
+```
 ### 2024-12-17
 
 - Multi carrier Modulation
@@ -234,4 +238,33 @@ node_1 --> node_2 & node_3 --> node_4 --> node_5 & node_6
 - [ ] Multihub topology with ?
 - to 
 
+
+## 03-03-25
+
+#### 802.16 WMAN (Metropolitan AN)
+- 10GHz - 66Ghz
+- IEEE802.16a -> WiMAX
+
+
+##### Protocol arch
+- 20Mhz , 25Mhz in US , 28 in Europe (channel BW)
+- uses TDMA (Uplink)
+
+### WiMAX
+WiMAX (Worldwide Interoperability for Microwave Access)
+- 2-11GHz Bands
+- 1.25MHz to 22MHz
+
+- [ ] Fixe vs mobile WiMAX
+
+
+
+### Millimeter wave technology
+
+- 10 to 1mm 
+- 30 - 300 GHz (EHF range)
+
+
+#### Channel Perfomance at 60Ghz
+- [ ] TODO:
 

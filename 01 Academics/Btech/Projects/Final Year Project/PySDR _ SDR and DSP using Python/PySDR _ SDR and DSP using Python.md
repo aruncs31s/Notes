@@ -181,4 +181,13 @@ x(t) &= 0.806\cos(2\pi ft + 0.519)
 \end{align}
 $$
 
-## Fre
+
+## Pluto SDR
+```bash
+cd ~
+git clone --branch v0.0.14 https://github.com/analogdevicesinc/pyadi-iio.git
+cd pyadi-iio
+pip3 install --upgrade pip
+pip3 install -r requirements.txt
+sudo python3 setup.py install
+```
