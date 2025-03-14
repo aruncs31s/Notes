@@ -8,9 +8,15 @@ dg-publish: true
 ---
 
 # Class Notes
+
 ```tasks
 not done
 path includes ECT402/Class Notes
+```
+
+```tasks
+not done
+path includes ECT402
 ```
 
 ### 2024-12-17
@@ -175,74 +181,121 @@ graph LR
 ---
 
 ### 21-02-25
-#### 802.11 
+
+#### 802.11
+
 - DSSS or FHSS -> 802.11(old) -> 1,2 Mbps
 
+##### 802.11a
 
-##### 802.11a 
 - Intr OFDM
 - 5Ghz Op band
--  54 Mbps 
+- 54 Mbps
 
 5Ghz bandwidth is devided into 3 -> {UNIT[1:3]}
 
 ##### 802.11b
+
 - 2.4GHz
 - upto **11Mbps**
 - Uses **Complementary COde Keying(CCK)**
 
 ##### 802.11g
+
 - 2.4GHz
 - 1Mbps to 54Mbps
 - Intr FEC(Fwd Error Correction)
 - Lower DR{1,2,5.5 & 11}
-- High {6,9,12,18,24,36,48,54} <- By using OFDM 
+- High {6,9,12,18,24,36,48,54} <- By using OFDM
 
 | param     | 802.11           | a                                   | b              | g              |     |
 | --------- | ---------------- | ----------------------------------- | -------------- | -------------- | --- |
 | Freq Band | 2.4 - 2.4835 Ghz | 5.15 - 5.25 Ghz & 5.725 - 5.825 Ghz | same as 802.11 | same as 802.11 |     |
 | Av BW     | 83.5Mhz          | 3000Mhz                             | 83.5 Mhz       |                |     |
 
-
 ##### 802.11n
+
 - upto 100Mbps
 - Introduced [[MIMO]]
 
 ##### 802.11ac( WiFi 5)
-- 5Ghz Band 
+
+- 5Ghz Band
 - Multi User MIMO , 256 QAM
 
 ##### 802.11 ax(WiFi 6)
-- More efficient 
-#### Hyperlan 
+
+- More efficient
+
+#### Hyperlan
+
 - alt{[[#802.11]]}
 - div{Hyperlan[1:3], Hyperaccess, HiperLink}
 
-##### Hyperlan1 
+##### Hyperlan1
+
 - 20Mbps in **5GHz** Range
+
 ##### 2
+
 - 54Mbps <- Infrastruycture model
+
 ##### Hyper access
- - Used to provide remote access upto 5Km range
+
+- Used to provide remote access upto 5Km range
+
 ##### Hyper link
+
 used to connect to the backbone
-
-
 
 ```mermaid
 graph LR
-node_1 --> node_2 & node_3 --> node_4 --> node_5 & node_6 
+node_1 --> node_2 & node_3 --> node_4 --> node_5 & node_6
 ```
 
 - [ ] Multihub topology with ?
 - [ ] Complete WiMax and Wi??? form other notes
 
+## 03-03-25
+
+#### 802.16 WMAN (Metropolitan AN)
+
+- 10GHz - 66Ghz
+- IEEE802.16a -> WiMAX
+
+##### Protocol arch
+
+- 20Mhz , 25Mhz in US , 28 in Europe (channel BW)
+- uses TDMA (Uplink)
+
+### WiMAX
+
+WiMAX (Worldwide Interoperability for Microwave Access)
+
+- 2-11GHz Bands
+- 1.25MHz to 22MHz
+
+- [ ] Fixe vs mobile WiMAX
+
+### Millimeter wave technology
+
+- 10 to 1mm
+- 30 - 300 GHz (EHF range)
+
+#### Channel Perfomance at 60Ghz
+
+- [ ] TODO:
+
+=======
 
 ### 06-03-25
+
 #### DES (Data Encryption Standard)
-AES <-  DES 
-- Block  Cipher  
-- Block  size 64 bits , KKey size 56 bits
+
+AES <- DES
+
+- Block Cipher
+- Block size 64 bits , KKey size 56 bits
 
 ```mermaid
 graph LR
@@ -251,13 +304,16 @@ B --> C[16 Rounds]
 C --> D[Final Permutation]
 
 ```
-##### Single  Round DES 
-- Split the  64 bit block into two 32 bit blocks 
-- Key is split 28  bits each 
 
-- [ ] Keep track of permutation? 
+##### Single Round DES
+
+- Split the 64 bit block into two 32 bit blocks
+- Key is split 28 bits each
+
+- [ ] Keep track of permutation?
 - [ ] Complete below
-- [ ] 
+- [ ]
+
 ```mermaid
 graph TD
 subgraph DES Round
@@ -273,19 +329,18 @@ H --> I[Compression]
 end
 ```
 
-
 ##### Avelaanche Effect
 
 ```mermaid
-flowchart TB 
-c1-->a2 
-subgraph one 
-a1-->a2 
-end 
-subgraph two 
-b1-->b2 
-end 
-subgraph three 
-c1-->c2 
+flowchart TB
+c1-->a2
+subgraph one
+a1-->a2
+end
+subgraph two
+b1-->b2
+end
+subgraph three
+c1-->c2
 end
 ```
