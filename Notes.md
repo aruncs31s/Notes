@@ -13,6 +13,7 @@ Date: 09-01-25
 	- [[Smart Watch for Ladies Protection|Smart Watch]]
 	- [[GCEK Weather Station]]
 	- [[Designing a Communication System Using GNU Radio and SDR]]
+		- [[QPSK Implementation]]
 - [[Electronics]]
 - [[Hackethons]]
 	- [[Dihack Hackethon]]

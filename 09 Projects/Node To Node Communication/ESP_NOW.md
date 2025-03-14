@@ -9,8 +9,9 @@ tags: []
 - Upto `250-byte` is possible <- Payload Size
 
 ### Steps
+- Get Receivers MAC Address
 
-1. Get Receiver MAC Address
+##### 1. Get Receiver MAC Address
 
 ```c
 #include <WiFi.h>
@@ -117,6 +118,7 @@ void loop(){
 
 #### Receiver Side
 ```c
+// Remove ssid and pass
 #include <esp_now.h>
 #include <esp_wifi.h>
 #include <WiFi.h>

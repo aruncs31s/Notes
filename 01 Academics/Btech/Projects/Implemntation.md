@@ -3,7 +3,8 @@ aliases:
 Date: "04-03-25"
 ---
 # Implemntation
-
+- [[QPSK Implementation]]
+- [[Ber Curve]]
 First one im going to look out use FSK[^1] Modulation Scheme 
 - It includes 
 ```python
