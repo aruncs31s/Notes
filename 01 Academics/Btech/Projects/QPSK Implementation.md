@@ -2,10 +2,12 @@
 aliases: 
 Date: "13-03-25"
 dg-publish: true
+source: https://wiki.gnuradio.org/index.php?title=QPSK_Mod_and_Demod
 ---
 # QPSK Implementation
-Source -> [QPSK Mod and Demod](https://wiki.gnuradio.org/index.php?title=QPSK_Mod_and_Demod)
-**[[QPSK]]**
+**Requirement**
+- [[QPSK]]
+- [[BER Calculation]]
 
 
 

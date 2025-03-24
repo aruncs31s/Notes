@@ -7,7 +7,7 @@
 		{"id":"0ab33603198f5f3e","type":"text","text":"## Astable Multi-Vibrator","x":-426,"y":80,"width":308,"height":140,"color":"3"},
 		{"id":"7dce356c1e4a78b6","type":"text","text":"## Monostable Multi-Vibrator","x":560,"y":-90,"width":280,"height":140,"color":"3"},
 		{"id":"bbcf7f28c12abf99","type":"text","text":"## Power Supply","x":-920,"y":-50,"width":250,"height":60},
-		{"id":"824302d6d8cf9961","type":"file","file":"03 Electronics/Embedded Systems/Sensors/HC-SR04.md","x":-443,"y":-782,"width":400,"height":400},
+		{"id":"824302d6d8cf9961","type":"file","file":"03 Electronics/Embedded Systems/Modules/Sensors/HC-SR04.md","x":-443,"y":-782,"width":400,"height":400},
 		{"id":"45feadc78f683c26","type":"file","file":"04 Hackethons/Dihack/attachments/voltage charging.excalidraw.md","x":108,"y":-520,"width":412,"height":254},
 		{"id":"927d24dda730fe17","type":"file","file":"04 Hackethons/Dihack/attachments/comparator.excalidraw.md","x":320,"y":-1080,"width":400,"height":400},
 		{"id":"2ff3c17be7d48a7e","type":"file","file":"03 Electronics/ICs/555.md","x":840,"y":-641,"width":400,"height":400},

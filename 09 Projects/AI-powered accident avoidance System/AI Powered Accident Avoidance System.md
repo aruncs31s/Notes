@@ -18,6 +18,16 @@ dg-publish: true
 ---
 
 # APAAS
+- [[09 Projects/GCE_Kannur/Kannur Solar Battery Monitor/Versions]]
+```
+raspberry pi:
+  username: pi
+  password: pi
+  wifi:
+    essid: pi_wifi
+    password: 12345678
+```
+
 
 - [[Coding]]
 
@@ -34,6 +44,15 @@ dg-publish: true
 | [Boost Converter](https://amzn.in/d/dno182p) | 1   | 296/-       |
 | Miscellaneous                                |     | 300/-       |
 | Total                                        | -   | 10095/-<br> |
+
+
+#### 19-03-25
+
+| Components      | Cost |
+| --------------- | ---- |
+| 3xBattery case  |      |
+| Boost Converter | 90/- |
+|                 |      |
 
 **Actuall Selection**
 
