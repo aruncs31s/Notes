@@ -18,7 +18,7 @@ dg-publish: true
 ---
 
 # APAAS
-- [[09 Projects/GCE_Kannur/Kannur Solar Battery Monitor/Versions]]
+- [[09 Projects/AI-powered accident avoidance System/Versions|Versions]]
 ```
 raspberry pi:
   username: pi
