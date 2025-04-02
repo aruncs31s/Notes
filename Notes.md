@@ -5,6 +5,7 @@ aliases:
 Date: 09-01-25
 ---
 # Notes
+- [[S Report]]
 - [[Btech]]
 	- [[IoT and Embedded Workshop]]  
 - [[Projects]]
