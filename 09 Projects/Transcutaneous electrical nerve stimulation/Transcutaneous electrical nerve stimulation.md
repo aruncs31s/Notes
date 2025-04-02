@@ -10,7 +10,7 @@ Date:
   End: 17-12-2024
 Status:
   Working_ON: true
-  Completed: false
+  Completed: true
 github: 
 cssClasses: wide-page
 cssClass: image-gallery
