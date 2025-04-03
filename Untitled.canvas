@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"5f328af323e6ee48","x":-351,"y":-32,"width":251,"height":90,"type":"text","text":"## packet Processing\n"},
+		{"id":"3bc940617af7975d","type":"text","text":"## BPSK","x":-20,"y":-92,"width":250,"height":60},
+		{"id":"a13d8264562bf83d","type":"text","text":"## Transmission","x":680,"y":-32,"width":250,"height":60},
+		{"id":"3045acdfb1c5e7f3","x":-320,"y":220,"width":250,"height":60,"type":"text","text":"## Receiveing"},
+		{"id":"b421f80a4745f14a","type":"text","text":"## QPSK","x":0,"y":28,"width":250,"height":60},
+		{"id":"6eac93aece051e01","type":"text","text":"## BPSK Filtering\n","x":340,"y":-32,"width":250,"height":94},
+		{"id":"a82f85b0a74f6f19","type":"text","text":"## QPSK Filtering","x":340,"y":126,"width":250,"height":94}
+	],
+	"edges":[
+		{"id":"09b77b351d0d3234","fromNode":"5f328af323e6ee48","fromSide":"right","toNode":"3bc940617af7975d","toSide":"left"},
+		{"id":"6279cb42dea6ed08","fromNode":"3bc940617af7975d","fromSide":"right","toNode":"6eac93aece051e01","toSide":"left"},
+		{"id":"5f4ae46b792d41b1","fromNode":"6eac93aece051e01","fromSide":"right","toNode":"a13d8264562bf83d","toSide":"left"},
+		{"id":"4b621eafb5887e8f","fromNode":"5f328af323e6ee48","fromSide":"right","toNode":"b421f80a4745f14a","toSide":"left"},
+		{"id":"ce9e466270a3f282","fromNode":"b421f80a4745f14a","fromSide":"right","toNode":"a82f85b0a74f6f19","toSide":"left"},
+		{"id":"761c2dcd961b7cd9","fromNode":"a82f85b0a74f6f19","fromSide":"right","toNode":"a13d8264562bf83d","toSide":"left"}
+	]
+}
