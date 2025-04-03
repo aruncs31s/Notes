@@ -24,6 +24,28 @@
 		{"id":"57494d4e37cb6707","type":"text","text":"# Constellation Decoder","x":-122,"y":976,"width":295,"height":129},
 		{"id":"db4c0a30ae9d087b","type":"text","text":"# Linear Equalizer","x":25,"y":642,"width":250,"height":90},
 		{"id":"a48c1a999e987af3","type":"file","file":"Files/attachments/Pasted image 20250329115347.png","x":-604,"y":1180,"width":1259,"height":340}
+=======
+		{"id":"a85f65c0cf18305a","type":"text","text":"# Contellation Modulator","x":-440,"y":-60,"width":260,"height":160},
+		{"id":"e1434d2d264c8412","type":"text","text":"# MAP ","x":-1140,"y":1257,"width":160,"height":50},
+		{"id":"82511330a1d7b09e","type":"text","text":" ## [0,1] ","x":-900,"y":1222,"width":160,"height":60},
+		{"id":"a2bb2925b6b4b7a8","type":"text","text":" ## [0,1,2,3] ","x":-900,"y":1434,"width":220,"height":50},
+		{"id":"b2bf61c2689ec6ca","type":"text","text":"# Rational resampler","x":-770,"y":480,"width":280,"height":100},
+		{"id":"5b2e12e6c7bcc6c1","type":"text","text":"# AGC","x":-740,"y":672,"width":250,"height":60},
+		{"id":"3856f97f9bc5cf48","type":"text","text":"# Symbol Sync","x":-422,"y":851,"width":250,"height":90},
+		{"id":"a25762008fb396bf","type":"text","text":"# Costas Loop","x":-100,"y":851,"width":250,"height":90},
+		{"id":"57494d4e37cb6707","type":"text","text":"# Constellation Decoder","x":-122,"y":976,"width":295,"height":129},
+		{"id":"21fe77a9b1370366","type":"text","text":"## Differential Decoder","x":-762,"y":991,"width":295,"height":100},
+		{"id":"171c2f813f6a3ddc","type":"text","text":"# Polyphase Clock Sync","x":-350,"y":657,"width":250,"height":90},
+		{"id":"db4c0a30ae9d087b","type":"text","text":"# Linear Equalizer","x":25,"y":642,"width":250,"height":90},
+		{"id":"642b41d1d42300b8","type":"text","text":"# Costas Loop","x":340,"y":747,"width":250,"height":90},
+		{"id":"a48c1a999e987af3","type":"file","file":"Files/attachments/Pasted image 20250329115347.png","x":-604,"y":1180,"width":1259,"height":340},
+		{"id":"29a8faa80da64c51","type":"text","text":"## BPSK","x":-425,"y":167,"width":145,"height":53},
+		{"id":"9df0a1f6dcbd0bdd","type":"text","text":"# FFT Filter","x":-140,"y":134,"width":250,"height":106},
+		{"id":"c12f1225611507d8","type":"text","text":"# Fractional Resampler","x":200,"y":134,"width":250,"height":106},
+		{"id":"7a5fc01274837ee0","type":"text","text":"# Throttle","x":500,"y":134,"width":250,"height":106},
+		{"id":"b65a511b8ef7122a","type":"text","text":"## QPSK","x":-422,"y":320,"width":140,"height":50},
+		{"id":"ce753fc1e40690eb","type":"text","text":"## TX","x":900,"y":134,"width":250,"height":60},
+		{"id":"068e27c247e01767","type":"text","text":"# FLL Band Edge Filter","x":-740,"y":800,"width":250,"height":135}
 	],
 	"edges":[
 		{"id":"af98db4d5490d3be","fromNode":"21e0dd6f71d41ba6","fromSide":"right","toNode":"7556565153bb1ba7","toSide":"left"},

@@ -1,4 +1,6 @@
 # Using ESP32
+## V1
+![[IMG_20250331_161825.jpg|400x500]]
 ```c
 // Pin definitions under ESP32
 #define IN1 27
@@ -9,23 +11,24 @@
 #define LEFT_IR_PIN 34
 #define RIGHT_IR_PIN 35
 #define PWM_PIN 14
-#define LANE_DETECT_LED_PIN 12
-#define EMERGENCY_STOP_LED_PIN 13
+#define PWM_PIN_2 12
+#define LANE_DETECT_LED_PIN 22
+#define EMERGENCY_STOP_LED_PIN 21
 ```
 ![[Drawing 2025-03-26 09.59.02.excalidraw|800x500]]
 
 
 ```mermaid
 graph TB
-c1-->a2 
 subgraph "Lane Detection"
-A1[-->a2 
+A1[Check IR Sensors] --> A2(Left side Cross) & A3(Two Tire Cross) & A4(Right side Cross) --> Ax[Triger The warning]
+A1 --> A11(No side cross) --> Ay[Turn off the Warning]
 end 
-subgraph two 
-b1-->b2 
+subgraph "Automatic Break"
+B1[Check distance Btw Object and Vehicle] --> B2(Distance is 0..2cm) --> Stop
+B1 --> B3(Distance is 3..5cm) --> Half_Speed
+B1 --> B4(Distance is 6..10cm) --> Full_Speed
 end 
-subgraph three 
-c1-->c2 
-end
+
 
 ```

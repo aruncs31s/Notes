@@ -8,12 +8,36 @@ Date:
 ---
 # Smart Watch Versions
 
-#### Requirements
+## Requirements
 
 1. [x] Should contain a sos button
-2. [ ] Should detect "HELP" command
+2. [x] Should detect "HELP" command
 3. [x] Should Send location to the parents
 4. [x] Should measure the heart rate
+
+## Working
+The working prototype will send messages (current location) to specified number (parents,police and any another if any). 
+1. The system also detects "HELP" command , ie. if someone says "HELP" from near the prototype the the system will triger the **SOS** message 
+**Structure of SOS Message**
+```
+https://www.google.com/maps?q=Lon,Lat
+```
+
+### BILL Of Material 
+1. VC-02 Ai Thinker Intelligent Offline Speech Recognition Module  [Purchase Link](https://amzn.in/d/cIWOqSR) [Datasheet](https://docs.ai-thinker.com/_media/vc-01_v1.0.0_specification.pdf) 
+2. Neo6M GPS Module  [Purchase Link](https://amzn.in/d/hahCeHk) [DataSheet](https://content.u-blox.com/sites/default/files/products/documents/NEO-6_DataSheet_%28GPS.G6-HW-09005%29.pdf) [Tutorial](https://lastminuteengineers.com/neo6m-gps-arduino-tutorial/) [[#Neo 6m GPS]]
+3. SIM800L GPRS GSM Module Core Board Quad-band TTL Serial Port with the antenna [Purchase Link](https://amzn.in/d/gX5k0fM)
+
+| Component                | Cost   |
+| ------------------------ | ------ |
+| ESP8266                  | 320    |
+| GPS Module               | 439.00 |
+| Help recognittion Module | 1,099  |
+| GSM Module               | 410    |
+| USB Charge converter     | 10     |
+| Battery & other          | 200    |
+| Total                    |        |
+
 
 ## PINS
 
@@ -180,7 +204,45 @@ void loop() {
       Serial.println(gps.location.lng(), 6);
 ```
 
-
+```c
+#include <SoftwareSerial.h>
+#include <TinyGPS++.h>
+#define GPS_TX D6 // Connects to TX pin of GPS module
+#define GPS_RX D7 // Connects to RX pin of GPS module
+TinyGPSPlus gps;
+SoftwareSerial gpsSerial(GPS_RX, GPS_TX);
+void setup() {
+	Serial.begin(9600);
+	gpsSerial.begin(9600);
+}
+void loop() {
+	unsigned long start = millis();
+	while (millis() - start < 1000) {
+		while (gpsSerial.available() > 0) {
+			gps.encode(gpsSerial.read());
+	}
+	if (gps.location.isUpdated()) {
+		Serial.print("LAT: ");
+		Serial.println(gps.location.lat(), 6);
+		Serial.print("LONG: ");
+		Serial.println(gps.location.lng(), 6);
+		Serial.print("SPEED (km/h): ");
+		Serial.println(gps.speed.kmph());
+		Serial.print("ALT (m): ");
+		Serial.println(gps.altitude.meters());
+		Serial.print("HDOP: ");
+		Serial.println(gps.hdop.value() / 10.0);
+		Serial.print("Satellites: ");
+		Serial.println(gps.satellites.value());
+	char buffer[30];
+	sprintf(buffer, "%04d/%02d/%02d, %02d:%02d:%02d", gps.date.year(), gps.date.month(),gps.date.day(), gps.time.hour(), gps.time.minute(), gps.time.second());
+	Serial.print("Time in UTC: ");
+	Serial.println(buffer);
+	Serial.println();
+	}
+  }
+}
+```
 
 ### Speech Processing
 Going to use raspberry pi for now 
@@ -256,6 +318,22 @@ void loop(){
 }
 ```
 
+
+#### Help Test
+
+```cpp
+#include <Arduino.h>
+void IRAM_ATTR theISR(){
+	Serial.println("Button Pressed");
+}
+void setup(){
+	Serial.begin(9600);
+	attachInterrupt(D8,theISR,RISING);
+}
+void loop(){
+	delay(1000);
+}
+```
 ## Sajesh Kumar Sir Suggestions
 
 ## Version 2
@@ -335,3 +413,148 @@ void loop() {
 
 ### 12-02-25
 - [ ] Find Neo 6m connected pins 
+
+```cpp
+#include <Arduino.h>
+#define USE_ARDUINO_INTERRUPTS true    // Set-up low-level interrupts for most acurate BPM math
+#include <PulseSensorPlayground.h>     // Includes the PulseSensorPlayground Library
+
+const int PulseWire = A0;       // 'S' Signal pin connected to A0
+const int LED13 = 13;          // The on-board Arduino LED
+int Threshold = 550;           // Determine which Signal to "count as a beat" and which to ignore
+                               
+PulseSensorPlayground pulseSensor;  // Creates an object
+
+void setup() {
+    Serial.begin(9600);
+
+    // Configure the PulseSensor object, by assigning our variables to it
+    pulseSensor.analogInput(PulseWire);   
+    pulseSensor.blinkOnPulse(LED13);       // Blink on-board LED with heartbeat
+    pulseSensor.setThreshold(Threshold);   
+
+    // Double-check the "pulseSensor" object was created and began seeing a signal
+    if (pulseSensor.begin()) {
+        Serial.println("PulseSensor object created!");
+    }
+}
+
+void loop() {
+    int myBPM = pulseSensor.getBeatsPerMinute();      // Calculates BPM
+
+    if (pulseSensor.sawStartOfBeat()) {               // Constantly test to see if a beat happened
+        Serial.println("♥  A HeartBeat Happened ! "); // If true, print a message
+        Serial.print("BPM: ");
+        Serial.println(myBPM);                        // Print the BPM value
+        }
+
+    delay(20);
+}
+```
+
+
+
+
+```cpp
+  
+
+#define GSM_TX D3
+
+#define GSM_RX D4
+
+/* -- Config.h --- */
+
+  
+
+#include <Arduino.h>
+
+#include <SoftwareSerial.h>
+
+  
+
+SoftwareSerial gsmSerial(GSM_TX, GSM_RX); // 3 -> SIM800L Tx & 2 -> SIM800L Rx
+
+  
+
+void updateSerial() {
+
+delay(500);
+
+while (Serial.available()) {
+
+gsmSerial.write(
+
+Serial.read()); // Forward what Serial received to Software Serial Port
+
+}
+
+while (gsmSerial.available()) {
+
+Serial.write(
+
+gsmSerial
+
+.read()); // Forward what Software Serial received to Serial Port
+
+}
+
+}
+
+void setup() {
+
+Serial.begin(9600);
+
+  
+
+// Start GSM Serial
+
+gsmSerial.begin(9600);
+
+  
+
+Serial.println("Initializing...");
+
+delay(1000);
+
+  
+
+gsmSerial.println(
+
+"AT"); // Once the handshake test is successful, it will back to OK
+
+updateSerial();
+
+  
+
+gsmSerial.println("AT+CMGF=1"); // Configuring TEXT mode
+
+updateSerial();
+
+gsmSerial.println(
+
+"AT+CMGS=\"+919744314562\""); // change ZZ with country code and
+
+// xxxxxxxxxxx with phone number to sms
+
+updateSerial();
+
+gsmSerial.print(
+
+"Come to room"); // text content
+
+updateSerial();
+
+gsmSerial.write(26);
+
+}
+
+  
+
+void loop() {
+
+updateSerial();
+
+delay(1000);
+
+}
+```

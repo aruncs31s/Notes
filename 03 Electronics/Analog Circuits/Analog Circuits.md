@@ -6,6 +6,7 @@ tag:
   
 ---
 # Analog Circuits
+- [[Capacitors]]
 ## Oscillators
 1. [[#RC Phase Shift Oscillator]]
 2. [[Design of sine wave oscillators using op-amp]]
