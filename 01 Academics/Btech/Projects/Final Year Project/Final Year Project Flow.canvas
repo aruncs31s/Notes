@@ -1,6 +1,9 @@
 {
 	"nodes":[
 		{"id":"42ac144cd2562978","type":"group","x":-320,"y":-600,"width":600,"height":222,"label":"Lower Order Modulations"},
+		{"id":"58cf007dd9f41577","type":"text","text":"- operating in low SNR conditions","x":413,"y":-572,"width":267,"height":89},
+		{"id":"2eee8d0b8931b1d2","type":"text","text":"- Greater Power Efficiency","x":413,"y":-458,"width":267,"height":89},
+		{"id":"a08a78b0b146bd44","type":"file","file":"01 Academics/Btech/Projects/Final Year Project/attachments/images/ber curve bpsk.png","x":863,"y":-995,"width":400,"height":332},
 		{"id":"3c7cff599986c8f2","type":"text","text":"# Source  ","x":-2040,"y":-265,"width":280,"height":80},
 		{"id":"1c73ee8734da0f0e","type":"text","text":"# Source Encoder","x":-1560,"y":-289,"width":280,"height":128},
 		{"id":"17e2a706b67b6c33","type":"text","text":"# Channel Encoding","x":-887,"y":-289,"width":280,"height":128},
@@ -19,10 +22,7 @@
 		{"id":"ba7810416df3bb55","type":"text","text":"## QPSK\n","x":-280,"y":-508,"width":200,"height":50},
 		{"id":"bf7b269b68112ed6","type":"text","text":"## BPSK","x":24,"y":-508,"width":176,"height":50},
 		{"id":"485e266fd04f53a9","type":"text","text":"-  Better BER performance","x":413,"y":-689,"width":267,"height":89},
-		{"id":"9cc7ac5b8697ad6b","type":"text","text":"# Destination","x":1640,"y":46,"width":280,"height":88},
-		{"id":"58cf007dd9f41577","type":"text","text":"- operating in low SNR conditions","x":413,"y":-572,"width":267,"height":89},
-		{"id":"2eee8d0b8931b1d2","type":"text","text":"- Greater Power Efficiency","x":413,"y":-458,"width":267,"height":89},
-		{"id":"a08a78b0b146bd44","type":"file","file":"01 Academics/Btech/Projects/Final Year Project/attachments/images/ber curve bpsk.png","x":863,"y":-995,"width":400,"height":332}
+		{"id":"9cc7ac5b8697ad6b","type":"text","text":"# Destination","x":1640,"y":46,"width":280,"height":88}
 	],
 	"edges":[
 		{"id":"ea35cdfe87056816","fromNode":"60393cbcbb19b7c9","fromSide":"right","toNode":"f1bc57757f6756fe","toSide":"left"},
