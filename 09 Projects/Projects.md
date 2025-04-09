@@ -12,7 +12,6 @@ banner_x: 0.49653
 Table alias as Nick , Date.Started as Started , Date.Target as Target , Date.End as End , Status.Working_ON as "State"  ,  Status.Completed as "Complete" , Status.isStall as "Stall"
 FROM #project
 SORT file.mtime DESC 
-
 ```
 
 ## How to structure a project well 
