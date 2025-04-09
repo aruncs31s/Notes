@@ -7,6 +7,7 @@ Date: "03-03-25"
 - [[Reasearch]]
 - [[BPSK Implementation]]
 - [[QPSK Implementation]]
+- [[Performance Analysis]]
 - [[Ber Curve]]
 
 ```tasks

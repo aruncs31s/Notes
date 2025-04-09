@@ -16,6 +16,7 @@ Date: 09-01-25
 	- [[GCEK Weather Station]]
 	- [[Designing a Communication System Using GNU Radio and SDR]]
 		- [[QPSK Implementation]]
+		- [[BPSK Implementation]]
 - [[Electronics]]
 - [[Hackethons]]
 	- [[Dihack Hackethon]]

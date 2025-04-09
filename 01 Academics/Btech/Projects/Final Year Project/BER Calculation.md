@@ -3,6 +3,7 @@ aliases:
 Date: "16-03-25"
 ---
 # BER Calculation
+The big question that come to mind when dealing with ber calculation in gnu radio is that, where to connect the Ber calculation block. 
 
 First we have to compare 2 streams inorder to calculate the [[BER vs SNR]] , But we can use the feature of tagged stream inorder to calculate the error . 
 
