@@ -8,6 +8,8 @@ Date:
 ---
 # Smart Watch Versions
 
+red black grey oreng (orenge = +vcc black gnd) Aruncs31s@twilio
+9V7MKPF5XPFUNELZP252J63L
 ## Requirements
 
 1. [x] Should contain a sos button
