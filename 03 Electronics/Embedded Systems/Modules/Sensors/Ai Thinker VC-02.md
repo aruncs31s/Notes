@@ -1,23 +1,3 @@
----
-dg-publish: true
-id: 09-02-25-Project
-aliases:
-  - 
-tags:
-  - project,
-Date:
-  Created: 09-02-25
-  Starting: 
-  Target: 
-Status: 
-  Working_ON: true
-  Completed: false
-  isStall: 
-isPrivate: false
-github:
-cssclasses:
-  - wide-page
----
 # Ai Thinker VC-02
 
 ```dataview

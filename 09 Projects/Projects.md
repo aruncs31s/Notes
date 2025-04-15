@@ -1,66 +1,94 @@
 ---
 dg-publish: true
 banner: "09 Projects/Common/banner.jpg"
-banner_y: 0.552
+banner_y: 0.432
 cssclasses:
   - wide-page
 banner_x: 0.49653
 ---
+
+
+# Taks
+**Todays Tasks**
+>[!multi-column]
+>
+>>[!Important] Just do 
+>>```tasks
+>>not done 
+>>path includes Projects 
+>>not done
+>>due on today
+>>
+>>```
+>
+>>[!Important] Completed Tasks
+>> ```tasks
+>> done
+>> path includes Projects
+>> due on today
+>>```
+>[!float|right-small]
+>```dataview
+>LIST
+>from #project 
+>
+>```
+
+
+**This Month**
+>[!multi-column]
+>
+>>[!Important] Just do 
+>>```tasks
+>>not done 
+>>path includes Projects 
+>>not done
+>>happens in this month
+>>
+>>```
+>
+>>[!Important] Completed Tasks
+>> ```tasks
+>> done
+>> path includes Projects
+>> happens in this month
+>>```
+
+
+
+
+**Total**
+
+
+
+
+
+
+```tasks
+not done 
+path includes Projects 
+not done
+```
+
+
+
 # Projects
 
 ```dataview
-Table alias as Nick , Date.Started as Started , Date.Target as Target , Date.End as End , Status.Working_ON as "State"  ,  Status.Completed as "Complete" , Status.isStall as "Stall"
-FROM #project
-SORT file.mtime DESC 
-```
-
-## How to structure a project well 
-**Example Structure**
-```
-dg-publish: true
-id: 29-11-2024-Project
-aliases:
-  - Smart Watch
-tags:
-  - project,embedded
-Date:
-  Started: 29-11-2024
-  Target: 01-01-2025
-  End:
-Status:
-  isStall: false
-  Working_ON: true
-  Completed: false
-github: https://github.com/aruncs31s/Smart-Watch-for-Ladies-Protection
-cssclasses:
-  - wide-page
-```
-
-```dataview 
 Table  
-From #project and #iot
+Date.Started as Start ,Date.End as End , date(now) as "Remaining"
+FROM #project
+
+
+SORT file.mtime DESC
+
 ```
+
 ```dataview
-Table 
-file.ctime as "Created" , Date.Started as "Started" , Date.Target as "Completed"
-Where file = this.file
-```
-### Single ton project 
-```yaml
-Date
-  Started: DD-MM-YYYY
-  Target: DD-MM-YYYY
-  End: DD-MM-YYYY
-```
-
-- They Should contain their working github repo as 
-```
-github:
-  - github.com/repolink
-```
+TABLE 
+date(now). as KK
+FROM #project
 
 
-##### 31-03-25
 
-- 2k22 S6 ECA Arnav() 9061616879 [[ESP8266]]
-- 
+```
