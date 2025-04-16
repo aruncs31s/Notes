@@ -6,8 +6,6 @@ cssclasses:
   - wide-page
 banner_x: 0.49653
 ---
-
-
 # Taks
 **Todays Tasks**
 >[!multi-column]
@@ -57,38 +55,3 @@ banner_x: 0.49653
 
 
 
-**Total**
-
-
-
-
-
-
-```tasks
-not done 
-path includes Projects 
-not done
-```
-
-
-
-# Projects
-
-```dataview
-Table  
-Date.Started as Start ,Date.End as End , date(now) as "Remaining"
-FROM #project
-
-
-SORT file.mtime DESC
-
-```
-
-```dataview
-TABLE 
-date(now). as KK
-FROM #project
-
-
-
-```

@@ -1,6 +1,6 @@
----
-aliases: 
-Date: "11-04-25"
+---"\raliases":
+Date: 11-04-25
+complete: false
 ---
 # Navbar
 ```tsx

@@ -1,36 +1,45 @@
+---
+complete: false
+cssclasses:
+  - wide-page
+---
+
 # ESP32 Expansion Board
+```dataview
+TABLE 
+	file.mtime as "Last Modified",
+	file.outlinks as "Outgoing Links"
+WHERE file = this.file
+
+
+```
 
 
 
 
-## Integrations
-- [[Parts]]
-- [[#l298n]]
+## Pin Configuration
+The `ADC2_CH0:7` will not work when using WiFi. In this board the wifi will be utilized most of the time so going to ignore the ADC2_CH0:7 pins  
+- [ ] Check if they can be used for something else 🔽 📅 2025-04-29
 
-Using ![[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32/ESP32#^cf11ec]] 
-- ADC1_CH0 (GPIO 36)
-- ADC1_CH1 (GPIO 37)
-- ADC1_CH2 (GPIO 38)
-- ADC1_CH3 (GPIO 39)
-- ADC1_CH4 (GPIO 32)
-- ADC1_CH5 (GPIO 33)
-- ADC1_CH6 (GPIO 34)
-- ADC1_CH7 (GPIO 35)
-```cpp
-#define ADC_1 33  // which is ADC_CH_5 
+```c
+#define ADC_1 33  
 #define ADC_2 32
 #define ADC_3 35
 #define ADC_4 34
 #define ADC_5 39 
 #define ADC_6 36
 ```
-these are the exposed **ADC_1** to **ADC_6**  , but the the **ADC_4:6** is connected to the [[GY-61]]
+
+These are the exposed **ADC_1** to **ADC_6**  , but the the **ADC_4:6** is connected to the [[GY-61]]
+> This pins are arranged in **LTR** manner .
 
 ```cpp
 #define ENA 
 #define ENB
 #deinf 
 ```
+
+## Integrations
 
 I have integrated l298n sensor to the expansion board but the following problems exist
 -  i have used the 7805 IC which only supports max 1.5 A
@@ -48,10 +57,6 @@ The [[l298n]] is a motor driver
 >- Total Power Dissipation (25W)
 
 >[!multi-column]
->
->>[!blank]
->> 
->>![[Pasted image 20250416025745.png]]
 >
 >>[!blank]
 >>```bash

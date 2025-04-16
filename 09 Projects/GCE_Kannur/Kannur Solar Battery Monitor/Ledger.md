@@ -58,7 +58,6 @@ from sundar electronics
 | Bar Connector | 2 \* 2  |        |
 |               |         |        |
 
-=======
 | Component | Cost x Qty | Amount |
 | ---------------- | ---------- | --------------- |
 | Dot PCB | 45 x 5 | 225/- |

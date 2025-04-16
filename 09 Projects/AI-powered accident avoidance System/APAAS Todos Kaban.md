@@ -6,19 +6,19 @@ kanban-plugin: board
 
 ## Todo
 
-- [ ] Design the circuit
-- [ ] Complete The Circuit
 
 
 ## Ongoing
 
-- [ ] Detect Pedestrians
-- [ ] Decide the components
-- [ ] Purchase the components
 
 
 ## Completed
 
+- [ ] Purchase the components
+- [ ] Decide the components
+- [ ] Detect Pedestrians
+- [ ] Complete The Circuit
+- [ ] Design the circuit
 - [ ] Detect normal objects
 
 

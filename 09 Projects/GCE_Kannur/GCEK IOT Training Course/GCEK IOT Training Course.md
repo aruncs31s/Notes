@@ -7,16 +7,17 @@ tags:
   - project,
 Date:
   Created: 11-04-25
-  Starting: 
-  Target: 
-Status: 
+  Starting:
+  Target:
+Status:
   Working_ON: true
   Completed: false
-  isStall: 
+  isStall:
 isPrivate: false
 github:
 cssclasses:
   - wide-page
+complete: false
 ---
 # GCEK IOT Training Course
 
