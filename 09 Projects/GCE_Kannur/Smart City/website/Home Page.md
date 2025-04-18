@@ -25,10 +25,10 @@ with open("../devices.csv", newline="") as csvfile:
 reader = csv.DictReader(csvfile)
 for row in reader:
 	devices.append(
-		{
-			"assigned_place": row["Assigned_Place"],
-			"status": row["Status"],
-			"ip": row["IP"],
+	{
+	"assigned_place": row["Assigned_Place"],
+	"status": row["Status"],
+	"ip": row["IP"],
 		}
 
 	)
