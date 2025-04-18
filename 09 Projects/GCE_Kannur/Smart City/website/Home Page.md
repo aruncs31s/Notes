@@ -32,11 +32,9 @@ with open(csv_file,newline="") as csvFile:
 
 ```python
 for row in reader:
-	devices.append(
-	{
+	devices.append({
 	"assigned_place": row["assigned_place"]
-	}
-	)
+	})
 ```
 
 
