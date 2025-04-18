@@ -21,7 +21,7 @@ This device.csv if first created by the user in which the IP of the device , etc
 ```python
 import csv
 devices = [] 
-with open("devices.csv",newline="") as csvFile:
+with open("/Users/aruncs/Desktop/Projects/Kannur-Solar-Battery-Monitoring-System-Website/devices.csv",newline="") as csvFile:
 	print(csvFile)
 ```
 
