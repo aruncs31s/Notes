@@ -20,6 +20,6 @@ Selecting `Flask` for web development
 ![[Screenshot 2025-04-19 at 2.39.32 AM.png]]
 ## V0.0.1 Beta
 Current status
-```csv
-IP,Assigned_Place,Status,Date ofCreation,Main_Node,Nearby_Nodes
+```
+IP,Assigned_Place,Status,Date of Creation,Main_Node,Nearby_Nodes
 ```
