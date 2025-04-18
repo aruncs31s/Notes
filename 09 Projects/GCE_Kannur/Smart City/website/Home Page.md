@@ -21,10 +21,10 @@ This device.csv if first created by the user in which the IP of the device , etc
 
 
 ```python
-csvF = "/Users/aruncs/Desktop/Projects/Kannur-Solar-Battery-Monitoring-System-Website/devices.csv"
+csv_file = "/Users/aruncs/Desktop/Projects/Kannur-Solar-Battery-Monitoring-System-Website/devices.csv"
 import csv
 devices = [] 
-with open("s,newline="") as csvFile:
+with open(csv_file,newline="") as csvFile:
 	print(csvFile)
 ```
 
