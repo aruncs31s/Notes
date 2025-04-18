@@ -64,3 +64,4 @@ def home():
 
 return render_template("home.html",devices=sorted_device)
 ```
+
