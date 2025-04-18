@@ -26,7 +26,7 @@ import csv
 devices = [] 
 with open(csv_file,newline="") as csvFile:
 	reader = csv.DictReader(csvFile)
-	print(row["assigned_place"])
+	print(row["Assigned_Place"])
 ```
 
 
