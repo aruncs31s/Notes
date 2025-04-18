@@ -40,6 +40,5 @@ inactive_devices = [
 device for device in devices if device["status"].lower() == "inactive"
 ]
 for i in active_devices:
-
-print(i["assigned_place"])
+	print(i["assigned_place"])
 ```
