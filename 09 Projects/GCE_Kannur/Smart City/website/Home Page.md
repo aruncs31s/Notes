@@ -25,6 +25,6 @@ csv_file = "/Users/aruncs/Desktop/Projects/Kannur-Solar-Battery-Monitoring-Syste
 import csv
 devices = [] 
 with open(csv_file,newline="") as csvFile:
-	for 
+	reader = csv.
 ```
 
