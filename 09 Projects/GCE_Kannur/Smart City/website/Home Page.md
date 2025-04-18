@@ -40,3 +40,5 @@ with open(csv_file,newline="") as csvFile:
 print(devices)
 ```
 
+But the `status` attribute her
+
