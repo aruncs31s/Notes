@@ -53,3 +53,5 @@ for i in active_devices:
     print(i["assigned_place"])
 
 ```
+
+
