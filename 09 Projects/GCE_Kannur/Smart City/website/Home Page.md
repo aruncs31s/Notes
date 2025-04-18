@@ -22,15 +22,25 @@ This device.csv if first created by the user in which the IP of the device , etc
 import csv
 devices = []
 with open("../devices.csv", newline="") as csvfile:
+
 reader = csv.DictReader(csvfile)
+
 for row in reader:
+
 devices.append(
+
 {
+
 "assigned_place": row["Assigned_Place"],
+
 "status": row["Status"],
+
 "ip": row["IP"],
+
 }
+
 )
+
 # Sort devices by status
 
 active_devices = [
