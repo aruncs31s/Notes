@@ -1,5 +1,7 @@
 ---
-alias:
+aliases:
+  - smart city home page
+tech: flask
 ---
 
 # Home Page
