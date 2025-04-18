@@ -13,8 +13,6 @@ tech: flask
 ![[Screenshot 2025-04-19 at 2.39.32 AM.png]]
 ## V0.0.1 Beta
 Current status
-```
+```device.csv
 IP,Assigned_Place,Status,Date of Creation,Main_Node,Nearby_Nodes
 ```
-
-So i can get which 
