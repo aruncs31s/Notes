@@ -55,7 +55,7 @@ for i in active_devices:
 ```
 
 ```python
-sorted_device = assi
+sorted_device = active_device + inactive_
 ```
 ## Routing
 ```python
