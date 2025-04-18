@@ -37,6 +37,6 @@ with open(csv_file,newline="") as csvFile:
 ```
 
 ```python
-print(devices()
+print(devices)
 ```
 
