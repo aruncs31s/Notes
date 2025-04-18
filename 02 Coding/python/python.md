@@ -12,7 +12,7 @@ tags: []
 - [matplotlib](./matplotlib.md)
 - [[Pyaudio]]
 - [[Python Regex]]
-- 
+- [[Manim]]
 ## Contents
 a
 - [ ]

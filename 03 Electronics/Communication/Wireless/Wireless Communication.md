@@ -3,6 +3,7 @@ aliases:
 Date: 01-11-2024
 ---
 # Wireless Communication
+
 - [[Channels]]
 - [[Signal Encoding Techniques]]
 - [[03 Electronics/Communication/Wireless/Constellation]]
@@ -10,4 +11,7 @@ Date: 01-11-2024
 
 
 ![[communication.png]]
+
+- The [[CDMA]] , [[MIMO]] , [[OFDM]] forms the basis of the [[4G]] and [[3G]] 
+
 
