@@ -60,5 +60,5 @@ for i in active_devices:
 @app.route("/")
 def home():
 
-return render_template("home.html",devices=)
+return render_template("home.html",devices=sorted_device)
 ```
