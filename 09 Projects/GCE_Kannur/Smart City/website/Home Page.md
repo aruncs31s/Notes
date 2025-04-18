@@ -27,7 +27,7 @@ devices = []
 with open(csv_file,newline="") as csvFile:
 	reader = csv.DictReader(csvFile)
 	for row in reader:
-		print(row)
+		# print(row)
 ```
 
 ```python
