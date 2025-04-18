@@ -55,3 +55,10 @@ for i in active_devices:
 ```
 
 
+## Routing
+```python
+@app.route("/")
+def home():
+
+return
+```
