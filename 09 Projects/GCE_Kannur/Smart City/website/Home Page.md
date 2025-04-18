@@ -32,7 +32,7 @@ with open(csv_file,newline="") as csvFile:
 
 ```python
 for row in reader:
-	device.append(
+	devices.append(
 	{
 	"assigned_place": row["assigned_place"]
 	}
