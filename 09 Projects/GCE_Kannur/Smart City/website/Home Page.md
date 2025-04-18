@@ -26,14 +26,7 @@ import csv
 devices = [] 
 with open(csv_file,newline="") as csvFile:
 	reader = csv.DictReader(csvFile)
-	
-	data=reader
-
-
-```
-
-```python
-for row in data:
+	print(row["assigned_place"])
 ```
 
 
