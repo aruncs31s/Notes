@@ -1,3 +1,6 @@
+---
+
+---
 
 # Home Page
 - [ ] The home page should display all the devices 
