@@ -19,14 +19,12 @@ IP,Assigned_Place,Status,Date of Creation,Main_Node,Nearby_Nodes
 ```
 This device.csv if first created by the user in which the IP of the device , etc. are typed. 
 
-```bash
-cd 
-```
+
 ```python
-csvFie = "/Users/aruncs/Desktop/Projects/Kannur-Solar-Battery-Monitoring-System-Website/devices.cs"
+csvF = "/Users/aruncs/Desktop/Projects/Kannur-Solar-Battery-Monitoring-System-Website/devices.csv"
 import csv
 devices = [] 
-with open("devices.csv",newline="") as csvFile:
+with open("s,newline="") as csvFile:
 	print(csvFile)
 ```
 
