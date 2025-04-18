@@ -21,49 +21,5 @@ Selecting `Flask` for web development
 ## V0.0.1 Beta
 Current status
 ```csv
-import csv
 
-devices = []
-
-with open("../devices.csv", newline="") as csvfile:
-
-reader = csv.DictReader(csvfile)
-
-for row in reader:
-
-devices.append(
-
-{
-
-"assigned_place": row["Assigned_Place"],
-
-"status": row["Status"],
-
-"ip": row["IP"],
-
-}
-
-)
-
-# Sort devices by status
-
-active_devices = [
-
-device for device in devices if device["status"].lower() == "active"
-
-]
-
-inactive_devices = [
-
-device for device in devices if device["status"].lower() == "inactive"
-
-]
-
-for i in active_devices:
-
-print(i["assigned_place"])
-
-# print(active_devices[0]["assigned_place"])
-
-# print(inactive_devices)
 ```
