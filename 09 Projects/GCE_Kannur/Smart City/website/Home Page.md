@@ -32,7 +32,7 @@ with open(csv_file,newline="") as csvFile:
 ```
 
 ```python
-for row in date:
+for row in data:
 	print(row["assigned_place"])
 ```
 
