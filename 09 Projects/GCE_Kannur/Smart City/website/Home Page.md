@@ -60,5 +60,5 @@ for i in active_devices:
 @app.route("/")
 def home():
 
-return()
+return render_template()
 ```
