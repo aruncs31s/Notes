@@ -16,3 +16,5 @@ Current status
 ```
 IP,Assigned_Place,Status,Date of Creation,Main_Node,Nearby_Nodes
 ```
+
+So i c
