@@ -18,6 +18,9 @@ Current status
 IP,Assigned_Place,Status,Date of Creation,Main_Node,Nearby_Nodes
 ```
 This device.csv if first created by the user in which the IP of the device , etc. are typed. 
+
+```bash
+```
 ```python
 import csv
 devices = [] 
@@ -25,6 +28,3 @@ with open("/Users/aruncs/Desktop/Projects/Kannur-Solar-Battery-Monitoring-System
 	print(csvFile)
 ```
 
-```bash
-ls
-```
