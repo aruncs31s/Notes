@@ -54,7 +54,9 @@ for i in active_devices:
 
 ```
 
-
+```python
+sorted_device = assi
+```
 ## Routing
 ```python
 @app.route("/")
