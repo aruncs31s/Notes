@@ -17,4 +17,4 @@ Current status
 # device.csv
 IP,Assigned_Place,Status,Date of Creation,Main_Node,Nearby_Nodes
 ```
-This 
+This device.csv if first created by the u
