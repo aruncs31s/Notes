@@ -31,7 +31,7 @@ for row in reader:
 			"ip": row["IP"],
 		}
 
-)
+		)
 
 # Sort devices by status
 
