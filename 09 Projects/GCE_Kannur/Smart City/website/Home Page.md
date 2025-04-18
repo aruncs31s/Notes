@@ -27,7 +27,13 @@ devices = []
 with open(csv_file,newline="") as csvFile:
 	reader = csv.DictReader(csvFile)
 	for row in reader:
-		print(row["Assigned_Place"])
+	devices.append(
+            {
+                "assigned_place": row["Assigned_Place"],
+                "status": row["Status"],
+                "ip": row["IP"],
+            }
+        )
 ```
 
 ```python
