@@ -31,6 +31,7 @@ with open(csv_file,newline="") as csvFile:
 ```
 
 ```python
+for row in reader:
 
 ```
 
