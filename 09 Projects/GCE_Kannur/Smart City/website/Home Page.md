@@ -21,7 +21,8 @@ This device.csv if first created by the user in which the IP of the device , etc
 ```python
 import csv
 devices = [] 
-with open("devices.csv",new)
+with open("devices.csv",newline="") as csvFile:
+
 with open("../devices.csv", newline="") as csvfile:
 reader = csv.DictReader(csvfile)
 for row in reader:
