@@ -27,15 +27,10 @@ for row in reader:
 devices.append(
 {
 "assigned_place": row["Assigned_Place"],
-
 "status": row["Status"],
-
 "ip": row["IP"],
-
 }
-
 )
-
 # Sort devices by status
 
 active_devices = [
