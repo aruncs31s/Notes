@@ -30,6 +30,7 @@ with open(csv_file,newline="") as csvFile:
 		print(row["Assigned_Place"])
 ```
 
-```p
+```python
+print(row)
 ```
 
