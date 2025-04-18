@@ -3,4 +3,4 @@ aliases:
   - smart city device page
 ---
 # Device Page
-This page will c
+This page will contain the battery vol
