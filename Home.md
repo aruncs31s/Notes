@@ -42,4 +42,7 @@ win.system("cd C:/Users/arunc/Git/Notes && dir && git pull origin main")
 
 
 
+## 2025-04-17
+
+- [ ] Checkout  [Adding Metadata to your Pages](https://blacksmithgu.github.io/obsidian-dataview/annotation/add-metadata/) 📅 2025-04-17 
 

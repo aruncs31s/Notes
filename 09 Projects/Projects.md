@@ -25,7 +25,6 @@ banner_x: 0.49653
 >> path includes Projects
 >> due on today
 >>```
->[!float|right-small]
 >```dataview
 >LIST
 >from #project 
