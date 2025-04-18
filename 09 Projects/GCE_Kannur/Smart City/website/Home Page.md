@@ -40,5 +40,5 @@ with open(csv_file,newline="") as csvFile:
 print(devices)
 ```
 
-But the `status` attribute here only indicates that if the device is placed o
+But the `status` attribute here only indicates that if the device is placed on the field or not 
 
