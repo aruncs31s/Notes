@@ -29,9 +29,7 @@ for row in reader:
 	"assigned_place": row["Assigned_Place"],
 	"status": row["Status"],
 	"ip": row["IP"],
-		}
-
-	)
+	})
 # Sort devices by status
 active_devices = [
 		device for device in devices if device["status"].lower() == "active"
