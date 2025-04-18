@@ -18,3 +18,39 @@ Current status
 IP,Assigned_Place,Status,Date of Creation,Main_Node,Nearby_Nodes
 ```
 This device.csv if first created by the user in which the IP of the device , etc. are typed. 
+```python
+import csv
+devices = []
+with open("../devices.csv", newline="") as csvfile:
+reader = csv.DictReader(csvfile)
+for row in reader:
+devices.append(
+{
+"assigned_place": row["Assigned_Place"],
+
+"status": row["Status"],
+
+"ip": row["IP"],
+
+}
+
+)
+
+# Sort devices by status
+
+active_devices = [
+
+device for device in devices if device["status"].lower() == "active"
+
+]
+
+inactive_devices = [
+
+device for device in devices if device["status"].lower() == "inactive"
+
+]
+
+for i in active_devices:
+
+print(i["assigned_place"])
+```
