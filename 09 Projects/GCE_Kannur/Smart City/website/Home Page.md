@@ -1,3 +1,7 @@
+---
+alias:
+---
+
 # Home Page
 - [ ] The home page should display all the devices 
 - [ ] If possible the battery voltage of each device should be visible in the home page.
