@@ -34,7 +34,7 @@ with open(csv_file,newline="") as csvFile:
 for row in reader:
 	device.append(
 	{
-	"assigned_place": row["assigned_place]
+	"assigned_place": row["assigned_place"]
 	}
 	)
 ```
