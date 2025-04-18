@@ -26,13 +26,13 @@ import csv
 devices = [] 
 with open(csv_file,newline="") as csvFile:
 	reader = csv.DictReader(csvFile)
-	
+	data=reader
 
 
 ```
 
 ```python
-for row in reader:
+for row in date:
 	print(row["assigned_place"])
 ```
 
