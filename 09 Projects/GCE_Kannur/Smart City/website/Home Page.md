@@ -20,8 +20,11 @@ IP,Assigned_Place,Status,Date of Creation,Main_Node,Nearby_Nodes
 This device.csv if first created by the user in which the IP of the device , etc. are typed. 
 ```python
 import csv
-
 devices = [] 
 with open("devices.csv",newline="") as csvFile:
 	print(csvFile)
+```
+
+```bash
+ls
 ```
