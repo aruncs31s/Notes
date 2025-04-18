@@ -21,5 +21,5 @@ Selecting `Flask` for web development
 ## V0.0.1 Beta
 Current status
 ```csv
-
+IP,Assigned_Place,Status,Date ofCreation,Main_Node,Nearby_Nodes
 ```
