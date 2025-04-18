@@ -26,6 +26,7 @@ import csv
 devices = [] 
 with open(csv_file,newline="") as csvFile:
 	reader = csv.DictReader(csvFile)
-	print(reader)
+	for row in reader:
+		print(row)
 ```
 
