@@ -42,3 +42,14 @@ print(devices)
 
 But the `status` attribute here only indicates that if the device is placed on the field or not 
 
+```python
+active_devices = [
+    device for device in devices if device["status"].lower() == "active"
+]
+inactive_devices = [
+    device for device in devices if device["status"].lower() == "inactive"
+]
+for i in active_devices:
+    print(i["assigned_place"])
+
+```
