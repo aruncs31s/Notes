@@ -1,0 +1,21 @@
+{
+  "spellcheckDictionary": [
+    "ubcarriers.",
+    "ubcarrier ",
+    "ubstreams.",
+    "ubstreams ",
+    "FDM ",
+    "FDM ",
+    "OFDM"
+  ],
+  "attachmentFolderPath": "99 Files/attachments",
+  "newFileLocation": "current",
+  "alwaysUpdateLinks": true,
+  "showInlineTitle": false,
+  "promptDelete": false,
+  "vimMode": true,
+  "propertiesInDocument": "visible",
+  "defaultViewMode": "preview",
+  "spellcheck": false,
+  "autoConvertHtml": false
+}
