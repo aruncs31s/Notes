@@ -16,13 +16,24 @@ dg-publish: true
 >- [[APIs]]
 >Others
 >- [[database]]
-
+> 
 # Device Page
 
 This page will contain the battery voltage graph and the relay button
 
 
 ![[Screenshot 2025-04-19 at 3.53.43 AM.png]]
+[commit:: 2519b02]
+
+
+
+![[Screenshot 2025-05-07 at 12.19.36 PM.png]]
+![[Screenshot 2025-05-07 at 12.23.36 PM.png]]
+
+---
+
+
+
 ## Voltage Vs Time Graph
 The voltage graph now has as 75% of full with in `c9d809` 
 ```js
