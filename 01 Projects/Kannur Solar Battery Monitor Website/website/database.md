@@ -8,6 +8,9 @@ cssclasses:
 ---
 
 # Database 
+
+
+
 - [ ] Check if is there any way to minimize the use of database in this project #fix
 
 **Using SQlite3**
@@ -111,3 +114,46 @@ It receives a `ip_list` which is the list of ip of all the [[ESP8266]] running .
         )
         self.conn.commit()
 ```
+
+
+
+#### 3 Updating data from the esp32
+**Work:** this will fetch the live data form the [[Esp HttpServer|Server]] and update it to the `charts.battery`
+We dont have to store the entire data points in the database, unless necessary .So i am going to do this.
+1. The scraped data is instantly send to the `charts.battery` using the following
+```python
+@app.route("/api/data", methods=["GET"])
+def get_data():
+    current_node = request.args.get("device_id")
+    current_node_ip = esp_devices.get_ip_of_the_node(current_node)
+    date_now = datetime.today().date()
+    raw_data = db.get_data(current_node_ip,date=date_now) 
+    data = [
+        {
+            'timestamp': row[TIME_INDEX].strftime(highcharts_timestamp_format),
+            'battery_voltage': row[BAT_INDEX]
+        }
+        for row in raw_data
+    ]
+    return jsonify(data), 200
+```
+this is the current function but it can be modified to get the live data[^1] from the
+modifing this to the following. (currently keeping the last data format that is send the same)
+
+```python
+@app.route("/api/data/live" methods=["GET"])
+def get_live_data():
+    current_node = request.args.get("device_id")
+    current_node_ip = esp_devices.get_ip_of_the_node(current_node)
+    live_data = get_esp_data(current_node_ip)
+    data = [
+        {
+            'timestamp': datetime.today().strftime(highcharts_timestamp_format),
+            'battery_voltage': live_data["battery_voltage"],
+        }
+    ]
+    return jsonify(data), 200
+```
+
+
+[^1]: Live data in the sense that it will directly come from the `ESP8266` server itself without any delay. 
