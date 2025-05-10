@@ -1,45 +1,19 @@
 {
   "main": {
-    "id": "e2756be5df74444e",
+    "id": "8900523a0cf91ce2",
     "type": "split",
     "children": [
       {
-        "id": "a5fde1a5ec87b432",
+        "id": "f5e834faae213592",
         "type": "tabs",
         "children": [
           {
-            "id": "b58d9c8cd820b560",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Home.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "Home"
-            }
-          },
-          {
-            "id": "8bdc64e4596b8807",
+            "id": "e7b7e78708805d2a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 Projects/Kannur Solar Battery Monitor Website/website/Home Page.md",
+                "file": "01 Projects/Kannur Solar Battery Monitor Website/website/highcharts.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -54,26 +28,131 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home Page"
+              "title": "highcharts"
+            }
+          },
+          {
+            "id": "24f578220099cd5f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 Projects/Kannur Solar Battery Monitor Website/website/Device Page.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Device Page"
+            }
+          },
+          {
+            "id": "e76db6d6c7c9cd7f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 Coding/JS/Basics.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Basics"
+            }
+          },
+          {
+            "id": "0d9effd4a0ce153f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 Coding/JS/Objects.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Objects"
+            }
+          },
+          {
+            "id": "60aa2171978cbc50",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 Coding/JS/Immediately invoked functions.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Immediately invoked functions"
+            }
+          },
+          {
+            "id": "c791484c58132f71",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ],
-        "currentTab": 1,
-        "stacked": true
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "5927a965cc1aa95f",
+    "id": "30223b2b740c5754",
     "type": "split",
     "children": [
       {
-        "id": "1c76e132e260bf07",
+        "id": "842eb5772a1a8b24",
         "type": "tabs",
         "children": [
           {
-            "id": "03195040affa8ad6",
+            "id": "033caacf0994c285",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -86,27 +165,12 @@
             }
           },
           {
-            "id": "8b1a72288a3e7fa4",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Home.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of Home"
-            }
-          },
-          {
-            "id": "2a726583a8d164fe",
+            "id": "2cdc4a1cf1b60482",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "element",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -118,17 +182,7 @@
             }
           },
           {
-            "id": "2c54b2e175ff9fbd",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "b588fa8747f74792",
+            "id": "c855e037826897e6",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -136,18 +190,24 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "363ec1448de3f122",
+        "type": "tabs",
+        "children": [
           {
-            "id": "fe8d7ad1d52171cb",
+            "id": "8b001311a62b8f14",
             "type": "leaf",
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "98 Private/01 Daily Notes/2025/05 May/04-05-25.md",
+                "file": "02 Coding/JS/Basics.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
-                  "localJumps": 1,
+                  "localJumps": 2,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": false,
@@ -156,72 +216,6 @@
                   "hideUnresolved": false,
                   "collapse-color-groups": true,
                   "colorGroups": [],
-                  "collapse-display": false,
-                  "showArrow": true,
-                  "textFadeMultiplier": -1.6,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 2.42088102209209,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 1.7669967264055626,
-                  "close": true
-                }
-              },
-              "icon": "lucide-git-fork",
-              "title": "Graph of 04-05-25"
-            }
-          },
-          {
-            "id": "9f4762cbdd3d4db9",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "02 Projects/Kannur Solar Battery Monitor/Kannur Solar Battery Monitor System.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of Kannur Solar Battery Monitor System"
-            }
-          }
-        ]
-      },
-      {
-        "id": "b164f4ea48950566",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6dd2afa5a96ad3cc",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "02 Projects/Kannur Solar Battery Monitor Website/website/Home Page.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [
-                    {
-                      "query": "tag:#website  ",
-                      "color": {
-                        "a": 1,
-                        "rgb": 5490197
-                      }
-                    }
-                  ],
                   "collapse-display": true,
                   "showArrow": false,
                   "textFadeMultiplier": 0,
@@ -232,36 +226,35 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.3372072903188887,
+                  "scale": 0.90184529196161,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Home Page"
+              "title": "Graph of Basics"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 376.5,
-    "collapsed": true
+    "width": 514.5
   },
   "right": {
-    "id": "24239ce6cb501fa9",
+    "id": "349259b12622d490",
     "type": "split",
     "children": [
       {
-        "id": "5a92a7aff821ec10",
+        "id": "2f75de14e42d875c",
         "type": "tabs",
         "children": [
           {
-            "id": "7382709e75283f05",
+            "id": "d3b795d9f0b0fda0",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03 Electronics/resistors combination.excalidraw.md",
+                "file": "01 Projects/Kannur Solar Battery Monitor Website/website/database.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -271,25 +264,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for resistors combination.excalidraw"
+              "title": "Backlinks for database"
             }
           },
           {
-            "id": "3413f41f47250bb8",
+            "id": "434c75c487b96a15",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03 Electronics/resistors combination.excalidraw.md",
+                "file": "01 Projects/Kannur Solar Battery Monitor Website/website/database.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from resistors combination.excalidraw"
+              "title": "Outgoing links from database"
             }
           },
           {
-            "id": "e3ce95c62afd40f0",
+            "id": "894d50d7036341d3",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -304,102 +297,87 @@
             }
           },
           {
-            "id": "b578db94777294ef",
+            "id": "2afb3af9d7abfcca",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 Academics/BTech/S8/ECT416/EC416.md",
+                "file": "01 Projects/Kannur Solar Battery Monitor Website/website/Device Page.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of EC416"
+              "title": "Outline of Device Page"
+            }
+          },
+          {
+            "id": "613d0c25cb9e8305",
+            "type": "leaf",
+            "state": {
+              "type": "github-copilot-chat-view",
+              "state": {},
+              "icon": "bot-message-square",
+              "title": "Copilot Chat"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 312.5,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "markdown-importer:Open format converter": false,
+      "audio-recorder:Start/stop recording": false,
+      "workspaces:Manage workspace layouts": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "audio-recorder:Start/stop recording": false,
-      "darlal-switcher-plus:Open in Headings Mode": false,
-      "darlal-switcher-plus:Open Symbols for the active editor": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "digitalgarden:Digital Garden Publication Center": false,
-      "markdown-importer:Open format converter": false,
-      "workspaces:Manage workspace layouts": false
+      "darlal-switcher-plus:Open in Headings Mode": false,
+      "darlal-switcher-plus:Open Symbols for the active editor": false
     }
   },
-  "active": "8bdc64e4596b8807",
+  "active": "e76db6d6c7c9cd7f",
   "lastOpenFiles": [
-    "02 Projects/Kannur Solar Battery Monitor Website/website/main_page.md",
-    "Home.md",
-    "98 Private/Cred.md",
-    "02 Projects/Kannur Solar Battery Monitor Website/website/database.md",
-    "98 Private/01 Daily Notes/2025/05 May/05-05-25.md",
-    "Notes.md",
-    "02 Projects/Kannur Solar Battery Monitor Website/website/Device Page.md",
-    "02 Projects/Kannur Solar Battery Monitor Website/Smart City WebSite.md",
-    "02 Projects/Kannur Solar Battery Monitor Website/website/APIs.md",
-    "02 Projects/Kannur Solar Battery Monitor Website/website/Home Page.md",
-    "02 Projects/AI Robot/01 AI Robot.md",
-    "99 Files/attachments/Recording 20250424072314.m4a",
-    "99 Files/attachments/Recording 20250424072333.m4a",
-    "99 Files/attachments/Recording 20250424072417.m4a",
-    "99 Files/attachments/Recording 20250424072424.m4a",
-    "99 Files/attachments/Recording 20250424072541.m4a",
-    "99 Files/attachments/Recording 20250424072633.m4a",
-    "99 Files/attachments/Recording 20250424072818.m4a",
-    "99 Files/attachments/Recording 20250428050328.m4a",
-    "99 Files/attachments/Recording 20250502002700.m4a",
-    "99 Files/attachments/Recording 20250505022035.m4a",
-    "98 Private/01 Daily Notes/2025/05 May/04-05-25.md",
-    "02 Projects/Kannur Solar Battery Monitor/01 System.md",
-    "99 Files/attachments/Frequency Reuse.png",
-    "99 Files/attachments/fdma_img.png",
-    "99 Files/attachments/dev-06-004-1-removebg-preview.png",
-    "99 Files/attachments/detailsofsingleround.png",
-    "99 Files/attachments/DES.png",
-    "99 Files/attachments/avalanche effect.png",
-    "99 Files/templates/daily Note.md",
-    "01 Academics/Btech.md",
-    "04 Coding/02 Websites/Flask/Blueprints.md",
-    "01 Academics/BTech/S8/ECT416/Module 4.md",
-    "99 Files/attachments/Screenshot 2025-05-02 at 12.53.14 AM.png",
-    "02 Projects/Projects.md",
-    "02 Projects/AI Robot/attachments/drawings/Robot Skeliton.md",
-    "01 Academics/BTech/S8/Optimizations/Optimizations.md",
-    "01 Academics/BTech/S8/ECT416/EC416.md",
-    "01 Academics/BTech/S8/ECT416/Module 2.md",
-    "01 Academics/BTech/S8/ECT468/Module 5.md",
-    "01 Academics/BTech/S8/ECT468/Module 2.md",
-    "01 Academics/BTech/S8/ECT468/Module 3.md",
-    "01 Academics/BTech/S8/ECT468/Module 4.md",
-    "02 Projects/AI Robot/attachments/image.png",
-    "Files/attachments/Pasted image 20250427002640.png",
-    "Files/attachments/Screenshot 2025-04-27 at 1.29.03 PM.png",
-    "03 Electronics/01 Communication/Wireless Communication/basic communication.canvas",
-    "03 Electronics/01 Communication/Freq and Time Domain Canvas.canvas",
-    "03 Electronics/01 Communication/Communication.canvas",
-    "03 Electronics/01 Communication/Wireless Communication/attachments/basic communication.canvas",
-    "03 Electronics/01 Communication/Wireless Communication/attachments/basic comm with modulation.canvas",
-    "03 Electronics/Communication/Wireless/attachments/basic communication.canvas",
-    "03 Electronics/Communication/Wireless/attachments/basic comm with modulation.canvas",
-    "03 Electronics/Communication/Wireless/basic communication.canvas",
-    "03 Electronics/Communication/Communication.canvas",
-    "03 Electronics/Communication/Freq and Time Domain Canvas.canvas"
+    "02 Coding/JS/Classes.md",
+    "02 Coding/JS/Basics.md",
+    "02 Coding/JS/Objects.md",
+    "02 Coding/JS/Immediately invoked functions.md",
+    "02 Coding/JS/Arrow Functions.md",
+    "01 Projects/Kannur Solar Battery Monitor Website/website/Device Page.md",
+    "02 Coding/JS",
+    "01 Projects/Kannur Solar Battery Monitor Website/website/highcharts.md",
+    "01 Projects/Kannur Solar Battery Monitor Website/website/APIs.md",
+    "99 Files/attachments/Recording 20250508042322.m4a",
+    "99 Files/attachments",
+    "99 Files",
+    "01 Projects/Kannur Solar Battery Monitor Website/website/Codes/Full Code.md",
+    "01 Projects/Kannur Solar Battery Monitor Website/website/Codes",
+    "01 Projects/Kannur Solar Battery Monitor Website/website/Full Code.md",
+    "02 Coding/Python/03 Advanced.md",
+    "02 Coding/Python/02 Intermediate.md",
+    "02 Coding/Python/01 Basics.md",
+    "01 Projects/Kannur Solar Battery Monitor Website/website/database.md",
+    "02 Coding/Python",
+    "02 Coding",
+    "01 Projects/Kannur Solar Battery Monitor Website/attachments/drawings/Drawing 2025-05-07 12.44.02.excalidraw.md",
+    "01 Projects/Kannur Solar Battery Monitor Website/attachments/Drawing 2024-10-04 09.29.28.excalidraw.md",
+    "01 Projects/Kannur Solar Battery Monitor Website/attachments/website_design.excalidraw.md",
+    "01 Projects/Kannur Solar Battery Monitor Website/attachments/drawings",
+    "01 Projects/Kannur Solar Battery Monitor Website/Smart City WebSite.md",
+    "README.md",
+    "01 Projects/Kannur Solar Battery Monitor Website/website/main_page.md",
+    "01 Projects/Kannur Solar Battery Monitor Website/website/Home Page.md",
+    "01 Projects/Kannur Solar Battery Monitor Website/website",
+    "01 Projects/Kannur Solar Battery Monitor Website/attachments"
   ]
 }

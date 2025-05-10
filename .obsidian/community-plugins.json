@@ -9,5 +9,7 @@
   "obsidian-tasks-plugin",
   "todoist-sync-plugin",
   "dataview",
-  "various-complements"
+  "various-complements",
+  "github-copilot",
+  "execute-code"
 ]
