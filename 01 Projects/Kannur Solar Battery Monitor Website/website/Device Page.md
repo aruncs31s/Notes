@@ -185,6 +185,7 @@ async function get_latest_data(){
 
 
 ```js
+
 async function get_latest_data() {
   try {
     const response = await fetch(`/api/data?device_id=${current_node}`);
@@ -211,7 +212,8 @@ async function get_latest_data() {
         return null;
       }
     }
-  } catch (error) {
+  }
+  catch (error) {
     console.error("Error fetching latest data:", error);
     return null;
   }
