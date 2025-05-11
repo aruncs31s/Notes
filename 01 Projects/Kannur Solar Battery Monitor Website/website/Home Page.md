@@ -80,3 +80,16 @@ def home():
 return render_template("home.html",devices=sorted_device)
 ```
 
+
+    .querySelector("button button:nth-child(2)")
+```js
+let sortAscending = true;
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .getElementById("search-input")
+    .addEventListener("input", searchDevices);
+  document
+    .querySelector(".sbutton")  // Changed from .sort-button to .sbutton to match HTML
+    .addEventListener("click", sortDevices);
+});
+```
