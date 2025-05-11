@@ -1,0 +1,383 @@
+{
+  "main": {
+    "id": "8900523a0cf91ce2",
+    "type": "split",
+    "children": [
+      {
+        "id": "f5e834faae213592",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7b7e78708805d2a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 Projects/Kannur Solar Battery Monitor Website/website/highcharts.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "highcharts"
+            }
+          },
+          {
+            "id": "24f578220099cd5f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 Projects/Kannur Solar Battery Monitor Website/website/Device Page.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Device Page"
+            }
+          },
+          {
+            "id": "e76db6d6c7c9cd7f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 Coding/JS/Basics.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Basics"
+            }
+          },
+          {
+            "id": "0d9effd4a0ce153f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 Coding/JS/Objects.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Objects"
+            }
+          },
+          {
+            "id": "60aa2171978cbc50",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 Coding/JS/Immediately invoked functions.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Immediately invoked functions"
+            }
+          },
+          {
+            "id": "c791484c58132f71",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "30223b2b740c5754",
+    "type": "split",
+    "children": [
+      {
+        "id": "842eb5772a1a8b24",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "033caacf0994c285",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "2cdc4a1cf1b60482",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "c855e037826897e6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      },
+      {
+        "id": "363ec1448de3f122",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8b001311a62b8f14",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "02 Coding/JS/Basics.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 2,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.90184529196161,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of Basics"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 514.5
+  },
+  "right": {
+    "id": "349259b12622d490",
+    "type": "split",
+    "children": [
+      {
+        "id": "2f75de14e42d875c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d3b795d9f0b0fda0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "01 Projects/Kannur Solar Battery Monitor Website/website/database.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for database"
+            }
+          },
+          {
+            "id": "434c75c487b96a15",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "01 Projects/Kannur Solar Battery Monitor Website/website/database.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from database"
+            }
+          },
+          {
+            "id": "894d50d7036341d3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "2afb3af9d7abfcca",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "01 Projects/Kannur Solar Battery Monitor Website/website/Device Page.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Device Page"
+            }
+          },
+          {
+            "id": "613d0c25cb9e8305",
+            "type": "leaf",
+            "state": {
+              "type": "github-copilot-chat-view",
+              "state": {},
+              "icon": "bot-message-square",
+              "title": "Copilot Chat"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 312.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "markdown-importer:Open format converter": false,
+      "audio-recorder:Start/stop recording": false,
+      "workspaces:Manage workspace layouts": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "digitalgarden:Digital Garden Publication Center": false,
+      "darlal-switcher-plus:Open in Headings Mode": false,
+      "darlal-switcher-plus:Open Symbols for the active editor": false
+    }
+  },
+  "active": "e76db6d6c7c9cd7f",
+  "lastOpenFiles": [
+    "02 Coding/JS/Classes.md",
+    "02 Coding/JS/Basics.md",
+    "02 Coding/JS/Objects.md",
+    "02 Coding/JS/Immediately invoked functions.md",
+    "02 Coding/JS/Arrow Functions.md",
+    "01 Projects/Kannur Solar Battery Monitor Website/website/Device Page.md",
+    "02 Coding/JS",
+    "01 Projects/Kannur Solar Battery Monitor Website/website/highcharts.md",
+    "01 Projects/Kannur Solar Battery Monitor Website/website/APIs.md",
+    "99 Files/attachments/Recording 20250508042322.m4a",
+    "99 Files/attachments",
+    "99 Files",
+    "01 Projects/Kannur Solar Battery Monitor Website/website/Codes/Full Code.md",
+    "01 Projects/Kannur Solar Battery Monitor Website/website/Codes",
+    "01 Projects/Kannur Solar Battery Monitor Website/website/Full Code.md",
+    "02 Coding/Python/03 Advanced.md",
+    "02 Coding/Python/02 Intermediate.md",
+    "02 Coding/Python/01 Basics.md",
+    "01 Projects/Kannur Solar Battery Monitor Website/website/database.md",
+    "02 Coding/Python",
+    "02 Coding",
+    "01 Projects/Kannur Solar Battery Monitor Website/attachments/drawings/Drawing 2025-05-07 12.44.02.excalidraw.md",
+    "01 Projects/Kannur Solar Battery Monitor Website/attachments/Drawing 2024-10-04 09.29.28.excalidraw.md",
+    "01 Projects/Kannur Solar Battery Monitor Website/attachments/website_design.excalidraw.md",
+    "01 Projects/Kannur Solar Battery Monitor Website/attachments/drawings",
+    "01 Projects/Kannur Solar Battery Monitor Website/Smart City WebSite.md",
+    "README.md",
+    "01 Projects/Kannur Solar Battery Monitor Website/website/main_page.md",
+    "01 Projects/Kannur Solar Battery Monitor Website/website/Home Page.md",
+    "01 Projects/Kannur Solar Battery Monitor Website/website",
+    "01 Projects/Kannur Solar Battery Monitor Website/attachments"
+  ]
+}
