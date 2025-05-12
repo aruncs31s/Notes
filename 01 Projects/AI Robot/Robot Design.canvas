@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"df1822df5dd74834","x":-180,"y":-80,"width":160,"height":120,"type":"text","text":"# Robot"},
+		{"id":"2fb6db454d730bb6","x":-267,"y":-280,"width":267,"height":104,"type":"text","text":"## AI Interactiveness"},
+		{"id":"ec5597e924116b7e","x":78,"y":-55,"width":250,"height":60,"type":"text","text":"## Motion Control\n"},
+		{"id":"0a5ee870f32898e5","x":-200,"y":-720,"width":400,"height":267,"type":"file","file":"03 Electronics/Embedded Systems/Raspberry Pi/Raspberry Pi.md"},
+		{"id":"933c23e7bfb83439","x":602,"y":-464,"width":400,"height":400,"type":"file","file":"03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/ESP32.md"},
+		{"id":"110ed4e0562bb5dd","x":602,"y":5,"width":400,"height":400,"type":"file","file":"03 Electronics/Battery.md"}
+	],
+	"edges":[
+		{"id":"8a8b6cf939775559","fromNode":"df1822df5dd74834","fromSide":"top","toNode":"2fb6db454d730bb6","toSide":"bottom"},
+		{"id":"7d7692e14ba4a263","fromNode":"df1822df5dd74834","fromSide":"right","toNode":"ec5597e924116b7e","toSide":"left"},
+		{"id":"19c33578d1139c75","fromNode":"2fb6db454d730bb6","fromSide":"top","toNode":"0a5ee870f32898e5","toSide":"bottom"},
+		{"id":"4c6a86ca12672c65","fromNode":"ec5597e924116b7e","fromSide":"right","toNode":"933c23e7bfb83439","toSide":"left"},
+		{"id":"d2fe952e7ae31bef","fromNode":"ec5597e924116b7e","fromSide":"right","toNode":"110ed4e0562bb5dd","toSide":"left"}
+	]
+}
