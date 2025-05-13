@@ -23,24 +23,24 @@ Our main goal is to make the humanoid robot **walk** .
 ![[Pasted image 20250426211133.png]]
 
 
-| Servo | Unit       | Position Degrees |
-| ----- | ---------- | ---------------- |
-| LA1   | Left arm   |                  |
-| LA2   | Left arm   |                  |
-| LA3   | Left arm   |                  |
-| RA1   | Right arm  |                  |
-| RA2   | Right arm  |                  |
-| RA3   | Right arm  |                  |
-| B1    | Left Hip   |                  |
-| B2    | Right Hip  |                  |
-| LL1   | Left Leg   |                  |
-| LL2   | Left Leg   |                  |
-| LL3   | Left Leg   |                  |
-| RL1   | Right Leg  |                  |
-| RL2   | Right Leg  |                  |
-| RL3   | Right Leg  |                  |
-| LF    | Left Foot  |                  |
-| RF    | Right Foot |                  |
+| Servo | Unit       | Position Degrees | 180      |
+| ----- | ---------- | ---------------- | -------- |
+| LA1   | Left arm   | 25               | to front |
+| LA2   | Left arm   | 0                | to up    |
+| LA3   | Left arm   | 16               | to up    |
+| RA1   | Right arm  | 164              | to down  |
+| RA2   | Right arm  | 180              | down     |
+| RA3   | Right arm  | 167              | down     |
+| B1    | Left Hip   | 90               |          |
+| B2    | Right Hip  |                  |          |
+| LL1   | Left Leg   |                  |          |
+| LL2   | Left Leg   |                  |          |
+| LL3   | Left Leg   |                  |          |
+| RL1   | Right Leg  |                  |          |
+| RL2   | Right Leg  |                  |          |
+| RL3   | Right Leg  |                  |          |
+| LF    | Left Foot  |                  |          |
+| RF    | Right Foot |                  |          |
 
 
 
