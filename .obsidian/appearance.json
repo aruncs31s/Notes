@@ -7,8 +7,12 @@
     "MCL Wide Views",
     "details-style",
     "MCL Gallery Cards",
-    "center",
-    "align_text"
+    "center"
   ],
-  "showRibbon": true
+  "showRibbon": true,
+  "interfaceFontFamily": "Franklin Gothic",
+  "textFontFamily": "Gill Sans MT",
+  "monospaceFontFamily": "Bodoni 72 Oldstyle",
+  "baseFontSize": 19,
+  "baseFontSizeAction": true
 }
