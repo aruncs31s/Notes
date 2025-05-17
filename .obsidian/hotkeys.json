@@ -5,6 +5,12 @@
         "Mod"
       ],
       "key": "M"
+    },
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "M"
     }
   ],
   "webviewer:search": [
@@ -166,6 +172,13 @@
     {
       "modifiers": [
         "Mod",
+        "Shift"
+      ],
+      "key": "M"
+    },
+    {
+      "modifiers": [
+        "Alt",
         "Shift"
       ],
       "key": "M"
