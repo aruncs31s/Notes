@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"fac83a1f6ac6dfd8","x":-520,"y":-400,"width":400,"height":400,"type":"file","file":"03 Electronics/Embedded Systems/Micro-Controllers/Arduino/Arduino.md"},
+		{"id":"d228cdab5ef46006","x":-2160,"y":-400,"width":400,"height":400,"type":"file","file":"03 Electronics/Embedded Systems/communication/I2C.md"},
+		{"id":"bcc8d8687c5daa9c","x":-1600,"y":-440,"width":980,"height":480,"type":"file","file":"02 Coding/Arduino/attachments/master to slave.excalidraw.md"},
+		{"id":"46f04c744b578e56","x":-1600,"y":80,"width":980,"height":440,"type":"file","file":"02 Coding/Arduino/attachments/Slave to master.excalidraw.md"}
+	],
+	"edges":[
+		{"id":"f44c5bf8c213d7e0","fromNode":"d228cdab5ef46006","fromSide":"right","toNode":"46f04c744b578e56","toSide":"left"},
+		{"id":"64aaa57969ff1b46","fromNode":"46f04c744b578e56","fromSide":"right","toNode":"fac83a1f6ac6dfd8","toSide":"left"},
+		{"id":"215ad9ed7e5adbb9","fromNode":"d228cdab5ef46006","fromSide":"right","toNode":"bcc8d8687c5daa9c","toSide":"left"},
+		{"id":"2a94da7ba51372c5","fromNode":"bcc8d8687c5daa9c","fromSide":"right","toNode":"fac83a1f6ac6dfd8","toSide":"left"}
+	]
+}

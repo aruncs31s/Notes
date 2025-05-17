@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"493840baf13371df","type":"group","x":-960,"y":-880,"width":1551,"height":360,"label":"Sensors"},
+		{"id":"70b10758b9ce34f4","type":"file","file":"09 Projects/GCE_Kannur/GCEK Weather Station/attachments/tipping bucket.png","x":-340,"y":-860,"width":320,"height":320},
+		{"id":"acf1ef993c600051","type":"file","file":"09 Projects/GCE_Kannur/GCEK Weather Station/attachments/Wind Vane.png.png","x":-940,"y":-835,"width":400,"height":270},
+		{"id":"6de7cf445cf5edd3","type":"file","file":"09 Projects/Academics/Iot_based_smart_energy_management_system/Files/Images/Relay-pinout.webp","x":100,"y":-803,"width":471,"height":206},
+		{"id":"472e36fe4f33a512","type":"text","text":"","x":58,"y":187,"width":250,"height":60},
+		{"id":"096fa17271868197","type":"file","file":"09 Projects/GCE_Kannur/GCEK Weather Station/GCEK Weather Station.md","x":-320,"y":-140,"width":400,"height":400},
+		{"id":"309144de86df70ad","type":"file","file":"09 Projects/GCE_Kannur/GCEK Weather Station/Gcek Weather Stataion Sketch.md","x":267,"y":-180,"width":400,"height":400},
+		{"id":"95fd71f08c3aa61f","type":"file","file":"09 Projects/GCE_Kannur/Kannur Solar Battery Monitor/attachments/initial circuit diagram.png","x":320,"y":360,"width":415,"height":380},
+		{"id":"877f69bb8984b82e","type":"file","file":"09 Projects/GCE_Kannur/GCEK Weather Station/attachments/Diagram/Bottom View.md","x":760,"y":160,"width":400,"height":340},
+		{"id":"52b15e70302b3fbd","type":"file","file":"09 Projects/GCE_Kannur/GCEK Weather Station/attachments/Diagram/Top View.md","x":760,"y":-180,"width":400,"height":260},
+		{"id":"7ff5563195d296aa","type":"file","file":"09 Projects/GCE_Kannur/GCEK Weather Station/attachments/tipping bucket circuit diagram.png","x":120,"y":860,"width":342,"height":400}
+	],
+	"edges":[
+		{"id":"db053f678964d8c0","fromNode":"309144de86df70ad","fromSide":"left","toNode":"096fa17271868197","toSide":"right","fromEnd":"arrow"},
+		{"id":"c4e5e819c270f7c0","fromNode":"309144de86df70ad","fromSide":"right","toNode":"52b15e70302b3fbd","toSide":"left"},
+		{"id":"c836d7bdabd8df2a","fromNode":"309144de86df70ad","fromSide":"right","toNode":"877f69bb8984b82e","toSide":"left"},
+		{"id":"d230949e9d7bc0f7","fromNode":"309144de86df70ad","fromSide":"bottom","toNode":"95fd71f08c3aa61f","toSide":"top"},
+		{"id":"f2fc552d3ba91efe","fromNode":"7ff5563195d296aa","fromSide":"top","toNode":"95fd71f08c3aa61f","toSide":"bottom"},
+		{"id":"d253a730c4683e67","fromNode":"096fa17271868197","fromSide":"top","toNode":"70b10758b9ce34f4","toSide":"bottom","label":"Rain Volume"},
+		{"id":"4d81351bc18a4ee3","fromNode":"096fa17271868197","fromSide":"top","toNode":"acf1ef993c600051","toSide":"bottom","label":"Wind Direction"},
+		{"id":"289effa1e76ad647","fromNode":"096fa17271868197","fromSide":"top","toNode":"6de7cf445cf5edd3","toSide":"bottom","label":"Relay Module"}
+	]
+}

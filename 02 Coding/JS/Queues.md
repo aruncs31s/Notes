@@ -5,6 +5,7 @@
 	- Blocks rendering
 	- It can not continue until that queue is completely emptied
 
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cCOL7MC4Pl0?si=4wsCSNMwv9-H6Zsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
@@ -39,3 +40,6 @@ button.click();
 graph LR 
 Listener_1 --> Listener_2 --> Microtask_1 --> Microtask_2 
 ```
+
+>[!summary] Summary 
+>The javascripts that executes in the web is single threaded, due to beeing single threaded it is essential to not block the execution. So the programmers have to carefully execute in sequence to avoid the blocking code.

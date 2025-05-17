@@ -10,6 +10,7 @@
   "todoist-sync-plugin",
   "dataview",
   "various-complements",
-  "github-copilot",
-  "execute-code"
+  "execute-code",
+  "zen",
+  "github-copilot"
 ]

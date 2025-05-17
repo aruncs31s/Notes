@@ -19,6 +19,12 @@
         "Mod"
       ],
       "key": "S"
+    },
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "S"
     }
   ],
   "editor:save-file": [],
@@ -206,6 +212,14 @@
         "Alt"
       ],
       "key": "E"
+    }
+  ],
+  "insert-template": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "I"
     }
   ]
 }
