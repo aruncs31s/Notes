@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"df9cfb2b2c3de590","type":"text","text":"<h2 align=\"center\">ESP32</h2>\n\n\n","x":-200,"y":-440,"width":250,"height":70},
+		{"id":"dac42687922ded94","type":"text","text":"***ESP32 Pinout***\n","x":-400,"y":-300,"width":250,"height":60},
+		{"id":"edcaacf63917101a","type":"text","text":"\n- ==34== Programmable GPIOs.\n- Up to 18 channels of ==12-bit SAR ADC== and 2 channels of ==8-bit DAC==\n- Serial Connectivity include 4 x ==SPI==, 2 x ==I2C==, 2 x ==I2S==, 3 x ==UART==.\n- 1 Host controller for SD/SDIO/MMC and 1 Slave controller for SDIO/SPI.\n- Motor PWM and up to 16-channels of LED PWM.","x":20,"y":-311,"width":350,"height":322},
+		{"id":"53471678f3b21a4c","type":"file","file":"Files/Images/esp32_pinout.png","x":-400,"y":-60,"width":400,"height":222}
+	],
+	"edges":[
+		{"id":"6b3757e0f3ec3e3c","fromNode":"df9cfb2b2c3de590","fromSide":"bottom","toNode":"dac42687922ded94","toSide":"top"},
+		{"id":"bad4235ffa9e0667","fromNode":"dac42687922ded94","fromSide":"bottom","toNode":"53471678f3b21a4c","toSide":"top"},
+		{"id":"c7a7c1fa09ddc401","fromNode":"dac42687922ded94","fromSide":"right","toNode":"edcaacf63917101a","toSide":"left"}
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"c45ce1c2b004d5dc","type":"file","file":"03 Electronics/Communication/Single Frequency.png","x":-180,"y":349,"width":399,"height":168},
+		{"id":"e70a2298352b119d","type":"file","file":"03 Electronics/Communication/square-wave.svg","x":-180,"y":580,"width":400,"height":135},
+		{"id":"20052c9492573a30","type":"file","file":"03 Electronics/Communication/DC.png","x":-180,"y":800,"width":400,"height":137},
+		{"id":"a34c148ed996484a","type":"file","file":"03 Electronics/Communication/impulse.png","x":-180,"y":100,"width":399,"height":157}
+	],
+	"edges":[]
+}

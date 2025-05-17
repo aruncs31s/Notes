@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"6e850f27809495ca","type":"file","file":"09 Projects/Node To Node Communication/attachments/esp32.png","x":-280,"y":-120,"width":118,"height":222},
+		{"id":"8df1e992ec040ada","type":"text","text":"\n| Pin No | GPIO   | Used For                                        |                  |\n| :----- | :----- | :---------------------------------------------- | ---------------- |\n| D2     | GPIO2  | Connecting the Horzontal Servo - Solar Tracking | Solar Tracking   |\n| D15    | GPIO15 | Connecting the Vertical Servo - Solar Tracking  | ST               |\n| D34    | GPIO34 | Connecting the LDR at Top Right                 | ST               |\n| D35    | GPIO35 | Connecting the LDR at Bottom Right              | ST               |\n| VP     | GPIO36 | Connecting the LDR at Top Left                  | ST               |\n| VN     | GPIO39 | Connecting the LDR at Bottom Left               | ST               |\n| D13    | GPIO13 | Connecting the PIR Sensor                       | Energy Managment |\n| D26    | GPIO26 | Connecting the Relay Module IN1                 | EM               |\n| D27    | GPIO27 | Connecting the Relay Module IN1                 | EM               |\n| D12    | GPIO12 | Connecting the Microwave Radar Sensor           | EM               |\n","x":200,"y":-254,"width":640,"height":454}
+	],
+	"edges":[
+		{"id":"c72f714d1248d6e2","fromNode":"6e850f27809495ca","fromSide":"right","toNode":"8df1e992ec040ada","toSide":"left"}
+	]
+}

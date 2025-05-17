@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"20d7987ac2ad5003","type":"text","text":"# LM358","x":-220,"y":-80,"width":250,"height":60},
+		{"id":"ff0088bf3ce76905","type":"text","text":"### Specs\n","x":-237,"y":79,"width":250,"height":60},
+		{"id":"95aac3f86765e1f4","type":"file","file":"03 Electronics/ICs/LM358/Pasted image 20241118001156.png","x":100,"y":220,"width":399,"height":295},
+		{"id":"b29cd50e026b4acf","type":"file","file":"03 Electronics/ICs/LM358/Pasted image 20241118001439.png","x":100,"y":560,"width":400,"height":318},
+		{"id":"2978dcff69b95389","type":"file","file":"03 Electronics/ICs/LM358/Instrumentation Amp.excalidraw.md","x":552,"y":-392,"width":448,"height":400},
+		{"id":"4b879c823f4e1bda","type":"text","text":"## Instrumentation Amp","x":205,"y":-191,"width":255,"height":111},
+		{"id":"96fd50da61449d86","type":"text","text":"## Differential Amp","x":205,"y":-447,"width":255,"height":111},
+		{"id":"f134be3e7adee6c5","type":"file","file":"03 Electronics/ICs/LM358/Differential Amplifier Drawing.excalidraw.md","x":700,"y":-920,"width":400,"height":400},
+		{"id":"13f86d440ab5e274","type":"file","file":"03 Electronics/ICs/LM358/Pasted image 20241118025815.png","x":1100,"y":-279,"width":399,"height":175,"color":"4"}
+	],
+	"edges":[
+		{"id":"6283e65a25bf0f2e","fromNode":"20d7987ac2ad5003","fromSide":"right","toNode":"4b879c823f4e1bda","toSide":"left"},
+		{"id":"fb6836ec34f901c3","fromNode":"20d7987ac2ad5003","fromSide":"bottom","toNode":"ff0088bf3ce76905","toSide":"top"},
+		{"id":"0adbc9604a570b5a","fromNode":"ff0088bf3ce76905","fromSide":"bottom","toNode":"95aac3f86765e1f4","toSide":"left"},
+		{"id":"dded005491ccc4c7","fromNode":"ff0088bf3ce76905","fromSide":"bottom","toNode":"b29cd50e026b4acf","toSide":"left"},
+		{"id":"685fbe7bf1f0c1fc","fromNode":"4b879c823f4e1bda","fromSide":"right","toNode":"2978dcff69b95389","toSide":"left"},
+		{"id":"11171dbf39153769","fromNode":"96fd50da61449d86","fromSide":"bottom","toNode":"4b879c823f4e1bda","toSide":"top","label":"2nd Stage"},
+		{"id":"5c446fe97abebc77","fromNode":"20d7987ac2ad5003","fromSide":"right","toNode":"96fd50da61449d86","toSide":"left"},
+		{"id":"5d95fe2b0c444790","fromNode":"96fd50da61449d86","fromSide":"right","toNode":"f134be3e7adee6c5","toSide":"left"},
+		{"id":"5921f0c9e5bb0499","fromNode":"2978dcff69b95389","fromSide":"right","toNode":"13f86d440ab5e274","toSide":"left"}
+	]
+}
