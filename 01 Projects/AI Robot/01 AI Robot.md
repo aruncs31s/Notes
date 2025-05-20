@@ -20,6 +20,15 @@ dg-publish: true
 - [[03 Development]]
 - [[Self Balancing]]
 
+>[!Important] Keep it uptodate
+>- [x]  ✅ 2025-05-17
+>```bash
+> rsync -av --delete --exclude='.*' /Users/aruncs/Desktop/Notes/01\ Projects/AI\ Robot/  /Users/aruncs/Git/AI-Robot-Obsidian-Notes/
+> ```
+
+
+```
+```
 ```tasks
 path includes 02 Projects/AI Robot
 ```

@@ -25,41 +25,14 @@ cssclasses:
   - [[#Advanced]]
   - [[#aliasing]]
 
-### **Introduction**
+## **Introduction**
 
 Git is a `source control` created for the `Linux` Kernel by `Linus Torvalds`.
 
 - Git stores data as snapshots and if file is not changed
 
 ---
-
-### **Basics**
-
-- [[#Kick Start]]
-
-#### Kick Start
-
-- To upload local folder/repo to `github`
-
-```bash
-echo "# tic_tac_toe" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/BloBuster/tic_tac_toe.git
-git push -u origin main
-```
-
-- Push existing repo
-
-```bash
-git remote add origin https://github.com/BloBuster/tic_tac_toe.git
-git branch -M main
-git push -u origin main
-```
-
-#### **Installation**
+## **Installation**
 
 - Windows [Click Here](https://git-scm.com/download/win)
 - Debian
@@ -82,13 +55,17 @@ sudo pacman -S git
 
 ---
 
-#### **Initial Setup**
+## **Basics**
+- [[#Initial Setup]]
+- [[#Kick Start]]
+
+### Initial Setup
 
 This only required to do once like configuring user email and user name .
 
 - Setting up you identity
 
-```
+```bash
 git config --global user.name "You name"
 git config --global user.email youremail@google.com
 ```
@@ -100,6 +77,30 @@ _You can exclude `--global` flag it sets this properties as global but if you wa
 ```bash
 git config --list
 ```
+
+### Kick Start
+
+- To upload local folder/repo to `github`
+
+```bash
+echo "# tic_tac_toe" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/BloBuster/tic_tac_toe.git
+git push -u origin main
+```
+
+- Push existing repo
+
+```bash
+git remote add origin https://github.com/BloBuster/tic_tac_toe.git
+git branch -M main
+git push -u origin main
+```
+
+
 
 #### Creating a repo
 
@@ -115,7 +116,89 @@ git commit -m "added <this File>" # Change this accrdingly
 git push origin main
 ```
 
-#### Dropping Commits
+
+
+### Creating a new branch with an existing branch files
+
+1. First, ensure you're on the main branch:
+
+```bash
+git checkout main
+```
+
+2. Then, create a new branch `obsidian_files_back` from the current state of the `obsidian` branch:
+
+```bash
+git checkout -b obsidian_files_back obsidian
+```
+
+This command creates a new branch named `obsidian_files_back` starting from the current state of the `obsidian` branch. All the contents present in the obsidian branch will be copied to this new branch.
+
+3. Now, you can push this new branch to your remote repository if needed:
+
+```bash
+git push origin obsidian_files_back
+```
+
+This will push the new branch obsidian_files_back to your remote repository, making it available to others if you're collaborating on this repository
+
+
+### Deleting A branch
+
+1. locally
+
+```bash
+git branch -d branch_name
+```
+
+2. Remotely
+
+```bash
+git push origin --delete branch_name
+```
+
+
+### Removing a file from staging area 
+
+```bash
+git rm <filename> 
+```
+
+#### Git Ignore 
+https://github.com/github/gitignore
+
+git difftool
+
+```
+# ignore all .a files
+*.a
+  # but do track lib.a, even though you're ignoring .a files above
+  !lib.a
+  # only ignore the TODO file in the current directory, not subdir/TODO
+  /TODO
+  # ignore all files in any directory named build
+  build/
+  # ignore doc/notes.txt, but not doc/server/arch.txt
+  doc/*.txt
+  # ignore all .pdf files in the doc/ directory and any of its subdirectories
+  doc/**/*.pdf
+
+```
+
+### Staging and Unstaging
+```bash
+# Stages all file under the current repo 
+git add -A
+```
+
+```bash
+# unstage a file eg. README.md 
+git reset head README.md
+```
+
+
+### Dropping Commits
+
 
 Consider if you added your password file in you commit accidentally(like i did once) and want to delete that `commit history` from git
 
@@ -167,7 +250,7 @@ git push origin <branch_name> --force
 
 - [[Merge Conflict]]
 
-#### Merge Conflict
+## Merge Conflict
 
 ```bash
 git log --merge 
@@ -197,43 +280,6 @@ Cancels the merge and return back to origina state before merge was started
 git reset
 ```
 
-#### Creating a new branch with an existing branch files
-
-1. First, ensure you're on the main branch:
-
-```bash
-git checkout main
-```
-
-2. Then, create a new branch `obsidian_files_back` from the current state of the `obsidian` branch:
-
-```bash
-git checkout -b obsidian_files_back obsidian
-```
-
-This command creates a new branch named `obsidian_files_back` starting from the current state of the `obsidian` branch. All the contents present in the obsidian branch will be copied to this new branch.
-
-3. Now, you can push this new branch to your remote repository if needed:
-
-```bash
-git push origin obsidian_files_back
-```
-
-This will push the new branch obsidian_files_back to your remote repository, making it available to others if you're collaborating on this repository
-
-#### Deleting A branch
-
-1. locally
-
-```bash
-git branch -d branch_name
-```
-
-2. Remotely
-
-```bash
-git push origin --delete branch_name
-```
 
 #### Git Stash
 
@@ -259,7 +305,7 @@ git stash drop
 git stash apply
 ```
 
-### Advanced
+## Advanced
 
 ##### aliasing
 
@@ -282,7 +328,7 @@ git config --global alias.po 'push origin main'
 git config --global alias.something !some_script.sh
 ```
 
-#### Blame
+## Blame
 
 ```bash
 git blame -L x_1,x_2
@@ -299,7 +345,7 @@ git blame -w -C -C -C
 - commit that created the file
 - any commit at all.
 
-#### Duplicating a repo
+## Duplicating a rep.   
 
 ```bash
 git clone --bare https://github.com/aruncs31s/<old_repo_link>
@@ -307,3 +353,9 @@ gh create repo
 cd old_repo
 git push --mirror https://github.com/aruncs31s/<New_repo>
 ```
+
+
+----
+
+- [ ] Checkout Git tags
+- [ ] 

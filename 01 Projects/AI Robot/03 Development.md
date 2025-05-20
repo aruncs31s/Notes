@@ -3,6 +3,12 @@ dg-publish: true
 cssclasses:
   - wide-page
 ---
+# Development 
+There are currently few tasks at hand 
+1. Make the Robot Walk 
+2. Then add object avoidance
+3. Add distance sensing
+4. Stream Video through webcam and identify persons.
 
 # Development Phase 1 
 - [[Servo Motor Testing]]
@@ -283,7 +289,8 @@ May 30 : Expected to Finish Phase 1
 ```
 
 
-## References
+# References
+
 
 - [ ] Need to checkout this [link](https://forum.arduino.cc/t/varspeedservo-a-modified-servo-library-with-speed-control/61404/5)
 1. https://www.instructables.com/Making-humanoid-robot-from-Flated-water-pipe-and-s/
@@ -294,4 +301,7 @@ May 30 : Expected to Finish Phase 1
 6. https://github.com/gunarakulangunaretnam/mr-humanoid
 7. https://docs.manim.community/en/stable/
 8. https://gemini.google.com/app/2b0e2c2787d08884?hl=en-IN
-9. 
+
+### ROS Projects
+1. https://www.makr.org/2021/scorpio
+2. 

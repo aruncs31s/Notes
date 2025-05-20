@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"aec5dd85cc3c95b8","x":-120,"y":-140,"width":220,"height":60,"type":"text","text":"# Robot"},
+		{"id":"c72588bb31e476fb","x":-300,"y":-400,"width":250,"height":89,"type":"text","text":"## Human Sensing"},
+		{"id":"2fd36ea9d165fb82","type":"text","text":"## Human Sensing","x":60,"y":-400,"width":250,"height":89}
+	],
+	"edges":[
+		{"id":"269d4da3fa326555","fromNode":"c72588bb31e476fb","fromSide":"bottom","toNode":"aec5dd85cc3c95b8","toSide":"top","label":"Microcontroller"},
+		{"id":"9a98fdb423c69896","fromNode":"2fd36ea9d165fb82","fromSide":"bottom","toNode":"aec5dd85cc3c95b8","toSide":"top","label":"Microcontroller"}
+	]
+}
