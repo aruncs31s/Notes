@@ -1,6 +1,6 @@
 {
-  "theme": "system",
-  "cssTheme": "Obsidian Nord",
+  "theme": "obsidian",
+  "cssTheme": "Prism",
   "accentColor": "#0aefff",
   "enabledCssSnippets": [
     "MCL Multi Column",
@@ -11,7 +11,7 @@
   ],
   "showRibbon": true,
   "interfaceFontFamily": "Franklin Gothic",
-  "textFontFamily": "Gill Sans MT",
+  "textFontFamily": "Cascadia Code,Gill Sans MT",
   "monospaceFontFamily": "Bodoni 72 Oldstyle",
   "baseFontSize": 19,
   "baseFontSizeAction": true
