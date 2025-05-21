@@ -1,7 +1,19 @@
 ---
+banner: "01 Projects/Common/banner.jpg"
 tags:
   - exclude
 ---
+
+
+# Projects
+
+>[!Abstract]- Total Projects 
+>```dataview
+>LIST
+>from #project 
+>```
+
+
 
 # Projects New Design
 >[!Abstract]+ Formats 
@@ -70,6 +82,44 @@ tags:
   >>      └── Future Ideas
   >>          └── Drawing 2025-02-10 13.38.10.excalidraw.md
 >>```
+
+- [x] Do this 📅 2025-05-20 ✅ 2025-05-20
+#### **Todays Tasks**
+>[!multi-column]
+>
+>>[!Important] Just do 
+>>```tasks
+>>path includes Projects     
+>>not done
+>>due on today
+>>```
+>
+>>[!Important]- Completed Tasks
+>> ```tasks
+>> done
+>> path includes Projects
+>> due on today
+>>```
+
+#### **This Month**
+>[!multi-column]
+>
+>>[!Important] Just do 
+>>```tasks
+>>not done 
+>>path includes Projects 
+>>not done
+>>happens in this month
+>>
+>>```
+>
+>>[!Important] Completed Tasks
+>> ```tasks
+>> done
+>> path includes Projects
+>> happens in this month
+>>```
+
 
 
 

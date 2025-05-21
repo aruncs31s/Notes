@@ -17,5 +17,15 @@ Date: 13-11-2024
 ### Motor Driver 
 - [ ] Check how to slow down the reaction^[The servo motor switches to its initial position fast , which causes so much problems such as high current drain , ]
 ![[motor Driver.excalidraw]]
-- [ ] How to PWM servo control works?
-- [ ] 
+- [x] How to PWM servo control works? ✅ 2025-05-20
+
+## Movement Mechanism 
+There is a way to store the last positions of the servos. 
+- [x] Should i use a server ? Yes ✅ 2025-05-20
+```mermaid 
+sequence
+```
+```mermaid
+graph LR 
+
+```
