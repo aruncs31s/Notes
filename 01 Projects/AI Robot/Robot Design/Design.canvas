@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"id":"5f4a0050d9c94ae6","x":-880,"y":-170,"width":400,"height":540,"type":"text","text":"## Pins \n![[03 Development#^d85d2b]]\n"},
+		{"id":"c315bf878711f091","x":-880,"y":-620,"width":590,"height":390,"type":"text","text":"### Servo\n![[03 Development#^3c3d3c]]"},
+		{"id":"82e8aeb078630171","type":"text","text":"# Main Thread \n","x":500,"y":40,"width":340,"height":120},
+		{"id":"34f6462f90dbf043","type":"text","text":"## Manual Control\n","x":440,"y":-230,"width":340,"height":120},
+		{"id":"bd8a0482c64f30df","type":"text","text":"## Web Server\n","x":160,"y":-620,"width":450,"height":195}
+	],
+	"edges":[]
+}

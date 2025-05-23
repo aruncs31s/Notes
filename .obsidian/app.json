@@ -8,7 +8,7 @@
     "FDM ",
     "OFDM"
   ],
-  "attachmentFolderPath": "99 Files/attachments",
+  "attachmentFolderPath": "./attachments",
   "newFileLocation": "current",
   "alwaysUpdateLinks": true,
   "showInlineTitle": false,
