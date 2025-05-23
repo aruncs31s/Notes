@@ -9,6 +9,7 @@ The development have devided into 4 stages( #update ) for the timebeing
 
 
 # Development Phase 1 
+## Intro 
 Our main goal is to make the humanoid robot **walk**. In order to do that we have to do the following thigs first
 ![[17 servo robot.png|right|300x500]]
 
@@ -205,25 +206,25 @@ for(uint8_t angle = 0 ; angle < ANGLE_MAX ; angle++){
 ### 2.1 Pin Defenitions
 The [[PCA9685]] has 16 output pins, but the thing is our robot has 17 servos so im going to use additional [[PCA9685]] or a dedicated pin(15) for the last servo(head )
 
-| Pin Name | Unit  | Value |
-| -------- | ---- | ----- |
-| PIN_LA1      | Left arm  | 0   |
-| PIN_LA2      | Left arm  | 1   |
-| PIN_LA3      | Left arm  | 2   |
-| PIN_RA1      | Right arm | 3   |
-| PIN_RA2      | Right arm | 4   |
-| PIN_RA3      | Right arm | 5   |
-| PIN_RA3      | Right arm | 5   |
-| PIN_B1       | Left Hip  | 6   |
-| PIN_B2       | Right Hip | 7   |
-| PIN_LL1      | Left Leg  | 8   |
-| PIN_LL2      | Left Leg  | 9   |
-| PIN_LL3      | Left Leg  | 10  |
-| PIN_RL1      | Right Leg | 11  |
-| PIN_RL2      | Right Leg | 12  |
-| PIN_RL3      | Right Leg | 13  |
-| PIN_LF       | Left Foot  | 14  |
-| PIN_RF       | Right Foot | 15  |
+| <br><br>Pin Name | Unit       | Value |
+| ---------------- | ---------- | ----- |
+| PIN_LA1          | Left arm   | 0     |
+| PIN_LA2          | Left arm   | 1     |
+| PIN_LA3          | Left arm   | 2     |
+| PIN_RA1          | Right arm  | 3     |
+| PIN_RA2          | Right arm  | 4     |
+| PIN_RA3          | Right arm  | 5     |
+| PIN_RA3          | Right arm  | 5     |
+| PIN_B1           | Left Hip   | 6     |
+| PIN_B2           | Right Hip  | 7     |
+| PIN_LL1          | Left Leg   | 8     |
+| PIN_LL2          | Left Leg   | 9     |
+| PIN_LL3          | Left Leg   | 10    |
+| PIN_RL1          | Right Leg  | 11    |
+| PIN_RL2          | Right Leg  | 12    |
+| PIN_RL3          | Right Leg  | 13    |
+| PIN_LF           | Left Foot  | 14    |
+| PIN_RF           | Right Foot | 15    |
 ```cpp
 #define PIN_LA1 0
 #define PIN_LA2 1
@@ -310,8 +311,8 @@ $$
 | RL1   | Right Leg  |              |                           |                             |            |                 |            |
 | RL2   | Right Leg  |              |                           |                             |            |                 |            |
 | RL3   | Right Leg  |              |                           |                             |            |                 |            |
-| LF    | Left Foot  |              |                           |                             |            |                 |            |
-| RF    | Right Foot |              |                           |                             |            |                 |            |
+| LF    | Left Foot  | 99           |                           |                             |            |                 | 327        |
+| RF    | Right Foot | 99           |                           |                             |            |                 | 327        |
 
 ```cpp
 // Servo Vals.h
@@ -354,7 +355,9 @@ while True:
 **angle tester**
 ```python
 import requests 
-url = "http://192.168.137.142/setServo"
+url="http://192.168.31.140/setServo"
+```
+```python
 def get_pulse(val):
 	return val * (512 - 102 ) /180 + 102 
 def set_position(val,id=0):
@@ -365,13 +368,50 @@ def set_position(val,id=0):
 	response = requests.get(url, params=req_params)
 	print(f"Response: {response.text}")
 
+```
+```python
 while True:
 	val = int(input("Enter position"))
 	if val == 1000:
 		break;
 	new_val = get_pulse(val)
-	set_position(new_val)
+	set_position(new_val,id=13)
 	
+```
+
+```python
+LL1=0
+LL2=10 
+LL3=180-39 
+RL1=180
+RL2=170
+RL3=39
+RF=99
+LF=99
+
+```
+
+```python 
+import time 
+set_position(get_pulse(LL1),id=8) # LL1 
+time.sleep(1)
+set_position(get_pulse(LL2),id=9) # LL2 
+time.sleep(1)
+set_position(get_pulse(LL3),id=10) # LL3 
+time.sleep(1)
+set_position(get_pulse(RL1),id=11) # RL1 
+time.sleep(1)
+set_position(get_pulse(RL2),id=12) # RL2 
+time.sleep(1)
+set_position(get_pulse(RL3),id=13) # RL3
+time.sleep(1)
+set_position(get_pulse(LF),id=14) # LF 
+time.sleep(1)
+set_position(get_pulse(RF),id=15) # RF 
+```
+
+```python 
+set_position(160,id=12) # RL2 
 ```
 
 
@@ -544,14 +584,14 @@ It is same as [[#1. RA3|RA3's]]
 - [initial-position:: ]
 
 ##### 9. LL3 
-
+12
 - [start::76] , [stop:: 573]
 - [start_ms:: 370.88] [stop_ms:: 2.796 ms]
 - [duty_cycle:: 2.42512 ms ]
-- [initial-position:: ]
-
+- [initial-position:: (180-39)]
+- [constrains:: 39-180]
 ##### 10. LL2 
-
+11
 - [start::76] , [stop:: 573]
 - [start_ms:: 370.88] [stop_ms:: 2.796 ms]
 - [duty_cycle:: 2.42512 ms ]
@@ -566,14 +606,16 @@ It is same as [[#1. RA3|RA3's]]
 - [initial-position:: ]
 
 ##### 12. RL3
-
+13
 
 - [start::76] , [stop:: 573]
 - [start_ms:: 370.88] [stop_ms:: 2.796 ms]
 - [duty_cycle:: 2.42512 ms ]
-- [initial-position:: ]
+- [initial-position:: 39]
+- [constrains:: 0-160]
 
 ##### 13. RL2 
+10
 
 ##### 14. RL1 
 
@@ -584,19 +626,21 @@ It is same as [[#1. RA3|RA3's]]
 - [initial-position:: ]
 
 ##### 15. LF 
-
+14
 
 - [start::76] , [stop:: 573]
 - [start_ms:: 370.88] [stop_ms:: 2.796 ms]
 - [duty_cycle:: 2.42512 ms ]
-- [initial-position:: ]
+- [initial-position:: 99]
 
 ##### 16. RF 
-
+15
 - [start::76] , [stop:: 573]
 - [start_ms:: 370.88] [stop_ms:: 2.796 ms]
 - [duty_cycle:: 2.42512 ms ]
-- [initial-position:: ]
+- [initial-position:: 99]
+
+
 
 ## 4 Movements
 Lets say we want to go from position **a** to **b**. the code will be like this
