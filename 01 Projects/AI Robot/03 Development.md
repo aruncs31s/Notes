@@ -25,13 +25,53 @@ Our main goal is to make the humanoid robot **walk**. In order to do that we hav
 4. Finaly try to make it walk. 
 
 Threre are **17** servos in total , each servo can rotate from **0** to **180** degrees , it was not clear at first that the [[MG995]] can rotate upto angle **180** or not. But later some source like [this](https://components101.com/motors/mg995-servo-motor) show that it is indeed possible to for the [[MG995|servo]] to rotate upto 180.
-![[Pasted image 20250427002640.png]]
+
+```cpp
+
+#define SERVO_ANGLE_MIN 0
+#define SERVO_ANGLE_MAX 180
+#define SERVO_MIN  102   // .5ms
+#define SERVO_MAX  512   // 2.5ms 
+#define SERVO_FREQ 50
+#define CONTROLLER_I2C_ADDR 0x41
+```
+
+^3c3d3c
+
+---
+---
+
+
+>[!blank]
+>
+>>[!blank|left-small]
+>>
+>>```cpp
+>>Robo la1(PIN_LA1, board1);
+>>Robo la2(PIN_LA2, board1);
+>>Robo la3(PIN_LA3, board1);
+>>Robo ra1(PIN_RA1, board1);
+>>Robo ra2(PIN_RA2, board1);
+>>Robo ra3(PIN_RA3, board1);
+>>Robo lh(PIN_LH, board1);
+>>Robo rh(PIN_RH, board1);
+>>Robo ll1(PIN_LL1, board1);
+>>Robo ll2(PIN_LL2, board1);
+>>Robo ll3(PIN_LL3, board1);
+>>Robo rl1(PIN_RL1, board1);
+>>Robo rl2(PIN_RL2, board1);
+>>Robo rl3(PIN_RL3, board1);
+>>Robo lf(PIN_LF, board1);
+>>Robo rf(PIN_RF, board1);
+>>```
+>
+>>[!blank]
+>>![[Pasted image 20250427002640.png]]
  
 
 - There are 17 servo motors in the humanoid robot. 
 - Initially planning to use [pca9685](https://cdn-shop.adafruit.com/datasheets/PCA9685.pdf) 
 - [ ] Have to find the position of all servo motor  
-
 
 
 
@@ -230,6 +270,9 @@ The [[PCA9685]] has 16 output pins, but the thing is our robot has 17 servos so 
 | PIN_RL3      | Right Leg | 13  |
 | PIN_LF       | Left Foot  | 14  |
 | PIN_RF       | Right Foot | 15  |
+
+^c18f43
+
 ```cpp
 #define PIN_LA1 0
 #define PIN_LA2 1
@@ -248,6 +291,8 @@ The [[PCA9685]] has 16 output pins, but the thing is our robot has 17 servos so 
 #define PIN_LF 14
 #define PIN_RF 15
 ```
+
+^d85d2b
 
 
 ## 3 Finding the initial position of all servos 
