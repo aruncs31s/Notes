@@ -1,3 +1,8 @@
+---
+dg-publish: true
+---
+
+
 - [[#Module 1]]
 - [[#Module 3]]
 - [[#Module 4]]
@@ -57,6 +62,8 @@ name=input("Enter Your Name")
 print(name)
 print("Hi " + name);
 ```
+
+^ca3a12
 
 [File](./Codes/name_1.py)
 

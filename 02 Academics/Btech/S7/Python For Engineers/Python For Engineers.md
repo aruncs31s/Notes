@@ -17,7 +17,8 @@ print("Hello World")
 ```
 
 ## Contents
-- [[01 Academics/Btech/S7/Python For Engineers/Class Notes]]
+- [[02 Academics/Btech/S7/Python For Engineers/Class Notes|Class Notes]]
+- [[CST445 Module 1]]
 - [[#Module 4]]
 
 
