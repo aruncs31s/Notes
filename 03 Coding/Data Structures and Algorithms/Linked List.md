@@ -2,10 +2,11 @@
 id: Linked List
 aliases:
   - c linkded List
-tags: []
-Created: "16-08-2024"
+tags: 
+Created: 16-08-2024
 cssclasses:
   - wide-page
+dg-publish: true
 ---
 
 # Linked List

@@ -19,5 +19,11 @@
   "obsidian-prism-theme@@h2-text-color-lt": "var(--h2-text-color-custom-lt)",
   "obsidian-prism-theme@@h3-text-color-lt": "var(--color-green-text)",
   "obsidian-prism-theme@@inline-title-color-custom-lt": "#BB3E00",
-  "obsidian-prism-theme@@h4-text-color-lt": "var(--color-cyan-text)"
+  "obsidian-prism-theme@@h4-text-color-lt": "var(--color-cyan-text)",
+  "obsidian-prism-theme@@text-bold-color-dt": "var(--color-yellow-text)",
+  "anuppuccin-theme-settings@@anp-header-color-toggle": true,
+  "anuppuccin-theme-settings@@bold-weight": "700",
+  "anuppuccin-theme-settings@@anuppuccin-theme-light": "ctp-rosepine-light",
+  "anuppuccin-theme-settings@@anuppuccin-light-theme-accents": "ctp-accent-light-lavender",
+  "anuppuccin-theme-settings@@anuppuccin-accent-toggle": true
 }

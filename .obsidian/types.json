@@ -46,6 +46,7 @@
     "TQ_show_urgency": "checkbox",
     "dg-home": "checkbox",
     "Date": "date",
-    "Target_Date": "date"
+    "Target_Date": "date",
+    "dg-": "checkbox"
   }
 }

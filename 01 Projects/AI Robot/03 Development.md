@@ -27,15 +27,7 @@ Our main goal is to make the humanoid robot **walk**. In order to do that we hav
 
 Threre are **17** servos in total , each servo can rotate from **0** to **180** degrees , it was not clear at first that the [[MG995]] can rotate upto angle **180** or not. But later some source like [this](https://components101.com/motors/mg995-servo-motor) show that it is indeed possible to for the [[MG995|servo]] to rotate upto 180.
 
-```cpp
-
-#define SERVO_ANGLE_MIN 0
-#define SERVO_ANGLE_MAX 180
-#define SERVO_MIN  102   // .5ms
-#define SERVO_MAX  512   // 2.5ms 
-#define SERVO_FREQ 50
-#define CONTROLLER_I2C_ADDR 0x41
-```
+![[02 Coding#^15f658]]
 
 ^3c3d3c
 
@@ -252,26 +244,26 @@ for(uint8_t angle = 0 ; angle < ANGLE_MAX ; angle++){
 ### 2.1 Pin Defenitions
 The [[PCA9685]] has 16 output pins, but the thing is our robot has 17 servos so im going to use additional [[PCA9685]] or a dedicated pin(15) for the last servo(head )
 
-<<<<<<< HEAD
-| <br><br>Pin Name | Unit       | Value |
-| ---------------- | ---------- | ----- |
-| PIN_LA1          | Left arm   | 0     |
-| PIN_LA2          | Left arm   | 1     |
-| PIN_LA3          | Left arm   | 2     |
-| PIN_RA1          | Right arm  | 3     |
-| PIN_RA2          | Right arm  | 4     |
-| PIN_RA3          | Right arm  | 5     |
-| PIN_RA3          | Right arm  | 5     |
-| PIN_B1           | Left Hip   | 6     |
-| PIN_B2           | Right Hip  | 7     |
-| PIN_LL1          | Left Leg   | 8     |
-| PIN_LL2          | Left Leg   | 9     |
-| PIN_LL3          | Left Leg   | 10    |
-| PIN_RL1          | Right Leg  | 11    |
-| PIN_RL2          | Right Leg  | 12    |
-| PIN_RL3          | Right Leg  | 13    |
-| PIN_LF           | Left Foot  | 14    |
-| PIN_RF           | Right Foot | 15    |
+| Pin Name | Unit       | Value |
+| -------- | ---------- | ----- |
+| PIN_LA1  | Left arm   | 0     |
+| PIN_LA2  | Left arm   | 1     |
+| PIN_LA3  | Left arm   | 2     |
+| PIN_RA1  | Right arm  | 3     |
+| PIN_RA2  | Right arm  | 4     |
+| PIN_RA3  | Right arm  | 5     |
+| PIN_RA3  | Right arm  | 5     |
+| PIN_B1   | Left Hip   | 6     |
+| PIN_B2   | Right Hip  | 7     |
+| PIN_LL1  | Left Leg   | 8     |
+| PIN_LL2  | Left Leg   | 9     |
+| PIN_LL3  | Left Leg   | 10    |
+| PIN_RL1  | Right Leg  | 11    |
+| PIN_RL2  | Right Leg  | 12    |
+| PIN_RL3  | Right Leg  | 13    |
+| PIN_LF   | Left Foot  | 14    |
+| PIN_RF   | Right Foot | 15    |
+
 | Pin Name | Unit  | Value |
 | -------- | ---- | ----- |
 | PIN_LA1      | Left arm  | 0   |

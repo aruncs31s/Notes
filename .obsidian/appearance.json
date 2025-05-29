@@ -1,18 +1,20 @@
 {
-  "theme": "moonstone",
-  "cssTheme": "Prism",
-  "accentColor": "#0aefff",
+  "theme": "obsidian",
+  "cssTheme": "AnuPpuccin",
+  "accentColor": "",
   "enabledCssSnippets": [
     "MCL Multi Column",
     "MCL Wide Views",
     "details-style",
     "MCL Gallery Cards",
-    "center"
+    "center",
+    "align_text",
+    "no_title_dataview"
   ],
   "showRibbon": true,
   "interfaceFontFamily": "Franklin Gothic",
   "textFontFamily": "Cascadia Code,Gill Sans MT",
   "monospaceFontFamily": "Bodoni 72 Oldstyle",
-  "baseFontSize": 19,
+  "baseFontSize": 21,
   "baseFontSizeAction": true
 }
