@@ -2,6 +2,7 @@
 - [Forces](#forces)
 - [[PDE]]
 	- [[Heat Equation]]
+- [[Kinematics and Dynamics]]
 #### Forces
 
 

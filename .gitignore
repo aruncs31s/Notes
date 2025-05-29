@@ -4,3 +4,4 @@
 .obsidian/plugins/github-copilot/data.json
 98\ Private
 .obsidian/workspace.json
+*/*.DS_Store

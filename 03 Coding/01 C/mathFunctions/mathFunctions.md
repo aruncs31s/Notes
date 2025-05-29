@@ -1,0 +1,5 @@
+---
+id: mathFunctions
+aliases: []
+tags: []
+---
