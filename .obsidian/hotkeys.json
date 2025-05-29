@@ -5,12 +5,24 @@
         "Mod"
       ],
       "key": "M"
+    },
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "M"
     }
   ],
   "webviewer:search": [
     {
       "modifiers": [
         "Mod"
+      ],
+      "key": "S"
+    },
+    {
+      "modifiers": [
+        "Alt"
       ],
       "key": "S"
     }
@@ -169,6 +181,13 @@
         "Shift"
       ],
       "key": "M"
+    },
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "M"
     }
   ],
   "editor:toggle-highlight": [
@@ -193,6 +212,14 @@
         "Alt"
       ],
       "key": "E"
+    }
+  ],
+  "insert-template": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "I"
     }
   ]
 }

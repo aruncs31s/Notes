@@ -1,0 +1,39 @@
+{
+	"nodes":[
+		{"id":"447ba3f648768f29","type":"group","x":-940,"y":-1100,"width":2200,"height":1700,"color":"6","label":"question 1"},
+		{"id":"015498895ac2768d","x":-2920,"y":336,"width":1740,"height":1044,"color":"#1a96f4","type":"group","label":"I2C intercept"},
+		{"id":"402445f7e8b736af","type":"text","text":"## Duty Cycle\n\n### Detector","x":40,"y":-80,"width":220,"height":130,"color":"3"},
+		{"id":"727a25731cb9be8e","type":"text","text":"## HC-SR04","x":-368,"y":-241,"width":250,"height":60,"color":"3"},
+		{"id":"0ab33603198f5f3e","type":"text","text":"## Astable Multi-Vibrator","x":-426,"y":80,"width":308,"height":140,"color":"3"},
+		{"id":"7dce356c1e4a78b6","type":"text","text":"## Monostable Multi-Vibrator","x":560,"y":-90,"width":280,"height":140,"color":"3"},
+		{"id":"bbcf7f28c12abf99","type":"text","text":"## Power Supply","x":-920,"y":-50,"width":250,"height":60},
+		{"id":"824302d6d8cf9961","type":"file","file":"03 Electronics/Embedded Systems/Modules/Sensors/HC-SR04.md","x":-443,"y":-782,"width":400,"height":400},
+		{"id":"45feadc78f683c26","type":"file","file":"04 Hackethons/Dihack/attachments/voltage charging.excalidraw.md","x":108,"y":-520,"width":412,"height":254},
+		{"id":"927d24dda730fe17","type":"file","file":"04 Hackethons/Dihack/attachments/comparator.excalidraw.md","x":320,"y":-1080,"width":400,"height":400},
+		{"id":"2ff3c17be7d48a7e","type":"file","file":"03 Electronics/ICs/555.md","x":840,"y":-641,"width":400,"height":400},
+		{"id":"3101a0b7d3412908","type":"text","text":"## DC Motor","x":840,"y":520,"width":250,"height":60,"color":"3"},
+		{"id":"9d8f172c82937118","x":-2209,"y":356,"width":449,"height":444,"type":"text","text":"# Arduino A Master\n```c\n#include <Wire.h> \n\nuint8_t x = 0;\nvoid setup() {\n\tWire.begin();  // Start  I2C Bus as Master\n}\nvoid loop() {\n\tWire.beginTransmission(10); // transmit to device 10\n\t// Above address can be used to intercept or the intercepter have to scan the entire address to get \n\tWire.write(x);              // sends x \n\tWire.endTransmission();    \n\tx=  random(0, 255);;\n\tdelay(1000);\n}\n```"},
+		{"id":"6d2f39de005c5746","x":-2209,"y":920,"width":449,"height":440,"type":"text","text":"# Arduino B Slave\n```c\n#include <Wire.h>\nuint8_t new_data = 0;\nvoid setup() {\n\tSerial.begin(9600);   \n\tWire.begin(10); // Slave address 10\n\tWire.onReceive(receiveCallback); // Callback Function when data is recieved\n\t}\nvoid receiveCallback(int bytes){\n\tnew_data = Wire.read();  \n\tSerial.println(\"New Data Recieved \" + String(new_data));\n\t}\nvoid loop() {\n\tdelay(1000);\n\t}\n```"},
+		{"id":"9762ab2e53dc32ba","x":-1680,"y":520,"width":480,"height":700,"type":"text","text":"# Intercepter\n```c\n#include <Wire.h>\nint intercepted_data = 0;\nuint8_t target_address = 0;\nvoid receiveCallback(int bytes){\n\tintercepted_data = Wire.read();  \n\tSerial.println(\"Intercepted Data = \" + String(intercepted_data));\n\t}\nvoid scan_for_i2c() {\n  for (;;) {\n    Wire.begin(target_address);\n    Serial.println(\"Tryingt address \" + String(target_address));\n    delay(5000);\n    Serial.println(\"Intercepted Data = \" + String(intercepted_data));\n    if (intercepted_data > 0) {\n      return;\n    }\n    Wire.end();\n    target_address++;\n  }\n}\nvoid setup() {\n    Serial.begin(9600);\n    Wire.onReceive(receiveCallback); // Callback Function when data is recieved\n    scan_for_i2c();                  // Scan for I2C device\n  }\n```"},
+		{"id":"c0e0f5bea07440b9","x":-2840,"y":670,"width":400,"height":400,"type":"file","file":"04 Hackethons/Dihack/attachments/Arduino intercept I2C.excalidraw.md"},
+		{"id":"488bc5b759dac9ae","type":"file","file":"04 Hackethons/Dihack/Round 1/Problem Statement.md","x":-1760,"y":-350,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"83d8b3a13a18bccf","fromNode":"727a25731cb9be8e","fromSide":"right","toNode":"402445f7e8b736af","toSide":"left","label":"Echo\n1.74 ms"},
+		{"id":"27089638a602d763","fromNode":"402445f7e8b736af","fromSide":"right","toNode":"7dce356c1e4a78b6","toSide":"left","label":"-ve \nTrigger"},
+		{"id":"e47ee3f05de68b5d","fromNode":"bbcf7f28c12abf99","fromSide":"right","toNode":"727a25731cb9be8e","toSide":"left"},
+		{"id":"fe53277210b0d508","fromNode":"bbcf7f28c12abf99","fromSide":"right","toNode":"0ab33603198f5f3e","toSide":"left"},
+		{"id":"da545f02601f3eb9","fromNode":"0ab33603198f5f3e","fromSide":"top","toNode":"727a25731cb9be8e","toSide":"bottom","label":"Trig\n>10uS"},
+		{"id":"643848594d1cafd2","fromNode":"7dce356c1e4a78b6","fromSide":"right","toNode":"3101a0b7d3412908","toSide":"left","label":"5 Sec \n+Vcc"},
+		{"id":"4c3f270628572242","fromNode":"727a25731cb9be8e","fromSide":"top","toNode":"824302d6d8cf9961","toSide":"bottom"},
+		{"id":"1da8bf4e5a7bd38e","fromNode":"402445f7e8b736af","fromSide":"top","toNode":"45feadc78f683c26","toSide":"bottom"},
+		{"id":"1734329f5ffec2b7","fromNode":"45feadc78f683c26","fromSide":"top","toNode":"927d24dda730fe17","toSide":"bottom"},
+		{"id":"3ba8371a3ec70035","fromNode":"7dce356c1e4a78b6","fromSide":"top","toNode":"2ff3c17be7d48a7e","toSide":"bottom"},
+		{"id":"fee279ec38624045","fromNode":"488bc5b759dac9ae","fromSide":"right","toNode":"447ba3f648768f29","toSide":"left"},
+		{"id":"30fbfdf352b7369f","fromNode":"9d8f172c82937118","fromSide":"bottom","toNode":"6d2f39de005c5746","toSide":"top"},
+		{"id":"74a444ad363140cf","fromNode":"9d8f172c82937118","fromSide":"left","toNode":"c0e0f5bea07440b9","toSide":"top","label":"A"},
+		{"id":"462f76f7be8d7d66","fromNode":"6d2f39de005c5746","fromSide":"left","toNode":"c0e0f5bea07440b9","toSide":"bottom","label":"B"},
+		{"id":"c9d8994d8840a9c3","fromNode":"9762ab2e53dc32ba","fromSide":"left","toNode":"c0e0f5bea07440b9","toSide":"right","label":"C"},
+		{"id":"920923bf306be9b7","fromNode":"488bc5b759dac9ae","fromSide":"bottom","toNode":"015498895ac2768d","toSide":"top"}
+	]
+}

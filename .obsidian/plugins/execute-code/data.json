@@ -1,5 +1,5 @@
 {
-  "lastOpenLanguageTab": "js",
+  "lastOpenLanguageTab": "shell",
   "releaseNote2_1_0wasShowed": true,
   "persistentOuput": false,
   "timeout": 10000,
@@ -63,9 +63,9 @@
   "pythonEmbedPlots": true,
   "pythonFileExtension": "py",
   "pythonInject": "",
-  "shellPath": "bash",
+  "shellPath": "/bin/bash",
   "shellArgs": "",
-  "shellFileExtension": "sh",
+  "shellFileExtension": "",
   "shellInject": "",
   "batchPath": "call",
   "batchArgs": "",

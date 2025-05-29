@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"08d9217a21551d76","x":-600,"y":40,"width":250,"height":130,"type":"text","text":"# Exam\n"},
+		{"id":"aa0c3179cc3abd2d","type":"text","text":"## December 2024\n\n```dataview\nTABLE ExamDate as \"Exam Date\"\n\nWHERE ExamDate >= date(2024-12-01) and ExamDate <= date(2025-01-01)\nSORT ExamDate asc\n```","x":-150,"y":170,"width":430,"height":420},
+		{"id":"6067feb5995001d9","x":-240,"y":-280,"width":430,"height":320,"type":"text","text":"## November 2024\n```dataview\nTABLE ExamDate as \"Exam Date\"\n\nWHERE ExamDate >= date(2024-11-01) and ExamDate <= date(2024-12-01)\nSORT ExamDate asc\n```"},
+		{"id":"0a35a3990af11578","type":"text","text":"## Jan 2025\n```dataview\nTABLE ExamDate as \"Exam Date\"\n\nWHERE ExamDate >= date(2025-01-01) and ExamDate <= date(2025-02-01)\nSORT ExamDate asc\n```","x":-1120,"y":-50,"width":430,"height":220}
+	],
+	"edges":[
+		{"id":"5b15a2bf9321bd8a","fromNode":"08d9217a21551d76","fromSide":"right","toNode":"6067feb5995001d9","toSide":"left"},
+		{"id":"3bff1e7f954bff22","fromNode":"08d9217a21551d76","fromSide":"right","toNode":"aa0c3179cc3abd2d","toSide":"left"},
+		{"id":"0ac5e69bf5b17273","fromNode":"08d9217a21551d76","fromSide":"left","toNode":"0a35a3990af11578","toSide":"right"}
+	]
+}

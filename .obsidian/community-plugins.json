@@ -1,15 +1,11 @@
 [
-  "obsidian-latex-suite",
   "obsidian-hider",
   "obsidian-excalidraw-plugin",
   "digitalgarden",
-  "obsidian-style-settings",
-  "obsidian-banners",
   "darlal-switcher-plus",
-  "obsidian-tasks-plugin",
   "todoist-sync-plugin",
-  "dataview",
-  "various-complements",
   "github-copilot",
-  "execute-code"
+  "obsidian-style-settings",
+  "execute-code",
+  "obsidian-tasks-plugin"
 ]

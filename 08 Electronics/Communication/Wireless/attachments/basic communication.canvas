@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"b910836972ebf192","type":"text","text":"# Channel","x":-140,"y":40,"width":250,"height":60},
+		{"id":"6953c78276e76187","type":"text","text":"# Source ","x":-665,"y":40,"width":250,"height":60},
+		{"id":"ef4bc2f4be02cc29","type":"text","text":"# Destination","x":400,"y":40,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"000501f81b45edd3","fromNode":"6953c78276e76187","fromSide":"right","toNode":"b910836972ebf192","toSide":"left","label":"s(t)"},
+		{"id":"e5b5672ac5e5f48a","fromNode":"b910836972ebf192","fromSide":"right","toNode":"ef4bc2f4be02cc29","toSide":"left","label":"s(t) + n"}
+	]
+}

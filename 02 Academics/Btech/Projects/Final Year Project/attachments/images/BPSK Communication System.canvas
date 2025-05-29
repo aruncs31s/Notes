@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"fcc3011bc00f2bef","x":-440,"y":-380,"width":362,"height":187,"type":"text","text":"## Bernoulli Generator\nBinary Generator block generates random binary\nnumbers using a Bernoulli distribution."},
+		{"id":"6784772b4bafb7d9","x":-349,"y":-80,"width":180,"height":60,"type":"text","text":"# Source"},
+		{"id":"087d43a7a134785f","x":-78,"y":-70,"width":250,"height":60,"type":"text","text":"# BPSK"},
+		{"id":"0cab479d766ea5bd","x":260,"y":-80,"width":320,"height":220,"type":"text","text":"# AWGN Channel\nThe value of (Eb/No) in AWGN channel varies from 0(dB) to 10(dB).This is to see the performance of BER when (Eb/No) varies."},
+		{"id":"49b4f85525babe4c","x":700,"y":-36,"width":270,"height":117,"type":"text","text":"## BPSK Demodulator"},
+		{"id":"d0483b0bd93f6c1e","x":1080,"y":-36,"width":380,"height":133,"type":"text","text":"#### **Error Rate Calculation block** \ncompares the input data from a transmitter with the input data from the receiver"}
+	],
+	"edges":[
+		{"id":"d7d0e95a4811a73f","fromNode":"fcc3011bc00f2bef","fromSide":"bottom","toNode":"6784772b4bafb7d9","toSide":"top"},
+		{"id":"46ca7ebbb62ade07","fromNode":"6784772b4bafb7d9","fromSide":"right","toNode":"087d43a7a134785f","toSide":"left"},
+		{"id":"b51abbd3335a95a4","fromNode":"087d43a7a134785f","fromSide":"right","toNode":"0cab479d766ea5bd","toSide":"left"},
+		{"id":"30e4c16757da66f6","fromNode":"0cab479d766ea5bd","fromSide":"right","toNode":"49b4f85525babe4c","toSide":"left"},
+		{"id":"99ad8b21e9ab2ea9","fromNode":"49b4f85525babe4c","fromSide":"right","toNode":"d0483b0bd93f6c1e","toSide":"left"}
+	]
+}
