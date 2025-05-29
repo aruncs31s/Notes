@@ -14,7 +14,7 @@ dg-publish: true
 
 # AI Robot
 
-- [[02 Robot Design]]
+- [[02 Coding]]
 - [[AI Interactive Robot]] 
 - [[Contribution]]
 - [[03 Development]]
@@ -37,11 +37,3 @@ path includes 02 Projects/AI Robot
 
 1. Arun CS [Github](https://github.com/aruncs31s)
 2. Sajesh Kumar U [sajeshkumaru](https://github.com/sajeshkumaru)  
-3. Amaya Pramod P V [Github](https://github.com/AmayaPramod)
-4. Saifali [Github](https://github.com/Saifali1256)
-5. Deepika Rajan [Github](https://github.com/DEEPIKARAJAN-E)
-6. Harikesh OP [Github](https://github.com/harikeshop1989)
-7. Abhaya Govind [Github](https://github.com/AbhayaGovind)
-8. Krishnasree A V [Github](Krishnasree-A-V) 
-9. Anamika pp [Github](https://github.com/isro19692004geck)
-10. Meenakshi Poyyil [Github](https://github.com/MeenakshiPoyyil)

@@ -54,3 +54,10 @@ cout << "Hello World!" << endl;
 ```
 
 The `endl` line brke
+
+
+## Variables 
+
+#### Static Variables 
+- Static member variables must be defined exactly once outside of the class definition
+- Without this definition, you'll get linker errors about undefined references
