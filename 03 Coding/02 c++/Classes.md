@@ -9,7 +9,8 @@ Created: 10-10-2024
 Status:
 ---
 # Classes
-
+- [[Inheritance]]
+## Basics
 ## Constructors 
 *It is special function which initializes the objects of its classes*
 #rules 
