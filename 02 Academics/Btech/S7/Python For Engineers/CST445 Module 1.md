@@ -15,23 +15,23 @@ Date: "30-05-2025"
   - [x] Jupyter. ✅ 
 - [x] Basic coding skills ✅ 
 - [x] - [ ] Working with data types, ✅ 2025-05-30
-  - [ ] Numeric data types and Character sets,
+  - [x] Numeric data types and Character sets, ✅ 2025-05-30
   - [ ] Keywords,
-  - [ ] Variables and
-  - [ ] Assignment statement,
-  - [ ] Operators,
+  - [x] Variables and ✅ 2025-05-30
+  - [x] Assignment statement, ✅ 2025-05-30
+  - [x] Operators, ✅ 2025-05-30
   - [ ] Expressions,
   - [ ] Working with numeric data,
-  - [ ] Type conversions,
-  - [ ] Comments in the program,
-  - [ ] Input Processing,
-  - [ ] and Output,
-  - [ ] Formatting output.
+  - [x] Type conversions, ✅ 2025-05-30
+  - [x] Comments in the program, ✅ 2025-05-30
+  - [x] Input Processing, ✅ 2025-05-30
+  - [x] and Output, ✅ 2025-05-30
+  - [x] Formatting output. ✅ 2025-05-30
 - [ ]
-- [ ] How Python works.
+- [x] How Python works. ✅ 2025-05-30
 - [ ] Detecting and correcting syntax errors.
 - [ ] Using built in functions and modules in math module.
-- [ ] Control statements
+- [x] Control statements ✅ 2025-05-30
 - [ ] Selection structure
   - [ ] if-else,
   - [ ] if-elif-else.
@@ -60,6 +60,9 @@ just type `python` then start typing , *variables and function definitions all t
 
 
 #### Input , output , processing
+
+^38a289
+
 ```python
 # input
 a = input("Enter a number")
@@ -74,7 +77,7 @@ a = input("Enter a number")
 if a==5:
 	print("HI")
 ```
-- this program will not work as expected (run and find out)
+- this program will not work as expected (run and find out) (happens because `int(5)` is not same as `str(5)`)
 ```python
 a = int(input("Enter a number"))
 if a==5:
@@ -232,3 +235,136 @@ int(3.1) # 3
 float(3) # 3.0
 str(10) # '10'
 ```
+
+```python
+a = 5 
+type(a)
+a = str(a)
+type(a)
+a = float(a)
+type(a)
+```
+![[Pasted image 20250530165358.png]]
+
+### Comments
+```python
+# this is the single line comment
+'''
+This is the multiline 
+Comment 
+'''
+"""
+This is also a multiline 
+Comment
+"""
+```
+
+![[Pasted image 20250530165727.png]]
+
+### Formatting The output
+```python
+# Normal 
+for i in range(10):
+# Normal 
+	print(i)
+for i in range(10):
+# right justify
+	print("%6s" % i)
+for i in range(10):
+# left justify
+	print("%-6s" % i)
+```
+
+
+```python
+for i in range(10):
+# right justify
+	print(f"%{i}s" % i)
+```
+
+```python
+for i in range(10):
+# right justify
+	print(f"%{i}s%{10-2*i}s" % (i , i))
+```
+
+```op
+0         0
+1       1
+ 2     2
+  3   3
+   4 4
+    55
+     66 
+      77   
+       88     
+        99 
+```
+```python
+for i in range(10):
+	print(i , i**4 * 10)
+	
+```
+
+```python
+for i in range(10):
+	print("%6s%12s" %( i , i**4 * 10))
+```
+
+
+### How Python Works
+- Interpreter reads the source code and , if it encounters an gramatical(syntax) error it stops the exceution and throws and error.
+- If there is no error the python code is converted into **byte code**(low level language)
+- This byte code is then send to the **Python Virtual Machine(PVM**) 
+
+#### Errors 
+
+#####  Intendation
+Most of the  errors(syntax errors) will occur due to **intendation** 
+- intendation groups same block of codes to gether and it is the main part of the python syntax
+- Each new line shuld match the previous line intendation 
+
+```python
+a = 10 
+	b = 20 
+```
+This will cause a `unexpected indent` error  but the following will not
+```python
+if 5==int(5):
+	print(5) # intend with 4 spaces
+	
+```
+
+```python
+if 5==int(5):
+  print(5) # intend with 2 spaces
+	
+```
+
+**Rules**
+1. Same block → Same indentation
+2. 4(Tab) , 2 space intendation for new code block
+3. Intendation do not matter for code enclosed in `()` , `[]` or `{}`
+
+## Functions 
+**Important things to keep in mind**
+- intend the defenition of a function from its decleration
+- scope is limited within intendations 
+
+#syntax 
+
+![[02 Academics/Btech/S7/Python For Engineers/Class Notes#^8ae1a2|Class Notes]]
+
+
+#example 
+
+![[02 Academics/Btech/S7/Python For Engineers/Class Notes#^06cc71|Class Notes]]
+
+
+## Control Statements
+1. Selection Strucure `if else`
+2. Iteration structure `for i in ..`
+
+![[02 Academics/Btech/S7/Python For Engineers/Class Notes#IF ELSE|Class Notes]]
+
+![[02 Academics/Btech/S7/Python For Engineers/Class Notes#Iterative Statements(Loops)|Class Notes]]

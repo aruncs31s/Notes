@@ -14,7 +14,7 @@ tags: []
 - [[Python Regex]]
 - [[Manim]]
 ## Contents
-a
+ - [[Advanced Pyton]]
 - [ ]
 - [Zip](#zip)
 - [List](#list)
