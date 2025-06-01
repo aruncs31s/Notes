@@ -621,6 +621,8 @@ Manual_New = New_Gen_Z("Manu", "Old", 2022, 22)
 Manual_New.printname()
 ```
 
+^46ec55
+
 ##### Types of Inheritance
 
 - Mainly 4 types of Inheritance

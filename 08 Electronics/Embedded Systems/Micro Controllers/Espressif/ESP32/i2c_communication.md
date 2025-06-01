@@ -1,7 +1,9 @@
 ---
 id: i2c_communication
-aliases: []
-tags: []
+aliases: 
+tags:
+  - esp32
+  - "#code"
 ---
 
 # I2C Communication

@@ -11,20 +11,10 @@ package: QFN 6*6
 architecture: "32"
 datasheet: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
 ---
-
 # ESP32
 - [Introduction](#introduction)
 - [Programming](#programming)
 - [[#Pinout[ 1]|Pinout]] 
-  - [ESP IDF](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/ESP_IDF.md)
-  - [ADC](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/ESP-ADC.md)
-  - [WiFi Programming](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/programming/WiFi%20Programming.md)
-  - [Interfacing](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/programming/Interfacing.md)
-  - [Multitasking](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/programming/MultiTasking.md)
-  - [ESP-NOW](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/ESP-NOW.md)
-  - [Interrupt Programming](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/programming/Interrupt%20Programming.md)
-  - [ESP32 Web Programming|Web Programming](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/programming/Web%20Programming.md)
-- [x] check if this all points to the current link 📅 2025-04-17 ✅ 2025-04-17
 
 # Introduction
 ![](https://lastminuteengineers.com/wp-content/uploads/iot/ESP32-Pinout.png)
@@ -48,6 +38,11 @@ Designed with the TSMC low-power 40 nm tech . [[esp32_datasheet_en.pdf#page=2|Fu
 - Antenna diversity
 - [Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
 
+# Programming
+
+```dataview
+list from #esp32 and #code 
+```
 
 
 ---
@@ -122,6 +117,8 @@ mindmap
 - **Bounding pad**: a terminal point on the chip logic used to make a physical connection from the chip die to **GPIO** pin in the chip package
 
 # Communication
+
+
 ## I2C
 [Source](https://www.espressif.com/sites/default/files/documentation/esp32_technical_reference_manual_en.pdf#resclk)
 - Supports both master mode and slave mode 
@@ -132,21 +129,13 @@ mindmap
 - Supports continuous data transmission with disabled Serial Clock Line (SCL) 
 - Supports programmable digital noise filter
 
-# Programming
 
-- [ESP IDF](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/ESP_IDF.md)
-- [WiFi Programming](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/programming/WiFi%20Programming.md)
-- [Interfacing](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/programming/Interfacing.md)
-- [Multitasking](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/programming/MultiTasking.md)
-- [ESP-NOW](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/ESP-NOW.md)
-- [Interrupt Programming](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/programming/Interrupt%20Programming.md)
-- [ESP32 Web Programming|Web Programming](03%20Electronics/Embedded%20Systems/Micro%20Controllers/Espressif/ESP32/programming/Web%20Programming.md)
-# Pinout[^1]
-[^1]:https://randomnerdtutorials.com/esp32-pinout-reference-gpios/
 
-|          |           |            |                                                                                |
-| -------- | --------- | ---------- | ------------------------------------------------------------------------------ |
+# Pinout
+
+
 | **GPIO** | **Input** | **Output** | **Notes**                                                                      |
+| -------- | --------- | ---------- | ------------------------------------------------------------------------------ |
 | **0**    | pulled up | OK         | outputs PWM signal at boot, must be LOW to enter flashing mode                 |
 | **1**    | TX pin    | OK         | debug output at boot                                                           |
 | **2**    | OK        | OK         | connected to on-board LED, must be left floating or LOW to enter flashing mode |

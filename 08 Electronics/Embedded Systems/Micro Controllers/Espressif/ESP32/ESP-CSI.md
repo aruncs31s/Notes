@@ -1,7 +1,9 @@
 ---
 id: ESP-CSI
-aliases: []
-tags: []
+aliases: 
+tags:
+  - "#esp32"
+  - "#code"
 ---
 
 # ESP-CSI

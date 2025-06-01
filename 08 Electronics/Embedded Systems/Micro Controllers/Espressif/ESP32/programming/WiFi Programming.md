@@ -1,7 +1,9 @@
 ---
 id: WiFi Programming
-aliases: []
-tags: []
+aliases: 
+tags:
+  - esp32
+  - code
 ---
 
 ### WiFi Programming

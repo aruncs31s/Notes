@@ -7,7 +7,9 @@ tags:
   - serialCommunication
   - arduino
   - esp32
-Date: "13-10-2024"
+  - "#embeddedSystems"
+  - "#protocol"
+Date: 13-10-2024
 ---
 
 # I2C

@@ -20,7 +20,7 @@ func(false); // undefined
 ## Functions
 - [[Arrow Functions]]
 - [[Objects]]
-- [[Classes]]
+- [[03 Coding/JS/Classes]]
 
 
 ```js

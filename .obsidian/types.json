@@ -47,6 +47,7 @@
     "dg-home": "checkbox",
     "Date": "date",
     "Target_Date": "date",
-    "dg-": "checkbox"
+    "dg-": "checkbox",
+    "Status": "checkbox"
   }
 }

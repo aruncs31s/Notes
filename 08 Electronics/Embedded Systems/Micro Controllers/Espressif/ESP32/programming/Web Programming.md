@@ -1,12 +1,13 @@
 ---
 id: Web Programming
-aliases: []
-tags: []
+aliases: 
+tags:
+  - "#esp32"
+  - "#code"
+  - "#arduinoide"
 ---
-
-### Web Programming
-
-#### Sending Post
+# Web Programming
+## Sending Post
 
 ```cpp
 #include <WiFi.h>

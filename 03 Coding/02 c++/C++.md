@@ -8,19 +8,20 @@ Created: 14-09-2024
 cssclasses:
   - wide-page
 ---
-
 # C++
-- [[Introduction]]
+
+
+
 - [[Functions]]
 - [[structs]]
 - [[unions]]
-- [[Classes]]
+- [[03 Coding/02 c++/Basics/Classes]]
 - [[Cpp Pointers]]
-- [[ Data Types]]
+- [[Data Types]]
 - [[#Loops]]
 #### lvalues
 values(Locator Values) refers to an `object` that has a name and persists beyond the expression that creates it 
-- Lvalue is something that appear on the left hand side of the an assignment operation
+- Lvalue is something that appear on the ==left hand side of the an assignment== operation
 #eg
 ```cpp
 int x = y;
@@ -61,3 +62,7 @@ The `endl` line brke
 #### Static Variables 
 - Static member variables must be defined exactly once outside of the class definition
 - Without this definition, you'll get linker errors about undefined references
+
+
+## Functions
+- `extern`: Declares a variable or a function without defining it.

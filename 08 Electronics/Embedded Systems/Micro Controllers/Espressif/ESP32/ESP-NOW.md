@@ -1,7 +1,9 @@
 ---
 id: ESP-NOW
-aliases: []
-tags: []
+aliases: 
+tags:
+  - "#esp32"
+  - "#code"
 ---
 
 ### ESP-NOW

@@ -1,7 +1,9 @@
 ---
 id: Interfacing
-aliases: []
-tags: []
+aliases: 
+tags:
+  - "#esp32"
+  - "#code"
 ---
 
 # Interfacing

@@ -3,9 +3,9 @@ id: Interrupt Programming
 aliases:
   - esp32 interrupt
 tags:
-  -  #programming
   - esp32
-Created: "24-08-2024"
+  - "#code"
+Created: 24-08-2024
 Status: true
 cssclasses:
   - wide-page

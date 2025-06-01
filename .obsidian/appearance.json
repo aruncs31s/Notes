@@ -4,17 +4,16 @@
   "accentColor": "",
   "enabledCssSnippets": [
     "MCL Multi Column",
-    "MCL Wide Views",
-    "details-style",
     "MCL Gallery Cards",
+    "no_title_dataview",
+    "details-style",
     "center",
-    "align_text",
-    "no_title_dataview"
+    "align_text"
   ],
   "showRibbon": true,
   "interfaceFontFamily": "Franklin Gothic",
   "textFontFamily": "Cascadia Code,Gill Sans MT",
   "monospaceFontFamily": "Bodoni 72 Oldstyle",
-  "baseFontSize": 21,
+  "baseFontSize": 20,
   "baseFontSizeAction": true
 }

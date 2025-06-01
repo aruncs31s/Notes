@@ -6,11 +6,14 @@ dg-publish: true
 ---
 
 # C
-
-- [[Functions]]
-- [[mathFunctions]]
+######  Basics
+- [[Funtions]]
 - [[Pointers]]
 
+
+
+
+# OLD Notes (remove)
 ## Data Types
 
 #### Constant Strings

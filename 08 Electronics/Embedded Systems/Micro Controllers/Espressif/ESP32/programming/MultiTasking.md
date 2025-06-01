@@ -1,7 +1,9 @@
 ---
 id: MultiTasking
-aliases: []
-tags: []
+aliases: 
+tags:
+  - "#esp32"
+  - "#code"
 ---
 
 ### Multi Tasking using Free RTOS

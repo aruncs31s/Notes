@@ -20,7 +20,7 @@ dg-publish: true
 
 # APAAS
 - [[09 Projects/AI-powered accident avoidance System/Versions|Versions]]
-- [[Coding]]
+- [[01 Projects/AI-powered accident avoidance System/Coding]]
 
 ```
 raspberry pi:

@@ -131,4 +131,10 @@ result = reduce(lambda x , y:(x * y) if sum([x, y]) else 1 , [i for i in range(1
 print(result)
 ```
 
+- [ ] Complete this 📅 2025-06-01 
+
+
+
+
+
 
