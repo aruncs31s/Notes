@@ -1,11 +1,15 @@
+---
+dg-publish: true
+---
+
 ## Right-Handed System (Standard)
+![[Pasted image 20250608184112.png|right]]
 
 - Thumb (X), Index (Y), Middle Finger (Z) point in +ve directions.
-
 **Rotation:**
 - Counter-clockwise rotations are positive (by convention).
 
-used by: OpenGL, most math/physics textbooks.
+used by: OpenGL,  in standart MATH. 
 
 
 $$
@@ -47,8 +51,6 @@ $$
 - **Determinant = +1:** $\det(R) = 1$ (preserves orientation).  
 - **Non-commutative:** $R_x R_y \neq R_y R_x$ (order matters!).  
 
-- **Preserves orientation:** $\det(R) = +1$ (e.g., rotations).  
-- **Reverses orientation:** $\det(R) = -1$ (e.g., reflections).  
 ## Rotation Around X axis 
 
 $$
@@ -68,6 +70,9 @@ R_y(\theta) = \begin{bmatrix}
 -\sin \theta & 0 & \cos \theta
 \end{bmatrix}
 $$
+
+^36e3d2
+
 - Rotates points in the XZ-plane (around the Y-axis).
 - Leaves Y-coordinates unchanged.
 ## Rotation around Z-axis

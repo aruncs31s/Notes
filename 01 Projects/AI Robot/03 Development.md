@@ -212,8 +212,8 @@ The [[PCA9685]] has 16 output pins, but the thing is our robot has 17 servos so 
 | PIN_RA2  | Right arm  | 4     |
 | PIN_RA3  | Right arm  | 5     |
 | PIN_RA3  | Right arm  | 5     |
-| PIN_B1   | Left Hip   | 6     |
-| PIN_B2   | Right Hip  | 7     |
+| PIN_LH   | Left Hip   | 6     |
+| PIN_RH   | Right Hip  | 7     |
 | PIN_LL1  | Left Leg   | 8     |
 | PIN_LL2  | Left Leg   | 9     |
 | PIN_LL3  | Left Leg   | 10    |
@@ -222,26 +222,6 @@ The [[PCA9685]] has 16 output pins, but the thing is our robot has 17 servos so 
 | PIN_RL3  | Right Leg  | 13    |
 | PIN_LF   | Left Foot  | 14    |
 | PIN_RF   | Right Foot | 15    |
-
-| Pin Name | Unit  | Value |
-| -------- | ---- | ----- |
-| PIN_LA1      | Left arm  | 0   |
-| PIN_LA2      | Left arm  | 1   |
-| PIN_LA3      | Left arm  | 2   |
-| PIN_RA1      | Right arm | 3   |
-| PIN_RA2      | Right arm | 4   |
-| PIN_RA3      | Right arm | 5   |
-| PIN_RA3      | Right arm | 5   |
-| PIN_B1       | Left Hip  | 6   |
-| PIN_B2       | Right Hip | 7   |
-| PIN_LL1      | Left Leg  | 8   |
-| PIN_LL2      | Left Leg  | 9   |
-| PIN_LL3      | Left Leg  | 10  |
-| PIN_RL1      | Right Leg | 11  |
-| PIN_RL2      | Right Leg | 12  |
-| PIN_RL3      | Right Leg | 13  |
-| PIN_LF       | Left Foot  | 14  |
-| PIN_RF       | Right Foot | 15  |
 
 ^c18f43
 ```cpp
@@ -328,7 +308,7 @@ $$
 
 ### Tests
 ```dataview
-TABLE servo as "ID", pin as "pin" , initial_position as "Initial Angle",  status as "Status"
+TABLE servo as "ID", pin as "pin" , initial_position as "Initial Angle",  status as "Status" , rotation as "Rotation"
 WHERE file = this.file 
 ```
 
@@ -457,13 +437,14 @@ print(f"Response: {response.text}")
 
 
 ####  1. LA1 
-[servo:: LA1]
-[pin:: 0]
-[initial_position:: 25]
-[status:: fine]
+- [servo:: LA1]
+- [pin:: 0]
+- [initial_position:: 25]
+- [status:: fine]
 ![[Pasted image 20250608024100.png]]
 
 - Orientation X -> Z , Z -> -X 
+- Current orientation $I \to R_{y}(90)$ 
 $$
 \begin{bmatrix}
 1 & 0 & 0  \\
@@ -476,92 +457,26 @@ $$
 -1 & 0 & 0  \\
 \end{bmatrix}
 $$
-
+- [rotation:: $R_{-x}(\theta)$]
 
 #### 2. LA2 
-[servo:: LA2]
-[pin:: 1]
-[initial_position:: ]
-[status:: not fine]
+- [servo:: LA2]
+- [pin:: 1]
+- [initial_position:: 10]
+- [status:: not fine]
+#### 3. LA3 
+- [servo:: LA3]
+- [pin:: 2]
+- - [initial_position:: 160]
+- [status:: fine]
 
+#### 4. RA1 
 
-##### 1. RA3
-- The servo start to respond at [start:: 76] 
-> $76 \to 76\times 4.88 \mu s \to 370.88$
-*[start_ms:: 370.88]* ^7fe3a5
-- also stops to respond at [stop:: 573]
-this means the [servo:: RA3] will repond or goes to $0^{\circ}$ when the pulse width is **.37088 ms**  
-
-It also stops responding at [stop:: 573] -> [stop_ms:: 2.796 ms]
-$$
-573 \to 2.796 ms
-$$
-Which implies 
-$$
-\text{Duty cycle} = 2.796 - .370.88 = 2.42512 ms
-$$
-
-[duty_cyle:: 2.42512 ms ]
-
-- [initial_position:: ]
-
-#ifdefined #linux | #mac
-```bash
-curl "http://192.168.137.142/setServo?id=0&position=76"
-```
-```bash
-curl "http://192.168.137.142/setServo?id=0&position=573"
-```
-#elseif #windows | #Linux | #mac
-```python
-import requests
-
-url = "http://192.168.137.142/setServo"
-
-min_params = {
-    "id": 5,
-    "position": 76
-}
-max_params = {
-	"id" : 5,
-	"position": 573
-}
-
-```
-
-
-```python
-response = requests.get(url, params=min_params)
-print(f"Response: {response.text}")
-```
-```python
-response = requests.get(url, params=max_params)
-print(f"Response: {response.text}")
-```
-
-###### **put to initial**
-```python 
-get_pulse = lambda x: x * (512 - 102 ) /180 + 102
-print(get_pulse(30))
-initial_prop = {
-	"id": 5,
-	"position": get_pulse(30)
-}
-
-response = requests.get(url, params=initial_prop)
-print(f"Response: {response.text}")
-```
-
-
-
-
-
-
-##### 4. RA1 
 - [pin:: 3] 
 - [servo:: RA1]
-- [initial_postion:: 160]
+- [initial_position:: 160]
 - The orientation of the servo is changed (z -> x and X -> -Z)
+
 $$
 \begin{bmatrix}
 1 & 0 & 0  \\
@@ -569,16 +484,185 @@ $$
 0 & 0 & 1 
 \end{bmatrix} \to 
 \begin{bmatrix}
-
 0 & 0 & -1  \\
 0 & 1 & 0 \\
 1 & 0 & 0  \\
 \end{bmatrix}
 $$
+- [status:: fine]
+- [rotation:: $R_{x}(\theta)$]
+#### 5. RA2 
+
+- [servo:: RA2]
+- [pin:: 4]
+- [initial_position:: 160]
+- [status:: not fine]
+- [rotation:: $R_{z}(\theta)$]
+##### 6. RA3
+- [servo:: RA3]
+- [pin:: 5]
+- [initial_position:: 30]
+- [status:: fine]
+
+#### 7. LH
+- [servo:: LH]
+- [pin:: 6]
+- [initial_position:: 102]
+- [status:: fine]
+- [rotation:: $R_{z}(\theta)$]
+#### 8. RH
+- [servo:: RH]
+- [pin:: 7]
+- [initial_position:: 102]
+- [status:: fine]
+- - [rotation:: $R_{z}(\theta)$]
+
+#### 9. LL1
+- [servo:: LL1]
+- [pin:: 8]
+- [initial_position:: 25]
+- [status:: fine]
+- - [rotation:: $R_{-x}(\theta)$]
+$$
+\color{blue} \begin{bmatrix}
+1 & 0 & 0  \\
+0 & 1 & 0 \\
+0 & 0 & 1 
+\end{bmatrix} \to 
+\begin{bmatrix}
+0 & 0 & 1  \\
+0 & 1 & 0 \\
+-1 & 0 & 0  \\
+\end{bmatrix}
+$$
 
 
+#### 10. LL2
+- [servo:: LL2]
+- [pin:: 9]
+- [initial_position:: 25]
+- [status:: fine]
+- [rotation:: $R_{-x}(\theta)$]
+
+$$
+\color{blue} \begin{bmatrix}
+1 & 0 & 0  \\
+0 & 1 & 0 \\
+0 & 0 & 1 
+\end{bmatrix} \to 
+\begin{bmatrix}
+0 & 0 & 1  \\
+0 & 1 & 0 \\
+-1 & 0 & 0  \\
+\end{bmatrix}
+\to
+\begin{bmatrix}
+ 0& 0 & -1  \\
+0 & -1 & 0 \\
+-1 & 0 & 0  \\
+\end{bmatrix}
+$$
+
+1. First Initial position of Servo 
 
 
+$$
+I = \begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0  \\
+0 & 0 & 1
+\end{bmatrix}
+$$
+2.  Rotate 90° Around the Y-Axis $Z \to -X$ (**global axis**)
+According to ![[Rotations#^36e3d2]]
+$$
+= \begin{bmatrix}
+0 & 0 & 1 \\
+0 & 1 & 0  \\
+-1 & 0 & 0
+\end{bmatrix}
+$$
+
+
+3. 180° Around the X-Axis (Flips Y and Z Down)  (**global axis**)
+
+$$
+= \begin{bmatrix}
+0 & 0 & 1 \\
+0 & 1 & 0  \\
+-1 & 0 & 0
+\end{bmatrix} \cdot 
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & \cos (180) & -\sin (180) \\
+0 & \sin (180) & \cos (180)
+\end{bmatrix} = \begin{bmatrix}
+0 & 0 & 1 \\
+0 & 1 & 0  \\
+-1 & 0 & 0
+\end{bmatrix} \cdot  
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & -1 & 0 \\
+0 & 0 & -1
+\end{bmatrix} = \begin{bmatrix}
+0 & 0 & -1 \\
+0 & -1 & 0 \\
+-1 & 0 & 0
+\end{bmatrix}
+$$
+
+
+#### 11. LL3
+- [servo:: LL3]
+- [pin:: 10]
+- [initial_position:: 160]
+- [status:: fine]
+- [rotation:: $R_{-x}(\theta)$]
+$$
+\color{blue} \begin{bmatrix}
+1 & 0 & 0  \\
+0 & 1 & 0 \\
+0 & 0 & 1 
+\end{bmatrix} \to 
+\begin{bmatrix}
+0 & 0 & 1  \\
+0 & 1 & 0 \\
+-1 & 0 & 0  \\
+\end{bmatrix}
+\to
+\begin{bmatrix}
+0 & 1 & 0  \\
+0 & 0 & -1 \\
+-1 & 0 & 0  \\
+\end{bmatrix}
+$$
+#### 12. RL1 
+- [servo:: RL3]
+- [pin:: 11]
+- [initial_position:: 160]
+- [status:: fine]
+- [rotation:: $R_{x}(\theta)$]
+
+$$
+\color{blue} \begin{bmatrix}
+1 & 0 & 0  \\
+0 & 1 & 0 \\
+0 & 0 & 1 
+\end{bmatrix} \to 
+\begin{bmatrix}
+0 & 0 & 1  \\
+0 & 1 & 0 \\
+1 & 0 & 0  \\
+\end{bmatrix}
+$$
+
+#### 13. RL2
+- [pin:: 12] 
+- [servo:: RL2]
+- [initial_position:: 165]
+- [status:: fine]
+- [rotation:: ]
 ## 4 Movements
 Lets say we want to go from position **a** to **b**. the code will be like this
 ```cpp
