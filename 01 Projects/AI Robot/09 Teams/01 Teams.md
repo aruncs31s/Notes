@@ -20,7 +20,7 @@ dg-publish: true
 13. Abhinav M [Github](https://github.com/AbhinavM2005)
 
 
-### Team Formation
+## Team Formation
 1. Hardware
 2. Supporting Software for Hardware
 3. AI Stuff
@@ -40,3 +40,30 @@ Hardware part is the dificult one in this to operate becase not everyone can acc
 	- [Gpt4All](https://www.nomic.ai/gpt4all)
 *The software part can either be in **python** or **node** not completly sure yet*
 - Train custom data related to the **Conference**
+## Team Members
+**Poll Members** -> unique 👍 , Lead 🍀
+
+| Hardware         | Software           | AI Stuff           |
+| ---------------- | ------------------ | ------------------ |
+| Abhinav          | Abhinav 👍         |                    |
+| MeenakshiPoyyil  | MeenakshiPoyyil 👍 |                    |
+| Nivedh-c         | Nivedh-c 👍        | Nivedh-r 👍        |
+| Dhanashyam       | Saif 👍            | Dhanashyam         |
+| Krishnasree 👍   | Harikesh 👍 🍀     | Krishnasree        |
+| Sneha            |                    | Sneha 👍           |
+| Deepika Rajan 👍 |                    | Deepika Rajan      |
+| Sangeeth Binu    | Sangeeth Binu      |                    |
+| Amaya Pramod     |                    | Amaya Pramod 👍 🍀 |
+| Abhaya Govind    |                    | Abhayagovind 👍    |
+| Anamika 👍 🍀    |                    |                    |
+
+**Unique Members** -> 🍀 Lead
+
+| Hardware    | Software    | AI Stuff    |
+| ----------- | ----------- | ----------- |
+| Anamika 🍀  | Abhinav     | Amaya 🍀    |
+| Deepika     | Sangeeth    | Abhaya      |
+| Krishnasree | Meenakshi   | Nivedh      |
+|             | Harikesh 🍀 | Dhanashayam |
+|             |             | Sneha       |
+

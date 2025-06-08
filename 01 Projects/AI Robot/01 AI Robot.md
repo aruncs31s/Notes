@@ -14,21 +14,37 @@ dg-publish: true
 
 # AI Robot
 
+
+```widgets
+type: countdown
+date: 2025-06-20 00:00:00
+to: Complete the Project 🎉
+completedLabel: Project is done 🎉
+```
+
 - [[02 Coding]]
 - [[AI Interactive Robot]] 
 - [[07 Contribution]]
 - [[03 Development]]
 - [[Self Balancing]]
 
->[!Important] Keep it uptodate
->- [x]  ✅ 2025-05-17
->```bash
-> rsync -av --delete --exclude='.*' /Users/aruncs/Desktop/Notes/01\ Projects/AI\ Robot/  /Users/aruncs/Git/AI-Robot-Obsidian-Notes/
-> ```
+
+>[!important]- Keep It update
+>
+>>[!Important]- **MACOS**
+>>```bash
+>> rsync -av --delete --exclude='.*' /Users/aruncs/Desktop/Notes/01\ Projects/AI\ Robot/  /Users/aruncs/Git/AI-Robot-Obsidian-Notes/
+>> ```
+>
+>>[!Important]- **Linux**
+>>```bash
+>> rsync -av --delete --exclude='.*' /home/aruncs/Notes/01\ Projects/AI\ Robot/  /home/aruncs/Git/Organizations/AI-Robot-GCEK/AI-Robot-Obsidian-Notes
+>> ```
+>
 
 
-```
-```
+
+
 ```tasks
 path includes 02 Projects/AI Robot
 ```

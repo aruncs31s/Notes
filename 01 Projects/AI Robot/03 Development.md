@@ -11,8 +11,68 @@ There are currently few tasks at hand
 4. Stream Video through webcam and identify persons.
 The development have devided into 4 stages( #update ) for the timebeing 
 
+
+- [[#Development Phase 0]]
 - [[#Development Phase 1]] -> making the robot walk 
 
+# Development Phase 0 
+## 1. Understanding Servo Motors
+
+![[Pasted image 20250608031545.png]]
+
+There are mainly 2 types of motion for a servo motor , 
+1. It's body maybe fixed and it rotor can move
+2. Its rotor may be fiex and its body can move 
+there are some things to consider in this both cases 
+#### Fixed Body 
+```yaml
+motion_direction: counter clockwise
+```
+
+> The rotating element is directly attached to the rotor and it will follow the same direction as the rotor. 
+> - Servo Horn is the rotor in this case 
+>![[Pasted image 20250608032206.png]]
+
+
+
+Fixed body will be the most common , because it is mostly seen when testing . And when testing we usually write the following
+
+```cpp
+Servo s1;
+void setup(){
+	s1.attach(some_pin);
+}
+void loop(){
+	for (int i = 0 ; i < 180 ; ++ i){
+		s1.write(i);
+	}
+}
+```
+^d90f88
+
+
+We usually observe this motion as something(something attached to the rotor) travels from $\begin{bmatrix}  1 & 0\end{bmatrix} ->\begin{bmatrix}-1 & 0\end{bmatrix}$ 
+
+This movement happens if the **rotor** of the motor is not fixed.  And if someone were to touch the rotor and if there enough friction between the rotor and the finger the body will start to move, and the movement of the body will be in oposite direction. 
+
+> Its a little tricky to find which direction will be the body move. One way to visualize this is , try to imagine if you were pushing a car if you have enough strength the car will move forward and if dont it will stay there , but if the soil is not hard , you will be moving backward. 
+> Now in the case of motors , if we stop a motor , that will create a lot of heat. (i think) which is not good for the motor , thats why we attach weights which is lower than the torque of the motor (i have to verify this sentence) 
+### Fixed Rotor
+```yaml
+motion_direction: clockwise
+```
+In this the rotor is fixed , this is mainly seen in linked motors[^1]
+[^1]: linked motors in the sense that 2 or more motors connected together and they will form a "Z" like structure 
+
+
+First thing we can see is the direction of rotation is opposite,(due to conservation of force? i think) Now lets look at the code again
+
+![[#^d90f88]]
+
+
+
+
+---
 
 # Development Phase 1 
 ## Intro 
@@ -68,107 +128,6 @@ Threre are **17** servos in total , each servo can rotate from **0** to **180** 
 
 
 
-## 1 Single Servo
-There are mainly 2 types of motion for a servo motor , 
-1. It's body maybe fixed and it rotor can move
-2. Its rotor may be fiex and its body can move 
-there are some things to consider in this both cases 
-#### Fixed Body 
-```yaml
-motion_direction: clockwise
-```
-
-
->[!blank|right-small]
-![[Pasted image 20250514183507.png|right]]
-> The rotating element is directly attached to the rotor and it will follow the same direction as the rotor. 
-
-
-
-Fixed body will be the most common , because it is mostly seen when testing . And when testing we usually write the following
-
-```cpp
-Servo s1;
-void setup(){
-	s1.attach(some_pin);
-}
-void loop(){
-	for (int i = 0 ; i < 180 ; ++ i){
-		s1.write(i);
-	}
-}
-```
-^d90f88
-
-
-
-
-
-
-
-We usually observe this motion as something(something attached to the rotor) travels from $\begin{bmatrix}-1 & 0\end{bmatrix} \text{ to } \begin{bmatrix}  1 & 0\end{bmatrix}$ 
-
-
->[!blank|left-small] 
->**visual representation of vector travelling from [-1,0] to [1,0]**
->![[SingleServoArm.mp4]]
-
-
-This movement happens if the **rotor** of the motor is not fixed.  And if someone were to touch the rotor and if there enough friction between the rotor and the finger the body will start to move, and the movement of the body will be in oposite direction. 
-
-> Its a little tricky to find which direction will be the body move. One way to visualize this is , try to imagine if you were pushing a car if you have enough strength the car will move forward and if dont it will stay there , but if the soil is not hard , you will be moving backward. 
-> Now in the case of motors , if we stop a motor , that will create a lot of heat. (i think) which is not good for the motor , thats why we attach weights which is lower than the torque of the motor (i have to verify this sentence) 
-### Fixed Rotor
-```yaml
-motion_direction: anti_clockwise
-```
-In this the rotor is fixed , this is mainly seen in linked motors[^1]
-[^1]: linked motors in the sense that 2 or more motors connected together and they will form a "Z" like structure 
->[!blank]
->>[!blank|right-medium]
->>![[Pasted image 20250514192210.png]]
->
->>[!blank|left-small] 
->>**visual representation of vector travelling from [-1,0] to [1,0]**
->>![[SingleServoArmUp.mp4]]
->
->
-
-First thing we can see is the direction of rotation is opposite,(due to conservation of force? i think) Now lets look at the code again
-
-![[#^d90f88]]
-
-
-
-
-![[Pasted image 20250514195137.png]]
-
-```cpp
-_initial_position = 0 ;
-_final_position = 180;
-uint8_t pos; 
-for ( pos = _initial_position; ++pos; pos < _final_position)
-        {
-            // 0 -> Start at time zero, and keep the pulse high for angleToPulse(pos) ticks. 
-            _servo_obj.setPWM(_this_servo_, 0, angleToPulse(pos));
-            delay(DELAY_MS);
-        }
-        update_current_position(pos);
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
----
 
 ## 2 PCA9685  as Driver
 
@@ -337,44 +296,24 @@ $$
 
 ^tableoneotwo
 
-
-| Servo | Unit       | $\theta_{0}$ | $\pi$    | By Code 1(Web Based)($\theta_{0}$) | $\phi_{0}$ | $\phi_{\infty}$ |
-| ----- | ---------- | ------------ | -------- | ---------------------------------- | ---------- | --------------- |
-| LA1   | Left arm   | 25           | to front | 10                                 |            |                 |
-| LA2   | Left arm   | 0            | to up    | 0                                  |            |                 |
-| LA3   | Left arm   | 16           | to up    | 16                                 |            |                 |
-| RA1   | Right arm  | 164          | to down  |                                    |            |                 |
-| RA2   | Right arm  | 180          | down     |                                    |            |                 |
-| RA3   | Right arm  | 167          | down     |                                    |            |                 |
-| B1    | Left Hip   | 99           | to right |                                    |            |                 |
-| B2    | Right Hip  |              |          |                                    |            |                 |
-| LL1   | Left Leg   |              |          |                                    |            |                 |
-| LL2   | Left Leg   |              |          |                                    |            |                 |
-| LL3   | Left Leg   |              |          |                                    |            |                 |
-| RL1   | Right Leg  |              |          |                                    |            |                 |
-| RL2   | Right Leg  |              |          |                                    |            |                 |
-| RL3   | Right Leg  |              |          |                                    |            |                 |
-| LF    | Left Foot  |              |          |                                    |            |                 |
-| RF    | Right Foot |              |          |                                    |            |                 |
-
-| Servo | Unit       | $\theta_{0}$ | $\text{when } \theta = 0$ | $\text{when } \theta = \pi$ | $\phi_{0}$ | $\phi_{\infty}$ | $\phi_{k}$ |
-| ----- | ---------- | ------------ | ------------------------- | --------------------------- | ---------- | --------------- | ---------- |
-| LA1   | Left arm   |              |                           |                             |            |                 |            |
-| LA2   | Left arm   |              |                           |                             |            |                 |            |
-| LA3   | Left arm   |              |                           |                             |            |                 |            |
-| RA1   | Right arm  |              |                           |                             |            |                 |            |
-| RA2   | Right arm  |              |                           |                             |            |                 |            |
-| RA3   | Right arm  | 30           | hand folds                | hand unfolds                | 102        | 512             | 170        |
-| B1    | Left Hip   |              |                           |                             |            |                 |            |
-| B2    | Right Hip  |              |                           |                             |            |                 |            |
-| LL1   | Left Leg   |              |                           |                             |            |                 |            |
-| LL2   | Left Leg   |              |                           |                             |            |                 |            |
-| LL3   | Left Leg   |              |                           |                             |            |                 |            |
-| RL1   | Right Leg  |              |                           |                             |            |                 |            |
-| RL2   | Right Leg  |              |                           |                             |            |                 |            |
-| RL3   | Right Leg  |              |                           |                             |            |                 |            |
-| LF    | Left Foot  | 99           |                           |                             |            |                 | 327        |
-| RF    | Right Foot | 99           |                           |                             |            |                 | 327        |
+| Servo | Unit       | $\theta_{0}$ | $\text{when } \theta = 0$  | $\text{when } \theta = \pi$ | $\phi_{0}$  | $\phi_{\infty}$ | $\phi_{k}$ |
+| ----- | ---------- | ------------ | -------------------------- | --------------------------- | ----------- | --------------- | ---------- |
+| LA1   | Left arm   | 25           | BACKWARD(PALM FACING DOWN) | FORWARD(PALM FACING UP)     | yet to find |                 |            |
+| LA2   | Left arm   | 10           | INWARDS(HAND CLOSING)      | OUTWARDS(HANDS OPENING)     |             |                 |            |
+| LA3   | Left arm   | 160          | INWARDS                    | OUTWARDS                    |             |                 |            |
+| RA1   | Right arm  | 160          | UP(FORWARD)                | DOWN(BACKWARD)              |             |                 |            |
+| RA2   | Right arm  | 160          | OUTWARDS(HANDS OPENING)    | INWARDS(HANDS CLOSING)      |             |                 |            |
+| RA3   | Right arm  | 30           | PALM OPENS(OUTWARDS)       | PALM CLOSES(INWARDS)        | 102         | 512             | 170        |
+| B1    | Left Hip   | 102          | OUTWARDS(AWAY FROM BODY)   | INWARDS(TOWARDS BODY)       |             |                 |            |
+| B2    | Right Hip  | 102          | INWARDS(TOWARDS BODY)      | OUTWARDS(AWAY FROM BODY)    |             |                 |            |
+| LL1   | Left Leg   | 25           | BACKWARDS                  | FORWARD                     |             |                 |            |
+| LL2   | Left Leg   | 15           | BACKWARDS                  | FORWARD                     |             |                 |            |
+| LL3   | Left Leg   | 160          | FORWARD                    | BACKWARD                    |             |                 |            |
+| RL1   | Right Leg  | 160          | BACKWARDS                  | FORWARD                     |             |                 |            |
+| RL2   | Right Leg  | 165          | FORWARD                    | BACKWARD                    |             |                 |            |
+| RL3   | Right Leg  |              | BACKWARDS                  | FORWARDS                    |             |                 |            |
+| LF    | Left Foot  | 93           | FOLDS                      | UNFOLDS                     |             |                 | 327        |
+| RF    | Right Foot | 99           | UNFOLDS                    | FOLDS                       |             |                 | 327        |
 
 ```cpp
 // Servo Vals.h
@@ -387,10 +326,10 @@ $$
 ```
 
 
-#### Tests
+### Tests
 ```dataview
-TABLE servo as "ID", start as "start" , stop as "stop" , start_ms as "Start ms" , stop_ms as "Stop ms" , Duty_cycle as "DC"
-WHERE file = this.file
+TABLE servo as "ID", pin as "pin" , initial_position as "Initial Angle",  status as "Status"
+WHERE file = this.file 
 ```
 
 
@@ -417,7 +356,8 @@ while True:
 **angle tester**
 ```python
 import requests 
-url="http://192.168.31.140/setServo"
+url="http://192.168.248.254/setServo"
+import time
 ```
 ```python
 def get_pulse(val):
@@ -425,7 +365,7 @@ def get_pulse(val):
 def set_position(val,id=0):
 	req_params= {
 		"id": id,
-		"position": val
+		"angle": val
 		}
 	response = requests.get(url, params=req_params)
 	print(f"Response: {response.text}")
@@ -433,14 +373,29 @@ def set_position(val,id=0):
 ```
 ```python
 while True:
+	for i in range(0,180):
+		new_val = get_pulse(i)
+		set_position(new_val,id=1)
+		time.sleep(.1)
+	for i in range(180,1):
+		new_val = get_pulse(i)
+		set_position(new_val,id=1)
+		time.sleep(.1)
+		
+```
+```python
+while True:
 	val = int(input("Enter position"))
 	if val == 1000:
 		break;
 	new_val = get_pulse(val)
-	set_position(new_val,id=13)
+	set_position(new_val,id=1)
 	
 ```
-
+```python
+new_val = 180
+set_position(new_val,id=0)
+```
 ```python
 LL1=0
 LL2=10 
@@ -499,6 +454,36 @@ print(f"Response: {response.text}")
 response = requests.get(url, params=one80_degree)
 print(f"Response: {response.text}")
 ```
+
+
+####  1. LA1 
+[servo:: LA1]
+[pin:: 0]
+[initial_position:: 25]
+[status:: fine]
+![[Pasted image 20250608024100.png]]
+
+- Orientation X -> Z , Z -> -X 
+$$
+\begin{bmatrix}
+1 & 0 & 0  \\
+0 & 1 & 0 \\
+0 & 0 & 1 
+\end{bmatrix} \to 
+\begin{bmatrix}
+0 & 0 & 1  \\
+0 & 1 & 0 \\
+-1 & 0 & 0  \\
+\end{bmatrix}
+$$
+
+
+#### 2. LA2 
+[servo:: LA2]
+[pin:: 1]
+[initial_position:: ]
+[status:: not fine]
+
 
 ##### 1. RA3
 - The servo start to respond at [start:: 76] 
@@ -566,141 +551,31 @@ initial_prop = {
 response = requests.get(url, params=initial_prop)
 print(f"Response: {response.text}")
 ```
-##### 2. RA2 
-![[#^7fe3a5]]
-- [servo:: RA2]
-- [start::76]
-- [stop:: 576]
+
+
+
+
+
+
+##### 4. RA1 
+- [pin:: 3] 
+- [servo:: RA1]
+- [initial_postion:: 160]
+- The orientation of the servo is changed (z -> x and X -> -Z)
 $$
-576 \to 576 \times 4.88 \micro s = 2810.88 ms
+\begin{bmatrix}
+1 & 0 & 0  \\
+0 & 1 & 0 \\
+0 & 0 & 1 
+\end{bmatrix} \to 
+\begin{bmatrix}
+
+0 & 0 & -1  \\
+0 & 1 & 0 \\
+1 & 0 & 0  \\
+\end{bmatrix}
 $$
-- [start_ms:: 2810.88 ms]
-- [duty_cycle:: 2.440 ms ]
-- [initial_posiotion:: ]
-```python
-import requests
 
-url = "http://192.168.137.142/setServo"
-min_params = {
-    "id": 0,
-    "position": 76
-}
-max_params = {
-	"id" : 0,
-	"position": 576
-}
-
-```
-
-```python
-response = requests.get(url, params=min_params)
-print(f"Response: {response.text}")
-```
-```python
-response = requests.get(url, params=max_params)
-print(f"Response: {response.text}")
-```
-
-##### 3. RA1 
-It is same as [[#1. RA3|RA3's]] 
-
-- [start::76] , [stop:: 573]
-- [start_ms:: 370.88] [stop_ms:: 2.796 ms]
-- [duty_cycle:: 2.42512 ms ]
-- [initial-position:: ]
-
-##### 4. LA3
-
-- [start::76] , [stop:: 573]
-- [start_ms:: 370.88] [stop_ms:: 2.796 ms]
-- [duty_cycle:: 2.42512 ms ]
-- [initial-position:: ]
-
-##### 5. LA2
-
-- [start::76] , [stop:: 573]
-- [start_ms:: 370.88] [stop_ms:: 2.796 ms]
-- [duty_cycle:: 2.42512 ms ]
-- [initial-position:: ]
-
-##### 6. LA1
-
-- [start::76] , [stop:: 573]
-- [start_ms:: 370.88] [stop_ms:: 2.796 ms]
-- [duty_cycle:: 2.42512 ms ]
-- [initial-position:: ]
-
-##### 7. B1 
-
-
-- [start::76] , [stop:: 573]
-- [start_ms:: 370.88] [stop_ms:: 2.796 ms]
-- [duty_cycle:: 2.42512 ms ]
-- [initial-position:: ]
-
-##### 8. B2 
-
-- [start::76] , [stop:: 573]
-- [start_ms:: 370.88] [stop_ms:: 2.796 ms]
-- [duty_cycle:: 2.42512 ms ]
-- [initial-position:: ]
-
-##### 9. LL3 
-12
-- [start::76] , [stop:: 573]
-- [start_ms:: 370.88] [stop_ms:: 2.796 ms]
-- [duty_cycle:: 2.42512 ms ]
-- [initial-position:: (180-39)]
-- [constrains:: 39-180]
-##### 10. LL2 
-11
-- [start::76] , [stop:: 573]
-- [start_ms:: 370.88] [stop_ms:: 2.796 ms]
-- [duty_cycle:: 2.42512 ms ]
-- [initial-position:: ]
-
-##### 11. LL1 
-
-
-- [start::76] , [stop:: 573]
-- [start_ms:: 370.88] [stop_ms:: 2.796 ms]
-- [duty_cycle:: 2.42512 ms ]
-- [initial-position:: ]
-
-##### 12. RL3
-13
-
-- [start::76] , [stop:: 573]
-- [start_ms:: 370.88] [stop_ms:: 2.796 ms]
-- [duty_cycle:: 2.42512 ms ]
-- [initial-position:: 39]
-- [constrains:: 0-160]
-
-##### 13. RL2 
-10
-
-##### 14. RL1 
-
-
-- [start::76] , [stop:: 573]
-- [start_ms:: 370.88] [stop_ms:: 2.796 ms]
-- [duty_cycle:: 2.42512 ms ]
-- [initial-position:: ]
-
-##### 15. LF 
-14
-
-- [start::76] , [stop:: 573]
-- [start_ms:: 370.88] [stop_ms:: 2.796 ms]
-- [duty_cycle:: 2.42512 ms ]
-- [initial-position:: 99]
-
-##### 16. RF 
-15
-- [start::76] , [stop:: 573]
-- [start_ms:: 370.88] [stop_ms:: 2.796 ms]
-- [duty_cycle:: 2.42512 ms ]
-- [initial-position:: 99]
 
 
 

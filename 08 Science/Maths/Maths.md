@@ -12,6 +12,7 @@
 - [[Vector Calculus]]
 - [[Matrices]]
 - [[Newton's Method]]
+- [[Linear Transformations]]
 
 #todo  
 - [ ] 🔼 Arrange this in correct order and catagorize accordingly

@@ -1,19 +1,13 @@
 {
   "theme": "obsidian",
   "cssTheme": "AnuPpuccin",
-  "accentColor": "",
+  "accentColor": "#0aefff",
   "enabledCssSnippets": [
     "MCL Multi Column",
-    "MCL Gallery Cards",
-    "no_title_dataview",
     "details-style",
+    "MCL Gallery Cards",
     "center",
     "align_text"
   ],
-  "showRibbon": true,
-  "interfaceFontFamily": "Franklin Gothic",
-  "textFontFamily": "Cascadia Code,Gill Sans MT",
-  "monospaceFontFamily": "Bodoni 72 Oldstyle",
-  "baseFontSize": 20,
-  "baseFontSizeAction": true
+  "showRibbon": true
 }
