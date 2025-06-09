@@ -3,7 +3,6 @@ dg-publish: true
 ---
 
 ## Right-Handed System (Standard)
-![[Pasted image 20250608184112.png|right]]
 
 - Thumb (X), Index (Y), Middle Finger (Z) point in +ve directions.
 **Rotation:**
