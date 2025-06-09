@@ -1,7 +1,6 @@
 ---
 dg-publish: true
 ---
-
 ## Right-Handed System (Standard)
 
 - Thumb (X), Index (Y), Middle Finger (Z) point in +ve directions.
