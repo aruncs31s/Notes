@@ -1,7 +1,6 @@
 ---
 dg-publish: true
 ---
-
 ## Right-Handed System (Standard)
 ![[Pasted image 20250608184112.png|right]]
 
