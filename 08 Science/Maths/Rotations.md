@@ -74,6 +74,7 @@ $$
 - Rotates points in the XZ-plane (around the Y-axis).
 - Leaves Y-coordinates unchanged.
 ## Rotation around Z-axis
+
 $$
 R_z(\theta) = \begin{bmatrix}
 \cos \theta & -\sin \theta & 0 \\

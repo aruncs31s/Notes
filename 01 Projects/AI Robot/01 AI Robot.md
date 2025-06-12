@@ -29,7 +29,7 @@ completedLabel: Project is done 🎉
 - [[Self Balancing]]
 
 
->[!important]- Keep It update
+>[!todo]- Keep It update
 >
 >>[!Important]- **MACOS**
 >>```bash

@@ -75,7 +75,7 @@ $$
 #define SERVO_ANGLE_MAX 180
 ```
 
-
+Servoo
 ```cpp
 void setup() {
   board1.setPWMFreq(SERVO_FREQ);
@@ -112,7 +112,6 @@ The [[PCA9685]] has 16 output pins, but the thing is our robot has 17 servos so 
 | PIN_LA3  | Left arm   | 2     |
 | PIN_RA1  | Right arm  | 3     |
 | PIN_RA2  | Right arm  | 4     |
-| PIN_RA3  | Right arm  | 5     |
 | PIN_RA3  | Right arm  | 5     |
 | PIN_LH   | Left Hip   | 6     |
 | PIN_RH   | Right Hip  | 7     |
@@ -468,7 +467,7 @@ $$
 - [initial_position:: 25]
 - [status:: fine]
 - [rotation:: $R_{-x}(\theta)$]
-- Current [orientation:: $I \to R_{z}(-90)$]
+- Current [orientation:: $I \to R_{z}(-90) \to R_{x}(180)$] 
 
 $$
 \begin{bmatrix}
@@ -538,6 +537,7 @@ $$
 -1 & 0 & 0
 \end{bmatrix}
 $$
+
 
 
 #### 11. LL3
