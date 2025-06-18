@@ -6,13 +6,33 @@ tags: []
 
 # Python
 - [[pySDR]]
+- [[Json handling]]
 ## Modules
 
+- [[Modules]]
 - [Numpy](numpy.md)
 - [matplotlib](./matplotlib.md)
 - [[Pyaudio]]
 - [[Python Regex]]
 - [[Manim]]
+## Custom Libs
+```dataview 
+TABLE file.link as "File", file.name as "Name"
+From #python_module 
+```
+
+
+
+### update
+```bash
+git clone <repo_url>
+python3 -m venv .venv
+pip install --upgrade setuptools wheel twine
+python3 setup.py sdist bdist_wheel
+twine upload dist/*
+```
+
+
 ## Contents
  - [[Advanced Pyton]]
 - [ ]

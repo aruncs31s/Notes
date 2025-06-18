@@ -1,6 +1,6 @@
 ---
 banner: "https://w.wallhaven.cc/full/we/wallhaven-wepm7p.png"
-banner_y: 0.16
+banner_y: 0.332
 banner: "https://w.wallhaven.cc/full/we/wallhaven-wepm7p.png"
 banner_y: 0.332
 cssclasses:
@@ -8,7 +8,14 @@ cssclasses:
 ---
 # HOME
 
->[!float|left--medium] Just DO 
+```widgets
+type: quote 
+quote: "When you stare into the abyss, the abyss stares back at you."
+```
+
+
+
+>[!todo] Just DO 
 >```tasks
 >not done
 >due on today
@@ -44,11 +51,5 @@ win.system("cd C:/Users/arunc/Git/Notes && dir && git pull origin main")
 
 
 
-## 2025-04-17
-
 - [ ] Checkout  [Adding Metadata to your Pages](https://blacksmithgu.github.io/obsidian-dataview/annotation/add-metadata/) 📅 2025-04-17
 
-```widgets
-type: clock
-format: "12hr" | "24hr"
-```

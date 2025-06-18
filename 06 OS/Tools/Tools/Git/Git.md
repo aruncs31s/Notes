@@ -29,7 +29,6 @@ cssclasses:
 
 Git is a `source control` created for the `Linux` Kernel by `Linus Torvalds`.
 
-- Git stores data as snapshots and if file is not changed
 
 ---
 ## **Installation**
@@ -95,8 +94,9 @@ git push -u origin main
 - Push existing repo
 
 ```bash
+git init 
+git branch -m main
 git remote add origin https://github.com/BloBuster/tic_tac_toe.git
-git branch -M main
 git push -u origin main
 ```
 

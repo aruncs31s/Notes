@@ -1,15 +1,16 @@
 ---
 aliases: 
 Date: 13-11-2024
+dg-publish: true
 ---
 # Coding 
-
-
+- [[replay tester]]
 
 ```tasks
 not done
 path includes 02 Coding.md 
 ```
+
 
 ## Libs
 >```dataview

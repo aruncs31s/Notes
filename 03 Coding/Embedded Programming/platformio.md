@@ -4,6 +4,7 @@ Date:
 cssClasses: wide-page
 ---
 # Platform IO 
+- [[Lib]]
 ## Install
 ```bash
 curl -fsSL -o get-platformio.py https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py
