@@ -47,3 +47,27 @@ if __name__ == "__main__":
     move(f_move)
     move(f_move_2)
 ```
+
+```python
+def move(the_arr):
+    count = 0
+    print("exec move")
+    while not count == len(the_arr):
+        for i in range(len(the_arr)):
+            print(f"I: {i}")
+            if the_arr[i][1] > angles[the_arr[i][0]]:
+                angles[the_arr[i][0]] += step
+                set_position(angles[the_arr[i][0]], the_arr[i][0])
+                if angles[the_arr[i][0]] == the_arr[i][1]:
+                    count += 1
+                time.sleep(0.0005)
+            elif the_arr[i][1] < angles[the_arr[i][0]]:
+                angles[the_arr[i][0]] -= step
+                # print(angles[the_arr[i][0]])
+                set_position(angles[the_arr[i][0]], the_arr[i][0])
+                if angles[the_arr[i][0]] == the_arr[i][1]:
+                    count += 1
+                time.sleep(0.0005)
+```
+## Logic 
+
