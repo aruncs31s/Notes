@@ -12,6 +12,15 @@ obstacle avoidance
 
 ## Voice Assistant
 ### Home Assistant
+
+```bash
+ docker run -it -p 10200:10200 -v /home/aruncs/docker/data:/data rhasspy/wyoming-piper \
+    --voice en_US-lessac-medium
+
+docker run -it -p 10300:10300 -v /home/aruncs/docker/data:/data rhasspy/wyoming-whisper \
+    --model tiny-int8 --language en
+
+```
 ```
 http://homeassistant.local:8123/
 ```
