@@ -19,3 +19,7 @@ docker run -d \
   -p 8555:8555/udp \
   ghcr.io/blakeblackshear/frigate:stable
 ```
+
+```bash
+docker ps
+```
