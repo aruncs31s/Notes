@@ -7,6 +7,7 @@ tags: []
 # Python
 - [[pySDR]]
 - [[Json handling]]
+️
 ## Modules
 
 - [[Modules]]
@@ -63,10 +64,12 @@ print(tuple(z))
 ((1, 2), (0, 0))
 ```
 
+wha
+
 - The zip() function adds i_th element at the end of the i_th element of weights
 
 ```python
-list1 = [1, 2, 3]
+️list1 = [1, 2, 3]
 list2 = ['a', 'b', 'c']
 zipped = zip(list1, list2)
 # You can iterate over the zip object to see its contents
