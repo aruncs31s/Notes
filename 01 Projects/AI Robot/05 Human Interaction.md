@@ -26,3 +26,8 @@ http://homeassistant.local:8123/
 ```
 
 - [[Frigate]]
+
+
+```python
+
+```
