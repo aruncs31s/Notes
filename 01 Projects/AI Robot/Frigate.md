@@ -1,5 +1,10 @@
 ## Homeassistant Integration
-**requires** : MQTT 
+**requires** : MQTT , HACS 
+```bash
+wget -O - https://get.hacs.xyz | bash -
+```
+
+
 ```
 docker run -d \
   --name frigate \
