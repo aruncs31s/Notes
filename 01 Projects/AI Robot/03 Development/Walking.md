@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # Walking
 The key to walking is to adjust the center of mass. 
 -  servo torque limits?
@@ -61,4 +65,22 @@ Managing Center of Gravity (COG) crucial for maintaining balance and preventing 
  
  [Source](https://en.egaco.com/11537/)
  ![[Pasted image 20250622220132.png]]
-![[Pasted image 20250622220156.png]]
+![[Pasted image 20250622220156.png]]![[Pasted image 20250622220241.png]]
+![[Pasted image 20250622220248.png]]
+
+## Robot Walking
+x, y, z represents foot position relative to the hip joint.
+
+```cpp
+void calculateLegIK(float x, float y, float z, float &hipAngle, float &kneeAngle, float &ankleAngle) {
+    // Convert from 3D space to servo angles
+    float legLength = sqrt(x*x + y*y + z*z);
+    float alpha = acos((thighLength*thighLength + shinLength*shinLength - legLength*legLength) / (2*thighLength*shinLength));
+    kneeAngle = 180 - alpha * RAD_TO_DEG;
+    
+    float beta = acos((thighLength*thighLength + legLength*legLength - shinLength*shinLength) / (2*thighLength*legLength));
+    hipAngle = atan2(x, sqrt(y*y + z*z)) * RAD_TO_DEG + beta * RAD_TO_DEG;
+    
+    ankleAngle = atan2(y, z) * RAD_TO_DEG - hipAngle;
+}
+```
