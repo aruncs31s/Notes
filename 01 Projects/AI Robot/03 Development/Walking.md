@@ -86,6 +86,25 @@ Managing Center of Gravity (COG) crucial for maintaining balance and preventing 
 We Need to calculate the **Hip** **Knee** and **Ankle** angles for each leg to achieve walking motion.
 x, y, z represents foot position relative to the hip joint.
 
+🦵 Has Parts
+
+1. Thigh
+2. Shin
+3. Foot
+
+Thigh -> it length `thighLength`
+
+1. Calcuate the `legLength`
+
+$$
+\text{Leg Lenght} = \sqrt{x^2 + y^2 + z^2}
+$$
+
+```cpp
+float legLength = sqrt(x*x + y*y + z*z);
+
+```
+
 ```cpp
 void calculateLegIK(float x, float y, float z, float &hipAngle, float &kneeAngle, float &ankleAngle) {
     // Convert from 3D space to servo angles
@@ -99,17 +118,3 @@ void calculateLegIK(float x, float y, float z, float &hipAngle, float &kneeAngle
     ankleAngle = atan2(y, z) * RAD_TO_DEG - hipAngle;
 }
 ```
-
-Leg Length
-
-$$
-\text{Leg Lenght} = \sqrt{x^2 + y^2 + z^2}
-$$
-
-🦵 Has Parts
-
-1. Thigh
-2. Shin
-3. Foot
-
-Thigh -> it length `thighLength`
