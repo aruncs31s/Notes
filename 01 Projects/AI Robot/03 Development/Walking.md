@@ -11,12 +11,12 @@ void WalkForward(){
 ## Human Walking  (Bipedal walking)
 ![[Walk-Cycle.gif|right]] ^80cec7
 
-Humanoid walking involves:
-- Alternating leg movements (gait cycle)
-- Weight shifting between legs
-- Arm swinging for balance
-- Center of gravity management
-### The Gait Cycle
+**Humanoid walking involves:**
+1. Alternating leg movements (gait cycle)
+2. Weight shifting between legs
+3. Arm swinging for balance
+4. Center of gravity management
+### 1. The Gait Cycle
 
 ![[Pasted image 20250622213556.png]]
 
@@ -38,12 +38,12 @@ Foot is  not in contact with the ground
 - Late swing
 ![[Pasted image 20250622214203.png]]
 
-### Weight Shifting
+### 2. Weight Shifting
 [Source](https://www.med.umich.edu/1libr/PMR/BalanceExercises/Weight%20Shifting%20-%20Side%20to%20Side.pdf)
 
 ![[Pasted image 20250622214408.png]]
 
-#### Arm Swing
+### 3. Arm Swing
 
 ![[#^80cec7]]
 
@@ -54,3 +54,11 @@ Foot is  not in contact with the ground
 - 
 **Why**
  the leg swing results in an angular momentum that is balanced by the ground reaction moments on the stance foot. Swinging arms create an angular momentum in the opposing direction of lower limb rotation, reducing the total angular momentum of the body. Lower angular momentum of the body results in a decline on the ground reaction moment on the stance foot
+
+
+### 4. Center of Gravity Management
+Managing Center of Gravity (COG) crucial for maintaining balance and preventing falls. *By positioning the Center of Gravity over the base of support (feet)*
+ 
+ [Source](https://en.egaco.com/11537/)
+ ![[Pasted image 20250622220132.png]]
+![[Pasted image 20250622220156.png]]
