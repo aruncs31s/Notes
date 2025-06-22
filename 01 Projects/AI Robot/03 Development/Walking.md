@@ -69,6 +69,7 @@ Managing Center of Gravity (COG) crucial for maintaining balance and preventing 
 ![[Pasted image 20250622220248.png]]
 
 ## Robot Walking
+We Need to calculate the **Hip** **Knee** and **Ankle** angles for each leg to achieve walking motion.
 x, y, z represents foot position relative to the hip joint.
 
 ```cpp
@@ -84,3 +85,8 @@ void calculateLegIK(float x, float y, float z, float &hipAngle, float &kneeAngle
     ankleAngle = atan2(y, z) * RAD_TO_DEG - hipAngle;
 }
 ```
+
+Leg Length 
+$$
+\text{Leg Length} =
+$$
