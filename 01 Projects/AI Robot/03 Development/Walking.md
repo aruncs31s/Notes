@@ -8,7 +8,9 @@ void WalkForward(){
 ```
 
 
-## Human Walking
+## Human Walking  (Bipedal walking)
+![[Walk-Cycle.gif|right]] ^80cec7
+
 Humanoid walking involves:
 - Alternating leg movements (gait cycle)
 - Weight shifting between legs
@@ -35,3 +37,20 @@ Foot is  not in contact with the ground
 - Mid-swing
 - Late swing
 ![[Pasted image 20250622214203.png]]
+
+### Weight Shifting
+[Source](https://www.med.umich.edu/1libr/PMR/BalanceExercises/Weight%20Shifting%20-%20Side%20to%20Side.pdf)
+
+![[Pasted image 20250622214408.png]]
+
+#### Arm Swing
+
+![[#^80cec7]]
+
+
+- each arm swings with the motion of the **opposing** leg
+- Swinging arms in an opposing direction with respect to the lower limb reduces the angular momentum of the body, balancing the rotational motion produced during walking
+- As the walking speed increases, the amplitude of the arm swing increases accordingly.
+- 
+**Why**
+ the leg swing results in an angular momentum that is balanced by the ground reaction moments on the stance foot. Swinging arms create an angular momentum in the opposing direction of lower limb rotation, reducing the total angular momentum of the body. Lower angular momentum of the body results in a decline on the ground reaction moment on the stance foot
