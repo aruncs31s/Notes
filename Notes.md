@@ -2,7 +2,8 @@
 dg-home: true
 dg-publish: true
 ---
-# Notes
-##### Coding
+# Projects
+- [[Embedded Systems Website]]
+## Coding
 - [[C]]
 	- [[Pointers]]
