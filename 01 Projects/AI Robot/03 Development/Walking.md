@@ -1,8 +1,9 @@
 ---
 id: Walking
-aliases: []
-tags: []
+aliases: 
+tags: 
 dg-publish: true
+widepa:
 ---
 
 # Walking
