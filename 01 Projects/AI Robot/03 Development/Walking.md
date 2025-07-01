@@ -1,8 +1,9 @@
 ---
 id: Walking
-aliases: []
-tags: []
+aliases: 
+tags: 
 dg-publish: true
+widepa:
 ---
 
 # Walking
@@ -72,6 +73,8 @@ Foot is not in contact with the ground
 - **Why**
   the leg swing results in an angular momentum that is balanced by the ground reaction moments on the stance foot. Swinging arms create an angular momentum in the opposing direction of lower limb rotation, reducing the total angular momentum of the body. Lower angular momentum of the body results in a decline on the ground reaction moment on the stance foot
 
+In walking, each arm swinging with the motion of the opposite leg reduces the angular momentum of the body by balancing the rotational motion produced during movement. As the speed of walking increases, the amplitude of arm swings also increases accordingly, resulting in an overall balance between lower and upper limb rotations. This creates a decrease in ground reaction moments on the stanch foot, leading to a reduction in body deceleration and improved stability during walking.
+
 ### 4. Center of Gravity Management
 
 Managing Center of Gravity (COG) crucial for maintaining balance and preventing falls. _By positioning the Center of Gravity over the base of support (feet)_
@@ -118,3 +121,5 @@ void calculateLegIK(float x, float y, float z, float &hipAngle, float &kneeAngle
     ankleAngle = atan2(y, z) * RAD_TO_DEG - hipAngle;
 }
 ```
+
+

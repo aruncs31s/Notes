@@ -7,6 +7,8 @@ Created: 15-08-2024
 Status:
 ---
 # Interrupts
+Used in 
+- [[Interrupt Programming]]
 - Hardware interrupts related to internal Devices they uses the `INT1` and `INT2`
 - External devices sends interrupt informations
 - ISRs are processor or program specific
