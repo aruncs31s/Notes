@@ -9,9 +9,8 @@ Starting Date: 2024-01-26
 Target Date: 2024-04-07
 ---
 # Iot Based Smart Energy Management System
-- [  ] Fix this 
+
 ## Contents
-- [[Projects/Iot_based_smart_energy_management_system/Obsidian_Notes/ESP32/esp32|esp32|Programming]]
 - [Diagrams]()
 	- [Mini_Project](Projects/Iot_based_smart_energy_management_system/Files/Diagrams/Mini_Project.canvas)
 	- [[Projects/Iot_based_smart_energy_management_system/Files/Diagrams/Block Diagram.canvas|Block Diagram]]
@@ -20,17 +19,13 @@ Target Date: 2024-04-07
 - [References](#references)
 
 #### Todos
-<!-- TODO: Complete This -->
-- [ ] [[Projects/Iot_based_smart_energy_management_system/Energy Monitoring/Energy Monitoring]] 
 - [x] [[Projects/Iot_based_smart_energy_management_system/Solar Tracking/Solar Tracking]]
 	- [x] [Interfacing]()
-	- [ ] [Printing 3D Model]()
 	- [x] [Finalize]()
 
 - [x] [[Projects/Iot_based_smart_energy_management_system/Energy Managment/Energy Management]]
     - [x] [Fan Control]()
     - [x] [Light Control]()
-    - [ ] 
  - Future Tasks
 	- [ ] [[Projects/Iot_based_smart_energy_management_system/Energy Monitoring/Monitoring Server]]
 

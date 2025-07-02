@@ -1,7 +1,9 @@
 ---
 id: Embedded Systems Website
-aliases: []
-tags: []
+aliases: 
+tags:
+  - project
+  - website
 dg-publish: true
 ---
 
@@ -12,7 +14,7 @@ dg-publish: true
 
 ## Features Need
 
-- [ ] Login Feature
+- [x] Login Feature
 - Students should be able to showcase the projects
 
 @end Features
