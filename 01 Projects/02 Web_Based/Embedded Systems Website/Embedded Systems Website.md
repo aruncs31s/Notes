@@ -4,13 +4,64 @@ aliases:
 tags:
   - project
   - website
+cssclasses:
+  - wide-page
+Status: Active
 dg-publish: true
 ---
 
-# Website
-- [[01 UI]]
+# ES Website
 
-- [[02 Login Feature]]
+
+> [!tldr]- Test
+> what
+
+
+
+>[!SUMMARY]- Table of Contents
+>- [[Embedded Systems Website#ES Website|ES Website]]
+>    - [[Embedded Systems Website#Features Need|Features Need]]
+>    - [[Embedded Systems Website#Structure|Structure]]
+> [!blank|right-small]
+>
+> - [[01 UI]]
+>   - [[01 Projects/02 Web_Based/Embedded Systems Website/Home Page]]
+>   - [[Projects Page]]
+> - [[02 Login Feature]]
+
+```widgets
+type: countdown
+date: 2025-08-9 00:00:00
+to: Complete the Project 🎉
+completedLabel: Project is done 🎉
+```
+
+> [!summary]+ Lauch Workspace
+>
+> ```bash
+> cd ~/Projects/es_website_gcek/ && alacritty -e tmux new-session -A -s  Website
+> ```
+
+> [!multi-column]+ Git
+>
+> > [!Todo]- **Check for Update**
+> >
+> > ```bash
+> > export PROJECT_DIR=~/Projects/es_website_gcek/
+> > cd $PROJECT_DIR && git status
+> > ```
+>
+> > [!important]- **Update**
+> >
+> > - update
+> >
+> > ```bash
+> > export PROJECT_DIR=~/Projects/es_website_gcek/
+> > cd $PROJECT_DIR
+> > git add -A
+> > git commit -m "update"
+> > git push origin main
+> > ```
 
 ## Features Need
 

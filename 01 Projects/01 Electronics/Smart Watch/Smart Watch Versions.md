@@ -257,9 +257,9 @@ nmap  10.42.0.1-255
 
 #### MIC Interfacing
 
-![[Drawing 2024-12-20 22.44.37.excalidraw]]
+![[draw_v1.excalidraw]]
 
-![[Pasted image 20241220232146.png]]
+![[img_single_help.png]]
 
 number of points/samples = **4581**
 

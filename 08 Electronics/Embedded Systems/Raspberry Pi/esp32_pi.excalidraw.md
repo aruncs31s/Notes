@@ -11,7 +11,7 @@ tags: [excalidraw]
 
 ## Text Elements
 ## Embedded Files
-e005f22ce03a2fb573b75f5cb53b0817b397328f: [[Pasted Image 20250323150134_380.png]]
+e005f22ce03a2fb573b75f5cb53b0817b397328f: [[pi4 gpio.png]]
 
 90831a94e5f6c95bf401a8b80eef7f84630ec0a1: [[esp32_pinout.png]]
 

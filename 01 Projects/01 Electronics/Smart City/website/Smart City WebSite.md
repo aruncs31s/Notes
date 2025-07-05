@@ -4,7 +4,7 @@ aliases: []
 tags: []
 ---
 # Smart City Website
-- [[Home Page]]
+- [[01 Projects/01 Electronics/Smart City/website/Home Page]]
 Selecting `Flask` for web development
 
 1. [ ] Can it plot graphs ✅ 2024-10-04

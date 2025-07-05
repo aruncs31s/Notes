@@ -1,43 +1,60 @@
 ---
-id: Node to Node Communication
-aliases: []
-tags: []
-Created: ""
-cssclasses: []
+aliases:
+  - esp now
+tags:
+  - "#project"
+  - electronics
+cssclasses:
+  - wide-page
+Status: Done
 ---
 
 # Node to Node Communication
+>[!SUMMARY]- Table of Contents
+>- [[Node to Node Communication#Node to Node Communication|Node to Node Communication]]
+>                - [[Node to Node Communication#Light Sensor|Light Sensor]]
+>                - [[Node to Node Communication#Wind Direction|Wind Direction]]
+>                - [[Node to Node Communication#Temp and Humidity Sensor|Temp and Humidity Sensor]]
+>        - [[Node to Node Communication#ESP32 Programming|ESP32 Programming]]
+>            - [[Node to Node Communication#Pins Used|Pins Used]]
+>                - [[Node to Node Communication#Single Node Receiver Side|Single Node Receiver Side]]
+>                - [[Node to Node Communication#Single Node Sender Side|Single Node Sender Side]]
+>            - [[Node to Node Communication#Using Meany to One|Using Meany to One]]
+>                - [[Node to Node Communication#Receiver Side|Receiver Side]]
+>                - [[Node to Node Communication#Sender Side|Sender Side]]
+>        - [[Node to Node Communication#Connecting to the Router|Connecting to the Router]]
+>        - [[Node to Node Communication#Dashboard|Dashboard]]
+>            - [[Node to Node Communication#Using LittleFS|Using LittleFS]]
+>    - [[Node to Node Communication#Resources|Resources]]
 
-**Objective** :
+## **Objective** :
 
 > To make all the node to communicate with the gateway(receiver)
 
-**Methodology**:
+## **Methodology**:
 
 > - Going to use [[ESP_NOW]]
 > - There Will Be 5 Nodes
-> - Going to use [[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/ESP32|ESP32]]
+> - Going to use [[08 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32/ESP32|ESP32]]
 
-**Sensors**:
+## **Sensors**
 
-> 1. Light Intensity Sensor `VEML7700`
-> 2. Wind Meter
+### 1. Light Intensity Sensor 
+![[Interfacing#VEML7700 Light Sensor]]
 
-##### Light Sensor
-
-- It Uses `I2C`
-- Sample Programming [[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/programming/Interfacing#Light Intensity Sensor|Light Intensity Sensor]]
-- Supply voltage range VDD: **2.5 V to 3.6 V**
-
-##### Wind Direction
-
+### 2. Wind Direction
 [Source](file:///home/aruncs/Documents/ESP%20Mesh/Weather_Meter_Kit_Datasheet.pdf)
 
 - A voltage must be supplied to each instrument to produce an output.
 
 - we can use interrupt programming for this
 - ==Green== Wind Direction and black
-  ![[wind_station.excalidraw]]
+
+
+![[wind_station.excalidraw|1000x300]]
+
+
+
   Expected Values
 
 ```c
@@ -79,7 +96,7 @@ Obtained Values
 3948
 ```
 
-##### Temp and Humidity Sensor
+### 3. Temp and Humidity Sensor
 
 Name: 7semi SHT40 Humidity and Temperature Sensor Probe I2C
 
@@ -93,7 +110,7 @@ Name: 7semi SHT40 Humidity and Temperature Sensor Probe I2C
 | Yellow                 | SDA          |
 | Green                  | SCL          |
 
-### ESP32 Programming
+## ESP32 Programming
 
 #### Pins Used
 

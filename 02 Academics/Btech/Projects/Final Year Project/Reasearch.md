@@ -17,7 +17,7 @@ firdes.root_raised_cosine(
 )
 ```
 
-![[Pasted image 20250327194048.png]]
+![[rrc_impulse response.png]]
 
 
 ```mermaid

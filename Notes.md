@@ -5,5 +5,5 @@ dg-publish: true
 # Projects
 - [[Embedded Systems Website]]
 ## Coding
-- [[C]]
+- [[03 Coding/01 C/C]]
 	- [[Pointers]]

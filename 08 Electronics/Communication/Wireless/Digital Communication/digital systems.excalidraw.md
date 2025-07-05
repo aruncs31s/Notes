@@ -75,11 +75,11 @@ File
 eg: file.png ^dBeEJ1Wf
 
 ## Embedded Files
-993856708220ad8081357b6f55573c2639b69fee: [[Pasted Image 20250309004820_534.png]]
+993856708220ad8081357b6f55573c2639b69fee: [[gnu_radio_1.png]]
 
-caae9ae79870e1bf8ab2dc09de5cd80419588a8c: [[Pasted Image 20250309004940_935.png]]
+caae9ae79870e1bf8ab2dc09de5cd80419588a8c: [[digital and analog.png]]
 
-2aafee6e5aad881014cb4a642bc5828be32717f0: [[Pasted Image 20250309011533_295.png]]
+2aafee6e5aad881014cb4a642bc5828be32717f0: [[real and complex mixer.png]]
 
 %%
 ## Drawing

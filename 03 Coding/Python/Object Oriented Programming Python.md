@@ -8,7 +8,7 @@ dg-publish: true
 *This will be entirely focused on object oriented python.*
 
 >[!info]- What is Object Oriented Programming?
->In treats real-world entities as objects and groups related data and functionality together. In traditional programming languages like [[C]] the data and functions are seperate and treated differently but in OOP they are grouped together as objects. 
+>In treats real-world entities as objects and groups related data and functionality together. In traditional programming languages like [[03 Coding/01 C/C]] the data and functions are seperate and treated differently but in OOP they are grouped together as objects. 
 
 >[!info]- Why Object Oriented Programming?
 >In my personal opinion when dealing with real world entities or *things* in general oop makes so much sense. Consider the following 

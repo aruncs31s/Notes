@@ -11,8 +11,8 @@
 > - One thing that the strong Nuclear force experienced by protons and nutrons so the `strong nuclear force` will exceed force experienced due to the charges(electric force)
 
 
-- [ ] Laws of motion
-- [ ] Principle of relativity
+- [x] Laws of motion ✅2025-07-04/03:36 
+- [x] Principle of relativity ✅2025-07-04/03:36 
 - [ ] Tenzer
 - [ ] 
 The vector itself is independant of which co-ordinate system we use.

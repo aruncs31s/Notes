@@ -1,3 +1,3 @@
 
-![[Pasted image 20241212071348.png]]
+![[8051 pinout.png]]
 ![[Raspberry Pi 2 B#GPIO]]

@@ -9,6 +9,8 @@ cssclasses:
 ---
 
 # # Session Cookie Authentication
+- [[With Database]]
+
  > - Used to authenticate users across multiple requests
  > - For maintaining state in web applications
 

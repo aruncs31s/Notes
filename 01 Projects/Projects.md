@@ -3,17 +3,19 @@ id: Projects
 aliases: []
 tags:
   - exclude
-banner: 01 Projects/Common/banner.jpg
+banner: "01 Projects/Common/banner.jpg"
 cssclasses:
   - wide-page
 ---
 
 # Projects
-```dataview
-TABLE file.outlinks as "Module" , file.mtime as "Last Modified"
-from #project
-```
 
+> [!summary]- _All Projects_
+>
+> ```dataview
+> TABLE file.outlinks as "Module" , file.mtime as "Last Modified"
+> from #project
+> ```
 
 This Contains all the projects related to **[[Electronics]] , [[Web]], [[AI and ML]] , [[Robotics]]** .
 The `dir` structure

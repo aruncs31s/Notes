@@ -1,5 +1,9 @@
-```c
+---
+cssclasses:
+  - wide-page
+---
 
+```c
 WiFiServer server(80);
 
 String header;
@@ -11,9 +15,9 @@ const long timeoutTime = 2000;
 server.begin();
 // Inside the loop()
 
- WiFiClient client = server.available();
-  Serial.println("IP address: ");
-  Serial.println(WiFi.localIP());
+WiFiClient client = server.available();
+Serial.println("IP address: ");
+Serial.println(WiFi.localIP());
 
 
 if (client) {
@@ -78,7 +82,4 @@ if (client) {
     Serial.println("");
   }
   delay(1000);
-
 ```
-
-`c`

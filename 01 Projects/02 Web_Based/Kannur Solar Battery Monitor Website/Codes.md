@@ -1,0 +1,2 @@
+- [[01 Projects/02 Web_Based/Kannur Solar Battery Monitor Website/website/Device Page]]
+- [[01 Projects/02 Web_Based/Kannur Solar Battery Monitor Website/website/Home Page]]
