@@ -35,4 +35,12 @@ It this we should need the following `API's
 > 
 > ```
 
+@requires 
+```json
+{
+"name": "",
+"email": "",
+"password": ""
+}
+```
 
