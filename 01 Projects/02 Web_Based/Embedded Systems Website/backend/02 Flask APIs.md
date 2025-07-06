@@ -10,20 +10,6 @@ tags:
 
 # Flask APIs
 
-> [!blank|right-small]+ Table of Contents
->
-> - [[02 Flask APIs#Logins|Logins]]
-> - [[02 Flask APIs#Session|Session]]
->   - [[02 Flask APIs#Implementation|Implementation]]
-> - [[02 Flask APIs#Picture upload|Picture upload]]
-
-It this we should need the following `API's
-
-1. `/api/register` - To register new users
-2. `/api/login` - To login users
-3. `/api/logout` - To logout users
-4. `/api/user` - To get user details
-5. `/api/upload-picture` - To upload profile picture
 
 > [!tip]- ##### _api:_ `/api/login`
 >
@@ -146,44 +132,3 @@ It this we should need the following `API's
 > > > }
 > > > ```
 
-## Logins
-
-@requires
-
-```json
-{
-  "name": "",
-  "email": "",
-  "password": ""
-}
-```
-
-> ☑ few things to consider
->
-> 1. `Content-Type: application/json`
-> 2. `Set-Cookie: session=eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIn0.aGr_AA.YPS7NYQnu1Iwb3x-zSAoGv_4SbA; HttpOnly; Path=/`
-> 3. `{ "message": "Login successful!", "status": "success" }`
-
-## Session
-
-Session is required to keep the user logged in after login.
-
-### Implementation
-
-```python
-from flask import session
-
-@app.route("/api/login")
-def login():
-    session["email"] = user.email
-```
-
-> **Checking**
->
-> ```python
-> user = User.query.filter_by(email=session["email"]).first()
-> ```
-
-It seems the session is working
-
-## Picture upload
