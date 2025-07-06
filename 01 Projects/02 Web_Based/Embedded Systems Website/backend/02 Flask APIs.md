@@ -9,12 +9,13 @@ tags:
 ---
 
 # Flask APIs
->[!blank|right-small]+ Table of Contents
->    - [[02 Flask APIs#Logins|Logins]]
->    - [[02 Flask APIs#Session|Session]]
->        - [[02 Flask APIs#Implementation|Implementation]]
->    - [[02 Flask APIs#Picture upload|Picture upload]]
 
+> [!blank|right-small]+ Table of Contents
+>
+> - [[02 Flask APIs#Logins|Logins]]
+> - [[02 Flask APIs#Session|Session]]
+>   - [[02 Flask APIs#Implementation|Implementation]]
+> - [[02 Flask APIs#Picture upload|Picture upload]]
 
 It this we should need the following `API's
 
@@ -125,7 +126,6 @@ It seems the session is working
 
 ## Picture upload
 
-
 > [!abstract]+ _api:_ `/upload_profile_pic`
 >
 > ```python
@@ -169,26 +169,21 @@ It seems the session is working
 >     )
 >
 > ```
-
-
-> [!check]+ **Test `/upload_profile_pic`**
-> ```bash
->  curl -X POST http://localhost:5000/upload_profile_pic \
->   -F "profile_pic=@test.png" \
->   --cookie "session=eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIn0.aGr_AA.YPS7NYQnu1Iwb3x-zSAoGv_4SbA"
-> ```
-> >[!success]+ **`response`**
-> >```json
->>{
->>"message": "Profile picture updated",
->>"profile_pic_url": "http://localhost:5000/uploads/2_test.png",
->>"status": "success"
->>}
->>```
-
-
-
-
-
-
-
+>
+> > [!check]+ **Test `/upload_profile_pic`**
+> >
+> > ```bash
+> >  curl -X POST http://localhost:5000/upload_profile_pic \
+> >   -F "profile_pic=@test.png" \
+> >   --cookie "session=eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIn0.aGr_AA.YPS7NYQnu1Iwb3x-zSAoGv_4SbA"
+> > ```
+> >
+> > > [!success]+ **`response`**
+> > >
+> > > ```json
+> > > {
+> > >   "message": "Profile picture updated",
+> > >   "profile_pic_url": "http://localhost:5000/uploads/2_test.png",
+> > >   "status": "success"
+> > > }
+> > > ```
