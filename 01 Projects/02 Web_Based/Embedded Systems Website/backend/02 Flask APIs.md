@@ -68,9 +68,11 @@ from flask import session
 @app.route("/api/login")
 def login():
     session["email"] = user.email
-
-
 ```
+> **Checking**
+> ```python
+> user = User.query.filter_by(email=session["email"]).first()
+>```
 
 
 > [!abstract]- root `/`
