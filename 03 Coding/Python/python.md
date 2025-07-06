@@ -9,6 +9,9 @@ tags: []
 - [[datetime]]
 - [[pySDR]]
 - [[Json handling]]
+
+## Frameworks
+- [[Flask]]
 ️
 ## Modules
 
@@ -18,6 +21,7 @@ tags: []
 - [[Pyaudio]]
 - [[Python Regex]]
 - [[Manim]]
+
 ## Custom Libs
 ```dataview 
 TABLE file.link as "File", file.name as "Name"

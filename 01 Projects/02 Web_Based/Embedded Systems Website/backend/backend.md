@@ -3,8 +3,11 @@ id: backend
 aliases: []
 tags: []
 ---
-
+- [[Flask Backend]]
+- Using [[Web3 Based Backend]]   👎
+- using [[pennybase]] 👎
 ## code-id-0
+
 
 ```js
 const cors = require("cors");
@@ -92,3 +95,32 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 ```
+
+## Integrating with Database 
+database (e.g., MongoDB, PostgreSQL, MySQL, SQLite) with a users collection or table,
+  ==where each row/document represents a single user.==
+
+  When a user signs in with Google, you would:
+   1. Check for existing user: Query your users table/collection using their
+      Google ID (sub from the payload) or email address.
+   2. Create new user (if not exists): If no user is found, create a new record
+      for them, storing their Google ID, name, email, picture, and any other
+      relevant information.
+   3. Update existing user (if exists): If the user already exists, you might
+      update their last login time or any other profile information that Google
+      provides and you want to keep in sync.
+
+  To help you with this, could you tell me which database technology you'd
+  prefer to use? Some common choices for Node.js applications include:
+
+
+   * MongoDB: A NoSQL document database, often used with Mongoose ODM.
+   * PostgreSQL/MySQL: Relational databases, often used with ORMs like Sequelize
+     or Prisma, or a direct client like pg for PostgreSQL.
+   * SQLite: A file-based relational database, good for simpler applications or
+     local development, used with sqlite3.
+
+
+  Once you choose, I can provide a more detailed plan and code examples.
+
+

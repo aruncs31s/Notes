@@ -22,7 +22,7 @@ def get_data():
         return jsonify({"status": "error", "message": "Device ID is required"}), 400
     current_node_ip = esp_devices.get_ip_of_the_node(current_node)
     if current_node_ip is None:
-        return jsonify({"status": "error", "message": "Device not found"}), 404
+        return jsonify({"status": "error", "message": "Device not found"}), 404t
     date_now = datetime.today().date()
     raw_data = db.get_data(current_node_ip,date=date_now)
     data = [

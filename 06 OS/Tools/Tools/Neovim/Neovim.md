@@ -122,3 +122,14 @@ q:
 ```
 
 this will bring up the previously executed commands
+
+
+
+
+### Shell Commands
+In one of my projects , when i was running a python script the output of a `print()` was not showing
+i was running ![[Flask#^14bd6e]] and this ![[curl POST examples#^00546a]]
+![[Pasted image 20250707015515.png]]
+But if i run in the terminal 
+![[Pasted image 20250707015557.png]]
+
