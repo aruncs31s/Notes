@@ -112,6 +112,52 @@ api: /upload_profile_pic
 
 
 
+> [!abstract]+ *api* `/upload_profile_pic`
+> ```python
+> 
+> @app.route("/upload_profile_pic", methods=["POST"])
+> def upload_profile_pic():
+>     if "email" not in session:
+>         return jsonify({"status": "error", "message": "Unauthorized"}), 401
+> 
+>     user = User.query.filter_by(email=session["email"]).first()
+>     if not user:
+>         return jsonify({"status": "error", "message": "User not found"}), 404
+> 
+>     file = request.files.get("profile_pic")
+>     if not file or file.filename == "":
+>         return jsonify({"status": "error", "message": "No file uploaded"}), 400
+>     if not allowed_file(file.filename):
+>         return jsonify({"status": "error", "message": "Invalid file type"}), 400
+> 
+>     # Save file
+>     filename = secure_filename(file.filename)
+>     new_filename = f"{user.id}_{filename}"
+>     filepath = os.path.join(app.config["UPLOAD_FOLDER"], new_filename)
+>     file.save(filepath)
+> 
+>     # Optional: delete old pic file if needed (not required)
+>     user.profile_pic = new_filename
+>     db.session.commit()
+> 
+>     return (
+>         jsonify(
+>             {
+>                 "status": "success",
+>                 "message": "Profile picture updated",
+>                 "profile_pic_url": url_for(
+>                     "uploaded_file", filename=new_filename, _external=True
+>                 ),
+>             }
+>         ),
+>         200,
+>     )
+> 
+> ```
+> 
+
+
+
 
 ```
  curl -X POST http://localhost:5000/upload_profile_pic \
