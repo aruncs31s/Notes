@@ -125,9 +125,6 @@ It seems the session is working
 
 ## Picture upload
 
-```
-api: /upload_profile_pic
-```
 
 > [!abstract]+ _api:_ `/upload_profile_pic`
 >
@@ -173,11 +170,21 @@ api: /upload_profile_pic
 >
 > ```
 
-```
- curl -X POST http://localhost:5000/upload_profile_pic \
-  -F "profile_pic=@test.png" \
-  --cookie "session=eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIn0.aGr_AA.YPS7NYQnu1Iwb3x-zSAoGv_4SbA"
 
+> [!check]+ **Test upload**
+> ```bash
+>  curl -X POST http://localhost:5000/upload_profile_pic \
+>   -F "profile_pic=@test.png" \
+>   --cookie "session=eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIn0.aGr_AA.YPS7NYQnu1Iwb3x-zSAoGv_4SbA"
+> ```
+> 
+
+
+
+
+
+
+```json
 {
   "message": "Profile picture updated",
   "profile_pic_url": "http://localhost:5000/uploads/2_test.png",
