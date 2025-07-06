@@ -16,3 +16,23 @@ It this we should need the following `API's
 
 
 ## Logins
+
+> [!tip]- ##### `/api/login` 
+> ```python
+> 
+> @app.route("/login", methods=["POST"])
+> def login():
+>     data = request.get_json()
+>     email = data.get("email")
+>     password = data.get("password")
+>     user = User.query.filter_by(email=email).first()
+> 
+>     if not user or not check_password_hash(user.password, password):
+>         print("Invalid email or password.")
+>         return jsonify({"status": "error", "message": "Invalid credentials"}), 401
+>     session["email"] = user.email
+>     return jsonify({"status": "success", "message": "Login successful!"}), 200
+> 
+> ```
+
+
