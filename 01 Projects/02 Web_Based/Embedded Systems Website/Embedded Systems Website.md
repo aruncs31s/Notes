@@ -4,6 +4,7 @@ aliases:
 tags:
   - project
   - website
+  - es_website
 cssclasses:
   - wide-page
 Status: Active

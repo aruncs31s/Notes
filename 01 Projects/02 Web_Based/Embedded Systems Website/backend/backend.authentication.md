@@ -1,7 +1,8 @@
 ---
 dg-publish: true
+tags:
+  - es_website
 ---
-
 ## Steps
 >[!important|right]
 >- [[es_gece_website_backend.code]]

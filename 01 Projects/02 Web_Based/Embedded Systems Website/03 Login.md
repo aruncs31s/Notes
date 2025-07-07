@@ -1,6 +1,8 @@
 ---
 aliases: 
-Date: "30-06-2025"
+Date: 30-06-2025
+tags:
+  - es_website
 ---
 # 03 Login
 >[!blank|right]

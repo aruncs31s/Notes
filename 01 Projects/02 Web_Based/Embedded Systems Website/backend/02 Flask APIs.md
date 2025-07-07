@@ -3,9 +3,9 @@ id: 02 Flask APIs
 aliases:
   - es backend flask api
 tags:
-  -  #python
   - api
   - flask
+  - es_website
 ---
 
 # Flask APIs
