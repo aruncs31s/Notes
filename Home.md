@@ -7,11 +7,6 @@ cssclasses:
   - wide-page
 ---
 # HOME
-```widgets
-type: counter
-text: Push-ups
-id: push-ups
-```
 
 
 
