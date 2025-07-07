@@ -3,6 +3,7 @@ id: Home Page
 aliases: 
 tags:
   - es_website
+  - frontend
 ---
 
 # Home Page

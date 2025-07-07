@@ -1,7 +1,9 @@
 ---
 id: backend
-aliases: []
-tags: []
+aliases: 
+tags:
+  - es_website
+  - backend
 ---
 - [[Flask Backend]]
 - Using [[Web3 Based Backend]]   👎

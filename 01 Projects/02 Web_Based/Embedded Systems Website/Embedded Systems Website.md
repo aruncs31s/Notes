@@ -5,6 +5,7 @@ tags:
   - project
   - website
   - es_website
+  - "#main_page"
 cssclasses:
   - wide-page
 Status: Active
