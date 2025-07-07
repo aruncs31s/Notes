@@ -1,0 +1,4 @@
+---
+aliases:
+  - Logic Circuit Design
+---
