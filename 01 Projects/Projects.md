@@ -10,6 +10,7 @@ cssclasses:
 
 # Projects
 
+
 > [!summary]- _All Projects_
 >
 > ```dataview
