@@ -12,7 +12,7 @@ cssclasses:
 
 ```widgets
 type: quote 
-quote: "When you stare into the abyss, the abyss stares back at you."
+quote: When you stare into the abyss, the abyss stares back at you.
 ```
 
 
