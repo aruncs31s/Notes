@@ -35,7 +35,7 @@ dg-publish: true
 type: countdown
 date: 2025-08-9 00:00:00
 to: Complete the Project 🎉
-completedLabel: Project is done 🎉
+completedLabel:  🎉
 ```
 
 > [!summary]+ Lauch Workspace
