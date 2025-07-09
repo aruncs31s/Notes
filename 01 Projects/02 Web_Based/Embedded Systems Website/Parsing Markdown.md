@@ -33,4 +33,7 @@ age: "25"          # Error: must be number
 ```ts
 title: z.string(),
 description: z.string(),
+main: z.object({})
+tabs: z.array(z.object({}))
+descriptionList: z.array(z.object({}))
 ```
