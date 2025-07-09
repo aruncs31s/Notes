@@ -40,6 +40,13 @@ The Gain of OP-AMP is denoted by "A":
 $$
 A = {V_o \over (V_1 - V_2 )}
 $$
+$$
+V_o = A \times (V_1 - V_2) 
+$$
+$$
+V_o =  V_1 - V_2
+$$
+
 
 Where
 _$V_1$_ => Input voltage at _non-inverting_ input
