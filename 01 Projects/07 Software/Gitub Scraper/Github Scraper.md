@@ -20,8 +20,15 @@ sequenceDiagram
 
 	User->>Github: Create/Update Pushes a commit 
 	Github-->>Github: check if there is version increment
-	Github->>Scraper: SEND INITIATE Request 
-	Scraper-->>Github: Update Project Info
+	Github-->>Scraper: SEND INITIATE Request 
+	Scraper-->>Github: Scrape README.md
+	Scraper-->>Scraper: convert to required format. 
+	Scraper-->>Github: download attachements
+	Scraper-->>FrontEnd Server: Initiate Update
+	FrontEnd Server-->>FrontEnd Server: create backup of the current state
+	FrontEnd Server-->> Scraper: SEND INITIATE 
+	Scraper-->>FrontEnd Server: send the updated data
+	FrontEnd Server-->>FrontEnd Server: Update the site. 
 ```
 
 
