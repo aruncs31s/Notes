@@ -34,8 +34,8 @@ dg-publish: true
 ```widgets
 type: countdown
 date: 2025-08-9 00:00:00
-to: Complete the Project 🎉
-completedLabel:  🎉
+to: プロジェクトを完了する 🎉
+completedLabel: プロジェクトを完了する 🎉
 ```
 
 > [!summary]+ Lauch Workspace
