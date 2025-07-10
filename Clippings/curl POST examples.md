@@ -45,7 +45,7 @@ curl POST examples
 ## POST
 
 When sending data via a POST or PUT request, two common formats (specified via the `Content-Type` header) are:
-
+(mimetype)
 - `application/json`
 - `application/x-www-form-urlencoded`
 
