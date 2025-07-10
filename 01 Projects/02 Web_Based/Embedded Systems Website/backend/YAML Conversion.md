@@ -64,6 +64,8 @@ blueprints:
   second: "@/images/blueprint-2.avif"   
 ```
 
+![[Recording 20250710223947.m4a]]
+
 ## The README.md Format 
 <iframe src="https://raw.githubusercontent.com/aruncs31s/es_gcek_electronics_projects_template/refs/heads/main/README.md" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
