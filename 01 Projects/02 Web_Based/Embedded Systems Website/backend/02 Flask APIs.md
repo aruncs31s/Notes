@@ -16,7 +16,7 @@ tags:
 >- [x] `/api/upload_profile_pic` ✅ 2025-07-10
 >- [x] `/api/logout` ✅ 2025-07-10
 
-
+## Authentication
 > [!tip]- ##### _api:_ `/api/login`
 >
 > ```python
@@ -80,7 +80,7 @@ tags:
 >
 > ```python
 >
-> @app.route("/upload_profile_pic", methods=["POST"])
+> @app.route("/api/upload_profile_pic", methods=["POST"])
 > def upload_profile_pic():
 >     if "email" not in session:
 >         return jsonify({"status": "error", "message": "Unauthorized"}), 401
@@ -173,4 +173,7 @@ tags:
 >>>}
 >>>```
 
+
+
+## Content Upload
 
