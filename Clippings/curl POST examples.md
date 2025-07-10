@@ -112,21 +112,10 @@ curl -d "@data.json" -X POST http://localhost:3000/data
 
 ```
 {
-        
-        
-          
-
-            "key1":"value1",
-        
-        
-          
-
-            "key2":"value2"
-        
-        
-          
-
-          }
+	"Content-Type": "application/json",
+	"key1":"value1",
+	"key2":"value2"
+}
 ```
 
 ```
@@ -136,8 +125,6 @@ param1=value1&param2=value2
 ```
 {
         
-        
-          
 
             "name": "postdemo",
         
