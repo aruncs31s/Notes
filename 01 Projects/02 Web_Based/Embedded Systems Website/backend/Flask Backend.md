@@ -9,5 +9,5 @@ tags:
 >- [[02 Flask APIs]]
 
 The flask backend should do the followings
-- [ ] Manage authentication 
+- [x] Manage authentication ✅ 2025-07-10
 - [ ] 
