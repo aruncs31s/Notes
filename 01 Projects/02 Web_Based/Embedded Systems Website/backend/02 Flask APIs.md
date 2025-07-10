@@ -133,3 +133,32 @@ tags:
 > > > }
 > > > ```
 
+> [!abstract]- ##### ***api:*** `/register`
+> ```python
+> @app.route("/register", methods=["POST"])
+> def register():
+>     data = request.get_json()
+>     name = data.get("name")
+>     email = data.get("email")
+>     password = data.get("password")
+>     if not name or not email or not password:
+>         return jsonify({"status": "error", "message": "All fields are required"}), 400
+>     if email:
+>         existing_user = User.query.filter_by(email=email).first()
+>     if existing_user:
+>         return jsonify({"status": "error", "message": "Email already registered"}), 400
+>     hashed_password = generate_password_hash(password)
+>     new_user = User(name=name, email=email, password=hashed_password)
+>     try:
+>         db.session.add(new_user)
+>         db.session.commit()
+>     except Exception as e:
+>         db.session.rollback()
+>         return jsonify({"status": "error", "message": str(e)}), 500
+>     return jsonify({"status": "success", "message": "User registered successfully"}), 201
+> ```
+> > [!check]+ Test `/register`
+> > ![[curl POST examples#^00546a]]
+> > 
+
+

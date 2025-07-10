@@ -99,7 +99,7 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 ```
 
 ```bash
-curl -X POST  http://127.0.0.1:5000/register \
+curl -vX POST  http://127.0.0.1:5000/register \
 -H "Content-Type: application/json" \
 -d '{"name": "aruncs", "password": "simplepass", "email": "test@gmail.com"}' 
 
