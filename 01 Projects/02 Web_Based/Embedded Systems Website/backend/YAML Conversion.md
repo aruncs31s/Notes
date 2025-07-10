@@ -65,9 +65,10 @@ blueprints:
 ```
 
 ## The README.md Format 
-```markdown
+insert google as iframe 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.987449174328!2d-122.41941568468111!3d37.77492977975959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c8e8c8c8c%3A0x8c8c8c8c8c8c8c8c!2sSan%20Francisco%2C%20CA%2094105%2C%20USA!5e0!3m2!1sen!2sin!4v1633079161234" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-```
+
 
 Core Idea:
 
