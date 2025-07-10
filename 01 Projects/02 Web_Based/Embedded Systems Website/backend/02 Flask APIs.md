@@ -198,15 +198,51 @@ fetchData();
 #### Using Curl 
 ```bash
 url="http://localhost:5000"
-
-curl -X POST "$url/api/register" \
+curl -X POST "$url/api/login" \
   -H "Content-Type: application/json" \
   -d '{
-    "name": "Test User",
-    "email": "testuser@example.com",
-    "password": "password123"
+  "email": "aruncs31ss@proton.me",
+  "password": "pass1234"
+}'
+```
+
+> [!success]- *response*
+> ```json
+> {
+>   "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiZXhwIjoxNzUyMTQ5MDc4fQ.ogaKYkui9gCqr69uCSonri4i6hmbxXT0bDw__HyjQTI",
+>   "message": "Login successful!",
+>   "status": "success"
+> }
+> ```
+
+
+### Register
+
+#### Using Curl 
+
+```bash
+url="http://localhost:5000"
+curl -vvX POST "$url/api/register" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Arun CS",
+    "email": "aruncs31ss@proton.me",
+    "password": "pass1234"
 }'
 
 ```
+
+
+> [!success]- *response*
+> ```json
+> {
+>   "message": "User registered successfully",
+>   "status": "success"
+> }
+> ```
+
+
+
+
 ## Content Upload
 
