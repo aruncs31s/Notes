@@ -181,3 +181,7 @@ print(a_3D_list[0][0][2])
 
 #### `.split()`
 
+```python
+major, minor, patch = chardet_version.split(".")[:3]
+```
+
