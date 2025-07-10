@@ -140,7 +140,7 @@ tags:
 
 > [!abstract]- ##### ***api:*** `/register`
 > ```python
-> @app.route("/register", methods=["POST"])
+> @app.route("/api/register", methods=["POST"])
 > def register():
 >     data = request.get_json()
 >     name = data.get("name")
@@ -162,7 +162,7 @@ tags:
 >         return jsonify({"status": "error", "message": str(e)}), 500
 >     return jsonify({"status": "success", "message": "User registered successfully"}), 201
 > ```
-> > [!check]+ Test `/register`
+> > [!check]+ Test `/api/register`
 > > ![[curl POST examples#^00546a]]
 > >
 > > >[!success]- `response`
