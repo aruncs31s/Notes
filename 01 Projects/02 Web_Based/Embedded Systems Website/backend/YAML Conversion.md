@@ -7,6 +7,13 @@ tags:
 # YAML Conversion
 So the initial idea is to conver a standard readme into a YAML frontmatter format that can be used in a static site component in our [[Embedded Systems Website]] 
 
+## Required Format
+```yaml
+
+```
+
+
+
 Core Idea:
 
 Read the README.md file content.
