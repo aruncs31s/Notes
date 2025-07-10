@@ -174,7 +174,39 @@ tags:
 >>>```
 
 
-### ##
+### Login
 
+#### Using Node 
+
+```js
+async function fetchData() {
+    const url = 'http://localhost:5000';
+    const response = await fetch(url + '/api/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email: 'testuser@example.com', password: 'password123' }),
+    });
+    const data = await response.json();
+    console.log(data);
+}
+
+fetchData();
+```
+
+#### Using Curl 
+```bash
+url="http://localhost:5000"
+
+curl -X POST "$url/api/register" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Test User",
+    "email": "testuser@example.com",
+    "password": "password123"
+}'
+
+```
 ## Content Upload
 
