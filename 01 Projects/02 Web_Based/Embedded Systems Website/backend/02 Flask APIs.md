@@ -10,13 +10,14 @@ tags:
 ---
 
 # Flask APIs
-
+>[!default|right]
+- [ ] ``
 
 > [!tip]- ##### _api:_ `/api/login`
 >
 > ```python
 >
-> @app.route("/login", methods=["POST"])
+> @app.route("/api/login", methods=["POST"])
 > def login():
 >     data = request.get_json()
 >     email = data.get("email")
@@ -159,6 +160,13 @@ tags:
 > ```
 > > [!check]+ Test `/register`
 > > ![[curl POST examples#^00546a]]
-> > 
+> >
+> > >[!success]- `response`
+> > >```json
+> > >{
+  "message": "User registered successfully",
+  "status": "success"
+>>>}
+>>>```
 
 
