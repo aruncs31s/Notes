@@ -5,8 +5,7 @@ tags:
   - idea_1
 ---
 # YAML Conversion
-
-
+So the initial idea is to conver a standard readme into a YAML frontmatter format that can be used in a static site component in our [[Embedded Systems Website]] 
 
 Core Idea:
 
