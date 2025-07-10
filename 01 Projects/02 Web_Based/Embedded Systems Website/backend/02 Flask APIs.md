@@ -10,8 +10,12 @@ tags:
 ---
 
 # Flask APIs
->[!default|right]
-- [ ] ``
+>[!blank]
+>- [x] `/api/login` ✅ 2025-07-10
+>- [x] `/api/regster` ✅ 2025-07-10
+>- [x] `/api/upload_profile_pic` ✅ 2025-07-10
+>- [x] `/api/logout` ✅ 2025-07-10
+
 
 > [!tip]- ##### _api:_ `/api/login`
 >
