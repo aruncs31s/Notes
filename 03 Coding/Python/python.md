@@ -9,7 +9,7 @@ tags: []
 - [[datetime]]
 - [[pySDR]]
 - [[Json handling]]
-
+- [[requests]]
 ## Frameworks
 - [[Flask]]
 ️
@@ -177,3 +177,7 @@ print(a_3D_list[0][0][2])
   - ==i== = index of outer most list
   - ==j== = index of the column of the selected list
   - ==k== = index
+
+
+#### `.split()`
+
