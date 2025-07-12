@@ -40,4 +40,4 @@ project_type: <% tp.system.suggester(["electronics", "linux", "web", "ai/ml", "o
 
 ## Tasks
 
-- [[Git]]
+- [[06 OS/Tools/Tools/Git/Git]]

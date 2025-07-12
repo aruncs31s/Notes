@@ -6,7 +6,7 @@
 2. [[06 OS/Tools/Tools/tmux]]: terminal multiplexer
 
 3. [[Fzf]]: fuzzy finder(wrote few small scripts using fzf for better workflow)
-4. [[Git]] 
+4. [[06 OS/Tools/Tools/Git/Git]] 
 5. [[Weechat]]
 6. [[Neovim]]
 
