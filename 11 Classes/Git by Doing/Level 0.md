@@ -16,7 +16,6 @@ type: Automated
 ```dataview
 Table without ID  file.name as "Name" , github as Link , status as Status, file.inlinks as Mentioned
 where file = this.file
-
 ```
 
 - [x] `.git folder` ✅ 2025-07-13
@@ -24,7 +23,7 @@ where file = this.file
 
 Task: Getting a gthub repository the right way
 
-> [!IMPORTANT]
+> [!IMPORTANT]- Task Completion
 > You need to get this github repository in you computer and run the following
 >
 > ```bash
@@ -38,7 +37,7 @@ Task: Getting a gthub repository the right way
 > READ the webpage again
 > ```
 
-## Hint:
+###### Hint:
 
 - You can 'download', 'clone' the repo.
   To use clone type this in your cmd/terminal
