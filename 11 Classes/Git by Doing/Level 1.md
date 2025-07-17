@@ -8,7 +8,10 @@ Status: Done
 dg-publish: true
 ---
 # Level 1
-
+```dataview
+Table without ID  file.name as "Name" , github as Link , status as Status, file.outlinks as Mentioned
+where file = this.file
+```
 Task: Understanding what is git?
 
 > [!IMPORTANT]

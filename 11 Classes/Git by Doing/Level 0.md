@@ -10,7 +10,7 @@ dg-publish: true
 # Level 0 
 
 ```dataview
-Table without ID  file.name as "Name" , github as Link , status as Status, file.outlinks as Next
+Table without ID  file.name as "Name" , github as Link , status as Status, file.inlinks as Mentioned
 where file = this.file
 
 ```
