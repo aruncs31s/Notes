@@ -1,9 +1,17 @@
-# Git
+---
+dg-publish: true
 ---
 
+# Git
+---
+## Assumptions
+1. You are watching this on a laptop 
+2. You have either windows or linux
+3. You have no idea about git 
+---
 ## What is Git?
-- Tool[^1] ? 
-- FrameWork[^2]?
+- Tool?
+- FrameWork?
 
 ---
 ### Tools

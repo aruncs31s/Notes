@@ -74,3 +74,9 @@ This decorator will protect your API routes, ensuring that a valid token is pres
 Client-side handling:
 Your Astro frontend will need to store this token (e.g., in localStorage) and include it in the Authorization header for subsequent API requests.
 ## README.md -> frontmatter-rich
+
+
+## Login 
+
+Src/stores/auth. Ts  rm this 
+

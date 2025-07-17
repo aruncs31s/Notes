@@ -47,3 +47,6 @@ cd alice-s-game
 ls 
 ```
 
+
+
+https://f-droid.org/en/packages/com.termux/

@@ -21,6 +21,7 @@ cssclasses:
   - [[#Dropping Commits]]
 
 - [[Advanced]]
+- [[Git diff]]
   - [[#Merge Conflict]]
   - [[#Advanced]]
   - [[#aliasing]]
