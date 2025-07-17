@@ -54,7 +54,9 @@ git clone https://github.com/aruncs31s/level_0
 
 - If you download code from GitHub, remember the word download, it does not downloads the `.git` folder
 
-## Summary
+###
+
+### Summary
 
 - Repo: Repo Means a kind of folder, but it will have the .git folder.
 - Repo short for Repository
