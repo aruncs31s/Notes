@@ -7,6 +7,7 @@ tags:
   - sub_module
 github: https://github.com/aruncs31s/git_by_doing_level_4
 Status: Done
+dg-publish: true
 ---
 
 # Level 4
