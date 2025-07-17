@@ -18,12 +18,11 @@ sort file.name asc
 
 ---
 
-> [!Success]- Introduce Commands
->
-> - [x] `git add` ✅ 2025-07-14 in [[level 1]]
-> - [x] What is git ✅ 2025-07-13
-> - [x] `git commit` ✅ 2025-07-18
->       **Objectives**
+
+| Gi  |     |
+| --- | --- |
+|     |     |
+
 
 1. Introducing Git
 
