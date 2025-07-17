@@ -46,6 +46,20 @@ How this is planned: The difficulty will increase from task to task by end of th
 
 What is Git?
 
+There are mainly 2 types version control systems[^1]
+
+1.  Centralized Version Control Systems (CVCS)
+2.  Distributed Version Control Systems (DVCS)
+
+> [!summary]- Centralized Version Control System
+> In CVCS , it "have a single server that contains all the versioned files, and a number of clients that check out files from that central place"
+> Its like you google drive , where one file is accessed by meny people but , the file stays in the server and shared by everyone through the internet
+> ![](https://git-scm.com/book/en/v2/images/centralized.png)
+
+> [!summary]+ Distributed Version Control System
+> In this every client , fully mirror the entire source files to their computer allong with the version history and all the snapshots[^2]
+> ![](https://git-scm.com/book/en/v2/images/distributed.png)
+
 > [!NOTE]- Non Technical
 > Git was created by ["Linus Torvalds"](https://github.com/torvalds), for maintaining his projects. He is also the creater of linux.
 > Maintaining ? Firt thing do not take the word "maintaining" in literal sense, maintaining means updating and patching[^1] etc.
@@ -63,25 +77,12 @@ What is Git?
 > 5.  Maintining support for older devices
 >     There are many other reasons
 
-> [!abstract]+ Technical
-> There are mainly 2 types version control systems[^1]
->
-> 1. Centralized Version Control Systems (CVCS)
-> 2. Distributed Version Control Systems (DVCS)
->
->    > [!summary]- Centralized Version Control System
->    > In CVCS , it "have a single server that contains all the versioned files, and a number of clients that check out files from that central place"
->    > Its like you google drive , where one file is accessed by meny people but , the file stays in the server and shared by everyone through the internet
->    > ![](https://git-scm.com/book/en/v2/images/centralized.png)
->
->    > [!summary]+ Distributed Version Control System
->    > In this every client , fully mirror the entire source files to their computer allong with the version history and all the snapshots[^2]
->    > ![](https://git-scm.com/book/en/v2/images/distributed.png)
-
 > [!summary]+ Summary: Git
 > Git is a distribute version control system created by "Linus Torvalds"
 
 [^1]: Version Control System: It is a tool that helps track changes in source code over time.
+
+[^2]:
 
 ## References
 
