@@ -8,7 +8,7 @@ startTime: Sat Jul 12 09:51:16 PM IST 2025
 
 # Git Learn By Doing
 
-It is planed to teach git in 100 Levels. Starting from clone to fully mastering git.
+It is planed to teach git in 100(guessing) Levels. Starting from clone to fully mastering git.
 
 ```dataview
 Table  file.ctime as "Created" , file.mtime as "Modified" , type as "Type",status as "Status"
@@ -91,6 +91,19 @@ Git is an example of **DVCS**, because of this , if one copy of your project fil
 [^2]: Snapshots are complete copies of a project at a specific moment in time.
 
 ## Obtaining Git Repocitory
+
+- [ ] Explain what is repocitory
+- [ ] how to upload a folder to github.
+
+## Basics
+
+### Adding Files
+
+### Checking commit history
+
+### Git Branching
+
+## Using effectively in a Project
 
 ## References
 
