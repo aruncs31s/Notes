@@ -6,12 +6,7 @@ startTime: Sat Jul 12 09:51:16 PM IST 2025
 # Git Learn By Doing
 It is planed to teach git in 100 levels.
 Starting from clone to fully mastering git.
-- [[Level 0]]
-- [[Level 1]]
-- [[Level 2]]
-- [[Level 3]] 
-- [[Level 4]]
-- [[Level 5]]
+
 
 ```dataview
 Table  file.ctime as "Created" , file.mtime as "Modified" , status as "Status"
