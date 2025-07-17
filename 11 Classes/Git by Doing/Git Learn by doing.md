@@ -4,8 +4,8 @@ startTime: Sat Jul 12 09:51:16 PM IST 2025
 ---
 
 # Git Learn By Doing
-It is planed to teach git in 100 levels.
-Starting from clone to fully mastering git.
+
+It is planed to teach git in 100 levels.(,)Starting from clone to fully mastering git.
 
 
 ```dataview
