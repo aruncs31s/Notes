@@ -60,6 +60,10 @@ There are mainly 2 types version control systems[^1]
 > In this every client , fully mirror the entire source files to their computer allong with the version history and all the snapshots[^2]
 > ![](https://git-scm.com/book/en/v2/images/distributed.png)
 
+Git is an
+
+---
+
 > [!NOTE]- Non Technical
 > Git was created by ["Linus Torvalds"](https://github.com/torvalds), for maintaining his projects. He is also the creater of linux.
 > Maintaining ? Firt thing do not take the word "maintaining" in literal sense, maintaining means updating and patching[^1] etc.
@@ -82,7 +86,7 @@ There are mainly 2 types version control systems[^1]
 
 [^1]: Version Control System: It is a tool that helps track changes in source code over time.
 
-[^2]:
+[^2]: Snapshots are complete copies of a project at a specific moment in time.
 
 ## References
 
