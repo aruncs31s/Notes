@@ -68,6 +68,9 @@ What is Git?
 >
 > 1. Centralized Version Control Systems (CVCS)
 > 2. Distributed Version Control Systems (DVCS)
+>    > [!summary]- Centralized Version Control System
+>    > In CVCS , it "have a single server that contains all the versioned files, and a number of clients that check out files from that central place"
+>    > Its like you google drive
 
 > [!summary]+ Summary: Git
 > Git is a distribute version control system created by "Linus Torvalds"
