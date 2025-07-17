@@ -45,6 +45,7 @@ How this is planned: The difficulty will increase from task to task by end of th
 ## Introduction
 
 What is Git?
+
 Git was created by ["Linus Torvalds"](https://github.com/torvalds), for maintaining his projects. He is also the creater of linux.
 Maintaining ? Firt thing do not take the word "maintaining" in literal sense, maintaining means updating and patching[^1] etc.
 
@@ -62,6 +63,9 @@ Version Control ? : Imagine you created a game using `python` programming langua
 4. Colabrating with others
 5. Maintining support for older devices
    There are many other reasons
+
+> [!summary]+ Git
+> Git is a distribute version control system created by "Linus Torvalds"
 
 ## References
 
