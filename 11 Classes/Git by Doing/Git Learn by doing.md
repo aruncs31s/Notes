@@ -66,9 +66,10 @@ What is Git?
 > [!abstract]+ Technical
 > There are mainly 2 types version control systems[^1]
 >
-> 1. Centralized Version Control Systems
+> 1. Centralized Version Control Systems (CVCS)
+> 2. Distributed Version Control Systems (DVCS)
 
-> [!summary]+ Git
+> [!summary]+ Summary: Git
 > Git is a distribute version control system created by "Linus Torvalds"
 
 [^1]: Version Control System: It is a tool that helps track changes in source code over time.
