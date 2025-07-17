@@ -1,24 +1,26 @@
 ---
+id: Level 0
+aliases: []
 tags:
   - git_by_doing
   - sub_module
   - for_students
-github: https://github.com/aruncs31s/level_0
 Status: Done
 dg-publish: true
+github: https://github.com/aruncs31s/level_0
 type: Automated
 ---
-# Level 0 
+
+# Level 0
 
 ```dataview
 Table without ID  file.name as "Name" , github as Link , status as Status, file.inlinks as Mentioned
 where file = this.file
 
 ```
+
 - [x] `.git folder` ✅ 2025-07-13
 - [x] `git clone` ✅ 2025-07-12
-
-
 
 Task: Getting a gthub repository the right way
 
@@ -73,5 +75,7 @@ git clone https://github.com/aruncs31s/level_0
    You will see a dropdown at the top right named "Code",
    Click on that and then you will see two tabs "Local" and "CodeSpaces"
    And then you will see "Clone" and "Download Zip" option
+
 ---
+
 After completing this checkout [[Level 1]]
