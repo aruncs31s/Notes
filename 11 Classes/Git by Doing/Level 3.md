@@ -92,11 +92,11 @@ i have now staged the file using `git add`
 
 - Let's `commit` it using `git commit`
 
-![alt text](imgs/image-4.png)
+![alt text](imgs_for_3/image-4.png)
 
 - If we check status now , you can see that it says there is nothing to commit , so now **the staged files are commited**
 
-![alt text](imgs/image-5.png)
+![alt text](imgs_for_3/image-5.png)
 
 
 ##### How to check if all working fine?
@@ -104,12 +104,12 @@ i have now staged the file using `git add`
 Just type `git log` and you will se the following
 
 
-![alt text](imgs/image-7.png)
+![alt text](imgs_for_3/image-7.png)
 
-![alt text](imgs/image-6.png)
+![alt text](imgs_for_3/image-6.png)
 
 
-![alt text](imgs/image-8.png)
+![alt text](imgs_for_3/image-8.png)
 
 >[!IMPORTANT]
 > **New Command**
@@ -122,7 +122,7 @@ Just type `git log` and you will se the following
 
 As i've said in above example i have removed one line and added one line
 
-![alt text](imgs/image-9.png)
+![alt text](imgs_for_3/image-9.png)
 
 You can see that there is `def album_cover():` is missing.
 
