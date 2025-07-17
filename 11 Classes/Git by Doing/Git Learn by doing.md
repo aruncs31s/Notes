@@ -90,6 +90,8 @@ Git is an example of **DVCS**, because of this , if one copy of your project fil
 
 [^2]: Snapshots are complete copies of a project at a specific moment in time.
 
+## Obtaining Git Repocitory
+
 ## References
 
 - [Git Pro book](https://git-scm.com/book/en/v2)
