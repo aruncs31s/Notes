@@ -60,7 +60,7 @@ There are mainly 2 types version control systems[^1]
 > In this every client , fully mirror the entire source files to their computer allong with the version history and all the snapshots[^2]
 > ![](https://git-scm.com/book/en/v2/images/distributed.png)
 
-Git is an example of **DVCS**, which
+Git is an example of **DVCS**, because of this , if one copy of your project files are down , you can always recover it from another copies.
 
 ---
 
