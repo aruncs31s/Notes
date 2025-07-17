@@ -16,10 +16,10 @@ from #git_by_doing
 
 --- 
 
+> [!Success]- Introduce Commands
 - [x] `git add` ✅ 2025-07-14
 - [x] What is git ✅ 2025-07-13
-- [ ] `git commit` 
-
+- [x] `git commit` ✅ 2025-07-18
 **Objectives**
 1. Introducing Git
 
