@@ -54,7 +54,7 @@ git clone https://github.com/aruncs31s/level_0
 
 - If you download code from GitHub, remember the word download, it does not downloads the `.git` folder
 
-###
+### Getting a Git Repocitory
 
 ### Summary
 
