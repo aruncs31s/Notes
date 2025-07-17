@@ -11,6 +11,10 @@ dg-publish: true
 ---
 
 # Level 4
+```dataview
+Table without ID  file.name as "Name" , github as Link , status as Status, file.inlinks as Next 
+where file = this.file
+```
 
 Task: To understand `git branch`
 
