@@ -7,7 +7,7 @@ startTime: Sat Jul 12 09:51:16 PM IST 2025
 It is planed to teach git in 100 levels.
 Starting from clone to fully mastering git.
 - [[Level 0]]
-- 
+- [[Level 1]]
 
 
 
