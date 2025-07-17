@@ -7,6 +7,11 @@ github: https://github.com/aruncs31s/git_by_doing_level_3/
 Status: Done
 ---
 # Level 3
+```dataview
+Table without ID  file.name as "Name" , github as Link , status as Status, file.inlinks as Next
+where file = this.file
+
+```
 
 Task: Understanding `git log`, `git commit` and `git checkout`
 
