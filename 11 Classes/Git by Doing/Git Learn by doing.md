@@ -44,3 +44,4 @@ How this is planned: The difficulty will increase from task to task by end of th
 
 - [Git Pro book](https://git-scm.com/book/en/v2)
 - [Git branch](https://git-scm.com/docs/git-branch)
+- [[Git]]
