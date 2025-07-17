@@ -80,11 +80,11 @@ In order to do a `git commit` yo have to do `git add` first
 ### Lets try
 - I have a file named `app.py` in my git directory.
 
-![alt text](imgs/image-1.png)
+![alt text](imgs_for_3/image-1.png)
 
 if i check the status of the directory you can see that there is a new `untracked` file
 
-![alt text](imgs/image-2.png)
+![alt text](imgs_for_3/image-2.png)
 
 i have now staged the file using `git add`
 
