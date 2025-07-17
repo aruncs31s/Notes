@@ -7,4 +7,12 @@ tags:
 Status: working
 dg-publish: true
 ---
-# Level 5 
+```dataview
+Table without ID  file.name as "Name" , github as Link , status as Status, file.outlinks as Next
+where file = this.file
+
+```
+
+---
+
+After completing this checkout [[Level 6]]
