@@ -1,17 +1,18 @@
 ---
 id: Level 4
-aliases: 
+aliases: []
 tags:
   - for_students
   - git_by_doing
   - sub_module
-github: https://github.com/aruncs31s/git_by_doing_level_4
 Status: Done
 dg-publish: true
+github: https://github.com/aruncs31s/git_by_doing_level_4
 type: Tasks,Quiz
 ---
 
 # Level 4
+
 ```dataview
 Table without ID  file.name as "Name" , github as Link , status as Status, file.inlinks as Mentions
 where file = this.file
@@ -66,7 +67,6 @@ First things to note is that , as i have explained in previous levels , `git` st
 Almost all the snapshots have `1 parent and child`,(except initial commit). if you check the folowing
 ![alt text](imgs_for_4/image-1.png)
 
-
 There are 3 commits or snapshots named
 
 1. fadd9798fa81f3d0f2064c2fb400d09262a77ba8
@@ -74,6 +74,7 @@ There are 3 commits or snapshots named
 3. c34aa961cd4b27c94d46fa590716306c5aed1faa
 
    for making it simple we will use only first 5 or six characters from the snapshot name
+
 4. fadd97
 5. 2df82a
 6. 2df82a
