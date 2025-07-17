@@ -4,6 +4,7 @@ tags:
   - sub_module
   - for_students
 github: https://github.com/aruncs31s/level_0
+Status: Done
 ---
 # Level 0 
 - [x] `.git folder` ✅ 2025-07-13
