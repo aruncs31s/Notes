@@ -20,10 +20,11 @@ sort file.name asc
 
 ## Commands and Levels 
 
-| Git Command | Level       |
-| ----------- | ----------- |
-| `git clone` | [[Level 0]] |
-| `git`       | [[Level 1]] |
+| Git Command | Level       | Type          |
+| ----------- | ----------- | ------------- |
+| `git clone` | [[Level 0]] | **Automated** |
+|             | [[Level 1]] | **Quiz**      |
+|             |             | **Tasks**     |
 
 
 1. Introducing Git
