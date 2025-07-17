@@ -18,10 +18,12 @@ sort file.name asc
 
 ---
 
+## Commands and Levels 
 
-| Gi  |     |
-| --- | --- |
-|     |     |
+| Git Command | Level       |
+| ----------- | ----------- |
+| `git clone` | [[Level 0]] |
+| `git add`   |             |
 
 
 1. Introducing Git
