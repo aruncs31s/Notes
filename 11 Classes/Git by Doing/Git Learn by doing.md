@@ -75,6 +75,7 @@ What is Git?
 >    > ![](https://git-scm.com/book/en/v2/images/centralized.png)
 >
 >    > [!summary]+ Distributed Version Control System
+>    > ![](https://git-scm.com/book/en/v2/images/distributed.png)
 
 > [!summary]+ Summary: Git
 > Git is a distribute version control system created by "Linus Torvalds"
