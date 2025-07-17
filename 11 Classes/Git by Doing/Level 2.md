@@ -1,9 +1,9 @@
 ---
 github: https://github.com/aruncs31s/git_by_doing_level_2
 tags:
-  - project
-  - sub_module
   - git_by_doing
+  - for_students
+  - sub_module
 ---
 # Level 2
 
