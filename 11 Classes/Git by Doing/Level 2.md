@@ -14,6 +14,7 @@ Task: Understanding `git add` and `git status`
 | Task 1 | `python task_1.py ` | `git add`     | `add`     |
 | Task 2 | `python task_2.py ` | `git status`  | `status`  |
 | Task 3 | `python task_3.py ` | `git restore` | `restore` |
+|        |                     |               |           |
 
 
 > [!IMPORTANT]
