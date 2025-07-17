@@ -18,21 +18,8 @@ sort file.name asc
 
 ---
 
-## Commands and Levels 
-
-| Git Command | Level       | Type                |
-| ----------- | ----------- | ------------------- |
-| `git clone` | [[Level 0]] | **Automated**       |
-|             | [[Level 1]] | **Quiz**            |
-|             |             | **Tasks**m **Quiz** |
-
-
-1. Introducing Git
-
 How this is planned: The difficulty will increase from task to task by end of this you will learn about
-
 ## Installing Git
-
 1. Windows: click [here](https://git-scm.com/downloads/win) to download
 2. Linux assuming no one is using linux (now)
    > [!abstract]- **Install git in linux**
@@ -53,6 +40,7 @@ How this is planned: The difficulty will increase from task to task by end of th
    > > yay -S git
    > > ```
 
-
 ## References
-- https://git-scm.com/book/en/v2
+
+- [Git Pro book](https://git-scm.com/book/en/v2)
+- [Git branch](https://git-scm.com/docs/git-branch)
