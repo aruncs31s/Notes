@@ -6,6 +6,7 @@ tags:
 github: https://github.com/aruncs31s/git_by_doing_level_3/
 Status: Done
 type: Automated
+dg-publish: true
 ---
 # Level 3
 ```dataview
