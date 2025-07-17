@@ -8,6 +8,7 @@ tags:
 github: https://github.com/aruncs31s/git_by_doing_level_4
 Status: Done
 dg-publish: true
+type:
 ---
 
 # Level 4

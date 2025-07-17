@@ -6,6 +6,7 @@ tags:
   - sub_module
 Status: Done
 dg-publish: true
+type: Tasks,Quiz
 ---
 # Level 2
 ```dataview

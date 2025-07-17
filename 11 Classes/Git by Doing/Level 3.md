@@ -5,6 +5,7 @@ tags:
   - sub_module
 github: https://github.com/aruncs31s/git_by_doing_level_3/
 Status: Done
+type: Automated
 ---
 # Level 3
 ```dataview
