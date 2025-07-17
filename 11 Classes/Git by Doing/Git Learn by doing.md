@@ -11,6 +11,7 @@ It is planed to teach git in 100 Levels. Starting from clone to fully mastering 
 ```dataview
 Table  file.ctime as "Created" , file.mtime as "Modified" , status as "Status"
 from #git_by_doing 
+sort file.name asc
 ```
 
 
