@@ -6,6 +6,7 @@ tags:
 github: https://github.com/aruncs31s/level_0
 Status: Done
 dg-publish: true
+type: Automated
 ---
 # Level 0 
 

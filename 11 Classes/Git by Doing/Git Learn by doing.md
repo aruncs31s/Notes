@@ -11,7 +11,7 @@ startTime: Sat Jul 12 09:51:16 PM IST 2025
 It is planed to teach git in 100 Levels. Starting from clone to fully mastering git.
 
 ```dataview
-Table  file.ctime as "Created" , file.mtime as "Modified" , status as "Status"
+Table  file.ctime as "Created" , file.mtime as "Modified" , type as "Type",status as "Status"
 from #git_by_doing
 sort file.name asc
 ```
@@ -20,11 +20,11 @@ sort file.name asc
 
 ## Commands and Levels 
 
-| Git Command | Level       | Type          |
-| ----------- | ----------- | ------------- |
-| `git clone` | [[Level 0]] | **Automated** |
-|             | [[Level 1]] | **Quiz**      |
-|             |             | **Tasks**     |
+| Git Command | Level       | Type                |
+| ----------- | ----------- | ------------------- |
+| `git clone` | [[Level 0]] | **Automated**       |
+|             | [[Level 1]] | **Quiz**            |
+|             |             | **Tasks**m **Quiz** |
 
 
 1. Introducing Git

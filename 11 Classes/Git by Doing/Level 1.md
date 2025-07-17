@@ -6,6 +6,7 @@ tags:
   - for_students
 Status: Done
 dg-publish: true
+type: Quiz
 ---
 # Level 1
 ```dataview
