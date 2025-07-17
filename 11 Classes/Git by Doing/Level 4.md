@@ -58,11 +58,14 @@ First things to note is that , as i have explained in previous levels , `git` st
 
 Almost all the snapshots have `1 parent and child`,(except initial commit). if you check the folowing
 ![alt text](imgs_for_4/image-1.png)
+
+
 There are 3 commits or snapshots named
 
 1. fadd9798fa81f3d0f2064c2fb400d09262a77ba8
 2. 2df82a685bf4c419fba48bb1b865ff1f12625b6d
 3. c34aa961cd4b27c94d46fa590716306c5aed1faa
+
    for making it simple we will use only first 5 or six characters from the snapshot name
 4. fadd97
 5. 2df82a
