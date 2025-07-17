@@ -14,7 +14,7 @@ Starting from clone to fully mastering git.
 - [[Level 5]]
 
 ```dataview
-Table 
+Table  file.ctime as "Created" , file.mtime as "Modified" , status as "Status"
 from #git_by_doing 
 ```
 
