@@ -23,7 +23,7 @@ sort file.name asc
 | Git Command | Level       |
 | ----------- | ----------- |
 | `git clone` | [[Level 0]] |
-| `git add`   |             |
+| `git`       | [[Level 1]] |
 
 
 1. Introducing Git
