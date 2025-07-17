@@ -291,7 +291,7 @@ git config --global alias.staash 'stash --all'
 git config --global alias.po 'push origin main'
 ```
 
-> [!floating|right-medium]
+> [!blank|right-medium]
 > we can also use `!script name.sh` instead of the normal git command
 
 #example
