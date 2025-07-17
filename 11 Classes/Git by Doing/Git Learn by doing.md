@@ -52,3 +52,7 @@ How this is planned: The difficulty will increase from task to task by end of th
    > > paru -S git
    > > yay -S git
    > > ```
+
+
+## References
+- https://git-scm.com/book/en/v2
