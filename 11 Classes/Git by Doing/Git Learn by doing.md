@@ -65,6 +65,8 @@ What is Git?
 
 > [!abstract]+ Technical
 > There are mainly 2 types version control systems[^1]
+>
+> 1. Centralized Version Control Systems
 
 > [!summary]+ Git
 > Git is a distribute version control system created by "Linus Torvalds"
