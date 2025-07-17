@@ -1,8 +1,8 @@
 ---
 tags:
-  - project
   - git_by_doing
   - sub_module
+  - for_students
 github: https://github.com/aruncs31s/level_0
 ---
 # Level 0 

@@ -1,9 +1,9 @@
 ---
 github: https://github.com/aruncs31s/level_1
 tags:
-  - project
   - git_by_doing
   - sub_module
+  - for_students
 ---
 # Level 1
 
