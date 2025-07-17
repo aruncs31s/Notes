@@ -8,9 +8,11 @@ Status: Done
 dg-publish: true
 ---
 # Level 0 
+
 ```dataview
-Table without ID  fgithub as Link 
+Table without ID  file.name as "Name" , github as Link , status as Status, file.outlinks as Next
 where file = this.file
+
 ```
 - [x] `.git folder` ✅ 2025-07-13
 - [x] `git clone` ✅ 2025-07-12
@@ -70,3 +72,5 @@ git clone https://github.com/aruncs31s/level_0
    You will see a dropdown at the top right named "Code",
    Click on that and then you will see two tabs "Local" and "CodeSpaces"
    And then you will see "Clone" and "Download Zip" option
+---
+After completing this checkout 
