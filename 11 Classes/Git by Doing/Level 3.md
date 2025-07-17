@@ -3,6 +3,7 @@ tags:
   - git_by_doing
   - for_students
   - sub_module
+github: https://github.com/aruncs31s/git_by_doing_level_3/
 ---
 # Level 3
 
@@ -128,16 +129,16 @@ You can see that there is `def album_cover():` is missing.
 
 Now lets `commit` this new change.
 
-![alt text](imgs/image-10.png)
+![alt text](imgs_for_3/image-10.png)
 
 And If you check `log` now you can see that There are 2 `commits` , first one if the older one with the `album_cover` and second one is the newly created one.
 
-![alt text](imgs/image-11.png)
+![alt text](imgs_for_3/image-11.png)
 
 
 ##### This is cool and all but how to recover the lost function ?
 
-![alt text](imgs/image-12.png)
+![alt text](imgs_for_3/image-12.png)
 
 You can see the contents of the `app.py` before i do `git checkout <checkpint id>` and after i do the `checkout` thing. You think long enough , you will realize that , this is just like doing `undo` operation , in a sense the `git commit` thing is a `undo` history.
 
@@ -156,6 +157,6 @@ git checkout -
 ```
 This command is used to go back to where you come from , just like `redo` thing.
 
-![alt text](imgs/image-13.png)
+![alt text](imgs_for_3/image-13.png)
 
-![alt text](imgs/image-14.png)
+![alt text](imgs_for_3/image-14.png)
