@@ -51,7 +51,22 @@
     Compatible with CR927 battery
 
 
+![[Touch Display with ESP32-4.png]]
 
+22. **CS8501**  
+    Lithium battery recharge manager
+23. **PCF85063**  
+    RTC chip for providing accurate time control
+24. **AP3032KTR-G1**  
+    Display backlight boost converter
+25. **CH422G**  
+    IO expansion chip
+26. **SP3485**  
+    RS485 transceiver
+27. **TJA1051T/3/1J**  
+    CAN transceiver
+28. **SGM2212-3.3**  
+    800mA low-noise LDO
 ---
 
 23. https://www.waveshare.com/esp32-s3-touch-lcd-5.htm
