@@ -4,4 +4,4 @@ Used By: NXP, Espressif, Xiaomi, Nordic, Semi, Texas instruments , Arduino
 - Micropython binding
 - CSS-like styles and layout {flex box and grid layout}
 
-- [[SquareLine Studio]]
+- [[SquareLine Studio]] and [[RT-Thread Studio]]
