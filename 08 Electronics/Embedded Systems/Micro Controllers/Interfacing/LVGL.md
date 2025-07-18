@@ -1,5 +1,5 @@
 # LVGL
-- [[LVGL Using VS Cde]]
+- [[LVGL Using VS Code]]
 Used By: NXP, Espressif, Xiaomi, Nordic, Semi, Texas instruments , Arduino 
 - C 99 , C++ 
 - Micropython binding
