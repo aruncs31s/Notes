@@ -67,7 +67,13 @@ git config user.name "Dog"
 
 ![[gitconfig-1.png]]
 
-This type of configuration is called `local` or `project` or `repo` level configuration. What i mean by that is that , 
+This type of configuration is called `local` or `project` or `repo` level configuration. What i mean by that is that , look at the following example, 
+![[localconfig.png]]
+when i run 
+```bash
+git config --get user.name
+```
+it prints `Dog` , but when i change repo , or directory the name also changes, 
 
 
 Git comes with a [configuration](https://git-scm.com/docs/git-config) both at the global and the repo (project) level. Most of the time, you'll just use the global config.
