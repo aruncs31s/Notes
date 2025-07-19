@@ -13,7 +13,8 @@ Table without ID  file.name as "Name" , github as Link , status as Status, file.
 where file = this.file
 ```
 ---
-
+This is a recap , of what you have learn up until now and , reinforcing what you have learned up until now. 
+Also we are going to switch completely to cl
 ## Linux Basics
 - `mkdir` , `ls` , `cd` , `nano` , `mv` 
 
