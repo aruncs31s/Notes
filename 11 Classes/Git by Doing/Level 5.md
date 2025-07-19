@@ -36,7 +36,23 @@ You can see that , there are a few details like
 - Your email
 - The commit message
 - The date and time of the commit etc. 
-But have you ever thought where 
+But have you ever thought from where did the `git` obtains this information?.
+if you type the following:
+```bash
+git config --get user.name
+```
+you will obtain the following
+```
+Arun CS
+```
+and to get the `email` run the following.
+```bash 
+git config --get user.email
+```
+
+```
+aruncs31ss@gmail.com
+```
 
 
 
