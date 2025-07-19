@@ -91,3 +91,12 @@ git commit --amend -m "A: add contents.md"
 # Git Log
 
 A Git repo is a (potentially very long) list of commits, where each commit represents the _full state of the repository_ at a given point in time.
+
+For convenience, you can refer to any commit or change within Git by using the first `7` characters of its hash. For mine, that's `5ba786f`.
+Next, run `git log` again, but this time use the `-n` and `--no-pager` options to limit the maximum number of commits shown, and more importantly, to run it without the interactive pager. E.g.:
+
+Next, run `git log` again, but this time use the `-n` and `--no-pager` options to limit the maximum number of commits shown, and more importantly, to run it without the interactive pager. E.g.:
+
+```bash
+git --no-pager log -n 10
+```
