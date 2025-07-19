@@ -14,3 +14,7 @@ where file = this.file
 ```
 ---
 
+## Linux Basics
+- `mkdir` , `ls` , `cd` , `nano` , `mv` 
+
+
