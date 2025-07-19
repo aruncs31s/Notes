@@ -91,7 +91,24 @@ graph LR
 		B --> D[~/.gitconfig]
 		C --> E[.git/config]
 ```
-
+>[!tip] on Linux
+>you can check the global config by running the following 
+>```bash
+>cat ~/.gitconfig
+>```
+>>[!success]-
+>>```ini
+>>[user]
+>>name = Arun CS
+>>mail = aruncs31ss@gmail.com
+>>email = aruncs31ss@gmail.com
+>>[http]
+>>postBuffer = 524288000
+>>```
+>and `local` by 
+>```bash
+>cat .git/config
+>```
 
 Git comes with a [configuration](https://git-scm.com/docs/git-config) both at the global and the repo (project) level. Most of the time, you'll just use the global config.
 
