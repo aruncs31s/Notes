@@ -28,10 +28,6 @@ Up until you have seen the following commands
 
 
 
-
-
-
-
 Git comes with a [configuration](https://git-scm.com/docs/git-config) both at the global and the repo (project) level. Most of the time, you'll just use the global config.
 
 ## Assignment
@@ -85,6 +81,8 @@ Next, run `git log` again, but this time use the `-n` and `--no-pager` opt
 ```bash
 git --no-pager log -n 10
 ```
+
+
 
 
 # Cat File
