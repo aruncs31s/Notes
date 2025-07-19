@@ -60,13 +60,12 @@ In order to configure things like `name` and `email` , run the following
 ```bash
 git config user.name "Arun CS"
 ```
+For example if you want to change you name to something like "Dog", you can run the following command:
 ```bash
 git config user.name "Dog"
 ```
 
-```bash
-git config --get user.name
-```
+![[gitconfig-1.png]]
 
 
 
