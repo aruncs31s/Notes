@@ -67,9 +67,12 @@ git config user.name "Dog"
 
 ![[gitconfig-1.png]]
 
+This type of configuration is called `local` or `project` or `repo` level configuration. What i mean by that is that , 
 
 
 Git comes with a [configuration](https://git-scm.com/docs/git-config) both at the global and the repo (project) level. Most of the time, you'll just use the global config.
+
+
 
 ## Assignment
 
@@ -83,7 +86,12 @@ git config --get user.name
 git config --get user.email
 ```
 
+
+
 If they aren't, set them. I recommend using your GitHub username and email.
+
+
+
 
 ```bash
 git config --add --global user.name "github_username_here"
