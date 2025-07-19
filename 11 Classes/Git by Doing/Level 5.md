@@ -41,3 +41,9 @@ git push
 git pull
 git log
 
+
+git apply
+git commit-tree
+git hash-object
+
+
