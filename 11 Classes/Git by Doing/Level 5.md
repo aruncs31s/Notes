@@ -84,6 +84,7 @@ git config --global user.name "Arun CS"
 > you can also get the `global` configuration like the following
 > ![[Screenshot 2025-07-19 at 2.55.11 PM.png]]
 
+So there are 2 types of configuration , and the are `global` and `local` and stored in `~/.gitconfig` and `.git/config` respectively.
 ```mermaid
 graph LR
 		A[Git Config] --> B[Global Config]
@@ -91,12 +92,12 @@ graph LR
 		B --> D[~/.gitconfig]
 		C --> E[.git/config]
 ```
->[!tip] on Linux
+>[!tip]- on Linux
 >you can check the global config by running the following 
 >```bash
 >cat ~/.gitconfig
 >```
->>[!success]-
+>>[!success]- **output**
 >>```ini
 >>[user]
 >>name = Arun CS
@@ -109,6 +110,25 @@ graph LR
 >```bash
 >cat .git/config
 >```
+>>[!success]- **output**
+>>```ini
+>>[core]
+>>repositoryformatversion = 0
+>>filemode = true
+>>bare = false
+>>logallrefupdates = true
+>>ignorecase = true
+>>precomposeunicode = true
+>>[remote "origin"]
+>>url = https://github.com/aruncs31s/git_by_doing_level_5
+>>fetch = +refs/heads/*:refs/remotes/origin/*
+>>
+>>[branch "main"]
+>>remote = origin
+>>merge = refs/heads/main
+>>[user]
+>> name = Dog
+>>```
 
 Git comes with a [configuration](https://git-scm.com/docs/git-config) both at the global and the repo (project) level. Most of the time, you'll just use the global config.
 
