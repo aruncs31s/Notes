@@ -80,3 +80,14 @@ Your `~/.gitconfig` file is the file that stores your global Git configuration
 cat ~/.gitconfig
 ```
 
+If you screw up a commit message, you can change it with the `--amend` flag. For example:
+
+```bash
+# Change the last commit message
+git commit --amend -m "A: add contents.md"
+```
+
+
+# Git Log
+
+A Git repo is a (potentially very long) list of commits, where each commit represents the _full state of the repository_ at a given point in time.
