@@ -130,14 +130,12 @@ graph LR
 >> name = Dog
 >>```
 
-Git comes with a [configuration](https://git-scm.com/docs/git-config) both at the global and the repo (project) level. Most of the time, you'll just use the global config.
+- [ ] check this is true if not modify it.  🏁 delete 
+**FAQ: Where these name and mail id used**
+- Others can easily verify who made the commit.
+- And it is required for fea
 
 
-
-```bash
-git config --add --global user.name "github_username_here"
-git config --add --global user.email "email@example.com"
-```
 
 Finally, let's set a default branch (we'll talk more about configs and branches later) so that we're all on the same page. Run:
 
@@ -145,17 +143,11 @@ To ensure you get proper credit (or more likely, blame) for all the code you wri
 
 We're using `master` for now because it is Git's default, but later we'll change it to `main`, which is GitHub's default. Just bear with us for a second.
 
-Your `~/.gitconfig` file is the file that stores your global Git configuration. View it:
+
+**What if your last commit message is wrong, and you need to change it**
 
 ```bash
-cat ~/.gitconfig
-```
-
-If you screw up a commit message, you can change it with the `--amend` flag. For example:
-
-```bash
-# Change the last commit message
-git commit --amend -m "A: add contents.md"
+git commit --amend -m "New commit message
 ```
 
 
