@@ -73,7 +73,24 @@ when i run
 ```bash
 git config --get user.name
 ```
-it prints `Dog` , but when i change repo , or directory the name also changes, 
+it prints `Dog` , but when i change repo , or directory the name also changes. 
+To make the changes `global` you should use the `--global` flag like this,
+
+```bash
+git config --global user.name "Arun CS"
+```
+
+>[!tip]
+> you can also get the `global` configuration like the following
+> ![[Screenshot 2025-07-19 at 2.55.11 PM.png]]
+
+```mermaid
+graph LR
+		A[Git Config] --> B[Global Config]
+		A --> C[Local Config]
+		B --> D[~/.gitconfig]
+		C --> E[.git/config]
+```
 
 
 Git comes with a [configuration](https://git-scm.com/docs/git-config) both at the global and the repo (project) level. Most of the time, you'll just use the global config.
