@@ -60,10 +60,15 @@ In order to configure things like `name` and `email` , run the following
 ```bash
 git config user.name "Arun CS"
 ```
+```bash
+git config user.name "Dog"
+```
 
 ```bash
 git config --get user.name
 ```
+
+
 
 Git comes with a [configuration](https://git-scm.com/docs/git-config) both at the global and the repo (project) level. Most of the time, you'll just use the global config.
 
