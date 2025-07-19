@@ -17,20 +17,19 @@ This is a recap , of what you have learn up until now and , reinforcing what you
 Also we are going to switch completely to cli, meaning that we are going to use tools like , `vim` or `nano`. And almost ....
 - [ ] complete this 
 
+## Lets recap 
+Up until you have seen the following commands 
+- `git status`
+- `git log`
+- `git add`
+- `git commit`
+- `git log`
 
 
 
-git status
-git add
-git commit
-git push
-git pull
-git log
 
 
-git apply
-git commit-tree
-git hash-object
+
 
 
 Git comes with a [configuration](https://git-scm.com/docs/git-config) both at the global and the repo (project) level. Most of the time, you'll just use the global config.
