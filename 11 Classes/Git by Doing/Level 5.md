@@ -28,6 +28,8 @@ Up until you have seen the following commands
 
 ### Configuring Git
 Let's start by properly configuring git 
+![[Screenshot 2025-07-19 at 2.06.26 PM.png]]
+
 
 
 Git comes with a [configuration](https://git-scm.com/docs/git-config) both at the global and the repo (project) level. Most of the time, you'll just use the global config.
