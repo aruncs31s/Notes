@@ -134,25 +134,6 @@ Git comes with a [configuration](https://git-scm.com/docs/git-config) both at 
 
 
 
-## Assignment
-
-Let's set your identity. Check if your `user.name` and `user.email` are already set:
-
-```bash
-git config --get user.name
-```
-
-```bash
-git config --get user.email
-```
-
-
-
-If they aren't, set them. I recommend using your GitHub username and email.
-
-
-
-
 ```bash
 git config --add --global user.name "github_username_here"
 git config --add --global user.email "email@example.com"
