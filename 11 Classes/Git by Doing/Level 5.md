@@ -13,9 +13,7 @@ Table without ID  file.name as "Name" , github as Link , status as Status, file.
 where file = this.file
 ```
 ---
-This is a recap , of what you have learn up until now and , reinforcing what you have learned up until now. 
-Also we are going to switch completely to cli, meaning that we are going to use tools like , `vim` or `nano`. And almost ....
-- [ ] complete this 
+In this level you are going to configure git properly.
 
 ## Lets recap 
 Up until you have seen the following commands 
