@@ -136,8 +136,7 @@ graph LR
 - [ ] check this is true if not modify it.  🏁 delete 
 **FAQ: Where these name and mail id used**
 - Others can easily verify who made the commit.
-- And it is required for fea
-
+- And it is required for features like `git blame`, which shows who last modified each line of a file.
 
 
 Finally, let's set a default branch (we'll talk more about configs and branches later) so that we're all on the same page. Run:
@@ -145,12 +144,3 @@ Finally, let's set a default branch (we'll talk more about configs and branches 
 To ensure you get proper credit (or more likely, blame) for all the code you write, you need to set your name and email.
 
 We're using `master` for now because it is Git's default, but later we'll change it to `main`, which is GitHub's default. Just bear with us for a second.
-
-
-**What if your last commit message is wrong, and you need to change it**
-
-```bash
-git commit --amend -m "New commit message"
-```
-
-
