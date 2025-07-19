@@ -14,23 +14,8 @@ where file = this.file
 ```
 ---
 This is a recap , of what you have learn up until now and , reinforcing what you have learned up until now. 
-Also we are going to switch completely to cl
-## Linux Basics
-- `mkdir` , `ls` , `cd` , `nano` , `mv` 
-
-## Linux Commands
-```bash
-command <required> [optional]
-```
-
-
-Arguments in angle brackets <> are mandatory and must be provided when running the command.
-Arguments in square brackets [] are optional and can be included if needed.
-#### `mkdir`
-
-```bash
-mkdir folder_name 
-```
+Also we are going to switch completely to cli, meaning that we are going to use tools like , `vim` or `nano`. And almost ....
+- [ ] complete this 
 
 
 
