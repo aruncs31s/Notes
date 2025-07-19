@@ -27,8 +27,16 @@ Up until you have seen the following commands
 
 
 ### Configuring Git
-Let's start by properly configuring git 
-![[Screenshot 2025-07-19 at 2.06.26 PM.png]]
+Let's start by properly configuring `git`. I have already explained `git log` in [[Level 3]] of this course. And you may remember the following, a single log entry may look like this. 
+![[gitlog.png]]
+
+![alt text](imgs_for_3/image-8.png)
+You can see that , there are a few details like 
+- Your name 
+- Your email
+- The commit message
+- The date and time of the commit etc. 
+But have you ever thought where 
 
 
 
