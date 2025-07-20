@@ -159,12 +159,12 @@ git log --author=zeidan -p
 ![[zeidancommit3.png]]
 
 
-![[Screenshot 2025-07-21 at 12.04.52 AM.png]]
+![[draw1.png]]
 So you get a lot of infomation from using `git log` and with the `-p` flag.
 
 > [!Tip]
 > When you check out a commit , you will see the history of commit upto you commit only. dont get it? 
 > Take a look at the following example
->![[Screenshot 2025-07-21 at 12.21.43 AM.png]]
+>![[draw2.png]]
 > Where i have 4 comits , `commit 1` , `commit 2`, `commit 3` and `commit 4`.  and when i checkout `commit 3` i will no longer se `commit 4` in the log.
 
