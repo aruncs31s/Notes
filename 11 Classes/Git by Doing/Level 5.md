@@ -144,4 +144,7 @@ You have already learned about `git commit` and `git log` in [[Level 3]] , right
 - The commit message 
 ![alt text](imgs_for_3/image-8.png)
 We can use this `git log` and `git blame` to identify who made some specific 
-For example you can check if someone named ``
+For example you can check if someone named `zeidan` made some changes to the file `app.py` using the following command:
+```bash
+git blame app.py
+```
