@@ -4,15 +4,19 @@ tags:
   - for_students
   - git_by_doing
   - sub_module
-Status: working
+Status: Done
 dg-publish: true
+website_link: https://aruncs31s-notes-vercel.vercel.app/11-classes/git-by-doing/level-5/
 ---
 # Level 5 
+
 ```dataview
 Table without ID  file.name as "Name" , github as Link , status as Status, file.inlinks as Mentioned
 where file = this.file
 ```
 ---
+Task: To configure `git` properly and using `git log`
+
 In this level you are going to configure git properly.
 
 ## Lets recap 
@@ -26,7 +30,7 @@ git log # to see the commit history
 git branch # to see the branches
 git checkout # to switch branches
 ```
-
+And you will need to use most of them inorder to complete this level. 
 ### Configuring Git
 Let's start by properly configuring `git`. I have already explained `git log` in [[Level 3]] of this course. And you may remember the following, a single log entry may look like this. 
 ![[gitlog.png]]
@@ -165,4 +169,5 @@ So you get a lot of infomation from using `git log` and with the `-p` flag.
 > When you check out a commit , you will see the history of commit upto you commit only. dont get it? 
 > Take a look at the following example
 >![[Screenshot 2025-07-21 at 12.21.43 AM.png]]
-> Where i have 4 comits , `commit 1` , `commit 2`, `commit 3` and `commit 4`.  and when i checkout `commit`
+> Where i have 4 comits , `commit 1` , `commit 2`, `commit 3` and `commit 4`.  and when i checkout `commit 3` i will no longer se `commit 4` in the log.
+
