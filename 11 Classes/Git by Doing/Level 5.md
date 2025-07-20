@@ -162,6 +162,7 @@ git log --author=zeidan -p
 So you get a lot of infomation from using `git log` and with the `-p` flag.
 
 > [!Tip]
-> When you check out a commit , you will see the history of commit from that point onward. 
-> When you check out a commit, Git places you at that point in the project's history in a detached HEAD state, and your working directory reflects the code as it was then. You will not see new commits unless you return to a branch.
-
+> When you check out a commit , you will see the history of commit upto you commit only. dont get it? 
+> Take a look at the following example
+>![[Screenshot 2025-07-21 at 12.21.43 AM.png]]
+> Where i have 4 comits , `commit 1` , `commit 2`, `commit 3` and `commit 4`.  and when i checkout `commit`
