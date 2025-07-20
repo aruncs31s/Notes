@@ -163,4 +163,5 @@ So you get a lot of infomation from using `git log` and with the `-p` flag.
 
 > [!Tip]
 > When you check out a commit , you will see the history of commit from that point onward. 
+> When you check out a commit, Git places you at that point in the project's history in a detached HEAD state, and your working directory reflects the code as it was then. You will not see new commits unless you return to a branch.
 
