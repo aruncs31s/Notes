@@ -137,8 +137,11 @@ graph LR
 - And it is required for features like `git blame`, which shows who last modified each line of a file.
 
 
-Finally, let's set a default branch (we'll talk more about configs and branches later) so that we're all on the same page. Run:
-
-To ensure you get proper credit (or more likely, blame) for all the code you write, you need to set your name and email.
-
-We're using `master` for now because it is Git's default, but later we'll change it to `main`, which is GitHub's default. Just bear with us for a second.
+## Where these will be used?
+You have already learned about `git commit` and `git log` in [[Level 3]] , right?. So when you do a `git log` you see see the following right?
+- Your name 
+- Your email
+- The commit message 
+![alt text](imgs_for_3/image-8.png)
+We can use this `git log` and `git blame` to identify who made some specific 
+For example you can check if someone named ``
