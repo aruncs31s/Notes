@@ -144,5 +144,16 @@ You have already learned about `git commit` and `git log` in [[Level 3]] , right
 - The commit message 
 ![alt text](imgs_for_3/image-8.png)
 We can use this `git log` and `git blame` to identify who made some specific 
-For example you can check if someone named `zeidan` had ma
+For example you can check if someone named `zeidan` had made any commit , and what they have changed , for the time beeing we will not focus on `git blame` it will be coverd in another level
+- [ ] mention in which level the `git blame` is covered. 🏁 delete  
+
+```bash
+git log --author=zeidan
+```
+![[zeidancommit2.png]]
+There is only single commit becouse , zeidan has done only one commit , and if you also want what he have changed you can include the `-p` flag 
+```bash
+git log --author=zeidan -p
+```
+![[zeidancommit3.png]]
 
