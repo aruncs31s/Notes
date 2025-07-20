@@ -156,4 +156,4 @@ There is only single commit becouse , zeidan has done only one commit , and if y
 git log --author=zeidan -p
 ```
 ![[zeidancommit3.png]]
-
+You can also see that there is s
