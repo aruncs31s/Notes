@@ -15,10 +15,7 @@ Table without ID  file.name as "Name" , github as Link , status as Status, file.
 where file = this.file
 ```
 ---
-Task: To configure `git` properly and using `git log`
-
-In this level you are going to configure git properly.
-
+Task: To configure `git` properly , and explore additional usage of `git log`.
 ## Lets recap 
 Up until you have seen the following commands 
 ```bash
