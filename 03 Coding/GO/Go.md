@@ -34,7 +34,7 @@ My favorite number is 2
 ```bash
 mkdir prog_name
 cd prog_name
-echo"CAT EOF
+echo $(cat << EOF
 package main
 
 import "fmt"
@@ -42,10 +42,9 @@ import "fmt"
 func main() {
     fmt.Println("Hello, World!")
 }
-EOF" >> hello.go
+EOF") >> hello.go
 go build ./hello.go
 go run .
-
 ```
 
 ---
