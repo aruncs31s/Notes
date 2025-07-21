@@ -397,3 +397,12 @@ func pow(x, n, lim float64) float64 {
 	return v // this will result in an error {undifined}
 }
 ```
+
+```go
+if v := math.Pow(x, n); v < lim {
+		return v
+	} else { 
+		fmt.Printf("%g >= %g\n", v, lim) // v is also in scope
+	}
+v + 10 // error not in scope
+```
