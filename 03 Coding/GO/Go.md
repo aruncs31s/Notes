@@ -323,3 +323,18 @@ func main() {
 	fmt.Println(sum)
 }
 ```
+
+```go
+
+package main
+
+import "fmt"
+
+func main() {
+	sum := 1
+	for ; sum < 1000; { // no init and post
+		sum += sum
+	}
+	fmt.Println(sum)
+}
+```
