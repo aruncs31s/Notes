@@ -34,15 +34,21 @@ My favorite number is 2
 ```bash
 mkdir prog_name
 cd prog_name
-echo $(cat << EOF
+```
+
+```go
+// hello.go
 package main
 
 import "fmt"
 
 func main() {
-    fmt.Println("Hello, World!")
+    fmt.println("hello, world!")
 }
-EOF") >> hello.go
+
+```
+
+```bash
 go build ./hello.go
 go run .
 ```
