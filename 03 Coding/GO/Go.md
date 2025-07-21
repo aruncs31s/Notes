@@ -110,6 +110,7 @@ func <function_name>(<type args>) <return_type> {
 
 ```go
 package main
+import "fmt"
 func add( x int,  y int) int {
 	return x + y
 }
@@ -119,7 +120,8 @@ func add_1(x, y int) int {
 }
 
 func main(){
-fmt.Println("HI")
+fmt.Println(add(1,2))
+fmt.Println(add_1(1,2))
 }
 ```
 
