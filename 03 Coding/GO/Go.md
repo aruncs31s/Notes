@@ -101,7 +101,12 @@ func main() {
 ```
 
 ### Var
-
+```go
+// multi var decleration
+var c, python, java bool
+// with initializa
+var i, j int = 1, 2
+```
 ```go
 
 var a, b string
