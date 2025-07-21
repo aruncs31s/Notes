@@ -118,7 +118,9 @@ func add_1(x, y int) int {
 	return x + y
 }
 
-fn 
+func main(){
+fmt.Println("HI")
+}
 ```
 
 ```go
