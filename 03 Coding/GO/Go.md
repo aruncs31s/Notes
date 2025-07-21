@@ -103,8 +103,8 @@ func main() {
 ## Functions
 
 ```go
-func add(int x, int y) int {
-	return x + y
+func <function_name>(<type args>) <return_type> {
+	return <expression>
 }
 ```
 
