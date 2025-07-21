@@ -375,7 +375,7 @@ import (
 )
 
 func pow(x, n, lim float64) float64 {
-	if v := math.Pow(x, n); v < lim {
+	if v := math.Pow(x, n); v < lim { // scope of v limited to this if.
 		return v
 	}
 	return lim
@@ -386,5 +386,14 @@ func main() {
 		pow(3, 2, 10),
 		pow(3, 3, 20),
 	)
+}
+```
+
+```go
+func pow(x, n, lim float64) float64 {
+	if v := math.Pow(x, n); v < lim {
+		return v
+	}
+	return v // this will result in an error {undifined}
 }
 ```
