@@ -153,13 +153,13 @@ func main() {
 ##### Type Conversion
 
 ```go
-var i int = 42
-var f float64 = float64(i)
-var u uint = uint(f)
+var i int = 42 // 42 int
+var f float64 = float64(i) // 42 float
+var u uint = uint(f) // 42 int again
 // or
-i := 42
-f := float64(i)
-u := uint(f)
+i := 42 // 42 int
+f := float64(i) // 42.00 ??
+u := uint(f) // 42 int
 ```
 
 ```go
