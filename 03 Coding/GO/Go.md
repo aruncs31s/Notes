@@ -176,6 +176,8 @@ g := 0.867 + 0.5i // complex128
 
 ##### Numeric Constants
 
+- [ ] Check this program
+
 ```go
 
 package main
