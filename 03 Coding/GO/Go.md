@@ -47,3 +47,29 @@ GOPATH -> `go/bin`
   > `Pizza` is an exported name, as is `Pi`, which is exported from the math package.
   > pizza and pi do not start with a capital letter, so they are not exported.
   > So , which means that after exporting `Pi` , we should them using _smallLetters_
+
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func main() {
+	fmt.Println(math.pi)
+}
+```
+
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func main() {
+	fmt.Println(math.Pi)
+}
+```
