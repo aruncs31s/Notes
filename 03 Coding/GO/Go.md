@@ -125,12 +125,21 @@ return x,y // possible
 
 ```go
 func sum(x,y int) int {
-return x+y
+return x + y
 }
 ```
 
 ```go
-func swap(x, y string) (string, string) {
+func swap(x, y string) (string, string)  { // multiple return values  or tuple return
 	return y, x
+}
+```
+
+calling
+
+```go
+func main() {
+	a, b := swap("hello", "world")
+	fmt.Println(a, b)
 }
 ```
