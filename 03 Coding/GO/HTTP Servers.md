@@ -54,7 +54,13 @@ func main() {
 }
 ```
 
+```go
+type HandlerFunc func(ResponseWriter, *Request)
 
+func (f HandlerFunc) ServeHTTP(w ResponseWriter, r *Request) {
+    f(w, r)
+}
+```
 ```go
 // Basic middleware structure
 func middleware(next http.Handler) http.Handler {
