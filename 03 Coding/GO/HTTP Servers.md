@@ -1,6 +1,6 @@
 # HTTP Servers 
 ## Midlewares 
-It 
+It sits between  `server` and main `request handler`
 - Process incoming requests
 - Modify request objects
 - Terminate requests early
