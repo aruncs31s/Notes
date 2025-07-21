@@ -341,3 +341,11 @@ func main() {
 
 >[!NOTE]
 > For is Go's "while" , so there is no seperate `while`
+> ```bash
+> 
+	for sum < 1000 {
+		sum += sum
+	}
+	fmt.Println(sum)
+}
+> ```
