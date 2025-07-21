@@ -1,7 +1,5 @@
 ---
-id: Go
+id: Gin
 aliases: []
 tags: []
 ---
-# GO
-- [[Gin]]
