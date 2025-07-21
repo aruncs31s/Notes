@@ -356,3 +356,10 @@ func main() {
 for {
 	}
 ```
+
+## Conditional
+```go
+if x < 0 { // no () but must -> {} 
+		return sqrt(-x) + "i"
+	}
+```
