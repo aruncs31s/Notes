@@ -110,7 +110,7 @@ func <function_name>(<type args>) <return_type> {
 
 ```go
 package main
-func add(int x, int y) int {
+func add( x int,  y int) int {
 	return x + y
 }
 // is same as
