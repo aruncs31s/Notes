@@ -163,7 +163,7 @@ func main() {
 ```
 
 ### Return Values
-
+- A return statement without arguments returns the named return values. This is known as a "naked" return.
 ```go
 package main
 import "fmt"
