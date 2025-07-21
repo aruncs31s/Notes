@@ -1,0 +1,5 @@
+---
+id: Go
+aliases: []
+tags: []
+---
