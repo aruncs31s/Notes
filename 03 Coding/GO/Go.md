@@ -100,6 +100,17 @@ func main() {
 }
 ```
 
+### Var
+
+```go
+
+var a, b string
+a, b = swap("hello", "world")
+// is equavalent to
+
+a,b := swap("hello","world")
+```
+
 ## Functions
 
 ```go
