@@ -53,6 +53,7 @@ func main() {
 	http.ListenAndServe(":8090", SetupServer())
 }
 ```
+-  `w http.ResponseWriter:` This is an interface that the server uses to write the HTTP response back to the client.
 
 ```go
 type HandlerFunc func(ResponseWriter, *Request)
