@@ -164,6 +164,9 @@ func main() {
 
 ### Return Values
 - A return statement without arguments returns the named return values. This is known as a "naked" return.
+
+> [!Important]
+> Naked return statements should be used only in short functions, as with the example shown here. They can harm readability in longer functions.
 ```go
 package main
 import "fmt"
