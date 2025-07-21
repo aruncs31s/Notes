@@ -302,3 +302,11 @@ func main(){
   fmt.Println(split(10))
 }
 ```
+
+## Iterative Statements
+
+```go
+for i := 0; i < 10; i++ {
+        fmt.Println(i)
+     }
+```
