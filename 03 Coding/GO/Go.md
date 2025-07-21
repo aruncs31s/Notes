@@ -117,3 +117,8 @@ func add(x, y int) int {
 	return x + y
 }
 ```
+
+```go
+return x + y // possible
+return x,y // possible
+```
