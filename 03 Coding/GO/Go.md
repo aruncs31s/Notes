@@ -349,3 +349,10 @@ func main() {
 	fmt.Println(sum)
 }
 > ```
+
+
+```go
+// infinite loop
+for {
+	}
+```
