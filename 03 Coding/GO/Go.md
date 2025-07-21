@@ -48,6 +48,8 @@ GOPATH -> `go/bin`
   > pizza and pi do not start with a capital letter, so they are not exported.
   > So , which means that after exporting `Pi` , we should them using _smallLetters_
 
+this is not correct
+
 ```go
 package main
 
@@ -60,6 +62,8 @@ func main() {
 	fmt.Println(math.pi)
 }
 ```
+
+and this one is correct
 
 ```go
 package main
