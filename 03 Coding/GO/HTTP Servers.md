@@ -1,5 +1,13 @@
 # HTTP Servers 
 
+- Process incoming requests
+- Modify request objects
+- Terminate requests early
+- Modify response objects
+- Chain multiple middlewares together
+
+
+
 ```go
 package main
 
@@ -58,7 +66,6 @@ func main() {
 - `r *http.Request` -> This represents the incoming HTTP request from the client. It contains information like the request URL, headers, and body.
 ```go
 type HandlerFunc func(ResponseWriter, *Request)
-
 func (f HandlerFunc) ServeHTTP(w ResponseWriter, r *Request) {
     f(w, r)
 }
