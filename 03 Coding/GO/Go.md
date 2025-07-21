@@ -104,8 +104,10 @@ func main() {
 ```go
 // multi var decleration
 var c, python, java bool
-// with initializa
+// with initialization
 var i, j int = 1, 2
+// short var decleration 
+k := 3 // not available outside the function
 ```
 ```go
 
