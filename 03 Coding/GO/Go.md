@@ -24,3 +24,9 @@ go mod init example/project_name
 ---
 
 GOPATH -> `go/bin`
+
+## Basics
+
+- Every Go program is made up of packages.
+
+- Programs start running in package main.
