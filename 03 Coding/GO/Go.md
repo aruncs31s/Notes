@@ -38,6 +38,8 @@ GOPATH -> `go/bin`
 ## Basics
 
 - Every Go program is made up of packages.
-
 - Programs start running in package main.
 - the package name is the same as the last element of the import path.
+
+- [ ] In Go, a name is exported if it begins with a capital letter.
+- Pizza is an exported name, as is Pi, which is exported from the math package.
