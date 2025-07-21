@@ -102,7 +102,7 @@ func main() {
 
 ### Var
 
-Types
+#### Types
 
 ```go
 bool
@@ -148,6 +148,18 @@ func main() {
 	var s string
 	fmt.Printf("%v %v %v %q\n", i, f, b, s) // 0 0 false ""
 }
+```
+
+##### Type Conversion
+
+```go
+var i int = 42
+var f float64 = float64(i)
+var u uint = uint(f)
+// or
+i := 42
+f := float64(i)
+u := uint(f)
 ```
 
 ```go
