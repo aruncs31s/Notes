@@ -101,6 +101,7 @@ func main() {
 ```
 
 ### Var
+
 Types
 
 ```go
@@ -119,13 +120,17 @@ rune // alias for int32
 float32 float64
 
 complex64 complex128
+
 ```
+
+- The `int`, `uint`, and `uintptr` types are usually `32` bits wide on 32-bit systems and `64` bits wide on 64-bit systems
+
 ```go
 // multi var decleration
 var c, python, java bool
 // with initialization
 var i, j int = 1, 2
-// short var decleration 
+// short var decleration
 k := 3 // not available outside the function
 // it can detect type.
 c, python, java := true, false, "no!"
@@ -192,10 +197,12 @@ func main() {
 ```
 
 ### Return Values
+
 - A return statement without arguments returns the named return values. This is known as a "naked" return.
 
 > [!Important]
 > Naked return statements should be used only in short functions, as with the example shown here. They can harm readability in longer functions.
+
 ```go
 package main
 import "fmt"
