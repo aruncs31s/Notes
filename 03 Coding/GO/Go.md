@@ -42,6 +42,8 @@ GOPATH -> `go/bin`
 - the package name is the same as the last element of the import path.
 
 - [ ] In Go, a name is exported if it begins with a capital letter.
+
   > [!NOTE] Exporting
   > `Pizza` is an exported name, as is `Pi`, which is exported from the math package.
   > pizza and pi do not start with a capital letter, so they are not exported.
+  > So , which means that after exporting `Pi` , we should them using _smallLetters_
