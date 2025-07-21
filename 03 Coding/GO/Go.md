@@ -121,6 +121,8 @@ float32 float64
 
 complex64 complex128
 
+const Pi = 3.14
+
 ```
 
 - The `int`, `uint`, and `uintptr` types are usually `32` bits wide on 32-bit systems and `64` bits wide on 64-bit systems
@@ -167,6 +169,9 @@ u := uint(f) // 42 int
 ```go
 var i int
 j := i // j is an int
+i := 42           // int
+f := 3.142        // float64
+g := 0.867 + 0.5i // complex128
 ```
 
 ```go
