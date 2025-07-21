@@ -109,11 +109,12 @@ func <function_name>(<type args>) <return_type> {
 ```
 
 ```go
+package main
 func add(int x, int y) int {
 	return x + y
 }
 // is same as
-func add(x, y int) int {
+func add_1(x, y int) int {
 	return x + y
 }
 ```
