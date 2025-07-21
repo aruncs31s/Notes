@@ -122,3 +122,15 @@ func add(x, y int) int {
 return x + y // possible
 return x,y // possible
 ```
+
+```go
+func sum(x,y int) int {
+return x+y
+}
+```
+
+```go
+func swap(x, y string) (string, string) {
+	return y, x
+}
+```
