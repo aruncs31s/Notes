@@ -181,7 +181,7 @@ g := 0.867 + 0.5i // complex128
 package main
 
 import "fmt"
-
+// NOTE: Constants defined in a block are computed once at compile-time.
 const (
 	// Create a huge number by shifting a 1 bit left 100 places.
 	// In other words, the binary number that is 1 followed by 100 zeroes.
