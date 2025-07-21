@@ -162,6 +162,13 @@ f := float64(i) // 42.00 ??
 u := uint(f) // 42 int
 ```
 
+##### Type inference
+
+```go
+var i int
+j := i // j is an int
+```
+
 ```go
 
 var a, b string
