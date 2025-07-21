@@ -9,6 +9,13 @@ It sits between  `server` and main `request handler`, it can process the incomin
 - Chain multiple middlewares together
 
 
+###### Grabing the user agent
+```go
+userAgent := r.Header.Get("User-Agent")
+```
+
+
+
 
 ```go
 package main
