@@ -20,3 +20,7 @@ go mod init example/project_name
 ```tree
 
 ```
+
+---
+
+GOPATH -> `go/bin`
