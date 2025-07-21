@@ -338,3 +338,6 @@ func main() {
 	fmt.Println(sum)
 }
 ```
+
+>[!NOTE]
+> For is Go's "while" , so there is no seperate `while`
