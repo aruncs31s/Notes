@@ -99,3 +99,21 @@ func main() {
 	fmt.Println(math.Pi)
 }
 ```
+
+## Functions
+
+```go
+func add(int x, int y) int {
+	return x + y
+}
+```
+
+```go
+func add(int x, int y) int {
+	return x + y
+}
+// is same as
+func add(x, y int) int {
+	return x + y
+}
+```
