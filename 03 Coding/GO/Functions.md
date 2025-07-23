@@ -1,9 +1,7 @@
 ---
-id: Basics
+id: Functions
 aliases: []
 tags: []
 ---
-
-# Basics
 
 
