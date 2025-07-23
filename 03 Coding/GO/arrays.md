@@ -1,0 +1,7 @@
+---
+id: arrays
+aliases: []
+tags: []
+---
+
+
