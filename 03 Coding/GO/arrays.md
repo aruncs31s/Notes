@@ -56,4 +56,9 @@ fmt.Println(fruits)
 
 ## Memory 
 
-
+```go
+var slice = []type{vals}
+var sliceCopy= slice
+```
+- if you change the value of the `sliceCopy` the value of the slice also changes 
+- Both slice and sliceCopy point to the same underlying array.
