@@ -21,6 +21,11 @@ fruits := make([]string, 0)
 - 0 -> initial length of slice
 
 ```go
+fruits2 := make([]string, 0)
+```
+- initial cap 0 
+- needs to alocate new memory when appending
+```go
 fruits2 := make([]string, 0, 10)
 ```
 - creating an empty slice of (`[]string`)
