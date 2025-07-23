@@ -1,6 +1,6 @@
 ---
 id: Go
-aliases: 
+aliases: []
 tags:
   - go
 ---
