@@ -10,6 +10,7 @@ tags: []
 - [[HTTP Servers]]
 
 ## Need
+- [ ] Basics 
 - [ ] 
 
 
