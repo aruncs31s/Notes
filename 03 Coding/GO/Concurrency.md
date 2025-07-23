@@ -105,3 +105,13 @@ After passing
 ```
 
 
+>[!multi-column]
+> 
+> > [!blank|float-left]
+>> ```
+>>Before Passing
+>>After passing
+>>Before start
+>>Send
+>>42
+>>```
