@@ -10,8 +10,11 @@ tags: []
 - [[HTTP Servers]]
 
 ## Need
-- [ ] Basics 
-- [ ] 
+
+```tasks
+not done
+path includes 03 Coding/Go
+```
 
 
 ## Creating New Project
