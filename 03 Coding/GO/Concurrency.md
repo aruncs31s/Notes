@@ -1,7 +1,9 @@
 ---
 id: Concurrency
-aliases: []
-tags: []
+aliases: 
+tags: 
+cssclasses:
+  - wide-page
 ---
 
 # Concurrency
