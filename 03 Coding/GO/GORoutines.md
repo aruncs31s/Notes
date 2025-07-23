@@ -27,5 +27,15 @@ func main() {
 ```
 
 ```
+first 0
+second 0 // here
+second 1
+first 1
+first 2
+second 2
+second 3
+first 3
+first 4
+second 4
 
 ```
