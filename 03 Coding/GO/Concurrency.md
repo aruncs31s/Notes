@@ -1,7 +1,7 @@
 ---
 id: Concurrency
-aliases: 
-tags: 
+aliases: []
+tags: []
 cssclasses:
   - wide-page
 ---
@@ -142,3 +142,14 @@ After passing
 >> After passing
 >> 42
 >> ```
+
+---
+> [!multi-column]
+> 
+>> [!blank|medium-left]
+>> Prog_1
+>> ![[#^prog1]]
+> 
+
+
+
