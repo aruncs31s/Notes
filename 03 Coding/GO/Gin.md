@@ -5,6 +5,11 @@ tags: []
 ---
 # Gin
 
+```tasks
+not done
+path includes 03 Coding/GO/Gin.md
+```
+
 - [[Gin CORS]]
 > Install
 ```bash
