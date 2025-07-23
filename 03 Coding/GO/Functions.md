@@ -12,3 +12,11 @@ func sub(x int, y int) int {
 }
 ```
 
+
+## Anonymous Functions 
+
+```go
+func() {
+}()
+```
+
