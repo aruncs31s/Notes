@@ -1,4 +1,21 @@
 # GO CORS
+
+
+## GIN CORS
+```go
+import (
+  "github.com/gin-contrib/cors"
+  "github.com/gin-gonic/gin"
+)
+
+func main() {
+  router := gin.Default()
+  router.Use(cors.Default()) // All origins allowed by default
+  router.Run()
+}
+```
+
+## RS/CORS 
 ```go
 import (
     "github.com/rs/cors"
