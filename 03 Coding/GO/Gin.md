@@ -45,5 +45,6 @@ router.SetTrustedProxies([]string{"192.168.1.2"})
 ```
 
 - [ ] also check proxies
+- [ ] also checkout deployment https://gin-gonic.com/en/docs/deployment/
 ## Reference and Links
 1. https://gin-gonic.com/en/docs/learning-resources/
