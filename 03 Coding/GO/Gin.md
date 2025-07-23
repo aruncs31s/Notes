@@ -1,7 +1,8 @@
 ---
 id: Gin
-aliases: []
-tags: []
+aliases: 
+tags:
+  - go
 ---
 # Gin
 

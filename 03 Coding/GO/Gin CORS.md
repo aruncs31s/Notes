@@ -1,7 +1,8 @@
 ---
 id: Gin CORS
-aliases: []
-tags: []
+aliases: 
+tags:
+  - go
 ---
 
 # GIN CORS

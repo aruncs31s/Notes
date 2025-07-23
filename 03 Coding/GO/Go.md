@@ -1,7 +1,8 @@
 ---
 id: Go
-aliases: []
-tags: []
+aliases: 
+tags:
+  - go
 ---
 
 # GO

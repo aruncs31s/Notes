@@ -1,3 +1,8 @@
+---
+tags:
+  - go
+---
+
 # HTTP Servers 
 ## Midlewares 
 It sits between  `server` and main `request handler`, it can process the incoming request before  it reaches the business logic and can process after business logic has run.
