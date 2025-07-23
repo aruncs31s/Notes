@@ -108,6 +108,7 @@ After passing
 >[!multi-column]
 > 
 > > [!blank|float-left]
+>> p_1
 >> ```
 >>Before Passing
 >>After passing
@@ -115,3 +116,11 @@ After passing
 >>Send
 >>42
 >>```
+> 
+>> [!blank|float-right]
+>> ```
+>> Before Passing
+>> Before start
+>> After passing
+>> 42
+>> ```
