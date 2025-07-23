@@ -62,22 +62,23 @@ func main() {
 	fmt.Println(value)
 }
 ```
+
 ```
 Before Passing
-Before start
 After passing
+Before start
+Send
 42
 ```
+
 
 ```go
 
 package main
-
 import (
 	"fmt"
 	"time"
 )
-
 func main() {
 	ch := make(chan int) // creates a channel ch
 
@@ -96,11 +97,11 @@ func main() {
 	fmt.Println(value)
 }
 ```
-
 ```
 Before Passing
-After passing
 Before start
-Send
+After passing
 42
 ```
+
+
