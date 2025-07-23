@@ -44,4 +44,4 @@ Access-Control-Request-Headers: content-type
   * Access-Control-Allow-Methods: GET, POST, PUT, DELETE
 * Access-Control-Allow-Headers: Content-Type, Authorization
 * It does not runs actual `PUT` command 
-* After receiving the response the bros
+* After receiving the response the browser sends the og `PUT` or any request.
