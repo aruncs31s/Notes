@@ -30,4 +30,10 @@ func main() {
 - Used when these present `PUT`, `DELETE`, `PATCH`, `OPTIONS`
 
 #example 
-1. Encounters a c
+1. PAUSE: Encounters a complex request 
+2.  SEND PRE-FLIGHT:  
+
+```
+
+```Access-Control-Request-Method: PUT
+      * Access-Control-Request-Headers: content-type
