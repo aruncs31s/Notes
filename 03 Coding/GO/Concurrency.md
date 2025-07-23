@@ -97,6 +97,9 @@ func main() {
 	fmt.Println(value)
 }
 ```
+^prog2
+
+
 ```
 Before Passing
 Before start
@@ -104,6 +107,12 @@ After passing
 42
 ```
 
+
+> [!multi-column]
+> 
+>> [!blank|right]
+>> Prog_2
+>> ![[#^prog2]]
 
 >[!multi-column]
 > 
