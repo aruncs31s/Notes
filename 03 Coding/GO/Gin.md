@@ -43,5 +43,7 @@ router.Run(":8080") // explicit def
 ```go
 router.SetTrustedProxies([]string{"192.168.1.2"})
 ```
+
+- [ ] also check proxies
 ## Reference and Links
 1. https://gin-gonic.com/en/docs/learning-resources/
