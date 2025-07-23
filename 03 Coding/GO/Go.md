@@ -19,16 +19,13 @@ path includes 03 Coding/Go
 
 ## Creating New Project
 
-- [ ] ?
 
 ```bash
 mkdir project_name
-go mod init example/project_name
+go mod init project_name
 ```
 
-```tree
 
-```
 
 This works
 
