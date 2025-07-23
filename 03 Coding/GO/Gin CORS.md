@@ -26,3 +26,4 @@ func main() {
 - [x] pre-flight `OPTIONS` requests. ✅ 2025-07-23
 
 >  It is a small, preliminary request that the browser sends  automatically before sending the actual `HTTP` request
+- Before the actual request. 
