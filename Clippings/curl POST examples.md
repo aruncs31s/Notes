@@ -179,10 +179,6 @@ param1=value1&param2=value2
 
 ```
 var app = require('express')();
-        
-        
-          
-
           var bodyParser = require('body-parser');
         
         
