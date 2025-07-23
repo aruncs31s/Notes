@@ -36,3 +36,35 @@ func main() {
 	fmt.Println(value)
 }
 ```
+
+
+```go
+package main
+import (
+	"fmt"
+	"time"
+)
+func main() {
+	ch := make(chan int) // creates a channel ch
+
+	go func() {
+		fmt.Println("Before start")
+		time.Sleep(10 * time.Second)
+		ch <- 42
+		fmt.Println("Send")
+	}()
+
+	fmt.Println("Before Passing")
+	value := <-ch
+
+	fmt.Println("After passing")
+
+	fmt.Println(value)
+}
+```
+```
+Before Passing
+Before start
+After passing
+42
+```
