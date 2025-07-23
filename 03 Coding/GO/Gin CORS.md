@@ -37,11 +37,11 @@ func main() {
 Access-Control-Request-Method: PUT
 Access-Control-Request-Headers: content-type
 ```
-3. SERVER RESPONDS: Go server receives this OPTIONS request. And 
-      * Check if PUT and Content-Type are allowed.
-      * Respond with a 200 OK status and permission headers:
-          * Access-Control-Allow-Origin: https://my-app.com
-          * Access-Control-Allow-Methods: GET, POST, PUT, DELETE
-          * Access-Control-Allow-Headers: Content-Type, Authorization
-      * Crucially, the server does not run the actual `PUT` handler logic. It just
-        answers the permission question and stops.
+3. SERVER RESPONDS: Go server receives this OPTIONS request. And it will 
+  * Check if `PUT` and Content-Type are allowed.
+  * Respond with a 200 OK status and permission headers:
+  * Access-Control-Allow-Origin: https://my-app.com
+  * Access-Control-Allow-Methods: GET, POST, PUT, DELETE
+* Access-Control-Allow-Headers: Content-Type, Authorization
+* It does not runs actual `PUT` command 
+* After receiving the response the bros
