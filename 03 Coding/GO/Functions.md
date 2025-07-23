@@ -14,7 +14,7 @@ func sub(x int, y int) int {
 
 
 ## Anonymous Functions 
-
+> It does not have a name
 ```go
 func() {
 }()
