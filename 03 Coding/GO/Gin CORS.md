@@ -27,3 +27,4 @@ func main() {
 
 >  It is a small, preliminary request that the browser sends  automatically before sending the actual `HTTP` request
 - Before the actual request. 
+- Used when these present `PUT`, `DELETE`, `PATCH`, `OPTIONS`
