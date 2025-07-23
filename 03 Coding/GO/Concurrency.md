@@ -13,3 +13,5 @@ go doSomething()
 
 ## Channels
 Channels allow different goroutines to communicate with each other.
+
+- `<-` channel operator.
