@@ -30,3 +30,14 @@ fruits2 := make([]string, 0, 10)
 ```
 - creating an empty slice of (`[]string`)
 - and setting its initial capacity to `10` 
+
+```go
+fruits1 := make([]string, 0)
+fruits2 := make([]string, 0, 10)
+
+fmt.Println(len(fruits1)) //  0
+fmt.Println(len(fruits2)) //  0
+// cap
+fmt.Println(cap(fruits1)) // 0
+fmt.Println(cap(fruits2)) // 10
+```
