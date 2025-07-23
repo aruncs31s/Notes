@@ -1,7 +1,11 @@
-# GO CORS
+---
+id: Gin CORS
+aliases: []
+tags: []
+---
 
-
-## GIN CORS
+# GIN CORS
+- [ ] Checkout allowing specific hosts 
 ```go
 import (
   "github.com/gin-contrib/cors"
@@ -14,31 +18,8 @@ func main() {
   router.Run()
 }
 ```
-
-## RS/CORS 
-```go
-import (
-    "github.com/rs/cors"
-    "net/http"
-)
-func main() {
-    mux := http.NewServeMux()
-    mux.HandleFunc("/articles", handleArticles)
-    
-    // Configure CORS
-    c := cors.New(cors.Options{
-        AllowedOrigins:   []string{"http://localhost:3000", "https://myapp.com"},
-        AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
-        AllowedHeaders:   []string{"*"},
-        AllowCredentials: true,
-    })
-    
-    handler := c.Handler(mux)
-    
-    log.Println("Server starting on :8080")
-    log.Fatal(http.ListenAndServe(":8080", handler))
-}
-```
+>[!WARNING]
+> Allowing all origins disables cookies for clients. For credentialed requests, do not allow all origins.
 
 - [x] pre-flight `OPTIONS` requests. ✅ 2025-07-23
 
