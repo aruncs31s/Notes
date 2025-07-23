@@ -18,3 +18,4 @@ go doSomething()
 
 - `<-` channel operator.
 - This operation will block until another goroutine is ready to receive the value
+
