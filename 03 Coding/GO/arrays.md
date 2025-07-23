@@ -41,3 +41,14 @@ fmt.Println(len(fruits2)) //  0
 fmt.Println(cap(fruits1)) // 0
 fmt.Println(cap(fruits2)) // 10
 ```
+```go
+fruits := make([]string, 0)
+fruits = append(fruits, "A")
+fmt.Println(fruits)
+fruits = append(fruits, "B", "C")
+fmt.Println(fruits)
+```
+```
+[A]
+[A B C]
+```
