@@ -4,7 +4,8 @@ aliases: []
 tags: []
 ---
 # Gin
-- Install 
+- [[Gin CORS]]
+- Install
 ```bash
 go get -u github.com/gin-gonic/gin
 ```
