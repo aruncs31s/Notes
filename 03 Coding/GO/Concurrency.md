@@ -67,10 +67,10 @@ func main() {
 ^prog1
 
 ```
-Before Passing
-After passing
-Before start
-Send
+Before Passing 3 
+After passing 1 
+Before start 1 
+Send 4 
 42
 ```
 
@@ -152,7 +152,8 @@ After passing
 > 
 >> [!blank| medium-right]
 >>```mermaid
->>
+>> graph TB 
+>> channel_creation --> goroutine_launch --> race --> 
 >>```
 
 
