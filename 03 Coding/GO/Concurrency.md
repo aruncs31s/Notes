@@ -62,6 +62,7 @@ func main() {
 	fmt.Println(value)
 }
 ```
+^prog1
 
 ```
 Before Passing
@@ -110,7 +111,10 @@ After passing
 
 > [!multi-column]
 > 
->> [!blank|right]
+>> [!blank|medium-left]
+>> ![[^prog1]]
+> 
+>> [!blank|medium-right]
 >> Prog_2
 >> ![[#^prog2]]
 
