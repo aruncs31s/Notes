@@ -4,6 +4,10 @@ aliases: []
 tags: []
 ---
 # Gin
+- Install 
+```bash
+go get -u github.com/gin-gonic/gin
+```
 
 ```go
 
