@@ -24,3 +24,4 @@ fruits := make([]string, 0)
 fruits2 := make([]string, 0, 10)
 ```
 - creating an empty slice of (`[]string`)
+- and setting its initial capacity to `10` 
