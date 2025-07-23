@@ -150,6 +150,10 @@ After passing
 >> Prog_1
 >> ![[#^prog1]]
 > 
+>> [!blank| medium-right]
+>>```mermaid
+>>
+>>```
 
 
 
