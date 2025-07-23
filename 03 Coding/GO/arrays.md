@@ -52,3 +52,8 @@ fmt.Println(fruits)
 [A]
 [A B C]
 ```
+
+
+## Memory 
+
+
