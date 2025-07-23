@@ -15,3 +15,4 @@ go doSomething()
 Channels allow different goroutines to communicate with each other.
 
 - `<-` channel operator.
+- This operation will block until another goroutine is ready to receive the value
