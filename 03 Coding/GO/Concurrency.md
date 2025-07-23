@@ -112,7 +112,8 @@ After passing
 > [!multi-column]
 > 
 >> [!blank|medium-left]
->> ![[^prog1]]
+>> Prog_1
+>> ![[#^prog1]]
 > 
 >> [!blank|medium-right]
 >> Prog_2
