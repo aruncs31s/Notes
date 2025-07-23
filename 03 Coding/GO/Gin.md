@@ -31,5 +31,13 @@ func main() {
   router.Run() // listen and serve on 0.0.0.0:8080
 }
 ```
+
+## Config
+
+```go
+router.Run() // uses default port or env{PORT}
+router.Run("192.168.1.100:8080") // explicit def
+router.Run(":8080") // explicit def
+```
 ## Reference and Links
 1. https://gin-gonic.com/en/docs/learning-resources/
