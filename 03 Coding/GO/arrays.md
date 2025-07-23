@@ -19,3 +19,8 @@ fruits := make([]string, 0)
 
 - `[]string` -> slice of strings
 - 0 -> initial length of slice
+
+```go
+fruits2 := make([]string, 0, 10)
+```
+- creating an empty slice of (`[]string`)
