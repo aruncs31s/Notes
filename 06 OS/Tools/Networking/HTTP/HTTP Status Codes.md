@@ -1,5 +1,4 @@
 
-
 ## 2xx Success
 
 | Code  | Meaning    | Usage                                                         |

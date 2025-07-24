@@ -196,3 +196,86 @@ This after checking out `new_branch` , you can see that it says `HEAD -> new_bra
 > ```bash
 > git branch -D branch-name
 > ```
+
+
+
+## Solutions
+```bash
+git branch ESP8266
+git checkout ESP8266
+```
+- now edit the code 
+```cpp
+#include <Arduino.h>
+#define LED_BUILTIN 13
+void setup() { pinMode(LED_BUILTIN, OUTPUT); }
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(1000);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000);
+}
+```
+```cpp
+#include <Arduino.h>
+#define LED_BUILTIN D4
+void setup() { pinMode(LED_BUILTIN, OUTPUT); }
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(1000);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000);
+}
+```
+
+```bash
+python task_2.py
+```
+>[!success]- result
+>```
+> Please change the code.cpp to run on ESP8266 Boards.
+>```
+
+```bash
+python task_2.py
+```
+>[!success]- result
+>```
+>You have successfully completed this level.
+>You can now proceed to the next task.
+> ```
+
+
+```bash
+python task_3.py
+```
+- it will tell you to checkout main and modify the `code.cpp` , but since you are already changed `code.cpp` 
+```bash
+git checkout main
+```
+
+```bash
+python task_3.py
+```
+
+```bash
+python task_4.py
+```
+
+```bash
+git checkout 1215bf0f
+```
+- this was expected to work but since you are not commit the modified code you have to stash it
+```bash
+git stash
+```
+
+```bash
+python task_4.py
+```
+
+```bash
+git branch Arduino
+git branch -d ESP8266
+```
+

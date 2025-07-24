@@ -8,7 +8,7 @@ tags: []
 
 - [[Gin]]
 - [[HTTP Servers]]
-
+- [[SOLID principle]]
 ## Creating New Project
 
 - [ ] ?
@@ -407,3 +407,13 @@ if v := math.Pow(x, n); v < lim {
 	}
 v + 10 // error not in scope
 ```
+
+
+## Interfaces
+*“Any type that has this method is allowed.”*
+```go
+type Bird interface {
+    Fly() string
+}
+```
+Any type that has a method `Fly() string` is considered a `Bird`.
