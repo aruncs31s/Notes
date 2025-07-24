@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"id":"b62d45a1ed7066b2","x":-140,"y":-220,"width":356,"height":231,"type":"text","text":"```go\ntype Backend interface {  \nSetAlive(bool)  \nIsAlive() bool  \nGetURL() *url.URL  \nGetActiveConnections() int  \nServe(http.ResponseWriter, *http.Request)  \n}\n```"},
+		{"id":"7306e4b8d4d4d9e9","x":280,"y":-215,"width":299,"height":226,"type":"text","text":"```go\ntype backend struct {  \nurl *url.URL  \nalive bool  \nmux sync.RWMutex  \nconnections int  \nreverseProxy *httputil.ReverseProxy  \n}\n```"}
+	],
+	"edges":[]
+}
