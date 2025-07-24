@@ -1,7 +1,18 @@
 # SOLID Principles
-- essential part of oop
+- [[Factory Desing Pattern]]
 
-## 1. Single Responsibility Principle (SRP): Principle states that a class or module should **have only one reason** to change
+| Principle                               | Meaning                                                                        | Related Design Patterns              |
+| --------------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------ |
+| **S** – Single Responsibility Principle | A class should have **only one reason to change**.                             | Factory, Builder, Observer           |
+| **O** – Open/Closed Principle           | Classes should be **open for extension but closed for modification**.          | Strategy, Decorator, Template Method |
+| **L** – Liskov Substitution Principle   | Subclasses should be usable wherever the parent class is.                      | All polymorphism-based patterns      |
+| **I** – Interface Segregation Principle | Use **small, specific interfaces** rather than big general ones.               | Adapter, Proxy                       |
+| **D** – Dependency Inversion Principle  | High-level modules should not depend on low-level ones — **use abstractions**. | Dependency Injection, Facto          |
+|                                         |                                                                                |                                      |
+
+
+
+##### 1. Single Responsibility Principle (SRP): Principle states that a class or module should **have only one reason** to change
 ```go
 type User struct {
     FirstName string
@@ -35,5 +46,5 @@ func (r *UserRepository) Save(u *User) error {
 ```
 
 - **Domain-Driven Design (DDD)**, Version 2 is preferred
-## 2. Open/Closed Principle (OCP)
+##### 2. Open/Closed Principle (OCP)
 should be open for extension but closed for modification.
