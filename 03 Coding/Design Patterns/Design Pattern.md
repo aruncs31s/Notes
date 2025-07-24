@@ -5,6 +5,7 @@ tags:
 # Design Patterns
 
 - [[Decorator]]
+
 - designing reusable object-oriented software
 - Your design should be specific to the problem at hand but also general enough to address future problems and requirements.
 - *, they reuse solutions that have worked for them in the past*
