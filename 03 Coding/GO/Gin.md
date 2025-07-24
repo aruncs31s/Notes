@@ -1,9 +1,12 @@
 ---
 id: Gin
-aliases: []
-tags: []
+aliases:
+tags:
+  - go
 ---
+
 # Gin
+
 - [[httprouter]]
 - https://github.com/julienschmidt/httprouter/blob/master/router.go
 
@@ -12,6 +15,7 @@ tags: []
 ```bash
 go get -u github.com/gin-gonic/gin
 ```
+
 ```bash
 import "github.com/gin-gonic/gin"
 import "net/http"
@@ -30,12 +34,33 @@ func main() {
   router.Run() // listen and serve on 0.0.0.0:8080
 }
 ```
+
+````go
+package main
+=======
+```tasks
+path includes 03 Coding/GO/Gin.md
+````
+
+- [[Gin CORS]]
+  > Install
+
+```bash
+go get -u github.com/gin-gonic/gin
+```
+
 ```go
 package main
+
 import (
   "github.com/gin-gonic/gin"
   "net/http"
 )
+<<<<<<< HEAD
+func main() {
+  router := gin.Default()
+=======
+
 func main() {
   router := gin.Default()
   router.GET("/ping", func(c *gin.Context) {
@@ -46,7 +71,9 @@ func main() {
   router.Run() // listen and serve on 0.0.0.0:8080
 }
 ```
-#### GET 
+
+#### GET
+
 ```go
 func main() {
 	r := gin.Default()
@@ -56,6 +83,7 @@ func main() {
 ```
 
 ### Creating a post
+
 ```go
 func PostCreate(c *gin.Context) {
 	// TODO:
@@ -79,5 +107,29 @@ func PostCreate(c *gin.Context) {
 	})
 }
 ```
+
+router.Run() // listen and serve on 0.0.0.0:8080
+}
+
+````
+
+## Config
+
+```go
+router.Run() // uses default port or env{PORT}
+router.Run("192.168.1.100:8080") // explicit def
+router.Run(":8080") // explicit def
+````
+
+- [ ] Check what it is
+
+```go
+router.SetTrustedProxies([]string{"192.168.1.2"})
+```
+
+- [ ] also check proxies
+- [ ] also checkout deployment https://gin-gonic.com/en/docs/deployment/
+
 ## Reference and Links
+
 1. https://gin-gonic.com/en/docs/learning-resources/

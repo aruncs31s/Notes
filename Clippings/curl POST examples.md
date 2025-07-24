@@ -1,6 +1,9 @@
 ---
-url: https://gist.github.com/subfuzion/08c5d85437d5d4f00e58
+id: curl POST examples
+aliases: []
+tags: []
 title: curl POST examples
+url: https://gist.github.com/subfuzion/08c5d85437d5d4f00e58
 ---
 curl POST examples
 
@@ -179,64 +182,14 @@ param1=value1&param2=value2
 
 ```
 var app = require('express')();
-        
-        
-          
-
-          var bodyParser = require('body-parser');
-        
-        
-          
-
-          
-
-        
-        
-          
-
-          app.use(bodyParser.json()); // for parsing application/json
-        
-        
-          
-
-          app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
-        
-        
-          
-
-          
-
-        
-        
-          
-
-          app.post('/data', function (req, res) {
-        
-        
-          
-
-            console.log(req.body);
-        
-        
-          
-
-            res.end();
-        
-        
-          
-
-          });
-        
-        
-          
-
-          
-
-        
-        
-          
-
-          app.listen(3000);
+  var bodyParser = require('body-parser');
+  app.use(bodyParser.json()); // for parsing application/json
+  app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+  app.post('/data', function (req, res) {
+  console.log(req.body);
+  res.end();
+});
+ app.listen(3000);
 ```
 
 ### POST Form Encoded Data

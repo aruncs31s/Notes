@@ -1,25 +1,31 @@
 ---
 id: Go
 aliases: []
-tags: []
+tags:
+  - go
 ---
 
 # GO
 
+- [ ]
 - [[Gin]]
 - [[HTTP Servers]]
 - [[SOLID principle]]
+
 ## Creating New Project
 
-- [ ] ?
+## Need
+
+```tasks
+not done
+path includes 03 Coding/Go
+```
+
+## Creating New Project
 
 ```bash
 mkdir project_name
-go mod init example/project_name
-```
-
-```tree
-
+go mod init project_name
 ```
 
 This works
@@ -311,6 +317,7 @@ for i := 0; i < 10; i++ {
         fmt.Println(i)
      }
 ```
+
 ```go
 package main
 
@@ -318,7 +325,7 @@ import "fmt"
 
 func main() {
 	sum := 0
-	for i := 0; i < 10; i++ { // no parentheses surrounding and { always required 
+	for i := 0; i < 10; i++ { // no parentheses surrounding and { always required
 		sum += i
 	}
 	fmt.Println(sum)
@@ -340,17 +347,23 @@ func main() {
 }
 ```
 
->[!NOTE]
+> [!NOTE]
 > For is Go's "while" , so there is no seperate `while`
+>
 > ```bash
-> 
-	for sum < 1000 {
-		sum += sum
-	}
-	fmt.Println(sum)
-}
+>
 > ```
 
+    for sum < 1000 {
+    	sum += sum
+    }
+    fmt.Println(sum)
+
+}
+
+> ```
+>
+> ```
 
 ```go
 // infinite loop
@@ -358,14 +371,34 @@ for {
 	}
 ```
 
-## Conditional
+### Switches
+
 ```go
-if x < 0 { // no () but must -> {} 
+
+func main() {
+	fmt.Print("Go runs on ")
+	switch os := runtime.GOOS; os {
+	case "darwin":
+		fmt.Println("macOS.")
+	case "linux":
+		fmt.Println("Linux.")
+	default:
+		// freebsd, openbsd,
+		// plan9, windows...
+		fmt.Printf("%s.\n", os)
+	}
+}
+```
+
+## Conditional
+
+```go
+if x < 0 { // no () but must -> {}
 		return sqrt(-x) + "i"
 	}
 ```
 
-### Short if 
+### Short if
 
 ```go
 package main
@@ -402,18 +435,20 @@ func pow(x, n, lim float64) float64 {
 ```go
 if v := math.Pow(x, n); v < lim {
 		return v
-	} else { 
+	} else {
 		fmt.Printf("%g >= %g\n", v, lim) // v is also in scope
 	}
 v + 10 // error not in scope
 ```
 
-
 ## Interfaces
-*“Any type that has this method is allowed.”*
+
+_“Any type that has this method is allowed.”_
+
 ```go
 type Bird interface {
     Fly() string
 }
 ```
+
 Any type that has a method `Fly() string` is considered a `Bird`.
