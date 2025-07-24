@@ -452,3 +452,7 @@ type Bird interface {
 ```
 
 Any type that has a method `Fly() string` is considered a `Bird`.
+
+
+## References
+1. _Learning Go: An Idiomatic Approach to Real-World Go Programming_
