@@ -136,3 +136,18 @@ Requirement is to read a `json` file and get a specific element from the file , 
 
  
 - [ ] checkout `sync.WaitGroup`
+
+
+
+   2. Potential Deadlock: In helper/checkNames.go, you only send a value to the channel if a name matches. If the loop finishes and no name is
+      found, you never send false, and the program will hang forever waiting on the channel.
+
+    1     // helper/checkNames.go
+    2     for _, student := range <-chJSONParsor {
+    3         if strings.Contains(student.Name, gitUserName) {
+    4             chChekName <- true
+    5             break // You should 'return' here to exit the function
+    6         } else {
+    7             continue
+    8         }
+    9     }
