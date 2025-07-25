@@ -42,4 +42,8 @@ second 4
 
 
 ## File Processing using Go Routines
-how to 
+Requirement is to read a `json` file and get a specific element from the file , since the file processing takes too much time it is best to use [[Concurrency]] for this , it may be as follows
+
+- read the `json` file , start new job 
+- tell the function which depents on job to wait for it to finish 
+
