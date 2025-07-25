@@ -7,8 +7,35 @@ tags:
 # GO Routines
 
 ```go
-name 
+name := make(chan Type, capacity<optional>)
 ```
+
+```go
+ch1, ch2 := make(chan int), make(chan string, 5)
+```
+
+
+
+```go
+func main() {
+    ch := make(chan string, 5) // Buffered channel with capacity 5
+
+    // Send 5 values (fills the buffer)
+    ch <- "one"
+    ch <- "two"
+    ch <- "three"
+    ch <- "four"
+    ch <- "five"
+
+    // Now retrieve values from the channel
+    fmt.Println(<-ch) // "one" 
+    fmt.Println(<-ch) // "two"
+    fmt.Println(<-ch) // "three"
+    fmt.Println(<-ch) // "four"
+    fmt.Println(<-ch) // "five"
+}
+```
+
 ```go
 package main
 
