@@ -37,3 +37,6 @@ git push
 > [!abstract]- Dev Notes
 > I have to implement a task where they will use `git pull` and `git push` , but these 2 commands include remote? 
 
+
+
+## Coding
