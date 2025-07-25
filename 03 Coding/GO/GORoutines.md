@@ -5,6 +5,10 @@ tags:
   - go
 ---
 # GO Routines
+
+```go
+name 
+```
 ```go
 package main
 
