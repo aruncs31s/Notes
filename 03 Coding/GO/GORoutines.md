@@ -1,6 +1,6 @@
 ---
 id: GORoutines
-aliases: 
+aliases: []
 tags:
   - go
 ---
@@ -131,3 +131,8 @@ Requirement is to read a `json` file and get a specific element from the file , 
 
 - read the `json` file , start new job 
 - tell the function which depents on job to wait for it to finish 
+
+
+
+ 
+- [ ] checkout `sync.WaitGroup`
