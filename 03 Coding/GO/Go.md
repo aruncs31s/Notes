@@ -1,13 +1,13 @@
 ---
 id: Go
-aliases: []
+aliases: 
 tags:
   - go
+dg-publish: true
 ---
 
 # GO
 
-- [ ]
 - [[Gin]]
 - [[HTTP Servers]]
 - [[SOLID principle]]

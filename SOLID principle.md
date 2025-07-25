@@ -1,5 +1,5 @@
 # SOLID Principles
-# - [[Factory Desing Pattern]]
+- [[Factory Desing Pattern]]
 
 | Principle                               | Meaning                                                                        | Related Design Patterns              |
 | --------------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------ |
@@ -13,6 +13,7 @@
 
 
 ##### 1. Single Responsibility Principle (SRP): Principle states that a class or module should **have only one reason** to change
+- it encourages developers to create modular and reusable code by dividing each component into a single responsibility. This helps in making the code more maintainable, testable, and easier to understand,
 ```go
 type User struct {
     FirstName string

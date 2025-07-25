@@ -1,10 +1,20 @@
 ---
 tags:
   - programming
+  - software_design
 ---
 # Design Patterns
-
+**Used In**
+- [[SOLID principle]]]
 - [[Decorator]]
+
+**Abstract Factory**  Provide an interface for creating families of related or dependent objects without specifying their concrete classes. 
+Builder (97) Separate the construction of a complex object from its representation so that the same construction process can create different representations.
+Factory Method (107) Define an interface for creating an object,but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
+Prototype (117) Specify the kinds of objectsto create using a prototypical instance, and create new objects by copying this prototype.
+Singleton (127) Ensure a class only has one instance, and provide a global point of access to it.
+
+
 
 - designing reusable object-oriented software
 - Your design should be specific to the problem at hand but also general enough to address future problems and requirements.
@@ -51,6 +61,13 @@ def animal_factory(animal_type):
 pet = animal_factory("dog")
 print(pet.speak()) 
 ```
+
+
+#### Abstract Factory 
+- [[Motif]]
+- to create objects (instances) based on a predefined set of instructions or templates
+> easier maintenance and reuse of code
+
 
 ### Structural Pattern 
 ```python
