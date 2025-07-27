@@ -9,6 +9,7 @@ dg-publish: true
 # GO
 
 - [[Gin]]
+- [[GORM]]
 - [[HTTP Servers]]
 - [[SOLID principle]]
 
@@ -107,7 +108,18 @@ func main() {
 }
 ```
 
+
+### IO 
+```go
+fmt.Print("Enter product code: ")
+code, _ := reader.ReadString('\n')
+code = strings.TrimSpace(code)
+```
+
+
 ### Var
+- use camelCase for variables also 
+
 
 #### Types
 
@@ -170,6 +182,24 @@ i := 42 // 42 int
 f := float64(i) // 42.00 ??
 u := uint(f) // 42 int
 ```
+
+###### Converting from `string`
+
+```go
+func Atoi(str string) (int, error)
+```
+
+>[!NOTE]- **Example**
+>```go
+>func main() {
+>  x := "245"
+>  y, e := strconv.Atoi(x)
+>  if e == nil {
+> 	 fmt.Printf("%T \n %v", y, y)
+> 	 }
+>}
+>```
+
 
 ##### Type inference
 
@@ -442,6 +472,7 @@ v + 10 // error not in scope
 ```
 
 ## Interfaces
+^0cc7de
 
 _“Any type that has this method is allowed.”_
 
