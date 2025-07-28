@@ -82,7 +82,7 @@ Design patterns are **descriptions of communicating objects and classes** that a
 - [[Factory Design Pattern]]
 - [[Builder]]
 - [[Singleton]]
-
+- [[Observer Design Pattern]]
 ### Popular Other Things
 - [ ] Organize them into catagories 
 
