@@ -27,3 +27,9 @@ publisher.subscribe(subscriber1)
 publisher.subscribe(subscriber2)
 publisher.notify("Hello, Subscribers!")
 ```
+Now, whenever an important event happens to the publisher, it goes over its subscribers and calls the specific notification method on their objects.
+
+ 
+
+
+## References 
