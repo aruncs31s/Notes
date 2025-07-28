@@ -9,7 +9,7 @@ dg-publish: true
 # Structural Patterns
 
 - [[Facade]]
-- - [[Adapter Pattern]]
+- [[Adapter Pattern]]
 > How **objects relate to eachother** 
 
 **Purpose**: **Organizing classes and objects into larger structures** to simplify relationships and ensure **flexible and efficient composition**
