@@ -1,5 +1,6 @@
 ### 🤝 Behavioral Patterns
 - [[Strategy Pattern]]
+- [[Observer Design Pattern]]
 **Purpose**: Concerned with **communication between objects**, focusing on **how responsibility is distributed** and **how algorithms are handled**
 
 #### Code Example - Observer Pattern
