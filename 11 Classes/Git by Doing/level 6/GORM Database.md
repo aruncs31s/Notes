@@ -15,7 +15,7 @@ When adding `GetByUsername`
 
 ```
 
-
+## Adding New Method. 
 ### Updatin the interface 
 
 ```go 
