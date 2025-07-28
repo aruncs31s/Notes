@@ -157,6 +157,9 @@ k := 3 // not available outside the function
 c, python, java := true, false, "no!"
 ```
 
+
+`issue@var_def_init obsidian`
+
 ```go 
 type Students struct {
 	gorm.Model
