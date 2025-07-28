@@ -4,6 +4,8 @@ tags:
   - for_students
   - sub_note
 github: https://github.com/aruncs31s/git_by_doing_level_6
+type: Automated
+Status: Done
 ---
 # Level 6
 - [[Git API]]
