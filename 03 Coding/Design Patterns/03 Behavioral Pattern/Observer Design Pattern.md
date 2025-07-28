@@ -33,3 +33,4 @@ Now, whenever an important event happens to the publisher, it goes over its subs
 
 
 ## References 
+1. https://refactoring.guru/design-patterns/observer
