@@ -9,8 +9,6 @@ dg-publish: true
 ###  1️⃣ Singleton Pattern
 Its like a global variable of instances like every part of the application can access it , it also makes it dificult to test and debug. But easy to use.
 
-
-
 ```ts
 // Multi logger
 const logger1 = new Logger();
@@ -19,8 +17,6 @@ const logger2 = new Logger();
 // Single Logger 
 const logger = Logger.getInstance();
 ```
-
-
 
 ```mermaid
 ---
