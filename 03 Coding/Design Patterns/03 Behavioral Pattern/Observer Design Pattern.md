@@ -29,7 +29,7 @@ publisher.notify("Hello, Subscribers!")
 ```
 Now, whenever an important event happens to the publisher, it goes over its subscribers and calls the specific notification method on their objects.
 
-![]]
+![](https://refactoring.guru/images/patterns/diagrams/observer/structure-indexed.png?id=2ca2c123503ede860740af2a22bc4b4d)
  
 
 
