@@ -1,14 +1,14 @@
 # SOLID Principles
 - [[Factory Design Pattern]]
 
-| Principle                               | Meaning                                                                        | Related Design Patterns              |
-| --------------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------ |
-| **S** – Single Responsibility Principle | A class should have **only one reason to change**.                             | Factory, Builder, Observer           |
-| **O** – Open/Closed Principle           | Classes should be **open for extension but closed for modification**.          | Strategy, Decorator, Template Method |
-| **L** – Liskov Substitution Principle   | Subclasses should be usable wherever the parent class is.                      | All polymorphism-based patterns      |
-| **I** – Interface Segregation Principle | Use **small, specific interfaces** rather than big general ones.               | Adapter, Proxy                       |
-| **D** – Dependency Inversion Principle  | High-level modules should not depend on low-level ones — **use abstractions**. | Dependency Injection, Facto          |
-|                                         |                                                                                |                                      |
+| Principle                               | Meaning                                                                        | Related Design Patterns                                      |
+| --------------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------ |
+| **S** – Single Responsibility Principle | A class should have **only one reason to change**.                             | [[Factory Design Pattern\|Factory]] , [[Builder]] , Observer |
+| **O** – Open/Closed Principle           | Classes should be **open for extension but closed for modification**.          | Strategy, Decorator, Template Method                         |
+| **L** – Liskov Substitution Principle   | Subclasses should be usable wherever the parent class is.                      | All polymorphism-based patterns                              |
+| **I** – Interface Segregation Principle | Use **small, specific interfaces** rather than big general ones.               | Adapter, Proxy                                               |
+| **D** – Dependency Inversion Principle  | High-level modules should not depend on low-level ones — **use abstractions**. | Dependency Injection, Facto                                  |
+|                                         |                                                                                |                                                              |
 
 
 
