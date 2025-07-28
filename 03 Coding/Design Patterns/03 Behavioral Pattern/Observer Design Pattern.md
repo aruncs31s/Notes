@@ -31,6 +31,19 @@ Now, whenever an important event happens to the publisher, it goes over its subs
 
 ![](https://refactoring.guru/images/patterns/diagrams/observer/structure-indexed.png?id=2ca2c123503ede860740af2a22bc4b4d)
  
+## Example in Go
+
+```go
+package main
+
+type Subject interface {
+    register(observer Observer)
+    deregister(observer Observer)
+    notifyAll()
+}
+```
+
+
 
 
 ## References 
