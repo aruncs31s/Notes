@@ -157,6 +157,10 @@ k := 3 // not available outside the function
 c, python, java := true, false, "no!"
 ```
 
+- [ ] Check why this is working and the fis
+```go
+u := models.Students{}
+```
 ```go
 package main
 
