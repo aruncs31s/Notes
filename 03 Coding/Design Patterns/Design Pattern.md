@@ -83,6 +83,51 @@ Design patterns are **descriptions of communicating objects and classes** that a
 - [[Builder]]
 - [[Singleton]]
 
+### Popular Other Things
+- [ ] Organize them into catagories 
+
+#### Guard Clauses Technique 
+> Used to write , **Cleaner** and more **readable code**
+```c++
+void someFunction(){
+  if (wifi){
+    if(login){
+      if(admin){
+        someFunction();
+      } else {
+        // Handle non-admin user
+        return;
+    }
+  }else {
+    // Handle no login
+    return;
+    }
+  }else {
+    // Handle no wifi
+    return;
+  }
+}
+```
+
+This change to 
+
+```c++
+void someFunction(){
+  if (!wifi) {
+    // Handle no wifi
+    return;
+  }
+  if (!login) {
+    // Handle no login
+    return;
+  }
+  if (!admin) {
+    // Handle non-admin user
+    return;
+  }
+  someFunction();
+}
+```
 
 ---
 

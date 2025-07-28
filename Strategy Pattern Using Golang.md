@@ -6,10 +6,16 @@ tags:
   - go
   - "#work"
 ---
-# Strategy Patter Using Golang 
+# Strategy Pattern Using Golang
 
+The goal is to define a **family of algorithms** (different ways to execute a command), **encapsulate each one**, and **make them interchangeable**. The client (main function) can change *how a command is executed at runtime without changing the code that initiates the execution*.
+So 
+1. Define family of algorithms (strategies)
+2. Encapsulate each one (implement the interface)
+3. Make them interchangeable (use a context to switch strategies)
+4. Client code can use any strategy without knowing the details of how it works.
 
-```go 
+```go
 func main() {
 	// Create executor with synchronous strategy
 	executor := NewCommandExecutor(&SynchronousStrategy{})
