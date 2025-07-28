@@ -7,7 +7,7 @@ github: https://github.com/aruncs31s/git_by_doing_level_6
 ---
 # Level 6
 - [[Git API]]
-- [[G]]
+- [[GO Code]]
 ```dataview
 Table without ID  file.name as "Name" , github as Link , status as Status, file.inlinks as Mentioned
 where file = this.file
