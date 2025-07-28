@@ -29,6 +29,7 @@ publisher.notify("Hello, Subscribers!")
 ```
 Now, whenever an important event happens to the publisher, it goes over its subscribers and calls the specific notification method on their objects.
 
+![]]
  
 
 
