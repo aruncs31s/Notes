@@ -2,7 +2,7 @@
 # GORM Database 
 
 When adding `GetByUsername`
-? Should i al
+? Should i always 
 ```go
  type StudentsRepository interface {
         GetAll() ([]models.Students, error)
