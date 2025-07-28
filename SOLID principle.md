@@ -1,5 +1,5 @@
 # SOLID Principles
-- [[Factory Desing Pattern]]
+- [[Factory Design Pattern]]
 
 | Principle                               | Meaning                                                                        | Related Design Patterns              |
 | --------------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------ |

@@ -2,133 +2,136 @@
 tags:
   - programming
   - software_design
+cssclasses:
+  - wide-page
+dg-publish: true
 ---
+
 # Design Patterns
+>[!NOTE]- **Hierarchy** 
+>```mermaid
+>---
+>config:
+>  theme: redux
+>---
+>flowchart LR
+>    A["Design Pattern"] --> B["Creational Pattern"] & n1@{ label: "<strong data-start=\"844\" data-end=\"867\" style=\"color:\" data-darkreader-inline-color=\"\">Structural Patterns</strong>" } & n2["Behavioral Patterns"]
+>    B --> C["setOptions"] & D["Factory Method"] & n9["Abstract Factory"] & n10["Builder"] & n11["Prototype"]
+>    n1 --> n3["Adapter"] & n5["Bridge"] & n12["Composite"] & n13["Decorator"] & n14["Facade"] & n15["Flyweight"] & n16["Proxy"]
+>    n2 --> n7["Chain of Responsibility"] & n8["Command"] & n17["Interpreter"] & n18["Iterator"] & n19["Mediator"] & n20["Memento"] & n21["Observer"] & n22["State"] & n23["Strategy"] & n24["Template Method"] & n25["Visitor"]
+>    A@{ shape: rounded}
+>    B@{ shape: rounded}
+>    n1@{ shape: rounded}
+>    n2@{ shape: rounded}
+>    n3@{ shape: rect}
+>    n5@{ shape: rect}
+>    n7@{ shape: rect}
+>    n8@{ shape: rect}
+>    style A fill:#D50000
+>    style B fill:#2962FF
+>    style n1 fill:#FF6D00
+>    style n2 fill:#AA00FF
+>
+>```
+
+
 **Used In**
-- [[SOLID principle]]]
+- [[SOLID principle]]
 - [[Decorator]]
 
-**Abstract Factory**  Provide an interface for creating families of related or dependent objects without specifying their concrete classes. 
-Builder (97) Separate the construction of a complex object from its representation so that the same construction process can create different representations.
-Factory Method (107) Define an interface for creating an object,but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
-Prototype (117) Specify the kinds of objectsto create using a prototypical instance, and create new objects by copying this prototype.
-Singleton (127) Ensure a class only has one instance, and provide a global point of access to it.
+## 📚 Design Pattern Categories
+- [[Creational Patterns|🪛Creational Patterns]]
+- [[Structural Pattern|🏠Structural Pattern]]
+- [[Behavioral Pattern|🤝 Behavioral Patterns]]
+---
+## 📖 Definition
 
+Design patterns are **descriptions of communicating objects and classes** that are customized to solve a general design problem in a particular context. They help create **reusable object-oriented software** that is flexible, elegant, and maintainable.
 
+> *"They reuse solutions that have worked for them in the past"*
 
-- designing reusable object-oriented software
-- Your design should be specific to the problem at hand but also general enough to address future problems and requirements.
-- *, they reuse solutions that have worked for them in the past*
-- These patternssolve specific design problems and make object-oriented designs moreflexible,elegant, and ultimately reusable[^2]
-- object-oriented designers follow patterns like "represent states with objects"
-- descriptions of communicating objects and classes that are customized to solve a general design problem in a particular context.
-> [!Abstract] represent states with objects
-> - each possible state of an object is implemented as a separate class or object
+### Key Benefits
+- 🎯 **Specific to the problem** at hand but **general enough** for future requirements
+- 🔄 **Reusable solutions** that have been proven effective
+- 🏗️ Make object-oriented designs more **flexible**, **elegant**, and **reusable**
+
+---
+
+## 🎨 Core Principles
+
+### State Pattern
+> [!Abstract] Represent states with objects
+> - Each possible state of an object is implemented as a separate class or object
 > - This allows an object to **change its behavior** depending on its **current state**
 
-- decorate objects so you can easily add/remove features? 
+### Decorator Pattern
+- **Decorate objects** so you can easily add/remove features
 
->  **decoupling views from model** -> **separating the UI (view)** from the **data and business logic (model)**
->  - The **model** doesn’t care _how_ it’s displayed.
->- The **view** doesn’t care _how_ data is fetched or processed.
->- They can change **independently**.
+### Model-View Separation
 
-## Design Pattern types
-1. Creational Pattern: patterns deal with object creation mechanisms, trying to **abstract the instantiation proces**
-2. Structural Pattern: **organizing classes and objects into larger structures**, especially to simplify relationships and ensure **flexible and efficient composition**.
-3. Behavioral Pattern: concerned with **communication between objects**, focusing on **how responsibility is distributed** and **how algorithms are handled**
+> **Decoupling views from model** → **separating the UI (view)** from the **data and business logic (model)**
+> - The **model** doesn't care _how_ it's displayed
+> - The **view** doesn't care _how_ data is fetched or processed  
+> - They can change **independently**
 
-### Creational Pettern
-```python
-class Animal:
-    def speak(self):
-        pass
+---
 
-class Dog(Animal):
-    def speak(self):
-        return "Woof!"
+---
 
-class Cat(Animal):
-    def speak(self):
-        return "Meow!"
+## 🔧 Popular Patterns 
+- [[Factory Design Pattern]]
+- [[Builder]]
+- [[Singleton]]
 
-def animal_factory(animal_type):
-    if animal_type == "dog":
-        return Dog()
-    elif animal_type == "cat":
-        return Cat()
+### Popular Other Things
+- [ ] Organize them into catagories 
 
-pet = animal_factory("dog")
-print(pet.speak()) 
+#### Guard Clauses Technique 
+> Used to write , **Cleaner** and more **readable code**
+```c++
+void someFunction(){
+  if (wifi){
+    if(login){
+      if(admin){
+        someFunction();
+      } else {
+        // Handle non-admin user
+        return;
+    }
+  }else {
+    // Handle no login
+    return;
+    }
+  }else {
+    // Handle no wifi
+    return;
+  }
+}
 ```
 
+This change to 
 
-#### Abstract Factory 
-- [[Motif]]
-- to create objects (instances) based on a predefined set of instructions or templates
-> easier maintenance and reuse of code
-
-
-### Structural Pattern 
-```python
-class Coffee:
-    def cost(self):
-        return 5
-
-class MilkDecorator:
-    def __init__(self, coffee):
-        self._coffee = coffee
-
-    def cost(self):
-        return self._coffee.cost() + 2
-
-class SugarDecorator:
-    def __init__(self, coffee):
-        self._coffee = coffee
-
-    def cost(self):
-        return self._coffee.cost() + 1
-
-# Usage
-coffee = Coffee()
-coffee = MilkDecorator(coffee)
-coffee = SugarDecorator(coffee)
-
-print(coffee.cost())  
-
+```c++
+void someFunction(){
+  if (!wifi) {
+    // Handle no wifi
+    return;
+  }
+  if (!login) {
+    // Handle no login
+    return;
+  }
+  if (!admin) {
+    // Handle non-admin user
+    return;
+  }
+  someFunction();
+}
 ```
-### Behavioral Pattern 
 
-```python
-class Subject:
-    def __init__(self):
-        self._observers = []
+---
 
-    def attach(self, observer):
-        self._observers.append(observer)
+## 📚 References
 
-    def notify(self, message):
-        for observer in self._observers:
-            observer.update(message)
-
-class EmailNotifier:
-    def update(self, message):
-        print(f"Sending email: {message}")
-
-class SMSNotifier:
-    def update(self, message):
-        print(f"Sending SMS: {message}")
-
-# Usage
-subject = Subject()
-subject.attach(EmailNotifier())
-subject.attach(SMSNotifier())
-
-subject.notify("New order received.")
-
-```
-### Factory
-***Factory Method** is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.*[^1]
-- a typical solution to a common object creation problem
-[^1]:https://refactoring.guru/design-patterns/factory-method 
-[^2]: https://www.javier8a.com/itc/bd1/articulo.pdf
+[^1]: [Factory Method Pattern - Refactoring Guru](https://refactoring.guru/design-patterns/factory-method)
+[^2]: [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.javier8a.com/itc/bd1/articulo.pdf)
