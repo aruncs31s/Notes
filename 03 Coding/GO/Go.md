@@ -487,6 +487,16 @@ Any type that has a method `Fly() string` is considered a `Bird`.
 
 
 
-## P
+## Pointers 
+
+```go 
+func BrokenSwap(a int, b int) {
+  a, b = b, a
+}
+
+func RealSwap(a *int, b *int) {
+  *a, *b = *b, *a
+}
+```
 ## References
 1. _Learning Go: An Idiomatic Approach to Real-World Go Programming_
