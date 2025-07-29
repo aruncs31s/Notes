@@ -21,7 +21,6 @@ The project follows a clean architecture pattern with separated concerns:
 ├── go.mod
 ├── go.sum
 ├── handlers
-│   ├── getName.go
 │   ├── register.go
 │   └── test.go
 ├── initializers
@@ -38,4 +37,4 @@ The project follows a clean architecture pattern with separated concerns:
 
 ## 🛢Database 
 
->[!NOTE] 
+>[!NOTE] GORM Context
