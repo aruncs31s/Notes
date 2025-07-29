@@ -181,4 +181,27 @@ type userRepository struct {
 	db *gorm.DB
 }
 ```
-So the idea 
+So the idea of these is `UserRepository` is the main thing and we can have multiple implementation of it like 
+```go
+// GORM implementation
+type gormUserRepository struct {
+	db *gorm.DB
+}
+
+// Redis implementation
+type redisUserRepository struct {
+	client *redis.Client
+}
+
+// Mock implementation for testing
+type mockUserRepository struct {
+	users []model.User
+}
+
+// API client implementation
+type apiUserRepository struct {
+	httpClient *http.Client
+	baseURL    string
+}
+```
+>[!Abstract]
