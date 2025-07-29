@@ -166,55 +166,76 @@ type UserRepository interface {
 > **The compiler automatically recognizes** that `userRepository` satisfies the `UserRepository` interface because it has all the required methods with correct signatures.
 
 1. Implements the `userRepository` struct that uses GORM for database operations.
-2. Provides concrete implementations of all interface methods using GORM's API. 
+2. Provides concrete implementations of all interface methods using GORM's API.
 
+## Multiple Implementations Example
 
+The beauty of the `UserRepository` interface is that we can have multiple implementations:
 
 ```go
 type UserRepository interface {
-	CreateUser(user *model.User) error
-	GetUserById(id uint) (*model.User, error)
-	GetAllUsers() ([]*model.User, error)
+    CreateUser(user *model.User) error
+    GetUserById(id uint) (*model.User, error)
+    GetAllUsers() ([]*model.User, error)
 }
 
 type userRepository struct {
-	db *gorm.DB
+    db *gorm.DB
 }
 ```
-So the idea of these is `UserRepository` is the main thing and we can have multiple implementation of it like 
+
+So the idea is that `UserRepository` is the contract and we can have multiple implementations of it:
+
 ```go
 // GORM implementation
 type gormUserRepository struct {
-	db *gorm.DB
+    db *gorm.DB
 }
 
 // Redis implementation
 type redisUserRepository struct {
-	client *redis.Client
+    client *redis.Client
 }
 
 // Mock implementation for testing
 type mockUserRepository struct {
-	users []model.User
+    users []model.User
 }
 
 // API client implementation
 type apiUserRepository struct {
-	httpClient *http.Client
-	baseURL    string
+    httpClient *http.Client
+    baseURL    string
 }
 ```
->[!Abstract]- **How to use them individually?** 
+
+>[!ABSTRACT]- **How to use them individually?**
 > All of these variables can hold ANY implementation of `UserRepository`:
+>
 > ```go
 > var repo UserRepository
 >
 > repo = NewGormRepository(db)      // Uses database
 > repo = NewMockRepository()        // Uses in-memory data
 > repo = NewAPIRepository(client)   // Uses external API
->// Your handler code stays exactly the same!
+>
+> // Your handler code stays exactly the same!
 > handler := NewUserHandler(repo)
 > ```
-*It is easier to test these way* 
 
+**Benefits**: It is easier to test this way because you can swap implementations without changing your business logic! 
+
+---
+
+### Creation 
+
+```go
+
+func NewUserRepository(db *gorm.DB) UserRepository {
+	return &userRepository{db: db}
+}
+
+```
+
+if i want i can have an another one by using 
 
