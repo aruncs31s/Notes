@@ -10,6 +10,7 @@ dg-publish: true
 
 - [[Facade]]
 - [[Adapter Pattern]]
+- [[Repository Design Pattern]]
 > How **objects relate to eachother** 
 
 **Purpose**: **Organizing classes and objects into larger structures** to simplify relationships and ensure **flexible and efficient composition**
