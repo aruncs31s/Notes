@@ -242,15 +242,10 @@ if i want i can have an another one by using ![[#^diffimplementations]]
 Like the following
 ```go
 func NewUserRepositoryTwo(db *gorm.DB) UserRepository {
-	return &userRepository{db: db}
+	return &redisUserRepository{db: db}
 }
-func NewUserRepositoryTwo(db *gorm.DB) UserRepository {
-	return &userRepository{db: db}
+func NewUserRepositoryThree(db *gorm.DB) UserRepository {
+	return &mockUserRepository{db: db}
 }
-func NewUserRepositoryTwo(db *gorm.DB) UserRepository {
-	return &userRepository{db: db}
-}
-func NewUserRepositoryTwo(db *gorm.DB) UserRepository {
-	return &userRepository{db: db}
-}
+
 ```
