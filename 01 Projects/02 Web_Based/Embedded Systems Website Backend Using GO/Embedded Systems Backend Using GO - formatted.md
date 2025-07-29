@@ -2,7 +2,8 @@
 tags:
   - "#backend"
   - "#go"
- project"
+  - "#website"
+  - "#project"
 ---
 
 # Embedded Systems Backend Using Go
@@ -32,24 +33,4 @@ The project follows a clean architecture pattern with separated concerns:
     └── test.go
 
 4 directories, 11 files
-```
-
-```
-├── es_website_gcek_backend
-├── go.mod
-├── go.sum
-├── handlers
-│   ├── getName.go
-│   ├── register.go
-│   └── test.go
-├── initializers
-│   ├── initDB.go
-│   └── loadEnvVars.go
-├── main.go
-└── routes
-    ├── routes.go
-    └── test.go
-
-4 directories, 11 files
-
 ```
