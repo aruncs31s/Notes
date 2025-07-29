@@ -54,6 +54,15 @@ type UserRepository interface {
 	GetUserByID(id uint) (*model.User, error)
 	GetAllUsers() ([]*model.User, error)
 }
+	"github.com/aruncs31s/es_website_gcek_backend/database/model"
+	"gorm.io/gorm"
+)
+
+type UserRepository interface {
+	CreateUser(user *model.User) error
+	GetUserByID(id uint) (*model.User, error)
+	GetAllUsers() ([]*model.User, error)
+}
 
 type userRepository struct {
 	db *gorm.DB
@@ -85,6 +94,7 @@ func (ur *userRepository) GetAllUsers() ([]*model.User, error) {
 	return users, nil
 }
 ```
+
 
 #### Flow 
 1. Defines the `UserRepository` interface with methods for user operations.
