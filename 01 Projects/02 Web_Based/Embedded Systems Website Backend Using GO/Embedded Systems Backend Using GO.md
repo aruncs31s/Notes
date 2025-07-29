@@ -9,4 +9,4 @@ tags:
 
 
 ## Structuring 
-
+- separate concerns
