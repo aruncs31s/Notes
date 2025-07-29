@@ -32,7 +32,9 @@ dg-publish: true
 >    style n1 fill:#FF6D00
 >    style n2 fill:#AA00FF
 >
->```
+> ```
+
+- [ ] Checkout **Atomic Design methodology**
 
 
 **Used In**
