@@ -215,3 +215,6 @@ type apiUserRepository struct {
 >// Your handler code stays exactly the same!
 > handler := NewUserHandler(repo)
 > ```
+*It is easier to test these way* 
+
+
