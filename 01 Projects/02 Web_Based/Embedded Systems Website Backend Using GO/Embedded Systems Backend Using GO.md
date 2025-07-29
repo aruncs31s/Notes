@@ -10,6 +10,7 @@ tags:
 
 ## Structuring 
 - separate concerns
+- 
 ```
 
 ```
