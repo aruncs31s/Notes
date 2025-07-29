@@ -84,3 +84,9 @@ func (ur *userRepository) GetAllUsers() ([]*model.User, error) {
 ```
 
 #### Flow 
+1. Defines the `UserRepository` interface with methods for user operations.
+>[!ABSTRACT]- *
+
+
+2. Implements the `userRepository` struct that uses GORM for database operations.
+3. 
