@@ -102,5 +102,14 @@ func (ur *userRepository) GetAllUsers() ([]*model.User, error) {
 > }
 > ```
 
+```go
+type UserRepository interface {
+	CreateUser(user *model.User) error
+	GetUserById(id uint) (*model.User, error)
+	GetAllUsers() ([]*model.User, error)
+}
+``` 
+
+
 2. Implements the `userRepository` struct that uses GORM for database operations.
 3. Provides concrete implementations of all interface methods using GORM's API. 
