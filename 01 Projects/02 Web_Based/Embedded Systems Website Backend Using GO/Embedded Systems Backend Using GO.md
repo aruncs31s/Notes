@@ -208,6 +208,7 @@ type apiUserRepository struct {
     baseURL    string
 }
 ```
+^diffimplementations
 
 >[!ABSTRACT]- **How to use them individually?**
 > All of these variables can hold ANY implementation of `UserRepository`:
@@ -237,5 +238,19 @@ func NewUserRepository(db *gorm.DB) UserRepository {
 
 ```
 
-if i want i can have an another one by using 
-
+if i want i can have an another one by using ![[#^diffimplementations]]
+Like the following
+```go
+func NewUserRepositoryTwo(db *gorm.DB) UserRepository {
+	return &userRepository{db: db}
+}
+func NewUserRepositoryTwo(db *gorm.DB) UserRepository {
+	return &userRepository{db: db}
+}
+func NewUserRepositoryTwo(db *gorm.DB) UserRepository {
+	return &userRepository{db: db}
+}
+func NewUserRepositoryTwo(db *gorm.DB) UserRepository {
+	return &userRepository{db: db}
+}
+```
