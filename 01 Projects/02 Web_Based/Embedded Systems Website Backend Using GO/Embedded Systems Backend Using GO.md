@@ -235,7 +235,9 @@ type apiUserRepository struct {
 func NewUserRepository(db *gorm.DB) UserRepository {
 	return &userRepository{db: db}
 }
-
+func NewRedisUserRepository(client *redis.Client) UserRepository {
+  return &redisUserRepository{client: client}
+}
 ```
 
 if i want i can have an another one by using ![[#^diffimplementations]]
@@ -253,4 +255,6 @@ func NewUserRepositoryThree(db *gorm.DB) UserRepository {
 ```go
 abcd = NewUserRepository(db)
 abcd.CreateUser(&model.User{Name: "John Doe", Email: "john@example.com"})
+newDb := NewRedisUserRepository(client)
+client.CreateUser(&model.User{Name: "Jane Doe", Email: "
 ```
