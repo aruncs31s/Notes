@@ -37,8 +37,10 @@ The project follows a clean architecture pattern with separated concerns:
 
 ## 🛢Database
 
->[!NOTE] GORM Context
+
 ### Repositories 
+
+
 ```go
 package repositories
 
@@ -49,7 +51,7 @@ import (
 
 type UserRepository interface {
 	CreateUser(user *model.User) error
-	GetUserById(id uint) (*model.User, error)
+	GetUserByID(id uint) (*model.User, error)
 	GetAllUsers() ([]*model.User, error)
 }
 
@@ -65,7 +67,7 @@ func (ur *userRepository) CreateUser(user *model.User) error {
 	return ur.db.Create(user).Error
 }
 
-func (ur *userRepository) GetUserById(id uint) (*model.User, error) {
+func (ur *userRepository) GetUserByID(id uint) (*model.User, error) {
 	var user model.User
 	err := ur.db.First(&user, id).Error
 	if err != nil {
@@ -260,5 +262,3 @@ newDb := NewRedisUserRepository(client)
 client.CreateUser(&model.User{Name: "Jane Doe", Email: "
 ```
 
-
-```
