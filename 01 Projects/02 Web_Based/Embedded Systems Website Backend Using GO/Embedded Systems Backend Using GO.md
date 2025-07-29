@@ -4,6 +4,7 @@ tags:
   - "#go"
   - "#website"
   - "#project"
+dg-publish: true
 ---
 
 # Embedded Systems Backend Using Go
