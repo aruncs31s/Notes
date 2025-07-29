@@ -117,12 +117,14 @@ func (s *UserService) CreateUser(name, email string) error {
 ## When to Use
 
 ✅ **Use Repository Pattern when:**
+
 - You have complex data access logic
 - You need to support multiple data sources
 - You want to improve testability
 - You're building a large application with clear layers
 
 ❌ **Consider alternatives when:**
+
 - You have simple CRUD operations only
 - The application is very small
 - You're using an ORM that already provides abstraction
@@ -130,6 +132,7 @@ func (s *UserService) CreateUser(name, email string) error {
 ## Common Variations
 
 ### 1. **Generic Repository**
+
 ```go
 type Repository[T any] interface {
     Create(entity T) error
@@ -141,6 +144,7 @@ type Repository[T any] interface {
 ```
 
 ### 2. **Unit of Work Pattern**
+
 Often used together with Repository for transaction management:
 
 ```go
@@ -174,4 +178,4 @@ type UnitOfWork interface {
 - Clean Architecture
 - Go
 - Database
-- Testinga centralized way to manage data operations. By separating the data layer from business logic
+- Testing
