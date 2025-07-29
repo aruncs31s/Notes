@@ -141,7 +141,7 @@ type UserRepository interface {
 > **All of these are `UserRepository`** as long as they implement the three methods! This is the power of Go's interface system - you don't need to explicitly declare "implements UserRepository" like in other languages.
 
 >[!SUCCESS]- **No Explicit Declaration Needed!**
-> **Correct!** In Go, you never need to say "this implements UserRepository". 
+> In Go, you never need to say "this implements UserRepository".
 >
 > **Other languages (Java/C#):**
 > ```java
@@ -204,4 +204,14 @@ type apiUserRepository struct {
 	baseURL    string
 }
 ```
->[!Abstract]
+>[!Abstract]- **How to use them individually?** 
+> All of these variables can hold ANY implementation of `UserRepository`:
+> ```go
+> var repo UserRepository
+>
+> repo = NewGormRepository(db)      // Uses database
+> repo = NewMockRepository()        // Uses in-memory data
+> repo = NewAPIRepository(client)   // Uses external API
+>// Your handler code stays exactly the same!
+> handler := NewUserHandler(repo)
+> ```
