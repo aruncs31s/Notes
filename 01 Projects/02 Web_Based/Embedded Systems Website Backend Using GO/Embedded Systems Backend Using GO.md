@@ -111,7 +111,7 @@ type UserRepository interface {
 ```
 
 >[!TIP]- **Interface Implementation in Go**
-> **Yes, exactly!** In Go, any type that has these exact methods automatically implements the `UserRepository` interface. This is called **implicit interface satisfaction**.
+> In Go, any type that has these exact methods automatically implements the `UserRepository` interface. This is called **implicit interface satisfaction**.
 >
 > **Examples of different implementations:**
 >
@@ -140,5 +140,5 @@ type UserRepository interface {
 >
 > **All of these are `UserRepository`** as long as they implement the three methods! This is the power of Go's interface system - you don't need to explicitly declare "implements UserRepository" like in other languages.
 
-2. Implements the `userRepository` struct that uses GORM for database operations.
-3. Provides concrete implementations of all interface methods using GORM's API. 
+1. Implements the `userRepository` struct that uses GORM for database operations.
+2. Provides concrete implementations of all interface methods using GORM's API. 
