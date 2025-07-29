@@ -249,3 +249,8 @@ func NewUserRepositoryThree(db *gorm.DB) UserRepository {
 }
 
 ```
+
+```go
+abcd = NewUserRepository(db)
+abcd.CreateUser(&model.User{Name: "John Doe", Email: "john@example.com"})
+```
