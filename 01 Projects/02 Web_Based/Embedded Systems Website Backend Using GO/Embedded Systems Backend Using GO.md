@@ -259,3 +259,6 @@ abcd.CreateUser(&model.User{Name: "John Doe", Email: "john@example.com"})
 newDb := NewRedisUserRepository(client)
 client.CreateUser(&model.User{Name: "Jane Doe", Email: "
 ```
+
+
+```
