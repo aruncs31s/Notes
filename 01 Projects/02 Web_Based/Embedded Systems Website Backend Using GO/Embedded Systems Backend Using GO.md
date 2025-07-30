@@ -94,6 +94,8 @@ func (ur *userRepository) GetAllUsers() ([]*model.User, error) {
 	return users, nil
 }
 ```
+^repofullcode
+
 
 
 #### Flow 
