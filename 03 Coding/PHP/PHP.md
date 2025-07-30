@@ -75,4 +75,47 @@ echo $user["username"]; // outputs: john_doe
 
 **Think of it as**: `key => value` means "the key points to this value"
 
-**Note**: In your comments above, `# =>` is just showing expected output, not using the array operator.
+## Object Operator (->)
+
+The `->` operator is used to access properties and methods of objects.
+
+**Syntax**: `$object->property` or `$object->method()`
+
+```php
+<?php
+class User {
+    public $name;
+    public $email;
+    private $groups = ['admin', 'user'];
+    
+    public function __construct($name, $email) {
+        $this->name = $name;
+        $this->email = $email;
+    }
+    
+    public function isInGroup($group) {
+        return in_array($group, $this->groups);
+    }
+    
+    public function getName() {
+        return $this->name;
+    }
+}
+
+// Create an object
+$user = new User("John Doe", "john@example.com");
+
+// Access properties with ->
+echo $user->name;    // outputs: John Doe
+echo $user->email;   // outputs: john@example.com
+
+// Call methods with ->
+echo $user->getName();           // outputs: John Doe
+echo $user->isInGroup('admin');  // outputs: 1 (true)
+echo $user->isInGroup('guest');  // outputs: (false/empty)
+
+// $user->isInGroup means: call the isInGroup method on the $user object
+?>
+```
+
+**Think of it as**: `$object->something` means "access something from this object"
