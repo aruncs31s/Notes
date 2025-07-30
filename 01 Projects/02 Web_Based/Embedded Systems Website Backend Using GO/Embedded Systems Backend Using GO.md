@@ -277,7 +277,9 @@ client.CreateUser(&model.User{Name: "Jane Doe", Email: "
 #### With ctx(Context)
 
 >[!success]+ **Key Benefits**:
->![[]]
+>![[Gin#Advantages of Context]]
+
+
 
 ```go
 type UserRepository interface {
