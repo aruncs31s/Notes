@@ -25,4 +25,5 @@ echo $escaped; // outputs: a 	 tab character.
 # => a slash and a t: \t
 
 $unescaped = 'a slash and a t: \t';
+echo $unescaped; // outputs: a slash and a t: \t
 ```
