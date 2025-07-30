@@ -127,7 +127,7 @@ router.SetTrustedProxies([]string{"192.168.1.2"})
 
 
 ## `gin.Cotext`
-
+Context is the most important part of gin. It allows us to pass variables between middleware, manage the flow, validate the JSON of a request and render a JSON response for example
 
 
 ## Reference and Links
