@@ -119,3 +119,54 @@ echo $user->isInGroup('guest');  // outputs: (false/empty)
 ```
 
 **Think of it as**: `$object->something` means "access something from this object"
+
+## Class Constants (::)
+
+The `::` operator (scope resolution operator) is used to access class constants and static properties/methods.
+
+**Syntax**: `ClassName::CONSTANT` or `ClassName::staticMethod()`
+
+```php
+<?php
+class User {
+    // Class constants
+    const USER_TYPE_STUDENT = 'student';
+    const USER_TYPE_TEACHER = 'teacher';
+    const USER_TYPE_ADMIN = 'admin';
+    
+    private $userType;
+    private $groups = [];
+    
+    public function __construct($userType) {
+        $this->userType = $userType;
+        $this->groups = [$userType];
+    }
+    
+    public function isInGroup($group) {
+        return in_array($group, $this->groups);
+    }
+}
+
+// Create objects
+$user = new User(User::USER_TYPE_TEACHER);
+
+// Breaking down: 'expression'=>'$user->isInGroup(User::USER_TYPE_TEACHER)'
+$expression = [
+    'expression' => '$user->isInGroup(User::USER_TYPE_TEACHER)'
+];
+
+// What each part means:
+// User::USER_TYPE_TEACHER  -> gets constant 'teacher'
+// $user->isInGroup(...)    -> calls method on $user object
+// 'expression' => '...'    -> array key-value pair
+
+// Actual execution:
+echo User::USER_TYPE_TEACHER;                    // outputs: teacher
+echo $user->isInGroup(User::USER_TYPE_TEACHER);  // outputs: 1 (true)
+?>
+```
+
+**Complete meaning**: 
+- `'expression'=>'...'` creates an array with key 'expression'
+- `$user->isInGroup(User::USER_TYPE_TEACHER)` calls the isInGroup method on $user object, passing the constant value 'teacher'
+- It's checking if the user belongs to the teacher group
