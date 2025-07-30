@@ -129,6 +129,3 @@ echo User::USER_TYPE_TEACHER; // outputs: teacher
 > - `->` accesses instance-level items (properties, methods)
 > - Use `self::` inside the class to reference its own constants
 
-
-> [!example] Real-world Usage
->
