@@ -15,3 +15,8 @@ type SettingResponse struct {
 }
 ```
 
+
+```go
+ID         int       `json:"id" gorm:"column:id;primaryKey"`
+```
+
