@@ -277,5 +277,17 @@ client.CreateUser(&model.User{Name: "Jane Doe", Email: "
 #### With ctx(Context)
 
 ```go
+type UserRepository interface {
+    CreateUser(ctx context.Context, user *model.User) error
+    GetUserByID(ctx context.Context, id uint) (*model.User, error) 
+    GetAllUsers(ctx context.Context) ([]*model.User, error)
+}
+```
 
+
+```go
+
+func (ur *userRepository) CreateUser(ctx context.Context, user *model.User) error {
+    return ur.db.WithContext(ctx).Create(user).Error
+}
 ```
