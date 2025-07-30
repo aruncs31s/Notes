@@ -26,4 +26,9 @@ echo $escaped; // outputs: a 	 tab character.
 
 $unescaped = 'a slash and a t: \t';
 echo $unescaped; // outputs: a slash and a t: \t
+
+// Complete output:
+// php
+// php$StringThis is a $String.a 	 tab character.a slash and a t: \t
+?>
 ```
