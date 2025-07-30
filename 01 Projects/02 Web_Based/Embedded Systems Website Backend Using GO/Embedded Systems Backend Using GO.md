@@ -276,6 +276,11 @@ client.CreateUser(&model.User{Name: "Jane Doe", Email: "
 
 #### With ctx(Context)
 
+>[!success]+ Key Benefits:
+1. **Request Cancellation**: If an HTTP request is cancelled (user closes browser, network timeout), the database query gets cancelled too
+2. **Timeout Control**: Prevents long-running queries from blocking indefinitely
+3. **Request Tracing**: Allows tracing requests across different services/layers
+4. **Graceful Shutdown**: During server shutdown, ongoing requests can be cancelled properly
 ```go
 type UserRepository interface {
     CreateUser(ctx context.Context, user *model.User) error
