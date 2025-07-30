@@ -40,7 +40,7 @@ The project follows a clean architecture pattern with separated concerns:
 
 ### Repositories 
 
-#### Without CTX (c)
+#### Without CTX (context)
 ```go
 package repositories
 
@@ -98,7 +98,7 @@ func (ur *userRepository) GetAllUsers() ([]*model.User, error) {
 
 
 
-#### Flow 
+##### Flow 
 1. Defines the `UserRepository` interface with methods for user operations.
 >[!ABSTRACT]- **Why?**
 > **Abstraction & Decoupling**: The interface abstracts the data layer from business logic. Your handlers and services depend on the interface, not the concrete implementation, making the code more modular and testable.
@@ -183,7 +183,7 @@ type UserRepository interface {
 1. Implements the `userRepository` struct that uses GORM for database operations.
 2. Provides concrete implementations of all interface methods using GORM's API.
 
-## Multiple Implementations Example
+##### Multiple Implementations Example
 
 The beauty of the `UserRepository` interface is that we can have multiple implementations:
 
@@ -243,7 +243,7 @@ type apiUserRepository struct {
 
 ---
 
-### Creation 
+##### Creation 
 
 ```go
 
@@ -274,3 +274,4 @@ newDb := NewRedisUserRepository(client)
 client.CreateUser(&model.User{Name: "Jane Doe", Email: "
 ```
 
+#### With ctx(Context)
