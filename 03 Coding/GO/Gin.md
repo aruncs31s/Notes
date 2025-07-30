@@ -155,6 +155,12 @@ type Context struct {
 	// contains filtered or unexported fields
 }
 ```
+#### Advantages of Context
+
+1. **Request Cancellation**: If an HTTP request is cancelled (user closes browser, network timeout), the database query gets cancelled too
+2. **Timeout Control**: Prevents long-running queries from blocking indefinitely
+3. **Request Tracing**: Allows tracing requests across different services/layers
+4. **Graceful Shutdown**: During server shutdown, ongoing requests can be cancelled properly
 
 
 
