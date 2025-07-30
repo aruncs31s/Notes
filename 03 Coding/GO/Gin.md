@@ -11,10 +11,10 @@ tags:
 - [[Gin CORS]]
 - https://github.com/julienschmidt/httprouter/blob/master/router.go
 
->[!]
-```tasks
-path includes 03 Coding/GO/Gin.md
-````
+>[!TODO|right-medium]+Tasks 
+> ```tasks
+> path includes 03 Coding/GO/Gin.md
+> ````
 
 ## Installation
 
@@ -27,6 +27,7 @@ import "github.com/gin-gonic/gin"
 import "net/http"
 ```
 
+## Basics  
 ```go
 package main
 import "github.com/gin-gonic/gin"
@@ -121,6 +122,8 @@ router.SetTrustedProxies([]string{"192.168.1.2"})
 
 - [ ] also check proxies
 - [ ] also checkout deployment https://gin-gonic.com/en/docs/deployment/
+
+
 
 
 
