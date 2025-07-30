@@ -131,12 +131,11 @@ router.SetTrustedProxies([]string{"192.168.1.2"})
 ## `gin.Cotext`
 Context is the most important part of gin. It allows us to pass variables between middleware, manage the flow, validate the JSON of a request and render a JSON response for example
 
-- The gin Context is a structure that contains both the http.Request and the http.Response that a normal http.Handler[^1]
+- The gin Context is a structure that contains both the http.Request and the http.Response that a normal http.Handler
 
 The gin engine is responsible for the creation (and reuse) of those contexts, in the same manner as the http.Server is responsible for the creation of the http.Request objects a standard http.Handler would use.
 
-The context is passed by the engine to its handlers, and it's your job to write those handlers and attach them to a router. A gin handler is any function that takes a gin.Context as its sole argument and doesn't return anything.
-
+The context is passed by the engine to its handlers, and it's your job to write those handlers and attach them to a router. A gin handler is any function that takes a gin.Context as its sole argument and doesn't return anything. - [^1]
 
 [^1]: https://stackoverflow.com/questions/63522977/how-does-context-struct-work-in-golang-gin-framework
 
