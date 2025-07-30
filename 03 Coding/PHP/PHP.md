@@ -1,5 +1,8 @@
 # PHP
 
+> [!info] PHP Overview
+> PHP is a server-side scripting language designed for web development. All PHP code must be enclosed within `<?php` and `?>` tags.
+
 ## Basic Syntax
 
 ```php
@@ -9,6 +12,10 @@ echo "php\n";
 print("php");
 ?>
 ```
+
+> [!tip] Echo vs Print
+> - `echo` can output multiple parameters and has no return value
+> - `print` only takes one parameter and always returns 1
 
 ## String Handling
 
@@ -31,6 +38,10 @@ $unescaped = 'a slash and a t: \t';
 echo $unescaped; // outputs: a slash and a t: \t
 ?>
 ```
+
+> [!warning] String Quotes Matter
+> - **Single quotes**: Variables and escape sequences are treated literally
+> - **Double quotes**: Variables are interpolated and escape sequences work
 
 ## Array Operator (=>)
 
@@ -55,6 +66,10 @@ $colors = [
 echo $person["name"]; // outputs: John
 ?>
 ```
+
+> [!note] Array Types
+> - **Associative**: Use string keys (`"name" => "John"`)
+> - **Indexed**: Use numeric keys (automatically assigned or explicit)
 
 ## Object Operator (->)
 
@@ -81,6 +96,11 @@ echo $user->isInGroup('admin'); // outputs: 1 (true)
 ?>
 ```
 
+> [!example] Object Access
+> Use `->` to access anything that belongs to an object instance:
+> - Properties: `$user->name`
+> - Methods: `$user->isInGroup('admin')`
+
 ## Scope Resolution Operator (::)
 
 Accesses class constants and static members.
@@ -103,3 +123,16 @@ echo User::USER_TYPE_TEACHER; // outputs: teacher
 // This checks if $user is in the teacher group using the class constant
 ?>
 ```
+
+> [!important] Class vs Instance
+> - `::` accesses class-level items (constants, static methods)
+> - `->` accesses instance-level items (properties, methods)
+> - Use `self::` inside the class to reference its own constants
+
+> [!example] Real-world Usage
+> The expression `'expression' => '$user->isInGroup(User::USER_TYPE_TEACHER)'` combines:
+> 1. Array syntax (`=>`) to create a key-value pair
+> 2. Object method call (`->isInGroup()`) 
+> 3. Class constant (`::USER_TYPE_TEACHER`)
+> 
+> This is commonly used in configuration arrays for access control.
