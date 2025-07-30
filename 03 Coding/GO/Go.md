@@ -10,7 +10,7 @@ dg-publish: true
 
 - [[Gin]]
 - [[GORM]]
-- [[Serialization]]
+- [[JSON]]
 - [[HTTP Servers]]
 - [[SOLID principle]]
 
