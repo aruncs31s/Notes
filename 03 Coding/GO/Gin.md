@@ -127,9 +127,9 @@ router.SetTrustedProxies([]string{"192.168.1.2"})
 
 
 ## `gin.Cotext`
-```go
-gin.Context
-```
+
+
+
 ## Reference and Links
 
 1. https://gin-gonic.com/en/docs/learning-resources/
