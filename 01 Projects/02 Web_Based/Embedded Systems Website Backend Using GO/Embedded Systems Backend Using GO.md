@@ -279,20 +279,71 @@ client.CreateUser(&model.User{Name: "Jane Doe", Email: "
 >[!success]+ **Key Benefits**:
 >![[Gin#Advantages of Context]]
 
-
+##### ✅ Correct Implementation
 
 ```go
+package repositories
+
+import (
+	"context"
+	"github.com/aruncs31s/es_website_gcek_backend/database/model"
+	"gorm.io/gorm"
+)
+
 type UserRepository interface {
-    CreateUser(ctx context.Context, user *model.User) error
-    GetUserByID(ctx context.Context, id uint) (*model.User, error) 
-    GetAllUsers(ctx context.Context) ([]*model.User, error)
+	CreateUser(ctx context.Context, user *model.User) error
+	GetUserByID(ctx context.Context, id uint) (*model.User, error)
+	GetAllUsers(ctx context.Context) ([]*model.User, error)
 }
-```
 
+type userRepository struct {
+	db *gorm.DB  // ✅ Only store db, NOT context
+}
 
-```go
+func NewUserRepository(db *gorm.DB) UserRepository {
+	return &userRepository{db: db}
+}
 
 func (ur *userRepository) CreateUser(ctx context.Context, user *model.User) error {
-    return ur.db.WithContext(ctx).Create(user).Error
+	return ur.db.WithContext(ctx).Create(user).Error
+}
+
+func (ur *userRepository) GetUserByID(ctx context.Context, id uint) (*model.User, error) {
+	var user model.User
+	err := ur.db.WithContext(ctx).First(&user, id).Error
+	if err != nil {
+		return nil, err
+	}
+	return &user, nil
+}
+
+func (ur *userRepository) GetAllUsers(ctx context.Context) ([]*model.User, error) {
+	var users []*model.User
+	err := ur.db.WithContext(ctx).Find(&users).Error
+	if err != nil {
+		return nil, err
+	}
+	return users, nil
 }
 ```
+
+##### ❌ Wrong Implementation
+
+```go
+// DON'T DO THIS
+type userRepository struct {
+	db  *gorm.DB
+	ctx context.Context  // ❌ WRONG: Never store context in structs
+}
+
+func NewUserRepository(db *gorm.DB, ctx context.Context) UserRepository {
+	return &userRepository{db: db, ctx: ctx}  // ❌ WRONG
+}
+```
+
+##### Why storing context is wrong:
+
+1. **Request-scoped**: Each HTTP request needs its own context
+2. **Concurrency issues**: Multiple requests would share the same context
+3. **Lifetime mismatch**: Repository lives longer than individual requests
+4. **Go best practices**: Context should flow through call chain, not be stored
