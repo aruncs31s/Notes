@@ -5,6 +5,7 @@ cssclasses:
   - wide-page
 ---
 # JSON
+- [ ] Check what is marshal and unmarshal.
 ```go
 type SettingResponse struct {
 	ID        int       `json:"id"`
