@@ -35,44 +35,44 @@ echo $unescaped; // outputs: a slash and a t: \t
 
 ## Array Operator (=>)
 
-The `=>` operator is used to assign values to keys in arrays.
+The `=>` operator creates **key-value pairs** in PHP arrays. It means "assign this value to this key".
+
+**Syntax**: `key => value`
 
 ```php
 <?php
-// Associative arrays (key => value pairs)
+// This means: assign "John" to the key "name"
+"name" => "John"
+
+// Breaking it down:
 $person = [
-    "name" => "John",
-    "age" => 25,
-    "city" => "New York"
+    "name" => "John",     // key: "name", value: "John"
+    "age" => 25,          // key: "age", value: 25
+    "city" => "New York"  // key: "city", value: "New York"
 ];
 
-// Numeric arrays with explicit keys
-$colors = [
-    0 => "red",
-    1 => "green", 
-    2 => "blue"
+// Without => (indexed array - PHP assigns numeric keys automatically)
+$fruits = ["apple", "banana", "orange"]; // keys: 0, 1, 2
+
+// With => (associative array - you specify the keys)
+$fruits = [
+    0 => "apple",    // explicitly assign "apple" to key 0
+    1 => "banana",   // explicitly assign "banana" to key 1  
+    2 => "orange"    // explicitly assign "orange" to key 2
 ];
 
-// Mixed keys
-$mixed = [
-    "string_key" => "value1",
-    42 => "value2",
-    "another" => "value3"
+// Real-world example
+$user = [
+    "id" => 123,
+    "username" => "john_doe", 
+    "email" => "john@example.com",
+    "is_active" => true
 ];
 
-// Accessing values
-echo $person["name"]; // outputs: John
-echo $colors[1]; // outputs: green
-
-// In foreach loops
-foreach ($person as $key => $value) {
-    echo "$key: $value\n";
-}
-// outputs:
-// name: John
-// age: 25  
-// city: New York
+echo $user["username"]; // outputs: john_doe
 ?>
 ```
+
+**Think of it as**: `key => value` means "the key points to this value"
 
 **Note**: In your comments above, `# =>` is just showing expected output, not using the array operator.
