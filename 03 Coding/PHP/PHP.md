@@ -131,8 +131,4 @@ echo User::USER_TYPE_TEACHER; // outputs: teacher
 
 
 > [!example] Real-world Usage
-> The expression `'expression' => '$user->isInGroup(User::USER_TYPE_TEACHER)'` combines:
-> 1. Array syntax (`=>`) to create a key-value pair
-> 2. Object method call (`->isInGroup()`) 
-> 3. Class constant (`::USER_TYPE_TEACHER`)
-> This is commonly used in configuration arrays for access control.
+>
