@@ -8,7 +8,13 @@ tags:
 # Gin
 
 - [[httprouter]]
+- [[Gin CORS]]
 - https://github.com/julienschmidt/httprouter/blob/master/router.go
+
+>[!]
+```tasks
+path includes 03 Coding/GO/Gin.md
+````
 
 ## Installation
 
@@ -35,19 +41,7 @@ func main() {
 }
 ```
 
-````go
-package main
-=======
-```tasks
-path includes 03 Coding/GO/Gin.md
-````
 
-- [[Gin CORS]]
-  > Install
-
-```bash
-go get -u github.com/gin-gonic/gin
-```
 
 ```go
 package main
@@ -56,10 +50,8 @@ import (
   "github.com/gin-gonic/gin"
   "net/http"
 )
-<<<<<<< HEAD
 func main() {
   router := gin.Default()
-=======
 
 func main() {
   router := gin.Default()
