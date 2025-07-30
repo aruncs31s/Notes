@@ -275,3 +275,7 @@ client.CreateUser(&model.User{Name: "Jane Doe", Email: "
 ```
 
 #### With ctx(Context)
+
+```go
+
+```
