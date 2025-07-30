@@ -20,7 +20,7 @@ type User struct {
 	Email string `json:"email"`
 }
 func main() {
-	user := User{ID: 1, Name: "John Doe", Email: "john@example.com"}
+	user := User{ID: 1, Name: "SomeOne", Email: "Someone@example.com"}
 
 	// Marshal
 	jsonData, err := json.Marshal(user)
