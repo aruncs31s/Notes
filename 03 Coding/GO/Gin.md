@@ -1,8 +1,10 @@
 ---
 id: Gin
-aliases:
+aliases: 
 tags:
   - go
+cssclasses:
+  - wide-page
 ---
 
 # Gin
@@ -130,6 +132,22 @@ router.SetTrustedProxies([]string{"192.168.1.2"})
 Context is the most important part of gin. It allows us to pass variables between middleware, manage the flow, validate the JSON of a request and render a JSON response for example
 
 
+```go
+type Context struct {
+	Request *[http](https://pkg.go.dev/net/http).[Request](https://pkg.go.dev/net/http#Request)
+	Writer  [ResponseWriter](https://pkg.go.dev/github.com/gin-gonic/gin?utm_source=godoc#ResponseWriter)
+	Params [Params](https://pkg.go.dev/github.com/gin-gonic/gin?utm_source=godoc#Params)
+	// Keys is a key/value pair exclusively for the context of each request.
+	Keys map[[string](https://pkg.go.dev/builtin#string)][any](https://pkg.go.dev/builtin#any)
+
+	// Errors is a list of errors attached to all the handlers/middlewares who used this context.
+	Errors errorMsgs
+
+	// Accepted defines a list of manually accepted formats for content negotiation.
+	Accepted [][string](https://pkg.go.dev/builtin#string)
+	// contains filtered or unexported fields
+}
+```
 ## Reference and Links
 
 1. https://gin-gonic.com/en/docs/learning-resources/
