@@ -20,3 +20,8 @@ type SettingResponse struct {
 ID         int       `json:"id" gorm:"column:id;primaryKey"`
 ```
 
+- This field is an integer (int)
+- When serializing to JSON, it will be named "id"
+- In the database, it's stored in a column named "id"
+- It's configured as the primary key of the table
+
