@@ -123,6 +123,9 @@ code = strings.TrimSpace(code)
 
 
 #### Types
+>![NOTE] **Concrete Types**
+>>
+
 
 ```go
 bool
