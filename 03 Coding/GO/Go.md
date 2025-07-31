@@ -123,8 +123,8 @@ code = strings.TrimSpace(code)
 
 
 #### Types
->![NOTE] **Concrete Types**
->>
+>[!NOTE] **Concrete Types**
+>A concrete type is a data type that is not an **interface**
 
 
 ```go
