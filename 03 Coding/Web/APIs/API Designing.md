@@ -178,3 +178,11 @@ func (StaffDetail) TableName() string {
 
 The simplest approach if you want to avoid custom types:
 ```
+
+```go
+// Use string for date fields and convert when needed
+DOB string `gorm:"column:dob;type:date;not null" json:"dob"`
+
+// Convert when needed:
+dobTime, err := time.Parse("2006-01-02", staffDetail.DOB)
+```
