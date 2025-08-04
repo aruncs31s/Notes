@@ -1,6 +1,7 @@
 ---
 aliases: 
 Date: 28-10-2024
+dg-publish: true
 ---
 # Maxwell
 ## Maxwell's Equations 
