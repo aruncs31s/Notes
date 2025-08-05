@@ -9,7 +9,7 @@ This error occurs because the MySQL driver is returning the date as a byte slice
 
 Here are several solutions:
 
-## Solution 1: Add `parseTime=true` to your database connection string
+#### Solution 1: Add `parseTime=true` to your database connection string
 
 This is the most common fix. Update your database connection string to include `parseTime=true`:
 ```go
@@ -186,3 +186,18 @@ DOB string `gorm:"column:dob;type:date;not null" json:"dob"`
 // Convert when needed:
 dobTime, err := time.Parse("2006-01-02", staffDetail.DOB)
 ```
+
+
+
+#### Types 
+```go
+// Option 1: Simple (relies on existing DB schema)
+Image *string `gorm:"column:image" json:"image,omitempty"`
+
+// Option 2: Explicit type specification
+Image *string `gorm:"column:image;type:varchar(100)" json:"image,omitempty"`
+
+// Option 3: With additional constraints
+Image *string `gorm:"column:image;type:varchar(100);default:null" json:"image,omitempty"`
+```
+

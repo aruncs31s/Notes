@@ -1,12 +1,10 @@
 ---
-banner: "https://w.wallhaven.cc/full/we/wallhaven-wepm7p.png"
-banner_y: 0.332
-banner: "https://w.wallhaven.cc/full/we/wallhaven-wepm7p.png"
-banner_y: 0.332
-cssclasses:
-  - wide-page
+id: Home
+aliases: []
+tags: []
 ---
 # HOME
+
 
 
 
@@ -16,16 +14,37 @@ quote: When you stare into the abyss, the abyss stares back at you.
 ```
 
 
+```tasks
+path includes 98 Private/Todo.md
+
+```
+
+
+```todoist  
+filter: "today | overdue"  
+```
+
 
 >[!todo] Just DO 
 >```tasks
 >not done
 >due on today
 >```
-```python
-import os as win
-win.system("cd C:/Users/arunc/Git/Notes && dir && git pull origin main")
-```
+
+
+>[!IMPORTANT]- **Keep It up to date**
+>
+>>[!NOTE]- **Windows** 
+>>```python
+>>import os as win
+>>win.system("cd C:/Users/arunc/Git/Notes && dir && git pull origin main")
+>>```
+>
+>>[!NOTE]- **Linux**
+>>```bash
+>>cd /home/aruncs/Notes/ && git add -A ; git commit -m "automated backup" ; git push origin main
+>>```
+
 >[!note] Completed
 >```tasks
 >done
