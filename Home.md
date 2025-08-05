@@ -33,11 +33,16 @@ filter: "today | overdue"
 
 >[!IMPORTANT]- **Keep It up to date**
 >
->>[!]
-```python
-import os as win
-win.system("cd C:/Users/arunc/Git/Notes && dir && git pull origin main")
-```
+>>[!NOTE]- **Windows** 
+>>```python
+>>import os as win
+>>win.system("cd C:/Users/arunc/Git/Notes && dir && git pull origin main")
+>>```
+>
+>>[!NOTE]- **Linux**
+>>```bash
+>>cd /home/aruncs/Notes
+>>```
 
 >[!note] Completed
 >```tasks
