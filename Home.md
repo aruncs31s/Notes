@@ -1,12 +1,14 @@
 ---
-banner: "https://w.wallhaven.cc/full/we/wallhaven-wepm7p.png"
-banner_y: 0.332
-banner: "https://w.wallhaven.cc/full/we/wallhaven-wepm7p.png"
-banner_y: 0.332
-cssclasses:
-  - wide-page
+id: Home
+aliases: []
+tags: []
 ---
 # HOME
+
+```tasks
+path includes 98 Private/Todo.md
+
+```
 - [ ] 30 RS in NS Store
 
 
