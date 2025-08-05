@@ -29,10 +29,16 @@ filter: "today | overdue"
 >not done
 >due on today
 >```
+
+
+>[!IMPORTANT]- **Keep It up to date**
+>
+>>[!]
 ```python
 import os as win
 win.system("cd C:/Users/arunc/Git/Notes && dir && git pull origin main")
 ```
+
 >[!note] Completed
 >```tasks
 >done
