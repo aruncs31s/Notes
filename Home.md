@@ -5,11 +5,6 @@ tags: []
 ---
 # HOME
 
-```tasks
-path includes 98 Private/Todo.md
-
-```
-
 
 
 
@@ -18,6 +13,11 @@ type: quote
 quote: When you stare into the abyss, the abyss stares back at you.
 ```
 
+
+```tasks
+path includes 98 Private/Todo.md
+
+```
 
 
 ```todoist  
