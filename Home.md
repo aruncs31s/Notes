@@ -9,7 +9,6 @@ tags: []
 path includes 98 Private/Todo.md
 
 ```
-- [ ] 30 RS in NS Store
 
 
 
