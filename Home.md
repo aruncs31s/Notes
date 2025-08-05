@@ -41,7 +41,7 @@ filter: "today | overdue"
 >
 >>[!NOTE]- **Linux**
 >>```bash
->>cd /home/aruncs/Notes
+>>cd /home/aruncs/Notes/ && git add -A ; git commit -m "automated backup" ; git push origin main
 >>```
 
 >[!note] Completed
