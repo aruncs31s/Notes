@@ -1,7 +1,8 @@
 ---
 id: Home
-aliases: []
-tags: []
+aliases: 
+tags: 
+dg-publish: true
 ---
 # HOME
 
