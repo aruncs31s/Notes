@@ -37,5 +37,6 @@ $$
 5. Find the differential equation of all spheres of fixed radius having their centers in the $xy$ -plane.
 6. Using the method of separation of variables , solve 
 $$
-\partial \frac{u}{\partial x} = 2 
+\partial \frac{u}{\partial x} = 2 \frac{{\partial u}}{\partial t} + u 
 $$
+*where $u(x,0) = 6e^{-3x}$*
