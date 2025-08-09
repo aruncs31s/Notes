@@ -14,3 +14,4 @@ dg-publish: true
 > 	- [ ] Non-linear equations of the first order - Charpit’s method,
 > 	- [ ] Solution of equation by method of separation of variables.
 ## [[08 Science/Maths/Partial Differential Equations|Partial Differential Equations]]
+
