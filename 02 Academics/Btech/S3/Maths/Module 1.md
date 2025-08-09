@@ -17,7 +17,8 @@ dg-publish: true
 
 ### Sample Problems 
 
-1. Solve 
+1. Solve (3 Marks)
 $$
 \frac{\partial^2z}{\partial_{x}\partial_{y}} = x^2 y
 $$
+2. Derive a **partial differential equation** from 
