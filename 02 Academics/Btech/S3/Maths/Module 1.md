@@ -30,3 +30,7 @@ $$
 x(y-z)p + y(z -x )q = z(x-y)
 $$
 
+4. Use Charpit's method to solve 
+$$
+q+xp = p^2
+$$
