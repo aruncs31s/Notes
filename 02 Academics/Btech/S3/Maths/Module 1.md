@@ -15,3 +15,9 @@ dg-publish: true
 > 	- [ ] Solution of equation by method of separation of variables.
 ## [[08 Science/Maths/Partial Differential Equations|Partial Differential Equations]]
 
+### Sample Problems 
+
+1. Solve 
+$$
+
+$$
