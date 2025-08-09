@@ -34,3 +34,5 @@ $$
 $$
 q+xp = p^2
 $$
+5. Find the differential equation of all spheres of fixed radius having their centers in the $xy$ -plane.
+6. 
