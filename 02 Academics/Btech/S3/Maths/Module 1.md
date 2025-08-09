@@ -19,5 +19,5 @@ dg-publish: true
 
 1. Solve 
 $$
-
+\frac{\partial^2z}{\partial_{x}\partial_{y}} = x^2 y
 $$
