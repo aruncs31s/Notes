@@ -39,4 +39,5 @@ $$
 $$
 \partial \frac{u}{\partial x} = 2 \frac{{\partial u}}{\partial t} + u 
 $$
-*where $u(x,0) = 6e^{-3x}$*
+*where $\large u(x,0) = 6e^{-3x}$
+
