@@ -21,7 +21,8 @@ dg-publish: true
 $$
 \frac{\partial^2z}{\partial_{x}\partial_{y}} = x^2 y
 $$
-2. Derive a **partial differential equation** from the relation 
+2. Derive a **partial differential equation** from the relation (3 Marks)
 $$
 z = f(x + at) + g(x - at)
 $$
+3. Solve $x(y-z)p + y(z -x )q = z(x_0-y)$
