@@ -21,4 +21,7 @@ dg-publish: true
 $$
 \frac{\partial^2z}{\partial_{x}\partial_{y}} = x^2 y
 $$
-2. Derive a **partial differential equation** from 
+2. Derive a **partial differential equation** from the relation 
+$$
+z = f(x + at) + g(x - at)
+$$
