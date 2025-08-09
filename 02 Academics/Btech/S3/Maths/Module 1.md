@@ -25,4 +25,8 @@ $$
 $$
 z = f(x + at) + g(x - at)
 $$
-3. Solve $x(y-z)p + y(z -x )q = z(x_0-y)$
+3. Solve  (7 Marks)
+$$
+x(y-z)p + y(z -x )q = z(x-y)
+$$
+
