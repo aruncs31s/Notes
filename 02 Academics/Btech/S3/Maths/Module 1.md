@@ -4,8 +4,9 @@
 > 	- [ ] Formation of partial differential equations 
 > 		- [ ]  elimination of arbitrary constants
 > 		- [ ] elimination of arbitrary functions, 
-> 	- [ ] Solutions of a partial differential equations, Equations solvable by direct integration, Linear equations of the first order-
-> Lagrange’s linear equation, Non-linear equations of the first order -Charpit’s method,
-> 
-> Solution of equation by method of separation of variables.
+> 	- [ ] Solutions of a partial differential equations, 
+> 		- [ ] Equations solvable by direct integration
+> 	- [ ] , Linear equations of the first order Lagrange’s linear equation,
+> 	- [ ] Non-linear equations of the first order - Charpit’s method,
+> - [ ] Solution of equation by method of separation of variables.
 ## [[08 Science/Maths/Partial Differential Equations|Partial Differential Equations]]
