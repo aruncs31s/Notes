@@ -10,7 +10,7 @@ ExamDate: 2024-11-22
 ---
 
 # Micro Wave and Antenas
-- [[Module 1]]
+- [[02 Academics/Btech/S3/ECT205-NT/Module 1]]
 - [[MWA Series Exam 2]]
 - [[30-10-2024]]
 
