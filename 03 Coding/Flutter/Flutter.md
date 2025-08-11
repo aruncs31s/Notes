@@ -1,8 +1,10 @@
 ---
 cssclasses:
   - wide-page
+tags:
+  - tasks
+due: 2025-09-01
 ---
-
 # Flutter
 
 - Set Up the Development Environment
@@ -13,4 +15,6 @@ cssclasses:
 - Test your application
 - Debug and Optimize
 - Build and Deploy
+
+
 

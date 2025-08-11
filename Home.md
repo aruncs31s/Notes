@@ -1,16 +1,30 @@
 ---
 id: Home
-aliases: []
-tags: []
+aliases: 
+tags: 
 dg-publish: true
+cssclasses:
+  - wide-page
 ---
 
 # HOME
+- [[Projects]]
 
 ```widgets
 type: quote
 quote: When you stare into the abyss, the abyss stares back at you.
 ```
+
+
+## Tasks 
+
+![[Cal_mon_friday.excalidraw|1000x300]]
+
+```dataview
+CALENDAR due
+WHERE typeof(due) = "date"
+```
+
 
 ```tasks
 path includes 98 Private/Todo.md
@@ -28,20 +42,7 @@ filter: "today | overdue"
 > due on today
 > ```
 
-> [!IMPORTANT]- **Keep It up to date**
->
-> > [!NOTE]- **Windows**
-> >
-> > ```python
-> > import os as win
-> > win.system("cd C:/Users/arunc/Git/Notes && dir && git pull origin main")
-> > ```
->
-> > [!NOTE]- **Linux**
-> >
-> > ```bash
-> > cd /home/aruncs/Notes/ && git add -A ; git commit -m "automated backup" ; git push origin main
-> > ```
+
 
 > [!note] Completed
 >
@@ -62,7 +63,7 @@ filter: "today | overdue"
 > > LIMIT 7
 > > ```
 >
-> > [!float|right-small]+ Notes
+> > [!float|wide-3]+ Notes
 > >
 > > ```dataview
 > > LIST file.mtime
@@ -71,3 +72,27 @@ filter: "today | overdue"
 > > ```
 
 - [ ] Checkout [Adding Metadata to your Pages](https://blacksmithgu.github.io/obsidian-dataview/annotation/add-metadata/) 📅 2025-04-17
+
+
+## Files 
+```dataview
+CALENDAR file.ctime
+```
+
+> [!IMPORTANT]- **Keep It up to date**
+>
+> > [!NOTE]- **Windows**
+> >
+> > ```python
+> > import os as win
+> > win.system("cd C:/Users/arunc/Git/Notes && dir && git pull origin main")
+> > ```
+>
+> > [!NOTE]- **Linux**
+> >
+> > ```bash
+> > cd /home/aruncs/Notes/ && git add -A ; git commit -m "automated backup" ; git push origin main
+> > ```
+
+
+
