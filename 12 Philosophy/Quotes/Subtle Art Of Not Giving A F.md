@@ -4,6 +4,10 @@ aliases: []
 tags: []
 ---
 
+- feedback loop from hell
+
 ```text
 
 ```
+
+- [ ] Complete this about feedback loop from hell
