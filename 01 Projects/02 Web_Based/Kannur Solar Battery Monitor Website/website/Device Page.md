@@ -16,7 +16,7 @@ dg-publish: true
 > - [[01 Projects/02 Web_Based/Kannur Solar Battery Monitor Website/website/Home Page]]
 > - [[01 Projects/02 Web_Based/Kannur Solar Battery Monitor Website/website/Device Page]]
 > - [[01 Projects/02 Web_Based/Kannur Solar Battery Monitor Website/website/main_page]]
-> - [[APIs]]
+> - [[01 Projects/02 Web_Based/Kannur Solar Battery Monitor Website/website/APIs]]
 >   Others
 > - [[database]]
 
