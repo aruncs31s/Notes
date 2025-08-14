@@ -1,3 +1,13 @@
+---
+tags:
+  - go
+  - database
+  - framework
+  - relational
+cssclasses:
+  - wide-page
+---
+
 # GORM
 - [[Using SOLID Principle]]
 
@@ -347,3 +357,5 @@ func recordExists(db *gorm.DB, condition string, args ...interface{}) bool {
 > - Using `Find()` instead of `First()` for single records
 > - Placing `Limit()` after `Find()`
 > - Ignoring other database errors besides "not found"
+
+
