@@ -359,3 +359,23 @@ func recordExists(db *gorm.DB, condition string, args ...interface{}) bool {
 > - Ignoring other database errors besides "not found"
 
 
+
+
+
+## Multiple IDs
+Extracted from [[Gin#^acd852]]
+
+```go
+var users []User  
+result := db.Find(&users, uintIDs)   
+if result.Error != nil {  
+// Handle error  
+}
+```
+
+Alternative
+```go
+var users []User
+result := db.Where("id IN ?", uintIDs).Find(&users)
+```
+

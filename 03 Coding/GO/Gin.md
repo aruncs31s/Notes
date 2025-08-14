@@ -3,6 +3,8 @@ id: Gin
 aliases: 
 tags:
   - go
+  - framework
+  - backend
 cssclasses:
   - wide-page
 ---
@@ -161,6 +163,41 @@ type Context struct {
 2. **Timeout Control**: Prevents long-running queries from blocking indefinitely
 3. **Request Tracing**: Allows tracing requests across different services/layers
 4. **Graceful Shutdown**: During server shutdown, ongoing requests can be cancelled properly
+
+
+
+
+## IDs 
+### Single ID 
+
+```go
+// Example with Gin framework  
+router.GET("/users/:id", func(c *gin.Context) {  
+idStr := c.Param("id") // "id" is the name of your path parameter  
+id, err := strconv.ParseUint(idStr, 10, 64) // Convert string to uint64  
+if err != nil {  
+}  
+})
+```
+
+### Multiple IDs 
+```go
+router.GET("/users", func(c *gin.Context) {
+    idsStr := c.Query("ids") // Get comma-separated list of IDs
+
+    ids := strings.Split(idsStr, ",")
+    var uintIDs []uint
+    for _, s := range ids {
+        u, err := strconv.ParseUint(s, 10, 64)
+        if err != nil {
+        }
+        uintIDs = append(uintIDs, uint(u))
+    }
+    // Now 'uintIDs' can be used in GORM
+})
+```
+
+^acd852
 
 
 
