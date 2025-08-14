@@ -349,3 +349,7 @@ GET /users?fields=id,name,email
 8. **Test Thoroughly** - Test all scenarios including edge cases
 
 
+## Checkout 
+1. https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/
+2. https://swagger.io/resources/articles/best-practices-in-api-design/
+3. https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design
