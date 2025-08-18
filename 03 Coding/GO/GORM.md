@@ -383,5 +383,6 @@ result := db.Where("id IN ?", uintIDs).Find(&users)
 
 
 ```
+ErrRecordNotFound
 ```
-`First`, `Last`, `Take`.
+*Only For*  ->  `First`, `Last`, `Take`.
