@@ -386,3 +386,13 @@ result := db.Where("id IN ?", uintIDs).Find(&users)
 ErrRecordNotFound
 ```
 *Only For*  ->  `First`, `Last`, `Take`.
+
+
+### Errors 
+
+```go
+if db.RowsAffected == 0 && db.Statement.RaiseErrorOnNotFound && db.Error == nil {
+	db.AddError(ErrRecordNotFound)
+}
+```
+- 
