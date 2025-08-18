@@ -379,3 +379,9 @@ var users []User
 result := db.Where("id IN ?", uintIDs).Find(&users)
 ```
 
+## Error Handling 
+
+
+```
+```
+`First`, `Last`, `Take`.
