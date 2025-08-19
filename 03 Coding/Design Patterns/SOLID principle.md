@@ -135,21 +135,8 @@ return math.Pi * math.Pow(c.Radius, 2)
 }
 ```
 Understanding this will require a significant experience with go 
-According to ![[Go^In]]
-```go
-class Shape{
-Area
-}
+In go the definition of interface is   (ment by ) ![[Go#^d2e304]] 
 
-class Rect extends Shape {
-}
-
-S = circle(10)
-R = rectangle(1,2)
-print(S.area())
-print(R.area())
-
-```
 
 ### Repositories 
 

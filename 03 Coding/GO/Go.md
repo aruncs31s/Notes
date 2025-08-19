@@ -501,7 +501,7 @@ v + 10 // error not in scope
 ## Interfaces
 ^0cc7de
 
-_“Any type that has this method is allowed.”_
+_“Any type that has this method is allowed.”_ ^d2e304
 
 ```go
 type Bird interface {
