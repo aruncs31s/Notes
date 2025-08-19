@@ -46,6 +46,21 @@ func (r *UserRepository) Save(u *User) error {
 }
 ```
 
+### Explanation 
+  What this implicitly says is that 
+1. One model , structure etc only used for single purpose -> "a type should have a single responsibility" 
+In this 
+
+```go
+func (u *User) GetFullName() string {  
+}  
+func (u *User) Save() error {  
+}
+```
+In this , the `User` has 2 responsi
+
+
+
 - **Domain-Driven Design (DDD)**, Version 2 is preferred
 
 ### Repositories 
