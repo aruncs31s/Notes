@@ -77,9 +77,21 @@ func (r *UserRepository) Save(u *User) error {
 ```mermaid
 graph LR 
 Save --> UserRepository --> User & DB 
+User --> GetFullName
 ```
-How program ai
 
+Now the responsibilities are separated 
+- The `UserRepository` handles the database actions and 
+- The `User` has only one method , attached `GetFullName`
+### How this will help?
+Consider these 3 operations 
+
+![[SOLID principle Flow.png]]
+Here , 
+- **Handler**: Handler handles the http stuff , request , responses . 
+- **Service**: **Handler** calls the **Service** for things like , **Create a new User** or **Delete a new User** etc.
+- **Repo**: Repository handles all the database related things like **Inserting auser into the database , anbd getting a user from the data basde stuf **
+ Think of it as like separating concerns like 
 
 
 - **Domain-Driven Design (DDD)**, Version 2 is preferred
