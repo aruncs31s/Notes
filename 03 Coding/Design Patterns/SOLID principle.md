@@ -57,7 +57,28 @@ func (u *User) GetFullName() string {
 func (u *User) Save() error {  
 }
 ```
-In this , the `User` has 2 responsi
+In this , the `User` has 2 responsibilities (*methods attached*) Which serves entirely different purpose for example 
+1. `func (u *User) GetFullName() string` : This will return the **FullName** 
+2. `func (u *User) Save() error`: This will save the user to the data base 
+In this case, the `User` struct has two responsibilities: managing user data and saving it to the database
+
+In the second one 
+```go
+func (u *User) GetFullName() string {  
+}  
+  
+type UserRepository struct {  
+}  
+  
+func (r *UserRepository) Save(u *User) error {  
+}
+```
+
+```mermaid
+graph LR 
+Save --> UserRepository --> User & DB 
+```
+How program ai
 
 
 
