@@ -134,7 +134,23 @@ func (c *Circle) Area() float64 {
 return math.Pi * math.Pow(c.Radius, 2)  
 }
 ```
-For new comme
+Understanding this will require a significant experience with go 
+According to ![[Go^In]]
+```go
+class Shape{
+Area
+}
+
+class Rect extends Shape {
+}
+
+S = circle(10)
+R = rectangle(1,2)
+print(S.area())
+print(R.area())
+
+```
+
 ### Repositories 
 
 - If repositories are modular, adding features like validation, logging, or alternate storage becomes easier without modifying core logic. ^f778d0
