@@ -90,8 +90,9 @@ Consider these 3 operations
 Here , 
 - **Handler**: Handler handles the http stuff , request , responses . 
 - **Service**: **Handler** calls the **Service** for things like , **Create a new User** or **Delete a new User** etc.
-- **Repo**: Repository handles all the database related things like **Inserting auser into the database , anbd getting a user from the data basde stuf **
- Think of it as like separating concerns like 
+- **Repo**: Repository handles all the database related things like **Inserting auser into the database** , and getting a user from the database , stuff like that ,
+ 
+In developer perspective think of it as like following a good pattern where you can easily mock , ie you can just change the db and it wont effect other than the Repo , and you can simply call another function or something like that to cope.  
 
 
 - **Domain-Driven Design (DDD)**, Version 2 is preferred
@@ -102,6 +103,38 @@ Here ,
 ## 2. Open/Closed Principle (OCP)
 should be open for extension but closed for modification.
 
+###  Without ❌ 
+```go
+type Circle struct {  
+Radius float64  
+}  
+  
+func Area(shape interface{}) float64 {  
+switch s := shape.(type) {  
+case *Rectangle:  
+return s.Width * s.Height  
+case *Circle:  
+return math.Pi * math.Pow(s.Radius, 2)  
+default:  
+return 0  
+}  
+}
+```
+
+###  ✅ With OCP 
+
+```go
+type Shape interface {  
+Area() float64  
+}  
+func (r *Rectangle) Area() float64 {  
+return r.Width * r.Height  
+}  
+func (c *Circle) Area() float64 {  
+return math.Pi * math.Pow(c.Radius, 2)  
+}
+```
+For new comme
 ### Repositories 
 
 - If repositories are modular, adding features like validation, logging, or alternate storage becomes easier without modifying core logic. ^f778d0
