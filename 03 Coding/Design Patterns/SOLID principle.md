@@ -12,7 +12,7 @@
 
 
 
-##### 1. Single Responsibility Principle (SRP): Principle states that a class or module should **have only one reason** to change
+## 1. Single Responsibility Principle (SRP): Principle states that a class or module should **have only one reason** to change
 - it encourages developers to create modular and reusable code by dividing each component into a single responsibility. This helps in making the code more maintainable, testable, and easier to understand,
 ```go
 type User struct {
@@ -47,5 +47,13 @@ func (r *UserRepository) Save(u *User) error {
 ```
 
 - **Domain-Driven Design (DDD)**, Version 2 is preferred
-##### 2. Open/Closed Principle (OCP)
+
+### Repositories 
+- Each repository should handle operations **related to one aggregate or entity**. 
+
+## 2. Open/Closed Principle (OCP)
 should be open for extension but closed for modification.
+
+### Repositories 
+
+- If repositories are modular, adding features like validation, logging, or alternate storage becomes easier without modifying core logic.
