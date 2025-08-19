@@ -49,11 +49,11 @@ func (r *UserRepository) Save(u *User) error {
 - **Domain-Driven Design (DDD)**, Version 2 is preferred
 
 ### Repositories 
-- Each repository should handle operations **related to one aggregate or entity**. 
+- Each repository should handle operations **related to one aggregate or entity**.  ^f6b894
 
 ## 2. Open/Closed Principle (OCP)
 should be open for extension but closed for modification.
 
 ### Repositories 
 
-- If repositories are modular, adding features like validation, logging, or alternate storage becomes easier without modifying core logic.
+- If repositories are modular, adding features like validation, logging, or alternate storage becomes easier without modifying core logic. ^f778d0
