@@ -1,3 +1,12 @@
+---
+tags:
+  - go
+  - design_pattern
+cssclasses:
+  - wide-page
+dg-publish: true
+---
+
 # Dependency Injunction
 It is used to implement the [[Inversion of control]] principle. In DI, the dependencies of an object (i.e. the objects it relies on) are **provided externally** rather than created internally by the object itself
 
@@ -141,15 +150,28 @@ func NewStaffProfileService(
 
 
 
-@
-
-### 
+## Implementation 
 
 
+###  Injection During Initialization
+- dependencies are provided to an object when it’s **initialized** 
+-  A function is used to initialize the object and the dependencies are declared as the parameters of this function.
+[Source](https://www.jetbrains.com/guide/go/tutorials/dependency_injection_part_one/injection/)
+```go
+type staffAdditionalDetailRepository struct {
+	db *gorm.DB
+	ctx *gin.Context
+}
+func NewStaffAdditionalDetailRepository(db *gorm.DB, ctx *gin.Context) StaffAdditionalDetailRepository {
+	return &staffAdditionalDetailRepository{db: db, ctx: ctx}
+}
+```
+
+In this , the `staffAdditionalDetailRepository` depentds on `db` and `ctx` which is injected via the `NewStaffAdditionalDetailRepository()` function .
 
 
-
-
+### Property Injection
+Dependencies are set after the object is created
 
 
 
