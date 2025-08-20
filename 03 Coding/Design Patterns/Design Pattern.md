@@ -10,7 +10,7 @@ dg-publish: true
 ---
 
 # Design Patterns
-
+- [ ] Checkout MVVM 
 - [ ] Checkout **Atomic Design methodology**
 - [[Dependency Injunction]]
 
