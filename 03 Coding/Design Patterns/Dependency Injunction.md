@@ -32,6 +32,7 @@ Helps you to **decouple** the external logic of your implementation
 
 >  An important point of injecting dependencies is to avoid injecting implementations (structs), you should inject abstractions (interfaces). It’s the letter D of S.O.L.I.D: Dependency Inversion Principle. It allows you to switch easily the implementation of some dependency and, you could change the real implementation for a mock implementation. It's fundamental for unit testing. - [Source](https://medium.com/avenue-tech/dependency-injection-in-go-35293ef7b6)
 
+> Example of **Constructor-based Dependency Injection**
 ```go 
 type SomeRepo interface{}
 type SomeLogger interface{}
@@ -51,9 +52,17 @@ func NewSomeService ( repo SomeRepo , logger SomeLogger , broker SomeMessageBrok
 	}
 } 
 ```
-
-
+In this , the `NewSomeService` requires (dependencies) `repo`, `logger`, `broker` return an instance of `SomeService` , dependencies are all passed in via **interfaces**, which is a common and idiomatic way to do DI in Go. ?? 
+- Promotes [[Dependency Inversion Principle
 ## Types 
+
+1. **Constructor Injection**
+	- Dependencies are passed into the constructor.
+	- Promotes immutability and makes the code more testable.
+2. **Setter Injection**
+	- Dependencies are set via exported methods after the object is created.
+3. **Interface Injection**
+	- Not common in Go. An external component defines the injection logic, more common in other languages like Java.
 
 ```mermaid 
 graph LR 
