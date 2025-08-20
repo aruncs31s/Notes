@@ -173,7 +173,32 @@ In this , the `staffAdditionalDetailRepository` depentds on `db` and `ctx` which
 ### Property Injection
 Dependencies are set after the object is created
 
+```go
+type staffAdditionalDetailRepository struct {
+	db *gorm.DB
+	ctx *gin.Context
+}
+func(r *staffAdditionalDetailRepository) SetDB (db *gorm.DB) {
+	r.db = db
+}
+func(r *staffAdditionalDetailRepository) SetCtx (ctx *gin.Context) {
+	r.ctx = ctx 
+}
+	
+```
 
+
+
+### Interface Injection (aka method injection.)
+*the dependency is represented by an interface that the object depends on*
+>  The dependency is then set by providing the implementation of that interface
+```go
+type StaffAdditionalDetailRepository interface {
+	Create(tx *gorm.DB, staffAdditionalDetail *model.StaffAdditionalDetail) error
+	Delete(id int) error
+}
+```
+Here the `StaffAdditionalDetailRepository` requires , methods `Create()` and `Delete()` to be implemented 
 
 
 
