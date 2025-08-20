@@ -1,5 +1,5 @@
 # Dependency Injunction
-
+It is used to implement the [[Inversion of control]] principle
 ```tasks 
 not done 
 path includes Design Patterns/Dependency Injunction

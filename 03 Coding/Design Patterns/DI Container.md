@@ -9,4 +9,5 @@ A Dependency Injection Container (DIC or DI container) is an **object responsib
 
 ## Resources
 1. https://medium.com/avenue-tech/dependency-injection-in-go-35293ef7b6
-2. 
+2. https://www.jetbrains.com/guide/go/tutorials/dependency_injection_part_one/implementing_di/
+3. 
