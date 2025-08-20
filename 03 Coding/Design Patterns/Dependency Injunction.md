@@ -1,5 +1,10 @@
 # Dependency Injunction
-It is used to implement the [[Inversion of control]] principle
+It is used to implement the [[Inversion of control]] principle. In DI, the dependencies of an object (i.e. the objects it relies on) are **provided externally** rather than created internally by the object itself
+
+
+```go
+
+```
 ```tasks 
 not done 
 path includes Design Patterns/Dependency Injunction
@@ -133,6 +138,12 @@ func NewStaffProfileService(
 }
 
 ```
+
+
+
+@
+
+### 
 
 
 
