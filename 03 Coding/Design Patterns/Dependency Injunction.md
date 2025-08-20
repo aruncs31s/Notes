@@ -99,15 +99,29 @@ type staffProfileService struct {
 Using dependency injection container. 
 - [ ] Checkout DI Container 
 
+- [ ] Checkout mannual construciton
+> Manually
+> Manually construction is an objective way to do it. You declare, create, and inject your dependencies step by step. I think it’s clean and there isn’t any magic happening behind the scenes. The problem is as your dependencies get complex you need to deal with complexity by yourself. You may see your func main() getting with hundreds of lines of code and harder to maintain. - [Source](https://medium.com/avenue-tech/dependency-injection-in-go-35293ef7b6)
 
+Eg:
 
+```go
+type staffProfileService struct {
+	staffRepo                 repository.StaffRepository
+	staffDetailRepo           repository.StaffDetailRepository
 
+}
+func NewStaffProfileService(
+	staffRepo repository.StaffRepository,
+	staffDetailRepo repository.StaffDetailRepository,
+) StaffProfileService {
+	return &staffProfileService{
+		staffRepo:                 staffRepo,
+		staffPayScaleRepo:         staffPayScaleRepo,
+	}
+}
 
-
-
-
-
-
+```
 
 
 
