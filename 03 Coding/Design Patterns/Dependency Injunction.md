@@ -45,9 +45,84 @@ type SomeService struct {
 
 func NewSomeService ( repo SomeRepo , logger SomeLogger , broker SomeMessageBroker)SomeService{
 	return &SomeService{
-		repo: SomeRepo
-		logger: SomeLogger 
-		broker: SomeMessageBroker 
+		repo: repo,
+		logger: logger,
+		broker: broker,
 	}
 } 
 ```
+
+
+## Types 
+
+```mermaid 
+graph LR 
+DI --> Contructor & Property & MethodsorSetter 
+```
+### Constructor Injunction 
+```go
+func NewStaffProfileService(
+	staffProfileRepository repository.StaffProfileRepository,
+	staffRepo repository.StaffRepository,
+	staffDetailRepo repository.StaffDetailRepository,
+	staffAdditionalDetailRepo repository.StaffAdditionalDetailRepository,
+	staffPayScaleRepo repository.StaffPayScaleRepository,
+	serviceBreakRepo repository.StaffServiceBreakRepository,
+) StaffProfileService {
+	return &staffProfileService{
+		staffProfileRepository:    staffProfileRepository,
+		staffRepo:                 staffRepo,
+		staffPayScaleRepo:         staffPayScaleRepo,
+		staffDetailRepo:           staffDetailRepo,
+		staffAdditionalDetailRepo: staffAdditionalDetailRepo,
+		serviceBreakRepo:          serviceBreakRepo,
+	}
+}
+```
+
+> These kinds allow you to change dependencies in runtime, so by design, they aren’t immutable. But if you need to change the implementation of some dependency, you don’t need to recreate everything. You can just override what you need. It may be useful if you have a feature flag that changes an implementation inside your service. - [Source](https://medium.com/avenue-tech/dependency-injection-in-go-35293ef7b6)
+
+### Method Injunction 
+
+```go
+type staffProfileService struct {
+	staffProfileRepository    repository.StaffProfileRepository
+	staffRepo                 repository.StaffRepository
+	staffDetailRepo           repository.StaffDetailRepository
+	staffAdditionalDetailRepo repository.StaffAdditionalDetailRepository
+	staffPayScaleRepo         repository.StaffPayScaleRepository
+	serviceBreakRepo repository.StaffServiceBreakRepository
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
