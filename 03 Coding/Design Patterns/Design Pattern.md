@@ -12,7 +12,7 @@ dg-publish: true
 # Design Patterns
 
 - [ ] Checkout **Atomic Design methodology**
-
+- [[Dependency Injunction]]
 
 **Used In**
 - [[SOLID principle]]
