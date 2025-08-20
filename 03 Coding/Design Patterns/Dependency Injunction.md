@@ -53,7 +53,7 @@ func NewSomeService ( repo SomeRepo , logger SomeLogger , broker SomeMessageBrok
 } 
 ```
 In this , the `NewSomeService` requires (dependencies) `repo`, `logger`, `broker` return an instance of `SomeService` , dependencies are all passed in via **interfaces**, which is a common and idiomatic way to do DI in Go. ?? 
-- Promotes [[Dependency Inversion Principle
+- Promotes [[Dependency Inversion Principle]]
 ## Types 
 
 1. **Constructor Injection**
@@ -90,6 +90,8 @@ func NewStaffProfileService(
 ```
 
 > These kinds allow you to change dependencies in runtime, so by design, they aren’t immutable. But if you need to change the implementation of some dependency, you don’t need to recreate everything. You can just override what you need. It may be useful if you have a feature flag that changes an implementation inside your service. - [Source](https://medium.com/avenue-tech/dependency-injection-in-go-35293ef7b6)
+
+
 
 ### Method Injunction 
 
