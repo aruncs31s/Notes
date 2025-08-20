@@ -95,6 +95,10 @@ type staffProfileService struct {
 }
 ```
 
+## How? 
+Using dependency injection container. 
+- [ ] Checkout DI Container 
+
 
 
 
