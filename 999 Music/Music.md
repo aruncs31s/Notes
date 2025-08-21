@@ -4,5 +4,3 @@
 ## SN SJ FAV
 - 
 
-<iframe data-testid="embed-iframe" style="border-radius:12px" src="http://localhost:3000/" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
