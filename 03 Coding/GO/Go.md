@@ -407,19 +407,12 @@ func main() {
 > [!NOTE]
 > For is Go's "while" , so there is no seperate `while`
 >
-> ```bash
->
-> ```
-
-    for sum < 1000 {
-    	sum += sum
-    }
-    fmt.Println(sum)
-
-}
-
-> ```
->
+> ```go
+> for sum < 1000 {
+> 	sum += sum
+> }
+> fmt.Println(sum)
+>}
 > ```
 
 ```go
@@ -511,7 +504,9 @@ type Bird interface {
 
 Any type that has a method `Fly() string` is considered a `Bird`.
 
+### Map Interface
 
+![[Go MAP.png|200]]
 
 
 ## Pointers 
