@@ -320,7 +320,11 @@ TS2307: Cannot find module './components/StatsView' or its corresponding type de
 ```bash
 echo "=== Testing Sessions ===" && SESSION_ID=$(curl -s -X POST http://127.0.0.1:5000/api/sessions | jq -r '.data.id') && echo "Created session: $SESSION_ID" && curl -s -X PUT http://127.0.0.1:5000/api/sessions/$SESSION_ID/touch | jq -c '.data.message'
 ```
-
+```
+=== Testing Sessions ===
+Created session: a6f42cb7-9d58-48a4-b876-cd6168a8da44
+"session touched"
+```
 ```bash
 echo "=== Testing Tracks ===" && TRACK_ID=$(curl -s http://127.0.0.1:5000/api/tracks | jq -r '.[0].id') && echo "Got track ID: $TRACK_ID" && curl -s http://127.0.0.1:5000/api/tracks/$TRACK_ID | jq -c '{id: .id, title: .title, artist: .artist}'
 ```
@@ -329,3 +333,30 @@ echo "=== Testing Tracks ===" && TRACK_ID=$(curl -s http://127.0.0.1:5000/api/tr
 Got track ID: f588aa3f-f759-4d23-a753-8df7e56d9a56
 {"id":"f588aa3f-f759-4d23-a753-8df7e56d9a56","title":"Die With A Smile","artist":"Lady Gaga, Bruno Mars"}
 ```
+
+
+```bash
+echo "=== Testing Last Played ===" && SESSION_ID="a6f42cb7-9d58-48a4-b876-cd6168a8da44" && TRACK_ID="f588aa3f-f759-4d23-a753-8df7e56d9a56" && curl -s -X PUT http://127.0.0.1:5000/api/sessions/$SESSION_ID/last-played -H 'Content-Type: application/json' -d "{\"trackId\":\"$TRACK_ID\",\"position\":45.2,\"isPlaying\":true,\"volume\":0.8,\"deviceId\":\"test-device\"}" | jq -c '.data.message' && echo "Getting last played:" && curl -s http://127.0.0.1:5000/api/sessions/$SESSION_ID/last-played | jq -c '.data | {trackId, position, isPlaying}'
+```
+
+```
+=== Testing Last Played ===
+"last played updated"
+Getting last played:
+{"trackId":"f588aa3f-f759-4d23-a753-8df7e56d9a56","position":45.2,"isPlaying":true}
+```
+
+```bash
+❯ echo "=== Testing Restore Last Played (Raw) ===" && SESSION_ID="a6f42cb7-9d58-48a4-b876-cd6168a8da44" && curl -s http://127.0.0.1:5000/api/sessions/$SESSION_ID/restore-last-played
+                                                                                                             
+
+```
+```
+=== Testing Restore Last Played (Raw) ===
+404 page not found      
+```
+
+```bash
+
+echo "=== Testing Recently Played - Manual Add ===" && SESSION_ID="a6f42cb7-9d58-48a4-b876-cd6168a8da44" && TRACK_ID="f588aa3f-f759-4d23-a753-8df7e56d9a56" && curl -s -X POST http://127.0.0.1:5000/api/recently-played -H 'Content-Type: application/json' -d "{\"trackId\":\"$TRACK_ID\",\"sessionId\":\"$SESSION_ID\",\"deviceId\":\"test-device\",\"duration\":180.5,\"completed\":true}"
+````
