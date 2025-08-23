@@ -321,17 +321,18 @@ TS2307: Cannot find module './components/StatsView' or its corresponding type de
 echo "=== Testing Sessions ===" && SESSION_ID=$(curl -s -X POST http://127.0.0.1:5000/api/sessions | jq -r '.data.id') && echo "Created session: $SESSION_ID" && curl -s -X PUT http://127.0.0.1:5000/api/sessions/$SESSION_ID/touch | jq -c '.data.message'
 ```
 ```
-=== Testing Sessions ===
 Created session: a6f42cb7-9d58-48a4-b876-cd6168a8da44
 "session touched"
 ```
 ```bash
 echo "=== Testing Tracks ===" && TRACK_ID=$(curl -s http://127.0.0.1:5000/api/tracks | jq -r '.[0].id') && echo "Got track ID: $TRACK_ID" && curl -s http://127.0.0.1:5000/api/tracks/$TRACK_ID | jq -c '{id: .id, title: .title, artist: .artist}'
 ```
-```
-=== Testing Tracks ===
-Got track ID: f588aa3f-f759-4d23-a753-8df7e56d9a56
-{"id":"f588aa3f-f759-4d23-a753-8df7e56d9a56","title":"Die With A Smile","artist":"Lady Gaga, Bruno Mars"}
+```json
+{
+  "id": "f588aa3f-f759-4d23-a753-8df7e56d9a56",
+  "title": "Die With A Smile",
+  "artist": "Lady Gaga, Bruno Mars"
+}
 ```
 
 
@@ -339,11 +340,12 @@ Got track ID: f588aa3f-f759-4d23-a753-8df7e56d9a56
 echo "=== Testing Last Played ===" && SESSION_ID="a6f42cb7-9d58-48a4-b876-cd6168a8da44" && TRACK_ID="f588aa3f-f759-4d23-a753-8df7e56d9a56" && curl -s -X PUT http://127.0.0.1:5000/api/sessions/$SESSION_ID/last-played -H 'Content-Type: application/json' -d "{\"trackId\":\"$TRACK_ID\",\"position\":45.2,\"isPlaying\":true,\"volume\":0.8,\"deviceId\":\"test-device\"}" | jq -c '.data.message' && echo "Getting last played:" && curl -s http://127.0.0.1:5000/api/sessions/$SESSION_ID/last-played | jq -c '.data | {trackId, position, isPlaying}'
 ```
 
-```
-=== Testing Last Played ===
-"last played updated"
-Getting last played:
-{"trackId":"f588aa3f-f759-4d23-a753-8df7e56d9a56","position":45.2,"isPlaying":true}
+```json
+{
+  "trackId": "f588aa3f-f759-4d23-a753-8df7e56d9a56",
+  "position": 45.2,
+  "isPlaying": true
+}
 ```
 
 ```bash
@@ -367,7 +369,29 @@ echo "=== Testing Recently Played - Get Recent ===" && curl -s "http://127.0.0.1
 
 
 ```json
-{"total":3,"tracks":[{"title":"Blood (From \"Marco\")","artist":"Ravi Basrur, Dabzee, Rohith Siddappa, Vinayak Sasikumar","playedAt":null,"completed":null},{"title":"Blood (From \"Marco\")","artist":"Ravi Basrur, Dabzee, Rohith Siddappa, Vinayak Sasikumar","playedAt":null,"completed":null},{"title":"Sparkle - movie ver.","artist":"Radwimps","playedAt":null,"completed":null}]}
+{
+  "total": 3,
+  "tracks": [
+    {
+      "title": "Blood (From \"Marco\")",
+      "artist": "Ravi Basrur, Dabzee, Rohith Siddappa, Vinayak Sasikumar",
+      "playedAt": null,
+      "completed": null
+    },
+    {
+      "title": "Blood (From \"Marco\")",
+      "artist": "Ravi Basrur, Dabzee, Rohith Siddappa, Vinayak Sasikumar",
+      "playedAt": null,
+      "completed": null
+    },
+    {
+      "title": "Sparkle - movie ver.",
+      "artist": "Radwimps",
+      "playedAt": null,
+      "completed": null
+    }
+  ]
+}
 ```
 
 
@@ -392,5 +416,75 @@ SESSION_ID="15946c4b-7108-4b72-8238-d899abe0c723" && TRACK_ID="67c1b262-f254-41d
 
 
 ```json
-{"data":{"fromSnapshot":{"trackId":"67c1b262-f254-41de-910c-bebd7f674bb8","position":75.3,"isPlaying":false,"volume":0.9,"deviceId":"test-device","updatedAt":"2025-08-24T00:45:15.380000068+05:30"},"message":"playback restored from last played","restoredState":{"currentTrack":{"id":"67c1b262-f254-41de-910c-bebd7f674bb8","title":"Kadhal Aasai","artist":"Yuvanshankar Raja, Sooraj Santhosh","album":"Anjaan (Original Motion Picture Soundtrack)","duration":0,"genre":"Indian Music \u0026 Films/Games \u0026 Film Scores","year":2014,"track":4,"filePath":"/home/aruncs/Music/TakeMeHome/Anjaan (Original Motion Picture Soundtrack) CD 1 TRACK 4 (32.mp3","fileName":"Anjaan (Original Motion Picture Soundtrack) CD 1 TRACK 4 (32.mp3","hasAlbumArt":true,"albumArtKey":"Yuvanshankar Raja, Sooraj Santhosh-Anjaan (Original Motion Picture Soundtrack)"},"isPlaying":false,"currentTime":75.3,"volume":0.9,"queue":[{"id":"67c1b262-f254-41de-910c-bebd7f674bb8","title":"Kadhal Aasai","artist":"Yuvanshankar Raja, Sooraj Santhosh","album":"Anjaan (Original Motion Picture Soundtrack)","duration":0,"genre":"Indian Music \u0026 Films/Games \u0026 Film Scores","year":2014,"track":4,"filePath":"/home/aruncs/Music/TakeMeHome/Anjaan (Original Motion Picture Soundtrack) CD 1 TRACK 4 (32.mp3","fileName":"Anjaan (Original Motion Picture Soundtrack) CD 1 TRACK 4 (32.mp3","hasAlbumArt":true,"albumArtKey":"Yuvanshankar Raja, Sooraj Santhosh-Anjaan (Original Motion Picture Soundtrack)"}]}},"error":false}
+{
+  "data": {
+    "fromSnapshot": {
+      "trackId": "67c1b262-f254-41de-910c-bebd7f674bb8",
+      "position": 75.3,
+      "isPlaying": false,
+      "volume": 0.9,
+      "deviceId": "test-device",
+      "updatedAt": "2025-08-24T00:45:15.380000068+05:30"
+    },
+    "message": "playback restored from last played",
+    "restoredState": {
+      "currentTrack": {
+        "id": "67c1b262-f254-41de-910c-bebd7f674bb8",
+        "title": "Kadhal Aasai",
+        "artist": "Yuvanshankar Raja, Sooraj Santhosh",
+        "album": "Anjaan (Original Motion Picture Soundtrack)",
+        "duration": 0,
+        "genre": "Indian Music & Films/Games & Film Scores",
+        "year": 2014,
+        "track": 4,
+        "filePath": "/home/aruncs/Music/TakeMeHome/Anjaan (Original Motion Picture Soundtrack) CD 1 TRACK 4 (32.mp3",
+        "fileName": "Anjaan (Original Motion Picture Soundtrack) CD 1 TRACK 4 (32.mp3",
+        "hasAlbumArt": true,
+        "albumArtKey": "Yuvanshankar Raja, Sooraj Santhosh-Anjaan (Original Motion Picture Soundtrack)"
+      },
+      "isPlaying": false,
+      "currentTime": 75.3,
+      "volume": 0.9,
+      "queue": [
+        {
+          "id": "67c1b262-f254-41de-910c-bebd7f674bb8",
+          "title": "Kadhal Aasai",
+          "artist": "Yuvanshankar Raja, Sooraj Santhosh",
+          "album": "Anjaan (Original Motion Picture Soundtrack)",
+          "duration": 0,
+          "genre": "Indian Music & Films/Games & Film Scores",
+          "year": 2014,
+          "track": 4,
+          "filePath": "/home/aruncs/Music/TakeMeHome/Anjaan (Original Motion Picture Soundtrack) CD 1 TRACK 4 (32.mp3",
+          "fileName": "Anjaan (Original Motion Picture Soundtrack) CD 1 TRACK 4 (32.mp3",
+          "hasAlbumArt": true,
+          "albumArtKey": "Yuvanshankar Raja, Sooraj Santhosh-Anjaan (Original Motion Picture Soundtrack)"
+        }
+      ]
+    }
+  },
+  "error": false
+}
 ```
+
+```bash
+echo "=== Testing Top Tracks ===" && curl -s "http://127.0.0.1:5000/api/recently-played/top?limit=3" | jq -c '.data[] | {playCount, title: .track.title, artist: .track.artist}'
+```
+
+```json
+{
+  "playCount": 7,
+  "title": "Sparkle - movie ver.",
+  "artist": "Radwimps"
+}
+```
+
+
+```bash
+echo "=== Testing Auto-tracking with Session ===" && SESSION_ID="15946c4b-7108-4b72-8238-d899abe0c723" && TRACK_ID="67c1b262-f254-41de-910c-bebd7f674bb8" && curl -s -X PUT http://127.0.0.1:5000/api/devices/playback -H 'Content-Type: application/json' -H "X-Session-ID: $SESSION_ID" -d "{\"currentTrack\":{\"id\":\"$TRACK_ID\"},\"isPlaying\":true,\"currentTime\":0,\"volume\":0.8}" | jq -c '.data.message'
+```
+
+```
+=== Testing Auto-tracking with Session === "Playback state updated successfully"
+```
+
