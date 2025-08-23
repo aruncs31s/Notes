@@ -364,3 +364,33 @@ echo "=== Testing Recently Played - Manual Add ===" && SESSION_ID="a6f42cb7-9d58
 ```bash
 echo "=== Testing Recently Played - Get Recent ===" && curl -s "http://127.0.0.1:5000/api/recently-played?limit=3" | jq -c '.data | {total: length, tracks: [.[] | {title: .track.title, artist: .track.artist, playedAt: .playedAt, completed}]}'
 ```
+
+
+```json
+{"total":3,"tracks":[{"title":"Blood (From \"Marco\")","artist":"Ravi Basrur, Dabzee, Rohith Siddappa, Vinayak Sasikumar","playedAt":null,"completed":null},{"title":"Blood (From \"Marco\")","artist":"Ravi Basrur, Dabzee, Rohith Siddappa, Vinayak Sasikumar","playedAt":null,"completed":null},{"title":"Sparkle - movie ver.","artist":"Radwimps","playedAt":null,"completed":null}]}
+```
+
+
+```bash
+echo "=== Testing Restore Last Played ===" && SESSION_ID="a6f42cb7-9d58-48a4-b876-cd6168a8da44" && curl -s "http://127.0.0.1:5000/api/sessions/$SESSION_ID/restore-last-played" | jq -c '.data | {track: .track.title, position, isPlaying, volume}'
+```
+
+
+```bash
+curl -s -X POST http://127.0.0.1:5000/api/sessions
+```
+
+```bash
+SESSION_ID="15946c4b-7108-4b72-8238-d899abe0c723" && TRACK_ID="67c1b262-f254-41de-910c-bebd7f674bb8" && curl -s -X PUT http://127.0.0.1:5000/api/sessions/$SESSION_ID/last-played -H 'Content-Type: application/json' -d "{\"trackId\":\"$TRACK_ID\",\"position\":75.3,\"isPlaying\":false,\"volume\":0.9,\"deviceId\":\"test-device\"}" && echo -e "\n--- Now Restoring ---" && curl -s "http://127.0.0.1:5000/api/sessions/$SESSION_ID/restore-last-played" | jq -c '.data | {track: .track.title, position, isPlaying, volume}'
+```
+
+
+> [!abstract] 
+> ```bash
+> echo "=== Testing Restore Raw Response ===" && SESSION_ID="15946c4b-7108-4b72-8238-d899abe0c723" && curl -s "http://127.0.0.1:5000/api/sessions/$SESSION_ID/restore-last-played"
+> ```
+
+
+```json
+{"data":{"fromSnapshot":{"trackId":"67c1b262-f254-41de-910c-bebd7f674bb8","position":75.3,"isPlaying":false,"volume":0.9,"deviceId":"test-device","updatedAt":"2025-08-24T00:45:15.380000068+05:30"},"message":"playback restored from last played","restoredState":{"currentTrack":{"id":"67c1b262-f254-41de-910c-bebd7f674bb8","title":"Kadhal Aasai","artist":"Yuvanshankar Raja, Sooraj Santhosh","album":"Anjaan (Original Motion Picture Soundtrack)","duration":0,"genre":"Indian Music \u0026 Films/Games \u0026 Film Scores","year":2014,"track":4,"filePath":"/home/aruncs/Music/TakeMeHome/Anjaan (Original Motion Picture Soundtrack) CD 1 TRACK 4 (32.mp3","fileName":"Anjaan (Original Motion Picture Soundtrack) CD 1 TRACK 4 (32.mp3","hasAlbumArt":true,"albumArtKey":"Yuvanshankar Raja, Sooraj Santhosh-Anjaan (Original Motion Picture Soundtrack)"},"isPlaying":false,"currentTime":75.3,"volume":0.9,"queue":[{"id":"67c1b262-f254-41de-910c-bebd7f674bb8","title":"Kadhal Aasai","artist":"Yuvanshankar Raja, Sooraj Santhosh","album":"Anjaan (Original Motion Picture Soundtrack)","duration":0,"genre":"Indian Music \u0026 Films/Games \u0026 Film Scores","year":2014,"track":4,"filePath":"/home/aruncs/Music/TakeMeHome/Anjaan (Original Motion Picture Soundtrack) CD 1 TRACK 4 (32.mp3","fileName":"Anjaan (Original Motion Picture Soundtrack) CD 1 TRACK 4 (32.mp3","hasAlbumArt":true,"albumArtKey":"Yuvanshankar Raja, Sooraj Santhosh-Anjaan (Original Motion Picture Soundtrack)"}]}},"error":false}
+```
