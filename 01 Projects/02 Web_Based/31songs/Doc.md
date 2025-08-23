@@ -1,6 +1,16 @@
 ---
-tags: [31songs, backend, go, api, docs]
-title: 31Songs Go Backend – Features & API
+tags: [31songs, backend, go, api, docs- Sessions & Last Played
+	- Create lightweight sessions
+	- Save a "last played" snapshot (trackId, position, isPlaying, volume, deviceId)
+	- Auto-save last played when updating playback state if `X-Session-ID` is provided
+	- **Restore playback** from last played snapshot (sets global playback state)
+- Recently Played
+	- Track listening history with timestamps
+	- Get recent tracks (all or unique)
+	- Top tracks with play counts
+	- Statistics (total plays, completion rate)
+	- Auto-tracked on playback state changes
+	- Persisted to `data/recently_played.json`tle: 31Songs Go Backend – Features & API
 ---
 
 # 31Songs Go Backend – Features & API
@@ -14,6 +24,7 @@ title: 31Songs Go Backend – Features & API
 - Persistence:
 	- Playlists → `data/playlists.json`
 	- Sessions & Last Played → `data/sessions.json`
+	- Recently Played → `data/recently_played.json`
 	- Music library scanned from `MUSIC_DIR`
 
 ## [[Configuration]]
@@ -55,6 +66,7 @@ title: 31Songs Go Backend – Features & API
 - PlaybackCommand: `command`, `data`
 - Session: `id`, `createdAt`, `lastActive`, `lastPlayed?`
 - LastPlayed: `trackId`, `position`, `isPlaying`, `volume`, `deviceId`, `updatedAt`
+- RecentlyPlayedEntry: `trackId`, `playedAt`, `deviceId`, `sessionId`, `duration`, `completed`
 
 ## [[Services]]
 - MusicLibraryService
@@ -74,6 +86,10 @@ title: 31Songs Go Backend – Features & API
 - SessionService
 	- Load/Save `data/sessions.json`
 	- Create, Touch, Get, SetLastPlayed, GetLastPlayed
+- RecentlyPlayedService
+	- Load/Save `data/recently_played.json`
+	- Track listening history, get recent/unique/top tracks
+	- Statistics and cleanup functionality
 
 ## [[HTTP API]]
 Base path: `/api`
@@ -125,7 +141,16 @@ Base path: `/api`
 - `PUT /api/sessions/:id/touch` → update session last active
 - `GET /api/sessions/:id/last-played` → get last played snapshot
 - `PUT /api/sessions/:id/last-played` → set last played snapshot
+- `POST /api/sessions/:id/restore` → **restore playback from last played snapshot**
 - Auto-save on playback updates: include `X-Session-ID: <sessionId>` header on `PUT /api/devices/playback` to persist a snapshot.
+
+### Recently Played
+- `GET /api/recently-played` → get recently played tracks (with track details)
+- `GET /api/recently-played/unique` → get recently played tracks without duplicates
+- `GET /api/recently-played/stats` → get statistics about recently played tracks
+- `GET /api/recently-played/top` → get most frequently played tracks
+- `POST /api/recently-played/add` → manually add a track to recently played history
+- `GET /api/recently-played/session/:sessionId` → get recently played tracks for a specific session
 
 ## [[WebSocket]]
 - Endpoint: `GET /api/ws` (Socket.IO-compatible)
@@ -186,6 +211,34 @@ curl -s -X PUT http://localhost:5000/api/sessions/<sessionId>/last-played \
 curl -s http://localhost:5000/api/sessions/<sessionId>/last-played | jq .
 ```
 
+### **Restore from Last Played** ⭐
+```sh
+curl -s -X POST http://localhost:5000/api/sessions/<sessionId>/restore | jq .
+```
+
+### Recently Played Examples ⭐
+```sh
+# Get recent tracks
+curl -s http://localhost:5000/api/recently-played?limit=10 | jq .
+
+# Get unique recent tracks (no duplicates)
+curl -s http://localhost:5000/api/recently-played/unique?limit=5 | jq .
+
+# Get top played tracks
+curl -s http://localhost:5000/api/recently-played/top?limit=5 | jq .
+
+# Get recently played stats
+curl -s http://localhost:5000/api/recently-played/stats | jq .
+
+# Add track manually to recently played
+curl -s -X POST http://localhost:5000/api/recently-played/add \
+	-H 'Content-Type: application/json' \
+	-d '{"trackId":"<trackId>","deviceId":"<deviceId>","sessionId":"<sessionId>","duration":180.5,"completed":true}' | jq .
+
+# Get recently played for specific session
+curl -s http://localhost:5000/api/recently-played/session/<sessionId> | jq .
+```
+
 ### Auto-save Last Played on Playback Update
 ```sh
 curl -s -X PUT http://localhost:5000/api/devices/playback \
@@ -224,10 +277,29 @@ curl -s -X PUT http://localhost:5000/api/playlists/<playlistId>/tracks/reorder \
 - Sessions:
 	- Create: PASS (returns id)
 	- Set/Get Last Played: PASS
+	- **Restore Last Played: PASS** (restores track, position, volume, updates global state)
 	- Auto-save via `PUT /api/devices/playback` + `X-Session-ID`: PASS
+- Recently Played:
+	- **Get Recent: PASS** (returns tracks with full details)
+	- **Stats: PASS** (total entries, unique tracks, completion rate)
+	- **Top Tracks: PASS** (play counts and timestamps)
+	- **Manual Add: PASS** (manual entry addition)
+	- **Auto-tracking: PASS** (tracks on playback updates)
 
 ## [[Notes & Next Steps]]
 - WebSocket: optionally persist LastPlayed when receiving `sync_playback_state` (add optional `sessionId` param)
 - Call `PlaylistService.LoadPlaylists()` on startup to preload existing playlists
 - Implement album art extraction and caching in `StreamingService.GetAlbumArt`
+
+## [[Recently Played Feature Details]]
+The recently played system:
+1. **Auto-tracks** when playback state changes with `X-Session-ID` header
+2. **Stores entries** with: trackId, playedAt, deviceId, sessionId, duration, completed
+3. **Provides analytics**: stats, top tracks, play counts
+4. **Enriches responses** with full track details (title, artist, album, etc.)
+5. **Persists to disk** in `data/recently_played.json` 
+6. **Configurable limits** (max 100 entries by default)
+7. **Session filtering** to get history per session/device
+
+This enables "what did I listen to" and "most played tracks" functionality across sessions.
 
