@@ -1,6 +1,16 @@
 ---
-tags: [31songs, backend, go, api, docs]
-title: 31Songs Go Backend – Features & API
+tags: [31songs, backend, go, api, docs]- Sessions & Last Played
+	- Create lightweight sessions
+	- Save a "last played" snapshot (trackId, position, isPlaying, volume, deviceId)
+	- Auto-save last played when updating playback state if `X-Session-ID` is provided
+	- **🎯 Restore playback state** from last played snapshot (sets global playback state)
+- Recently Played
+	- Track listening history with timestamps
+	- Get recent tracks (all or unique)
+	- Top tracks with play counts
+	- Statistics (total plays, completion rate)
+	- Auto-tracked on playback state changes
+	- Persisted to `data/recently_played.json`le: 31Songs Go Backend – Features & API
 ---
 
 # 31Songs Go Backend – Features & API
@@ -606,166 +616,4 @@ cd /home/aruncs/Projects/Local\ Player/backend2 && go build -o bin/server .
 **Restart Server**
 ```bash
 pkill -f "bin/server" 2>/dev/null; sleep 1 && ./bin/server &
-```
-{
-  "id": "f588aa3f-f759-4d23-a753-8df7e56d9a56",
-  "title": "Die With A Smile",
-  "artist": "Lady Gaga, Bruno Mars"
-}
-```
-
-
-```bash
-echo "=== Testing Last Played ===" && SESSION_ID="a6f42cb7-9d58-48a4-b876-cd6168a8da44" && TRACK_ID="f588aa3f-f759-4d23-a753-8df7e56d9a56" && curl -s -X PUT http://127.0.0.1:5000/api/sessions/$SESSION_ID/last-played -H 'Content-Type: application/json' -d "{\"trackId\":\"$TRACK_ID\",\"position\":45.2,\"isPlaying\":true,\"volume\":0.8,\"deviceId\":\"test-device\"}" | jq -c '.data.message' && echo "Getting last played:" && curl -s http://127.0.0.1:5000/api/sessions/$SESSION_ID/last-played | jq -c '.data | {trackId, position, isPlaying}'
-```
-
-```json
-{
-  "trackId": "f588aa3f-f759-4d23-a753-8df7e56d9a56",
-  "position": 45.2,
-  "isPlaying": true
-}
-```
-
-```bash
-❯ echo "=== Testing Restore Last Played (Raw) ===" && SESSION_ID="a6f42cb7-9d58-48a4-b876-cd6168a8da44" && curl -s http://127.0.0.1:5000/api/sessions/$SESSION_ID/restore-last-played
-                                                                                                             
-
-```
-```
-404 page not found      
-```
-
-```bash
-
-echo "=== Testing Recently Played - Manual Add ===" && SESSION_ID="a6f42cb7-9d58-48a4-b876-cd6168a8da44" && TRACK_ID="f588aa3f-f759-4d23-a753-8df7e56d9a56" && curl -s -X POST http://127.0.0.1:5000/api/recently-played -H 'Content-Type: application/json' -d "{\"trackId\":\"$TRACK_ID\",\"sessionId\":\"$SESSION_ID\",\"deviceId\":\"test-device\",\"duration\":180.5,\"completed\":true}"
-````
-
-```bash
-echo "=== Testing Recently Played - Get Recent ===" && curl -s "http://127.0.0.1:5000/api/recently-played?limit=3" | jq -c '.data | {total: length, tracks: [.[] | {title: .track.title, artist: .track.artist, playedAt: .playedAt, completed}]}'
-```
-
-
-```json
-{
-  "total": 3,
-  "tracks": [
-    {
-      "title": "Blood (From \"Marco\")",
-      "artist": "Ravi Basrur, Dabzee, Rohith Siddappa, Vinayak Sasikumar",
-      "playedAt": null,
-      "completed": null
-    },
-    {
-      "title": "Blood (From \"Marco\")",
-      "artist": "Ravi Basrur, Dabzee, Rohith Siddappa, Vinayak Sasikumar",
-      "playedAt": null,
-      "completed": null
-    },
-    {
-      "title": "Sparkle - movie ver.",
-      "artist": "Radwimps",
-      "playedAt": null,
-      "completed": null
-    }
-  ]
-}
-```
-
-
-```bash
-echo "=== Testing Restore Last Played ===" && SESSION_ID="a6f42cb7-9d58-48a4-b876-cd6168a8da44" && curl -s "http://127.0.0.1:5000/api/sessions/$SESSION_ID/restore-last-played" | jq -c '.data | {track: .track.title, position, isPlaying, volume}'
-```
-
-
-```bash
-curl -s -X POST http://127.0.0.1:5000/api/sessions
-```
-
-```bash
-SESSION_ID="15946c4b-7108-4b72-8238-d899abe0c723" && TRACK_ID="67c1b262-f254-41de-910c-bebd7f674bb8" && curl -s -X PUT http://127.0.0.1:5000/api/sessions/$SESSION_ID/last-played -H 'Content-Type: application/json' -d "{\"trackId\":\"$TRACK_ID\",\"position\":75.3,\"isPlaying\":false,\"volume\":0.9,\"deviceId\":\"test-device\"}" && echo -e "\n--- Now Restoring ---" && curl -s "http://127.0.0.1:5000/api/sessions/$SESSION_ID/restore-last-played" | jq -c '.data | {track: .track.title, position, isPlaying, volume}'
-```
-
-
-> [!abstract] 
-> ```bash
-> echo "=== Testing Restore Raw Response ===" && SESSION_ID="15946c4b-7108-4b72-8238-d899abe0c723" && curl -s "http://127.0.0.1:5000/api/sessions/$SESSION_ID/restore-last-played"
-> ```
-
-
-```json
-{
-  "data": {
-    "fromSnapshot": {
-      "trackId": "67c1b262-f254-41de-910c-bebd7f674bb8",
-      "position": 75.3,
-      "isPlaying": false,
-      "volume": 0.9,
-      "deviceId": "test-device",
-      "updatedAt": "2025-08-24T00:45:15.380000068+05:30"
-    },
-    "message": "playback restored from last played",
-    "restoredState": {
-      "currentTrack": {
-        "id": "67c1b262-f254-41de-910c-bebd7f674bb8",
-        "title": "Kadhal Aasai",
-        "artist": "Yuvanshankar Raja, Sooraj Santhosh",
-        "album": "Anjaan (Original Motion Picture Soundtrack)",
-        "duration": 0,
-        "genre": "Indian Music & Films/Games & Film Scores",
-        "year": 2014,
-        "track": 4,
-        "filePath": "/home/aruncs/Music/TakeMeHome/Anjaan (Original Motion Picture Soundtrack) CD 1 TRACK 4 (32.mp3",
-        "fileName": "Anjaan (Original Motion Picture Soundtrack) CD 1 TRACK 4 (32.mp3",
-        "hasAlbumArt": true,
-        "albumArtKey": "Yuvanshankar Raja, Sooraj Santhosh-Anjaan (Original Motion Picture Soundtrack)"
-      },
-      "isPlaying": false,
-      "currentTime": 75.3,
-      "volume": 0.9,
-      "queue": [
-        {
-          "id": "67c1b262-f254-41de-910c-bebd7f674bb8",
-          "title": "Kadhal Aasai",
-          "artist": "Yuvanshankar Raja, Sooraj Santhosh",
-          "album": "Anjaan (Original Motion Picture Soundtrack)",
-          "duration": 0,
-          "genre": "Indian Music & Films/Games & Film Scores",
-          "year": 2014,
-          "track": 4,
-          "filePath": "/home/aruncs/Music/TakeMeHome/Anjaan (Original Motion Picture Soundtrack) CD 1 TRACK 4 (32.mp3",
-          "fileName": "Anjaan (Original Motion Picture Soundtrack) CD 1 TRACK 4 (32.mp3",
-          "hasAlbumArt": true,
-          "albumArtKey": "Yuvanshankar Raja, Sooraj Santhosh-Anjaan (Original Motion Picture Soundtrack)"
-        }
-      ]
-    }
-  },
-  "error": false
-}
-```
-
-```bash
-echo "=== Testing Top Tracks ===" && curl -s "http://127.0.0.1:5000/api/recently-played/top?limit=3" | jq -c '.data[] | {playCount, title: .track.title, artist: .track.artist}'
-```
-
-```json
-{
-  "playCount": 7,
-  "title": "Sparkle - movie ver.",
-  "artist": "Radwimps"
-}
-```
-
-
-```bash
-echo "=== Testing Auto-tracking with Session ===" && SESSION_ID="15946c4b-7108-4b72-8238-d899abe0c723" && TRACK_ID="67c1b262-f254-41de-910c-bebd7f674bb8" && curl -s -X PUT http://127.0.0.1:5000/api/devices/playback -H 'Content-Type: application/json' -H "X-Session-ID: $SESSION_ID" -d "{\"currentTrack\":{\"id\":\"$TRACK_ID\"},\"isPlaying\":true,\"currentTime\":0,\"volume\":0.8}" | jq -c '.data.message'
-```
-
-```
-"Playback state updated successfully"
-```
-
-```bash
-echo "=== COMPREHENSIVE API TESTING SUMMARY ===" && echo "✅ Session Management:" && echo " • Creating sessions: WORKING" && echo " • Touching sessions: WORKING" && echo " • Setting last played: WORKING" && echo " • Getting last played: WORKING" && echo " • Restoring last played: WORKING" && echo "" && echo "✅ Recently Played:" && echo " • Manual add: WORKING" && echo " • Get recent: WORKING" && echo " • Get statistics: WORKING (37 entries, 18 unique tracks)" && echo " • Get top tracks: WORKING" && echo " • Session filtering: WORKING (5 entries for test session)" && echo "" && echo "✅ Auto-tracking Integration:" && echo " • Device playback updates with X-Session-ID: WORKING" && echo " • Automatic session last-played updates: WORKING" && echo " • Automatic recently-played tracking: WORKING" && echo "" && echo "🎯 All Features Successfully Tested!"
 ```
