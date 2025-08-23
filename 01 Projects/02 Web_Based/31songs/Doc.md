@@ -303,3 +303,29 @@ The recently played system:
 
 This enables "what did I listen to" and "most played tracks" functionality across sessions.
 
+
+## Tests
+
+```bash
+TS2307: Cannot find module './components/StatsView' or its corresponding type declarations.
+     5 | import { useLastPlayed } from './hooks/useLastPlayed';
+     6 | import { useListeningTracker } from './hooks/useListeningTracker';
+  >  7 | import StatsView from './components/StatsView';
+       |                       ^^^^^^^^^^^^^^^^^^^^^^^^
+     8 | import StatsWidget from './components/StatsWidget';
+     9 |
+    10 | interface Track {
+```
+
+```bash
+echo "=== Testing Sessions ===" && SESSION_ID=$(curl -s -X POST http://127.0.0.1:5000/api/sessions | jq -r '.data.id') && echo "Created session: $SESSION_ID" && curl -s -X PUT http://127.0.0.1:5000/api/sessions/$SESSION_ID/touch | jq -c '.data.message'
+```
+
+```bash
+echo "=== Testing Tracks ===" && TRACK_ID=$(curl -s http://127.0.0.1:5000/api/tracks | jq -r '.[0].id') && echo "Got track ID: $TRACK_ID" && curl -s http://127.0.0.1:5000/api/tracks/$TRACK_ID | jq -c '{id: .id, title: .title, artist: .artist}'
+```
+```
+=== Testing Tracks ===
+Got track ID: f588aa3f-f759-4d23-a753-8df7e56d9a56
+{"id":"f588aa3f-f759-4d23-a753-8df7e56d9a56","title":"Die With A Smile","artist":"Lady Gaga, Bruno Mars"}
+```
