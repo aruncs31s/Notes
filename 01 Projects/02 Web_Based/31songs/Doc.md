@@ -360,3 +360,7 @@ Getting last played:
 
 echo "=== Testing Recently Played - Manual Add ===" && SESSION_ID="a6f42cb7-9d58-48a4-b876-cd6168a8da44" && TRACK_ID="f588aa3f-f759-4d23-a753-8df7e56d9a56" && curl -s -X POST http://127.0.0.1:5000/api/recently-played -H 'Content-Type: application/json' -d "{\"trackId\":\"$TRACK_ID\",\"sessionId\":\"$SESSION_ID\",\"deviceId\":\"test-device\",\"duration\":180.5,\"completed\":true}"
 ````
+
+```bash
+echo "=== Testing Recently Played - Get Recent ===" && curl -s "http://127.0.0.1:5000/api/recently-played?limit=3" | jq -c '.data | {total: length, tracks: [.[] | {title: .track.title, artist: .track.artist, playedAt: .playedAt, completed}]}'
+```
