@@ -177,6 +177,140 @@ Build binary
 go build -o bin/server .
 ```
 
+## [[Swagger Documentation]]
+
+### 🎯 **Interactive API Documentation**
+The backend includes comprehensive Swagger/OpenAPI documentation accessible at:
+```
+http://localhost:5000/swagger/index.html
+```
+
+### **Swagger Setup Commands**
+```bash
+# Install Swagger dependencies
+cd /home/aruncs/Projects/Local\ Player/backend2
+go get github.com/swaggo/gin-swagger github.com/swaggo/files github.com/swaggo/swag/cmd/swag
+
+# Install swag CLI tool
+go install github.com/swaggo/swag/cmd/swag@latest
+
+# Generate Swagger documentation
+~/go/bin/swag init --parseDependency
+
+# Build server with Swagger
+go build -o bin/server .
+
+# Start server
+./bin/server
+```
+
+### **Available Swagger Endpoints**
+- **Interactive UI**: `http://localhost:5000/swagger/index.html`
+- **JSON Spec**: `http://localhost:5000/swagger/doc.json`
+- **YAML Spec**: `http://localhost:5000/swagger/swagger.yaml`
+
+### **Swagger Features**
+- 📖 **Complete API Documentation** - All endpoints with descriptions
+- 🧪 **Try It Out** - Execute API calls directly from the browser
+- 📝 **Request/Response Examples** - See actual data formats
+- 🔍 **Model Schemas** - Track, Session, Recently Played structures
+- 🔐 **Security Headers** - X-Session-ID and X-Device-ID documentation
+- ⚡ **Real-time Testing** - Test against your running server
+
+### **Swagger Annotations Coverage**
+| Category | Endpoints Documented | Features |
+|----------|---------------------|----------|
+| **System** | `/system/info`, `/system/scan` | ✅ Health checks, library scanning |
+| **Tracks** | `/tracks`, `/tracks/{id}`, `/tracks/{id}/stream` | ✅ Search, streaming, metadata |
+| **Sessions** | All session endpoints | ✅ Create, touch, last-played, restore |
+| **Recently Played** | All recently-played endpoints | ✅ Stats, top tracks, manual add |
+| **Devices** | Playback state management | ✅ Auto-tracking integration |
+
+### **Testing with Swagger UI**
+
+#### **1. Open Swagger UI**
+```bash
+# Start server
+cd /home/aruncs/Projects/Local\ Player/backend2 && ./bin/server
+
+# Open browser to:
+http://localhost:5000/swagger/index.html
+```
+
+#### **2. Test Session Creation**
+1. Navigate to **Sessions** section
+2. Click on `POST /api/sessions`
+3. Click **"Try it out"**
+4. Click **"Execute"**
+5. Copy the returned session ID for other tests
+
+#### **3. Test Recently Played**
+1. Use the session ID from step 2
+2. Navigate to **Recently Played** section
+3. Try `POST /api/recently-played` with sample data:
+```json
+{
+  "trackId": "67c1b262-f254-41de-910c-bebd7f674bb8",
+  "sessionId": "your-session-id-here",
+  "deviceId": "swagger-test",
+  "duration": 180.5,
+  "completed": true
+}
+```
+
+#### **4. Test Statistics**
+1. Try `GET /api/recently-played/stats`
+2. Try `GET /api/recently-played/top?limit=5`
+3. Try `GET /api/recently-played?limit=10`
+
+### **Swagger vs cURL Testing**
+| Method | Pros | Cons |
+|--------|------|------|
+| **Swagger UI** | Interactive, visual, no CLI needed | Requires browser |
+| **cURL Commands** | Scriptable, automatable, fast | Command-line only |
+
+**Use Swagger for**: Manual testing, API exploration, documentation
+**Use cURL for**: Automated testing, CI/CD, scripting
+
+### **Regenerating Swagger Docs**
+When you add new endpoints or modify existing ones:
+```bash
+# Regenerate documentation
+cd /home/aruncs/Projects/Local\ Player/backend2
+~/go/bin/swag init --parseDependency
+
+# Rebuild and restart server
+go build -o bin/server . && ./bin/server
+```
+
+### **Swagger Annotation Examples**
+Here are the annotation patterns used in the codebase:
+
+**Basic Endpoint:**
+```go
+// @Summary Create a new session
+// @Description Creates a new lightweight session for tracking user activity
+// @Tags Sessions
+// @Accept json
+// @Produce json
+// @Success 200 {object} models.APIResponse{data=models.Session}
+// @Failure 500 {object} models.APIResponse
+// @Router /sessions [post]
+```
+
+**With Parameters:**
+```go
+// @Param id path string true "Session ID"
+// @Param X-Session-ID header string false "Optional session ID"
+// @Param request body addRecentlyPlayedRequest true "Track information"
+```
+
+**File Streaming:**
+```go
+// @Produce audio/mpeg,audio/mp4,audio/wav,audio/flac
+// @Success 206 {file} binary "Partial audio content"
+```
+
 ## [[API Examples]]
 
 ### Health
@@ -324,6 +458,182 @@ The recently played system:
 7. **Session filtering** to get history per session/device
 
 This enables "what did I listen to" and "most played tracks" functionality across sessions.
+
+## [[Frontend Integration & Compatibility]]
+
+### 🎯 **React StatsWidget Compatibility**
+The backend is **fully compatible** with React frontend components. Here's how the StatsWidget integrates:
+
+#### **Required API Mappings**
+| Frontend Method | Backend Endpoint | Response Format |
+|-----------------|------------------|-----------------|
+| `StatsService.getMostPlayedTracks(5)` | `GET /api/recently-played/top?limit=5` | `{data: [{track: {...}, playCount: 7}]}` |
+| `StatsService.getRecentlyPlayedTracks(5)` | `GET /api/recently-played?limit=5` | `{data: [{track: {...}, entry: {...}}]}` |
+| Track playback tracking | `PUT /api/devices/playback` + `X-Session-ID` | Auto-tracked |
+
+#### **Frontend Service Implementation**
+Create a `statsService.ts` that maps to the backend:
+
+```typescript
+export interface PlayedTrack {
+  id: string;
+  title: string;
+  artist: string;
+  album?: string;
+  playCount: number;
+  lastPlayed: string;
+}
+
+export class StatsService {
+  private static baseUrl = 'http://localhost:5000/api';
+  
+  static async getMostPlayedTracks(limit: number = 10): Promise<PlayedTrack[]> {
+    try {
+      const response = await fetch(`${this.baseUrl}/recently-played/top?limit=${limit}`);
+      const data = await response.json();
+      
+      if (data.error) throw new Error(data.message);
+      
+      return data.data.map((item: any) => ({
+        id: item.track.id,
+        title: item.track.title,
+        artist: item.track.artist,
+        album: item.track.album,
+        playCount: item.playCount,
+        lastPlayed: item.lastPlayed || new Date().toISOString()
+      }));
+    } catch (error) {
+      console.warn('Backend unavailable, falling back to localStorage');
+      return this.getLocalStats('mostPlayed', limit);
+    }
+  }
+
+  static async getRecentlyPlayedTracks(limit: number = 10): Promise<PlayedTrack[]> {
+    try {
+      const response = await fetch(`${this.baseUrl}/recently-played?limit=${limit}`);
+      const data = await response.json();
+      
+      if (data.error) throw new Error(data.message);
+      
+      return data.data.map((item: any) => ({
+        id: item.track.id,
+        title: item.track.title,
+        artist: item.track.artist,
+        album: item.track.album,
+        playCount: 1, // Recent tracks don't need play count
+        lastPlayed: item.entry.playedAt || new Date().toISOString()
+      }));
+    } catch (error) {
+      console.warn('Backend unavailable, falling back to localStorage');
+      return this.getLocalStats('recentlyPlayed', limit);
+    }
+  }
+
+  // Fallback to localStorage when backend is unavailable
+  private static getLocalStats(type: string, limit: number): PlayedTrack[] {
+    const stored = localStorage.getItem(`music_${type}`);
+    if (!stored) return [];
+    
+    try {
+      const data = JSON.parse(stored);
+      return data.slice(0, limit);
+    } catch {
+      return [];
+    }
+  }
+}
+```
+
+#### **Session Integration**
+The React app should create and maintain a session:
+
+```typescript
+// Session management
+export class SessionManager {
+  private static sessionId: string | null = null;
+  
+  static async getOrCreateSession(): Promise<string> {
+    if (this.sessionId) return this.sessionId;
+    
+    // Try to restore from storage
+    this.sessionId = sessionStorage.getItem('musicSessionId') || 
+                     localStorage.getItem('musicSessionId');
+    
+    if (this.sessionId) {
+      // Touch existing session
+      await this.touchSession(this.sessionId);
+      return this.sessionId;
+    }
+    
+    // Create new session
+    try {
+      const response = await fetch('http://localhost:5000/api/sessions', {
+        method: 'POST'
+      });
+      const data = await response.json();
+      
+      if (!data.error) {
+        this.sessionId = data.data.id;
+        sessionStorage.setItem('musicSessionId', this.sessionId);
+        localStorage.setItem('musicSessionId', this.sessionId);
+        return this.sessionId;
+      }
+    } catch (error) {
+      console.warn('Could not create backend session');
+    }
+    
+    return 'local-session';
+  }
+  
+  private static async touchSession(sessionId: string): Promise<void> {
+    try {
+      await fetch(`http://localhost:5000/api/sessions/${sessionId}/touch`, {
+        method: 'PUT'
+      });
+    } catch (error) {
+      console.warn('Could not touch session');
+    }
+  }
+}
+```
+
+#### **Auto-tracking Integration**
+When updating playback state, include the session header:
+
+```typescript
+// In your player component
+const updatePlaybackState = async (state: PlaybackState) => {
+  const sessionId = await SessionManager.getOrCreateSession();
+  
+  try {
+    await fetch('http://localhost:5000/api/devices/playback', {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Session-ID': sessionId  // This enables auto-tracking!
+      },
+      body: JSON.stringify(state)
+    });
+  } catch (error) {
+    console.warn('Could not sync playback state to backend');
+  }
+};
+```
+
+### **Benefits of Backend Integration**
+✅ **Cross-device sync** - Statistics shared across all devices  
+✅ **Persistent storage** - Data survives browser cache clears  
+✅ **Real-time updates** - Stats update immediately on playback  
+✅ **Better analytics** - Server-side aggregation and filtering  
+✅ **Fallback support** - Graceful degradation to localStorage  
+
+### **Migration Strategy**
+1. **Phase 1**: Keep existing localStorage as fallback
+2. **Phase 2**: Add backend API calls with error handling  
+3. **Phase 3**: Migrate existing localStorage data to backend
+4. **Phase 4**: Remove localStorage dependency (optional)
+
+Your React StatsWidget is **100% compatible** and will work seamlessly with these backend endpoints! 🎉
 
 
 ## [[Comprehensive Testing Guide]]
