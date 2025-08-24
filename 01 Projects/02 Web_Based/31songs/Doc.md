@@ -291,6 +291,28 @@ curl -s -X PUT http://localhost:5000/api/playlists/<playlistId>/tracks/reorder \
 - Call `PlaylistService.LoadPlaylists()` on startup to preload existing playlists
 - Implement album art extraction and caching in `StreamingService.GetAlbumArt`
 
+**REQUEST: Frontend Integration Features Needed**
+The frontend is now integrating with the backend recently played API, but needs these enhancements:
+
+1. **Session Auto-creation**: Frontend should automatically create a session on app load if none exists
+2. **Statistics Integration**: Frontend should use backend `/recently-played/top`, `/recently-played/stats`, and `/recently-played` endpoints instead of localStorage
+3. **Real-time Updates**: Frontend listening tracker should post to `/recently-played` when tracks are played for >5 seconds
+4. **Fallback Handling**: Frontend should gracefully fallback to localStorage if backend is unavailable
+5. **Session Persistence**: Frontend should store session ID in both sessionStorage and localStorage for persistence
+
+These changes will give users:
+- ✅ Real statistics from backend data
+- ✅ Cross-device statistics sync
+- ✅ More accurate play counts and listening history
+- ✅ Backend persistence with local fallback
+
+**Current Implementation Status**:
+- ✅ Frontend now calls backend recently played API
+- ✅ Auto-creates sessions on app load
+- ✅ Fallback to localStorage when backend unavailable
+- ✅ Async statistics loading with proper error handling
+- 🔄 Testing integration with existing backend data
+
 ## [[Recently Played Feature Details]]
 The recently played system:
 1. **Auto-tracks** when playback state changes with `X-Session-ID` header
