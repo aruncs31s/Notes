@@ -1,25 +1,13 @@
 ---
-tags: [31songs, backend, go, api, docs]- Sessions & Last Played
-	- Create lightweight sessions
-	- Save a "last played" snapshot (trackId, position, isPlaying, volume, deviceId)
-	- Auto-save last played when updating playback state if `X-Session-ID` is provided
-	- **🎯 Restore playback state** from last played snapshot (sets global playback state)
-- Recently Played
-	- Track listening history with timestamps
-	- Get recent tracks (all or unique)
-	- Top tracks with play counts
-	- Statistics (total plays, completion rate)
-	- Auto-tracked on playback state changes
-	- Persisted to `data/recently_played.json`le: 31Songs Go Backend – Features & API
+tags: [31songs, backend, go, api, docs]
 ---
 
-# 31Songs Go Backend – Features & API
+# 31Songs Go Backend 
 
-> Backend for the Local Player/31songs. REST + Socket.IO, sessions, last-played persistence. This page is Obsidian-friendly.
-
+> Backend for the Local Player/31songs. REST + Socket.IO, sessions, last-played persistence. 
 ## [[Overview]]
-- Language: Go
-- Framework: Gin
+- Language: [[Go]]
+- Framework: [[Gin]]
 - Realtime: Socket.IO-compatible endpoint
 - Persistence:
 	- Playlists → `data/playlists.json`
