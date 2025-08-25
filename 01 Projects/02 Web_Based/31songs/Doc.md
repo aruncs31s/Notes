@@ -302,34 +302,34 @@ Here are the annotation patterns used in the codebase:
 ## [[API Examples]]
 
 ### Health
-```sh
+```bash
 curl -s http://localhost:5000/health
 ```
 
 ### System Info
-```sh
+```bash
 curl -s http://localhost:5000/api/system/info | jq .
 ```
 
 ### Create Session
-```sh
+```bash
 curl -s -X POST http://localhost:5000/api/sessions | jq .
 ```
 
 ### Touch Session
-```sh
+```bash
 curl -s -X PUT http://localhost:5000/api/sessions/<sessionId>/touch | jq .
 ```
 
 ### Set Last Played
-```sh
+```bash
 curl -s -X PUT http://localhost:5000/api/sessions/<sessionId>/last-played \
 	-H 'Content-Type: application/json' \
 	-d '{"trackId":"<trackId>","position":61.2,"isPlaying":true,"volume":0.5,"deviceId":"<deviceId>"}' | jq .
 ```
 
 ### Get Last Played
-```sh
+```bash
 curl -s http://localhost:5000/api/sessions/<sessionId>/last-played | jq .
 ```
 
@@ -339,7 +339,7 @@ curl -s http://localhost:5000/api/sessions/<sessionId>/restore-last-played | jq 
 ```
 
 ### Recently Played Examples ⭐
-```sh
+```bash
 # Get recent tracks
 curl -s http://localhost:5000/api/recently-played?limit=10 | jq .
 
@@ -362,7 +362,7 @@ curl -s http://localhost:5000/api/recently-played/session/<sessionId> | jq .
 ```
 
 ### Auto-save Last Played on Playback Update
-```sh
+```bash
 curl -s -X PUT http://localhost:5000/api/devices/playback \
 	-H 'Content-Type: application/json' \
 	-H 'X-Session-ID: <sessionId>' \
@@ -370,12 +370,12 @@ curl -s -X PUT http://localhost:5000/api/devices/playback \
 ```
 
 ### Stream Track
-```sh
+```bash
 curl -I http://localhost:5000/api/tracks/<trackId>/stream
 ```
 
 ### Playlist CRUD
-```sh
+```bash
 # Create
 curl -s -X POST http://localhost:5000/api/playlists \
 	-H 'Content-Type: application/json' \
@@ -539,13 +539,11 @@ The React app should create and maintain a session:
 // Session management
 export class SessionManager {
   private static sessionId: string | null = null;
-  
   static async getOrCreateSession(): Promise<string> {
     if (this.sessionId) return this.sessionId;
-    
     // Try to restore from storage
     this.sessionId = sessionStorage.getItem('musicSessionId') || 
-                     localStorage.getItem('musicSessionId');
+	localStorage.getItem('musicSessionId');
     
     if (this.sessionId) {
       // Touch existing session
