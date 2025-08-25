@@ -8,6 +8,7 @@ dg-publish: true
 ---
 
 # Dependency Injunction
+- [[uber-go-fx]]
 It is used to implement the [[Inversion of control]] principle. In DI, the dependencies of an object (i.e. the objects it relies on) are **provided externally** rather than created internally by the object itself
 
 
