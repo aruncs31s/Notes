@@ -395,4 +395,11 @@ if db.RowsAffected == 0 && db.Statement.RaiseErrorOnNotFound && db.Error == nil 
 	db.AddError(ErrRecordNotFound)
 }
 ```
-- 
+
+
+
+## Transactions 
+- First Check if the staff with `staff_id(string)` exists 
+	- if exists return return `staffPrimaryKey` and `nil` as the `errro`
+	- if not return `0` and `err`
+- now retrieve `staffDetails` using the primary key of the `staff` just obtained .
