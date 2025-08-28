@@ -15,7 +15,6 @@ dg-publish: true
 # ES Website
 
 
-
 >[!SUMMARY]- Table of Contents
 >- [[Embedded Systems Website#ES Website|ES Website]]
 >    - [[Embedded Systems Website#Features Need|Features Need]]
@@ -29,7 +28,7 @@ dg-publish: true
 
 ```widgets
 type: countdown
-date: 2025-08-9 00:00:00
+date: 2025-10-9 00:00:00
 to: プロジェクトを完了する 🎉
 completedLabel: プロジェクトを完了する 🎉
 ```
@@ -61,6 +60,22 @@ completedLabel: プロジェクトを完了する 🎉
 > > git push origin main
 > > ```
 
+
+## Introduction 
+This project aims to develop a website where , GCEK Embedded Systems students can show case their projects and hopefully products that they develop in the future. 
+So what do you need , if you are planning to contribute read the [[#Contribute Section]] 
+## Contribution
+Contribution might be the hardest that me can ask. But also the beautiful thing , because you will never learn things if you don't try , and always remember to grow , you don't have to remember it you will do that eventually. This all might sound like some gimic , i don't know how to convince otherwise. 
+As i have said contribution might be the hardest because , 
+1. You have to learn , Astro , [[React]] , Javascript , and HTML + CSS and Tailwind. 
+**what i have to say about it.**
+I don't know any of it , except JS ,HTML , CSS , so how can i do this?. The obvious answer would be to use chatgpt.
+
+>[!Note] **Note on ChatGPT**
+>Using AI tools like , ChatGPT , Gemini , Claude etc..  is ok but there are some problems which comes with it if you don't know how to use it. 
+>1. You will get codebanged , which means the codebase will become , so large that you might use complex design patterns to implement simple functions and use of outdated libraries. 
+>2. You will lose the ability to read , and understand the code. **Why?**
+>It has to do with how to learn code, by using what i've learned over the years , that you learn code mostly by doing, so you have to get your hands dirty, think of it like 
 ## Features Need
 
 - [x] Login Feature
