@@ -75,7 +75,6 @@ filter: "today | overdue"
 
 ## Work 
 
-### Not Done 
 
 > [!multi-column]
 >
@@ -86,30 +85,32 @@ filter: "today | overdue"
 > > path includes Work/
 > > ```
 >
-> > [!suces|wide-3]+ Done
+> > [!success|wide-3]+ Done
 > >
 > > ```tasks
-> > not done
+> > done
 > > path includes Work/
 > > ```
 
-```tasks
-not done 
-path includes Work/
-```
-
-### Done 
-```tasks
-done 
-path includes Work/
-```
 
 ## Startups 
-## 
-```tasks
-not done 
-path includes 09 Startups
-```
+> [!multi-column]
+>
+> > [!todo|wide-3]+ Not Done
+> >
+> > ```tasks
+> > not done
+> > path includes 09 Startups
+> > ```
+>
+> > [!success|wide-3]+ Done
+> >
+> > ```tasks
+> > done
+> > path includes 09 Startups
+> > ```
+
+
 
 ## Files 
 ```dataview
