@@ -151,3 +151,7 @@ In go the definition of interface is   (ment by ) ![[Go#^d2e304]]
 
 >A client should never be forced to implment an interface that ut doesn;t use , or client shouldn't be forced to depned on methods they do not use. 
 
+Never Create a God Object 
+
+>[!Note]- **God Object**
+>
