@@ -59,8 +59,6 @@ Product possiblility curve/Frontier shows the various combinations of two comodi
 - However, if there is unemployment or inefficiency in resource utilisation, then we can produce at any point inside the PPC.
 
 
-- [ ] Complete this PPC Using ktu notes.🔼 📅 2024-06-29
-- [ ] Refer study stuffs
 
 ### Firms and its objectives
 

@@ -175,3 +175,5 @@ Never Create a God Object
 ## Y? 
 - They are easier to test, maintain, and support.
 - Can be used to make bigger more complex , interfaces. 
+
+- [ ] Include Examples 

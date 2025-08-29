@@ -1,13 +1,14 @@
 ---
 id: Home
-aliases: 
-tags: 
-dg-publish: true
+aliases: []
+tags: []
 cssclasses:
   - wide-page
+dg-publish: true
 ---
 
 # HOME
+
 - [[Projects]]
 
 ```widgets
@@ -15,8 +16,7 @@ type: quote
 quote: When you stare into the abyss, the abyss stares back at you.
 ```
 
-
-## Tasks 
+## Tasks
 
 ![[Cal_mon_friday.excalidraw|1000x300]]
 
@@ -40,9 +40,6 @@ filter: "today | overdue"
 > not done
 > due on today
 > ```
-
-
-
 
 > [!note] Completed
 >
@@ -73,8 +70,7 @@ filter: "today | overdue"
 
 - [ ] Checkout [Adding Metadata to your Pages](https://blacksmithgu.github.io/obsidian-dataview/annotation/add-metadata/) 📅 2025-04-17
 
-## Work 
-
+## Work
 
 > [!multi-column]
 >
@@ -92,8 +88,8 @@ filter: "today | overdue"
 > > path includes Work/
 > > ```
 
+## Startups
 
-## Startups 
 > [!multi-column]
 >
 > > [!todo|wide-3]+ Not Done
@@ -110,9 +106,8 @@ filter: "today | overdue"
 > > path includes 09 Startups
 > > ```
 
+## Files
 
-
-## Files 
 ```dataview
 CALENDAR file.ctime
 ```
@@ -132,6 +127,9 @@ CALENDAR file.ctime
 > > cd /home/aruncs/Notes/ && git add -A ; git commit -m "automated backup" ; git push origin main
 > > ```
 
+## All Tasks
 
-
-
+```tasks
+not done
+limit 10
+```
