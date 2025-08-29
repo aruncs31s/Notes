@@ -7,7 +7,8 @@
 
 Programming Languages can follow one or more programming paradigms
 
-
+- [[Object]]
+- [[God Object]]
 ## Languages 
 1. [[python]]
 2. [[javascript]] 
