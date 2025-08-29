@@ -144,3 +144,10 @@ In go the definition of interface is   (ment by ) ![[Go#^d2e304]]
 ### Repositories 
 
 - If repositories are modular, adding features like validation, logging, or alternate storage becomes easier without modifying core logic. ^f778d0
+
+
+## Interface Segregation Principal
+> An interface is a contract defining a set of methods without specific implementation(kinda like prototype.)
+
+>A client should never be forced to implment an interface that ut doesn;t use , or client shouldn't be forced to depned on methods they do not use. 
+
