@@ -11,4 +11,4 @@
 - [[God Object]]
 - [[Magic Number]]
 - [[Poltegeist]]A literal value with an important yet unexplained meaning which could be replaced with a named constant.
-- [[Big ]]
+- [[Big Ball Of Mud]]

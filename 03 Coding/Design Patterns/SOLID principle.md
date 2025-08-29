@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # SOLID Principles
 - [[Factory Design Pattern]]
 
@@ -154,4 +158,15 @@ In go the definition of interface is   (ment by ) ![[Go#^d2e304]]
 Never Create a God Object 
 
 >[!Note]- **God Object**
->Its an **object** that references a large number of distinct types, has too many unrelated or uncategorized methods, or some combination of both. More [[God Object]]
+>Its an **object** that references a large number of distinct types, has too many unrelated or uncategorized methods, or some combination of both. More [[God Object]] 
+
+> [!blank|right-small] 
+> **See also**
+> [[Anti Pattern]]
+> [[Big Ball Of Mud]]
+> [[Poltegeist]]
+> [[Magic Number]]
+
+## Y? 
+- They are easier to test, maintain, and support.
+- Can be used to make bigger more complex , interfaces. 
