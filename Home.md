@@ -73,6 +73,16 @@ filter: "today | overdue"
 
 - [ ] Checkout [Adding Metadata to your Pages](https://blacksmithgu.github.io/obsidian-dataview/annotation/add-metadata/) 📅 2025-04-17
 
+## Work 
+
+```tasks
+not done 
+path includes Work/
+```
+
+## Startups 
+
+
 
 ## Files 
 ```dataview
