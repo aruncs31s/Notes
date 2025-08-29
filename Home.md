@@ -75,14 +75,41 @@ filter: "today | overdue"
 
 ## Work 
 
+### Not Done 
+
+> [!multi-column]
+>
+> > [!todo|wide-3]+ Not Done
+> >
+> > ```tasks
+> > not done
+> > path includes Work/
+> > ```
+>
+> > [!suces|wide-3]+ Done
+> >
+> > ```tasks
+> > not done
+> > path includes Work/
+> > ```
+
 ```tasks
 not done 
 path includes Work/
 ```
 
+### Done 
+```tasks
+done 
+path includes Work/
+```
+
 ## Startups 
-
-
+## 
+```tasks
+not done 
+path includes 09 Startups
+```
 
 ## Files 
 ```dataview
