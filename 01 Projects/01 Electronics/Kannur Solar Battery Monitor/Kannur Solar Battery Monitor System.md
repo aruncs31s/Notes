@@ -24,7 +24,7 @@ Where file = this.file
 
 ```widgets
 type: countdown
-date: 2025-06-9 00:00:00
+date: 2025-06-09 00:00:00
 to: Complete the Project 🎉
 completedLabel: Project is done 🎉
 ```
