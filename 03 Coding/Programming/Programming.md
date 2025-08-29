@@ -6,7 +6,7 @@
 ![[Programming Paradigm.excalidraw|600x100]]
 
 Programming Languages can follow one or more programming paradigms
-
+- [[Anti Pattern]]
 - [[Object]]
 - [[God Object]]
 ## Languages 

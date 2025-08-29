@@ -1,0 +1,1 @@
+>Ephemeral controller classes that only exist to invoke other methods on classes.
