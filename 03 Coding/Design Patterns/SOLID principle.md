@@ -1,22 +1,26 @@
 ---
 dg-publish: true
+tags:
+  - programming
+  - work
 ---
 
 # SOLID Principles
 - [[Factory Design Pattern]]
 
-| Principle                               | Meaning                                                                        | Related Design Patterns                                           |
-| --------------------------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
-| **S** – Single Responsibility Principle | A class should have **only one reason to change**.                             | [[Factory Design Pattern\|Factory]] , [[Builder]] , [[]] Observer |
-| **O** – Open/Closed Principle           | Classes should be **open for extension but closed for modification**.          | Strategy, Decorator, Template Method                              |
-| **L** – Liskov Substitution Principle   | Subclasses should be usable wherever the parent class is.                      | All polymorphism-based patterns                                   |
-| **I** – Interface Segregation Principle | Use **small, specific interfaces** rather than big general ones.               | Adapter, Proxy                                                    |
-| **D** – Dependency Inversion Principle  | High-level modules should not depend on low-level ones — **use abstractions**. | Dependency Injection, Facto                                       |
-|                                         |                                                                                |                                                                   |
+| Principle                                                                              | Meaning                                                                        | Related Design Patterns                                           |
+| -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
+| **S** – [[#1. Single Responsibility Principle (SRP)\|Single Responsibility Principle]] | A class should have **only one reason to change**.                             | [[Factory Design Pattern\|Factory]] , [[Builder]] , [[]] Observer |
+| **O** – Open/Closed Principle                                                          | Classes should be **open for extension but closed for modification**.          | Strategy, Decorator, Template Method                              |
+| **L** – Liskov Substitution Principle                                                  | Subclasses should be usable wherever the parent class is.                      | All polymorphism-based patterns                                   |
+| **I** – Interface Segregation Principle                                                | Use **small, specific interfaces** rather than big general ones.               | Adapter, Proxy                                                    |
+| **D** – Dependency Inversion Principle                                                 | High-level modules should not depend on low-level ones — **use abstractions**. | Dependency Injection, Facto                                       |
+|                                                                                        |                                                                                |                                                                   |
 
 
 
-## 1. Single Responsibility Principle (SRP): Principle states that a class or module should **have only one reason** to change
+## 1. Single Responsibility Principle (SRP) 
+> Principle states that a class or module should **have only one reason** to change
 
 >  The essence of the Single Responsibility Principle lies in the limitation of responsibilities of an entity (class, function, package, or module). It should concentrate on a single task and encapsulate all the elements necessary for executing the specified task.
 >  - [Source](https://medium.com/@radhakrishnan.nit/single-responsibility-principle-in-golang-89a4a75f6fc4)
@@ -150,7 +154,8 @@ In go the definition of interface is   (ment by ) ![[Go#^d2e304]]
 - If repositories are modular, adding features like validation, logging, or alternate storage becomes easier without modifying core logic. ^f778d0
 
 
-## Interface Segregation Principal
+## 4. Interface Segregation Principal
+[Source](https://maddevs.io/blog/solid-interface-segregation-principle-in-golang/)
 > An interface is a contract defining a set of methods without specific implementation(kinda like prototype.)
 
 >A client should never be forced to implment an interface that ut doesn;t use , or client shouldn't be forced to depned on methods they do not use. 
