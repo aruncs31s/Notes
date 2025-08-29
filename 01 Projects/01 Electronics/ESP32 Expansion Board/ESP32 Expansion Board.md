@@ -48,7 +48,7 @@ This was ment to expand the [[08 Electronics/Embedded Systems/Micro Controllers/
 
 ## Pin Configuration
 The `ADC2_CH0:7` will not work when using WiFi. In this board the wifi will be utilized most of the time so going to ignore the ADC2_CH0:7 pins  
-- [ ] Check if they can be used for something else 🔽 📅 2025-04-29
+- [x] Check if they can be used for something else 🔽 📅 2025-04-29 ✅ 2025-08-29
 
 ```c
 #define ADC_1 33  

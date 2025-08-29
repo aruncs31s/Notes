@@ -14,13 +14,13 @@ tags:: [[+Daily Notes]]
 
 ---
 
-# ${{date}}
+## Tasks Done
 
 ```tasks
 done on <% tp.date.now("YYYY-MM-DD") %>
 ```
 
-### 📅 Daily Questions
+## 📅 Daily Questions
 
 ##### 🌜 Last night, after work, I...
 
@@ -38,7 +38,7 @@ done on <% tp.date.now("YYYY-MM-DD") %>
 
 - ***
 
-# 📝 Notes
+## 📝 Notes
 
 - <% tp.file.cursor() %>
 
