@@ -10,6 +10,7 @@ cssclasses:
 
 # GORM
 - [[Using SOLID Principle]]
+- [[Relations]]
 
 ```bash
 go get -u gorm.io/gorm
