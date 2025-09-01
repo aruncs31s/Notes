@@ -21,6 +21,22 @@ sort file.name asc
 
 How this is planned: The difficulty will increase from task to task by end of this you will learn about
 
+## Project Outline 
+This is planned in a way that , every each task from [[Level 0]] to [[Level 100]] (hopefully) mock the , real world scenario, 
+
+
+| Level       | What you Will Learn                      | Is Mandatory |
+| ----------- | ---------------------------------------- | ------------ |
+| [[Level 0]] | `git clone`                              | Yes          |
+| [[Level 1]] | Versioning                               | No           |
+| [[Level 2]] | `git add`, `git status` ,`git restore`   | Yes          |
+| [[Level 3]] | `git commit` , `git log` ,`git checkout` | Yes          |
+| [[Level 4]] | `git banch` , `git branch -d`            | Yes          |
+| [[Level 5]] | `git config`                             | Yes          |
+| [[Level 6]] | `git pull` , `git push`                  | Yes          |
+
+
+
 ## Installing Git
 
 1. Windows: click [here](https://git-scm.com/downloads/win) to download
@@ -93,8 +109,8 @@ Git is an example of **DVCS**, because of this , if one copy of your project fil
 
 ## Obtaining Git Repocitory
 
-- [ ] Explain what is repocitory
-- [ ] how to upload a folder to github.
+- [x] Explain what is repocitory ✅ 2025-08-28
+- [x] how to upload a folder to github. ✅ 2025-08-28
 
 ## Basics
 

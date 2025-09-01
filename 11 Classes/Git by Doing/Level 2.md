@@ -22,14 +22,14 @@ Task: Understanding `git add` and `git status`
 | Task 1 | `python task_1.py ` | `git add`     | `add`     |
 | Task 2 | `python task_2.py ` | `git status`  | `status`  |
 | Task 3 | `python task_3.py ` | `git restore` | `restore` |
-|        |                     |               |           |
+
 
 
 > [!IMPORTANT]
 > First Run `task_1.py`
 >
 > ```bash
-> Python task_1. Py
+>python task_1. Py
 > ```
 >
 > It will tell you to add some file , so you can type 'n' to exit program or press "CTRL and c" at the same time and interrept it.
@@ -38,12 +38,12 @@ Task: Understanding `git add` and `git status`
 > Then Run `task_2.py`
 >
 > ```bash
-> Python task_2. Py
+> python task_2. Py
 > ```
 > Then Run `task_3.py`
 >
 > ```bash
-> Python task_2. Py
+> python task_2. Py
 > ```
 > After finishing the Task 3, run the quiz. Py
 >```python

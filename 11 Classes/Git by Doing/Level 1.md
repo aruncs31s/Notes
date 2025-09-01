@@ -9,6 +9,8 @@ dg-publish: true
 type: Quiz
 ---
 # Level 1
+> Next 
+> - [[Level 2]]
 ```dataview
 Table without ID  file.name as "Name" , github as Link , status as Status, file.outlinks as Mentioned
 where file = this.file
@@ -18,10 +20,9 @@ Task: Understanding what is git?
 > [!IMPORTANT]
 > After reading this complete page you need to install python in you system and run the following
 >
-> ```python
-> Python quiz. Py
-> ```
-
+>```bash
+>Python quiz.py
+>```
 ## Little About Git
 
 Git was created by ["Linus Torvalds"](https://github.com/torvalds), for maintaining his projects. He is also the creater of linux.
