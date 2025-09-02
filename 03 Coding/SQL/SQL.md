@@ -339,9 +339,9 @@ SELECT * FROM Brands WHERE brand_id = 1;
 
 ### Relations
 
-1. **One-to-One**
-2. **One-to-Many**
-3. **Many-to-Many**
+1.[[£ **One-to-One**]]
+1. **One-to-Many**
+2. **Many-to-Many**
 
 ```sql
 siteid = :defsite
