@@ -352,7 +352,18 @@ which means `site.siteid = maxuser.defsite`
 >  Each record in Table A is associated with one and only one record in Table B
 
 - Include a [foreign key](https://www.geeksforgeeks.org/sql/foreign-key-constraint-in-sql/) in one of the tables that references the primary key of the other table.
-Its like when the a user has only a user profile and the userprofile mustg 
+Its like when the a `user` has only a `user profile` and the `userprofile` must have a `user`.
+
+```SQL
+CREATE TABLE users (
+    user_id INT PRIMARY KEY,
+    username VARCHAR(50));
+CREATE TABLE user_profiles (
+    profile_id INT PRIMARY KEY,
+    user_id INT UNIQUE,
+    profile_data VARCHAR(255),
+    FOREIGN KEY (user_id) REFERENCES users(user_id));
+```
 ### Database Relationship Symbols (ERD Notation)
 
 > [!info] Entity Relationship Diagram (ERD) Symbols
