@@ -349,6 +349,7 @@ siteid = :defsite
 which means `site.siteid = maxuser.defsite` 
 
 #### One-To-One
+>  Each record in Table A is associated with one and only one record in Table B
 
 In one to one relationships, a record is present in one table along with its corresponding existing relation, and the vacant relation among the records is present in another table.
 
