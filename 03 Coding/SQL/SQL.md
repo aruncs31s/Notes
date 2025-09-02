@@ -364,6 +364,20 @@ CREATE TABLE user_profiles (
     profile_data VARCHAR(255),
     FOREIGN KEY (user_id) REFERENCES users(user_id));
 ```
+
+```sql
+type User struct {
+    UserID   int           `gorm:"primaryKey;column:user_id"`
+    Username string        `gorm:"size:50"`
+    Profile  UserProfile   `gorm:"constraint:OnUpdate:CASCADE,OnDelete:SET NULL;foreignKey:UserID;references:UserID"`
+}
+
+type UserProfile struct {
+    ProfileID   int    `gorm:"primaryKey;column:profile_id"`
+    UserID      int    `gorm:"uniqueIndex;column:user_id"`
+    ProfileData string `gorm:"size:255"`
+}
+```
 ### Database Relationship Symbols (ERD Notation)
 
 > [!info] Entity Relationship Diagram (ERD) Symbols
