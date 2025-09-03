@@ -1,1 +1,5 @@
-# Tea
+# Teams
+- **Designers**
+- **Devs**
+- **Testers**
+- 
