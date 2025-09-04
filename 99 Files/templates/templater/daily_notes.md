@@ -22,9 +22,7 @@ done on <% tp.date.now("YYYY-MM-DD") %>
 
 ## 📅 Daily Questions
 
-##### 🌜 Last night, after work, I...
 
--
 
 ##### 🙌 One thing I'm excited about right now is...
 
