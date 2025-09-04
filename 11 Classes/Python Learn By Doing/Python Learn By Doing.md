@@ -16,4 +16,5 @@ tags:
 
 
 - [[Levell 0]]
-- [[11 Classes/Git by Doing/Level 1]]
+- [[11 Classes/Git by Doing/Level 1|Level 1]]
+- [[Level 2]]
