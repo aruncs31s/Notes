@@ -79,4 +79,4 @@ git clone https://github.com/aruncs31s/level_0
 
 ---
 
-After completing this checkout [[Level 1]]
+After completing this checkout [[11 Classes/Git by Doing/Level 1]]
