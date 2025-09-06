@@ -1,8 +1,5 @@
 # Level 2
 
-
-# Level 2
-
 ## `level_2.py` Flow
 
 ### Overview
