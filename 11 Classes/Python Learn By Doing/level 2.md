@@ -9,7 +9,7 @@
 
 ```mermaid
 flowchart TD
-    A[Script Start] --> B[initialize_repos()]
+    A[Script Start] --> B[initialize_repos]
     B --> C[Create Status Object]
     C --> D[Create Question Helper]
     D --> E[Ask GitHub Username]
@@ -24,7 +24,7 @@ flowchart TD
     H --> M[Create Fallback Objects]
     M --> N[Return Objects]
     L --> N
-    N --> O[main()]
+    N --> O[main]
     O --> P[Display Current Status]
     P --> Q{Is Info Correct?}
     Q -->|Yes| R[Show Run Instructions]
