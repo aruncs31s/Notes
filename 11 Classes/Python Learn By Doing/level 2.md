@@ -27,4 +27,4 @@
 
 ### Flow of Control
 
-1. First create a `Git` object. The username can be passed as 
+1. First create a `Git` object. The username can be passed as as an argument or can be set later. 
