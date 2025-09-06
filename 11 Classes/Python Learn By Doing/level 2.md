@@ -33,4 +33,16 @@ def initialize_git() -> Git:
     username = input("Enter your GitHub username: ")
     return Git(username=username)
 ```
-There is an another level of 
+There is an another level of verification of username in the `Git` class itself.
+
+```python
+class Git:
+    def __init__(self,username: str = ""):
+        # Initialize with empty username
+        self.username = username
+        
+        if self.username == "":
+            self.ask_username()
+            if self.username == "":
+                raise ValueError("Username cannot be empty")
+```
