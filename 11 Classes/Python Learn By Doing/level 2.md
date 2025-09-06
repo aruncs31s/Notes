@@ -25,4 +25,6 @@
 | Question   | To manage and track the questions in the application | Status, Files |  
 
 
+### Flow of Control
 
+1. First create a `Git` object. The username can be passed as 
