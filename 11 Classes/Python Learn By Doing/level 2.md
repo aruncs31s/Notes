@@ -1,50 +1,49 @@
 # Level 2
 
-## `level_2.py` Flow
+
+## `level_2.py` Workflow (Current)
 
 ### Overview
-`level_2.py` is a setup script that initializes a GitHub portfolio website by collecting user information, fetching GitHub repositories, and allowing users to verify/correct their details before running the web application.
+`level_2.py` acts as a setup wizard for a GitHub portfolio website. It collects user info, fetches repositories, lets users verify/correct their details, and prepares everything to run the web app.
 
-### Flow Diagram
+### Workflow Diagram
 
 ```mermaid
 flowchart TD
-    A[Script Start] --> B[initialize_repos]
-    B --> C[Create Status Object]
-    C --> D[Create Question Helper]
-    D --> E[Ask GitHub Username]
-    E --> F{Confirm Username?}
-    F -->|Yes| G[Setup Git & Files Objects]
-    F -->|No| H[Use Default Username]
-    G --> I{Check repos.json exists?}
-    I -->|No| J[Fetch & Save Repositories]
-    I -->|Yes| K[Skip Fetch]
-    J --> L[Set Status Git Reference]
-    K --> L
-    H --> M[Create Fallback Objects]
-    M --> N[Return Objects]
-    L --> N
-    N --> O[main]
-    O --> P[Display Current Status]
-    P --> Q{Is Info Correct?}
-    Q -->|Yes| R[Show Run Instructions]
-    Q -->|No| S[Ask Which to Correct]
-    S --> T{Choice}
-    T -->|Name| U[Ask New Name]
-    T -->|Username| V[Ask New Username]
-    T -->|Email| W[Ask New Email]
-    T -->|Invalid| X[Exit]
-    U --> Y[Update Git Name]
-    V --> Z[Update Git Username]
-    W --> AA[Update Git Email]
-    Y --> BB[Save Repositories]
-    Z --> BB
-    AA --> BB
-    BB --> CC[Display Final Status]
-    CC --> DD[Show Run Instructions]
-    R --> EE[End]
-    DD --> EE
-    X --> EE
+   Start[Script Start] --> Init[initialize_repos]
+   Init --> StatusObj[Create Status Object]
+   StatusObj --> QHelper[Create Question Helper]
+   QHelper --> AskUser[Ask GitHub Username]
+   AskUser --> ConfirmUser{Confirm Username?}
+   ConfirmUser -- Yes --> Setup[Setup Git & Files Objects]
+   ConfirmUser -- No --> Fallback[Use Default Username]
+   Setup --> CheckRepos{repos.json exists?}
+   CheckRepos -- No --> FetchSave[Fetch & Save Repositories]
+   CheckRepos -- Yes --> SkipFetch[Skip Fetch]
+   FetchSave --> SetStatus[Set Status Git Reference]
+   SkipFetch --> SetStatus
+   Fallback --> ReturnObjs[Create Fallback Objects]
+   SetStatus --> ReturnObjs
+   ReturnObjs --> Main[main]
+   Main --> ShowStatus[Display Current Status]
+   ShowStatus --> InfoCorrect{Is Info Correct?}
+   InfoCorrect -- Yes --> RunInstr[Show Run Instructions]
+   InfoCorrect -- No --> AskCorrect[Ask Which to Correct]
+   AskCorrect --> Choice{Choice}
+   Choice -- Name --> NewName[Ask New Name]
+   Choice -- Username --> NewUser[Ask New Username]
+   Choice -- Email --> NewEmail[Ask New Email]
+   Choice -- Invalid --> Exit[Exit]
+   NewName --> UpdateName[Update Git Name]
+   NewUser --> UpdateUser[Update Git Username]
+   NewEmail --> UpdateEmail[Update Git Email]
+   UpdateName --> SaveRepos[Save Repositories]
+   UpdateUser --> SaveRepos
+   UpdateEmail --> SaveRepos
+   SaveRepos --> FinalStatus[Display Final Status]
+   FinalStatus --> RunInstr
+   RunInstr --> End[End]
+   Exit --> End
 ```
 
 ### Detailed Flow
