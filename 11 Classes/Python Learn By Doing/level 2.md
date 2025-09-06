@@ -28,3 +28,9 @@
 ### Flow of Control
 
 1. First create a `Git` object. The username can be passed as as an argument or can be set later. 
+```python
+def initialize_git() -> Git:
+    username = input("Enter your GitHub username: ")
+    return Git(username=username)
+```
+There is an another level of 
