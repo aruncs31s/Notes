@@ -54,3 +54,12 @@ Electromagnetic signals traveling through wireless channels experience fading du
 **Key Points:**
 - Used to predict received signal strength when the transmitter and receiver have a clear, unobstructed line-of-sight path between them.
 - Satellite communication systems and microwave line-of-sight radio links typically undergo free space propagation.
+
+
+Basic Methods of Propagation
+
+• Reflection, diffraction and scattering are the
+three fundamental phenomena that
+cause signal propagation in a mobile
+communication system, apart from LoS
+communication.
