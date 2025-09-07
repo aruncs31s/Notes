@@ -41,9 +41,7 @@ $$
 
 ### Free Space Propagation Model
 
-Although EM signals when traveling through wireless
-channels experience fading effects due to various
-effects, but in some cases the transmission is with a
+Although EM signals when traveling through wireless channels experience fading effects due to various effects, but in some cases the transmission is with a
 direct line of sight such as in satellite
 communication
 • It is used to predict received signal strength when
