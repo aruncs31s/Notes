@@ -1,7 +1,6 @@
 # Day 1
 
 
-
 ## Module 1 
 
 ### Syllabus 
@@ -38,3 +37,6 @@ print("Hi Arun CS")
 # 2
 print("Hey Sneha")
 ```
+
+
+### Keywords 
