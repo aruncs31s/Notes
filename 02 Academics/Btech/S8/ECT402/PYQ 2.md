@@ -1,10 +1,13 @@
 # PYQ 2
 
+## Questions
 1. Define Grade Of Service (GOS) and Trunking.
+2. What are the standards used for implementing Wireless Personnel Area Network
+(WPAN)?
 
 ---
 
-
+## Ans 
 ### Grade Of Service (GOS)
 - **Definition:** Measure of quality in telecommunications.
 - **Key Point:** Probability of a call being blocked or delayed due to insufficient resources.
