@@ -99,3 +99,4 @@ print(type(""))
 > ```
 
 
+### Variables 
