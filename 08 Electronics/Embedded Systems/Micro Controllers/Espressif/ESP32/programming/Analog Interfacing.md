@@ -9,7 +9,7 @@ tags:
 #### Analog Interfacing
 
 > [!blank|right-small]
-> ![[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32/programming/attachments/esp32 non linear.excalidraw]]
+> ![[08 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32/programming/attachments/esp32 non linear.excalidraw]]
 
 - Non Linear
 - Can not measure 0-0.2 and 3.2-3.3

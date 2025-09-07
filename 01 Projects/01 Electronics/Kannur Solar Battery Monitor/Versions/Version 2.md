@@ -16,7 +16,7 @@ branch:
 ## Components
 ![[Version 1#^dc412a]]
 - The Dot Pcb is upgraded from Normal brown dot pcb to [this 5x7 cm Dot PCB]([5 x 7 cm Dot PCB](https://robu.in/product/5-x-7-cm-universal-pcb-prototype-board-single-sided-2-54mm-hole-pitch/)) 
-- and [[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/ESP8266]] is replaced by [ESP-12F](https://robu.in/product/latest-esp-12f-esp8266-wifi-module-ap-station-remote-serial-wireless-iot-board/) 
+- and [[08 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/ESP8266]] is replaced by [ESP-12F](https://robu.in/product/latest-esp-12f-esp8266-wifi-module-ap-station-remote-serial-wireless-iot-board/) 
 ### New Components to order
 
 | Component                                                                                                          | Cost per item | Quantity | Total Cost(CPI * Qnty) |

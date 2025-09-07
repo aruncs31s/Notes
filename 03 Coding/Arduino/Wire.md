@@ -3,7 +3,7 @@ aliases:
 Date: 18-10-2024
 ---
 # Wire
-Arduino **Wire** Uses the [[03 Electronics/Embedded Systems/communication/I2C|I2C]] Protocol for Communication
+Arduino **Wire** Uses the [[08 Electronics/Embedded Systems/communication/I2C|I2C]] Protocol for Communication
 - Easy to send binary data as well as text
 - It always listen for new data and uses [[Interrupts]]
 - 

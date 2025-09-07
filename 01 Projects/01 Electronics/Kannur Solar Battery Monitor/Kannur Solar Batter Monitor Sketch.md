@@ -171,7 +171,7 @@ Top View ^z1TkHGx4
 ## Embedded Files
 7bd2ee30c8913bd0fc43f855f4c7a66e225ed047: [[case]]
 
-5c4e6605f4be7ba93e8fb94d90387c461563454f: [[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/image.png]]
+5c4e6605f4be7ba93e8fb94d90387c461563454f: [[08 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/image.png]]
 
 %%
 ## Drawing

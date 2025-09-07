@@ -15,7 +15,7 @@ What they are going to cover
 >[!IMPORTANT] Analyzing a circuit
 > Analyzing a circuit is important because that helps us to design a new circuit 
 
-- Whom is this workshop for -> 4th year engineers who are planing to enter [[03 Electronics/Embedded Systems/Embedded Systems|Embedded Systems]] domain 
+- Whom is this workshop for -> 4th year engineers who are planing to enter [[08 Electronics/Embedded Systems/Embedded Systems|Embedded Systems]] domain 
 
 ---
 ### Parts 

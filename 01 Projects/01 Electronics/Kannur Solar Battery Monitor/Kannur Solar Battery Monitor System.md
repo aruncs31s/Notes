@@ -58,7 +58,7 @@ completedLabel: Project is done 🎉
   1. Using [[08 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32/ESP32|ESP32]]
   2. Using [[ESP8266]]
 
-_This is just initial cost for testing and prototype and does not reflect on the actual cost of the final project , for example `esp32` is in the first table costs `546/-` INR Which can be reduced also if we're planning to use `ESP8266` the cost will be even less but we will be only getting 1 [[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/programming/Analog Interfacing|ADC]] Pin_
+_This is just initial cost for testing and prototype and does not reflect on the actual cost of the final project , for example `esp32` is in the first table costs `546/-` INR Which can be reduced also if we're planning to use `ESP8266` the cost will be even less but we will be only getting 1 [[08 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/programming/Analog Interfacing|ADC]] Pin_
 
 | Component Name                                                                                      | Quantity | Price | Total |
 | --------------------------------------------------------------------------------------------------- | -------- | ----- | ----- |
