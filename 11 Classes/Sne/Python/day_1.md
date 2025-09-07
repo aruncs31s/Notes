@@ -6,9 +6,9 @@
 ### Syllabus 
 
 - Basic coding skills
-	- Working with data types,
-	- Keywords,
-	- Variables and Operators,
+	- [ ] Working with data types,
+	- [ ] Keywords,
+	- [ ] Variables and Operators,
 - working with numeric data,
 	- Type conversions,
 	- Input, Processing,
@@ -269,3 +269,27 @@ a = float(a)
 type(a)
 ```
 ![[Pasted image 20250530165358.png]]
+
+
+### Input , output , processing
+
+```python
+# input
+a = input("Enter a number")
+
+# output
+print(a)
+```
+
+- One thing to note here that the default type will be a string from the `input()` and you may need to type cast it to work as expected for example 
+```python
+a = input("Enter a number")
+if a==5:
+	print("HI")
+```
+- this program will not work as expected (run and find out) (happens because `int(5)` is not same as `str(5)`)
+```python
+a = int(input("Enter a number"))
+if a==5:
+	print("HI")
+```
