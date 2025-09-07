@@ -115,4 +115,5 @@ something = number /2
 anotherthing = something * number  
 ```
 
-its like giving it a suitable name , so that you can use it by name rather than remembering its value, 
+its like giving it a suitable name , so that you can use it by name rather than remembering its value. 
+
