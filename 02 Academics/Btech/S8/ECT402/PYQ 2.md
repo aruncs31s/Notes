@@ -45,3 +45,29 @@ Trunking is a method used in telecommunications to efficiently utilize communica
 
 **Summary:**
 WPAN standards include Bluetooth (IEEE 802.15.1), ZigBee (IEEE 802.15.4), Infrared (IrDA), and Ultra-Wideband (UWB). These standards enable short-range wireless communication between devices, each suited for specific applications such as data transfer, automation, and location tracking.
+
+---
+### Fraunhofer Distance
+- **Formula:**
+  $$
+  d_f = \frac{2D^2}{\lambda}
+  $$
+  where:
+  - $d_f$ = Fraunhofer distance
+  - $D$ = maximum dimension of the antenna
+  - $\lambda$ = wavelength of the operating frequency
+
+- **Calculation:**
+  - Given:
+    - $D = 1$ meter
+    - Frequency $f = 900$ MHz $= 900 \times 10^6$ Hz
+    - Speed of light $c = 3 \times 10^8$ m/s
+    - Wavelength $\lambda = \frac{c}{f} = \frac{3 \times 10^8}{900 \times 10^6} = \frac{1}{3}$ meters
+    - Fraunhofer distance:
+      $$
+      d_f = \frac{2 \times (1)^2}{\frac{1}{3}} = 2 \times 3 = 6 \, \text{meters}
+      $$
+
+- **Significance:**
+  - The Fraunhofer distance marks the boundary between the near-field and far-field regions of an antenna.
+  - Beyond this distance, the antenna's radiation pattern becomes stable and predictable.
