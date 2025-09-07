@@ -71,3 +71,27 @@ WPAN standards include Bluetooth (IEEE 802.15.1), ZigBee (IEEE 802.15.4), Infrar
 - **Significance:**
   - The Fraunhofer distance marks the boundary between the near-field and far-field regions of an antenna.
   - Beyond this distance, the antenna's radiation pattern becomes stable and predictable.
+
+---
+
+### Coherence Bandwidth
+- **Definition:**
+  - Coherence bandwidth ($B_c$) is a statistical measure of the range of frequencies over which the channel can be considered "flat" or non-selective, meaning all frequency components experience similar fading.
+  - It indicates the maximum frequency separation over which two signals will experience correlated or similar channel effects.
+
+- **Relation to RMS Delay Spread:**
+  - Coherence bandwidth is inversely related to the root mean square (rms) delay spread ($\tau_{rms}$) of the channel.
+  - A smaller delay spread results in a larger coherence bandwidth, and vice versa.
+
+- **Formula:**
+  $$
+  B_c \approx \frac{1}{5\tau_{rms}}
+  $$
+  where:
+  - $B_c$ = coherence bandwidth
+  - $\tau_{rms}$ = rms delay spread of the channel
+
+- **Significance:**
+  - If the signal bandwidth is less than the coherence bandwidth, the channel is considered flat fading (frequency non-selective).
+  - If the signal bandwidth exceeds the coherence bandwidth, the channel exhibits frequency-selective fading.
+
