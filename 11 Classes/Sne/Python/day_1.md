@@ -109,5 +109,10 @@ anotherthing = something * 13232132131
 ```
 sure you can copy paste it but checkout this version
 
-```python 
+```python
+number = 13232132131
+something = number /2 
+anotherthing = something * number  
 ```
+
+its like giving it a suitable name , so that you can use it by name rather than remembering its value, 
