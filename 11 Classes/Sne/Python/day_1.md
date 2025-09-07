@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+date: 2025-09-03
 ---
 
 # Day 1
