@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # Day 1
 
 
@@ -6,12 +10,12 @@
 ### Syllabus 
 
 - Basic coding skills
-	- [ ] Working with data types,
-	- [ ] Keywords,
-	- [ ] Variables and Operators,
+	- [x] Working with data types, ✅ 2025-09-03
+	- [x] Keywords, ✅ 2025-09-03
+	- [x] Variables and Operators, ✅ 2025-09-03
 - working with numeric data,
-	- Type conversions,
-	- Input, Processing,
+	- [x] Type conversions, ✅ 2025-09-03
+	- [x] Input, Processing, ✅ 2025-09-03
 	- and Output, Formatting output.
 - Data Types
 	- String,
@@ -85,6 +89,7 @@ print("Hey Sneha")
 ### Datatypes
 
 ```python
+# 3 
 print(type(2))
 print(type(2.0))
 print(type(""))
