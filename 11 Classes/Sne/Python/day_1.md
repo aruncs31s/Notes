@@ -90,3 +90,12 @@ print(type(2.0))
 print(type(""))
 ```
 
+
+> [!success]- *output*
+> ```
+> <class 'int'>
+> <class 'float'>
+> <class 'str'>
+> ```
+
+
