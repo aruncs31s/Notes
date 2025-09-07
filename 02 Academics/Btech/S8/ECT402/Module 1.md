@@ -130,6 +130,12 @@ from #generations
 - Based on IEEE 802.16 
 - 
 
+
+### Wireless Spectrum allocation, Standards.
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/EM_Spectrum_Properties_edit.svg/1350px-EM_Spectrum_Properties_edit.svg.png)
+
+
 ## The Cellular Concept
 - It replaces the single big transmitter (high  power) transmitter with many low power transmitter(cells) 
 
