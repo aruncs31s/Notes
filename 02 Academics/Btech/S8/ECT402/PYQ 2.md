@@ -2,8 +2,8 @@
 
 ## Questions
 1. Define Grade Of Service (GOS) and Trunking.
-2. What are the standards used for implementing Wireless Personnel Area Network
-(WPAN)?
+2. What are the standards used for implementing Wireless Personnel Area Network (WPAN)?
+3. Find the Fraunhofer distance for an antenna with maximum dimension of one meter and operating frequency of 900MHz. What is the significance of Fraunhofer distance?
 
 ---
 
