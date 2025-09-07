@@ -40,6 +40,11 @@ $$
 P_{r} = P_{t} G_{t} G_{r} \left( \frac{\lambda}{4 \pi d} \right)^2
 $$
 
+with loss factor
+
+$$
+P_{r} = \frac{P_{t} G_{t} G_{r} \lambda^2}{(4 \pi d)^2 L}
+$$
 ---
 
 ## Free Space Propagation Model
