@@ -133,7 +133,10 @@ from #generations
 
 ### Wireless Spectrum allocation, Standards.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/EM_Spectrum_Properties_edit.svg/1350px-EM_Spectrum_Properties_edit.svg.png)
+![](https://cdn.britannica.com/76/276-050-7BFF196F/position-light-electromagnetic-spectrum-range-right.jpg)
+
+
+
 
 
 ## The Cellular Concept
