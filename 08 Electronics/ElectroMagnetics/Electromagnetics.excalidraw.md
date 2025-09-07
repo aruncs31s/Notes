@@ -33,11 +33,11 @@ x ^VlnJ6Ap3
 Electric Feild will be perpendicular to Magnetic Feild   ^sigc3zip
 
 ## Element Links
-QS2cBZ5p: [[03 Electronics/ElectroMagnetics/Electromagnetics.excalidraw.md#Equations]]
+QS2cBZ5p: [[08 Electronics/ElectroMagnetics/Electromagnetics.excalidraw.md#Equations]]
 
 f0TJui0U: [[Maxwell#Maxwell's Equations]]
 
-UCSrdVEY: [[03 Electronics/ElectroMagnetics/Electromagnetics.excalidraw.md#Classical Theory of electric and Magnetic Fields]]
+UCSrdVEY: [[08 Electronics/ElectroMagnetics/Electromagnetics.excalidraw.md#Classical Theory of electric and Magnetic Fields]]
 
 %%
 ## Drawing

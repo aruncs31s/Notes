@@ -5,5 +5,5 @@
 1. [[SPI]]
 
 ### SPI
-![[03 Electronics/Embedded Systems/communication/SPI Serial Peripheral Interface|SPI Serial Peripheral Interface]]
+![[08 Electronics/Embedded Systems/communication/SPI Serial Peripheral Interface|SPI Serial Peripheral Interface]]
 

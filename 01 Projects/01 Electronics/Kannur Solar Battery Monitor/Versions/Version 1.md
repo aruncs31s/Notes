@@ -11,7 +11,7 @@ Date: 24-10-2024
 
 ## Requirements
 
-1. **Should Display Voltage** : [[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/ESP32|ESP32]] or [[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/ESP8266]] can be used
+1. **Should Display Voltage** : [[08 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/ESP32|ESP32]] or [[08 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/ESP8266]] can be used
 2. **Remote Control** : Both
 3. **Dash Board** : Both
 
@@ -20,7 +20,7 @@ Date: 24-10-2024
 
 | Components       | Cost      |
 | ---------------- | --------- |
-| [[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/ESP8266]]      | 350/-     |
+| [[08 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/ESP8266]]      | 350/-     |
 | L7805            | 15        |
 | 5V Relay Module  | 25        |
 | .22uF Capacitor  | 1         |

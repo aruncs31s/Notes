@@ -12,7 +12,7 @@ Status:
 >[!float|right-small] WebSocket
 >WebSocket is a computer communications protocol, providing a simultaneous two-way communication channel over a single Transmission Control Protocol connection[^1] 
 
-When using `HTTP` page method in [[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32/ESP32|ESP32]] , some problem arises when multiple users are accessing the same page like all the pages are not getting refreshed.Also there is a problem when two users try to change the same thing(like toggling the same led)
+When using `HTTP` page method in [[08 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32/ESP32|ESP32]] , some problem arises when multiple users are accessing the same page like all the pages are not getting refreshed.Also there is a problem when two users try to change the same thing(like toggling the same led)
 To fix this we use **bi-directional capabilities of `WebSocket`** to build a responsive system as said in [This tutorial](https://lastminuteengineers.com/esp32-websocket-tutorial/)
 
 [^1]:https://en.wikipedia.org/wiki/WebSocket

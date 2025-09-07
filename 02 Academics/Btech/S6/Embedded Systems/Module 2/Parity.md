@@ -5,7 +5,7 @@ Date: 04-01-25
 
 # Parity
 Parity bits redendant  bits that are added to the data while transmission or storage.
-They are used in [[Serial Communication]] protocolls like [[03 Electronics/Embedded Systems/communication/UART|UART]] 
+They are used in [[Serial Communication]] protocolls like [[08 Electronics/Embedded Systems/communication/UART|UART]] 
 ## **Odd Parity**
 The total number of 1's in the code , including parity bit should be odd  
 

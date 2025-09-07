@@ -43,14 +43,14 @@ Where file = this.file
 
 + 20 Nov 
 + Desiging
-+ For the prototype we are planning to use [[03 Electronics/Embedded Systems/Micro Controllers/ESP32/ESP32|ESP32]] and ![[TENS Design.excalidraw]] this is the initial design which contains 
++ For the prototype we are planning to use [[08 Electronics/Embedded Systems/Micro Controllers/ESP32/ESP32|ESP32]] and ![[TENS Design.excalidraw]] this is the initial design which contains 
 - [[09 Projects/Academics/Iot_based_smart_energy_management_system/ESP32/esp32|esp32]] 
 - Step up Transformer 
 - 2 resistors to devide the voltage and limit current ? 
 - [[MOSFET]] to control the transformer
 + 22 Nov 2024
 + New Design 
-+ There is an issue with the current design , which is that it is too costly and the, [[03 Electronics/Embedded Systems/Micro Controllers/ESP32/ESP32|ESP32]] is does not really requred here 
++ There is an issue with the current design , which is that it is too costly and the, [[08 Electronics/Embedded Systems/Micro Controllers/ESP32/ESP32|ESP32]] is does not really requred here 
 
 + 22 Nov AN 
 + Purchase 

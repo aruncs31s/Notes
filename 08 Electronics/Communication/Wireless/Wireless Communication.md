@@ -7,7 +7,7 @@ Date: 01-11-2024
 
 - [[Channels]]
 - [[Signal Encoding Techniques]]
-- [[03 Electronics/Communication/Wireless/Constellation]]
+- [[08 Electronics/Communication/Wireless/Constellation]]
 - [[Digital Modulation]]
 - [[Microwave Engineering]]
 

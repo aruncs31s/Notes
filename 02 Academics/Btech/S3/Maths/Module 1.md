@@ -13,7 +13,7 @@ dg-publish: true
 > 	- [ ]  Linear equations of the first order Lagrange’s linear equation,
 > 	- [ ] Non-linear equations of the first order - Charpit’s method,
 > 	- [ ] Solution of equation by method of separation of variables.
-## [[08 Science/Maths/Partial Differential Equations|Partial Differential Equations]]
+## [[05 Science/Maths/Partial Differential Equations|Partial Differential Equations]]
 
 ### Sample Problems 
 

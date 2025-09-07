@@ -1,7 +1,7 @@
 # UART
  - [[#Data Transmission]]
  - [[#References]]
-Universal Asynchronous Reciever Transmitter(UART) is a [[Serial Communication]] protocol used to communicate between devices. . It  is used in many applications, such as GPS modules, sensors, and other devices that require communication between devices. for example [[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/ESP32|ESP32]] uses UART to communicate with other devices and  used to a [[USB To TTL]] converter to communicate with the computer, which uses **UART**.
+Universal Asynchronous Reciever Transmitter(UART) is a [[Serial Communication]] protocol used to communicate between devices. . It  is used in many applications, such as GPS modules, sensors, and other devices that require communication between devices. for example [[08 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/ESP32|ESP32]] uses UART to communicate with other devices and  used to a [[USB To TTL]] converter to communicate with the computer, which uses **UART**.
 
 - It is full duplex
 - It does not require a clock signal
