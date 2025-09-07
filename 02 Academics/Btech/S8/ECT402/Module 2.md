@@ -36,3 +36,20 @@ $$
 
 ^648482
 
+
+
+
+### Free Space Propagation Model
+
+Although EM signals when traveling through wireless
+channels experience fading effects due to various
+effects, but in some cases the transmission is with a
+direct line of sight such as in satellite
+communication
+• It is used to predict received signal strength when
+the transmitter and receiver have a clear
+unobstructed line-of-sight path between them.
+
+• Satellite communication systems and microwave
+line-of sight radio links typically undergo free space
+propagation
