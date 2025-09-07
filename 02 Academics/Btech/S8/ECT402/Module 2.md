@@ -62,3 +62,10 @@ Electromagnetic signals traveling through wireless channels experience fading du
 - **Diffraction:** Occurs when a signal bends around obstacles.
 - **Scattering:** Occurs when a signal is dispersed due to small objects or rough surfaces.
 - These phenomena, along with line-of-sight (LoS) communication, are fundamental to mobile communication systems.
+
+---
+
+### Reflection
+- If the medium on which the electromagnetic wave is incident is a dielectric, some energy is reflected back and some is transmitted.
+- If the medium is a perfect conductor, all energy is reflected back to the first medium.
+- The amount of energy reflected depends on the polarization of the electromagnetic wave.
