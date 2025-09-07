@@ -40,11 +40,11 @@ $$
 P_{r} = P_{t} G_{t} G_{r} \left( \frac{\lambda}{4 \pi d} \right)^2
 $$
 
-with loss factor
-
+**With loss factor:**
 $$
 P_{r} = \frac{P_{t} G_{t} G_{r} \lambda^2}{(4 \pi d)^2 L}
 $$
+
 ---
 
 ## Free Space Propagation Model
@@ -55,11 +55,10 @@ Electromagnetic signals traveling through wireless channels experience fading du
 - Used to predict received signal strength when the transmitter and receiver have a clear, unobstructed line-of-sight path between them.
 - Satellite communication systems and microwave line-of-sight radio links typically undergo free space propagation.
 
+---
 
-Basic Methods of Propagation
-
-• Reflection, diffraction and scattering are the
-three fundamental phenomena that
-cause signal propagation in a mobile
-communication system, apart from LoS
-communication.
+## Basic Methods of Propagation
+- **Reflection:** Occurs when a signal bounces off a surface.
+- **Diffraction:** Occurs when a signal bends around obstacles.
+- **Scattering:** Occurs when a signal is dispersed due to small objects or rough surfaces.
+- These phenomena, along with line-of-sight (LoS) communication, are fundamental to mobile communication systems.
