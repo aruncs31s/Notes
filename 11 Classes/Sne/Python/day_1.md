@@ -103,5 +103,11 @@ print(type(""))
 *A variable in Python is like a little label you stick onto a piece of data so you can refer to it later*
 Eg:
 Consider , there is a program in which you have to use `13232132131` this number , its like everywhere in the program 
-```pytho
+```python
+something = 13232132131 / 2
+anotherthing = something * 13232132131
+```
+sure you can copy paste it but checkout this version
+
+```python 
 ```
