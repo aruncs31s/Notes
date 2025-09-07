@@ -70,7 +70,6 @@ print(a, type(a))  # "42" <class 'str'>
 print(b, type(b))  # 42   <class 'int'>
 print(c, type(c))  # 42.0 <class 'float'>
 print(d, type(d))  # "42.0" <class 'str'>
-
 ```
 ### Keywords 
 *Python keywords are reserved words that have special meanings and purposes within the Python language*
