@@ -46,8 +46,32 @@ print("Hey Sneha")
 
 
 ### Her Question
-Implicit Type Conversion
+####  Implicit Type Conversion 
+- Casting is done automatically 
+```python
+x = 5      # int
+y = 2.5    # float
+z = x + y  # int + float
+print(z)   # 7.5
+print(type(z))  # <class 'float'>
 
+```
+
+#### Explicit Type Conversion
+- Casting is done by us 
+
+```python
+a = "42"
+b = int(a)     # converting string to int
+c = float(b)   # converting int to float
+d = str(c)     # converting float back to string
+
+print(a, type(a))  # "42" <class 'str'>
+print(b, type(b))  # 42   <class 'int'>
+print(c, type(c))  # 42.0 <class 'float'>
+print(d, type(d))  # "42.0" <class 'str'>
+
+```
 ### Keywords 
 *Python keywords are reserved words that have special meanings and purposes within the Python language*
 
