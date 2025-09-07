@@ -185,7 +185,7 @@ delay(1000);
 
 ##### Single Node Sender Side
 
-You can use [[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/programming/WiFi Programming#Get MAC Address|Get Mac]] to get mac address
+You can use [[08 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/programming/WiFi Programming#Get MAC Address|Get Mac]] to get mac address
 
 ```c
 #include <esp_now.h>

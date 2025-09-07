@@ -54,7 +54,7 @@ Target Date: ""
  **Sensors Used**:
 1.  **rain gauge**: Used to measure the  rainfall , uses tipping bucket mechanism
 	- For each **0.011" (0.2794 mm) of rain** the bucket tipps
-	- The value is measured by using the [[Interrupts|Interrupt method]] , this can be done using [[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/programming/Interrupt Programming]]
+	- The value is measured by using the [[Interrupts|Interrupt method]] , this can be done using [[08 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/programming/Interrupt Programming]]
 	- When switch close it closes the circuit and causes the current to flow from the **VCC** to **GND** through the **R1** + **Internal PULLUP**(if used) resistors 
 	 
 
@@ -104,7 +104,7 @@ void loop(){
 ##### Light Intensity Measurement 
 
 - It Uses `I2C`
-- Sample Programming [[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/programming/Interfacing#Light Intensity Sensor|Light Intensity Sensor]]
+- Sample Programming [[08 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/programming/Interfacing#Light Intensity Sensor|Light Intensity Sensor]]
 - Supply voltage range VDD: **2.5 V to 3.6 V**
 
 ##### Wind Direction
