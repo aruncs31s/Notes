@@ -63,11 +63,12 @@ Builder: 4
 # [Web Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/web-team)
 ```sql
 MEMBERS: 7
-Designers: 2
+Designers: 3
 Developers: 2
 Testers: 2
 Refactorers : 0 
 ```
+
 
 | Name                                                                                          | Role     | Status | Contributions |
 | --------------------------------------------------------------------------------------------- | -------- | ------ | ------------- |
