@@ -5,6 +5,15 @@ dg-publish: true
 ```sql
 TOTAL MEMBERS: 10
 ```
+
+> **Working Memebers**
+> - [Arun cs](https://github.com/orgs/Embedded-Systems-GCEK/people/aruncs31s)
+> - [vyshnav kp](https://github.com/orgs/Embedded-Systems-GCEK/people/vyshnav8486)
+> - [Abhaya Govind](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhayaGovind)
+> - [Dhanashyam Babu](https://github.com/orgs/Embedded-Systems-GCEK/people/dhanashyam18)
+> - [Amaya Pramod. P. V](https://github.com/orgs/Embedded-Systems-GCEK/people/AmayaPramod)
+> - [Nivedh-r](https://github.com/orgs/Embedded-Systems-GCEK/people/Nivedh-r)
+> - [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil)
 ## [AI Assistant Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/ai-assistant-team)
 
 ```sql
