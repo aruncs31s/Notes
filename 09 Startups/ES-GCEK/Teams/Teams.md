@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # [AI Assistant Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/ai-assistant-team)
 
 ```sql
@@ -61,12 +65,15 @@ Builder: 4
 | [Krishnasree-A-V](https://github.com/orgs/Embedded-Systems-GCEK/people/Krishnasree-A-V)  | Builder  | ✅      |               |
 
 # [Web Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/web-team)
+
 ```sql
 MEMBERS: 7
 Designers: 3
 Developers: 6
-Refactorers : 0 
+Refactorers : -
+Nill : 1
 ```
+
 
 | Name                                                                                          | Role                 | Status | Contributions |
 | --------------------------------------------------------------------------------------------- | -------------------- | ------ | ------------- |
