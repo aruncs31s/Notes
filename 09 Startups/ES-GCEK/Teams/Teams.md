@@ -62,7 +62,7 @@ Builder: 4
 
 # [Web Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/web-team)
 ```sql
-MEMBERS: 4
+MEMBERS: 7
 Designers: 2
 Developers: 2
 Testers: 2
@@ -74,7 +74,7 @@ Refactorers : 0
 | [Arun cs](https://github.com/orgs/Embedded-Systems-GCEK/people/aruncs31s)                     | Designer | ✅      |               |
 | [sanjusathian](https://github.com/orgs/Embedded-Systems-GCEK/people/sanjusathian)             | Designer | ✅      |               |
 | [the-unknown-monkey](https://github.com/orgs/Embedded-Systems-GCEK/people/the-unknown-monkey) | Designer | ✅      |               |
-| [Dhanashyam Babu](https://github.com/orgs/Embedded-Systems-GCEK/people/dhanashyam18)          | Builder  | ✅      |               |
-| [Sangeeth Binu](https://github.com/orgs/Embedded-Systems-GCEK/people/Sangeeth-binu)           | Builder  | ✅      |               |
-| [Sneha-SJ-05](https://github.com/orgs/Embedded-Systems-GCEK/people/Sneha-SJ-05)               | Builder  | ✅      |               |
-| [Krishnasree-A-V](https://github.com/orgs/Embedded-Systems-GCEK/people/Krishnasree-A-V)       | Builder  | ✅      |               |
+| [Dhanashyam Babu](https://github.com/orgs/Embedded-Systems-GCEK/people/dhanashyam18)          |          | ✅      |               |
+| [Sangeeth Binu](https://github.com/orgs/Embedded-Systems-GCEK/people/Sangeeth-binu)           |          | ✅      |               |
+| [Sneha-SJ-05](https://github.com/orgs/Embedded-Systems-GCEK/people/Sneha-SJ-05)               |          | ✅      |               |
+| [Krishnasree-A-V](https://github.com/orgs/Embedded-Systems-GCEK/people/Krishnasree-A-V)       |          | ✅      |               |
