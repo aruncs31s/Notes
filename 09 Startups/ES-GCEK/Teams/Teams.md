@@ -24,11 +24,15 @@ Refactorers : 1
 #  [Hardware Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/hardware-team)
 
 
-| Name                                                                                 | Role     | Status |
-| ------------------------------------------------------------------------------------ | -------- | ------ |
-| [Arun cs](https://github.com/orgs/Embedded-Systems-GCEK/people/aruncs31s)            | Designer | ✅      |
-| [Abhaya Govind](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhayaGovind)   | Builder  |        |
-| [Deepika Rajan](https://github.com/orgs/Embedded-Systems-GCEK/people/DEEPIKARAJAN-E) | Builder  |        |
+| Name                                                                                     | Role     | Status |
+| ---------------------------------------------------------------------------------------- | -------- | ------ |
+| [Arun cs](https://github.com/orgs/Embedded-Systems-GCEK/people/aruncs31s)                | Designer | ✅      |
+| [Abhaya Govind](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhayaGovind)       | Builder  |        |
+| [Deepika Rajan](https://github.com/orgs/Embedded-Systems-GCEK/people/DEEPIKARAJAN-E)     | Builder  |        |
+| [Anu19692004](https://github.com/orgs/Embedded-Systems-GCEK/people/isro19692004geck)     |          |        |
+| [harikeshop1989](https://github.com/orgs/Embedded-Systems-GCEK/people/harikeshop1989)    |          |        |
+| [Krishnasree-A-V](https://github.com/orgs/Embedded-Systems-GCEK/people/Krishnasree-A-V)  |          |        |
+| [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil) |          |        |
 
 
 # [Web Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/web-team)
