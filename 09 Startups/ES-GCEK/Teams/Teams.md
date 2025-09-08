@@ -63,7 +63,9 @@ Builder: 4
 | [Deepika Rajan](https://github.com/orgs/Embedded-Systems-GCEK/people/DEEPIKARAJAN-E)     | Builder  | ✅      |               |
 | [Anu19692004](https://github.com/orgs/Embedded-Systems-GCEK/people/isro19692004geck)     | Builder  | ✅      |               |
 | [Krishnasree-A-V](https://github.com/orgs/Embedded-Systems-GCEK/people/Krishnasree-A-V)  | Builder  | ✅      |               |
-
+|                                                                                          |          |        |               |
+✅ -> Currently Done any Contribution 
+❌ -> Currently Has not done any Contribution
 # [Web Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/web-team)
 
 ```sql
@@ -85,3 +87,5 @@ Nill : 1
 | [Sneha-SJ-05](https://github.com/orgs/Embedded-Systems-GCEK/people/Sneha-SJ-05)               | Developer            | ❌      |               |
 | [Dhanashyam Babu](https://github.com/orgs/Embedded-Systems-GCEK/people/dhanashyam18)          | Developer            | ❌      |               |
 
+✅ -> Currently Done any Contribution 
+❌ -> Currently Has not done any Contribution
