@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"dbbd29cc5899e495","type":"group","x":940,"y":-300,"width":1000,"height":729,"label":"Kicad Desing"},
+		{"id":"934e8c815f996fdc","type":"file","file":"03 Electronics/ICs/LM358/LM358.md","x":1760,"y":-1040,"width":400,"height":400},
+		{"id":"fd5aa6bc23061b18","type":"file","file":"03 Electronics/ICs/LM358/Instrumentation Amp.excalidraw.md","x":1040,"y":-920,"width":400,"height":400},
+		{"id":"ef5034b48c92b63c","type":"file","file":"09 Projects/GCE_Kannur/SideChannel_Attach_Current_Monitor/attachments/PCB.png","x":1520,"y":-200,"width":400,"height":389},
+		{"id":"179413b949e1154a","type":"file","file":"09 Projects/GCE_Kannur/SideChannel_Attach_Current_Monitor/attachments/prototype.png","x":1680,"y":520,"width":400,"height":332},
+		{"id":"848a02e68a3828cd","type":"text","text":"## Amplifier Design \nThis amplifier is used to amplify the shunt resistor , and reduce the noise .\n\n![[Side Channel Attack Current Monitor#^a111b9]]\n","x":100,"y":-120,"width":640,"height":500},
+		{"id":"cc65d9064ac1b6cc","type":"file","file":"09 Projects/GCE_Kannur/SideChannel_Attach_Current_Monitor/attachments/PCB_Draw.png","x":960,"y":20,"width":400,"height":389},
+		{"id":"433f4ee4b7f44b5f","type":"file","file":"09 Projects/GCE_Kannur/SideChannel_Attach_Current_Monitor/attachments/Schematics.png","x":960,"y":-280,"width":400,"height":161},
+		{"id":"7692d7e53808ecff","type":"file","file":"09 Projects/GCE_Kannur/SideChannel_Attach_Current_Monitor/Side Channel Attack Current Monitor.md","x":-680,"y":-75,"width":560,"height":595}
+	],
+	"edges":[
+		{"id":"90412a578c532478","fromNode":"cc65d9064ac1b6cc","fromSide":"right","toNode":"ef5034b48c92b63c","toSide":"bottom"},
+		{"id":"c801441bdeae93f6","fromNode":"848a02e68a3828cd","fromSide":"right","toNode":"433f4ee4b7f44b5f","toSide":"left"},
+		{"id":"b12ba175152dcff0","fromNode":"848a02e68a3828cd","fromSide":"right","toNode":"cc65d9064ac1b6cc","toSide":"left"},
+		{"id":"7e38f3f46cfebcd4","fromNode":"cc65d9064ac1b6cc","fromSide":"right","toNode":"179413b949e1154a","toSide":"left"},
+		{"id":"d01921c444ec457b","fromNode":"7692d7e53808ecff","fromSide":"right","toNode":"848a02e68a3828cd","toSide":"left"},
+		{"id":"489950951e244f67","fromNode":"dbbd29cc5899e495","fromSide":"top","toNode":"fd5aa6bc23061b18","toSide":"bottom"},
+		{"id":"9ee759b87eab4ade","fromNode":"fd5aa6bc23061b18","fromSide":"right","toNode":"934e8c815f996fdc","toSide":"left"}
+	]
+}

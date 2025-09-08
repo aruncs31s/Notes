@@ -6,8 +6,12 @@ tags: []
 
 # Python
 
+- [[datetime]]
 - [[pySDR]]
 - [[Json handling]]
+- [[requests]]
+## Frameworks
+- [[Flask]]
 ️
 ## Modules
 
@@ -17,6 +21,7 @@ tags: []
 - [[Pyaudio]]
 - [[Python Regex]]
 - [[Manim]]
+
 ## Custom Libs
 ```dataview 
 TABLE file.link as "File", file.name as "Name"
@@ -172,3 +177,11 @@ print(a_3D_list[0][0][2])
   - ==i== = index of outer most list
   - ==j== = index of the column of the selected list
   - ==k== = index
+
+
+#### `.split()`
+
+```python
+major, minor, patch = chardet_version.split(".")[:3]
+```
+

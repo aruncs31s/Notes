@@ -1,2 +1,0 @@
-# Spin
-- [[Group Theory]]

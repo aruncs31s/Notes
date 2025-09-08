@@ -1,0 +1,1 @@
+>  a code smell is any characteristic of source code that hints at a deeper problem.

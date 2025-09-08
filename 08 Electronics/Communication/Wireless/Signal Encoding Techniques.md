@@ -55,6 +55,6 @@ $$
 [^1]: as the sound travels through air the sound will get reduced and reduced as the the distance increases and eventually reach to zero
 - The problem with this approach is that our as we are humans our sound will have a frequency range of $20 - 20Khz$ 
 
-![[03 Electronics/Communication/Wireless/attachments/basic communication.canvas|Untitled]]
+![[08 Electronics/Communication/Wireless/attachments/basic communication.canvas|Untitled]]
 
 ![[basic comm with modulation.canvas|basic comm with modulation]]

@@ -6,25 +6,17 @@ tags: []
 
 # Neovim
 
+- [[#Tricks]]
 - [[#Quick Fix List]]
 - [[#Sessions]]
 - [[#Tabs]]
 - [[#Registers]]
-
-### Contents
 
 - [Good LSPs](#good%20lsps)
 
 #### Good LSPs
 
 - typos_lsp = https://github.com/tekumara/typos-lsp
-
-##### Astronvim 4 Migration
-
-###### Links
-
-- https://github.com/aruncs31s/Astronvim_config_new
--
 
 #### Buffer
 
@@ -97,3 +89,47 @@ Ctrl+w T
 Registers: There are named registers like `a-z` and numbers `0-9`
 `0` -> last copied text
 `1-9` -> last deleted texts
+
+## Tricks
+
+### Shell Commands
+
+It is easy to do things using this way
+
+1. Executing programs
+
+```
+:!./program.sh
+```
+
+simple, but it is boring to type everytime i want to do this , what if i can simplify this like
+
+```
+:!!
+```
+
+more convenient, but it requires for me to type the command first
+So simplify things further
+
+```vim
+vim.api.nvim_set_keymap("n", "<A-q>", ":!!<CR>", { noremap = true, silent = true }),
+```
+
+2. Previous Commands
+
+```
+q:
+```
+
+this will bring up the previously executed commands
+
+
+
+
+### Shell Commands
+In one of my projects , when i was running a python script the output of a `print()` was not showing
+i was running ![[Flask#^14bd6e]] and this ![[curl POST examples#^00546a]]
+![[Pasted image 20250707015515.png]]
+But if i run in the terminal 
+![[Pasted image 20250707015557.png]]
+

@@ -23,7 +23,7 @@ graph LR
 
 Random_source --> B(0s and 1s)
 ```
-![[Pasted image 20250313225335.png]]
+![[input.png]]
 
 - The random source generates random data
 

@@ -19,7 +19,7 @@ Make: AVR Programming
 1. **1kb** Ram -> use external Ram
 2. No **FPU**
 
-![[Pasted image 20241212071348.png]]
+![[8051 pinout.png]]
 
 ```
 stty -F /dev/tty.iap ispeed 19200

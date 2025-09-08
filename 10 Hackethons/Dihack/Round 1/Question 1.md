@@ -109,7 +109,7 @@ $$
 ##### Designing Comparator 
 ![[comparator.excalidraw|1000x100]]
 
-![[Pasted image 20241016213103.png]]
+![[ckt_1.png]]
 
 
 ![[Pasted image 20241016212724.png]]
@@ -117,6 +117,6 @@ $$
 
 
 #### Designing A Astable Multi-Vibrator 
-- [ ] Need to receive from Amarnath
+- [x] Need to receive from Amarnath ✅2025-07-04/03:36 
 
 - [[Method 2]]

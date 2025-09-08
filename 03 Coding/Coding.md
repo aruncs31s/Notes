@@ -7,7 +7,7 @@ dg-publish: true
 	- [[Object Oriented Programming Python]]
 	- [[Python Note For Students]]
 ## Langs
-1. [[C]]
+1. [[03 Coding/01 C/C]]
 2. [[C++]]
 3. [[Python]]
 4. 

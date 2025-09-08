@@ -201,7 +201,7 @@ void loop() {
 #### VEML7700 Light Sensor
 
 > [!blank|right-small]
-> ![[03 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32/programming/Pasted image 20241006204642.png]]
+> ![[veml7700.png]]
 
 - Connect Sensor's VCC to 3.3
 - Connect GND

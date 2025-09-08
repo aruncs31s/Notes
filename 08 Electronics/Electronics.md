@@ -15,8 +15,10 @@ Created : 2024-07-28 15:08
   - [[#Voltage Divider Rule]]
 - [[Analog Circuits]]
 - 
-- [[03 Electronics/Embedded Systems/Embedded Systems|Embedded Systems]]
+- [[08 Electronics/Embedded Systems/Embedded Systems|Embedded Systems]]
 - [[Electronics Circuits]]
+
+
 ## Basics
 
 ## Energy
@@ -70,3 +72,6 @@ $$
 ## References
 
 1. [[Old_NOTES/Academics/Btech/S6/ElectroMagnetics/Module 3#^1fe371|Poynting Vector]]
+
+## Usefull Links
+1. http://hyperphysics.phy-astr.gsu.edu/hbase/Electronic/trangate.html

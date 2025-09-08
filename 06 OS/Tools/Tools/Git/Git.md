@@ -1,18 +1,17 @@
 ---
 id: Git
-aliases: []
-tags: []
-banner: "https://github.blog/wp-content/uploads/2023/05/1200.630-Security-wLogo.png?w=1200"
+aliases: 
+tags: 
+banner: https://github.blog/wp-content/uploads/2023/05/1200.630-Security-wLogo.png?w=1200
 banner_y: 0.552
 cssclasses:
   - wide-page
+dg-publish: true
 ---
 
 # Git
-
-- [Introduction](#introduction)
-- [[#**Basics**]]
-
+- [[Bitbucket]]
+- [[#Basics]]
   - [Installation](#installation)
   - [Initial Setup](#initial%20setup)
   - [[#Pushing Changes to Github]]
@@ -21,38 +20,11 @@ cssclasses:
   - [[#Dropping Commits]]
 
 - [[Advanced]]
+- [[Git diff]]
   - [[#Merge Conflict]]
   - [[#Advanced]]
   - [[#aliasing]]
 
-## **Introduction**
-
-Git is a `source control` created for the `Linux` Kernel by `Linus Torvalds`.
-
-
----
-## **Installation**
-
-- Windows [Click Here](https://git-scm.com/download/win)
-- Debian
-
-```bash
-sudo apt install git
-```
-
-- Fedora
-
-```bash
-sudo dnf install git
-```
-
-- Arch Linux
-
-```
-sudo pacman -S git
-```
-
----
 
 ## **Basics**
 - [[#Initial Setup]]
@@ -319,7 +291,7 @@ git config --global alias.staash 'stash --all'
 git config --global alias.po 'push origin main'
 ```
 
-> [!floating|right-medium]
+> [!blank|right-medium]
 > we can also use `!script name.sh` instead of the normal git command
 
 #example

@@ -1,7 +1,9 @@
 ---
-aliases: 
+aliases:
 Date: 30-05-2025
 dg-publish: true
+tags:
+  - for_students
 ---
 # Python Note For Students
  *Note #for_students* 

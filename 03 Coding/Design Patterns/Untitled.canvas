@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"f60098a2a20bc0b0","x":157,"y":11,"width":643,"height":509,"type":"text","text":"```go\ntype roundRobinServerPool struct {  \nbackends []backend.Backend  \nmux sync.RWMutex  \ncurrent int  \n}  \n  \nfunc (s *roundRobinServerPool) Rotate() backend.Backend {  \ns.mux.Lock()  \ns.current = (s.current + 1) % s.GetServerPoolSize()  \ns.mux.Unlock()  \nreturn s.backends[s.current]  \n}  \n  \nfunc (s *roundRobinServerPool) GetNextValidPeer() backend.Backend {  \nfor i := 0; i < s.GetServerPoolSize(); i++ {  \nnextPeer := s.Rotate()  \nif nextPeer.IsAlive() {  \nreturn nextPeer  \n}  \n}  \nreturn nil  \n}\n```"},
+		{"id":"b62d45a1ed7066b2","x":-160,"y":-333,"width":356,"height":231,"type":"text","text":"```go\ntype Backend interface {  \nSetAlive(bool)  \nIsAlive() bool  \nGetURL() *url.URL  \nGetActiveConnections() int  \nServe(http.ResponseWriter, *http.Request)  \n}\n```"},
+		{"id":"8b1fb31714a54635","x":-200,"y":-20,"width":318,"height":199,"type":"text","text":"```go\ntype ServerPool interface {  \nGetBackends() []Backend  \nGetNextValidPeer() Backend  \nAddBackend(Backend)  \nGetServerPoolSize() int  \n}\n```"},
+		{"id":"7306e4b8d4d4d9e9","x":300,"y":-328,"width":299,"height":226,"type":"text","text":"```go\ntype backend struct {  \nurl *url.URL  \nalive bool  \nmux sync.RWMutex  \nconnections int  \nreverseProxy *httputil.ReverseProxy  \n}\n```"}
+	],
+	"edges":[]
+}

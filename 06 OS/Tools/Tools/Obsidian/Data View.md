@@ -38,6 +38,17 @@ I would rate this a [rating:: 9]! It was [mood:: acceptable].
 - [ ] [Check Out](https://blacksmithgu.github.io/obsidian-dataview/annotation/add-metadata/#inline-fields)
 
 
+#### Get Links
+
+```dataview
+TABLE WITHOUT ID
+file.link as "File",
+file.cday as "Created"
+FROM ""
+WHERE contains(file.folder, this.file.folder) AND file.name != this.file.name
+SORT file.name ASC
+```
+
 #### References
 
 - https://blacksmithgu.github.io/obsidian-dataview/

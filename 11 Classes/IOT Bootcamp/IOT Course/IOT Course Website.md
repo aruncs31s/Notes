@@ -13,7 +13,7 @@ Where file = this.file
 
 ## Website
 - Current version runs using `mail gun`
-- [ ] Change it to sheety
+- [x] Change it to sheety ✅2025-07-04/03:36 
 
 ### RUN
 
@@ -23,7 +23,7 @@ git clone https://github.com/jeevanbabu7/Course
 npm install npm run dev
 ```
 ### Suggestion
-- [ ] Update the course 
+- [x] Update the course ✅2025-07-04/03:36 
 - [x] Provide course duration and date 
 - [x] Replace the workshope with Training Programe
 - [x] Total Price to Course fee
