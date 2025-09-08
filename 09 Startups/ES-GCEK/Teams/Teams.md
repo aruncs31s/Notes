@@ -6,7 +6,7 @@ dg-publish: true
 TOTAL MEMBERS: 10
 ```
 
-> **Working Memebers**
+>[!TODO]+ **Working Memebers**
 > - [Arun cs](https://github.com/orgs/Embedded-Systems-GCEK/people/aruncs31s)
 > - [vyshnav kp](https://github.com/orgs/Embedded-Systems-GCEK/people/vyshnav8486)
 > - [Abhaya Govind](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhayaGovind)
@@ -16,8 +16,11 @@ TOTAL MEMBERS: 10
 > - [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil)
 > - [Sneha-SJ-05](https://github.com/orgs/Embedded-Systems-GCEK/people/Sneha-SJ-05)
 > - [Albertjoe007](https://github.com/orgs/Embedded-Systems-GCEK/people/Albertjoe010)
-> - [Krishnasree-A-V](https://github.com/orgs/Embedded-Systems-GCEK/people/Krishnasree-A-V
+> - [Krishnasree-A-V](https://github.com/orgs/Embedded-Systems-GCEK/people/Krishnasree-A-V)
 > - [Anu19692004](https://github.com/orgs/Embedded-Systems-GCEK/people/isro19692004geck)
+> - [sanjusathian](https://github.com/orgs/Embedded-Systems-GCEK/people/sanjusathian)
+> - [the-unknown-monkey](https://github.com/orgs/Embedded-Systems-GCEK/people/the-unknown-monkey)
+
 ## [AI Assistant Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/ai-assistant-team)
 
 ```sql
