@@ -122,11 +122,10 @@ Builder: 4
 ## [Software Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/software)
 
 
-| Name                                                                                     | Role     | Status |
-| ---------------------------------------------------------------------------------------- | -------- | ------ |
-| [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil) | Designer |        |
-| [Sangeeth Binu](https://github.com/orgs/Embedded-Systems-GCEK/people/Sangeeth-binu)      | Designer |        |
-|                                                                                          |          |        |
+| Name                                                                                     | Role                 | Status |
+| ---------------------------------------------------------------------------------------- | -------------------- | ------ |
+| [Harikesh O P](https://github.com/orgs/Embedded-Systems-GCEK/people/HarikeshopGCEK)      | Designer , Developer | ✅      |
+| [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil) | Designer , Developer |        |
 
 ## [Web Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/web-team)
 
