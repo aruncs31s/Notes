@@ -120,6 +120,8 @@ Builder: 4
 ❌ -> Currently Has not done any Contribution
 
 ## [Software Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/software)
+
+
 ## [Web Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/web-team)
 
 ```sql
