@@ -1,5 +1,5 @@
 # Embedded Systems GCEK Projects
 
-```dataview
-TABLE
-```
+
+- [[AI-Assistant]]
+- [[AI-Assistant-UI]]
