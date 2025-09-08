@@ -7,9 +7,10 @@
 
 
 ## Developers 
-
+1. 
+2. 
 ## Designers
-
+1. 
+2. 
 ## Testers 
-
-
+3. [Arun CS](https://github.com/aruncs31s)
