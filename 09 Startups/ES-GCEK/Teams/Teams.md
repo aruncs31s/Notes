@@ -14,6 +14,10 @@ TOTAL MEMBERS: 10
 > - [Amaya Pramod. P. V](https://github.com/orgs/Embedded-Systems-GCEK/people/AmayaPramod)
 > - [Nivedh-r](https://github.com/orgs/Embedded-Systems-GCEK/people/Nivedh-r)
 > - [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil)
+> - [Sneha-SJ-05](https://github.com/orgs/Embedded-Systems-GCEK/people/Sneha-SJ-05)
+> - [Albertjoe007](https://github.com/orgs/Embedded-Systems-GCEK/people/Albertjoe010)
+> - [Krishnasree-A-V](https://github.com/orgs/Embedded-Systems-GCEK/people/Krishnasree-A-V
+> - [Anu19692004](https://github.com/orgs/Embedded-Systems-GCEK/people/isro19692004geck)
 ## [AI Assistant Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/ai-assistant-team)
 
 ```sql
@@ -35,7 +39,7 @@ Refactorers : 1
 | [Nivedh-r](https://github.com/orgs/Embedded-Systems-GCEK/people/Nivedh-r)                | Developer  | ✅      |               |
 | [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil) | Tester     | ✅      |               |
 | [Sneha-SJ-05](https://github.com/orgs/Embedded-Systems-GCEK/people/Sneha-SJ-05)          | Tester     | ✅      |               |
-| [Albertjoe007](https://github.com/orgs/Embedded-Systems-GCEK/people/Albertjoe007)        | Refactorer | ❌      |               |
+| [Albertjoe007](https://github.com/orgs/Embedded-Systems-GCEK/people/Albertjoe010)        | Refactorer | ❌      |               |
 ✅ -> Currently Done any Contribution 
 ❌ -> Currently Has not done any Contribution
 
