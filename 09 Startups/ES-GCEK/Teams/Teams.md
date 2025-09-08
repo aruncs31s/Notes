@@ -21,6 +21,8 @@ TOTAL MEMBERS: 10
 > - [sanjusathian](https://github.com/orgs/Embedded-Systems-GCEK/people/sanjusathian)
 > - [the-unknown-monkey](https://github.com/orgs/Embedded-Systems-GCEK/people/the-unknown-monkey)
 
+- [ ] Fix this.
+
 >[!todo] **Non Working Members**
 > 1. [AbhinavM2005](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhinavM2005)
 > 2. [abhiramc1289](https://github.com/orgs/Embedded-Systems-GCEK/people/abhiramc1289)
