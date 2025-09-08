@@ -1,8 +1,11 @@
 ---
 dg-publish: true
 ---
-
-# [AI Assistant Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/ai-assistant-team)
+# Teams 
+```sql
+TOTAL MEMBE
+```
+## [AI Assistant Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/ai-assistant-team)
 
 ```sql
 MEMBERS: 9
@@ -27,7 +30,7 @@ Refactorers : 1
 ✅ -> Currently Done any Contribution 
 ❌ -> Currently Has not done any Contribution
 
-# AI Assistant UI Team 
+## AI Assistant UI Team 
 ```sql
 MEMBERS: 4
 Designers: 2
@@ -46,7 +49,7 @@ Refactorers : 0
 ❌ -> Currently Has not done any Contribution
 
 
-#  [Hardware Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/hardware-team)
+##  [Hardware Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/hardware-team)
 
 ```sql
 MEMBERS: 7
@@ -66,7 +69,7 @@ Builder: 4
 |                                                                                          |          |        |               |
 ✅ -> Currently Done any Contribution 
 ❌ -> Currently Has not done any Contribution
-# [Web Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/web-team)
+## [Web Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/web-team)
 
 ```sql
 MEMBERS: 7
