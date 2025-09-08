@@ -2,7 +2,9 @@
 dg-publish: true
 ---
 
-# UI
+# AI-Assistant UI
+- [[09 Startups/ES-GCEK/Projects/AI-Assistant/Teams/Teams]]
+
 This Project is mainly to provide an interactive, User Interface for the Users and Developers.
 
 ## Features 
