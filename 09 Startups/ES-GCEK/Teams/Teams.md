@@ -8,15 +8,16 @@ Testers: 2
 Refactorers : 1 
 ```
 
-| Name                                                                                      | Role      | Active |
-| ----------------------------------------------------------------------------------------- | --------- | ------ |
-| [Arun cs](https://github.com/orgs/Embedded-Systems-GCEK/people/aruncs31s)                 | Designer  | ✅      |
-| [vyshnav kp](https://github.com/orgs/Embedded-Systems-GCEK/people/vyshnav8486)            | Designer  | ✅      |
-| [Abhaya Govind](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhayaGovind)        | Developer | ✅      |
-| [Dhanashyam Babu](https://github.com/orgs/Embedded-Systems-GCEK/people/dhanashyam18)      |           |        |
-| [Amaya Pramod. P. V](https://github.com/orgs/Embedded-Systems-GCEK/people/AmayaPramod)    |           |        |
-|                                                                                           |           |        |
-| [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil)  |           |        |
+| Name                                                                                     | Role      | Active |
+| ---------------------------------------------------------------------------------------- | --------- | ------ |
+| [Arun cs](https://github.com/orgs/Embedded-Systems-GCEK/people/aruncs31s)                | Designer  | ✅      |
+| [vyshnav kp](https://github.com/orgs/Embedded-Systems-GCEK/people/vyshnav8486)           | Designer  | ✅      |
+| [Abhaya Govind](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhayaGovind)       | Developer | ✅      |
+| [Dhanashyam Babu](https://github.com/orgs/Embedded-Systems-GCEK/people/dhanashyam18)     | Developer | ✅      |
+| [Amaya Pramod. P. V](https://github.com/orgs/Embedded-Systems-GCEK/people/AmayaPramod)   | Developer | ✅      |
+| [Nivedh-r](https://github.com/orgs/Embedded-Systems-GCEK/people/Nivedh-r)                | Developer | ❌      |
+| [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil) | Tester    | ✅      |
+| [Sneha-SJ-05](https://github.com/orgs/Embedded-Systems-GCEK/people/Sneha-SJ-05)          | Tester    | ✅      |
 
 
 #  [Hardware Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/hardware-team)
