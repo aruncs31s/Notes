@@ -23,6 +23,6 @@ But In the case of HDMI Screens which will be driven by the PI itself and In the
 
 ---
 
-[Whatsapp Group Link](https://chat.whatsapp.com/Bw1oRD6TvlQ51wOG1oWVmi)
+- [Whatsapp Group Link](https://chat.whatsapp.com/Bw1oRD6TvlQ51wOG1oWVmi)
 
 
