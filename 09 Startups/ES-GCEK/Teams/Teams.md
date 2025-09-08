@@ -1,6 +1,5 @@
 # [AI Assistant Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/ai-assistant-team)
 
-
 ```sql
 MEMBERS: 9
 Designers: 2
@@ -25,6 +24,13 @@ Refactorers : 1
 ❌ -> Currently Has not done any Contribution
 
 # AI Assistant UI Team 
+```sql
+MEMBERS: 4
+Designers: 2
+Developers: 4
+Testers: 2
+Refactorers : 1 
+```
 
 | Name                                                                                     | Role               | Status | Contributions |
 | ---------------------------------------------------------------------------------------- | ------------------ | ------ | ------------- |
