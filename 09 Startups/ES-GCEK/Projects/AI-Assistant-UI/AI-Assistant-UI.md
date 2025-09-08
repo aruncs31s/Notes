@@ -2,7 +2,8 @@
 dg-publish: true
 ---
 
-# UI
+# AI-Assistant UI
+- [[09 Startups/ES-GCEK/Projects/AI-Assistant/Teams/Teams| Teams]]
 This Project is mainly to provide an interactive, User Interface for the Users and Developers.
 
 ## Features 
@@ -17,3 +18,11 @@ But In the case of HDMI Screens which will be driven by the PI itself and In the
 - The robot will also provide a webui for remote management as well as touch screen for controlling 
 
 - [[Server]]
+
+
+
+---
+
+- [Whatsapp Group Link](https://chat.whatsapp.com/Bw1oRD6TvlQ51wOG1oWVmi)
+
+
