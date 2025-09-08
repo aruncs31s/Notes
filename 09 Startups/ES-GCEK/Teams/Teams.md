@@ -21,6 +21,9 @@ TOTAL MEMBERS: 10
 > - [sanjusathian](https://github.com/orgs/Embedded-Systems-GCEK/people/sanjusathian)
 > - [the-unknown-monkey](https://github.com/orgs/Embedded-Systems-GCEK/people/the-unknown-monkey)
 
+>[!todo] **Non Working Members**
+>
+
 ## [AI Assistant Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/ai-assistant-team)
 
 ```sql
