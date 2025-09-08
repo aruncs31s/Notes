@@ -43,6 +43,7 @@ Refactorers : 1
 | [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil) | Tester     | ✅      |               |
 | [Sneha-SJ-05](https://github.com/orgs/Embedded-Systems-GCEK/people/Sneha-SJ-05)          | Tester     | ✅      |               |
 | [Albertjoe007](https://github.com/orgs/Embedded-Systems-GCEK/people/Albertjoe010)        | Refactorer | ❌      |               |
+
 ✅ -> Currently Done any Contribution 
 ❌ -> Currently Has not done any Contribution
 
@@ -62,6 +63,7 @@ Refactorers : 0
 | [Abhaya Govind](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhayaGovind)       | Designer,Developer | ❌      |               |
 | [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil) | Developer , Tester | ❌      |               |
 | [Sneha-SJ-05](https://github.com/orgs/Embedded-Systems-GCEK/people/Sneha-SJ-05)          | Developer , Tester | ❌      |               |
+
 ✅ -> Currently Done any Contribution 
 ❌ -> Currently Has not done any Contribution
 
@@ -84,6 +86,7 @@ Builder: 4
 | [Anu19692004](https://github.com/orgs/Embedded-Systems-GCEK/people/isro19692004geck)     | Builder  | ✅      |               |
 | [Krishnasree-A-V](https://github.com/orgs/Embedded-Systems-GCEK/people/Krishnasree-A-V)  | Builder  | ✅      |               |
 |                                                                                          |          |        |               |
+
 ✅ -> Currently Done any Contribution 
 ❌ -> Currently Has not done any Contribution
 ## [Web Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/web-team)
