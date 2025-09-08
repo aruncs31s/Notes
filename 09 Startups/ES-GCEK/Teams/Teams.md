@@ -30,7 +30,7 @@ Refactorers : 1
 ✅ -> Currently Done any Contribution 
 ❌ -> Currently Has not done any Contribution
 
-## AI Assistant UI Team 
+## [AI Assistant UI Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/user-interface-team)
 ```sql
 MEMBERS: 4
 Designers: 2
