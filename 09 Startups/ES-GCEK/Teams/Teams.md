@@ -1,7 +1,7 @@
 # [AI Assistant Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/ai-assistant-team)
 
 ```sql
-MEMBERS: 8 
+MEMBERS: 9
 Designers: 2
 Developers: 4
 Testers: 2
@@ -37,3 +37,4 @@ Refactorers : 1
 
 
 # [Web Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/web-team)
+
