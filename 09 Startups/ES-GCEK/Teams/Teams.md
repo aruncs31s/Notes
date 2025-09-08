@@ -26,27 +26,27 @@ Refactorers : 1
 
 # AI Assistant UI Team 
 
-| Name                                                                                     | Role               | Status |
-| ---------------------------------------------------------------------------------------- | ------------------ | ------ |
-| [Arun cs](https://github.com/orgs/Embedded-Systems-GCEK/people/aruncs31s)                | Designer           | ✅      |
-| [Abhaya Govind](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhayaGovind)       | Designer,Developer | ❌      |
-| [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil) | Developer , Tester | ❌      |
-| [Sneha-SJ-05](https://github.com/orgs/Embedded-Systems-GCEK/people/Sneha-SJ-05)          | Developer , Tester | ❌      |
+| Name                                                                                     | Role               | Status | Contributions |
+| ---------------------------------------------------------------------------------------- | ------------------ | ------ | ------------- |
+| [Arun cs](https://github.com/orgs/Embedded-Systems-GCEK/people/aruncs31s)                | Designer           | ✅      |               |
+| [Abhaya Govind](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhayaGovind)       | Designer,Developer | ❌      |               |
+| [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil) | Developer , Tester | ❌      |               |
+| [Sneha-SJ-05](https://github.com/orgs/Embedded-Systems-GCEK/people/Sneha-SJ-05)          | Developer , Tester | ❌      |               |
 ✅ -> Currently Done any Contribution 
 ❌ -> Currently Has not done any Contribution
 
 
 #  [Hardware Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/hardware-team)
 
-| Name                                                                                     | Role     | Status |
-| ---------------------------------------------------------------------------------------- | -------- | ------ |
-| [Arun cs](https://github.com/orgs/Embedded-Systems-GCEK/people/aruncs31s)                | Designer | ✅      |
-| [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil) | Designer | ✅      |
-| [Sangeeth Binu](https://github.com/orgs/Embedded-Systems-GCEK/people/Sangeeth-binu)      | Designer | ✅      |
-| [Abhaya Govind](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhayaGovind)       | Builder  | ✅      |
-| [Deepika Rajan](https://github.com/orgs/Embedded-Systems-GCEK/people/DEEPIKARAJAN-E)     | Builder  | ✅      |
-| [Anu19692004](https://github.com/orgs/Embedded-Systems-GCEK/people/isro19692004geck)     | Builder  | ✅      |
-| [Krishnasree-A-V](https://github.com/orgs/Embedded-Systems-GCEK/people/Krishnasree-A-V)  | Builder  | ✅      |
+| Name                                                                                     | Role     | Status | Contributions |
+| ---------------------------------------------------------------------------------------- | -------- | ------ | ------------- |
+| [Arun cs](https://github.com/orgs/Embedded-Systems-GCEK/people/aruncs31s)                | Designer | ✅      |               |
+| [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil) | Designer | ✅      |               |
+| [Sangeeth Binu](https://github.com/orgs/Embedded-Systems-GCEK/people/Sangeeth-binu)      | Designer | ✅      |               |
+| [Abhaya Govind](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhayaGovind)       | Builder  | ✅      |               |
+| [Deepika Rajan](https://github.com/orgs/Embedded-Systems-GCEK/people/DEEPIKARAJAN-E)     | Builder  | ✅      |               |
+| [Anu19692004](https://github.com/orgs/Embedded-Systems-GCEK/people/isro19692004geck)     | Builder  | ✅      |               |
+| [Krishnasree-A-V](https://github.com/orgs/Embedded-Systems-GCEK/people/Krishnasree-A-V)  | Builder  | ✅      |               |
 
 
 
