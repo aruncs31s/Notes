@@ -29,10 +29,12 @@ Refactorers : 1
 | [Arun cs](https://github.com/orgs/Embedded-Systems-GCEK/people/aruncs31s)                | Designer | ✅      |
 | [Abhaya Govind](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhayaGovind)       | Builder  |        |
 | [Deepika Rajan](https://github.com/orgs/Embedded-Systems-GCEK/people/DEEPIKARAJAN-E)     | Builder  |        |
-| [Anu19692004](https://github.com/orgs/Embedded-Systems-GCEK/people/isro19692004geck)     |          |        |
+| [Anu19692004](https://github.com/orgs/Embedded-Systems-GCEK/people/isro19692004geck)     | Builder  |        |
 | [harikeshop1989](https://github.com/orgs/Embedded-Systems-GCEK/people/harikeshop1989)    |          |        |
-| [Krishnasree-A-V](https://github.com/orgs/Embedded-Systems-GCEK/people/Krishnasree-A-V)  |          |        |
-| [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil) |          |        |
+| [Krishnasree-A-V](https://github.com/orgs/Embedded-Systems-GCEK/people/Krishnasree-A-V)  | Builder  |        |
+| [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil) | Designer |        |
+| [Sangeeth Binu](https://github.com/orgs/Embedded-Systems-GCEK/people/Sangeeth-binu)      |          |        |
+|                                                                                          |          |        |
 
 
 # [Web Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/web-team)
