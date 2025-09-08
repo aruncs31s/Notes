@@ -17,4 +17,4 @@ dg-publish: true
 1. 
 2. 
 ## Testers 
-3. [Arun CS](https://github.com/aruncs31s)
+1. [Arun CS](https://github.com/aruncs31s)
