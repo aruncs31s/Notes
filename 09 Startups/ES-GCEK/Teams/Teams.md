@@ -27,9 +27,9 @@ Refactorers : 1
 ```sql
 MEMBERS: 4
 Designers: 2
-Developers: 4
+Developers: 2
 Testers: 2
-Refactorers : 1 
+Refactorers : 0 
 ```
 
 | Name                                                                                     | Role               | Status | Contributions |
@@ -53,9 +53,6 @@ Refactorers : 1
 | [Deepika Rajan](https://github.com/orgs/Embedded-Systems-GCEK/people/DEEPIKARAJAN-E)     | Builder  | ✅      |               |
 | [Anu19692004](https://github.com/orgs/Embedded-Systems-GCEK/people/isro19692004geck)     | Builder  | ✅      |               |
 | [Krishnasree-A-V](https://github.com/orgs/Embedded-Systems-GCEK/people/Krishnasree-A-V)  | Builder  | ✅      |               |
-
-
-
 
 # [Web Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/web-team)
 
