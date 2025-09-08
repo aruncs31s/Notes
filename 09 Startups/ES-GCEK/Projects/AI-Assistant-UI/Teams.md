@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # Teams
 
 > Req List
