@@ -8,7 +8,7 @@ Testers: 2
 Refactorers : 1 
 ```
 
-| Name                                                                                     | Role       | Active |
+| Name                                                                                     | Role       | Status |
 | ---------------------------------------------------------------------------------------- | ---------- | ------ |
 | [Arun cs](https://github.com/orgs/Embedded-Systems-GCEK/people/aruncs31s)                | Designer   | ✅      |
 | [vyshnav kp](https://github.com/orgs/Embedded-Systems-GCEK/people/vyshnav8486)           | Designer   | ✅      |
@@ -23,6 +23,12 @@ Refactorers : 1
 ❌ -> Currently Has not done any Contribution
 #  [Hardware Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/hardware-team)
 
+
+| Name                                                                                 | Role     | Status |
+| ------------------------------------------------------------------------------------ | -------- | ------ |
+| [Arun cs](https://github.com/orgs/Embedded-Systems-GCEK/people/aruncs31s)            | Designer | ✅      |
+| [Abhaya Govind](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhayaGovind)   | Builder  |        |
+| [Deepika Rajan](https://github.com/orgs/Embedded-Systems-GCEK/people/DEEPIKARAJAN-E) | Builder  |        |
 
 
 # [Web Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/web-team)
