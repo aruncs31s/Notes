@@ -6,7 +6,9 @@ This Project is mainly to provide an interactive, User Interface for the Users a
 - It should show Robot status , such as current position remaining charge if it runs on battery
 - Can suggest any.
 
+### Touch UI 
+I have not yet decided , which to go with like  , the robot runs on raspberry pi so we can either use a
 ### WebUI
-- The robot will aslso 
+- The robot will also provide a webui for remote management as well as touch screen for controlling 
 
 - [[Server]]
