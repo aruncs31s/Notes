@@ -69,14 +69,13 @@ Testers: 2
 Refactorers : 0 
 ```
 
-
-| Name                                                                                          | Role     | Status | Contributions |
-| --------------------------------------------------------------------------------------------- | -------- | ------ | ------------- |
-| [Arun cs](https://github.com/orgs/Embedded-Systems-GCEK/people/aruncs31s)                     | Designer | ✅      |               |
-| [sanjusathian](https://github.com/orgs/Embedded-Systems-GCEK/people/sanjusathian)             | Designer | ✅      |               |
-| [the-unknown-monkey](https://github.com/orgs/Embedded-Systems-GCEK/people/the-unknown-monkey) | Designer | ✅      |               |
-| [Abhaya Govind](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhayaGovind)            |          | ✅❌     |               |
-| [Sangeeth Binu](https://github.com/orgs/Embedded-Systems-GCEK/people/Sangeeth-binu)           |          | ✅      |               |
-| [Sneha-SJ-05](https://github.com/orgs/Embedded-Systems-GCEK/people/Sneha-SJ-05)               |          | ✅      |               |
-| [Dhanashyam Babu](https://github.com/orgs/Embedded-Systems-GCEK/people/dhanashyam18)          |          |        |               |
+| Name                                                                                          | Role                 | Status | Contributions |
+| --------------------------------------------------------------------------------------------- | -------------------- | ------ | ------------- |
+| [Arun cs](https://github.com/orgs/Embedded-Systems-GCEK/people/aruncs31s)                     | Designer , Developer | ❌      |               |
+| [sanjusathian](https://github.com/orgs/Embedded-Systems-GCEK/people/sanjusathian)             | Designer , Developer | ❌      |               |
+| [the-unknown-monkey](https://github.com/orgs/Embedded-Systems-GCEK/people/the-unknown-monkey) | Designer             | ❌      |               |
+| [Abhaya Govind](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhayaGovind)            |                      | ❌      |               |
+| [Sangeeth Binu](https://github.com/orgs/Embedded-Systems-GCEK/people/Sangeeth-binu)           |                      | ❌      |               |
+| [Sneha-SJ-05](https://github.com/orgs/Embedded-Systems-GCEK/people/Sneha-SJ-05)               |                      | ❌      |               |
+| [Dhanashyam Babu](https://github.com/orgs/Embedded-Systems-GCEK/people/dhanashyam18)          |                      | ❌      |               |
 
