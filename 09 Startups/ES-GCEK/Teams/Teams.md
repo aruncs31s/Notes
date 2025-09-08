@@ -20,7 +20,7 @@ Refactorers : 1
 | [Sneha-SJ-05](https://github.com/orgs/Embedded-Systems-GCEK/people/Sneha-SJ-05)          | Tester     | ✅      |
 | [Albertjoe007](https://github.com/orgs/Embedded-Systems-GCEK/people/Albertjoe007)        | Refactorer | ❌      |
 ✅ -> Currently Done any Contribution 
-❌ -> Currently Has not done
+❌ -> Currently Has not done any Contribution
 #  [Hardware Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/hardware-team)
 
 
