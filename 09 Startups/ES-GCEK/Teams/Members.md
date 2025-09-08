@@ -33,17 +33,4 @@
 31. [Swetha P](https://github.com/orgs/Embedded-Systems-GCEK/people/Swethap1991)
 32. [the-unknown-monkey](https://github.com/orgs/Embedded-Systems-GCEK/people/the-unknown-monkey)
 33. [vyshnav kp](https://github.com/orgs/Embedded-Systems-GCEK/people/vyshnav8486)
-34. 
 
-34.  [Github](https://github.com/AmayaPramod)
-35. Saifali [Github](https://github.com/Saifali1256)
-36. Deepika Rajan [Github](https://github.com/DEEPIKARAJAN-E)
-37. Harikesh OP [Github](https://github.com/harikeshop1989)
-38. Krishnasree A V [Github](Krishnasree-A-V) 
-39. Anamika pp [Github](https://github.com/isro19692004geck)
-40. Meenakshi Poyyil [Github](https://github.com/MeenakshiPoyyil)
-41. Nived Ranjith  [Github](https://github.com/orgs/AI-Robot-GCEK/people/Nivedh-r)
-42. Sangeeth Binu [Github](htttps://github.com/Sangeeth-binu)
-43. Dhanashyam Babu [Github](https://github.com/dhanashyam18)
-44. Sneha SJ [Github](https://github.com/Sneha-SJ-05)
-45. Abhinav M [Github](https://github.com/AbhinavM2005)
