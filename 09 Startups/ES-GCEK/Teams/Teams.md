@@ -62,7 +62,7 @@ Refactorers : 0
 | [Arun cs](https://github.com/orgs/Embedded-Systems-GCEK/people/aruncs31s)                     | Designer | ✅      |               |
 | [sanjusathian](https://github.com/orgs/Embedded-Systems-GCEK/people/sanjusathian)             | Designer | ✅      |               |
 | [the-unknown-monkey](https://github.com/orgs/Embedded-Systems-GCEK/people/the-unknown-monkey) | Designer | ✅      |               |
-| [Abhaya Govind](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhayaGovind)            | Builder  | ✅      |               |
+| [Dhanashyam Babu](https://github.com/orgs/Embedded-Systems-GCEK/people/dhanashyam18)          | Builder  | ✅      |               |
 | [Deepika Rajan](https://github.com/orgs/Embedded-Systems-GCEK/people/DEEPIKARAJAN-E)          | Builder  | ✅      |               |
 | [Anu19692004](https://github.com/orgs/Embedded-Systems-GCEK/people/isro19692004geck)          | Builder  | ✅      |               |
 | [Krishnasree-A-V](https://github.com/orgs/Embedded-Systems-GCEK/people/Krishnasree-A-V)       | Builder  | ✅      |               |
