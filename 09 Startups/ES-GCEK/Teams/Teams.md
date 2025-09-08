@@ -45,10 +45,8 @@ Refactorers : 0
 #  [Hardware Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/hardware-team)
 ```sql
 MEMBERS: 4
-Designers: 2
-Developers: 2
-Testers: 2
-Refactorers : 0 
+Designer: 2
+Builder: 2
 ```
 
 | Name                                                                                     | Role     | Status | Contributions |
