@@ -3,7 +3,7 @@ dg-publish: true
 ---
 # Teams 
 ```sql
-TOTAL MEMBE
+TOTAL MEMBERS: 10
 ```
 ## [AI Assistant Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/ai-assistant-team)
 
