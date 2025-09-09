@@ -9,15 +9,15 @@ I'm undefeated, ooh
 
 **Jumping out of my skin, pull the chord**  
 **Yeah I believe it, ooh**  
->[!abstract]*Explanation*
+>[!abstract]- *Explanation*
 >not , staying inside a box and explore new thing
 
 
 The past, is everything we were  
 Don't make us who we are  
 
->[!abstract]*Explanation*
->not , staying inside a box and explore new thing
+>[!abstract]- *Explanation*
+>We are not defined by our mistakes, it's okey to blame us for mistake , but the gr
 
 
 
