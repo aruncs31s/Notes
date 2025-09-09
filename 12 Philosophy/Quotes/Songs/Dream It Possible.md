@@ -25,7 +25,9 @@ So I'll dream, until I make it real
 And all I see is stars  
 
 >[!abstract]*Explanation*
->When you really want something , all you do is dream about it every single day , until its real and no longer just a dream, its when dream come to reality.
+>When you really want something , all you do is dream about it every single day , until its real and no longer just a dream, its when dream come to reality. And when we are working on our dreams we no longer see the problems we face as set backs , we see them as challenges that need to be solved. 
+
+
 
 
 
@@ -34,6 +36,9 @@ When your dreams come
 Alive you're unstoppable  
 Take a shot, chase the  
 Sun, find the beautiful  
+
+
+
 We will glow in the dark  
 Turning dust to gold  
 And we'll dream  
