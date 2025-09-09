@@ -1,9 +1,13 @@
 ---
 id: DSP Module 3
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - s5
+  - digital_signal_processing
+dg-publish: true
 ---
-
 ### Designing of FIR Filter
 
 #### Windows

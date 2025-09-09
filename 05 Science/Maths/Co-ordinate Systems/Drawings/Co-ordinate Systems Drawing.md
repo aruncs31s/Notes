@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: Co-ordinate_Systems_Drawing
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
-
 
 # Excalidraw Data
 ## Text Elements
@@ -25,6 +25,7 @@ z ^Xz9K9z9v
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebTiARgAGGjoghH0EDihmbgBtcDBQMBLoeHF0XFJSNip+UsYWdi40ZIA2eshG1k4AOU4xbgSAdgBmAA5xtsmEzohCDmIsbghc
 
@@ -77,5 +78,7 @@ s2Ewyu4lRhGxs/ukgj4numy7RhgrGhynG/svGlkNywmtumEkmiQvy8mhche6m1clelNde4yfsVGcgbiI
 PSAWVjlrlnlsp2DSltV+VjITVn+yp/w8UwVuV7IEV/QLKSU0Cll3V81rljk+p3PHVoV+1jIAA4shuyGmV11pKBVmRkGsSU19VjIe4zunRs3YNvV7l21EXFyqNt1/QDcYXAzUXYJLOFl5gbAGoaEV4PEXMclUjaLFyZXauChSlrNnN/AYqJqVp9SfFcOIjS0ZqCAIwNgAwIlroAgOQkVFOBNv1jIK1jOgVaY1mAVgMEgDSnRcjYchlyogpL4B0DiF
 
 0X4c0Vd1dgAj8uYSQ5QOF39F0DcLYQ9w9zdiAcK1V31g1hADkqgzgZ6wRcXQIMwYQZgZ4Wdqd3TNS3hSQ7yYcxnApLIXATQYIM8eeoeogbsuchx5MUc0lqDlk4QKADNeD89rgzQCrBAbAHIGEUcuARrNgJYZNoDkDnK8AJmNSqEcIGmJcEAJcIAA
+
 ```
+
 %%

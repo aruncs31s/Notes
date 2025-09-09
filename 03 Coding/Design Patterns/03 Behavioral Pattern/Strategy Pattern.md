@@ -1,12 +1,12 @@
 ---
+id: Strategy_Pattern
+aliases: []
 tags:
-  - "#programming"
-  - software_design
-  - design_pattern
-  - behavioural_pattern
+  - coding
+  - design_patterns
+  - behavioral_pattern
 dg-publish: true
 ---
-
 # Strategy Pattern
 - [[Strategy Pattern Using Golang]]
 
@@ -16,8 +16,6 @@ dg-publish: true
 
 >[!Note]- Analogy
 >Imagine if i have a specific goal like  computing something or doing some task , but there might be different way to go about it , this is what the [[Strategy Pattern]] all about
-
-
 
 >[!Note]- **Example**
 > Imagine a navigation app like Google Maps:
@@ -58,4 +56,5 @@ func (c *Context) SetStrategy(strategy Strategy) {
 func (c *Context) ExecuteStrategy(data string) string {
     return c.strategy.Execute(data)
 }
+
 ``` 

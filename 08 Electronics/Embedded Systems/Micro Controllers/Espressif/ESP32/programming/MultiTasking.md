@@ -1,11 +1,15 @@
 ---
 id: MultiTasking
-aliases: 
+aliases: []
 tags:
-  - "#esp32"
-  - "#code"
+  - electronics
+  - embedded_systems
+  - micro_controllers
+  - espressif
+  - esp32
+  - programming
+dg-publish: true
 ---
-
 ### Multi Tasking using Free RTOS
 
 ##### Simple Task which uses only one core
@@ -29,10 +33,12 @@ void task1 (void * parameters){
 		Serial.println("From Task2");
 		vTaskDelay(1000 / portTICK_PERIODS_MS);
 }
+
 ```
 
 ```c
 vTaskDelay(1000 / portTICK_PERIODS_MS);
+
 ```
 
 - This line is used to get 1 second delay
@@ -56,6 +62,7 @@ xTaskCreate(
 	1,
 	NULL
 );
+
 ```
 
 ##### Managing Free RTOS Tasks
@@ -64,12 +71,14 @@ xTaskCreate(
 
 ```c
 vTaskDelete(NULL);
+
 ```
 
 ##### Creating Taskhandles
 
 ```cpp
 TaskHandle_t task1_handle = NULL;
+
 ```
 
 - Now when calling xTaskCreate use this task_handle for task1
@@ -83,6 +92,7 @@ xTaskCreate(
 	1,
 	&task1_handle
 );
+
 ```
 
 > [!NOTE] Taskhandles
@@ -100,10 +110,12 @@ for (;;){
 			vTaskSuspend(NULL);
 		}
 }
+
 ```
 
 ```c
 vTaskSuspend(NULL);
+
 ```
 
 - This is used to suspend the task within it self , we can also suspend the task from outside
@@ -111,11 +123,13 @@ vTaskSuspend(NULL);
 ###### Suspend the task from outside
 
 ```
+
 void loop(){
     if (count > 3){ // will this variable bee accesible from outside
 	vTaskSuspend(task1_handle);
 	}
 }
+
 ```
 
 - If we run the above programm the `vTaskSuspend` will suspend the main function = `loop`
@@ -129,18 +143,21 @@ void loop(){
 	vTaskSuspend(task1_handle);
 	}
 }
+
 ```
 
 ##### Resuming a Task
 
 ```cpp
 vTaskResume(task1_handle);
+
 ```
 
 ##### Semaphore
 
 ```c
 SemaphoreHandle_t semaphore;
+
 ```
 
 - It is Just a flag like yes/no
@@ -160,9 +177,9 @@ void Task1(void * parameters){
 
           xSemaphoereGive(semaphore);
 
-
   }
 }
+
 ```
 
 #### Multi Threding
@@ -227,7 +244,6 @@ void Solar_Managment( void * pvParameters ){
 //Task2code: blinks an LED every 700 ms
 void Energy_Managment( void * pvParameters ){
 
-
   Serial.print("Task2 running on core ");
   Serial.println(xPortGetCoreID());
 
@@ -243,13 +259,13 @@ void loop() {
 
 }
 
-
 ```
 
 #### New Multithreading
 
 ```cpp
 Serial.println(xPortGetCoreID());
+
 ```
 
 _It Prints in which core the current task or process is been executing_

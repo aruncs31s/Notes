@@ -1,16 +1,16 @@
 ---
+id: Adapter_Pattern
+aliases: []
 tags:
-  - "#programming"
-  - software_design
-  - design_pattern
-  - creational_pattern
+  - coding
+  - design_patterns
+  - structural
 dg-publish: true
 ---
 # Adapter Pattern 
 *To make different implementation to work together* 
 
 > Wrap it in an interface to make it compatible with the existing code.
-
 
 ```ts
 // Consider a third party weather api interface
@@ -25,6 +25,7 @@ interface Weather {
   getHumidity(): number;
   getWindSpeedMPH(): number;
 }
+
 ```
 
 **Without Adapter**: Directly using the third-party API would require changing our app's code whenever the API changes.
@@ -48,6 +49,7 @@ const weatherAPI = new ThirdPartyWeatherAPI();
 console.log(`Temperature in F: ${weatherAPI.getTempC() * 9/5 + 32}`);
 console.log(`Humidity: ${weatherAPI.getHumidity()}`);
 console.log(`Wind Speed in MPH: ${weatherAPI.getWindSpeedKPH() * 0.621371}`);  
+
 ```
 
 **With Adapter**: The adapter translates the third-party API's methods to the expected interface, allowing our app to remain unchanged.
@@ -82,5 +84,4 @@ console.log(`Wind Speed in MPH: ${weather.getWindSpeedMPH()}`);
 - [[Structural Pattern]]
 - [[Creational Pattern]]
 ---
-
 

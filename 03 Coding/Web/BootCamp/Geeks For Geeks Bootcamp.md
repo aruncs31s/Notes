@@ -1,9 +1,12 @@
 ---
 id: GeeksForGeeksBootCamp
 aliases: []
-tags: []
+tags:
+  - coding
+  - web
+  - bootcamp
+dg-publish: true
 ---
-
 # Geeks For Geeks Bootcamp
 
 Not ignore Spaces
@@ -14,6 +17,7 @@ This is written
 using pre 
 tag
 </pre>
+
 ```
 
 ### Types of Tags
@@ -35,6 +39,7 @@ Which has 3 parts
 
 ```html
 <tag_name> </tag_name>
+
 ```
 
 #### Empty Tags
@@ -43,6 +48,7 @@ Which has 3 parts
 
 ```html
 <img />
+
 ```
 
 - [ ] Check why the `marksman` always closes the `<` and why `/>` at the end of the tag.
@@ -55,12 +61,14 @@ Which has 3 parts
 
 ```html
 <tage_name attribute_name="value"> </tag_name>
+
 ```
 
 #example
 
 ```html
 <img src="image.jpg" alt="image" />
+
 ```
 
 #### HTML Global Attributes
@@ -69,6 +77,7 @@ Which has 3 parts
 
 ```html
 <img src="./img.png" height="300px" width="300px" hidden />
+
 ```
 
 > Here `hidden` is used to define the visibility of elements
@@ -81,6 +90,7 @@ Which has 3 parts
 
 ```html
 <meta attribute_name="value" />
+
 ```
 
 ```

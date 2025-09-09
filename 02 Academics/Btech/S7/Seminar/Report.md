@@ -1,10 +1,14 @@
 ---
 id: Report
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - s7
+  - seminar
 Date: "27-10-2024"
+dg-publish: true
 ---
-
 # Seminar Report -> MagSign
 
 ## Introduction

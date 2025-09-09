@@ -1,22 +1,31 @@
 ---
-aliases: 
+id: Python_Simulation
+aliases: []
+tags:
+  - academics
+  - btech
+  - projects
+  - final_year_project
 Date: 01-11-2024
+dg-publish: true
 ---
 # Python Simulation
 - [[#BPSK]]
 - [[#QPSK]]
 - [[#AWGN Channel]]
 **Requirements**
+
 ```bash
 matplotlib==3.9.2
 numpy==2.1.3
 scipy==1.14.1
-```
 
+```
 
 ## Modulation
 
 ### BPSK
+
 ```python
 def bpsk(_system):
     _number_of_constellaition_points = 2
@@ -32,10 +41,9 @@ def bpsk(_system):
     _modulated = _constellation[_random_syms]
     return _modulated, _constellation
 
-
 ```
-![[bpsk constellation.png]]
 
+![[bpsk constellation.png]]
 
 ### QPSK
 
@@ -54,9 +62,8 @@ def qpsk(_system):
         np.cos(np.pi / 4 * (1 + 2 * _random_symbols))
         + 1j * np.sin(np.pi / 4 * (1 + 2 * _random_symbols))
     )
+
 ```
-
-
 
 ## Channel
 ### AWGN Channel 
@@ -94,13 +101,11 @@ class Channel:
 
 ```
 
-
-
-
 ## Channel Coding
 
 ### Hamming Codes
 - [[Hamming Codes]]
+
 ```python
 # channel_coding.py
 
@@ -185,6 +190,7 @@ class HammingCode:
     def calculate_ber(self, original, decoded):
         """Calculate Bit Error Rate"""
         return np.sum(original != decoded) / len(original)
+
 ```
 
 ```python
@@ -251,6 +257,7 @@ def bpsk(_system):
     _modulated = _constellation[random_bits]
     
     return _modulated, _constellation
+
 ```
 
 ```python
@@ -387,4 +394,5 @@ def compare_modulation_schemes(system, EbN0dBs):
     recommendations = analyzer.generate_recommendation()
     
     return analyzer.metrics, recommendations, comparison_plot
+
 ```

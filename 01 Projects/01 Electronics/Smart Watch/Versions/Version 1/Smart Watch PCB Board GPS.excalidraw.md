@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: Smart_Watch_PCB_Board_GPSexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 ## Text Elements
@@ -77,6 +77,7 @@ D4 ^8kiu4buM
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQA2bQB2GjoghH0EDihmbgBtcDBQMBKIEm4IAEdKgEkAFWIAEVIAeQAOOsa27FIeAE5lAFV9AEYAWVSSyFhECqIOJH5SzG4A
 
@@ -385,5 +386,7 @@ M2RNQNuRjbUORWyLM6pyUeRk8EORwmE/CB0HeRGyOCoA+V+RlyNhajIUBRGQAiwZrz6BoKP0AkPloehQ
 GAbAAMIqKNwAmgGCASEjlRV+DNQmkEZAziFIA2UFwAAAAoqoH2BNaJaiLUdQAEBBsAAAJRGgBdzKAN3B3IY1ECgc1GhFec7+gb1G2o5EAOoxKhUod5EvI2kAtAOADtuTgDtpb5wLufMCuIa/Z+ITVHaolaLYANjYrRfHyTIu9LTTZ0SCouwCwXRpDMALUD4+OACqo9VH4+LVGnjWVGCgdtyMAOoAcokwgdDbcJhAYICNIe1DeeDeCeeaFGyEO2bv
 
 SGvh2QFtE1outHUrNBo2Ias4d8YADJUAKBAAA===
+
 ```
+
 %%

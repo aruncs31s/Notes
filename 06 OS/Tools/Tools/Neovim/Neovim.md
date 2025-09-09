@@ -1,9 +1,12 @@
 ---
 id: Neovim
 aliases: []
-tags: []
+tags:
+  - os
+  - tools
+  - neovim
+dg-publish: true
 ---
-
 # Neovim
 
 - [[#Tricks]]
@@ -40,6 +43,7 @@ tags: []
 
 ```bash
 cdo s/something/tosomething | update
+
 ```
 
 ## Keybindings
@@ -47,8 +51,10 @@ cdo s/something/tosomething | update
 1. Increment and Decrement an integer
 
 ```
+
 Control + A -> Increment
 Control + X -> Decrement
+
 ```
 
 2. To increment incrementing order
@@ -62,12 +68,14 @@ Control + X -> Decrement
 
 ```bash
 :mksession <session_name>.vim
+
 ```
 
 To open the saved session
 
 ```bash
 source <session_name>.vim
+
 ```
 
 #### Tabs
@@ -76,6 +84,7 @@ source <session_name>.vim
 
 ```bash
 Ctrl+w T
+
 ```
 
 #### Registers
@@ -84,6 +93,7 @@ Ctrl+w T
 
 ```vim
 "ay
+
 ```
 
 Registers: There are named registers like `a-z` and numbers `0-9`
@@ -99,13 +109,17 @@ It is easy to do things using this way
 1. Executing programs
 
 ```
+
 :!./program.sh
+
 ```
 
 simple, but it is boring to type everytime i want to do this , what if i can simplify this like
 
 ```
+
 :!!
+
 ```
 
 more convenient, but it requires for me to type the command first
@@ -113,18 +127,18 @@ So simplify things further
 
 ```vim
 vim.api.nvim_set_keymap("n", "<A-q>", ":!!<CR>", { noremap = true, silent = true }),
+
 ```
 
 2. Previous Commands
 
 ```
+
 q:
+
 ```
 
 this will bring up the previously executed commands
-
-
-
 
 ### Shell Commands
 In one of my projects , when i was running a python script the output of a `print()` was not showing

@@ -1,12 +1,12 @@
 ---
+id: Embedded_Systems_Backend_Using_GO
+aliases: []
 tags:
-  - "#backend"
-  - "#go"
-  - "#website"
-  - "#project"
+  - projects
+  - web_based
+  - embedded_systems_website_backend_using_go
 dg-publish: true
 ---
-
 # Embedded Systems Backend Using Go
 
 ## Project Structure
@@ -18,6 +18,7 @@ The project follows a clean architecture pattern with separated concerns:
 - **routes/**: API route definitions
 
 ```
+
 ├── es_website_gcek_backend
 ├── go.mod
 ├── go.sum
@@ -33,14 +34,15 @@ The project follows a clean architecture pattern with separated concerns:
     └── test.go
 
 4 directories, 11 files
+
 ```
 
 ## 🛢Database
 
-
 ### Repositories 
 
 #### Without CTX (context)
+
 ```go
 package repositories
 
@@ -93,10 +95,10 @@ func (ur *userRepository) GetAllUsers() ([]*model.User, error) {
 	}
 	return users, nil
 }
+
 ```
+
 ^repofullcode
-
-
 
 ##### Flow 
 1. Defines the `UserRepository` interface with methods for user operations.
@@ -123,6 +125,7 @@ type UserRepository interface {
 	GetUserById(id uint) (*model.User, error)
 	GetAllUsers() ([]*model.User, error)
 }
+
 ```
 
 >[!TIP]- **Interface Implementation in Go**
@@ -152,6 +155,7 @@ type UserRepository interface {
 >     baseURL    string
 > }
 > ```
+
 >
 > **All of these are `UserRepository`** as long as they implement the three methods! This is the power of Go's interface system - you don't need to explicitly declare "implements UserRepository" like in other languages.
 
@@ -164,6 +168,7 @@ type UserRepository interface {
 >     // methods...
 > }
 > ```
+
 >
 > **Go way:**
 > ```go
@@ -177,6 +182,7 @@ type UserRepository interface {
 > func (ur *userRepository) GetUserById(id uint) (*model.User, error) { ... }
 > func (ur *userRepository) GetAllUsers() ([]*model.User, error) { ... }
 > ```
+
 >
 > **The compiler automatically recognizes** that `userRepository` satisfies the `UserRepository` interface because it has all the required methods with correct signatures.
 
@@ -197,6 +203,7 @@ type UserRepository interface {
 type userRepository struct {
     db *gorm.DB
 }
+
 ```
 
 So the idea is that `UserRepository` is the contract and we can have multiple implementations of it:
@@ -222,7 +229,9 @@ type apiUserRepository struct {
     httpClient *http.Client
     baseURL    string
 }
+
 ```
+
 ^diffimplementations
 
 >[!ABSTRACT]- **How to use them individually?**
@@ -253,10 +262,12 @@ func NewUserRepository(db *gorm.DB) UserRepository {
 func NewRedisUserRepository(client *redis.Client) UserRepository {
   return &redisUserRepository{client: client}
 }
+
 ```
 
 if i want i can have an another one by using ![[#^diffimplementations]]
 Like the following
+
 ```go
 func NewUserRepositoryTwo(db *gorm.DB) UserRepository {
 	return &redisUserRepository{db: db}
@@ -272,6 +283,7 @@ abcd = NewUserRepository(db)
 abcd.CreateUser(&model.User{Name: "John Doe", Email: "john@example.com"})
 newDb := NewRedisUserRepository(client)
 client.CreateUser(&model.User{Name: "Jane Doe", Email: "
+
 ```
 
 #### With ctx(Context)
@@ -325,6 +337,7 @@ func (ur *userRepository) GetAllUsers(ctx context.Context) ([]*model.User, error
 	}
 	return users, nil
 }
+
 ```
 
 ##### ❌ Wrong Implementation
@@ -339,6 +352,7 @@ type userRepository struct {
 func NewUserRepository(db *gorm.DB, ctx context.Context) UserRepository {
 	return &userRepository{db: db, ctx: ctx}  // ❌ WRONG
 }
+
 ```
 
 ##### Why storing context is wrong:

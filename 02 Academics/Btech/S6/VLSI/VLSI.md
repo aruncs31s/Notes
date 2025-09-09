@@ -1,6 +1,15 @@
+---
+id: VLSI
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - vlsi
+dg-publish: true
+---
 # Very Large Scale Integrated Circuits
 Created : 2024-04-17 20:21
-
 
 ## Contents
 

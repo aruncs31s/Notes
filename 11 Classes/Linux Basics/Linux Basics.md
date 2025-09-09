@@ -1,11 +1,20 @@
+---
+id: Linux_Basics
+aliases: []
+tags:
+  - classes
+  - linux_basics
+dg-publish: true
+---
 ## Linux Basics
 - `mkdir` , `ls` , `cd` , `nano` , `mv` 
 
 ## Linux Commands
+
 ```bash
 command <required> [optional]
-```
 
+```
 
 Arguments in angle brackets <> are mandatory and must be provided when running the command.
 Arguments in square brackets [] are optional and can be included if needed.
@@ -13,5 +22,6 @@ Arguments in square brackets [] are optional and can be included if needed.
 
 ```bash
 mkdir folder_name 
+
 ```
 

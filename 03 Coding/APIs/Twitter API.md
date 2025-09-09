@@ -1,3 +1,11 @@
+---
+id: Twitter_API
+aliases: []
+tags:
+  - coding
+  - apis
+dg-publish: true
+---
 ## Twitter API
 
 ### Developer Apps
@@ -8,7 +16,6 @@ Accessing the Twitter API and Twitter Ads API requires a set of authentication c
 
 >[!NOTE] API Key and Secret 
 > API Key and Secret(==Consumer Key and secret==) :  the most fundamental credentials required to access the Twitter API , These credentials act as the u==sername and password== for your Twitter App, and are used by the Twitter API to understand which App requests are coming from.These credentials can be used by [authentication endpoints](https://developer.twitter.com/en/docs/authentication/api-reference) to generate additional credentials, such as [user Access Tokens and Secrets](https://developer.twitter.com/en/docs/authentication/oauth-1-0a/obtaining-user-access-tokens), and [Bearer Tokens](https://developer.twitter.com/en/docs/authentication/oauth-2-0/bearer-tokens). You also need to use these credentials along with Access Tokens and other authorization parameters to [authorize requests](https://developer.twitter.com/en/docs/authentication/oauth-1-0a/authorizing-a-request) that require OAuth 1.0a User Context authentication
-
 
 > [!NOTE] Access Token and Secret
 > **[Access Token and Secret](https://developer.twitter.com/en/docs/authentication/oauth-1-0a/obtaining-user-access-tokens):** In general, ==Access Tokens represent the user that you are making the request on behalf of.== The ones that you can generate via the developer portal represent the user that owns the App. You will use these to authenticate requests that require [OAuth 1.0a User Context](https://developer.twitter.com/content/developer-twitter/en/docs/authentication/oauth-1-0a). If you would like to make requests on behalf of another user, you will need to use the 3-legged OAuth flow for them to authorize you.
@@ -28,19 +35,16 @@ import tweepy
 from cryptocmd import CmcScraper
 from requests_oauthlib import OAuth1
 
-
 def halving_time():
     TARGET_BLOCK = 840000
     current_block = get_current_btc_block()
     if TARGET_BLOCK == current_block:
         post_twitter()
 
-
 def get_current_btc_block():
     watcher_guru_url = "https://api.watcher.guru/bitcoinhalving/predictions"
     current_status = requests.get(watcher_guru_url).json()
     return current_status["current"]["block_number"]
-
 
 def post_twitter():
     # FIXME: remove the API Keys from This method
@@ -149,9 +153,10 @@ def post_twitter():
 
     upload_image()
 
-
 post_twitter()
+
 ```
+
 ### How to acquire an API Key and Secret
 
 1. [Sign up for a Twitter developer account](https://developer.twitter.com/en/apply-for-access)

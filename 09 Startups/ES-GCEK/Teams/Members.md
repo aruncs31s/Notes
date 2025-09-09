@@ -1,3 +1,12 @@
+---
+id: Members
+aliases: []
+tags:
+  - startups
+  - es-gcek
+  - teams
+dg-publish: true
+---
 # Members
 
 1. [Abhaya Govind](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhayaGovind)  [Github](https://github.com/AbhayaGovind)

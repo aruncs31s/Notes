@@ -1,9 +1,12 @@
 ---
+id: Github_Scraper
+aliases: []
 tags:
-  - project
+  - projects
   - software
+  - gitub_scraper
+dg-publish: true
 ---
-
 # Github Scraper
 
 > [!check]+ **Things Done**
@@ -12,6 +15,7 @@ tags:
 There is now huge confusion in whether i should scrape the `README.md` file or just create a `ci/cd` (`github automation`) pipeline so that , i dont have to do the polling mechanism instead i can just create some form of tocken mechanism and let the `github automation` update each project when an update is pushed.
 
 ### Current mechanism 
+
 ```mermaid
 sequenceDiagram
 	participant User
@@ -29,15 +33,10 @@ sequenceDiagram
 	FrontEnd Server-->> Scraper: SEND INITIATE 
 	Scraper-->>FrontEnd Server: send the updated data
 	FrontEnd Server-->>FrontEnd Server: Update the site. 
+
 ```
-
-
 
 ![[Pasted image 20250710015226.png]]
 
-
-
-
 ## Scraping Github 
-
 

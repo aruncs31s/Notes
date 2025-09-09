@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: single_servo_body_fixedexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 
@@ -22,6 +22,7 @@ Direction of Rotation ^d14L5iXY
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBGAAYEmjoghH0EDihmbgBtcDBQMBKIEm4IAEdNQgQALQBOXAA2fABZADNJAGFMADllSoAhAFYACTHUkshYRArcUlI2Kn5S
 
@@ -88,5 +89,7 @@ Z9A8nA0QYsBNASCMgvArTmdzz5UIhBB6CAIoPEGSCFkdbWcj5UgB6DlBkg6QQ9wnKwxdBYg8wRkEsEBh
 72/795SiN8WwpVl8FGA2ABgRgYegIAQo+YTXYobEM8HswHcjQzUM0LVAkABsAvXwbsOIC2gEAG2KIZwKOFtA2AfmMobgE0DBBZ+dnfyB2TwRTwhgooXyKQGUBKgAAFKJmoDi16MgIgEckBGAABKZ0MCmUA1gFg61b4bgD+HT4ARPOZEUiJ9T7wIRiFVYf0hNyBD0BBYRUhAH+7AoGw/kGUlEy7iID7hYUO7Mry9LcBaR3YRASwN/RED4w/yQDAyK
 
 IFYi7AC8NAcwGtCIC4AVwm4VSIeGgdOByoY5IwDaSzD8A8wgJCDHSC0VpYl6IQHyAMD1D0MdXTVo8PNBLApByonAch2IGiQrIKomUXKO0iUDUOdAehOEC5jJIBwQAA==
+
 ```
+
 %%

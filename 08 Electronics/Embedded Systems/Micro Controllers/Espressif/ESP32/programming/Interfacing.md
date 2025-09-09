@@ -1,11 +1,15 @@
 ---
 id: Interfacing
-aliases: 
+aliases: []
 tags:
-  - "#esp32"
-  - "#code"
+  - electronics
+  - embedded_systems
+  - micro_controllers
+  - espressif
+  - esp32
+  - programming
+dg-publish: true
 ---
-
 # Interfacing
 
 - [[#Sensors]]
@@ -73,6 +77,7 @@ void loop() {
   //   delay(100);
   // }
 }
+
 ```
 
 ### Servo Motor Interfacing
@@ -136,6 +141,7 @@ void loop() {
     delay(15);
   }
 }
+
 ```
 
 #### Ultrasonic Sensor Interfacing
@@ -149,7 +155,6 @@ void loop() {
 [Source](https://randomnerdtutorials.com/esp32-hc-sr04-ultrasonic-arduino/)
 
 ```c
-
 
 const int trigPin = 5;
 const int echoPin = 18;
@@ -194,6 +199,7 @@ void loop() {
 
   delay(1000);
 }
+
 ```
 
 ---
@@ -295,4 +301,5 @@ void loop() {
   updateSerial();
   delay(1000);
 }
+
 ```

@@ -1,12 +1,18 @@
 ---
-cssclasses:
-  - wide-page
+id: Current_Sensor
+aliases: []
+tags:
+  - electronics
+  - embedded_systems
+  - modules
+  - sensors
+cssclasses: 
 Created: 3202-05-09
+dg-publish: true
 ---
 # Current Sensor
 
 ![](https://www.circuitschools.com/wp-content/uploads/2022/03/ACS712-current-sensor-with-ESP32-circuit-diagram-with-voltage-divider.webp)
-
 
 #### Sample Code
 
@@ -75,8 +81,8 @@ float getVPP()
 	  5
 	return result;
  }
-```
 
+```
 
 ## References
 1. https://www.circuitschools.com/measure-ac-current-by-interfacing-acs712-sensor-with-esp32/

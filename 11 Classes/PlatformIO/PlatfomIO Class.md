@@ -1,7 +1,11 @@
 ---
+id: PlatfomIO_Class
+aliases: []
+tags:
+  - classes
+  - platformio
 dg-publish: true
 ---
-
 ## Installing Platform IO
 [Source](https://docs.platformio.org/en/latest/integration/ide/pioide.html)
 
@@ -15,7 +19,9 @@ dg-publish: true
 - Click the icon that look like alien in the activity bar 
 - **New Project** -> Select Board (Esp32 dev module) --> select default location (Documents/PlatformIO/Projects) -> Finish
 This will create a project dirctory with the following contents
+
 ```
+
 Test Project
 ├── include
 │   └── README
@@ -26,11 +32,13 @@ Test Project
 │   └── main.cpp
 └── test
     └── README
+
 ```
 
 - `src` -> for storing source files (source code) 
 - `include` -> header file shared by all source files , 
 the headers stored in `includes` can be used in the following manner 
+
 ```c
 
 #include "header.h"
@@ -39,13 +47,18 @@ int main (void)
 {
  ...
 }
+
 ```
+
 - `lib/` for project specific libraries 
+
 ```
+
 lib/
 	- mylib/
 		- mylib.c
 		- mylib.h 
+
 ```
 
 ```c
@@ -53,10 +66,8 @@ lib/
 
 ```
 
-
 ![[Pasted image 20250607214248.png]]
 ![[Pasted image 20250607214310.png]]
-
 
 ![[Pasted image 20250607214510.png]]
 
@@ -88,34 +99,42 @@ lib/
 }
 
 ```
+
 - Change the appropriate  contens like `name ` to your own name 
 
 ```
+
 folder_name/
 	- src/
 		- .cpp
 		- .h
 	- examples/ 
 library.json
+
 ```
 
 ## Account Creation
+
 ```bash
 pio account register -u username -p asdasdsa1@ --firstname Arun --lastname CS
+
 ```
 
 #### Platform io lib structure 
+
 ```
+
 robo-movements
 ├── library.json
 ├── LICENSE
 └── src
     ├── robo-movements.cpp
     └── robo-movements.h
-```
-
 
 ```
+
+```
+
 project
 ├── include
 │   ├── configs.h
@@ -132,8 +151,8 @@ project
 │   └── main.cpp
 └── test
     └── README
-```
 
+```
 
 #### Publishing New Lib 
 

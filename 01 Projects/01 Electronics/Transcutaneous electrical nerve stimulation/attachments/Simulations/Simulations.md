@@ -1,3 +1,14 @@
+---
+id: Simulations
+aliases: []
+tags:
+  - projects
+  - electronics
+  - transcutaneous_electrical_nerve_stimulation
+  - attachments
+  - simulations
+dg-publish: true
+---
 ![[Pasted image 20241124170831.png]]
 - It becomes stable after $75ms$ .
 - but requires **4.9V**
@@ -11,6 +22,4 @@
 | C                 | $0.01\micro F$ |
 | R2                | 5.944k         |
 | $C_{ac_{couple}}$ | $1\micro F$    |
-
-
 

@@ -1,22 +1,27 @@
 ---
 id: Class Notes
 aliases: []
-tags: []
-Date:
-  Created: "2024-12-17"
+tags:
+  - academics
+  - btech
+  - s8
+  - ect40
+Date: 
+Created: "2024-12-17"
 dg-publish: true
 ---
-
 # Class Notes
 
 ```tasks
 not done
 path includes ECT402/Class Notes
+
 ```
 
 ```tasks
 not done
 path includes ECT402
+
 ```
 
 ### 2024-12-17
@@ -53,6 +58,7 @@ D--> EE[N pt FFT]
 
 E  --> K[MIMO Detection]
 EE  --> LK[MIMO Detection]
+
 ```
 
 - [ ] Complete
@@ -98,6 +104,7 @@ E[Add CP]
 AA --> A --> B --> C --> D --> E
 AA --> A --> B --> C --> D --> E
 AA --> A --> B --> C --> D --> E
+
 ```
 
 Hypothetical
@@ -153,6 +160,7 @@ eg: indor wifi signal cant penetrate through walls
 ```mermaid
 graph LR
 Tx -- path --> Rx
+
 ```
 
 - Multiple antennas are used to receive **Rx**
@@ -251,6 +259,7 @@ used to connect to the backbone
 ```mermaid
 graph LR
 node_1 --> node_2 & node_3 --> node_4 --> node_5 & node_6
+
 ```
 
 - [ ] Multihub topology with ?
@@ -327,6 +336,7 @@ F[56 bit key] --> G[Split]
 G --> H[Shift]
 H --> I[Compression]
 end
+
 ```
 
 ##### Avelaanche Effect
@@ -343,4 +353,5 @@ end
 subgraph three
 c1-->c2
 end
+
 ```

@@ -1,10 +1,14 @@
 ---
 id: EMT Module 1
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - s6
+  - electromagnetics
 Created: "22-08-2024"
+dg-publish: true
 ---
-
 # Module 1
 
 > ## Syllabus
@@ -89,6 +93,7 @@ _Where $\Delta V$ - Small differential Volume_
 > If the ==Divergence== of a vector field is non zero then that region is said to contain ==source== or ==sync==
 
 ```
+
 source_or_sync = (divergence > 0) ? Source : Sync
 
 ```
@@ -96,6 +101,7 @@ source_or_sync = (divergence > 0) ? Source : Sync
 or
 
 ```
+
  if (divergence = positive){
 	 return source ;
  }
@@ -557,6 +563,7 @@ $$
 
 ```tasks
 due 2024-05-20
+
 ```
 
 ## References

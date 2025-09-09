@@ -1,9 +1,14 @@
 ---
-aliases: 
+id: 05_Human_Interaction
+aliases: []
+tags:
+  - projects
+  - robotics
+  - ai_robot
 Date: "17-05-2025"
+dg-publish: true
 ---
 # 05 HUman Interaction
-
 
 ## 
 [Mac File Link](file:///Users/aruncs/Documents/AmritaOjectRecgRobot.pdf) [Paper Link](https://www.researchgate.net/publication/251892709_Object_recognition_and_obstacle_avoidance_robot) 
@@ -21,8 +26,11 @@ docker run -it -p 10300:10300 -v /home/aruncs/docker/data:/data rhasspy/wyoming-
     --model tiny-int8 --language en
 
 ```
+
 ```
+
 http://homeassistant.local:8123/
+
 ```
 
 - [[Frigate]]
@@ -35,8 +43,8 @@ http://homeassistant.local:8123/
  voices = engine.getProperty('voices')
  if voices:
      engine.setProperty('voice', voices[0].id)
-```
 
+```
 
 #### Open Browser 
 
@@ -51,7 +59,9 @@ def open_youtube():
     webbrowser.open("https://www.youtube.com")
 
 ```
+
 #### Play Music
+
 ```python
 
 def play_music():
@@ -91,6 +101,7 @@ def play_music():
 ```
 
 #### Removed
+
 ```python
     # elif "time" in query:
     #     tell_time()
@@ -117,4 +128,5 @@ def play_music():
     # elif any(word in query for word in ["exit", "quit", "stop", "goodbye", "bye"]):
     #     speak("Goodbye! Have a great day.")
     #     exit()
+
 ```

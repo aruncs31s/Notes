@@ -1,10 +1,13 @@
 ---
-dg-publish: true
 id: Smart Watch Versions
 aliases: []
-tags: []
-Date:
-  Created: "2024-12-20"
+tags:
+  - projects
+  - electronics
+  - smart_watch
+dg-publish: true
+Date: 
+Created: "2024-12-20"
 ---
 # Smart Watch Versions
 
@@ -21,8 +24,11 @@ red black grey oreng (orenge = +vcc black gnd) Aruncs31s@twilio
 The working prototype will send messages (current location) to specified number (parents,police and any another if any). 
 1. The system also detects "HELP" command , ie. if someone says "HELP" from near the prototype the the system will triger the **SOS** message 
 **Structure of SOS Message**
+
 ```
+
 https://www.google.com/maps?q=Lon,Lat
+
 ```
 
 ### BILL Of Material 
@@ -40,7 +46,6 @@ https://www.google.com/maps?q=Lon,Lat
 | Battery & other          | 200    |
 | Total                    |        |
 
-
 ## PINS
 
 | D5  | Tx of GPS |
@@ -50,12 +55,10 @@ https://www.google.com/maps?q=Lon,Lat
 
 ## Version 1
 
-
 > [!multi-column]
 >
 > > [!blank]
 > > ![[Smart Watch PCB Board GPS.excalidraw]]
-
 
 ![](https://github.com/aruncs31s/Smart-Watch-for-Ladies-Protection-Schematics/raw/main/23-01-2025.png?raw=true)
 
@@ -127,6 +130,7 @@ void loop() {
   updateSerial();
   delay(1000);
 }
+
 ```
 
 #### Neo 6m GPS
@@ -197,6 +201,7 @@ void loop() {
     }
   }
 }
+
 ```
 
 ```c
@@ -204,6 +209,7 @@ void loop() {
       Serial.println(gps.location.lat(), 6);
       Serial.print("LONG: ");
       Serial.println(gps.location.lng(), 6);
+
 ```
 
 ```c
@@ -244,13 +250,17 @@ void loop() {
 	}
   }
 }
+
 ```
 
 ### Speech Processing
 Going to use raspberry pi for now 
+
 ```bash 
 nmap  10.42.0.1-255
+
 ```
+
 - ip address of pi `10.42.0.122`
 - username `multimediaextension` <-- Shrink 
 - passwd `2xsp` <-- expand 
@@ -290,10 +300,11 @@ help took $S_{stop} - S_{start} = 152$ samples
 sudo apt-get install libasound-dev
 # Fedora
 sudo dnf install portaudio-devel
+
 ```
 
-
 ### D1 Button Test 
+
 ```c
 #include <Arduino.h>
 void setup() {
@@ -304,6 +315,7 @@ void loop() {
   Serial.println(digitalRead(D1));
   delay(500);
 }
+
 ```
 
 ```cpp
@@ -318,8 +330,8 @@ void setup(){
 void loop(){
 	delay(1000);
 }
-```
 
+```
 
 #### Help Test
 
@@ -335,7 +347,9 @@ void setup(){
 void loop(){
 	delay(1000);
 }
+
 ```
+
 ## Sajesh Kumar Sir Suggestions
 
 ## Version 2
@@ -452,10 +466,8 @@ void loop() {
 
     delay(20);
 }
+
 ```
-
-
-
 
 ```cpp
   
@@ -559,4 +571,5 @@ updateSerial();
 delay(1000);
 
 }
+
 ```

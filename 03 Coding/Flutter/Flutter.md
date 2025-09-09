@@ -1,9 +1,12 @@
 ---
-cssclasses:
-  - wide-page
+id: Flutter
+aliases: []
 tags:
-  - tasks
+  - coding
+  - flutter
+cssclasses: 
 due: 2025-09-01
+dg-publish: true
 ---
 # Flutter
 
@@ -15,6 +18,4 @@ due: 2025-09-01
 - Test your application
 - Debug and Optimize
 - Build and Deploy
-
-
 

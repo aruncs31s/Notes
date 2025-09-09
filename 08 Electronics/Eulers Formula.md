@@ -1,9 +1,10 @@
 ---
 id: Eulers Formula
 aliases: []
-tags: []
+tags:
+  - electronics
+dg-publish: true
 ---
-
 ### Eulers Formula
 
 $$

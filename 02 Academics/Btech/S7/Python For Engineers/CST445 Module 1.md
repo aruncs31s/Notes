@@ -1,6 +1,13 @@
 ---
-aliases: 
+id: CST445_Module_1
+aliases: []
+tags:
+  - academics
+  - btech
+  - s7
+  - python_for_engineers
 Date: "30-05-2025"
+dg-publish: true
 ---
 # CST445 Module 1
 ## Syllabus
@@ -40,12 +47,12 @@ Date: "30-05-2025"
 - [ ] Testing the control statements.
 - [ ] Lazy evaluation.
 
-
 ## Getting Started With Python
 - **Python** is high-level , general-purpose programming language ? nop it is a scripting language
 **Downloading Windows**
 - [Link](https://www.python.org/downloads/)
 **Linux** (no need comes pre installed)
+
 ```bash
 # debian
 sudo apt install python
@@ -53,11 +60,11 @@ sudo apt install python
 # arch
 yay -S python 
 sudo pacman -S python
+
 ```
 
 **Running Code in interactive shell**
 just type `python` then start typing , *variables and function definitions all those will be in memory and it will stay in memory as long as the interpreter session running*
-
 
 #### Input , output , processing
 
@@ -69,19 +76,25 @@ a = input("Enter a number")
 
 # output
 print(a)
+
 ```
 
 - One thing to note here that the default type will be a string from the `input()` and you may need to type cast it to work as expected for example 
+
 ```python
 a = input("Enter a number")
 if a==5:
 	print("HI")
+
 ```
+
 - this program will not work as expected (run and find out) (happens because `int(5)` is not same as `str(5)`)
+
 ```python
 a = int(input("Enter a number"))
 if a==5:
 	print("HI")
+
 ```
 
 #### Editing
@@ -99,6 +112,7 @@ if a==5:
 1. Arithmetic
 
 #### Arithmetic Operators
+
 ```python
 a , b  = 1 , 2 
 a + b  # 3 "#" is the single line comment
@@ -108,6 +122,7 @@ a / b  # .5
 a % b  #  1 
 b ** 2 # 4
 a // b # 0
+
 ```
 
 #### Comparison Operator
@@ -132,7 +147,9 @@ a >= b  # False
 
 # Less than or equal to
 a <= b  # True
+
 ```
+
 #### Logical Operators
 
 ```python
@@ -147,9 +164,11 @@ x or y   # True
 # NOT - Inverts the Boolean value 0 -> 1 , 1 -> 0
 not x    # False
 not y    # True
+
 ```
 
 #### Membership Operators
+
 ```python
 lst = [1, 2, 3, 4]
 name = "Arun"
@@ -162,9 +181,11 @@ name = "Arun"
 # NOT IN - True if value is not found in sequence
 5 not in lst   # True
 "y" not in name # True
+
 ```
 
 #### Identity Operators
+
 ```python
 m = [1, 2]
 n = [1, 2]
@@ -177,11 +198,13 @@ m is n    # False (same values but different objects)
 
 # IS NOT - True if variables point to different objects
 m is not n  # True
+
 ```
 
 ```python
 print(m is n) # False , different objects even if values are sae
 print(m == n) # True same value even if different objects
+
 ``` 
 
 #### Bitwise Operators
@@ -212,11 +235,13 @@ a << 1  # 2
 
 #Right Shift (>>)
 a >> 1  # 0
+
 ```
 
 - [ ] explain biwise `not` 🏁 delete 
 
 #### Assignment Operators
+
 ```python
 x = 10
 
@@ -227,13 +252,16 @@ x /= 4  # 5.5
 x %= 3  #  2.5
 x **= 2 #   6.25
 x //= 2 #  3.0
+
 ```
 
 ### Type Casting
+
 ```python
 int(3.1) # 3 
 float(3) # 3.0
 str(10) # '10'
+
 ```
 
 ```python
@@ -243,10 +271,13 @@ a = str(a)
 type(a)
 a = float(a)
 type(a)
+
 ```
+
 ![[Pasted image 20250530165358.png]]
 
 ### Comments
+
 ```python
 # this is the single line comment
 '''
@@ -257,11 +288,13 @@ Comment
 This is also a multiline 
 Comment
 """
+
 ```
 
 ![[Pasted image 20250530165727.png]]
 
 ### Formatting The output
+
 ```python
 # Normal 
 for i in range(10):
@@ -273,19 +306,21 @@ for i in range(10):
 for i in range(10):
 # left justify
 	print("%-6s" % i)
-```
 
+```
 
 ```python
 for i in range(10):
 # right justify
 	print(f"%{i}s" % i)
+
 ```
 
 ```python
 for i in range(10):
 # right justify
 	print(f"%{i}s%{10-2*i}s" % (i , i))
+
 ```
 
 ```op
@@ -299,18 +334,21 @@ for i in range(10):
       77   
        88     
         99 
+
 ```
+
 ```python
 for i in range(10):
 	print(i , i**4 * 10)
 	
+
 ```
 
 ```python
 for i in range(10):
 	print("%6s%12s" %( i , i**4 * 10))
-```
 
+```
 
 ### How Python Works
 - Interpreter reads the source code and , if it encounters an gramatical(syntax) error it stops the exceution and throws and error.
@@ -327,18 +365,23 @@ Most of the  errors(syntax errors) will occur due to **intendation**
 ```python
 a = 10 
 	b = 20 
+
 ```
+
 This will cause a `unexpected indent` error  but the following will not
+
 ```python
 if 5==int(5):
 	print(5) # intend with 4 spaces
 	
+
 ```
 
 ```python
 if 5==int(5):
   print(5) # intend with 2 spaces
 	
+
 ```
 
 **Rules**
@@ -355,11 +398,9 @@ if 5==int(5):
 
 ![[02 Academics/Btech/S7/Python For Engineers/Class Notes#^8ae1a2|Class Notes]]
 
-
 #example 
 
 ![[02 Academics/Btech/S7/Python For Engineers/Class Notes#^06cc71|Class Notes]]
-
 
 ## Control Statements
 1. Selection Strucure `if else`

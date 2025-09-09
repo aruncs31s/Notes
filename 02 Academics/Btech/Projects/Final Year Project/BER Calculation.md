@@ -1,3 +1,13 @@
+---
+id: BER_Calculation
+aliases: []
+tags:
+  - academics
+  - btech
+  - projects
+  - final_year_project
+dg-publish: true
+---
 <<<<<<< Updated upstream:01 Academics/Btech/Projects/Final Year Project/BER Calculation.md
 ---
 aliases: 
@@ -8,9 +18,7 @@ The big question that come to mind when dealing with ber calculation in gnu radi
 
 First we have to compare 2 streams inorder to calculate the [[BER vs SNR]] , But we can use the feature of tagged stream inorder to calculate the error . 
 
-
 Frequency Xlating FIR Filter
-
 
 ## Try using Correlation
 - [[Correlation Estimator]]
@@ -23,7 +31,6 @@ $$
 rx_{snl} = tx_{snl} + noise
 $$
 where $tx_{snl} = {1 , -1}$ 
-
 
 > [!NOTE] **AWGN**
 > **Additive white Gaussian noise** (**AWGN**) is a basic noise model used in [information theory](https://en.wikipedia.org/wiki/Information_theory "Information theory") to mimic the effect of many random processes that occur in nature. The modifiers denote specific characteristics
@@ -49,9 +56,7 @@ Date: "16-03-25"
 
 First we have to compare 2 streams inorder to calculate the [[BER vs SNR]] , But we can use the feature of tagged stream inorder to calculate the error . 
 
-
 Frequency Xlating FIR Filter
-
 
 ## Try using Correlation
 - [[Correlation Estimator]]
@@ -64,7 +69,6 @@ $$
 rx_{snl} = tx_{snl} + noise
 $$
 where $tx_{snl} = {1 , -1}$ 
-
 
 > [!NOTE] **AWGN**
 > **Additive white Gaussian noise** (**AWGN**) is a basic noise model used in [information theory](https://en.wikipedia.org/wiki/Information_theory "Information theory") to mimic the effect of many random processes that occur in nature. The modifiers denote specific characteristics

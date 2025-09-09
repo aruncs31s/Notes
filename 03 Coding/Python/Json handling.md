@@ -1,12 +1,13 @@
 ---
-aliases: 
-Date: 16-06-2025
+id: Json_handling
+aliases: []
 tags:
+  - coding
   - python
-  - json
+Date: 16-06-2025
+dg-publish: true
 ---
 # Json Processing
-
 
 ```python
 data = [
@@ -53,17 +54,19 @@ data = [
         }
     },
 ]
-```
 
+```
 
 ```python
 num_data_entry = len(data)
 print(f"Got: {num_data_entry} data entries")
+
 ```
 
 ```python
 servo_values = data[0]["servo_values"]
 print(servo_values)
+
 ```
 
 ```python

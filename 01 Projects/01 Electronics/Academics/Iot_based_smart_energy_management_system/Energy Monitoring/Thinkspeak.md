@@ -1,9 +1,14 @@
 ---
 id: Thinkspeak
 aliases: []
-tags: []
+tags:
+  - projects
+  - electronics
+  - academics
+  - iot_based_smart_energy_management_system
+  - energy_monitoring
+dg-publish: true
 ---
-
 # Thinkspeak
 
 Created : 2024-05-04 02:13
@@ -20,6 +25,7 @@ Created : 2024-05-04 02:13
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
 #include <ThingSpeak.h>
+
 ```
 
 2. Connect to a wifi
@@ -43,7 +49,6 @@ void setup() {
   ThingSpeak.begin(client);
 }
 
-
 ```
 
 3. Send data to thinkspeak
@@ -64,6 +69,7 @@ void loop() {
 
   delay(10000);
 }
+
 ```
 
 ## References

@@ -1,4 +1,12 @@
-
+---
+id: Angle_table
+aliases: []
+tags:
+  - projects
+  - robotics
+  - ai_robot
+dg-publish: true
+---
 | Servo | Unit       |     | $\theta_{0}$ | $\text{when } \theta = 0$  | $\text{when } \theta = \pi$ |
 | ----- | ---------- | --- | ------------ | -------------------------- | --------------------------- |
 | LA1   | Left arm   | 0   | 25           | BACKWARD(PALM FACING DOWN) | FORWARD(PALM FACING UP)     |

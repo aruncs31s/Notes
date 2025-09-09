@@ -1,9 +1,11 @@
 ---
 id: matlibplot
 aliases: []
-tags: []
+tags:
+  - coding
+  - python
+dg-publish: true
 ---
-
 # Matlibplot
 
 - [[#Basics]]
@@ -16,6 +18,7 @@ import matplotlib.pyplot as plt
 
 plt.plot([1, 2, 3, 2,4,3,4,5,1])
 plt.show()
+
 ```
 
 #### Ploting a Sine wave
@@ -33,8 +36,8 @@ plt.plot(x, np.cos(x), color="green")
 plt.plot(x, np.sin((3.14/2 )- x), color="red")
 #plt.plot(x, np.tan(x), color="blue")
 
-
 plt.show()
+
 ```
 
 ```python
@@ -90,4 +93,5 @@ nx.draw_networkx_nodes(G, pos, nodelist=critical_path, node_color='red')
 plt.title('CPM Network Diagram')
 plt.axis('off')
 plt.show()
+
 ```

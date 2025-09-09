@@ -1,15 +1,15 @@
 ---
-aliases:
-  - smart city home page
-tech: flask
-cssclasses:
-  - wide-page
+id: Home_Page
+aliases: []
 tags:
+  - projects
+  - web_based
+  - kannur_solar_battery_monitor_website
   - website
-  - smartcity
+tech: flask
+cssclasses: 
 dg-publish: true
 ---
-
 # Home Page
 >[!blank|right-small]+ Pages 
 >There are mainly 4 pages , `Home` , `devices`,`info`, and `about`
@@ -19,7 +19,6 @@ dg-publish: true
 >Others
 >- [[database]]
 
-
 - [x] The home page should display all the devices ✅ 2025-05-01
 - [ ] If possible the battery voltage of each device should be visible in the home page.
 > I think i can achive that by creating a script that updates the battery voltage by simply updating a field in the `device.csv` ,
@@ -28,12 +27,15 @@ dg-publish: true
 ![[Screenshot 2025-04-19 at 2.39.32 AM.png]]
 ## V0.0.1 Beta
 Current status
+
 ```
+
 # device.csv
 IP,Assigned_Place,Status,Date of Creation,Main_Node,Nearby_Nodes
-```
-This device.csv if first created by the user in which the IP of the device , etc. are typed. 
 
+```
+
+This device.csv if first created by the user in which the IP of the device , etc. are typed. 
 
 ```python
 csv_file = "/Users/aruncs/Desktop/Projects/Kannur-Solar-Battery-Monitoring-System-Website/devices.csv"
@@ -49,10 +51,12 @@ with open(csv_file,newline="") as csvFile:
 	                "ip": row["IP"],
 	            }
 	        )
+
 ```
 
 ```python
 print(devices)
+
 ```
 
 But the `status` attribute here only indicates that if the device is placed on the field or not 
@@ -71,17 +75,21 @@ for i in active_devices:
 
 ```python
 sorted_device = active_devices + inactive_devices
+
 ```
+
 ## Routing
+
 ```python
 @app.route("/")
 def home():
 
 return render_template("home.html",devices=sorted_device)
+
 ```
 
-
     .querySelector("button button:nth-child(2)")
+
 ```js
 let sortAscending = true;
 document.addEventListener("DOMContentLoaded", function () {
@@ -92,4 +100,5 @@ document.addEventListener("DOMContentLoaded", function () {
     .querySelector(".sbutton")  // Changed from .sort-button to .sbutton to match HTML
     .addEventListener("click", sortDevices);
 });
+
 ```

@@ -1,15 +1,17 @@
 ---
 id: Signal Power Monitoring
-aliases:
-  - signal power
+aliases: []
 tags:
-  - project,communication,antenna
+  - projects
+  - electronics
+  - phd
+  - powerbeamm5_400_power_monitoring
 Completed: false
 Starting Date: "2024-07-01"
 Status: false
 Target Date: "2024-10-28"
+dg-publish: true
 ---
-
 ### Ledger
 
 | Date       | Item                  | Price |

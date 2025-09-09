@@ -1,9 +1,12 @@
 ---
 id: Secure Communication
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - s8
+dg-publish: true
 ---
-
 # Secure Communication
 
 ### Security Attacks
@@ -11,6 +14,7 @@ tags: []
 ```mermaid
 graph TB
 A[ Security Attacks] --> B[Snooping] & C[Modification] & D[Denial Of Service]
+
 ```
 
 #### Routing Control
@@ -31,12 +35,10 @@ eg : { pins, passwd}
 | Non-reproduction     |                                   |
 | Access Control       |                                   |
 
-
 #### 27-01-25
 - Hill Cypher
 - [[Hill Cypher]]
 $$
 
 $$
-
 

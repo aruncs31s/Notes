@@ -1,3 +1,11 @@
+---
+id: Feedback_Circuits
+aliases: []
+tags:
+  - electronics
+  - analog_circuits
+dg-publish: true
+---
 # Feedback Circuits
 *Taking portion of output and giving it to input*
 ## Negative Feedback
@@ -11,7 +19,6 @@ $$
 ![[negative feedback.excalidraw|900x300]]
 
 ## Positive Feedback
-
 
 $$
 G = \frac{A}{1 + A\beta}

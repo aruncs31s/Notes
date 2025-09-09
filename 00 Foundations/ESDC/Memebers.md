@@ -1,5 +1,12 @@
+---
+id: Memebers
+aliases: []
+tags:
+  - foundations
+  - esdc
+dg-publish: true
+---
 ### Sn IOT
-
 
 1. p: **LAP**
 2. IoT 

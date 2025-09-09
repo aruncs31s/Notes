@@ -1,10 +1,14 @@
 ---
 id: PYQ
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - s6
+  - information_theory_and_coding
 Date: "29-12-2024"
+dg-publish: true
 ---
-
 # PYQ
 
 ## Module 1

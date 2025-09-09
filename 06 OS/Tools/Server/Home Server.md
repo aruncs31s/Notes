@@ -1,10 +1,12 @@
 ---
 id: Server
-aliases:
-  - home server
-tags: []
+aliases: []
+tags:
+  - os
+  - tools
+  - server
+dg-publish: true
 ---
-
 # Home Server
 
 > [!note|right-small] Contents
@@ -36,12 +38,14 @@ ip: 192.168.1.2
 subnet: 24 or 255.255.255.255,
 gateway: 192.168.1.1
 	}
+
 ```
 
 4. Goto `flask-file-server` directory
 
 ```bash
 cd flask-file-server
+
 ```
 
 5. Change the environment variables
@@ -52,6 +56,7 @@ FS_PATH=
 FS_KEY=
 FS_BIND=0.0.0.0
 FS_PORT=8000
+
 ```
 
 - where `FS_PATH` is the serving path
@@ -61,6 +66,7 @@ FS_PORT=8000
 
 ```bash
 python file-server.py
+
 ```
 
 - This will start the web server in the specified port but in order it brings a new problem user have to type `ip:port` to reach it instead of making it like that we can `port forward` the port to , when ever the user types `ip` it should point to `ip:port`. To overcome this do the following
@@ -86,6 +92,7 @@ server {
         proxy_set_header X-Forwarded-Proto $scheme;
     }
 }
+
 ```
 
 This should be inside the `http` context
@@ -95,12 +102,14 @@ This should be inside the `http` context
 
 ```bash
 sudo nginx -t
+
 ```
 
 Restart:
 
 ```bash
 sudo systemctl restart nginx
+
 ```
 
 _need to enable the service if not already enabled_

@@ -1,11 +1,14 @@
 ---
 id: ESP-CSI
-aliases: 
+aliases: []
 tags:
-  - "#esp32"
-  - "#code"
+  - electronics
+  - embedded_systems
+  - micro_controllers
+  - espressif
+  - esp32
+dg-publish: true
 ---
-
 # ESP-CSI
 
 <!-- HACK: -->

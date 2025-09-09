@@ -1,10 +1,10 @@
 ---
 id: software_architectural_pattern
-aliases:
-  - Software Architectural Pattern
+aliases: []
 tags:
+  - coding
+dg-publish: true
 ---
-
 ## MVC 
 *divides the related program logic into three interconnected elements.*
 

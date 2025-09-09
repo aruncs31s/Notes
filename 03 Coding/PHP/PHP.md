@@ -1,3 +1,11 @@
+---
+id: PHP
+aliases: []
+tags:
+  - coding
+  - php
+dg-publish: true
+---
 # PHP
 
 > [!info] PHP Overview
@@ -11,6 +19,7 @@
 echo "php\n";
 print("php");
 ?>
+
 ```
 
 > [!tip] Echo vs Print
@@ -37,6 +46,7 @@ echo $escaped; // outputs: a 	 tab character.
 $unescaped = 'a slash and a t: \t';
 echo $unescaped; // outputs: a slash and a t: \t
 ?>
+
 ```
 
 > [!warning] String Quotes Matter
@@ -65,6 +75,7 @@ $colors = [
 
 echo $person["name"]; // outputs: John
 ?>
+
 ```
 
 > [!note] Array Types
@@ -94,6 +105,7 @@ $user = new User("John");
 echo $user->name; // outputs: John
 echo $user->isInGroup('admin'); // outputs: 1 (true)
 ?>
+
 ```
 
 > [!example] Object Access
@@ -122,6 +134,7 @@ echo User::USER_TYPE_TEACHER; // outputs: teacher
 // 'expression' => '$user->isInGroup(User::USER_TYPE_TEACHER)'
 // This checks if $user is in the teacher group using the class constant
 ?>
+
 ```
 
 > [!important] Class vs Instance

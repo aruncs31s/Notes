@@ -1,8 +1,10 @@
 ---
 id: Mosquito Killer Bat Circuit
 aliases: []
-tags: []
+tags:
+  - electronics
 Date: "28-11-2024"
+dg-publish: true
 ---
 # Mosquito Killer Bat Circuit
 
@@ -17,9 +19,7 @@ The Mosquito killer bat uses a single 4V battery to achieve really high output v
 | Input Voltage   | $4V$         |
 | Output Voltage  | $~600$       |
 
-
 ![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidZEAC0OsRH64Ld8EJKDaUJGzZlyA8rGwsxqPQdZstKnDHSAyqbxYon84mq2D6Ac-Ty1f070vXSBWeMxOHnamzSygAVVamEHRVhglB9yFNMv664whEQA6QZqy3HJ5fXz9yhwc2gKxk9Fcq/s1600/mosquito+killer+bat+internal+circuit.jpg)
-
 
 ### Schematics
 

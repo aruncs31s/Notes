@@ -1,9 +1,13 @@
 ---
+id: Web3js
+aliases: []
 tags:
-  - es_website
+  - projects
+  - web_based
+  - embedded_systems_website
   - backend
+dg-publish: true
 ---
-
 # Web3js Backend 
  > [!summary]- **Why**
  > -  decentralized, no passwords.
@@ -14,10 +18,7 @@ tags:
 - Limited to users who have crypto wallets.
 - Managing sessions and tokens still needed (like with traditional auth).
 
-
  **"Sign in with Ethereum"** or **wallet-based authentication**. 
-
-
 
 ## ✅ What I Can Do with Web3 Authentication:
 

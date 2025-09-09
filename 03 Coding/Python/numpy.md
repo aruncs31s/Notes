@@ -1,5 +1,12 @@
+---
+id: numpy
+aliases: []
+tags:
+  - coding
+  - python
+dg-publish: true
+---
 # Numpy
-
 
 [Source](https://www.geeksforgeeks.org/introduction-to-numpy/?ref=lbp)
 - Its an array processing library
@@ -25,6 +32,7 @@ result = np.dot(a, b)
 print(result)
 
 ```
+
 ```python
 import numpy as np 
 # Define two vectors 
@@ -33,10 +41,12 @@ vector2 = np.array([4, 5, 6]).T
 # Compute the cross product 
 cross_product = np.cross(vector1, vector2) 
 print("Cross product:", cross_product)
+
 ```
 
 #### Finding Error Perfomance of Binary Phase Shift Keying
 
 ```python
 import numpy as nP
+
 ```

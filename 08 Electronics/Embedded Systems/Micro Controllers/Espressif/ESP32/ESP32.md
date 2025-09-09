@@ -1,12 +1,15 @@
 ---
-dg-publish: true
 id: ESP32
-aliases: 
+aliases: []
 tags:
+  - electronics
+  - embedded_systems
+  - micro_controllers
+  - espressif
   - esp32
+dg-publish: true
 Created: 20-08-2024
-cssclasses:
-  - wide-page
+cssclasses: 
 package: QFN 6*6
 architecture: "32"
 datasheet: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
@@ -42,18 +45,21 @@ Designed with the TSMC low-power 40 nm tech . [[esp32_datasheet_en.pdf#page=2|Fu
 
 ```dataview
 list from #esp32 and #code 
-```
 
+```
 
 ---
 
 # Pin Configuration
 - `CHIP_PU`(enable) should not leave this pin floating
+
 ```yaml
 CHIP_PU: 
 	 0 : Chip is powered down
 	 1 : Chip is powered up
+
 ```
+
 ## Restrictions
 The IO pins of ESP32 are multifunctional that is the single pin will do different things in different situation  and it is important to consider this while using them 
 1. Some pins are input only due to the lack of **pull up/down resisors**
@@ -63,7 +69,6 @@ The IO pins of ESP32 are multifunctional that is the single pin will do differen
 > **GPIO0** and **GPIO2** which determines the boot mode. 
 >  ^522a74
 
-
 ## Boot Mode 
 The boot mode is determined by the logic level present on the following pins ![[#^522a74]]
 
@@ -72,7 +77,6 @@ The boot mode is determined by the logic level present on the following pins ![[
 | SPI Boot Mode | 1     | x     |
 | Download Mode | 0     | 0     |
 It shows that if i have to flash the firmware to the **ESP32** i have to make the both pins **GPIO0** and **GPIO2** to **LOW**.
-
 
 **Strapping pins default value **
 
@@ -107,7 +111,9 @@ mindmap
 				(RTC GPIO)
 					
 			
+
 ```
+
 >[!float|right-medium] Internal Structure of Pad
 >![[pad.excalidraw]]
 - **IE** Input enable
@@ -117,7 +123,6 @@ mindmap
 - **Bounding pad**: a terminal point on the chip logic used to make a physical connection from the chip die to **GPIO** pin in the chip package
 
 # Communication
-
 
 ## I2C
 [Source](https://www.espressif.com/sites/default/files/documentation/esp32_technical_reference_manual_en.pdf#resclk)
@@ -129,10 +134,7 @@ mindmap
 - Supports continuous data transmission with disabled Serial Clock Line (SCL) 
 - Supports programmable digital noise filter
 
-
-
 # Pinout
-
 
 | **GPIO** | **Input** | **Output** | **Notes**                                                                      |
 | -------- | --------- | ---------- | ------------------------------------------------------------------------------ |

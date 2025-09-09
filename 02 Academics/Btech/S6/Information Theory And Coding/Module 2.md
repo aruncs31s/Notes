@@ -1,3 +1,13 @@
+---
+id: Module_2
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - information_theory_and_coding
+dg-publish: true
+---
 # Module 2
 
 Created : 2024-05-31 14:44

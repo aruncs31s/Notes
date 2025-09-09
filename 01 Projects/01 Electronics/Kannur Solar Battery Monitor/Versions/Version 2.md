@@ -1,17 +1,26 @@
 ---
-aliases: 
+id: Version_2
+aliases: []
+tags:
+  - projects
+  - electronics
+  - kannur_solar_battery_monitor
+  - versions
 Date: 08-01-25
+dg-publish: true
 ---
 # Version 2
 This version is the improved version of [[Version 1]] 
+
 ```
+
 branch: 
   Microcontroller Code: v0.0.2_ESP8266_Only_battery_voltage_platformIO
   Website: v0.0.1
   System: v0.0.1
   Kicad: v0.0.1 
-```
 
+```
 
 ## Components
 ![[Version 1#^dc412a]]

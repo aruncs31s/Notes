@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: Kannur_Solar_Batter_Monitor_Sketch
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 
@@ -175,6 +175,7 @@ Top View ^z1TkHGx4
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQB2bQAWGjoghH0EDihmbgBtcDBQMBLoeHF0Qn1opH5SxhZ2LjQANiSABjrIBtZOADlOMW4ADiSARgBOdoBmYZaxrohCDmIs
 
@@ -783,5 +784,7 @@ AesBtlSMHYlA6gAYAA71nxSnHRWAxAGIAd21I3BEAbMB4/QyABEAr7XRtSEBbgOjQLA4TgH07bStGwje
 AWEAiJATIKchzCECoLcMwcxOAvkDAwHwAIqRdzELaWEcdF1KHbzc9WzYAAwAfHwYAAgBIkE5Iai5sJDUwdkDEQNOUY7JXgITAEgBVgmSldxkTQJOACxYTgONA4gAc4CSqBAA3hz+oYIBWrHNAxRJ0kG29SYw7gGUAWMAAAApYWWoASYQAwOnqAMCFUwAASnpAEJB0nWAISFBZMl9A7vMgwOOIYKZOgGyoaUBwwN1A2EDswChAvEB0QPZWH+JzBBC
 
 QRyBWhFkNWw0nQO9mOXRYUjSqDLx7bEOA4AJhADjCMmpbuF1AuwADUEzEZgA4QHtsXXt7QMdAzQBnQIusYUAckBJDRloVQI6ELK0oHDCAYIABwK1tISx0IF29LkDzUEyzZ+R+9BVjcxBGADKkQMAzYDUgcABhUC7uKdhgAFoKVSAgAA=
+
 ```
+
 %%

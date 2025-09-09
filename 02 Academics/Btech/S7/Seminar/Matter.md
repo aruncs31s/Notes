@@ -1,15 +1,17 @@
 ---
 id: Seminar Topic 3
-aliases:
-  - matter,iot
-tags: []
+aliases: []
+tags:
+  - academics
+  - btech
+  - s7
+  - seminar
 banner: "https://www.mistywest.com/wp-content/uploads/2022/04/MistyWest_Matter_Smart-Home-KeyMedia-01-1.png"
 banner_x: 0
 banner_y: 0.684
-cssclasses:
-  - wide-page
+cssclasses: 
+dg-publish: true
 ---
-
 # Matter Standard
 
 Matter is a freely available ==connectivity standard== for smart home and Internet of Things(Iot). Matter Standard formerly known as **CHIP**(**Connected Home over IP**)

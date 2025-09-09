@@ -1,11 +1,14 @@
 ---
-aliases: 
+id: Implementing_5_Stage_Pipeline
+aliases: []
+tags:
+  - electronics
+  - embedded_systems
+  - risc_v
 Date: 2024-08-09
-cssclasses:
-  - wide-page
+cssclasses: 
+dg-publish: true
 ---
-
-
 # Implementing 5 Stage Pipeline
 The 5 stages being used are[^1]
 - Instruction Fetch (IF),
@@ -27,16 +30,12 @@ The 5 stages being used are[^1]
 >>  - [x] MIPS ✅ 2024-08-09
 >>  - [ ] Types of instruction 
 
-
-
 >[!info] MIPS
 >**MIPS** is an architecture which represent the lowering of the compiler to hardware level[^2] 
 >- The MIPS processor implemented a smaller, simpler instruction set
 >- Instructions implemented on this chip run in a single clock cycle
 >- Used Pipelining to improve performance
 >- Used 32 bit registers
-
-
 
 ### Single and MultiCycle CPU's
 
@@ -48,7 +47,6 @@ The 5 stages being used are[^1]
 - I-Type
 - J-Type
 - Jump
-
 
 ### 5 Stage Pipeline[^3]
 There are 5 stages 
@@ -74,9 +72,12 @@ There are 5 stages
 This load type needs to go through all 5 stages to complete the instruction
 - This type is usually used to  **read data from memory and place it into a register**.
 #example 
+
 ```c
 R1 <- [1]
+
 ```
+
 *This instruction loads `1` the registor `R1`  just like `R1 = 1` in `c`*
 - `<-` This is an assignment operator
 ##### 2. Store Type 
@@ -85,14 +86,17 @@ R1 <- [1]
 >graph TB
 >A[Fetch] --> B[Decode] --> C[Execute] --> D[Memory]
 >```
+
 - This type is used to write data from a register to memory
 
 #example 
+
 ```c
 [A] <- R1
-```
-*This represents a store operation in which the contents of `R1` to *
 
+```
+
+*This represents a store operation in which the contents of `R1` to *
 
 [^3]: https://levelup.gitconnected.com/five-stages-of-risc-pipeline-aad0c3eb1233
 

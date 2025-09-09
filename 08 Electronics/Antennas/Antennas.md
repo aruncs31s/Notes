@@ -1,12 +1,13 @@
 ---
 id: Antennas
 aliases: []
-tags: []
+tags:
+  - electronics
+  - antennas
 Created: "15-08-2024"
-cssclasses:
-  - wide-page
+cssclasses: 
+dg-publish: true
 ---
-
 # Antennas
 
 > [!float|right-small]

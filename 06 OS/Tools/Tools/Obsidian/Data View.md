@@ -1,10 +1,12 @@
 ---
 id: Data View
-aliases:
-  - data-view
-tags: []
+aliases: []
+tags:
+  - os
+  - tools
+  - obsidian
+dg-publish: true
 ---
-
 ## Data View
 
 - Dataview consists of two big building blocks: **Data Indexing** and **Data Querying**
@@ -24,6 +26,7 @@ _Dataview supports `inline` fields via a `Key::` Value syntax that you can use e
 
 Basic Field:: Some random Value
 **Bold Field**:: Nice!
+
 ```
 
 _All content after the :: is the value of the field until the next line break._
@@ -33,10 +36,10 @@ _All content after the :: is the value of the field until the next line break._
 
 ```markdown
 I would rate this a [rating:: 9]! It was [mood:: acceptable].
+
 ```
 
 - [ ] [Check Out](https://blacksmithgu.github.io/obsidian-dataview/annotation/add-metadata/#inline-fields)
-
 
 #### Get Links
 
@@ -47,6 +50,7 @@ file.cday as "Created"
 FROM ""
 WHERE contains(file.folder, this.file.folder) AND file.name != this.file.name
 SORT file.name ASC
+
 ```
 
 #### References

@@ -1,9 +1,11 @@
 ---
 id: Google Identity
 aliases: []
-tags: []
+tags:
+  - coding
+  - web
+dg-publish: true
 ---
-
 # Google Identity
 
 It is an implementation of Federated Identity Management (FIM) that allows users to sign in to third-party applications using their Google account credentials.
@@ -32,6 +34,7 @@ It is an implementation of Federated Identity Management (FIM) that allows users
   name="google-signin-client_id"
   content="YOUR_CLIENT_ID.apps.googleusercontent.com"
 />
+
 ```
 
 #### Using Node
@@ -93,5 +96,7 @@ app.post('/google-login', async (req, res) => {
 app.listen(port, () => {
   console.log(`Backend server listening at http://localhost:${port}`);
 });
+
 ```
+
  

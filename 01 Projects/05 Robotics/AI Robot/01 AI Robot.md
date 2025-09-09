@@ -1,25 +1,25 @@
 ---
 id: 9-PROJECT
-aliases: 
+aliases: []
 tags:
-  - project
-  - status/open
-Date:
-  Started: 13-11-2024
-  Target: 01-06-2025
+  - projects
+  - robotics
+  - ai_robot
+Date: 
+Started: 13-11-2024
+Target: 01-06-2025
 Target_Date: 2025-06-01
 status: not_done
 dg-publish: true
 ---
-
 # AI Robot
-
 
 ```widgets
 type: countdown
 date: 2025-06-20 00:00:00
 to: Complete the Project 🎉
 completedLabel: Project is done 🎉
+
 ```
 
 - [[02 Coding]]
@@ -28,25 +28,24 @@ completedLabel: Project is done 🎉
 - [[03 Development]]
 - [[Self Balancing]]
 
-
 >[!todo]- Keep It update
 >
 >>[!Important]- **MACOS**
 >>```bash
 >> rsync -av --delete --exclude='.*' /Users/aruncs/Desktop/Notes/01\ Projects/AI\ Robot/  /Users/aruncs/Git/AI-Robot-Obsidian-Notes/
 >> ```
+
 >
 >>[!Important]- **Linux**
 >>```bash
 >> rsync -av --delete --exclude='.*' /home/aruncs/Notes/01\ Projects/AI\ Robot/  /home/aruncs/Git/Organizations/AI-Robot-GCEK/AI-Robot-Obsidian-Notes
 >> ```
+
 >
-
-
-
 
 ```tasks
 path includes 02 Projects/AI Robot
+
 ```
 
 ## Members

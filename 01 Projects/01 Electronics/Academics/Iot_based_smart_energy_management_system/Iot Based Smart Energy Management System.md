@@ -1,12 +1,14 @@
 ---
 id: Main
-aliases:
-  - mini-project
+aliases: []
 tags:
-  - project
-  - mini-project
+  - projects
+  - electronics
+  - academics
+  - iot_based_smart_energy_management_system
 Starting Date: 2024-01-26
 Target Date: 2024-04-07
+dg-publish: true
 ---
 # Iot Based Smart Energy Management System
 
@@ -33,9 +35,7 @@ Target Date: 2024-04-07
 
 #### Tasks
 
-
 #### Block Diagram
-
 
 ![[Projects/Iot_based_smart_energy_management_system/Files/Images/project_block_diagram.png]]
 

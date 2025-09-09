@@ -1,7 +1,18 @@
+---
+id: Using_SOLID_Principle
+aliases: []
+tags:
+  - classes
+  - git_by_doing
+  - level_6
+dg-publish: true
+---
 # Using SOLID Principles in Go
 
 ## 📁 Project Structure
+
 ```
+
 database/
 ├── database.go
 ├── handlers/
@@ -12,6 +23,7 @@ database/
 │   ├── interfaces.go
 │   └── product_repository.go
 └── test.db
+
 ```
 
 ---
@@ -26,6 +38,7 @@ database/
 - **Dependency Inversion**: Pure data structures with no external dependencies
 
 ### 📄 Code Example
+
 ```go
 package models
 
@@ -36,6 +49,7 @@ type Product struct {
     Code  string `json:"code"`
     Price uint   `json:"price"`
 }
+
 ```
 
 ### 📁 Files
@@ -54,6 +68,7 @@ type Product struct {
 - **Open/Closed**: Can add new repositories without changing existing code
 
 ### 📄 Code Example
+
 ```go
 package repository
 
@@ -66,6 +81,7 @@ type ProductRepository interface {
     Update(product *models.Product) error
     Delete(id uint) error
 }
+
 ```
 
 ### 📁 Files
@@ -84,6 +100,7 @@ type ProductRepository interface {
 - **Open/Closed**: Can extend with new business rules without modifying core logic
 
 ### 📄 Code Example
+
 ```go
 package handlers
 
@@ -94,6 +111,7 @@ type ProductHandler struct {
 func NewProductHandler(repo repository.ProductRepository) *ProductHandler {
     return &ProductHandler{repo: repo}
 }
+
 ```
 
 ### 📁 Files
@@ -111,6 +129,7 @@ func NewProductHandler(repo repository.ProductRepository) *ProductHandler {
 - **Open/Closed**: Easy to swap implementations via dependency injection
 
 ### 📄 Code Example
+
 ```go
 func NewApp(db *gorm.DB) *App {
     productRepo := repository.NewProductRepository(db)
@@ -120,6 +139,7 @@ func NewApp(db *gorm.DB) *App {
         productHandler: productHandler,
     }
 }
+
 ```
 
 ### 📁 Files
@@ -147,9 +167,11 @@ func GetUser(db *gorm.DB, id uint) (*User, error) {
 type UserRepository interface {
     GetByID(id uint) (*User, error)
 }
+
 ```
 
 #### 2. **Testability & Mocking**
+
 ```go
 // Easy to mock for testing
 type MockProductRepository struct{}
@@ -164,9 +186,11 @@ func TestProductHandler(t *testing.T) {
     handler := NewProductHandler(mockRepo)
     // Test without real database
 }
+
 ```
 
 #### 3. **Database Independence**
+
 ```go
 // Can switch from SQLite to PostgreSQL without changing business logic
 func main() {
@@ -179,9 +203,11 @@ func main() {
     // Same repository interface works with both!
     repo := repository.NewProductRepository(db)
 }
+
 ```
 
 #### 4. **Centralized Query Logic**
+
 ```go
 // All product-related queries in one place
 type ProductRepository interface {
@@ -190,6 +216,7 @@ type ProductRepository interface {
     GetExpensiveProducts(minPrice uint) ([]Product, error)
     GetByCategory(category string) ([]Product, error)
 }
+
 ```
 
 ### 📊 Repository vs Direct Database Access
@@ -212,6 +239,7 @@ Think of Repository as a **librarian**:
 ### 🏗️ How Repository Enables SOLID
 
 #### Single Responsibility
+
 ```go
 // Repository: ONLY handles data persistence
 type ProductRepository interface {
@@ -223,9 +251,11 @@ type ProductRepository interface {
 type ProductHandler struct {
     repo ProductRepository
 }
+
 ```
 
 #### Dependency Inversion
+
 ```go
 // High-level module (Handler) doesn't depend on low-level module (GORM)
 // Both depend on abstraction (ProductRepository interface)
@@ -233,6 +263,7 @@ type ProductHandler struct {
 type ProductHandler struct {
     repo ProductRepository // ← Interface, not concrete implementation
 }
+
 ```
 
 ---

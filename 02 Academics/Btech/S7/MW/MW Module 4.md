@@ -1,10 +1,13 @@
 ---
 id: 1732212254-IGTH
-aliases:
-  - MW Module 4
-tags: []
+aliases: []
+tags:
+  - academics
+  - btech
+  - s7
+  - mw
+dg-publish: true
 ---
-
 # MW Module 4
 
 ### Microwave

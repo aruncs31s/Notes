@@ -1,11 +1,16 @@
 ---
 id: ESP-NOW
-aliases: 
+aliases: []
 tags:
-  - "#esp32"
-  - "#code"
+  - electronics
+  - embedded_systems
+  - micro_controllers
+  - espressif
+  - esp32
+dg-publish: true
 ---
 2
+
 ### ESP-NOW
 
 [Source](https://randomnerdtutorials.com/esp-now-esp32-arduino-ide/)
@@ -99,6 +104,7 @@ void loop() {
   }
   delay(2000);
 }
+
 ```
 
 #explanation
@@ -107,7 +113,6 @@ void loop() {
 
 ```c
 uint8_t broadcastAddress[] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+
 ```
-
-
 

@@ -1,6 +1,12 @@
 ---
-aliases: 
+id: Bandwidth_SNR_Trade_off
+aliases: []
+tags:
+  - electronics
+  - communication
+  - wireless
 Date: 31-10-2024
+dg-publish: true
 ---
 # Bandwidth SNR Trade off
 **Prerequisites ** :

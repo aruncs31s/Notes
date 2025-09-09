@@ -1,12 +1,17 @@
 ---
-aliases: 
+id: Method_2
+aliases: []
+tags:
+  - hackethons
+  - dihack
+  - round_1
 Date: 16-10-2024
-markmap:
-  screenshotTextColor: #28F48D
-  highlight: true
-  titleAsRootNode: true
+markmap: 
+screenshotTextColor: #28F48D
+highlight: true
+titleAsRootNode: true
+dg-publish: true
 ---
-
 # Method 2
 So in our system the [[HC-SR04]] gives a $1.74 \text{ ms}$ pulse or continues pulse if the `triger` signal is continuesly applied 
 - [[HC-SR04]] gives $1.74  ms$ signal when the distance between object and the sensor is $30 cm$

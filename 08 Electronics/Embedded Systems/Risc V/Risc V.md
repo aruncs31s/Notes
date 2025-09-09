@@ -1,9 +1,13 @@
 ---
-aliases: 
+id: Risc_V
+aliases: []
+tags:
+  - electronics
+  - embedded_systems
+  - risc_v
 Date: 2024-08-08
+dg-publish: true
 ---
-
-
 # Risc V
 
 - [[Implementing 5 Stage Pipeline]]

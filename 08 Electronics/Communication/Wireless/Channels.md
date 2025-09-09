@@ -1,6 +1,12 @@
 ---
-aliases: 
+id: Channels
+aliases: []
+tags:
+  - electronics
+  - communication
+  - wireless
 Date: "05-04-25"
+dg-publish: true
 ---
 # Channels
 - [ ] All the equations are designed for farfield communication . Then what about near field ?? 
@@ -14,7 +20,6 @@ $$
 > where 
 > d -> distance between the tx and the rx
 > $\lambda$ is the wavelength of the signal
-
 
 ### Power at the receiver
 $$

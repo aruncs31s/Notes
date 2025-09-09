@@ -1,11 +1,13 @@
 ---
 id: Github
 aliases: []
-tags: []
+tags:
+  - os
+  - tools
+  - github
+dg-publish: true
 ---
-
 # Github Flow
 
 - [[Github API]]
-
 

@@ -1,11 +1,14 @@
 ---
+id: robo-movementsh
+aliases: []
 tags:
-  - c_lib
+  - projects
+  - robotics
   - ai_robot
+  - coding
+dg-publish: true
 ---
-
 # Robo-Movements.h
-
 
 here there are 4 situations 
 
@@ -14,8 +17,6 @@ here there are 4 situations
 | `current_angle + _positions[id]->_the_angle > SERVO_ANGLE_MAX` | Make the `lhs < SERVO_ANGLE_MAX` ie , limit `_the_angle` |
 | `current_angle + _positions[id]->_the_angle < SERVO_ANGLE_MAX` | Make the `lhs > SERVO_ANGLE_MIN` ie , limit `_the_angle` |
 |                                                                |                                                          |
-
-
 
 ```cpp
 

@@ -1,10 +1,11 @@
 ---
-dg-publish: true
+id: SOLID_principle
+aliases: []
 tags:
-  - programming
-  - work
+  - coding
+  - design_patterns
+dg-publish: true
 ---
-
 # SOLID Principles
 - [[Factory Design Pattern]]
 
@@ -17,14 +18,13 @@ tags:
 | **D** – Dependency Inversion Principle                                                 | High-level modules should not depend on low-level ones — **use abstractions**. | Dependency Injection, Facto                                       |
 |                                                                                        |                                                                                |                                                                   |
 
-
-
 ## 1. Single Responsibility Principle (SRP) 
 > Principle states that a class or module should **have only one reason** to change
 
 >  The essence of the Single Responsibility Principle lies in the limitation of responsibilities of an entity (class, function, package, or module). It should concentrate on a single task and encapsulate all the elements necessary for executing the specified task.
 >  - [Source](https://medium.com/@radhakrishnan.nit/single-responsibility-principle-in-golang-89a4a75f6fc4)
 - it encourages developers to create modular and reusable code by dividing each component into a single responsibility. This helps in making the code more maintainable, testable, and easier to understand,
+
 ```go
 type User struct {
     FirstName string
@@ -37,7 +37,9 @@ func (u *User) Save() error {
     // Save user to the database
     // ...
 }
+
 ```
+
 - the `User` struct now handles **both** data and persistence. 
 
 ```go
@@ -55,6 +57,7 @@ func (r *UserRepository) Save(u *User) error {
     // Save user to the database
     // ...
 }
+
 ```
 
 ### Explanation 
@@ -67,13 +70,16 @@ func (u *User) GetFullName() string {
 }  
 func (u *User) Save() error {  
 }
+
 ```
+
 In this , the `User` has 2 responsibilities (*methods attached*) Which serves entirely different purpose for example 
 1. `func (u *User) GetFullName() string` : This will return the **FullName** 
 2. `func (u *User) Save() error`: This will save the user to the data base 
 In this case, the `User` struct has two responsibilities: managing user data and saving it to the database
 
 In the second one 
+
 ```go
 func (u *User) GetFullName() string {  
 }  
@@ -83,12 +89,14 @@ type UserRepository struct {
   
 func (r *UserRepository) Save(u *User) error {  
 }
+
 ```
 
 ```mermaid
 graph LR 
 Save --> UserRepository --> User & DB 
 User --> GetFullName
+
 ```
 
 Now the responsibilities are separated 
@@ -105,7 +113,6 @@ Here ,
  
 In developer perspective think of it as like following a good pattern where you can easily mock , ie you can just change the db and it wont effect other than the Repo , and you can simply call another function or something like that to cope.  
 
-
 - **Domain-Driven Design (DDD)**, Version 2 is preferred
 
 ### Repositories 
@@ -115,6 +122,7 @@ In developer perspective think of it as like following a good pattern where you 
 should be open for extension but closed for modification.
 
 ###  Without ❌ 
+
 ```go
 type Circle struct {  
 Radius float64  
@@ -130,6 +138,7 @@ default:
 return 0  
 }  
 }
+
 ```
 
 ###  ✅ With OCP 
@@ -144,15 +153,15 @@ return r.Width * r.Height
 func (c *Circle) Area() float64 {  
 return math.Pi * math.Pow(c.Radius, 2)  
 }
+
 ```
+
 Understanding this will require a significant experience with go 
 In go the definition of interface is   (ment by ) ![[Go#^d2e304]] 
-
 
 ### Repositories 
 
 - If repositories are modular, adding features like validation, logging, or alternate storage becomes easier without modifying core logic. ^f778d0
-
 
 ## 4. Interface Segregation Principal
 [Source](https://maddevs.io/blog/solid-interface-segregation-principle-in-golang/)

@@ -1,8 +1,12 @@
 ---
 id: Assignment1
-aliases: 
+aliases: []
 tags:
-  - python
+  - academics
+  - btech
+  - s7
+  - python_for_engineers
+dg-publish: true
 ---
 # Assignment 1
 
@@ -11,20 +15,17 @@ tags:
 10.Write Python program to check for the presence of a key in the dictionary and find the sum of all values in the dictionary.
 """
 
-
 def is_present(the_dict, key):
     if key in the_dict:
         return True
     else:
         return False
 
-
 def sum(the_dict):
     sum = 0
     for key in the_dict:
         sum += the_dict[key]
     return sum
-
 
 sample_dict = {"a": 1, "aa": 2, "aaa": 3, "aaaa": 4}
 
@@ -36,13 +37,11 @@ print(sum(sample_dict))
 
 count_dict = {}
 
-
 def check_count(char):
     if char in count_dict:
         count_dict[char] += 1
     else:
         count_dict[char] = 1
-
 
 if __name__ == "__main__":
     string = input("Enter a string: ")
@@ -59,18 +58,14 @@ new_dict = {
     "Guy From Feature": "10-10-3010",
 }
 
-
 def get_name():
     return input("Enter the name: ")
-
 
 def print_bday(name):
     return new_dict[name]
 
-
 def display_available():
     print(new_dict.keys())
-
 
 if __name__ == "__main__":
     display_available()
@@ -83,7 +78,6 @@ if __name__ == "__main__":
 d1 = {"a": 10, "b": 20, "c": 30}
 d2 = {"a": 30, "b": 20, "d": 40}
 
-
 def add_dict(d1, d2):
     d3 = {}
     d3 = d1
@@ -94,7 +88,6 @@ def add_dict(d1, d2):
             d3[key] += d2[key]
     return d3
 
-
 if __name__ == "__main__":
     print(add_dict(d1, d2))
 """
@@ -103,13 +96,11 @@ if __name__ == "__main__":
 
 the_range = 16
 
-
 def create_new_dict():
     new_dict = {}
     for i in range(1, the_range):
         new_dict[i] = i**2
     return new_dict
-
 
 if __name__ == "__main__":
     print(create_new_dict())
@@ -123,19 +114,15 @@ iii) Remove the value 52 from list
 
 num = [24, [26, 52], 2, [8, 3], 56]
 
-
 def replace():
 
     num[4] = 92
 
-
 def print_value_8():
     print(num[3][0])
 
-
 def remove_52():
     num[1].remove(52)
-
 
 if __name__ == "__main__":
     print("Before Replace", num)
@@ -146,10 +133,8 @@ if __name__ == "__main__":
     print("After Removing 52", num)
 # 2. Illustrate the use of negative indexing
 
-
 def reverse(string):
     return string[::-1]
-
 
 if __name__ == "__main__":
     print(reverse("Hello, World!"))
@@ -157,10 +142,8 @@ if __name__ == "__main__":
 
 the_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-
 def min_max(the_list):
     return min(the_list), max(the_list)
-
 
 print(min_max(the_list))
 """Write a Python program to read n integers into a list and separate the positive and negative numbers into two different lists"""
@@ -169,13 +152,11 @@ new_list = []
 postive_list = []
 negative_list = []
 
-
 def read_list(n):
     while n > 0:
         new_list.append(int(input("Enter the elements ")))
         n -= 1
     sort(new_list)
-
 
 def sort(new_list):
     for i in new_list:
@@ -186,14 +167,12 @@ def sort(new_list):
     print("Postive List", postive_list)
     print("Negative List", negative_list)
 
-
 read_list(int(input("Enter the number of elements ")))
 """
 Write a Python program to find the largest and second largest of n numbers in a list. Assume n>=3 and all the numbers are distinct.
 """
 
 _sorted_list = []
-
 
 def find_largests(new_list):
     if len(new_list):
@@ -202,7 +181,6 @@ def find_largests(new_list):
                 _sorted_list.append(max(new_list))
                 new_list.remove(max(new_list))
                 find_largests(new_list)
-
 
 if __name__ == "__main__":
     the_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -216,7 +194,6 @@ Write a Python program to create a set of functions that compute the mean, media
 1. https://www.investopedia.com/terms/m/median.asp  # Mean Median
 2. https://stackoverflow.com/questions/152580/whats-the-canonical-way-to-check-for-type-in-python # Type Checking
 """
-
 
 def sort(number, type):
     # sorted = []
@@ -245,7 +222,6 @@ def sort(number, type):
             n -= 1
         return number
 
-
 def mean(numbers):
     if len(numbers) == 0:
         return 0
@@ -253,7 +229,6 @@ def mean(numbers):
     for i in numbers:
         sum += i
     return sum / len(numbers)
-
 
 def median(numbers):
     if len(numbers) == 0:
@@ -264,7 +239,6 @@ def median(numbers):
         return (numbers[length // 2] + numbers[length // 2 - 1]) / 2
     else:
         return numbers[length // 2]
-
 
 numbers = [11, 22, 3, 4, 55, 6, 7, 55, 44, 3, 34, 5, 33]
 
@@ -278,7 +252,6 @@ Write a Python code to create a function called “frequency” that takes a str
 Sources : 
 https://www.geeksforgeeks.org/python-sort-python-dictionaries-by-key-or-value/
 """
-
 
 def frequency(string_literal):
     frequency = {}
@@ -295,7 +268,6 @@ def frequency(string_literal):
         return sorted_dict
 
     return sort(frequency)
-
 
 string_literal = "hello"
 print(frequency(string_literal))
@@ -326,7 +298,6 @@ Write a Python program to find the frequency of each word in a string using a
 dictionary.
 """
 
-
 def frequency(string_literal):
     frequency = {}
     for letter in string_literal:
@@ -336,9 +307,9 @@ def frequency(string_literal):
             frequency[letter] = 1
     return frequency
 
-
 word = "hello"
 
 if __name__ == "__main__":
     print(frequency(word))
+
 ```

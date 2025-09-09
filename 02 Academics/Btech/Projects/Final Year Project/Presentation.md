@@ -1,3 +1,13 @@
+---
+id: Presentation
+aliases: []
+tags:
+  - academics
+  - btech
+  - projects
+  - final_year_project
+dg-publish: true
+---
 1. Phase 1 
 > - Testing and Selecting Modulation Schemes
 > 1. QPSK , BPSK , QAM

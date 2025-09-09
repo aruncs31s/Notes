@@ -1,3 +1,14 @@
+---
+id: Stokes_Theorem
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - electromagnetics
+  - module_1
+dg-publish: true
+---
 # Stokes Theorem
 
 - Stokes theorem explains relationship in between ==line Integration== and ==surface integration==
@@ -9,8 +20,6 @@
 \oint \overrightarrow P.dl = \int  \nabla \times \overrightarrow P \ dS
 >$$
 >Or it states that the circulation of the vector field $\overrightarrow A$ around a closed path $L$ is equal to the surface intrgral og the [[Old_NOTES/Academics/Btech/S6/ElectroMagnetics/Module 1/Curl]] of $\overrightarrow A$ over an open surface $S$ bounded by $L$
-
-
 
 #proof
 

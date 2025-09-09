@@ -1,8 +1,13 @@
 ---
+id: Parsing_JSON
+aliases: []
 tags:
-  - go
+  - classes
+  - git_by_doing
+dg-publish: true
 ---
 # without Channels
+
 ```go
 func ReadStudentsFromJSON() ([]Student, error) {
 	data, err := os.ReadFile("students/students_details.json")
@@ -37,11 +42,12 @@ func DisplayStudents(students []Student) {
 		fmt.Printf("   username: %s\n", student.Username)
 	}
 }
-```
 
+```
 
 # With channels
 - [ ]  Paste here from code 🏁 delete 
+
 ```go
 
 ```

@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: Resultant_of_two_vectorsexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
-
 
 # Excalidraw Data
 ## Text Elements
@@ -45,6 +45,7 @@ C^2 = (B+A\cos\theta)^2 + (A\sin\theta)^2$$
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebTieGjoghH0EDihmbgBtcDBQMELoeHF0XFJSNip+IsYWdi40ABYAVhrIOtZOADlOMW4ARgAGAE4RgZ4BgDYADgBmdohCDmIs
 
@@ -157,5 +158,7 @@ IU0wvAzg0K9GAOgMxhiscwaUiRSqTFmYUx4AdmBsDgBwBkQTiIWHkGgDFg0g6we8KQAAg1AGA0zCqEMI
 t7W9zYBvc1P6aPbPOLZpupATw6gs2xLlC6LpsAlQBEKOgFBtrjyaocYIPRwTQ3mATtx0PgC3hsomk9uWYGdQQR8zgbRgNgAYCBtNwCA3+M9FglAKW2hbqQEW9xfWCGJKbgYEgOEVku5SSAg2CZAhEdDCRXQvwEYJXcruQgP2koN/MoByUPMTw+wFuy3drsQAU7TN6GKzbxBS2aKPF6G3AECBmBhAwFy/MQHzuxIw+aQN/CPEvwalUAEydILgE0DB
 
 AIIkV2zkQCBFFLdiNlMG7vc5Av45+u9lO3YE9oiVmAiIGynADeBsBVgNt1e+vcprgAJYh2VJhuD3AgA9wQAA
+
 ```
+
 %%

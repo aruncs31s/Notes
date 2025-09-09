@@ -1,3 +1,12 @@
+---
+id: httprouter
+aliases: []
+tags:
+  - coding
+  - go
+dg-publish: true
+---
+
 ```go
 package main
 import (
@@ -19,5 +28,6 @@ func main() {
 	
 	log.Fatal(http.ListenAndServe(":8080", router))
 }
+
 ```
 

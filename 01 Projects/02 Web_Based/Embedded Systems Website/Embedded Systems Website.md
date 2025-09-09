@@ -1,19 +1,15 @@
 ---
 id: Embedded Systems Website
-aliases: 
+aliases: []
 tags:
-  - project
-  - website
-  - es_website
-  - "#main_page"
-cssclasses:
-  - wide-page
+  - projects
+  - web_based
+  - embedded_systems_website
+cssclasses: 
 Status: Active
 dg-publish: true
 ---
-
 # ES Website
-
 
 >[!SUMMARY]- Table of Contents
 >- [[Embedded Systems Website#ES Website|ES Website]]
@@ -31,6 +27,7 @@ type: countdown
 date: 2025-10-9 00:00:00
 to: プロジェクトを完了する 🎉
 completedLabel: プロジェクトを完了する 🎉
+
 ```
 
 > [!summary]+ Lauch Workspace
@@ -47,6 +44,7 @@ completedLabel: プロジェクトを完了する 🎉
 > > export PROJECT_DIR=~/Projects/es_website_gcek/
 > > cd $PROJECT_DIR && git status
 > > ```
+
 >
 > > [!important]- **Update**
 > >
@@ -59,7 +57,6 @@ completedLabel: プロジェクトを完了する 🎉
 > > git commit -m "update"
 > > git push origin main
 > > ```
-
 
 ## Introduction 
 This project aims to develop a website where , GCEK Embedded Systems students can show case their projects and hopefully products that they develop in the future. 
@@ -90,6 +87,7 @@ I don't know any of it , except JS ,HTML , CSS , so how can i do this?. The obvi
 @begin Structure
 
 ```
+
 src/
 ├── assets/
 │   ├── scripts/          # JS scripts
@@ -120,11 +118,10 @@ src/
 │   └── services.astro
 ├── utils/                # Shared utility functions and helpers
 └── content.config.ts     # Contains content collections configuration options
+
 ```
 
 @end Structure
-
-
 
 ## Login Feature 
 

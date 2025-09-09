@@ -1,3 +1,13 @@
+---
+id: Passive_Beam-Steering_Gravitational_Liquid_Antennas
+aliases: []
+tags:
+  - academics
+  - btech
+  - s7
+  - seminar
+dg-publish: true
+---
 # Passive Beam-Steering Gravitational Liquid Antennas
 
 ---

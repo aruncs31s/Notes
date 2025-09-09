@@ -1,10 +1,14 @@
 ---
-cssclasses:
-  - wide-page
-aliases: 
-tags: 
+id: Solar_Battery_Monitor_Programming
+aliases: []
+tags:
+  - projects
+  - electronics
+  - solar_battery_monitor
+cssclasses: 
 Created: 01-10-2024
-Status:
+Status: 
+dg-publish: true
 ---
 # Solar Battery Monitor Programming
 - [[#Relay Interfacing]]
@@ -13,6 +17,7 @@ Status:
 **Pins USED** : VCC , GND , D4 
 - D4 will be high during boot that is a thing to consider 
 #sampleCode 
+
 ```c
 const uint8_t relayPin = D4;
 void setup() {
@@ -26,7 +31,9 @@ void loop(){
 }
 
 ```
+
 **Code after integrating with simple webserver**
+
 ```c
 #include <ESP8266WiFi.h>
 
@@ -66,7 +73,6 @@ void loop() {
  WiFiClient client = server.available();
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
-
 
 if (client) {
  currentTime = millis();
@@ -131,6 +137,7 @@ if (client) {
   }
   delay(1000);
 }
+
 ```
 
 - Try if `GET /data/D4//on` and `GET /data/D4/off` works

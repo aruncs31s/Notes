@@ -1,16 +1,20 @@
 ---
-cssclasses:
-  - wide-page
-aliases: 
-tags: 
+id: WebSocket
+aliases: []
+tags:
+  - os
+  - tools
+  - networking
+  - web
+cssclasses: 
 Created: 25-08-2024
-Status:
+Status: 
+dg-publish: true
 ---
 # WebSocket
 WebSocket is a computer communications protocol, providing a simultaneous two-way communication channel over a single Transmission Control Protocol connection[^1] 
 
 [^1]:https://en.wikipedia.org/wiki/WebSocket
-
 
 - Full-Duplex, bidirectional communication protocol.
 - Allows real-time data flow

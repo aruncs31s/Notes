@@ -1,7 +1,14 @@
 ---
+id: LVGL_Using_VS_Code
+aliases: []
+tags:
+  - electronics
+  - embedded_systems
+  - micro_controllers
+  - interfacing
 extension name: LVGL Project creator
+dg-publish: true
 ---
-
 # LVGL Using VSCode 
 **Usage**
 - Hit Ctrl+Shift+P to open the Command panel
@@ -10,9 +17,6 @@ extension name: LVGL Project creator
 - The project creator should open where you can select a project.
 - Click the Create button, select a location and use the project as described in its README.
 
-
-
 1. Setup [[[ESP-IDF]]]
 2. `idf.py -p <COMx or /dev/ttyx> flash monitor`
-
 

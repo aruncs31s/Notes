@@ -1,3 +1,13 @@
+---
+id: Battery_Level
+aliases: []
+tags:
+  - projects
+  - electronics
+  - inverter_gui_touch_screen
+  - flutter_app
+dg-publish: true
+---
 # Battery Level
 - 12.8V
 
@@ -71,4 +81,5 @@ double lifepo4SocPack(double vPack, {int cellsInSeries = 4}) {
   double vCell = vPack / cellsInSeries;
   return lifepo4SocCell(vCell);
 }
+
 ```

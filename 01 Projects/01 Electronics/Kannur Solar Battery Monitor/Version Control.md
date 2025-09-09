@@ -1,9 +1,14 @@
 ---
-aliases: 
+id: Version_Control
+aliases: []
+tags:
+  - projects
+  - electronics
+  - kannur_solar_battery_monitor
 Date: "10-02-25"
+dg-publish: true
 ---
 # Version Control
-
 
 ### Base Repo 
 - [Kannur-Solar-Battery-Monitoring-System](https://github.com/aruncs31s/Kannur-Solar-Battery-Monitoring-System)
@@ -11,7 +16,6 @@ Date: "10-02-25"
 Base repo should contain the documentation and different catogories included in this project as directories
 
 for example, If i have `project-x` and it has coding part and circuit design part , then we it should be like follows
-
 
 ```mermaid
 graph LR

@@ -1,13 +1,15 @@
 ---
 id: Electromagnetics
-aliases:
-  - EMT
+aliases: []
 tags:
+  - academics
+  - btech
   - s6
+  - electromagnetics
 Created: 17-08-2024
 ExamDate: 2024-12-17
+dg-publish: true
 ---
-
 # ElectroMagnetics Theory
 ## Module 1
 >### Syllabus
@@ -17,9 +19,6 @@ ExamDate: 2024-12-17
 >- [ ] Expression of curl divergence and Laplacian in cartesian, cylindrical and spherical coordinate system.
 >- [ ] Electric field and magnetic field, Review of Coulomb’s law, Gauss law and Amperes current law.
 >- [ ] Poisson and Laplace equations, Determination of E and V using Laplace equation.
-
-
-
 
 > [!NOTE] Symbols
 > 1. $\Delta$ = the vector differential operator

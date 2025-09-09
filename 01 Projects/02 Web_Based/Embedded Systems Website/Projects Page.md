@@ -1,7 +1,10 @@
 ---
+id: Projects_Page
+aliases: []
 tags:
-  - es_website
-  - frontend
+  - projects
+  - web_based
+  - embedded_systems_website
+dg-publish: true
 ---
-
 # Projects Page

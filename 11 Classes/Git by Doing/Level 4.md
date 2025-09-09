@@ -2,20 +2,19 @@
 id: Level 4
 aliases: []
 tags:
-  - for_students
+  - classes
   - git_by_doing
-  - sub_module
 Status: Done
 dg-publish: true
 github: https://github.com/aruncs31s/git_by_doing_level_4
 type: Tasks,Quiz
 ---
-
 # Level 4
 
 ```dataview
 Table without ID  file.name as "Name" , github as Link , status as Status, file.inlinks as Mentions
 where file = this.file
+
 ```
 
 Task: To understand `git branch`
@@ -83,18 +82,21 @@ There are 3 commits or snapshots named
 
 ```bash
 git checkout fadd
+
 ```
 
 which is same as
 
 ```bash
 git checkout fadd9798fa81f3d0f2064c2fb400d09262a77ba8
+
 ```
 
 and this
 
 ```bash
 git checkout fadd97
+
 ```
 
 > [!IMPORTANT]
@@ -103,6 +105,7 @@ git checkout fadd97
 > ```bash
 > git checkout abcdef
 > ```
+
 >
 > Will not work, because the names are not unique , so you have to use it like this
 >
@@ -133,6 +136,7 @@ If you look at this this is after i run
 
 ```bash
 git checkout ce1ac0e
+
 ```
 
 You can see it says `HEAD` is detached at `ce1ac0e`
@@ -175,12 +179,14 @@ This after checking out `new_branch` , you can see that it says `HEAD -> new_bra
 > ```bash
 > git branch branch_name
 > ```
+
 >
 > or you can do
 >
 > ```bash
 > git switch -c branch-name
 > ```
+
 >
 > this combines both creating a new branch and checking the branch.
 
@@ -190,6 +196,7 @@ This after checking out `new_branch` , you can see that it says `HEAD -> new_bra
 > ```bash
 > git branch -d branch-name
 > ```
+
 >
 > or you can force your deletion
 >
@@ -197,14 +204,16 @@ This after checking out `new_branch` , you can see that it says `HEAD -> new_bra
 > git branch -D branch-name
 > ```
 
-
-
 ## Solutions
+
 ```bash
 git branch ESP8266
 git checkout ESP8266
+
 ```
+
 - now edit the code 
+
 ```cpp
 #include <Arduino.h>
 #define LED_BUILTIN 13
@@ -215,7 +224,9 @@ void loop() {
   digitalWrite(LED_BUILTIN, LOW);
   delay(1000);
 }
+
 ```
+
 ```cpp
 #include <Arduino.h>
 #define LED_BUILTIN D4
@@ -226,56 +237,74 @@ void loop() {
   digitalWrite(LED_BUILTIN, LOW);
   delay(1000);
 }
+
 ```
 
 ```bash
 python task_2.py
+
 ```
+
 >[!success]- result
 >```
+
 > Please change the code.cpp to run on ESP8266 Boards.
 >```
 
 ```bash
 python task_2.py
+
 ```
+
 >[!success]- result
 >```
+
 >You have successfully completed this level.
 >You can now proceed to the next task.
 > ```
 
-
 ```bash
 python task_3.py
+
 ```
+
 - it will tell you to checkout main and modify the `code.cpp` , but since you are already changed `code.cpp` 
+
 ```bash
 git checkout main
+
 ```
 
 ```bash
 python task_3.py
+
 ```
 
 ```bash
 python task_4.py
+
 ```
 
 ```bash
 git checkout 1215bf0f
+
 ```
+
 - this was expected to work but since you are not commit the modified code you have to stash it
+
 ```bash
 git stash
+
 ```
 
 ```bash
 python task_4.py
+
 ```
 
 ```bash
 git branch Arduino
 git branch -d ESP8266
+
 ```
 

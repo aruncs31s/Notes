@@ -1,13 +1,18 @@
 ---
-aliases: 
+id: Modulations
+aliases: []
+tags:
+  - electronics
+  - softwares
+  - gnu_radio
 Date: 03-03-25
+dg-publish: true
 ---
 # Modulations
 
 ## QPSK
 
 ### Tut
-
 
 > [!multi-column]
 >
@@ -23,7 +28,9 @@ Date: 03-03-25
 ```mermaid
 graph LR
 rand_source --> Const_mod --> out 
+
 ```
+
 - This introduces the `ISI` 
 -  But when we convolve two ==RRC filters together, we get a raised cosine filter== (which is a form of a Nyquist filter).
 > [!multi-column]
@@ -36,7 +43,6 @@ rand_source --> Const_mod --> out
 
 #### Channel Impairments
 
-
 > [!multi-column]
 >
 >> [!blank]+ Block
@@ -44,9 +50,6 @@ rand_source --> Const_mod --> out
 >
 >> [!blank]+ output
 >> ![](https://wiki.gnuradio.org/images/f/fe/Qpsk_stage2_out.png)
-
-
-
 
 ### Polyphase Clock Sync
 1.  performs the clock recovery.
@@ -61,15 +64,10 @@ rand_source --> Const_mod --> out
 >> [!blank]+ output
 >> ![](https://wiki.gnuradio.org/images/thumb/9/99/Qpsk_stage3_out.png/1200px-Qpsk_stage3_out.png)
 
-
-
-
 #### Phase and Frequency Correction
 - reduced using costas loop
 
-
 ## BPSK
-
 
 ![](https://wiki.gnuradio.org/images/thumb/2/2f/Bpsk_stage6_fg.png/1200px-Bpsk_stage6_fg.png)
 

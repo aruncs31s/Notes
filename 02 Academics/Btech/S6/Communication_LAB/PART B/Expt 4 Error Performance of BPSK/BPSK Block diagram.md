@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: BPSK_Block_diagram
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
-
 
 # Excalidraw Data
 
@@ -25,6 +25,7 @@ e0f6b74f5d0aede0b6200fb0ec822714489e942f: $$\color{blue} \phi_1(t) = \sqrt{2/T_b
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQAObQBmGjoghH0EDihmbgBtcDBQMBLoeHF0KCwoVJLIRhZ2LjQAdgBGflKG1k4AOU4xbh4ABgAWJJ54lp4eDsLIQg5iLG4I
 
@@ -81,5 +82,7 @@ OFlWPTv5xPipxVDSKE6GPZlrsiCCrlhbvUQLuSv5nSs06bAQDruHtbsHib7Et4vXsHubsZD/Auklk9HP
 53mqgjDALezTCGUQBGBsAGDDv1AEDpSmYfwbYMcwdgc2uooQC8fTuOgkA5OzkFLzrED/AIB8moDiZOckDloIDMe4CaDBBQsyd2dnvmOHLURGjzhmj6gygxcxcHgHighJTKDtiPjmh3A7AZcZcJdTLPMydYchqSZwcmScB9i+YWuZBJS0LzphuHJZD+eBc3PwN0PYBEDue3PkjSSZBNcINuRxRno9cICmd2AABWlJOQvw0kcAPnfnAXtD071IJkjA
 
 a4un+A+nQW2I6QGCZyMeBc8U+g3H9S6T85hudDMhy823y3q3w8xU4AQRucyJ1YwA74r4QAA=
+
 ```
+
 %%

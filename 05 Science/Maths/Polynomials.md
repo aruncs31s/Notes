@@ -1,6 +1,13 @@
+---
+id: Polynomials
+aliases: []
+tags:
+  - science
+  - maths
+dg-publish: true
+---
 # Polynomials
 Created : 2024-05-18 19:01
-
 
 ## Contents
 - [[#Roots of Polynomial]]
@@ -28,10 +35,8 @@ $$
 
 $$
 
-
 x = \sqrt[3]{\frac{-b + \sqrt{b^2 - 4ac}}{2a}} + \sqrt[3]{\frac{-b - \sqrt{b^2 - 4ac}}{2a}}
 $$
-
 
 ## References
 

@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: TENS_Designexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 
@@ -34,6 +34,7 @@ Over Voltage ^jMxCnRHM
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQB2bQAWGjoghH0EDihmbgBtcDBQMBLoeHF0Ig4kflLGFnYuNABGeIA2AAZayHrWTgA5TjFueI6kjo6AZgAOeIBObohCDmIs
 
@@ -984,5 +985,7 @@ uqNLV7wMPA08DKFD/TXoIgIOfA08DLwMaIhnA4IPZAF8DzwPP/Y+U9wMQgxkAG0zQ8rCDC5ZPA2HNayY
 5/aGcT+xL6IyDIOGW6DkyIoPxgCQAuE3GUGcDFoOEoCcAno0y4DaD0ajsifeAqZZd6EVeidhlyCQA0lA3IMhA64HrAKQAp3S4AAAAFFoh7CCVYOGD1ACkODKAAACU0YA5qBbwpUDc4IGDKCChg0TYAxBdABmDUYNirHGDRoOUg+LgUIP4gGHN9qicALCsZwNccDmoZcDRqGNQNyBZAJcmwQAeQIz1kADAFPCWQI2LAF3oxwMyTaCIRhT3IF2DRoN
 
 2AAMleTCqmF3o33augwN29YNsIIz1bSh5MBtInmJDyHWgkCatKGEAwQAzg08gYvhGIKR2goNBMHjZobitQDODjACtaYGAjUCbAxzIoPLhAJ+gMWSmQEAAA==
+
 ```
+
 %%

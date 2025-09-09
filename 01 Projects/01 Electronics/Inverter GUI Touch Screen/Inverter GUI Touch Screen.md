@@ -1,13 +1,16 @@
 ---
 id: project template
 aliases: []
-tags: []
+tags:
+  - projects
+  - electronics
+  - inverter_gui_touch_screen
 creation_date: 2025-07-21 15:42
 github: nill
 modification_date: Monday 21st July 2025 15:42:43
 project_type: electronics
+dg-publish: true
 ---
-
 # Inverter GUI Touch Screen
 
 > [!multi-column]+
@@ -20,6 +23,7 @@ project_type: electronics
 > > LIST
 > > FROM outgoing([[]])
 > > ```
+
 > >
 > > ###### Sub Notes
 > >
@@ -27,6 +31,7 @@ project_type: electronics
 > > LIST
 > > WHERE contains(file.folder, this.file.folder) AND file.name != this.file.name
 > > ```
+
 >
 > > [!todo]+ Tasks
 > >

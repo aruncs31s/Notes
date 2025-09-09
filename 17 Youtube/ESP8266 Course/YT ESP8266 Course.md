@@ -1,10 +1,12 @@
 ---
 id: YT ESP8266 Course
 aliases: []
-tags: []
+tags:
+  - youtube
+  - esp8266_course
 Date: "26-01-25"
+dg-publish: true
 ---
-
 # YT ESP8266 Course
 
 Started: 26-01-25

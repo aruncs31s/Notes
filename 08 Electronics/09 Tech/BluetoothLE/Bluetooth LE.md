@@ -1,10 +1,12 @@
 ---
 id: Bluetooth LE
-aliases: 
+aliases: []
 tags:
-  - "#tech"
+  - electronics
+  - tech
+  - bluetoothle
+dg-publish: true
 ---
-
 # Bluetooth LE
 
 - Allows short bursts of long-range radio connection -> results in longer battery life

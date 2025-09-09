@@ -1,3 +1,12 @@
+---
+id: Ultrasonic_Sensor_Code
+aliases: []
+tags:
+  - coding
+  - arduino
+dg-publish: true
+---
+
 ```c
 #define SOUND_VELOCITY 0.034
 #define CM_TO_INCH 0.393701
@@ -38,5 +47,6 @@ void loop() {
   
   delay(1000);
 }
+
 ```
 

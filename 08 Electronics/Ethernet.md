@@ -1,9 +1,10 @@
 ---
 id: Ethernet
 aliases: []
-tags: []
+tags:
+  - electronics
+dg-publish: true
 ---
-
 # Ethernet
 
 #### Standard Connection

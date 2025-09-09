@@ -1,13 +1,16 @@
 ---
 id: project template
 aliases: []
-tags: []
+tags:
+  - files
+  - templates
+  - templater
 creation_date: <% tp.file.creation_date() %>
 github: <% tp.system.prompt("GitHub Repo") %>
 modification_date: <% tp.file.last_modified_date("dddd Do MMMM YYYY HH:mm:ss") %>
 project_type: <% tp.system.suggester(["electronics", "linux", "web", "ai/ml", "other"], ["electronics", "linux", "web", "ai/ml", "other"]) %>
+dg-publish: true
 ---
-
 # <% tp.file.title %>
 
 > [!multi-column]+
@@ -20,6 +23,7 @@ project_type: <% tp.system.suggester(["electronics", "linux", "web", "ai/ml", "o
 > > LIST
 > > FROM outgoing([[]])
 > > ```
+
 > >
 > > ###### Sub Notes
 > >
@@ -27,6 +31,7 @@ project_type: <% tp.system.suggester(["electronics", "linux", "web", "ai/ml", "o
 > > LIST
 > > WHERE contains(file.folder, this.file.folder) AND file.name != this.file.name
 > > ```
+
 >
 > > [!todo]+ Tasks
 > >

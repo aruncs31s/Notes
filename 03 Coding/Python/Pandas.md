@@ -1,9 +1,11 @@
 ---
 id: Pandas
 aliases: []
-tags: []
+tags:
+  - coding
+  - python
+dg-publish: true
 ---
-
 # Pandas
 
 - It provides
@@ -36,6 +38,7 @@ dtype: int64
 
 ```python
 print(pd.Series(a, index=["x", "y", "z"]))
+
 ```
 
 3. Sorting
@@ -44,4 +47,5 @@ print(pd.Series(a, index=["x", "y", "z"]))
 sample_data = {"day1": 10, "day2": 300, "day3": 22}
 
 print(pd.Series(sample_data).sort_values(ascending=True))
+
 ```

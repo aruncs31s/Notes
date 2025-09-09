@@ -1,9 +1,12 @@
 ---
-aliases: 
+id: Analog_Circuits
+aliases: []
+tags:
+  - electronics
+  - analog_circuits
 Date: 23-11-2024
 tag: 
-  electronics
-  
+dg-publish: true
 ---
 # Analog Circuits
 - [[Capacitors]]
@@ -14,14 +17,12 @@ tag:
 ![[rcphaseshifosccilator.excalidraw|500x300]]
 - uses +ve feedback 
 
-
 ### Design 
 This **oscillator** circuit needs to satisfy the followings 
 1. 0 , $2\pi$ phase shift 
 2. Total loop gain $A\beta = 1$  , for sustained oscillation
 $A$ -> Gain of the amplifier , $A=29$
 $\beta$ -> Feedback factor  , Here $\frac{1}{\beta}$
-
 
 **Frequency of Oscillation**:
 $$

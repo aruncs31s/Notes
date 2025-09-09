@@ -1,9 +1,13 @@
 ---
 id: Position_replayer
 aliases: []
-tags: []
+tags:
+  - projects
+  - robotics
+  - ai_robot
+  - coding
+dg-publish: true
 ---
-
 ### data.py
 
 @function
@@ -18,6 +22,7 @@ def get_readings(datafile):
     for number in range(len(all_readings)):
         list_readings.append(all_readings[number]["servo_values"])
     return list_readings
+
 ```
 
 @function
@@ -26,4 +31,5 @@ def get_readings(datafile):
 def list_to_dict(data):
     the_dict = {i: data[i] for i in range(len(data))}
     return the_dict
+
 ```

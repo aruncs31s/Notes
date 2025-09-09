@@ -1,9 +1,10 @@
 ---
-github: https://github.com/aruncs31s/level_1
+id: Level_1
+aliases: []
 tags:
+  - classes
   - git_by_doing
-  - sub_module
-  - for_students
+github: https://github.com/aruncs31s/level_1
 Status: Done
 dg-publish: true
 type: Quiz
@@ -11,10 +12,13 @@ type: Quiz
 # Level 1
 > Next 
 > - [[Level 2]]
+
 ```dataview
 Table without ID  file.name as "Name" , github as Link , status as Status, file.outlinks as Mentioned
 where file = this.file
+
 ```
+
 Task: Understanding what is git?
 
 > [!IMPORTANT]
@@ -23,6 +27,7 @@ Task: Understanding what is git?
 >```bash
 >Python quiz.py
 >```
+
 ## Little About Git
 
 Git was created by ["Linus Torvalds"](https://github.com/torvalds), for maintaining his projects. He is also the creater of linux.

@@ -1,6 +1,12 @@
 ---
-cssclasses:
-  - wide-page
+id: Modular_CSS_Layout_for_Obsidian
+aliases: []
+tags:
+  - os
+  - tools
+  - obsidian
+cssclasses: 
+dg-publish: true
 ---
 ## Modular CSS Layout for Obsidian
 [Source](https://github.com/efemkay/obsidian-modular-css-layout/tree/main?tab=readme-ov-file#installation--download-and-enable)
@@ -21,7 +27,6 @@ Use the `> [!multi-column]` for multi column layout and need to put a `>` before
 > 
 > test test test test
 
-
 > [!multi-column]
 >
 >> [!note]+ Use Case
@@ -39,8 +44,6 @@ Use the `> [!multi-column]` for multi column layout and need to put a `>` before
 >> - [x] Define Use Case ✅ 2024-07-31
 >> - [ ] Craft User Story
 >> - [ ] Develop draft sketches
-
-
 
 ## List Grid Example - Goals and Objectives
 

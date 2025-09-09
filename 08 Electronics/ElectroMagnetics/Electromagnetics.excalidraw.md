@@ -1,12 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: Electromagneticsexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
-
 
 # Equations
 $
@@ -41,6 +40,7 @@ UCSrdVEY: [[08 Electronics/ElectroMagnetics/Electromagnetics.excalidraw.md#Class
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBWbR4aOiCEfQQOKGZuAG1wMFAwYuh4cXRcUlI2Kn4SxhZ2LjQeeIBGOsgG1k4AOU4xbnj4gDZ4gBYABgBOEb4CyEIOYixu
 
@@ -403,5 +403,7 @@ CNMD5/zOT5EAHT8VQEekRwFZeh2KMYAdP9psIH75IgG4Qo4GH5XfLtWPJIKAU/MH5nXOH53wCbGAjMgA
 8ScCibgLgvsPxI2AFwFdeOVAkcm3EGGHs4qFTb5RgEb2bGx2cDAAIAnWAWOJ710QHbBQFwAv0AV/L0sRo0n54YBIAhdKXQbfOEFxABRACABBkZpHEFqxHO0bABWAtZzu5xGjBaJACcIjcHYIWxjWApACGauAAAAFHfJqAH9QScCYLjBXXwAAJSsgFrAM44ek6CvQWGCxP68AJwUPkcwUJAKwXcC2/kF0v+B3M8NmQwWAVc4FrCJQVYj4cmtAqC6C
 
 BnMj+lEAGQVx8wpg589rA9sxQRNYdZAfMzrDcCuwChVRunMAJEDrEOAA1QRQUIAZQVkMiIWJC59iN0hYIIASgyegHEydGMIBVMoKBf4UiTDMjAXlAAhGRaaeSlHF/CMAKoUHTZJDuQcAD1wCFk7gY8AgAY8BAAA=
+
 ```
+
 %%

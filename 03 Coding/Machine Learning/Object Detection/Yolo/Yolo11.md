@@ -1,13 +1,18 @@
 ---
 id: Yolo11
 aliases: []
-tags: []
+tags:
+  - coding
+  - machine_learning
+  - object_detection
+  - yolo
+dg-publish: true
 ---
-
 # Yolo11
 
 ```bash
 pip install ultralytics
+
 ```
 
 ## Train
@@ -35,6 +40,7 @@ results[0].show()
 
 # Export the model to ONNX format
 path = model.export(format="onnx")  # return path to exported model
+
 ```
 
 ## References

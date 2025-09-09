@@ -1,4 +1,11 @@
-
+---
+id: Logerithemic
+aliases: []
+tags:
+  - science
+  - maths
+dg-publish: true
+---
 # Logarithmic
 Created : 2024-05-20 15:00
 #### Proprties

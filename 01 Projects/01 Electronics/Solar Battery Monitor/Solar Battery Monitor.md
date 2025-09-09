@@ -2,12 +2,13 @@
 id: Solar Battery Monitor
 aliases: []
 tags:
-  -  #project
-  -  #btech
+  - projects
+  - electronics
+  - solar_battery_monitor
 Created: ""
 Status: working
+dg-publish: true
 ---
-
 # Solar Battery Monitor
 
 - [[Solar Battery Monitor Programming]]
@@ -28,6 +29,7 @@ def calculte_V_Rb(Vin):
 	return Vin * (1/4.5)
 Vin = 10.8
 print(calculte_V_Rb(Vin))
+
 ```
 
 Also note that

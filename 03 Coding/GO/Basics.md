@@ -1,9 +1,10 @@
 ---
 id: Basics
 aliases: []
-tags: []
+tags:
+  - coding
+  - go
+dg-publish: true
 ---
-
 # Basics
-
 

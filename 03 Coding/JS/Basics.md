@@ -1,7 +1,10 @@
 ---
 id: Basics
 aliases: []
-tags: []
+tags:
+  - coding
+  - js
+dg-publish: true
 ---
 - `let` is (roughly) a block-scoped version of var.
 - `const` is a block-scoped, read-only constant.
@@ -16,12 +19,13 @@ return x;
 return x; // accesses the x from line A
 }
 func(false); // undefined
+
 ```
+
 ## Functions
 - [[Arrow Functions]]
 - [[Objects]]
 - [[03 Coding/JS/Classes]]
-
 
 ```js
 function fun1() {
@@ -32,6 +36,7 @@ function fun2(a, b) {
 }
 fun1();
 console.log(fun2(1, 2));
+
 ```
 
 ## Scope
@@ -47,6 +52,7 @@ function outerFun() {
 }
 outerFun();
 innerFun();
+
 ```
 
 _This works but accoring to the reference it should throw a `ReferenceError`_
@@ -65,10 +71,12 @@ function report(firstName, lastName, ...colors) {
         : "the colors " + colors.join(" and ");
   console.log(firstName, lastName, "likes", phrase + ".");
 }
+
 ```
 
 ```js
 report("arun", "appu", "red", "green");
+
 ```
 
 ## Spread Operator
@@ -83,6 +91,7 @@ arr_4.push(...arr);
 console.log(arr_4);
 arr_4.push(...arr_2);
 console.log(arr_4);
+
 ```
 
 ## Deconstructing
@@ -100,6 +109,7 @@ let [b = 10, c = 20] = someVar;
 
 // skip var , d-> 3 , e-> 4
 [, , d, e] = [1, 2, 3, 4];
+
 ```
 
 is the `someVar` is empty then the default value can be used.

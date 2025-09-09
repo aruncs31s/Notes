@@ -1,8 +1,19 @@
+---
+id: API_Designing
+aliases: []
+tags:
+  - coding
+  - web
+  - apis
+dg-publish: true
+---
 # API Designing 
 
 ```
+
 2025/08/01 17:33:36 /home/aruncs/Work/etlab-backend-go/modules/staff/handler/register_staff_details.go:67 sql: Scan error on column index 2, name "dob": unsupported Scan, storing driver.Value type []uint8 into type *time.Time
 [0.389ms] [rows:1] SELECT * FROM `s
+
 ```
 
 This error occurs because the MySQL driver is returning the date as a byte slice (`[]uint8`) instead of a `time.Time` that GORM expects. This is a common issue with MySQL date/datetime handling in Go.
@@ -12,10 +23,12 @@ Here are several solutions:
 #### Solution 1: Add `parseTime=true` to your database connection string
 
 This is the most common fix. Update your database connection string to include `parseTime=true`:
+
 ```go
 // Example connection string
 dsn := "username:password@tcp(localhost:3306)/database_name?charset=utf8mb4&parseTime=true&loc=Local"
 db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
+
 ```
 
 ```go
@@ -171,12 +184,14 @@ type StaffDetail struct {
 func (StaffDetail) TableName() string {
 	return "staffdetail"
 }
+
 ```
 
 ```go
 ## Solution 3: Use string fields and convert manually
 
 The simplest approach if you want to avoid custom types:
+
 ```
 
 ```go
@@ -185,11 +200,11 @@ DOB string `gorm:"column:dob;type:date;not null" json:"dob"`
 
 // Convert when needed:
 dobTime, err := time.Parse("2006-01-02", staffDetail.DOB)
+
 ```
 
-
-
 #### Types 
+
 ```go
 // Option 1: Simple (relies on existing DB schema)
 Image *string `gorm:"column:image" json:"image,omitempty"`
@@ -199,5 +214,6 @@ Image *string `gorm:"column:image;type:varchar(100)" json:"image,omitempty"`
 
 // Option 3: With additional constraints
 Image *string `gorm:"column:image;type:varchar(100);default:null" json:"image,omitempty"`
+
 ```
 

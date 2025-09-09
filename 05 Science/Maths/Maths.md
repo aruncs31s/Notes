@@ -1,3 +1,11 @@
+---
+id: Maths
+aliases: []
+tags:
+  - science
+  - maths
+dg-publish: true
+---
 ### Contents 
 
 - [[Math Basics|Basics]]
@@ -16,11 +24,4 @@
 
 #todo  
 - [ ] 🔼 Arrange this in correct order and catagorize accordingly
-
-
-
-
-
-
-
 

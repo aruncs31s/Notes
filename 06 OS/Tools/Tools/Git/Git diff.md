@@ -1,4 +1,12 @@
-
+---
+id: Git_diff
+aliases: []
+tags:
+  - os
+  - tools
+  - git
+dg-publish: true
+---
 - Show files changed in the last commit
 git diff --name-only HEAD^0
 

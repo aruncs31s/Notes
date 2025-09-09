@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: solar_battery_monitorexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 ## Text Elements
@@ -39,6 +39,7 @@ R ^NwKs9EgD
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBmbQAGGjoghH0EDihmbgBtcDBQMBLoeHF0QOwojmVg1JLIRhZ2LjQARh4AFn5S5tZOADlOMW4eADYeAE4Z+Pik3shCDmIs
 
@@ -201,5 +202,7 @@ uAMcGgBMwTIHWAPwLFKhAGAQgAQAKASGE8iYNF/3Ay5/Vti2gbgI4H0BEQVyPv8GPSAEQyCoFDIyAYMr
 DhAVaM7Qcit5HuFqR9BWTOsysQOEBBwyoDuGVR5Qw0BxsFFGjKMAHWJr34tdsAgAVhVzU6mGYg7DbmqhUMIzLUzUM/jJKD7Qf1FIBw7CAFDASAEa2LpMsoRDFTQsiUHBhXQISE9AnQKYHKzysgMGlhlAPsHygvQJcD2BGsxrJwIeCBLI4zcQUTPxhOAe72EhAgMwGEBmAZ1HyycswzIIJpYF2CEQbBXWCyBcAOzSehnbbDKIBOEJ622AREYDNWyT
 
 IcWC84nreLLsA/uQQmYB4QERDgBlA1YFMy5s4IG3j48PemCBRwJ8BnAgAA==
+
 ```
+
 %%

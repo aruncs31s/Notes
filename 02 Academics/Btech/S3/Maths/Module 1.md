@@ -1,7 +1,13 @@
 ---
+id: Module_1
+aliases: []
+tags:
+  - academics
+  - btech
+  - s3
+  - maths
 dg-publish: true
 ---
-
 # Module 1
 > [!Important]
 > - [ ] Partial differential equations,

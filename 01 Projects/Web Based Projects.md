@@ -1,8 +1,17 @@
+---
+id: Web_Based_Projects
+aliases: []
+tags:
+  - projects
+dg-publish: true
+---
 # Websites
+
 ```dataview
 table  file.outlinks AS "Modules" , file.mtime as "Last Modified" 
 from #project and #website
 sort file.mtime desc
+
 ```
 
 ## Query all backlinks using dataview
@@ -10,8 +19,8 @@ sort file.mtime desc
 ```dataview
 TABLE 
 from #website and #project
-```
 
+```
 
 ## Checkout Latter 
 1. https://github.com/themeselection/materio-vuetify-vuejs-admin-template-free

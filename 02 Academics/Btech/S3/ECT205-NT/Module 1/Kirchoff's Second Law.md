@@ -1,7 +1,13 @@
 ---
-aliases:
-  - kirchoff's Voltage law
-  - KVL
+id: Kirchoffs_Second_Law
+aliases: []
+tags:
+  - academics
+  - btech
+  - s3
+  - ect205-nt
+  - module_1
+dg-publish: true
 ---
 # Kirchoff's Voltage Law
 The voltage around a loop equal to sum of every voltage drop in the smae loop for any closed network equal to zero.

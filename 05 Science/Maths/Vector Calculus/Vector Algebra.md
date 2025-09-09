@@ -1,10 +1,14 @@
 ---
-cssclasses:
-  - wide-page
-aliases: 
-tags: 
+id: Vector_Algebra
+aliases: []
+tags:
+  - science
+  - maths
+  - vector_calculus
+cssclasses: 
 Created: 22-08-2024
-Status:
+Status: 
+dg-publish: true
 ---
 # Vector Algebra
 - [[#Vector Addition]]
@@ -28,7 +32,6 @@ $$
 \overrightarrow A . \overrightarrow B  = |A||B| \cos\theta
 $$
 
-
 > Where $\theta$ is the smaller angle between **A** and **B**
 
 > - IF we have 2 vectors $A$ and $B$ where $\overrightarrow A = A_{x}\hat a_x+A_{y}\hat a_y+A_{z}\hat a_z$ and $\overrightarrow B= B_{x}\hat b_x+B_{y}\hat b_y+B_{z}\hat b_z$ then $\overrightarrow A \cdot \overrightarrow B$ will be equal to 
@@ -45,9 +48,6 @@ $$
 $$
 \hat{i} \cdot \hat{j} = \hat{j} \cdot \hat{k} = \hat{k} \cdot \hat{i} = 0
 $$
-
-
-
 
 #### Cross Product
 >[!blank|right-medium]
@@ -71,16 +71,11 @@ B_{x}& B_{y}& B_{z}
 
 ^ef84ac
 
-
-
-
 > also $A \times B$ can be written in [[Matrices#Determinant|Determinant]] form
 
 $$
 \overrightarrow A \times \overrightarrow B = \left| \begin{array}{ccc}   a_{x} &  a_{y} &  a_{z} \\ A_x & A_y & A_z \\  B_x & B_y & B_z \end{array}  \right|
 $$
-
-
 
 > [!Note] From 3Blue1Brown
 >$$
@@ -109,7 +104,6 @@ determinant_2 = np.linalg.det([basis,v,w])
 print(determinant_2)
 x = print("Results are same") if (determinant_2 == determinant_1) else  print("Results are not same")  	
 >```
-
 
 ##### Properties
 1. 
@@ -146,6 +140,4 @@ $$
 \overrightarrow Y = k \ \overrightarrow A
 $$
 > Only magnitude will get changed 
-
-
 

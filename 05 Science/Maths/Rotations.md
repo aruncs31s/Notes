@@ -1,4 +1,9 @@
 ---
+id: Rotations
+aliases: []
+tags:
+  - science
+  - maths
 dg-publish: true
 ---
 ## Right-Handed System (Standard)
@@ -9,11 +14,9 @@ dg-publish: true
 
 used by: OpenGL,  in standart MATH. 
 
-
 $$
 \vec{X} \times \vec{Y} = \vec{Z}
 $$
-
 
 ## Left-Handed System
 - Thumb (X), Index (Y), Middle Finger (Z) point in +ve directions.
@@ -41,7 +44,6 @@ x \\
 y
 \end{bmatrix}
 $$
-
 
 # 3D
 

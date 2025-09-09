@@ -1,13 +1,15 @@
 ---
-cssclasses:
-  - wide-page
-aliases: 
-tags: 
+id: Building_an_SDR
+aliases: []
+tags:
+  - electronics
+  - antennas
+cssclasses: 
 Created: 15-08-2024
-Status:
+Status: 
+dg-publish: true
 ---
 # Building an SDR
-
 
 ### PSDR  (Open Source)
 

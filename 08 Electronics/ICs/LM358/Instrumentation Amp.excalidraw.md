@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: Instrumentation_Ampexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 ## Text Elements
@@ -65,6 +65,7 @@ Only Differential Mode  ^iho4hLEp
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBWbR4aOiCEfQQOKGZuAG1wMFAwYuh4cXQoLCgU4shGFnYuNABGAA4AFn4S+tZOADlOMW5mnmaANgBOHh5WsbGuyEIOYixu
 
@@ -303,5 +304,7 @@ fJfmhsiiUYRI49qoupfCpVVJRDmBUBUM9m6Qxf4MJvCSYyAjIOlecYVBwdconB3Zd9XXBhZfudw2+xrF
 D4R3qZQaSoBKyWvY4fNowDYADAETbqACAfSFT58TEEsMwktrza6CWoEEFIANdZVRIA2/IaAW3QlSoC9gS4lbew2pWXACPN+LFbbIJc4QFHwA0oUgDYLcAAAAobw6gF4AeUG7bjAZOeIAABKfEC0h3NDtDWxTt20Eu2tG3gB+3R1a7YQgnt4NAm28th6Ds30Qfze4hOAEHtC2scLSGORg4PnFzhMgHbeCAgIYbRgciAdbfF9OVvKHE3uvCkHUgC4b
 
 r3iFwCe7oEHsgP4Dyg4ALbbyhdt9HYl91gUDh910q/rakWjbGXzCBggZnYsx3BIQChADAYrfKAoCjBNGp6IZncYBuwNnf8RrIcACZhxm4IGXBNwEAE3AgAA=
+
 ```
+
 %%

@@ -1,3 +1,11 @@
+---
+id: Number_Theory
+aliases: []
+tags:
+  - science
+  - maths
+dg-publish: true
+---
 # Number Theory
 Created : 2024-05-18 18:56
 
@@ -43,5 +51,6 @@ plt.show()
 ```
 
  
+
 ## References
 1. 

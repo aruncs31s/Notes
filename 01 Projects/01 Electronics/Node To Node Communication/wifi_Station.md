@@ -1,6 +1,12 @@
 ---
-cssclasses:
-  - wide-page
+id: wifi_Station
+aliases: []
+tags:
+  - projects
+  - electronics
+  - node_to_node_communication
+cssclasses: 
+dg-publish: true
 ---
 
 ```c
@@ -18,7 +24,6 @@ server.begin();
 WiFiClient client = server.available();
 Serial.println("IP address: ");
 Serial.println(WiFi.localIP());
-
 
 if (client) {
  currentTime = millis();
@@ -82,4 +87,5 @@ if (client) {
     Serial.println("");
   }
   delay(1000);
+
 ```

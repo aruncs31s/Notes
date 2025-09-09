@@ -1,4 +1,13 @@
-
+---
+id: HTTP_Status_Codes
+aliases: []
+tags:
+  - os
+  - tools
+  - networking
+  - http
+dg-publish: true
+---
 ## 2xx Success
 
 | Code  | Meaning    | Usage                                                         |
@@ -34,8 +43,8 @@
 |`503`|Service Unavailable|Server temporarily unavailable (e.g., overloaded).|
 |`504`|Gateway Timeout|Server timeout from upstream server.|
 
-
 ### With Flask
+
 ```python
 return jsonify({"status": "success"}), 200
 return jsonify({"status": "created"}), 201
@@ -45,4 +54,5 @@ return jsonify({"error": "Forbidden"}), 403
 return jsonify({"error": "Not found"}), 404
 return jsonify({"error": "Already exists"}), 409
 return jsonify({"error": "Server error"}), 500
+
 ```

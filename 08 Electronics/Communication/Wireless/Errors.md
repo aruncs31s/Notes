@@ -1,6 +1,12 @@
 ---
-aliases: 
+id: Errors
+aliases: []
+tags:
+  - electronics
+  - communication
+  - wireless
 Date: 01-11-2024
+dg-publish: true
 ---
 # Errors
 ### Types of Errors 

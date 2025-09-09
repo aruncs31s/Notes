@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: wind_stationexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 
@@ -33,6 +33,7 @@ Vin = 3.3V pin ^XIKNPC5y
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBGAGZtAAYaOiCEfQQOKGZuAG1wMFAwMogSbikeACEAQQBNAEU4IQBhAHEjADEjAGsABXxsHgaOuHSyyFhEKsDsKI5lYMny
 
@@ -105,5 +106,7 @@ SxOY7oHT0sFpjixWYnMXmJtq2CgxbYhsVkE7GEhWeVtOsSWNyBlj9AmseEVSRHHtisgV+JTmySLH1ixx
 fFXisgk4hMk8mSirNSAfQnniQHnZCkIxrIRieeFFYbiWJMsYgL6j8oIBnxuATQMEBMbe1uJ9mO2L5XwAOxSAygRkAAApxB1ASBLpiUnExsQWIaPAAEpRQ2sZQKWCFBzBZJuABSSBCUlatVJc3DSVsG0mkTex/CFtPOK5icAxoJWcUOfG1iVgZYWNO2DkEEnCS6BT7LRBGgClzDWwKOUMY+1Cmnt1YiHSKVTQ/YkDNAQaKlnkGlAo5gOfEgSUJLLp
 
 BimQXMRgCjDYAkhcJ0iL+mEGCALAgEWiPlhrH0C/jMQv+C3nyPREGBdsFUpydEyt6EFcQrlfKQgEKnFSxWno9xOKElDhB+GXYEAF2CAA
+
 ```
+
 %%

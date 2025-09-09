@@ -1,12 +1,16 @@
 ---
+id: Pocket_Shop_Solar
+aliases: []
+tags:
+  - projects
+  - electronics
+  - pocket_shop_solar
 Created: 2024-08-13
 Status: 
 Visibility: 
-tags:
+dg-publish: true
 ---
 # Pocket Shop Solar
-
-
 
 | Name             | Specs |     |       |
 | ---------------- | ----- | --- | ----- |
@@ -17,6 +21,5 @@ $$
 {450Wh \over ({9 \times 4})W } = 12.5 h
 $$
 They can theoretically power the bulb for $12.5$ hours 
-
 
 ### Requirements

@@ -1,5 +1,15 @@
+---
+id: Gausss_Law
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - electromagnetics
+  - module_2
+dg-publish: true
+---
 # Gauss's Law
-
 
 > [!NOTE] Statement
 > Gauss's Law for Electric field states that the *total flux through any surface is the charge enclosed by the surface divided by $\epsilon_0$*
@@ -17,8 +27,6 @@ $$
 >$$
 >
 
-
-
 - If the flux is leaving like shown in [[#^b81c17|figure]] then the $\psi$ is positive if entering then the $\psi$ is negative
 
 ![[Academics/S6/ElectroMagnetics_OLD/Electric field direction.excalidraw]]
@@ -31,7 +39,6 @@ $$
 $$
 
 ![[case 3 total flux zero]]
-
 
 ## Use case
 
@@ -46,8 +53,6 @@ $$
 \psi = \oint \overrightarrow D \cdot dS = (Q_{1} + Q_{2}+ Q_3)
 $$
 Note that the $Q_{4}$ isn't accounted because the total flux entering will be equal to total flux leaving in case of $Q_{4}$ because it is outside of the closed surface
-
-
 
 #### Gauss's Law in Differential Form
 > Gauss's Law in integral form is given by

@@ -1,10 +1,16 @@
 ---
-aliases: 
+id: Optical_Sources
+aliases: []
+tags:
+  - academics
+  - btech
+  - s7
+  - optical_fibre_communication
 Date: 16-10-2024
+dg-publish: true
 ---
 # Optical Sources 
 **Prerequisites**: [[Energy Bands]] , 
-
 
 ---
 
@@ -19,7 +25,6 @@ There are 2 widely used optical sources for OFC
 	- Hetero Junction structured 
 		- Consist of 2 adjoining semiconductor materials with different bandgap energies
 	- High Directive Output
-
 
 ## LED
 - For speeds less than $100 - 200 \text{ Mbps}$

@@ -1,4 +1,8 @@
 ---
+id: Coding
+aliases: []
+tags:
+  - coding
 dg-publish: true
 ---
 # Coding

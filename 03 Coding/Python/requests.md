@@ -1,3 +1,11 @@
+---
+id: requests
+aliases: []
+tags:
+  - coding
+  - python
+dg-publish: true
+---
 # `requests`
 
 ```bash
@@ -22,4 +30,5 @@ True
  },
  ...
 }
+
 ```

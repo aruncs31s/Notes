@@ -1,10 +1,14 @@
 ---
+id: TENS_Versions
+aliases: []
+tags:
+  - projects
+  - electronics
+  - transcutaneous_electrical_nerve_stimulation
 dg-publish: true
-aliases: 
 Date: 23-11-2024
 cssClasses: wide-page
 ---
-
 # TENS Versions
 ## Initial Design 
 ![[TENS Design.excalidraw|900x100]]
@@ -29,6 +33,7 @@ Version 1 -> 0.1.0 in this version i'm planning to use the monostable followed b
 ```mermaid 
 graph LR
 A[Monostobele] -- Reset Pin--> B[Astable] -->C[Mosfet SWITCH] --> D[Inverter]  
+
 ```
 
 **Monostable Multivibrator**:  [[555]]
@@ -75,7 +80,6 @@ Required Freq : $1 Hz \text{ to } 50 Hz$
 | ----------- | ----- |
 | Rb          | 200k  |
 | Transformer | x:x   |
-
 
 #### References
 

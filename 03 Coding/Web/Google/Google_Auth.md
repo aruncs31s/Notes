@@ -1,9 +1,12 @@
 ---
 id: Google_Auth
 aliases: []
-tags: []
+tags:
+  - coding
+  - web
+  - google
+dg-publish: true
 ---
-
 ## Steps
 
 1. Goto https://console.developers.google.com
@@ -38,10 +41,12 @@ tags: []
 GOOGLE_CLIENT_ID=your_client_id
 GOOGLE_CLIENT_SECRET=your_client_secret
 NEXTAUTH_URL=http://localhost:3000
+
 ```
 
 16. Install the required packages:
 
 ```bash
 npm install next-auth @next-auth/google
+
 ```

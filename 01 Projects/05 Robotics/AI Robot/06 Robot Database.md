@@ -1,10 +1,17 @@
 ---
-aliases: 
+id: 06_Robot_Database
+aliases: []
+tags:
+  - projects
+  - robotics
+  - ai_robot
 Date: "28-05-2025"
+dg-publish: true
 ---
 # Robot Database
 
 ### Creation
+
 ```python
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///robot_database.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -19,40 +26,52 @@ class Robot(db.Model):
 ```
 
 ##### Create the database tables
+
 ```python
 with app.app_context():
     db.create_all()
+
 ```
 
 # Testing
+
 ```bash
 curl http://192.168.31.92:5000 -s
+
 ```
 
 ## Initializing
+
 ```bash
 curl -sX POST http://192.168.31.92:5000/init
+
 ```
 
 ## Query all robots
 
 ```bash
 curl  -s http://192.168.31.92:5000/robots
+
 ```
+
 ## Update Reading
 
 #### Using **POST**
+
 ```bash
 curl -sX POST http://192.168.31.92:5000/robots \
 -H "Content-Type: application/json" \
 -d '{"id": 1, "last_position": 45}'
+
 ```
+
 #### Using **PUT** 
 
 ```bash
 curl -sX PUT http://192.168.31.92:5000/robots/update/1 \
 -H "Content-Type: application/json" \
 -d '{"last_position": 90}'
+
 ```
 
 ```bash
@@ -65,10 +84,11 @@ curl -sX PUT http://192.168.31.92:5000/robots/update/$i \
 sleep .7
 ((i--))
 done 
+
 ```
 
-
 # ESP32 Connection
+
 ```cpp
 String httpGETRequest(const char* serverName) {
   WiFiClient client;
@@ -96,27 +116,27 @@ String httpGETRequest(const char* serverName) {
 
   return payload;
 }
-```
 
+```
 
 ```cpp
 http.begin(client,ServerURL);
+
 ```
 
 ```mermaid
 graph TB
 A["http.begin(client_object,serverUrl)"] --> B["beginInternal(url, protocol.c_str())"]
+
 ```
-
-
 
 ```cpp
 bool HTTPClient::begin(WiFiClient &client, String url) {
 // Check for http or https and
     return beginInternal(url, protocol.c_str());
 }
-```
 
+```
 
 ```cpp
 bool HTTPClient::beginInternal(String url, const char* expectedProtocol)
@@ -175,4 +195,5 @@ bool HTTPClient::beginInternal(String url, const char* expectedProtocol)
     log_d("protocol: %s, host: %s port: %d url: %s", _protocol.c_str(), _host.c_str(), _port, _uri.c_str());
     return true;
 }
+
 ```

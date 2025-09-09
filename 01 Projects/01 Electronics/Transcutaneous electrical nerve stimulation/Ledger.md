@@ -1,3 +1,12 @@
+---
+id: Ledger
+aliases: []
+tags:
+  - projects
+  - electronics
+  - transcutaneous_electrical_nerve_stimulation
+dg-publish: true
+---
 # Ledger
 ### Version 1
 Purchased Dates : 
@@ -27,6 +36,5 @@ These are the purchased item on the [[22-11-2024]] the miscellaneous will be
 | push button | 2             | 2        | 4/-      |
 |             |               |          |          |
 |             |               |          |          |
-
 
 ![[#Version 1]]

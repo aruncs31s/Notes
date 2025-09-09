@@ -1,9 +1,12 @@
 ---
 id: Curl
 aliases: []
-tags: []
+tags:
+  - science
+  - maths
+  - vector_calculus
+dg-publish: true
 ---
-
 # Curl
 
 _Curl of function explains rotation of a body at different position , means torque at the position_
@@ -56,5 +59,4 @@ $$
 #### Physical Significance of curl
 - If curl is positive the flow is clock wise 
 - If the curl is negative flow is anti-clock wise
-
 

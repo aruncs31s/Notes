@@ -1,11 +1,16 @@
 ---
-excalidraw-plugin: parsed
+id: Prototypeexcalidraw
+aliases: []
 tags:
-  - excalidraw
+  - projects
+  - web_based
+  - gcek_iot_training_course
+  - drawings
+excalidraw-plugin: parsed
 complete: false
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 
@@ -32,6 +37,7 @@ DC_IN 7-15 ^qSmgALPT
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBObR4aOiCEfQQOKGZuAG1wMFAwYogSbggjAGEoAE0AUWJKgBkAcUcABgB2AFkm/RgABQARfQA2FOLIWERywn1opH4SzG5n
 
@@ -106,5 +112,7 @@ AgJcErIAhPAnUM3RJaciVhPSDN4ICvQ6OMBMInpB04DbMjGRIImUTsJldaltIIwlsS+J6QGCmILlZ6QY
 IynEApQCARkelPorEBugbAU6LpNwCaBggy7LBCQHvyTIRIRIbGKQGUAMgAAFE72oC8AtgXUzqeSOuAABKBUPxWUDRhqQqU1qbgA6nrleAM0/Tl1P0iDTWu3HBKaBRQzpw8KnATMBqSC4ZB+K8YeitlkmSZBKp1UoHpYMXrYAiABHfcSUGHoPj56F0u0DxTPAWCRK8UuwEzAQDYBsgEoYenAFKnlTh6VUq8mgx+mEBGA9MUKfgHCl+DXSYQYIODKx
 
 a0R3wvFfQOZPwJVijqdwv6jxHBmQzoZccU8f234DK1I0nVfmMxCAA===
+
 ```
+
 %%

@@ -1,14 +1,18 @@
 ---
+id: Teams
+aliases: []
+tags:
+  - startups
+  - es-gcek
+  - projects
+  - ai-assistant-ui
 dg-publish: true
 ---
-
 # Teams
 
 > Req List
 1. [Albertjoe007](https://github.com/Albertjoe007)
 2. [Abhaya Govind](https://github.com/AbhayaGovind)
-
-
 
 ## Developers 
 1. 

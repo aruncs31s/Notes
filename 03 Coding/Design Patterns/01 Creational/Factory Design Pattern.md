@@ -1,9 +1,10 @@
 ---
+id: Factory_Design_Pattern
+aliases: []
 tags:
-  - programming
-  - design_pattern
-  - creational_pattern
-  - software_design
+  - coding
+  - design_patterns
+  - creational
 dg-publish: true
 ---
 ### Factory Method Pattern
@@ -11,7 +12,6 @@ dg-publish: true
 > **Factory Method** is a creational design pattern that *provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created*.
 
 In this the users dont have to worry about the instantiation logic, they just need to call the factory method and get the object they need. It hides the complexity of object creation and provides a simple interface for users. 
-
 
 #### ✅ **Benefits:**
 - **Easier maintenance** and reuse of code
@@ -25,6 +25,7 @@ In this the users dont have to worry about the instantiation logic, they just ne
 - **Increased Coupling** Instances are very coupled to the 
 
 #### ❌ **Without Factory Method**
+
 ```ts
 const type = "admin"; // or "moderator", "user"
 const data = { id : 1, name: "Arun CS" };
@@ -48,9 +49,10 @@ switch (type) {
     default:
         throw new Error("Unknown user type");
 }
-```
-**Usage:**
 
+```
+
+**Usage:**
 
 #### ❌ **Without Factory Method In GO**
 
@@ -69,9 +71,11 @@ func (a *Admin) SetPermissions(permissions []string) {
     // Set admin specific permissions
 }
 // Similar for Moderator and User types 
+
 ```  
 
 #### ✅ **With Factory Method**
+
 ```ts
 class UserFactory {
     static createUser(type: string, data: any): User {
@@ -87,16 +91,21 @@ class UserFactory {
         }
     }
 }
+
 ```
+
 **Usage:**
+
 ```ts
 const user = UserFactory.createUser("admin", { id: 1, name: "
 Arun CS" });
 user.setOptions({ canEdit: true, canDelete: true });
 user.setPermissions(["read", "write", "delete"]);
+
 ```
 
 #### ✅ **With Factory Method In GO**
+
 ```go
 type UserFactory interface {
     CreateUser(userType string, data map[string]interface{}) User
@@ -116,9 +125,11 @@ func (f *UserFactoryImpl) CreateUser(userType string, data map[string]interface{
         panic("Unknown user type")
     }
 }
+
 ```
 
 **Usage:**
+
 ```go
 factory := &UserFactoryImpl{}
 user := factory.CreateUser("admin", map[string]interface{}{
@@ -130,6 +141,7 @@ user.SetOptions(map[string]interface{}{
     "canDelete": true,
 })
 user.SetPermissions([]string{"read", "write", "delete"})
+
 ```
 
 ```mermaid
@@ -153,4 +165,5 @@ flowchart LR
     C@{ shape: rounded}
     D@{ shape: rounded}
     style A fill:#2962FF
+
 ```

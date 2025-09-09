@@ -1,9 +1,12 @@
 ---
 id: esp_mesh
 aliases: []
-tags: []
+tags:
+  - projects
+  - electronics
+  - node_to_node_communication
+dg-publish: true
 ---
-
 2. OnReceive() callback function
 
 ```c
@@ -17,4 +20,5 @@ void espMesh::mesh::OnReceive(const uint8_t *mac_addr,
   memcpy(&Message_ptr, incomingData, sizeof(Message_ptr));
   Serial.printf("Board ID %u: %u bytes\n", Message_ptr->UID, len);
 }
+
 ```

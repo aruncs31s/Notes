@@ -1,7 +1,12 @@
 ---
-aliases:
-  - shannon's third theorem
+id: Shannon-Hartely_Theorem
+aliases: []
+tags:
+  - electronics
+  - communication
+  - wireless
 Date: 31-10-2024
+dg-publish: true
 ---
 # Shannon-Hartely Theorem
 "In information theory, the Shannon–Hartley theorem tells the maximum rate at which information can be transmitted over a communications channel of a specified bandwidth in the presence of noise."^[https://en.wikipedia.org/wiki/Shannon%E2%80%93Hartley_theorem]
@@ -21,7 +26,6 @@ $$
 So it give the channel capacity of a band limited Gaussian Channel With AWGN  ?
 - [ ] What is Gaussian Channel
 #proof 
-
 
 ## Equation Analysis 
 	In the  equation the channel capacity $C$ can not be changed  ![[#^226bce]] 

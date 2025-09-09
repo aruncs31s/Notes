@@ -1,3 +1,12 @@
+---
+id: GaussJordan_elimination
+aliases: []
+tags:
+  - science
+  - maths
+  - laws
+dg-publish: true
+---
 *Gauss–Jordan elimination is a systematic procedure for solving systems of linear equations using row operations*
 
 - Consider the following equations

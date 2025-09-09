@@ -1,9 +1,14 @@
 ---
 id: VLIW Architecture
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - s6
+  - vlsi
+  - computer
+dg-publish: true
 ---
-
 # VLIW Architecture
 
 Created : 2024-07-24 23:43

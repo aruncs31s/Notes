@@ -1,7 +1,9 @@
 ---
 id: Battery
 aliases: []
-tags: []
+tags:
+  - electronics
+dg-publish: true
 ---
 #### Battery Percentages
 
@@ -43,7 +45,6 @@ It is a 3 stage process
 
 ##### LIFEPo4 Battery Charging
 ![[LiFEPO4-BATTERY-CHARGING-PROFILE.excalidraw]]
-
 
 There are four stages instead of 3 stages in [[#Sealed Lead Acid(SLA) Battery|SLA]]
 

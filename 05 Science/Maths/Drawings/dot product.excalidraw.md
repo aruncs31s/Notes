@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: dot_productexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
-
 
 # Text Elements
 v.w ^hn5nnGgG
@@ -20,6 +20,7 @@ v.w ^i07J5zl3
 
 %%
 # Drawing
+
 ```json
 {
 	"type": "excalidraw",
@@ -869,5 +870,7 @@ v.w ^i07J5zl3
 	},
 	"files": {}
 }
+
 ```
+
 %%

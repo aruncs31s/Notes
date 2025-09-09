@@ -1,12 +1,15 @@
 ---
 id: Arduino
 aliases: []
-tags: []
+tags:
+  - electronics
+  - embedded_systems
+  - micro_controllers
+  - arduino
 Created: "13-08-2024"
-cssclasses:
-  - wide-page
+cssclasses: 
+dg-publish: true
 ---
-
 ### Arduino
 
 - [[#Interfacing]]
@@ -33,6 +36,7 @@ void loop() {
   }
   delay(400);
 }
+
 ```
 
 ## Arduino to Arduino I2C Communication
@@ -59,6 +63,7 @@ void loop() {
 	x++;
 	delay(1500);
 }
+
 ```
 
 **Slave Code**:
@@ -80,6 +85,7 @@ void receiveCallback(int bytes){
 void loop() {
 	delay(1000);
 	}
+
 ```
 
 ## References

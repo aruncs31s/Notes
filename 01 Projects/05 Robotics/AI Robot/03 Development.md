@@ -1,7 +1,12 @@
 ---
+id: 03_Development
+aliases: []
+tags:
+  - projects
+  - robotics
+  - ai_robot
 dg-publish: true
-cssclasses:
-  - wide-page
+cssclasses: 
 ---
 # Development 
 - [[Angle table]]
@@ -12,7 +17,6 @@ There are currently few tasks at hand
 2. Then add object avoidance
 3. Stream Video through webcam and identify persons.
 The development have devided into 4 stages( #update ) for the timebeing 
-
 
 - [[#Development Phase 0]]
 - [[#Development Phase 1]] -> making the robot walk 
@@ -31,7 +35,6 @@ The development have devided into 4 stages( #update ) for the timebeing
 
 ![[Pasted image 20250608200611.png]]
 
-
 Threre are **17** servos in total , each servo can rotate from **0** to **180** degrees , it was not clear at first that the [[MG995]] can rotate upto angle **180** or not. But later some source like [this](https://components101.com/motors/mg995-servo-motor) show that it is indeed possible to for the [[MG995|servo]] to rotate upto 180.
 
 ## 2 PCA9685  as Driver
@@ -39,6 +42,7 @@ Threre are **17** servos in total , each servo can rotate from **0** to **180** 
 ```cpp
 #define SERVO_MIN  125
 #define SERVO_MAX  625
+
 ```
 
 This is the value of `SERVOMIN` and `SERVOMAX` found in the internet code , now we have to find the value corresponding to our servo.
@@ -55,7 +59,6 @@ $$
 20 ms \to \frac{20}{4096} \to 4.88\mu s
 $$
 ![[MG995#^90bc64]]
-
 
 $$
 0.5ms \to \frac{0.5 ms}{4.88\mu s } \to 102.45
@@ -74,24 +77,27 @@ $$
 #define SERVO_FREQ 50
 #define SERVO_ANGLE_MIN 0
 #define SERVO_ANGLE_MAX 180
+
 ```
 
 Servoo
+
 ```cpp
 void setup() {
   board1.setPWMFreq(SERVO_FREQ);
 }
-```
 
+```
 
 ```cpp
 uint16_t get_pulse(uint8_t _angle){
  return map(_angle,SERVO_ANGLE_MIN, SERVO_ANGLE_MAX, SERVO_MIN,SERVO_MAX);
   }
+
 ```
 
-
 **Usage**
+
 ```cpp
 #define I2C_ADDR 0x40 
 Adafruit_PWMServoDriver the_servo = Adafruit_PWMServoDriver(I2C_ADDR);
@@ -126,6 +132,7 @@ The [[PCA9685]] has 16 output pins, but the thing is our robot has 17 servos so 
 | PIN_RF   | Right Foot | 15    |
 
 ^c18f43
+
 ```cpp
 #define PIN_LA1 0
 #define PIN_LA2 1
@@ -143,6 +150,7 @@ The [[PCA9685]] has 16 output pins, but the thing is our robot has 17 servos so 
 #define PIN_RL3 13
 #define PIN_LF 14
 #define PIN_RF 15
+
 ```
 
 ^d85d2b
@@ -154,8 +162,6 @@ $$
 $$
 **Initial position** in the sense that  the position of the servo when the robot is in the standing position 
 
-
-
 ### 3.1 Initial Positions 
 
 $$
@@ -163,7 +169,6 @@ $$
 \theta_{0}& \to \text{Initial Posiotion} \\
 \end{align}
 $$
-
 
 ```cpp
 // Servo Vals.h
@@ -175,16 +180,16 @@ $$
 
 ```
 
-
 ### Tests
+
 ```dataview
 TABLE servo as "ID", pin as "pin" , initial_position as "Initial Angle",  status as "Status" , rotation as "Rotation"
 WHERE file = this.file 
+
 ```
 
-
-
 **pulse tester**
+
 ```python
 import requests 
 url = "http://192.168.137.142/setServo"
@@ -201,14 +206,18 @@ while True:
 	
 	if val == 0:
 		break;
+
 ```
 
 **angle tester**
+
 ```python
 import requests 
 url="http://192.168.248.254/setServo"
 import time
+
 ```
+
 ```python
 def get_pulse(val):
 	return val * (512 - 102 ) /180 + 102 
@@ -221,6 +230,7 @@ def set_position(val,id=0):
 	print(f"Response: {response.text}")
 
 ```
+
 ```python
 while True:
 	for i in range(0,180):
@@ -232,7 +242,9 @@ while True:
 		set_position(new_val,id=1)
 		time.sleep(.1)
 		
+
 ```
+
 ```python
 while True:
 	val = int(input("Enter position"))
@@ -241,11 +253,15 @@ while True:
 	new_val = get_pulse(val)
 	set_position(new_val,id=1)
 	
+
 ```
+
 ```python
 new_val = 180
 set_position(new_val,id=0)
+
 ```
+
 ```python
 LL1=0
 LL2=10 
@@ -275,14 +291,16 @@ time.sleep(1)
 set_position(get_pulse(LF),id=14) # LF 
 time.sleep(1)
 set_position(get_pulse(RF),id=15) # RF 
+
 ```
 
 ```python 
 set_position(160,id=12) # RL2 
+
 ```
 
-
 **ideal**
+
 ```python
 id = 5
 zero_degree = {
@@ -293,22 +311,28 @@ one80_degree = {
 	"id": id,
 	"position": 522
 }
+
 ```
+
 **min**
+
 ```python
 response = requests.get(url, params=zero_degree)
 print(f"Response: {response.text}")
+
 ```
+
 **max**
+
 ```python
 response = requests.get(url, params=one80_degree)
 print(f"Response: {response.text}")
+
 ```
 
 ### Upper Body
 
 ![[Pasted image 20250608202240.png]]
-
 
 ####  1. LA1 
 - [servo:: LA1]
@@ -420,8 +444,6 @@ $$
 \end{bmatrix}
 $$
 
-
-
 #### 9. LL1
 - [servo:: LL1]
 - [pin:: 8]
@@ -470,9 +492,7 @@ $$
 \end{bmatrix}
 $$
 
-
 1. First Initial position of Servo 
-
 
 $$
 I = \begin{bmatrix}
@@ -490,7 +510,6 @@ $$
 -1 & 0 & 0
 \end{bmatrix}
 $$
-
 
 3. 180° Around the X-Axis (Flips Y and Z Down)  (**global axis**)
 
@@ -519,8 +538,6 @@ $$
 -1 & 0 & 0
 \end{bmatrix}
 $$
-
-
 
 #### 11. LL3
 - [servo:: LL3]
@@ -576,11 +593,13 @@ $$
 - [rotation:: ]
 ## 4 Movements
 Lets say we want to go from position **a** to **b**. the code will be like this
+
 ```cpp
 for (pos= _initial_position; ++pos; pos < _final_position){
             _servo_obj.setPWM(_this_servo_, 0, angleToPulse(pos));
             delay(DELAY_MS);
         }
+
 ```
 
 1. fist sets the position(`pos`) os the starting position(`_initial_position`)
@@ -591,7 +610,6 @@ for (pos= _initial_position; ++pos; pos < _final_position){
 
 Here few things to consider 
 1. `_final_position` is will be greater than `_initial_position` (**_final_position > _initial_position**) 
-
 
 ### 4.1 Raising Hand
 
@@ -612,8 +630,6 @@ For the time beeing consider only `LA1` , `LA2` , `LA3`
 | LA1   | Left arm | 25               | to front |
 | LA2   | Left arm | 0                | to up    |
 | LA3   | Left arm | 16               | to up    |
-
-
 
 #### 4.1.1 Left Arm 
 
@@ -674,7 +690,6 @@ plt.show()
 
 ```
 
-
 $$
 i = \begin{bmatrix}
 1 & 0  \\
@@ -682,6 +697,7 @@ i = \begin{bmatrix}
 \end{bmatrix}
 $$
 ## 5 Timeline
+
 ```mermaid
 timeline 
 title AI Robot Development 
@@ -693,8 +709,8 @@ May 7 : Lib Making
 May 14 : Making it walk 
 May 20 : Implementing Emotes 
 May 30 : Expected to Finish Phase 1
-```
 
+```
 
 ## 6 References
 

@@ -1,11 +1,15 @@
 ---
 id: sshfs
 aliases: []
-tags: []
+tags:
+  - os
+  - tools
+  - nas
+dg-publish: true
 ---
-
 # sshfs
 
 ```bash
 sshfs [user@]host:[dir] mountpoint [options]
+
 ```

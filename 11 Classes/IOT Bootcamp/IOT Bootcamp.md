@@ -1,10 +1,12 @@
 ---
 id: IOT Bootcamp
 aliases: []
-tags: []
+tags:
+  - classes
+  - iot_bootcamp
 Date: "14-01-25"
+dg-publish: true
 ---
-
 # IOT Bootcamp
 
 ### 14-01-25

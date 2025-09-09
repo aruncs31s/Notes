@@ -1,3 +1,11 @@
+---
+id: Decorator
+aliases: []
+tags:
+  - coding
+  - design_patterns
+dg-publish: true
+---
 # Decorators
 
 - modify the behavior of functions or classes without modifying their source code

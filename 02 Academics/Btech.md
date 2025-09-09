@@ -1,23 +1,22 @@
 ---
 id: Btech
-aliases: 
-tags: 
-cssclasses:
-  - wide-page
+aliases: []
+tags:
+  - academics
+cssclasses: 
+dg-publish: true
 ---
-
 # Btech
 
 ## Exan
+
 ```dataview
 TABLE
 ExamDate as "Date of Exam MM/DD/YYYY"
 WHERE ExamDate 
 SORT ExamDate asc
+
 ```
-
-
-
 
 ## Supplementary
 
@@ -49,8 +48,6 @@ SORT ExamDate asc
 | [[Optical Fibre Communication]] | 26/11/2024 (Tuesday) |      |
 | [[Python For Engineers]]        | 29/11/2024 (Friday)  |      |
 | [[ISE]]                      | 03/12/2024 (Tuesday) |      |
-
-
 
 ## References
 

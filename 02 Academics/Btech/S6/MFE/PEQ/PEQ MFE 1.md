@@ -1,10 +1,16 @@
 ---
-cssclasses:
-  - wide-page
-aliases: 
-tags: 
+id: PEQ_MFE_1
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - mfe
+  - peq
+cssclasses: 
 Created: 15-08-2024
-Status:
+Status: 
+dg-publish: true
 ---
 # PEQ MFE 1 May 2024 R,S Sem Exam
 #### A

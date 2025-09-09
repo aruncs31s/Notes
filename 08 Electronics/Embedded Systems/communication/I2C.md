@@ -1,17 +1,13 @@
 ---
 id: I2C
-aliases:
-  - i2c
-  - twi
+aliases: []
 tags:
-  - serialCommunication
-  - arduino
-  - esp32
-  - "#embeddedSystems"
-  - "#protocol"
+  - electronics
+  - embedded_systems
+  - communication
 Date: 13-10-2024
+dg-publish: true
 ---
-
 # I2C
 
 _Inter-Integrated Circuit aka I2C is a serial communication protocol where 2 wires are used to communicate_. It supports multiple device and multiple controllers that control send and receive data
@@ -50,6 +46,7 @@ _Inter-Integrated Circuit aka I2C is a serial communication protocol where 2 wir
 ```c
 requesting data from it (high voltage level)
 sending data to the slave (low voltage level)
+
 ```
 
 1. **ACK/NACK Bit:** Each frame in a message is followed by an acknowledge/no-acknowledge bit. If an address frame or data frame was successfully received, an ACK bit is returned to the sender from the receiving device
@@ -72,6 +69,7 @@ sequenceDiagram
     participant B as Slave
     A->>B: SDA[1->0] SCL[1]
     B->>A: Great!
+
 ```
 
 ## Practical Usage

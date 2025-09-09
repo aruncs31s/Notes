@@ -1,9 +1,11 @@
 ---
 id: React
 aliases: []
-tags: []
+tags:
+  - coding
+  - react
+dg-publish: true
 ---
-
 # React
 - [[Integrating JWT]]
 - [[ChartJS]]
@@ -12,6 +14,7 @@ tags: []
 
 ```bash
 npx create-react-app my-react-app
+
 ```
 
 #### Run New project
@@ -19,6 +22,6 @@ npx create-react-app my-react-app
 ```bash
 cd my-react-app
 npm start
-```
 
+```
 

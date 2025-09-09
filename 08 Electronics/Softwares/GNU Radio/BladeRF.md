@@ -1,6 +1,12 @@
 ---
-aliases: 
+id: BladeRF
+aliases: []
+tags:
+  - electronics
+  - softwares
+  - gnu_radio
 Date: 20-01-25
+dg-publish: true
 ---
 # BladeRF
 modulate and demodulate 802.11 packets

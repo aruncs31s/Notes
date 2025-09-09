@@ -1,7 +1,10 @@
 ---
 id: tmux
 aliases: []
-tags: []
+tags:
+  - os
+  - tools
+dg-publish: true
 ---
 # TMUX 
 
@@ -119,14 +122,9 @@ bind -n M-n display-popup -E "nvim ~/obsidian-vault/Linux/Linux/Linux.md"
 bind -n M-o new-session -A -s Obsidian
 bind -n M-p new-session -A -s Git
 
-
-
-
-
 # Toggle the Status bar
 bind -n M-u set -g status off
 bind -n M-U set -g status on
-
 
 # Vim style pane selection
 
@@ -145,7 +143,6 @@ bind -n M-h select-pane -L
 bind -n M-l select-pane -R
 bind -n M-k select-pane -U
 bind -n M-j select-pane -D
-
 
 # Shift arrow to switch windows
 bind -n S-Left  previous-window
@@ -175,11 +172,8 @@ bind -n M-8 select-window -t 8
 bind -n M-9 select-window -t 9
 bind -n M-0 select-window -t 10
 
-
-
 #### catppuccin
 # By https://github.com/omerxx/dotfiles/blob/master/tmux/tmux.conf
-
 
 set -g @plugin 'omerxx/catppuccin-tmux'
 set -g @catppuccin_flavour 'mocha'
@@ -202,15 +196,12 @@ set -g @catppuccin_directory_text "#{b:pane_current_path}"
 # set -g @catppuccin_meetings_text "#($HOME/.config/tmux/scripts/cal.sh)"
 set -g @catppuccin_date_time_text "%H:%M"
 
-
-
 bind -n M-f run-shell "~/.tmux/plugins/tmux-fzf/main.sh"
 bind -n M-s run-shell "/home/aruncs/.tmux/plugins/tmux-fzf/scripts/session.sh switch"
 
 # bind -n M-f run "fzf-tmux"
 
 TMUX_FZF_LAUNCH_KEY="C-f"
-
 
 run '~/.tmux/plugins/tpm/tpm'
 
@@ -223,10 +214,10 @@ bind-key -T copy-mode-vi v send-keys -X begin-selection
 bind-key -T copy-mode-vi C-v send-keys -X rectangle-toggle
 bind-key -T copy-mode-vi y send-keys -X copy-selection-and-cancel
 
-
 ## match the working directory of new pane to current one
 bind '"' split-window -v -c "#{pane_current_path}"
 bind % split-window -h -c "#{pane_current_path}"
+
 ```
 
 #### Tmux Litle hacks
@@ -257,6 +248,7 @@ bind-key -n M-q display-menu -x W -y S \
     "Break Pane"                         t break-pane \
     "Join Pane"                          j "choose-window 'join-pane -h -s \"%%\"'" \
     "#{?window_zoomed_flag,Unzoom,Zoom}" z "resize-pane -Z"
+
 ```
 
 ```bash
@@ -296,4 +288,5 @@ bind-key -n M-z resize-pane -Z
 
 ```bash
 :attach-session -t . -c new_working_dir
+
 ```

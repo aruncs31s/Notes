@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: Demodulation_using_IC565excalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
-
 
 # Excalidraw Data
 ## Text Elements
@@ -62,6 +62,7 @@ R2
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBWbR4aOiCEfQQOKGZuAG1wMFAwYuh4cXRA7CiOZWCU4shGFnYuNB4eAA5+EqbWTgA5TjFuAHYeABZ48YAGeOm+AshCDmIs
 
@@ -298,5 +299,7 @@ LHiyOszrG6+kBbrMLSKDFoi67OvpAHCPB3452wKev7rscGF7z9a63uuNrp4HP2KcGwKlTXr06wOvpAVD
 oABgAABTNul4l0A0h1AKa7xAAAJSYg6sMoBYJu8BJvSbDYIps047ZYptmKqm2Rtfrp0BOsIAK69TCcAmq5NjORGQOrD+wqiErRWwmQLgB8bYcH0k0JRAKxuoYEa+ojprMK6tjCAUAACSBbZG3YCEsVQMwCIg6iHABcbqwC+tub/G6EIbAVQIQCMAIFK6B4b4RmEDBAaW47Bsw4MqrD6Af69nhqTDwtXz4waWxls4bJfhbgxrBPCRPhAllGBD7gQA
 
 A===
+
 ```
+
 %%

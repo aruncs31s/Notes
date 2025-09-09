@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: 555_timer_internal_Voltage_deviderexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 ## Text Elements
@@ -29,6 +29,7 @@ Comparator ^W5M5BCAd
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBWbQBGGjoghH0EDihmbgBtcDBQMBLoeHF0Ig4kflLGFnYuNCSkgE4ANlrIetZOADlOMW4k9taeABZ4gAZJ1q6IQg5iLG4I
 
@@ -125,5 +126,7 @@ ercoZkQBQKzkG+DOCOD6AUQ0G3umoq62QBedKyAXRkDZ09aOd1UrnU0R50iApdgum4KMofW1BldfO7IN
 aToDUHriN1l6K9+ASztXsSBntiwrtaYZWEBoQAjAbAAwJTvUQEB9a1zDLqHw+Kp69dtumxYbCIiM74wJAEPaRy13L7iAKIBAAJyu1G6N9EINgMsAz2HDggUqiABvpBobYZIAYSOKQGUAxgAAFIvmoC8BVCr+0dHkgSAABKKMIc2UDq1Qsd+x/UAhf0gHrxXIT/fEB/3T649Zu/EM7qGacBbFWu3Yoc29jOzfKG2LICftkRILTNRAHfagDwOlBXZt
 
 OpTn7O5B7Mds5B/WtPrsC/h4MOQJEK7LgAH6j9rszQKfqV5rBjYhARgFBADAj7eV7hdILwc0TxshAFIAwEXu+KsbMVv9CkBeF4P8Gh9+AGyFrHAAJkqUCIcIJTs1ggBNYQAA
+
 ```
+
 %%

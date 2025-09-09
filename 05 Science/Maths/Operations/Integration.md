@@ -1,6 +1,12 @@
 ---
-aliases: 
+id: Integration
+aliases: []
+tags:
+  - science
+  - maths
+  - operations
 Date: 04-01-25
+dg-publish: true
 ---
 # Integration
 Integration is basicly finding the area under the curve. 
@@ -10,7 +16,6 @@ Integration is basicly finding the area under the curve.
 $$
 Area = \text{velocity } \times \text{Time}
 $$
-
 
 $$
 S = \int_{a}^{b} f(x) dx
@@ -29,6 +34,7 @@ $$
 What if 1 is acceleration intead of velocity? then how to find the displacement 
 
 ```
+
 Acceleration  |
 			|
 			|
@@ -38,6 +44,7 @@ Acceleration  |
 			|                      |
             ------------------------
                                 10 -> time
+
 ```
 
 $$

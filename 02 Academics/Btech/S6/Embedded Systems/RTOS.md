@@ -1,9 +1,15 @@
 ---
+id: RTOS
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - embedded_systems
 Created: 2024-04-12
 tag: {"Embedded Systems","RTOS"}
+dg-publish: true
 ---
-
-
 ---
 
 # Real Time Operating Systems *By Anil Achoora*
@@ -67,7 +73,9 @@ xReturned = xTaskCreate(
 		tskDLE_PRIORITY, // Priority at which the task is created
 		&xHandle); // Used to pass out the created task's handle
 )
+
 ```
+
 ---
 ##### Creation was the first step
 - Sustain

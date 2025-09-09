@@ -1,7 +1,15 @@
+---
+id: Above_The_Law
+aliases: []
+tags:
+  - music
+  - eminem
+  - songs
+dg-publish: true
+---
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5oEgPvhTZ4CFjeuuLfmMsI?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 ## Lyrics 
-
 
 _[Intro: Claret Jai]_  
 The poor stays poor the rich get richer it's just so disproportionate.  

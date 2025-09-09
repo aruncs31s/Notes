@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: microstrip_patch_side_viewexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 ## Text Elements
@@ -19,6 +19,7 @@ t ^7iDOTYyq
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBWbR4aOiCEfQQOKGZuAG1wMFAwYogSbgghAGUAeQBmTQANACsAFWqANQBhNgB2JoBOAFEAKUwEWtwU4shYRHLA7CiOZWCp
 
@@ -77,5 +78,7 @@ SAbAEQJTuMbcfQfUMKbFlPXFkoVTjRVyDT9IGT/Fhi6x+d3PcTwz9TzT5Ge6tiovCAWz4zzT7Ttu16/j
 2yfAYXCEN7O7KxLZDrD3SVyAIwNgAwPjgaAgeWZjbsYOeZAXHr7L/QcL2qYZIb6yEbyUEgLmrY/j174gfUBALXS1cTr7pRNgcqFr3ATQYIemyAL7mNXWc2WyfWUgZQUUAACjDleV4A4moAx/R7YniAAEoNQpZlA8xVR5gkfcBUfWIse9l6ReAqfEX8eIBrufOYZCk4vyZOANWG6b4pYix8NpzdZMgweIfuB/jbiiA/u/jta6nCMhOaNpegxeD9z5
 
 f5Zru7AmhPZshKhCM4AgeQfCNwe/2X5FhCBGAWhDv8BjuSh573Q0gTeZ90MhBGQDABvxlXLjXYPRmcYTezeLfrkYJwBAEtQdRwgFLmwQBmwgA===
+
 ```
+
 %%

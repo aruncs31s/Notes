@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: instantaneous_samplingexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 ## Text Elements
@@ -19,6 +19,7 @@ Sampled Signal ^8ltQY1T4
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBmbQAGGjoghH0EDihmbgBtcDBQMBKIEm4IAAUAVSEYBEIATgBRVJLIWEQKqCwoNtLMbmd4pIAWflKYIcakicgKEnVuUYB2
 
@@ -53,5 +54,7 @@ ukAruty26si/irGv6h6G+Z6Aedu8KXkEAVIn4PgvoqAd4oEBAvyFAJERhJhrWwQxAFhiEbK+A+Sk2L2v
 AExisqU0xGQ/RyBb0VOiUuSkaXRKxUxMxb42mOBnO5B4xkxaxMxcxvIhBFSpQhx1xGQtx/wpBlUBxVx2Q6x+gtE2aNUVmgSlxqx3xMxAA8gWoLg5ssV8VAD8W+DeFCvNq6p8SCXCccZ4fNM+MCUcRkHYdEb+qEWtjic8bMShtvhQLvr7iSaCRkM0OiBSVSWavrGMcwNgD8JSD8q6l7imuycCPgKqm/IOF0UYGwAYI0WqPQAQCxP6CRjSeiRkH8f5
 
 rzugMGmMSiCQCCo+IFuqCyiGqXKfB8CpMCDrOCACI0OaeaSSPRMoFaISBCM0IWI6Y6UQhfo8bCa8QgBCbBJwE7l0XAIEGYMIMwAAOJ6lalIZki9T0R2gsrr6F4r64CaBOHcBvYfDYAhypmFHCqQBsqtEFFFH4TUQThMTZlyl2BcIIDYA5BUhspwD2xsDEAID0lJkpnliIzgAkJkgUjhDTSVH8RAA
+
 ```
+
 %%

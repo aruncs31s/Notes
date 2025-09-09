@@ -1,17 +1,24 @@
+---
+id: Energy_Monitoring
+aliases: []
+tags:
+  - projects
+  - electronics
+  - academics
+  - iot_based_smart_energy_management_system
+  - energy_monitoring
+dg-publish: true
+---
 ### Contents
 - [Introduction]()
 - [Tasks]()
 - [Todo]()
-- [Monitoring Server](Projects/Iot_based_smart_energy_management_system/Energy%20Monitoring/Monitoring%20Server.md)
-
+- [[Monitoring%20Server|Monitoring Server]]
 
 #### Componets
 
-- [ZMPT101B](Old_NOTES/Electronics/Embedded%20Systems/Sensors/ZMPT101B.md)
-- [SCT 013](Old_NOTES/Electronics/Embedded%20Systems/Sensors/SCT%20013.md)
-
-
-
+- [[ZMPT101B]]
+- [[SCT%20013|SCT 013]]
 
 [source](https://youtu.be/FVGvR9qlEc8?si=gxnrYLnuNUXbOzdP)
 
@@ -29,6 +36,4 @@
 - [[Projects/Iot_based_smart_energy_management_system/Files/PDFs/157-ArticleText-253-1-10-20220817.pdf]]
 - [[Projects/Iot_based_smart_energy_management_system/Files/PDFs/17_SI_10_CSDRA2020.pdf]]
 - 
-
-
 

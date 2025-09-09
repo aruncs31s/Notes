@@ -1,10 +1,13 @@
 ---
-cssclasses:
-  - wide-page
-aliases: 
-tags: 
+id: Interrupts
+aliases: []
+tags:
+  - electronics
+  - embedded_systems
+cssclasses: 
 Created: 15-08-2024
-Status:
+Status: 
+dg-publish: true
 ---
 # Interrupts
 Used in 
@@ -13,7 +16,6 @@ Used in
 - External devices sends interrupt informations
 - ISRs are processor or program specific
 - Software interrupt are related to execptions
-
 
 #### Interrupt Latency
 Time taken to start interrupt service 

@@ -1,3 +1,14 @@
+---
+id: UART
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - embedded_systems
+  - module_2
+dg-publish: true
+---
 # UART
  - [[#Data Transmission]]
  - [[#References]]
@@ -22,7 +33,9 @@ Rx[Rx] --> SP[Serial to parralel]  --> D2[Data]
 end 
 Tx == |Start Bit + Data + Parity Bit (Optional) + Stop Bit|  ====> Rx 
 GND o--o GND2
+
 ```
+
 ```python
 ODD_PARITY = 0
 EVEN_PARITY = 1
@@ -73,7 +86,6 @@ class UART:
 
         return received_data
 
-
 transmitter = UART()
 data = [1, 0, 1, 0, 1, 0, 1, 0]  # Example data
 transmitter.set_data(data)
@@ -103,7 +115,6 @@ The UART ==interface does not use a clock signal== to synchronize the transmitte
 	2. 8 data bit (5:8 Data bits)
 	3. Optional Programmable bit (used as parity)
 	4. Stop Bit
-
 
 > [!NOTE] P-Bit
 > P-Bit(Programmable Bit) is a one extra bit before the stop bit t is called **TB8** at transmitter side and **RB8** at receiver side

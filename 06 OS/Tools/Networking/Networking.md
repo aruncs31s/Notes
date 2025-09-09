@@ -1,10 +1,13 @@
 ---
 id: Networking
 aliases: []
-tags: []
+tags:
+  - os
+  - tools
+  - networking
 Date: "2024-08-05"
+dg-publish: true
 ---
-
 # Networking
 
 ## Contents

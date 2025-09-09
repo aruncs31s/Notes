@@ -1,8 +1,12 @@
 ---
-aliases: 
-Date: 01-11-2024
+id: Signal_Encoding_Techniques
+aliases: []
 tags:
-  - communicaiton
+  - electronics
+  - communication
+  - wireless
+Date: 01-11-2024
+dg-publish: true
 ---
 # Signal Encoding Techniques
 - Signal Encoding Criteria 
@@ -12,7 +16,6 @@ tags:
 
 ### Fundamentals 
 **Common Communication Process** : In basic communication process we will have a source then a destination , between source and destination there will be a channel or medium(i guess?) .
-
 
 >[!blank|right-small]
 >![[BOB and OLIVIA.excalidraw]]
@@ -47,9 +50,6 @@ L &= \frac{\frac{c}{f }}{4} \\ \\
 $$
 
 >Which is around $1500km$ so he can not possibly build that kind of antenna 
-
-
-
 
 ---
 [^1]: as the sound travels through air the sound will get reduced and reduced as the the distance increases and eventually reach to zero

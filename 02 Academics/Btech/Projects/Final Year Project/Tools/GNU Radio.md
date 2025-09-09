@@ -1,3 +1,14 @@
+---
+id: GNU_Radio
+aliases: []
+tags:
+  - academics
+  - btech
+  - projects
+  - final_year_project
+  - tools
+dg-publish: true
+---
 # GNU Radio 
 ## Install GNU Radio on Fedora 
 
@@ -11,4 +22,5 @@ sudo dnf install fftw-devel cppunit-devel libusb-devel \
      thrift-devel python-thrift python-mako gpsd-devel cppzmq-devel \
      python3-pybind11 pybind11-devel mathjax spdlog-devel python3-click-plugins \
      python3-pyqtgraph python3-matplotlib
+
 ```

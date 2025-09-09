@@ -1,12 +1,12 @@
 ---
 id: lms
-aliases: 
+aliases: []
 tags:
-  - project
-  - es_website
-  - lms
+  - projects
+  - web_based
+  - embedded_systems_lms
+dg-publish: true
 ---
-
 ## Features Needed
 
 * User Accounts: Who is taking the course?
@@ -14,7 +14,6 @@ tags:
 * Assessments: Quizzes, assignments, and grades.
 * Enrollment: Which courses is a user signed up for?
 * Dashboards: A personal page for users to see their progress.
-
 
 1. Showcasing old projects
 2. Showcase currently Working Projects
@@ -35,8 +34,11 @@ export async function getStaticPaths() {
   console.log("Generated paths:", paths);
   return paths;
 }
+
 ```
+
 - The one `/project` uses
+
 ```js
 export async function getStaticPaths() {
   const productEntries = await getCollection("projects");
@@ -47,9 +49,11 @@ export async function getStaticPaths() {
     };
   });
 }
+
 ```
 
 - Fixed
+
 ```js
 // Update getStaticPaths for English posts
 export async function getStaticPaths() {

@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: drawing_teamsexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 
@@ -237,6 +237,7 @@ Lidar Data + Motion Control ^J6GBuK6B
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBGOJ4aOiCEfQQOKGZuAG1wMFAwYogSbggAdQAxAC0ADgARKAA1AFkAcXwGqoBVAEEhAH0AKQoAIWc+lOLIWERywOwojmVg
 
@@ -4425,5 +4426,7 @@ fMoXK0/JEHI3Hu85ozimXHqebN3HoK5sfTsLHsYVvAABBgHogDhWyiADPAC4yGgAG6gAyADKUHPwCeAA
 UsjvWAHYnrAnsTwAF/h4ntgnuNgzv7DTLsQnsonvSAGYID/okToAoOH1AFVNHZAEX9PNABSsE+bDXiFw8kUVBc9APADknsC5ue9nq+he2sk5iTuHUnspFgMAHBVAYAGk9ObUDhIP0oHtwAEnvSADInqySCqhG4nqVABIADMjr/HvsnrxNKIlmbKgKACqiA67JHZE04GXikzSiEMA8nsC2ACgF0WVTjAWAGACFwADDSkF0GtaEeAEinuoAAyiF61q
 
 bgExLP1ABCnrlAHCnpFkmfuxinqPwBinoUoGRr0OoHYnuwnt5ADqpEutpiwC9jCbgBrAFyojHajwoCbSmCACfajjgDOoDoXOXim/HqoTN272TLxynrsAByHrIbGXigLYS8nuNg0qnraqhIYHogBRKkYACtMD3HrUcB+aBcOM1pua1qyynrgGWxCdwCmDFX1q5AETwDSACXpteyAw0FUTBDgEGnqPQDzNolvj8gDxFDKuv1kE0gF7ACAAA===
+
 ```
+
 %%

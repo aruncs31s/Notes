@@ -1,12 +1,15 @@
 ---
-cssclasses:
-  - wide-page
-aliases:
-  - constructive interference
-  - destructive interference
-tags: 
+id: Interference
+aliases: []
+tags:
+  - academics
+  - btech
+  - s7
+  - seminar
+cssclasses: 
 Created: 04-09-2024
-Status:
+Status: 
+dg-publish: true
 ---
 # Interference
 1. **Constructive Interference**

@@ -1,9 +1,13 @@
 ---
 id: go_server
 aliases: []
-tags: []
+tags:
+  - coding
+  - machine_learning
+  - ai
+  - go
+dg-publish: true
 ---
-
 # Go Server
 
 ## Go cloud
@@ -14,6 +18,7 @@ tags: []
 cd /to/my/project\ directory
 go mod init your-module-name
 go get gocloud.dev
+
 ```
 
 ## Important Links

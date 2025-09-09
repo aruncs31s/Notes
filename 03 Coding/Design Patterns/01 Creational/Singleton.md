@@ -1,9 +1,10 @@
 ---
+id: Singleton
+aliases: []
 tags:
-  - "#programming"
-  - software_design
-  - design_pattern
-  - creational_pattern
+  - coding
+  - design_patterns
+  - creational
 dg-publish: true
 ---
 ###  1️⃣ Singleton Pattern
@@ -16,6 +17,7 @@ const logger2 = new Logger();
 
 // Single Logger 
 const logger = Logger.getInstance();
+
 ```
 
 ```mermaid
@@ -45,9 +47,6 @@ flowchart LR
     style s2 fill:transparent
 
 ```
-
-
-
 
 >[!warning]- **Without Singleton**
 >

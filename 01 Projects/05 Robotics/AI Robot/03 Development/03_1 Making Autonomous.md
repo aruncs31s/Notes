@@ -1,4 +1,13 @@
-
+---
+id: 03_1_Making_Autonomous
+aliases: []
+tags:
+  - projects
+  - robotics
+  - ai_robot
+  - development
+dg-publish: true
+---
 # Making Autonomous
 
 **Def:** robot that acts without recourse to human control
@@ -12,10 +21,14 @@ So in short the robot have to do something without someone operating it.
 `fswebcam` --latter he replaced with --> `MJPG-Streamer`
 
 ### 2 Blog Post  
+
 ```
+
 name: What are the 10 Critical Components of an Autonomous Robots?
 link: https://www.probotcorp.com/post/what-are-the-10-critical-components-of-an-autonomous-robots
+
 ```
+
 There mainly 3 components to an autonomous  system
 1. Sensing System : cameras. LIDAR , Sonar Sensors , IR 
 2. Processing Unit 

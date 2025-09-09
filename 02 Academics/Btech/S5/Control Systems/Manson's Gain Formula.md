@@ -1,10 +1,15 @@
 ---
-cssclasses:
-  - wide-page
-aliases: 
-tags: 
+id: Mansons_Gain_Formula
+aliases: []
+tags:
+  - academics
+  - btech
+  - s5
+  - control_systems
+cssclasses: 
 Created: 15-08-2024
-Status:
+Status: 
+dg-publish: true
 ---
 # Manson's Gain Formula
 

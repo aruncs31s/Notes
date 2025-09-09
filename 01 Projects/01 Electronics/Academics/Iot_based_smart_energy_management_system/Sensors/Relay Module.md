@@ -1,4 +1,14 @@
-
+---
+id: Relay_Module
+aliases: []
+tags:
+  - projects
+  - electronics
+  - academics
+  - iot_based_smart_energy_management_system
+  - sensors
+dg-publish: true
+---
 <h2 align="center" id="relaymodule">Relay Module</h2>
 
 - [Introduction](#introduction)
@@ -8,14 +18,12 @@
 *Relay Module is a device that allows to control a high power circuit using a low-power signal*
 -  *some come with built-in optocoupler that add an extra “layer” of protection, optically isolating the ESP32 from the relay circuit*
 
-
 <details><summary>Image</summary>
 <img src="https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2019/12/Relay-1-2-4-8-ch-channel-modules.jpg?w=750&quality=100&strip=all&ssl=1">
 </details>
 
 #### Pinout
 ![|450](https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2019/11/Relay-pinout.png?w=850&quality=100&strip=all&ssl=1)
-
 
 -> *COM*: connect the current you want to control (mains voltage)
 -> **NC (Normally Closed):** the normally closed configuration is used when you want the relay to be closed by default. The NC are COM pins are connected, meaning the current is flowing unless you send a signal from the ESP32 to the relay module to open the circuit and stop the current flow.

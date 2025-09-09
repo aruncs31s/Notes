@@ -1,11 +1,15 @@
 ---
 id: Module 2
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - s6
+  - electromagnetics
 created: "2024-08-17"
 status: pending
+dg-publish: true
 ---
-
 # Module 2
 
 ## Contents

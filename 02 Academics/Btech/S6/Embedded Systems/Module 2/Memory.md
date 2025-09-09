@@ -1,7 +1,14 @@
 ---
+id: Memory
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - embedded_systems
+  - module_2
 dg-publish: true
 ---
-
 # Memory
 
 ## Contents
@@ -32,9 +39,6 @@ A cache controller mediates between the CPU and the memory system comprised of t
 2. *If the location is not in the cache, the controller waits for the value from main memory and forwards it to the CPU; this situation is known as a ==cache miss==*.
 
 ![[Drawing 2024-06-04 14.31.33.excalidraw]]
-
-
-
 
 ##### Types 
 ---
@@ -68,18 +72,14 @@ tags:
 -  The cache speeds up average memory access time
 -  increases the variability of memory access times
 
-
 ->> *Cache Controller* : Mediates between the CPU and the memory system comprised of the main memory
 ->> *Cache Hit* : If the requested location is in the cache, the cache controller forwards the location’s contents to the CPU and aborts the main memory request; this condition is known as a *cache hit*
 
 ->> *Cache Miss* : If the location is not in the cache, the controller waits for the value from main memory and forwards it to the CPU; this situation is known as a *cache miss*
 
-
 [[memory1.pdf#page=1&selection=61,1,63,11|memory1, page 1]]
 ![[Pasted image 20240330203604.png]]
 #fig The cache in the memory system
-
-
 
 ![[Academics/S6/Embedded Systems/Files/Pasted image 20240330204044.png]]
 #fig Two Level Cache System

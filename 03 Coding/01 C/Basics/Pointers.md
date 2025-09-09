@@ -1,13 +1,11 @@
 ---
 id: Pointers
-aliases:
-  - c pointer
+aliases: []
 tags:
-  - "#for_students"
-  - "#ai_robot"
+  - coding
+  - basics
 dg-publish: true
 ---
-
 # Pointers
 - [[Null Pointer]]
 ##### **Prerequisites**:
@@ -32,18 +30,22 @@ dg-publish: true
 Pointer is a **variable** that holds the memory address of **another variable**
 
 #example
+
 ```c
 int *x;
+
 ```
+
 here `x` is a integer pointer to an integer 
 
 ```python
 int value = *x ; // get value of the variable the x point to 
 int address = x ; // get the address of the variable the x point to
+
 ```
 
-
 #completeCode 1 
+
 ```c
 #include <stdio.h>
 int main() {
@@ -55,10 +57,12 @@ int main() {
   printf("Address of x = %p\n", &x);
   printf("Value of  ptr = %p\n", ptr);
 }
+
 ```
 
 >[!success]+ **Output**
 >```
+
 >Value of x = 10
 >Value of variable ptr points to  = 10
 >Address of x = 0x7ffc99f1581c
@@ -81,19 +85,19 @@ int main(){
     printf("Value of y = %d\n",*ptr);
     printf("Address of y = %p\n",ptr);
 }
+
 ```
 
 >[!success]- **Output**
 >```
+
 >Value of x = 5
 >Address of x = 0x7ffde2574808
 >Value of y = 10
 >Address of y = 0x7ffde257480c
 >```
 
-
 ##### Accessing Next Variable
-
 
 ```c
 #include <stdio.h>
@@ -103,18 +107,21 @@ int main(void) {
   p = &a;
   printf("%d", *(p + 1));
 }
+
 ```
 
 output Using `gcc`
 
 ```bash
 12
+
 ```
 
 output Using `clang`
 
 ```bash
 -794418688
+
 ```
 
 In this program the i was able to access the variable `b` by using `*(p+1)` because the `gcc` assigned **contiguous memory** location for the two variables. 
@@ -132,16 +139,15 @@ int main(){
     *ptr = 10;
     printf("Value of x after modification = %d\n",x);
 }
+
 ```
 
 >[!success]+ **Output**
 >```
+
 >Value of x= 5
 >Value of x after modification = 10
 >```
-
-
-
 
 #### Pointer to an array
 
@@ -158,11 +164,10 @@ int main(int argc, char *argv[]) {
 
 >[!success]- **Output**
 >```
+
 > 1
  >3
 >```
-
-
 
 #### Dynamically allocating memory
 
@@ -178,15 +183,17 @@ int main(int argc, char *argv[]) {
 	printf("%s\n", string);
 	return 0;
 }
+
 ```
 
 >[!success]- **Output**
 >```
+
 >hi
 >```
 
-
 #### Accessing values inside a struct pointer 
+
 ```c
  #include <stdio.h>
 struct somethin {
@@ -199,9 +206,12 @@ int main(){
     struct somethin *ptr = &s; 
     printf(ptr->value == s.value ? "True" : "False");
 }
+
 ```
+
 ```op
 True
+
 ```
 
 ```c
@@ -217,11 +227,10 @@ int main(int argc, char *argv[]) {
   printf("value = %d", (*new_struct).value);
   return 0;
 }
+
 ```
 
 - `->` operator combines both `*` and `.` so `(*new_struct).value` and `new_struct->value` will do the same thing.
-
-
 
 ### 2. Generic Pointer
 
@@ -229,6 +238,7 @@ It has a `void` datatype
 
 ```c
 void *ptr;
+
 ```
 
 - It can not be dereferenced , so casting is required.
@@ -240,10 +250,8 @@ int main() {
   ptr = &x;
   printf("The value of x =%d ", *(int *)ptr);
 }
+
 ```
-
-
-
 
 # Advanced
 
@@ -261,10 +269,14 @@ int main(){
     print_value(&value);
     return 0;
 }
+
 ```
+
 ```op
 Value: 10
+
 ```
+
 #explenation
 - The `print_value` expects a integer pointer 
 - in `print_value(&value)` we pass the address of the variable `value`
@@ -272,8 +284,10 @@ Value: 10
 ## 4. Constant pointer
 *the address that is pointing to, cannot be changed*
 #syntax 
+
 ```cpp
 <type-of-pointer> *const <name-of-pointer>
+
 ```
 
 ^de91e5
@@ -281,8 +295,11 @@ Value: 10
 ```cpp
 char x = 'x' ;
 char *const ptr = &x; 
+
 ```
+
 Assigning new value to that pointer will result in error as the following
+
 ```cpp
 #include <stdio.h>
 
@@ -292,9 +309,11 @@ int main() {
     char y = 'y';
     ptr = &y;  // this will throw an error like "variable 'ptr' declared const here"
 }
+
 ```
 
 > the following is possible 
+
 ```cpp
 #include <stdio.h>
 
@@ -304,9 +323,12 @@ int main() {
     *ptr = 'y';
     printf("x is now : %c\n", x);
 }
+
 ```
+
 ```op 
 x is now:  y
+
 ```
 
 ```cpp
@@ -319,15 +341,20 @@ int main() {
     ptr = &y;  // not possible 
     *ptr = 'z'; // possible 
 }
+
 ```
+
 ## 5. Pointer to a contant 
 *pointer cannot change the value at the address pointed by it*
+
 ```cpp
 const <type-of-pointer> *<name-of-pointer>;
+
 ```
 
 if we compare this with ![[#^de91e5]]
 #example 
+
 ```cpp
 #include<stdio.h>
 
@@ -339,6 +366,7 @@ int main(void)
     *ptr = 'b' ; // not possible 
     return 0;
 }
+
 ```
 
 ## 6. Pointer to pointer
@@ -355,9 +383,11 @@ int main(){
     char **ptr_to_ptr = &ptr; 
     printf("Value of x: %c " , **ptr_to_ptr); 
 }
+
 ```
 
 ## 7. Function Pointer
+
 ```cpp
 #include <stdio.h>
 void print_sum(int a, int b) {
@@ -368,7 +398,9 @@ int main() {
     func_ptr(5, 10); 
     return 0;
 }
+
 ```
+
 ## References
 
 1. [Source 1](https://embetronicx.com/tutorials/p_language/c/pointers_2/)

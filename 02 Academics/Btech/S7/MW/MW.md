@@ -1,14 +1,16 @@
 ---
 id: MW
-aliases: 
+aliases: []
 tags:
-  - ECT401
+  - academics
+  - btech
+  - s7
+  - mw
 Created: 2024-07-20
-cssclasses:
-  - wide-page
+cssclasses: 
 ExamDate: 2024-11-22
+dg-publish: true
 ---
-
 # Micro Wave and Antenas
 - [[02 Academics/Btech/S3/ECT205-NT/Module 1]]
 - [[MWA Series Exam 2]]
@@ -80,7 +82,6 @@ ExamDate: 2024-11-22
 >> - Mobile phone antenna 
 >> - – Inverted F antenna.
 
-
 ## Classes
 1. [[#Resonator|07.08.2024 9:05AM]]
 
@@ -102,7 +103,6 @@ ExamDate: 2024-11-22
 > > - Helmholtz theorem (derivation required),
 > > - Field, directivity and radiation resistance of a short dipole and half wave dipole (far field derivation).
 
-
 ```mermaid
 graph LR 
 A[Antenna] --> B[Wire Antenna] 
@@ -117,6 +117,7 @@ B --> I(Helix antenna)
 C --> J(Horn Antenna)
 E --> EA(Parabloic Antenna)
 E --> EB(Cornor Reflector)
+
 ```
 
 ##### Types of antenas
@@ -133,7 +134,6 @@ $Zg$ : Source Impedance
 $Zc$ : Characteristic Impedance of the tx line
 
 ## Module 2
-
 
 #### Resonator
 - Used in LC and L and C circuits -> Tuned Circuits and and Oscillators, amplifiers and filters etc..
@@ -176,14 +176,9 @@ $$
 k = kx^{2}+ ky^{2}+ kz^2
 $$
 
-
-
 ## Module 2 
 
-
-
 ## Module 4 RECTANGULAR RESONATOR AND MICROWAVE TUBES
-
 
 ## References
 

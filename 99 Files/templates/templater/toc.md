@@ -1,3 +1,12 @@
+---
+id: toc
+aliases: []
+tags:
+  - files
+  - templates
+  - templater
+dg-publish: true
+---
 >[!SUMMARY]+ Table of Contents
 <%*
     let headers = await tp.file.content

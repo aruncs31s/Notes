@@ -1,9 +1,11 @@
 ---
 id: Communication
 aliases: []
-tags: []
+tags:
+  - electronics
+  - communication
+dg-publish: true
 ---
-
 # Communication
 
 **Prerequisites**

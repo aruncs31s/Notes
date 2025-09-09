@@ -1,9 +1,11 @@
 ---
 id: Needs to remove
 aliases: []
-tags: []
+tags:
+  - os
+  - tools
+dg-publish: true
 ---
-
 1.  python-matplotlib python-scipy
 2.  cario-deck
 3.  Jupiter notebook
@@ -11,6 +13,7 @@ tags: []
 5.  `sudo pacman -S gtk-engines gtk-theme-name`
 6.  `sudo pacman -S lxappearance`
 #### 21-11-2024
+
 ```bash
 -S redshift
 -S compiz
@@ -34,6 +37,7 @@ tags: []
 #### 12-01-25
 
 ```
+
 [sudo] password for aruncs:
 :: There are 14 members in group mate:
 :: Repository extra
@@ -54,4 +58,5 @@ warning: mate-desktop-1.28.2-2 is up to date -- reinstalling
    17) mate-power-manager  18) mate-screensaver  19) mate-sensors-applet
    20) mate-system-monitor  21) mate-terminal  22) mate-user-share
    23) mate-utils  24) mozo  25) pluma
+
 ```

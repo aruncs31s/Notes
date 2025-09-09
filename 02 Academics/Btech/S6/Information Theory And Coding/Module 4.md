@@ -1,6 +1,15 @@
+---
+id: Module_4
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - information_theory_and_coding
+dg-publish: true
+---
 # Module 4
 Created : 2024-04-15 00:23
-
 
 ## Contents
 - [Syllabus](#syllabus)

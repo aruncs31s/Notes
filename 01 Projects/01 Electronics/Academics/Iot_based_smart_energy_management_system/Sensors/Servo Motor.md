@@ -1,3 +1,14 @@
+---
+id: Servo_Motor
+aliases: []
+tags:
+  - projects
+  - electronics
+  - academics
+  - iot_based_smart_energy_management_system
+  - sensors
+dg-publish: true
+---
 <h2 align="center">Servo Motor</h2>
 
 - [Introduction]()
@@ -45,6 +56,7 @@ void loop() {
     delay(15);
   }
 }
+
 ```
 
 - Need To install ESP32Servo.h Header file
@@ -52,6 +64,7 @@ void loop() {
 #### Working
 
 #### Solar Tracking algorithm using Servo Motor
+
 ```cpp
   short V_current_position = 0;
   short H_current_position = 0;
@@ -102,10 +115,7 @@ void loop() {
     delay(50);
 }
 
-
 ```
-
-
 
 rt = top_right
 lt = left top
@@ -118,7 +128,6 @@ avl = average value left
 avr = average value right
 
 avt = avg()
-
 
 ```cpp
 
@@ -166,8 +175,6 @@ Vertical_Servo.write(current_position - 1);
 
 ```
 
-
 #### Findings
 - Vertical_Servo  - 1 = clockwise
-
 

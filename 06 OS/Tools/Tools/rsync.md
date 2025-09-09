@@ -1,9 +1,11 @@
 ---
 id: rsync
 aliases: []
-tags: []
+tags:
+  - os
+  - tools
+dg-publish: true
 ---
-
 # rsync
 
 Created : 2024-05-28 20:59
@@ -14,12 +16,14 @@ Created : 2024-05-28 20:59
 
 ```bash
 rsync [options] source destination
+
 ```
 
 #example
 
 ```bash
 rsync -arch -v /home/user/Pictures/ /mnt/BACKUP/Pictures/
+
 ```
 
 -> -a : preserve `permissions` , `timestamps` , `symbolic links`
@@ -55,6 +59,7 @@ output :
         ├── 4
         │   └── 5
         └── 5
+
 ```
 
 ###### Expected behaviour 2
@@ -81,6 +86,7 @@ output:
     ├── 4
     │   └── 5
     └── 5
+
 ```
 
 #### Copying over ssh
@@ -89,12 +95,14 @@ output:
 
 ```bash
 rsync [options] user@ip:/path/ destination --rsync-path=/bin/rsync
+
 ```
 
 2. From Local to ssh
 
 ```bash
 rsync [options] source user@ip:/path/ --rsync-path=/bin/rsync
+
 ```
 
 4. Arch -> PI
@@ -108,10 +116,12 @@ rsync [options] source user@ip:/path/ --rsync-path=/bin/rsync
 
 ```bash
 crontab -e
+
 ```
 
 ```bash
 0 2 * * * rsync -avh --delete /path/to/source/ /path/to/destination/
+
 ```
 
 ## References

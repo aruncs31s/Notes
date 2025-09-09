@@ -1,6 +1,13 @@
 ---
-aliases: 
+id: Arduino_to_Arduino_I2C_Communication
+aliases: []
+tags:
+  - electronics
+  - embedded_systems
+  - micro_controllers
+  - arduino
 Date: 13-10-2024
+dg-publish: true
 ---
 # Arduino to Arduino I2C Communication
 - Uses [[I2C]] to communicate between 2 arduinos 
@@ -8,8 +15,8 @@ Date: 13-10-2024
 **Pins Used**:
 - `SDA` ,`SCL` ,`GND` -> Common Ground  
 
-
 **Master Code**:
+
 ```c
 // Include the required Wire library for I2C<br>
 #include <Wire.h> 
@@ -24,8 +31,11 @@ void loop() {
 	x++;
 	delay(1500);
 }
+
 ```
+
 **Slave Code**:
+
 ```c
 // Slave Code 
 // Date : 2024-10-13 
@@ -43,7 +53,9 @@ void receiveCallback(int bytes){
 void loop() {
 	delay(1000);
 	}
+
 ```
+
 ## References
 1. https://www.instructables.com/I2C-between-Arduinos/
 2. 

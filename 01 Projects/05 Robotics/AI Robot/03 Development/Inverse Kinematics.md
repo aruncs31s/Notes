@@ -1,9 +1,13 @@
 ---
 id: Inverse Kinematics
 aliases: []
-tags: []
+tags:
+  - projects
+  - robotics
+  - ai_robot
+  - development
+dg-publish: true
 ---
-
 # Using Inverse Kinematics
 
 Today **2025-06-23** we tried using Trignometric Functions , and it is found that

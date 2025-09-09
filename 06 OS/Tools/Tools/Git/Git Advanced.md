@@ -1,7 +1,10 @@
 ---
 id: Git Advanced
 aliases: []
-tags: []
+tags:
+  - os
+  - tools
+  - git
+dg-publish: true
 ---
-
 - [[#Git Stash]]

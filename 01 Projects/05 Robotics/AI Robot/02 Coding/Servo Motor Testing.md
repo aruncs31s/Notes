@@ -1,3 +1,13 @@
+---
+id: Servo_Motor_Testing
+aliases: []
+tags:
+  - projects
+  - robotics
+  - ai_robot
+  - coding
+dg-publish: true
+---
 # Servo Motor testing
 ## SG 90
 - It rotates 360 and continues to rotate like a normal dc motor when the pulse if `625`

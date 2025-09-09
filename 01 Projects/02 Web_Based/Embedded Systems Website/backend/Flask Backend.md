@@ -1,9 +1,13 @@
 ---
+id: Flask_Backend
+aliases: []
 tags:
-  - es_website
+  - projects
+  - web_based
+  - embedded_systems_website
   - backend
+dg-publish: true
 ---
-
 # Flask Backend 
 - [[YAML Conversion]]
 
@@ -13,10 +17,10 @@ tags:
 The flask backend should do the followings
 - [x] Manage authentication ✅ 2025-07-10
 
-
 ## Tokens
 
 API tokens (like JWT - JSON Web Tokens) are generally preferred.
+
 ```js
 const response = await fetch('/api/login', {
     method: 'POST',
@@ -33,9 +37,11 @@ if (data.status === 'success') {
 console.log("HI")
     // Show error
 }
+
 ```
 
 **Subsequent API Calls(eg: upload)**
+
 ```js
 const accessToken = localStorage.getItem('accessToken');
 if (!accessToken) {
@@ -56,6 +62,7 @@ const response = await fetch('/api/upload_profile_pic', { // or /api/upload_read
 });
 const data = await response.json();
 // Handle response
+
 ```
 
 Install PyJWT:
@@ -74,7 +81,6 @@ This decorator will protect your API routes, ensuring that a valid token is pres
 Client-side handling:
 Your Astro frontend will need to store this token (e.g., in localStorage) and include it in the Authorization header for subsequent API requests.
 ## README.md -> frontmatter-rich
-
 
 ## Login 
 

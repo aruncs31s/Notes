@@ -1,3 +1,13 @@
+---
+id: BER_vs_SNR
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - communication_lab
+dg-publish: true
+---
 ### Signal-to-Noise Ratio (SNR)
 
 **Definition:**

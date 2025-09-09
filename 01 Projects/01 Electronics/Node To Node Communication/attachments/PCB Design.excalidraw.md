@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: PCB_Designexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 ## Text Elements
@@ -33,6 +33,7 @@ Direction ^segfIqXm
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBmbQAGGjoghH0EDihmbgBtcDBQMBLoeHF0Qn1opH5SxhZ2LjR4vkLIBtZOADlOMW4AVgA2AfjRgA4kushCDmIsbghcFOmI
 
@@ -115,5 +116,7 @@ CHAiI7K7VgqYXcAA7CWBxJoQmMKGIUGgCphMgiwTcKQCvB1AGAhABABQF+CkDQ+0cs0ZvJEDBhuRGQaE
 jF+gOcH32LFKRD6ti5gNgFRAQhHIhYeOYyWDRkl5+SIPxRaHwC1xPCrqDjrjGzCht9MVDCAEYDYAGBoF6OAgAcgYznwPYJ3fOgTHJJIsQCLi6hXIuTasECQkgIMI5RgUegSAIZUGvk16RkD3GUcX4BaD0gDRvgmoXpb0tDDbJlA3YIMINF5bjLjKpSzRSjHEUIBVFn8gMAUR/CBAzAwgZgBClaVNKvuOfQvNsgUi9JF6UcLILgE0DBAnw/847EQA
 
 vzg44RS5d7PApuXwjKMGyCKo8tfRrsqymgIyB/OYAYpcAcAWyGwHmDuKTlZyv+bcvACI4FK4IcIFDAPQTggAA===
+
 ```
+
 %%

@@ -1,4 +1,13 @@
-
+---
+id: IEFT_Module_2
+aliases: []
+tags:
+  - academics
+  - btech
+  - s5
+  - industrial_economics_foreign_trade
+dg-publish: true
+---
 # Production and cost
 
 - [x] Production function ✅ 2024-06-29
@@ -63,7 +72,6 @@ $$
 $$
 MP =\frac{d(TP)}{d(L)} or  \frac{\Delta TP}{\Delta L }
 $$
-
 
 #### Law of Variable Proportion 
 It states that as more and more units of a variable factor are applied to a given quantity to a fixed factor, the total product increase at an ==increasing rate initially, but eventually it will increase at a diminishing rate==. 

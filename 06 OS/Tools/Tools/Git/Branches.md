@@ -1,10 +1,12 @@
 ---
 id: 1722694456-PFUM
-aliases:
-  - Branchers
-tags: []
+aliases: []
+tags:
+  - os
+  - tools
+  - git
+dg-publish: true
 ---
-
 # Branches
 
 #### Adding a branch locally and submitting it to remote
@@ -13,12 +15,14 @@ tags: []
 
 ```bash
 cd /path/of/repo
+
 ```
 
 2. Create new Branch
 
 ```bash
 git checkout -b new-branch-name
+
 ```
 
 3. Stage and commit the changes
@@ -26,12 +30,14 @@ git checkout -b new-branch-name
 ```bash
 git add .
 git commit -m "message"
+
 ```
 
 4. push that change to the new branch
 
 ```bash
 git branch -u origin new_branch
+
 ```
 
 #### Remove A branch
@@ -44,4 +50,5 @@ git branch -d localBranchName
 
 // delete branch remotely
 git push origin --delete remoteBranchName
+
 ```

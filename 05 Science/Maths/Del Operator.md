@@ -1,3 +1,11 @@
+---
+id: Del_Operator
+aliases: []
+tags:
+  - science
+  - maths
+dg-publish: true
+---
 # Del Operator
 
 The differential vector operator is called DEL$(\nabla)$

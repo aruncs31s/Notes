@@ -1,11 +1,14 @@
 ---
 id: i2c_communication
-aliases: 
+aliases: []
 tags:
+  - electronics
+  - embedded_systems
+  - micro_controllers
+  - espressif
   - esp32
-  - "#code"
+dg-publish: true
 ---
-
 # I2C Communication
 
 _Inter Integrated Circuit(I2C) ( I-squared-C), and it is a synchronous, multi-master, multi-slave communication protocol_
@@ -73,6 +76,7 @@ void loop() {
   }
   delay(5000);
 }
+
 ```
 
 #### Using Different Pins
@@ -84,6 +88,7 @@ Almost any pin can be used for `I2C` in eps32
 
 ```cpp
 Wire.begin(SDA_PIN, SCL_PIN);
+
 ```
 
 ## Resources

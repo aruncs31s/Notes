@@ -1,3 +1,13 @@
+---
+id: SSD
+aliases: []
+tags:
+  - academics
+  - btech
+  - s3
+  - ssd
+dg-publish: true
+---
 # SSD
 # Module 1
 The materials to be presented in this and the next chapter have been found

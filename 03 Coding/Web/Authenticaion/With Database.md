@@ -2,13 +2,13 @@
 id: With Database
 aliases: []
 tags:
-  - sub_note
+  - coding
+  - web
+  - authenticaion
 Date: "03-07-2025"
-cssClasses:
-  - wide-page
+cssClasses: 
 dg-publish: true
 ---
-
 # With Database
 
 ## Flow Diagram
@@ -52,6 +52,7 @@ sequenceDiagram
   Browser->>Server: GET /logout
   Server->>Server: Clear Session
   Server-->>Browser: Redirect & Logout Msg
+
 ```
 
 ```mermaid

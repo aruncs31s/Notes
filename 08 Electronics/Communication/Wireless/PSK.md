@@ -1,10 +1,12 @@
 ---
-aliases:
-  - Phase Shift Keying
-Date: 03-11-2024
+id: PSK
+aliases: []
 tags:
-  - communicaiton
-  - modulationSchemes
+  - electronics
+  - communication
+  - wireless
+Date: 03-11-2024
+dg-publish: true
 ---
 # PSK
 The phase of the carrier signal is changed with respect to the modulating signal's amplitude

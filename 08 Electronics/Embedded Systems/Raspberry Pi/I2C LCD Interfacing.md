@@ -1,7 +1,11 @@
 ---
-aliases:
-  - lcd
-  - i2c
+id: I2C_LCD_Interfacing
+aliases: []
+tags:
+  - electronics
+  - embedded_systems
+  - raspberry_pi
+dg-publish: true
 ---
 # I2C LCD Interfacing
 Created : 2024-07-23 17:59
@@ -14,12 +18,14 @@ Created : 2024-07-23 17:59
 ## Contents
 - [[#PI]]
 
-
 ###  PI
 Supported Port expanders , `MCP23017`, `MCP23008` , `PCF8574`
+
 ```bash
 pip install RPLCD 
+
 ```
+
 ```python
 # Source: DS,https://rplcd.readthedocs.io/en/stable/getting_started.html
 from RPLCD.i2c import CharLCD
@@ -47,19 +53,22 @@ try:
 except KeyboardInterrupt:
     lcd.clear()
     lcd.close()
-```
 
+```
 
 #### Scrolling Text
 Source: https://blog.dbrgn.ch/2014/4/20/scrolling-text-with-rplcd/
-TODO: Check what it does 
+> [!TODO] Check what it does 
+
 ```python
 from RPLCD import CharLCD
 lcd = CharLCD()
 lcd.write_string(u'Raspberry Pi HD44780')
 lcd.cursor_pos = (2, 0)
 lcd.write_string(u'http://github.com/\n\rdbrgn/RPLCD') 
+
 ```
+
 ## References
 1. [[Raspberry Pi]]
 2. [[Raspberry Pi 2 B]]

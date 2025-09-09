@@ -1,9 +1,20 @@
+---
+id: Ai_Thinker_VC-02
+aliases: []
+tags:
+  - electronics
+  - embedded_systems
+  - modules
+  - sensors
+dg-publish: true
+---
 # Ai Thinker VC-02
 
 ```dataview
 Table 
 file.ctime as "Created" , Date.Started as "Started" , Date.Target as "Completed"
 Where file = this.file
+
 ```
 
 |Key Spec|Val|
@@ -26,6 +37,7 @@ Source[^1]
 
 #### Sampe Code 
 Source[^1] 
+
 ```cpp
 #include <SoftwareSerial.h> 
 SoftwareSerial vc02Serial(10, 11); // RX, TX 
@@ -48,6 +60,7 @@ void loop() {
 		} 
 	} 
 }
+
 ```
 
 ##### Explained Code
@@ -73,6 +86,8 @@ if (command == "TURN ON LIGHT") { Serial.println("Turning on the light...");
 // Add code to turn on the light 
 } else if (command == "TURN OFF LIGHT") { Serial.println("Turning off the light..."); // Add code to turn off the light } 
 else { Serial.println("Unknown command"); } } }
+
 ```
+
 [^1]: http://docs.cirkitdesigner.com/component/f16ca64b-e2a0-40b9-ad3d-cfe258eb5c4f/ai-thinker-vc-02
 

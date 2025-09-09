@@ -1,8 +1,13 @@
 ---
+id: Class_Notes
+aliases: []
+tags:
+  - academics
+  - btech
+  - s7
+  - python_for_engineers
 dg-publish: true
 ---
-
-
 - [[#Module 1]]
 - [[#Module 3]]
 - [[#Module 4]]
@@ -61,6 +66,7 @@ dg-publish: true
 name=input("Enter Your Name")
 print(name)
 print("Hi " + name);
+
 ```
 
 ^ca3a12
@@ -68,7 +74,6 @@ print("Hi " + name);
 [File](./Codes/name_1.py)
 
 - It's type is default to **String** so to convert it into integer
-
 
 ```python
 def sum(a, b):
@@ -83,6 +88,7 @@ print("Sum = ", sum(10, 20))
 print("Difference  = ", differece(10, 20))
 print("Division = ", division(10, 20))
 print("Multiplication = ", multiplication(10, 20))
+
 ```
 
 ^06cc71
@@ -110,6 +116,7 @@ if __name__ == "__main__":
 if condition:
   code
 else
+
 ```
 
 #smple_program
@@ -124,10 +131,12 @@ def is_large(num_1,num_2):
 num_1 = int(input("Enter the first Number"))
 num_2 = int(input("Enter the second Number"))
 print("The Bigger Number is ", is_large(num_1,num_2) and num_1 or is_large(num_2,num_1) and num_2)
+
 ```
 
 ```python
 # Even or off
+
 ```
 
 #### Iterative Statements(Loops)
@@ -137,6 +146,7 @@ print("The Bigger Number is ", is_large(num_1,num_2) and num_1 or is_large(num_2
 ```python
 for <variable> in range(<an integer expression>):
 	code
+
 ```
 
 #example
@@ -144,6 +154,7 @@ for <variable> in range(<an integer expression>):
 ```python
 for i in range(4):
 	print(i)
+
 ```
 
 #example
@@ -152,6 +163,7 @@ for i in range(4):
 # print from 1 to 10
 for i in range(1,11):
     print(i)
+
 ```
 
 ##### while loops
@@ -161,6 +173,7 @@ for i in range(1,11):
 ```python
 while <condition>:
 	<code>
+
 ```
 
 #example
@@ -170,6 +183,7 @@ i=1
 while (i<11):
     print("2 times " , i , "= " , i*2)
     i+=1
+
 ```
 
 > [!info] Print all odd number less than 20
@@ -196,7 +210,6 @@ def armstrong(number):
         number = number // 10
     return sum
 
-
 number = int(input("Enter a number"))
 if number == armstrong(number):
     print("Number is armstrong")
@@ -218,10 +231,10 @@ def armstrong(number):
         number = number // 10
     return sum
 
-
 for i in range(1, 1000):
     if i == armstrong(i):
         print(i)
+
 ```
 
 3. Find if prime
@@ -238,9 +251,9 @@ def prime_or_not(number):
         if status == 1:
             print("Number is prime")
 
-
 number = int(input("Enter a number"))
 prime_or_not(number)
+
 ```
 
 ^3cd684
@@ -257,6 +270,7 @@ def function_name(parameters):
 	.
 	.
 	return
+
 ```
 
 ^8ae1a2
@@ -274,6 +288,7 @@ def read_input():
 
 if __name__ == '__main__':
 	read_input()
+
 ```
 
 ```python
@@ -283,7 +298,6 @@ def read_input():
 	a=int(input("en num 1 "))
 	b=int(input("en num 2 "))
 	print 'sum is = ' , sum(a,b)
-
 
 def single_line_fn():
 	a=int(input("en num 1 "))
@@ -297,6 +311,7 @@ if __name__ == '__main__':
 	a = 5
 	b =10
 	print('largest is ' ,( largest_of_2(a,b) and a )  or ( largest_of_2(b,a) and b ))
+
 ```
 
 ##### Scope and Lifetime
@@ -315,6 +330,7 @@ When a function call it self
 ```python
 def function_name:
     function_name()
+
 ```
 
 #### 2024-08-31
@@ -329,6 +345,7 @@ print(s.center(30))
 
 # print ** before and after
 print(s.center(30, "*"))
+
 ```
 
 2. Is alpha
@@ -340,6 +357,7 @@ print(s.isalpha())
 
 # Output
 # True
+
 ```
 
 3. `.isdigit()`
@@ -351,6 +369,7 @@ print(s.isdigit())
 
 s = 5
 print(str(s).isdigit())
+
 ```
 
 3. `.count()`
@@ -362,6 +381,7 @@ print(s.count("hi"))
 # output
 # 4
 # 3
+
 ```
 
 4. `.endswith()`
@@ -380,6 +400,7 @@ print(s.endswith("hi")) # Returns true if string ends with the provided characte
 print(s.find("Hi"))
 # output
 # 0
+
 ```
 
 6. `.join()`
@@ -394,6 +415,7 @@ print("*".join(c))
 # output
 # Hello Sir
 # Hello *Sir
+
 ```
 
 7. `.lower()`
@@ -403,6 +425,7 @@ a = "HELLo"
 print(a.lower())
 # output
 # hello
+
 ```
 
 - [ ] In and Not in operator
@@ -434,6 +457,7 @@ first = [1, 2, 3, 4]
 a_dict = {"key" : "value" , "key1" : "value1" }
 a_dict["key"]
 a_dict["key2"]
+
 ```
 
 #example
@@ -442,6 +466,7 @@ a_dict["key2"]
 a = { "name" : "Something" , "age" : "23"}
 print(a['name'])
 print(a["age"])
+
 ```
 
 - Adding Keys and replacing keys
@@ -449,6 +474,7 @@ print(a["age"])
 
 ```python
 a_dict["some key"] = "new_value"
+
 ```
 
 #example
@@ -459,6 +485,7 @@ print(a['name'])
 print(a["age"])
 a["college"] = "GCEK"
 print(a)
+
 ```
 
 - Replacing Values
@@ -468,6 +495,7 @@ a["college"] = "GCEK"
 print(a)
 a["college"] = "CET"
 print(a)
+
 ```
 
 ##### Set
@@ -477,6 +505,7 @@ print(a)
 
 ```python
 fruits = {"fruit_1","fruit_2","fruit_3"}
+
 ```
 
 ```python
@@ -515,6 +544,7 @@ print(fruits)
 # It remove the last index item
 fruits.pop()
 print(fruits)
+
 ```
 
 ### Module 3
@@ -522,7 +552,6 @@ print(fruits)
 #### 2024-09-27
 
 Key: `Class` , `Objects` , `OOP` , `Polymorphism `
-
 
 ```python
 class Person:
@@ -546,7 +575,6 @@ class Person:
   def print_age(self):
       print(f"John Age is {self.age1} Doe age is {self.age2}")
 
-
 # How to create Object
 x = Person("John","Doe")
 # Here x is the object and when the object is created the __init__ is execited
@@ -555,13 +583,10 @@ x.printname()
 
 x.get_age(22, 22)
 x.print_age()
+
 ```
 
 ^798cac
-
-
-
-
 
 #### 2024-10-03
 ##### Child Class
@@ -570,13 +595,13 @@ x.print_age()
 # class new_child_class(parent_class):
 class Student(Person):
   pass
+
 ```
 
 - `super().init` ->
 
 ```python
 """Create a Person Class and create child class named Student and add graduation year for Parent class and create a clid class ??? """
-
 
 class Person:
     def __init__(self, fname, lname):
@@ -586,10 +611,8 @@ class Person:
     def printname(self):
         print(self.firstname, self.lastname)
 
-
 Nivin = Person("Nivin", "Ravichandran")
 # Nivin.printname()
-
 
 class Student(Person):
     def __init__(self, fname, lname, year):
@@ -599,13 +622,11 @@ class Student(Person):
     def printname(self):
 	    print(self.firstname,self.lastname,self.graduationyear)
 
-
 Nivin_New = Student("Nivin", "Ravichandran", 2022)
 
 # Nivin_New.printname()
 
 print(Nivin_New.lastname)
-
 
 class New_Gen_Z(Student):
     def __init__(self, fname, lname, year, age):
@@ -615,10 +636,10 @@ class New_Gen_Z(Student):
     def printname(self):
         print(self.firstname, self.lastname, self.graduationyear, self.age)
 
-
 Manual_New = New_Gen_Z("Manu", "Old", 2022, 22)
 
 Manual_New.printname()
+
 ```
 
 ^46ec55
@@ -633,6 +654,7 @@ Manual_New.printname()
 graph TB
 A --> B
 C --> B
+
 ```
 
 2. Multiple Inheritance
@@ -642,6 +664,7 @@ graph TB
 A --> B
 A --> C
 A --> D
+
 ```
 
 3. Hybrid Inheritance
@@ -652,13 +675,13 @@ A --> B
 A --> C
 C --> D
 C--> E
+
 ```
 
 ##### Questions
 
 ```python
 """Create a class Student with atributes name and roll no. and a method dataprint() for displauing the same. Create two instance of the class and call the method for each instance of the class"""
-
 
 class Student:
     def __init__(self, name, rollno):
@@ -668,12 +691,12 @@ class Student:
     def dataprint(self):
         print(f"Name  : {self.name} Roll No : {self.roll_number}")
 
-
 n = Student("neh", 35)
 meg = Student("meg", 32)
 
 n.dataprint()
 meg.dataprint()
+
 ```
 
 #### 2024-10-05
@@ -707,6 +730,7 @@ R1 = Rectangle(1,2)
 C1 = Circle(2)
 print(f"Area of rectangle:  {R1.area()}")
 print(f"Area of Circle : {C1.area()}")
+
 ```
 
 - Operator Overloading: Same operator does diffrent things
@@ -714,11 +738,13 @@ print(f"Area of Circle : {C1.area()}")
 ```python
 int(a) + int(b) = int # addition
 str(a) + str(a) = str # Contcatination
+
 ```
 
 ```python
 print(5 + 5 ) # addition 
 print("Hello" + " World!") # Concatination
+
 ```
 
 ##### Abstract Class
@@ -734,6 +760,7 @@ class Shape:
 class Circle(Shape):
 	def area(self):
 		return 3.14 * self.radius ** 2 
+
 ```
 
 ```python
@@ -765,7 +792,9 @@ class Circle(Shape):
 		return (3.14 * self.radius ** 2) ** 2
 C1 = Circle(2)
 print(f"Area is ", {C1.sqr_area()})
+
 ```
+
 *Some source says that this programm will not work because we havent yet defined `area()` which is a abstract method but this exceutes just fine #doYourOwnReasearch* 
 
 #### Concrete Class
@@ -795,6 +824,7 @@ try:
     <Statement>
 except <exception type>:
     <Statement>
+
 ```
 
 #anotherExample
@@ -805,12 +835,14 @@ try:
 
 except Exception as e:
     print(f"Error {e}")
+
 ```
 
 ###### Multiple Exception Handling
 
 ```python
 except (TypeError,ValueError,RuntimError) :
+
 ```
 
 Q: Calculate integer error?
@@ -836,11 +868,9 @@ import numpy as np
 
 # plt.plot -> marker reference , line reference , color reference
 
-
 def plot():
     plt.plot([1, 2, 3, 2, 3, 4, 3, 4, 5, 1])  # it will consider it as y
     plt.show()
-
 
 def plot_x_n_y():
     xpoints = np.array([0, 6])
@@ -849,13 +879,11 @@ def plot_x_n_y():
 
     plt.show()
 
-
 def plot_without_line():
     xpoints = np.array([0, 6])
     ypoints = np.array([0, 250])
     plt.plot(xpoints, ypoints, ".")
     plt.show()
-
 
 def multple_plots():
     xpoints = np.array([1, 8])
@@ -866,13 +894,11 @@ def multple_plots():
     plt.plot(xpoints, ypoints)
     plt.show()
 
-
 # Mark Points with circle
 def mark_with_circle():
     ypoints = np.array([3, 8, 1, 10])
     plt.plot(ypoints, marker="*")
     plt.show()
-
 
 def color_change():
     ypoints = np.array([3, 8, 1, 10])
@@ -881,12 +907,10 @@ def color_change():
     # plt.plot(ypoints, marker="o")
     plt.show()
 
-
 def with_marker_size():
     ypoints = np.array([3, 8, 1, 10])
     plt.plot(ypoints, "o-.r", ms=20)  # ms -> marker size
     plt.show()
-
 
 def with_marker_edge_color():
     ypoints = np.array([3, 8, 1, 10])
@@ -896,7 +920,6 @@ def with_marker_edge_color():
     plt.show()
 
 ```
-
 
 ## References
 

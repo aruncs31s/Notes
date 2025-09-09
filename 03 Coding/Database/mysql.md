@@ -1,6 +1,13 @@
+---
+id: mysql
+aliases: []
+tags:
+  - coding
+  - database
+dg-publish: true
+---
 # mysql
 Created : 2024-06-02 04:11
-
 
 ## Contents
 - 
@@ -10,7 +17,9 @@ Created : 2024-06-02 04:11
 
 ```bash
 mysqld_safe --user=mysql &
+
 ```
+
 ### Basics
 - `SELECT` - extracts data from a database
 - `UPDATE` - updates data in a database
@@ -24,25 +33,27 @@ mysqld_safe --user=mysql &
 - `CREATE INDEX` - creates an index (search key)
 - `DROP INDEX` - deletes an index
 
-
 #### MySQL vs MariaDB
 1. MySQL
 MySQL is an open-source relational database management system(RDBMS) based on Structured Query Language (SQL)
 1. MariaDB 
 MariaDB is an open source relational database management system (RDBMS) that is a compatible drop-in replacement for the widely used MySQL database technology.
 
-
 ##### Create DATABASE
+
 ```sql
 CREATE DATABASE [IF NOT EXISTS] database_name
+
 ```
 
 1. Selecting a database
+
 ```sql
 USE <database_name>
-```
-*It does not require a ;*
 
+```
+
+*It does not require a ;*
 
 ## References
 1. https://www.mariadbtutorial.com

@@ -1,9 +1,14 @@
 ---
 id: Error Performance of QPSK
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - s6
+  - communication_lab
+  - part_b
+dg-publish: true
 ---
-
 #### Steps
 
 1.  Define Number of Input signals
@@ -21,6 +26,7 @@ tags: []
 ```python
 noise = sqrt(N0(k)/2)(randn(1,N) + 1j*randn(1,N));
 sig_Rx = S + noise;
+
 ```
 
 #### Code
@@ -131,6 +137,7 @@ hold off;
 ```python
 b1 = rand(1,N) > 0.5;
 b2 = rand(1,N) > 0.5;
+
 ```
 
 Generates two random binary sequences b1 and b2 of length N (each bit is either 0 or 1).
@@ -141,6 +148,7 @@ _`rand()` is used insted of randn()_
 I = (2*b1) - 1;
 Q = (2*b2) - 1;
 S = I + 1j*Q;
+
 ```
 
 Maps the binary sequences to Quadrature Phase Shift Keying (QPSK) symbols:

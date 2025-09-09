@@ -1,6 +1,12 @@
 ---
-aliases: 
+id: SPI_Serial_Peripheral_Interface
+aliases: []
+tags:
+  - electronics
+  - embedded_systems
+  - communication
 Date: 04-01-25
+dg-publish: true
 ---
 # Serial Peripheral Interface
 
@@ -8,11 +14,13 @@ Date: 04-01-25
 used for connecting multiple peripheral devices to a microcontroller or microprocessor
 
 ```
+
 Master        Slave 
 | MOSI | -> | MOSI | 
 | MISO | <- | MISO | 
 | SCLK | -> | SCLK | 
 | SS/CS| -> | SS/CS| 
+
 ```
 
 -  **MOSI (Master Output/Slave Input)** :Line for the master to send data to the slave.
@@ -26,7 +34,6 @@ Chip Slect(CS) , Slave Select (SS) lines are normally held at the high voltage l
 The controller always initiates communication with the peripheral and always generates the clock signal^[https://www.techtarget.com/whatis/definition/serial-peripheral-interface-SPI].
  The controller provides an individual chip selection line for each peripheral, establishing a direct connection between the controller and the peripheral
  ![](https://www.techtarget.com/rms/onlineimages/standard_spi-f.png)
-
 
 ## References
 - [Source](https://www.circuitbasics.com/basics-of-the-spi-communication-protocol/)

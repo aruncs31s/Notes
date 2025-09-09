@@ -1,9 +1,15 @@
 ---
 id: painlessMesh
 aliases: []
-tags: []
+tags:
+  - electronics
+  - embedded_systems
+  - micro_controllers
+  - espressif
+  - esp32
+  - libs
+dg-publish: true
 ---
-
 #### painlessMesh
 
 > [!float|right-small] painlessMesh
@@ -74,6 +80,7 @@ void setup() {
 void loop() {
   mesh.update();
 }
+
 ```
 
 1. `MESH_PREFIX` -> name of the network , `MESH_PASSWORD` -> password for that
@@ -83,6 +90,7 @@ void loop() {
 #define   MESH_PREFIX     "mesh_name"
 #define   MESH_PASSWORD   "password"
 #define   MESH_PORT       8080
+
 ```
 
 _all nodes in the network should use the same password_
@@ -90,8 +98,10 @@ _all nodes in the network should use the same password_
 2. Creating a `Scheduler` object and `mesh` object
 
 ```
+
 Scheduler userScheduler;
 painlessMesh  mesh;
+
 ```
 
 3.  Running Tasks Indefinitely
@@ -103,6 +113,7 @@ painlessMesh  mesh;
 
 ```c
 Task taskSendMessage( TASK_SECOND * 1 , TASK_FOREVER, &sendMessage );
+
 ```
 
 4. Custom functions
@@ -114,6 +125,7 @@ void sendMessage() {
   mesh.sendBroadcast( msg );
   taskSendMessage.setInterval( random( TASK_SECOND * 1, TASK_SECOND * 5 ));
 }
+
 ```
 
 - `mesh.sendBroadcast()` -> sends to all nodes in the network
@@ -128,6 +140,7 @@ msg += mesh.getNodeId();
 mesh.sendSingle(targetNodeId, msg);
 // Send to a specific node
 taskSendMessage.setInterval(random(TASK_SECOND * 1, TASK_SECOND * 5)); }
+
 ```
 
 5. Callback Functions
@@ -141,6 +154,7 @@ taskSendMessage.setInterval(random(TASK_SECOND * 1, TASK_SECOND * 5)); }
 void receivedCallback( uint32_t from, String &msg ) {
   Serial.printf("startHere: Received from %u msg=%s\n", from, msg.c_str());
 }
+
 ```
 
 - `newConnectionCallback` when a new node is joins the network
@@ -210,4 +224,5 @@ void loop() {
   // it will run the user scheduler as well
   mesh.update();
 }
+
 ```

@@ -1,13 +1,15 @@
 ---
-complete: false
-cssclasses:
-  - wide-page
+id: ESP32_Expansion_Board
+aliases: []
 tags:
-  - project
+  - projects
   - electronics
+  - esp32_expansion_board
+complete: false
+cssclasses: 
 Status: dropped
+dg-publish: true
 ---
-
 # ESP32 Expansion Board
 
 >[!SUMMARY|right]+ Table of Contents
@@ -29,6 +31,7 @@ This was ment to expand the [[08 Electronics/Embedded Systems/Micro Controllers/
 > > LIST
 > > FROM outgoing([[]])
 > > ```
+
 > >
 > > ###### Sub Notes
 > >
@@ -36,6 +39,7 @@ This was ment to expand the [[08 Electronics/Embedded Systems/Micro Controllers/
 > > LIST
 > > WHERE contains(file.folder, this.file.folder) AND file.name != this.file.name
 > > ```
+
 >
 > > [!todo]+ Tasks
 > >
@@ -43,8 +47,6 @@ This was ment to expand the [[08 Electronics/Embedded Systems/Micro Controllers/
 > >not done
 >>path includes ESP32 Expansion Board
 > > ```
-
-
 
 ## Pin Configuration
 The `ADC2_CH0:7` will not work when using WiFi. In this board the wifi will be utilized most of the time so going to ignore the ADC2_CH0:7 pins  
@@ -57,6 +59,7 @@ The `ADC2_CH0:7` will not work when using WiFi. In this board the wifi will be u
 #define ADC_4 34
 #define ADC_5 39 
 #define ADC_6 36
+
 ```
 
 These are the exposed **ADC_1** to **ADC_6**  , but the the **ADC_4:6** is connected to the [[GY-61]]
@@ -66,6 +69,7 @@ These are the exposed **ADC_1** to **ADC_6**  , but the the **ADC_4:6** is conne
 #define ENA 
 #define ENB
 #deinf 
+
 ```
 
 ## Integrations
@@ -111,10 +115,10 @@ The [[l298n]] is a motor driver
 > the diodes that are left to solder should solder in a way that cathod should be connected to the +ve power rail and anode should connect to the output
 `cathod +ve power rail (5v)` and `anode output(1:4)`
 
-
 ### Buzzer
 The buzzer is connected to `BUZZER_PIN(x)` pin of the esp32
 Test code from [How to Set up a Buzzer With an Arduino | Arduino | Maker Pro](https://maker.pro/arduino/projects/buzzer)
+
 ```cpp
  int buzzer = 12;//the pin of the active buzzer 
  void setup() { 
@@ -137,4 +141,5 @@ void loop() {
 				 }
 			  }
 	   }
+
 ```

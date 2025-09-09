@@ -1,3 +1,14 @@
+---
+id: Selected_Devicehtml
+aliases: []
+tags:
+  - projects
+  - web_based
+  - kannur_solar_battery_monitor_website
+  - website
+dg-publish: true
+---
+
 ```html
 {% extends "base.html" %}
 
@@ -43,7 +54,6 @@
 <div class="older_readings horizontal_layout">
   <h1>Older Readings</h2>
 
-
     <div class="vert_layout card-layout">
       <div class="card-chart-container">
         <div id="chart-battery_prev_1" class="chart-container-new"></div>
@@ -72,9 +82,6 @@
 
 <!-- <div class="dashboard"> -->
 
-
-
-
 <!-- <div class="vert_layout"> -->
 <!-- <div class="current-values"> -->
 <!-- <div class="row"> -->
@@ -97,7 +104,6 @@
 <!-- </div> -->
 <!-- </div> -->
 <!-- </div> -->
-
 
 <!-- <div class="related-devices"> -->
 <!-- <div class="nearby-devices"> -->

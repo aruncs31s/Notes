@@ -1,14 +1,15 @@
 ---
 id: Git
-aliases: 
-tags: 
+aliases: []
+tags:
+  - os
+  - tools
+  - git
 banner: https://github.blog/wp-content/uploads/2023/05/1200.630-Security-wLogo.png?w=1200
 banner_y: 0.552
-cssclasses:
-  - wide-page
+cssclasses: 
 dg-publish: true
 ---
-
 # Git
 - [[Bitbucket]]
 - [[#Basics]]
@@ -25,7 +26,6 @@ dg-publish: true
   - [[#Advanced]]
   - [[#aliasing]]
 
-
 ## **Basics**
 - [[#Initial Setup]]
 - [[#Kick Start]]
@@ -39,6 +39,7 @@ This only required to do once like configuring user email and user name .
 ```bash
 git config --global user.name "You name"
 git config --global user.email youremail@google.com
+
 ```
 
 _You can exclude `--global` flag it sets this properties as global but if you want to keep repository wise configs you simply exclude that_
@@ -47,6 +48,7 @@ _You can exclude `--global` flag it sets this properties as global but if you wa
 
 ```bash
 git config --list
+
 ```
 
 ### Kick Start
@@ -61,6 +63,7 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/BloBuster/tic_tac_toe.git
 git push -u origin main
+
 ```
 
 - Push existing repo
@@ -70,14 +73,14 @@ git init
 git branch -m main
 git remote add origin https://github.com/BloBuster/tic_tac_toe.git
 git push -u origin main
+
 ```
-
-
 
 #### Creating a repo
 
 ```bash
 gh repo create
+
 ```
 
 #### Pushing Changes to Github
@@ -86,9 +89,8 @@ gh repo create
 git add -A
 git commit -m "added <this File>" # Change this accrdingly
 git push origin main
+
 ```
-
-
 
 ### Creating a new branch with an existing branch files
 
@@ -96,12 +98,14 @@ git push origin main
 
 ```bash
 git checkout main
+
 ```
 
 2. Then, create a new branch `obsidian_files_back` from the current state of the `obsidian` branch:
 
 ```bash
 git checkout -b obsidian_files_back obsidian
+
 ```
 
 This command creates a new branch named `obsidian_files_back` starting from the current state of the `obsidian` branch. All the contents present in the obsidian branch will be copied to this new branch.
@@ -110,10 +114,10 @@ This command creates a new branch named `obsidian_files_back` starting from the 
 
 ```bash
 git push origin obsidian_files_back
+
 ```
 
 This will push the new branch obsidian_files_back to your remote repository, making it available to others if you're collaborating on this repository
-
 
 ### Deleting A branch
 
@@ -121,19 +125,21 @@ This will push the new branch obsidian_files_back to your remote repository, mak
 
 ```bash
 git branch -d branch_name
+
 ```
 
 2. Remotely
 
 ```bash
 git push origin --delete branch_name
-```
 
+```
 
 ### Removing a file from staging area 
 
 ```bash
 git rm <filename> 
+
 ```
 
 #### Git Ignore 
@@ -142,6 +148,7 @@ https://github.com/github/gitignore
 git difftool
 
 ```
+
 # ignore all .a files
 *.a
   # but do track lib.a, even though you're ignoring .a files above
@@ -158,19 +165,20 @@ git difftool
 ```
 
 ### Staging and Unstaging
+
 ```bash
 # Stages all file under the current repo 
 git add -A
+
 ```
 
 ```bash
 # unstage a file eg. README.md 
 git reset head README.md
+
 ```
 
-
 ### Dropping Commits
-
 
 Consider if you added your password file in you commit accidentally(like i did once) and want to delete that `commit history` from git
 
@@ -178,30 +186,36 @@ Consider if you added your password file in you commit accidentally(like i did o
 
 ```bash
 git log
+
 ```
 
 2. **Start interactive Rebase**
 
 ```bash
 git rebase -i HEAD~x
+
 ```
 
 _where x is the no. of commits back_ 3. **Use `drop` to drop the commit**
 
 ```
+
 drop xyz123123
+
 ```
 
 save the file and exit 4.
 
 ```bash
 git rebase --continue
+
 ```
 
 5.
 
 ```bash
 git push origin <branch name>
+
 ```
 
 ##### Deleting the most recent commit
@@ -210,12 +224,14 @@ git push origin <branch name>
 
 ```bash
 git reset --hard HEAD~1
+
 ```
 
 2. Force push to remote
 
 ```bash
 git push origin <branch_name> --force
+
 ```
 
 [Source](https://graphite.dev/guides/how-to-delete-a-git-commit)
@@ -226,32 +242,36 @@ git push origin <branch_name> --force
 
 ```bash
 git log --merge 
+
 ```
 
 The `git log --merge` command helps to produce the list of commits that are causing the conflict
 
 ```bash
 git diff
+
 ```
 
 To identify state of repocitories or files
 
 ```bash
 git checkout 
+
 ```
 
 The git checkout command is used to undo the changes made to the file, or for changing branches.
 
 ```bash
 git merge --abort
+
 ```
 
 Cancels the merge and return back to origina state before merge was started
 
 ```bash
 git reset
-```
 
+```
 
 #### Git Stash
 
@@ -263,18 +283,22 @@ GCEK_Weather_Station
 
 ```bash
 git stash show <stash index>
+
 ````
 
 ```bash
 git stash pop
+
 ```
 
 ```bash
 git stash drop
+
 ```
 
 ```bash
 git stash apply
+
 ```
 
 ## Advanced
@@ -283,12 +307,14 @@ git stash apply
 
 ```bash
 git config --global alias.staash 'stash --all'
+
 ```
 
 #example
 
 ```bash
 git config --global alias.po 'push origin main'
+
 ```
 
 > [!blank|right-medium]
@@ -298,18 +324,21 @@ git config --global alias.po 'push origin main'
 
 ```bash
 git config --global alias.something !some_script.sh
+
 ```
 
 ## Blame
 
 ```bash
 git blame -L x_1,x_2
+
 ```
 
 git blame of specific lines where x_1 , x_2 indicating seperate lines
 
 ```bash
 git blame -w -C -C -C
+
 ```
 
 - ignore white spaces
@@ -324,8 +353,8 @@ git clone --bare https://github.com/aruncs31s/<old_repo_link>
 gh create repo
 cd old_repo
 git push --mirror https://github.com/aruncs31s/<New_repo>
-```
 
+```
 
 ----
 

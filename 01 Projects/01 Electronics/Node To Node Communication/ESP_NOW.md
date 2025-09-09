@@ -1,9 +1,12 @@
 ---
 id: ESP_NOW
 aliases: []
-tags: []
+tags:
+  - projects
+  - electronics
+  - node_to_node_communication
+dg-publish: true
 ---
-
 # ESP_NOW
 
 - Upto `250-byte` is possible <- Payload Size
@@ -27,6 +30,7 @@ Serial.print("ESP Board MAC Address: ");
 Serial.println(WiFi.macAddress());
 delay(500);
 }
+
 ```
 
 Receiver's MAC: `08:D1:F9:ED:30:D8`
@@ -42,7 +46,6 @@ Receiver's MAC: `08:D1:F9:ED:30:D8`
 
 // For Light Sensor
 DFRobot_VEML7700 light_sensor;
-
 
 uint8_t wifiChannel = 6;
 
@@ -81,8 +84,6 @@ void setup(){
   // Register the callback Function -> executes when data sends
   esp_now_register_send_cb(sendStatus);
 
-
-
   // Register the peer
     // Register the peer
   memcpy(peerInfo.peer_addr, broadcastAddress,6); // 6 -> Number of Bytes sizeof(MAC) = 6
@@ -114,9 +115,11 @@ void loop(){
   Serial.println(" lx");
   delay(200);
 }
+
 ```
 
 #### Receiver Side
+
 ```c
 // Remove ssid and pass
 #include <esp_now.h>
@@ -154,7 +157,6 @@ void OnReceive(const uint8_t * mac_addr, const uint8_t *incomingData, int len) {
   memcpy(&Message, incomingData, sizeof(Message));
   Serial.printf("Board ID %u: %u bytes\n", Message.UID, len);
 
-
 }
 void setup(){
 Serial.begin(9600);
@@ -179,7 +181,6 @@ Serial.begin(9600);
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
 
-
   // Once ESPNow is successfully Init, we will register for recv CB to
   // get recv packer info
   esp_now_register_recv_cb(esp_now_recv_cb_t(OnReceive));
@@ -194,4 +195,5 @@ void loop(){
   // Serial.printf("y value: %d \n", boardsStruct[Message.UID-1].y);
   // Serial.println();
 }
+
 ```

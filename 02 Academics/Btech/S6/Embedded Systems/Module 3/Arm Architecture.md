@@ -1,5 +1,15 @@
+---
+id: Arm_Architecture
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - embedded_systems
+  - module_3
+dg-publish: true
+---
 # ARM Processor architecture
-
 
 ## Prerequisites
 - [[Academics/S6/Embedded Systems/Module 3/RISC]]
@@ -11,7 +21,6 @@
 - [ ] Architectural inheritance
 - [ ] The ARM programmer's model
 - [ ] ARM development tools.
-
 
 ### Acron RISC Machine
 The ARM was originally developed at Acorn Computers Limited of Cambridge, England, between 1983 and 1985. It was the first RISC microprocessor developed for commercial use and has some significant differences from subsequent RISC architectures.
@@ -36,9 +45,6 @@ The features that were employed on the Berkeley RISC designs which were rejected
 1. Register windows
 2. Delayed branches
 3. Single Cycle Execution of all instructions : Most of the instructions in **ARM** are executed in single cycle but some requires multiple cycles
-
-
-
 
 ---
 The **stored-program** digital computer keeps its instructions and data in the same program memory system, ==allowing the instructions to be treated as data when necessary.== This Computer enables the processor itself to generate instructions which it can subsequently execute.
@@ -68,8 +74,4 @@ concurrency in a general-purpose processor.
 
 ###### CPSR
 >CPSR is crucial for maintaining the execution state of the processor and controlling its behavior during program execution. It's frequently accessed and modified by the processor during instruction execution.
-
-
-
-
 

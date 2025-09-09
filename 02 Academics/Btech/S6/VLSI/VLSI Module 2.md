@@ -1,10 +1,14 @@
 ---
 id: VLSI Module 2
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - s6
+  - vlsi
 mindmap-plugin: basic
+dg-publish: true
 ---
-
 # VLSI Module 2
 
 Created : 2024-05-24 02:58
@@ -27,7 +31,6 @@ Created : 2024-05-24 02:58
 ## Contents
 1. [[MOSFET]]
 
-
 ### Basic Inverter Circuits
 - Inverter is most fundamental logic gate ==that uses single input==.
 - The basic principles employed in design and analysis of MOS inverters can be directly applied on more complex logic circuits.Therefore inverter design forms basis for digital circuits.
@@ -47,11 +50,9 @@ Created : 2024-05-24 02:58
 - The output is taken from the drain and the ==input applied between gate and ground==.
 - ==NMOS acts as a switch==
 
-
 RESISTIVE LOAD NMOS INVERTER
 
 ![[Pasted image 20240527000401.png]]
-
 
 Here the load used is a resistor.
 • This arrangement is not often used because of the large space
@@ -73,13 +74,11 @@ other form of load resistance is required.
 - The output voltage $V_{out}$, thus decreases and the subsequent increases in Vin will cause the p.d. transistor to come out of saturation and become resistive.
 - The pull up transistor is initially resistive
 
-
 ![[Pasted image 20240527002048.png]]
 
 - Dissipation is high, since rail to rail current flows when $V_{in}$ = logical 1.
 - Switching of output from 1 to 0 begins when $V_{in}$ exceeds $V_{th}$ of pull down device.
 - When switching the output from 1 to 0, the pull up device is non-saturated initially and this presents lower resistance through which to charge capacitive loads.
-
 
 ##### ENHANCEMENT TYPE LOAD NMOS INVERTER
 - Dissipation is high since current flows when $V_{in}$ = logical 1 ($V_{GG}$ is returned to $V_{DD}$).
@@ -91,17 +90,11 @@ other form of load resistance is required.
 
 ![[Pasted image 20240527022503.png]]
 
-
 - The inverter that uses a p-device pull-up or load that has its gate permanently ground
-
 
 #### CMOS INVERTER
 A CMOS inverter ==consists of two opposite polarity MOSFETs== Mn(nMOS) and Mp(pMOS) with their ==gates connected together at the input==.
 - The output voltage is taken from common drain terminals
-
-
-
-
 
 ![[Pasted image 20240527024525.png]]![[Pasted image 20240527024518.png]]
 
@@ -111,7 +104,6 @@ A CMOS inverter ==consists of two opposite polarity MOSFETs== Mn(nMOS) and Mp(pM
 
 > [!NOTE] Working
 >The circuit topology is complementary push- pull in the sense that ==for high input, the nMOS transistor drives (pulls down) the output node while the PMOS transistor acts as the load==, ==and for low input the pMOS transistor drives (pulls up) the output node while the nMOS transistor acts as the load==.  
-
 
 > - From the circuit we have  
 >$$ \begin{align}V_{GSn} &= V_{in} \\ V_{SGP}&=V_{DD} - V_{in}\end{align}$$
@@ -168,7 +160,6 @@ where Vin is assumed to be in the voltage range [0, $V_{DD}$] with $V_{DD}$ the 
 | $I_{ds}$ | Slowly Increases  |
 
 ###### Region 4 
-
 
 | nMOS     | Linear                      |
 | -------- | --------------------------- |

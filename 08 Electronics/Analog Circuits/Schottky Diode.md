@@ -1,11 +1,19 @@
 ---
+id: Schottky_Diode
+aliases: []
+tags:
+  - electronics
+  - analog_circuits
 source: https://www.build-electronic-circuits.com/schottky-diode/
+dg-publish: true
 ---
 # Schottky Diode
+
 ```dataview
 Table 
 source as "Source " ,file.mtime as "Last Mod" 
 Where file = this.file
+
 ```
 
 *are formed by the junction of a semiconductor material with a piece of metal* . *switch on and off much faster than traditional PN junction diodes*
@@ -24,12 +32,9 @@ Where file = this.file
 >> [!blank-container]
 >> ![[Pasted image 20250414144500.png|200x140]]
 
-
 ## Vi Chara of Schottky and Si diode
 
 ![[Pasted image 20250414145401.png]]
-
-
 
 ## Applications 
 - Reverse current protection
@@ -39,7 +44,6 @@ Where file = this.file
 - Switched-mode power supplies
 - Logic gates circuits
 - Radio frequency mixer and detector diodes
-
 
 ## Commonly Available
 1. [SS32](https://services.taiwansemi.com/storage/resources/datasheet/SS32%20SERIES_Q2412.pdf)

@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: areaofTriangleexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 
@@ -22,6 +22,7 @@ velocity ^ZY0YcGwL
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQB2bQAWGjoghH0EDihmbgBtcDBQMBKIEm4IYgBhADEAfQBZCgANOHoYZUwhAGswgGVnACVmgElUkshYRArcUlI2Kn5SzG4A
 
@@ -76,5 +77,7 @@ AVeaYIFacmvac6bjNvxmCqD6ZQw9rTigCGfQBGczjGfyTBvZPAHoisjgDgA1F0W8oNV0kyAqBvFIC/CW
 jLYLYyDNTxKSUxMTZHdnYbcD3htAcRqfggcAendXf0APGAcjzAePdRsgcgB3crerjcSeIAUTeYGwHmDVGaG4GcEhC2HlPqhFkhHOEeX1E/cZHwC7l/cOHWWKjOXRGah+H3nVQgEOIMGdc9QIC6UGU2F1muGjxXfbf0E7b9rRQgDfe9aFBIBvO6mXeo+IA1AQFPrA4Y4aDYEw0vdwE0GCDLtzYY80o7iEkZEslIGUD5AAApV4N546ZPpPqA1abMAB
 
 KPUVpZQNMWYCoMTyTzdSkXgXbBT3ThTmaFTwjndxtukAdjJTgZMrRShQlVpLMSpaGjuLIbj3jylhCwNIgU+ql0oaNN1+ChkqGAmwBoL1udC3NuwAeI8nIPoaNOAdjzj6NHjlYp5bADJRgIcxkTDicl6dIDL9mQNK65pfQF9kjDc1lxJxCwajSQrrLqKfAPLfNcAAtZJ8IMmN4qsIAA==
+
 ```
+
 %%

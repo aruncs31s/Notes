@@ -1,9 +1,10 @@
 ---
 id: acpi_conference
 aliases: []
-tags: []
+tags:
+  - conferences
+dg-publish: true
 ---
-
 ## Math, Compute , AI
 
 - Errors and Orthogonalities

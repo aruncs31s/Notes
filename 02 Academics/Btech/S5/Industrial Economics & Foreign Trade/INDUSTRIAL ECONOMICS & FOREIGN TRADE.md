@@ -1,3 +1,13 @@
+---
+id: INDUSTRIAL_ECONOMICS_FOREIGN_TRADE
+aliases: []
+tags:
+  - academics
+  - btech
+  - s5
+  - industrial_economics_foreign_trade
+dg-publish: true
+---
 # INDUSTRIAL ECONOMICS & FOREIGN Trade
 - [[IEFT Module 1]]
 - [[IEFT Module 2]]

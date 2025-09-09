@@ -1,13 +1,18 @@
 ---
+id: YAML_Conversion
+aliases: []
 tags:
-  - es_website
+  - projects
+  - web_based
+  - embedded_systems_website
   - backend
-  - idea_1
+dg-publish: true
 ---
 # YAML Conversion
 So the initial idea is to conver a standard readme into a YAML frontmatter format that can be used in a static site component in our [[Embedded Systems Website]] 
 
 ## Required Format
+
 ```yaml
 title: "SF-TB T845"
 description: "Machine Screws"
@@ -62,14 +67,13 @@ specificationsRight:
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"   
+
 ```
 
 ![[Recording 20250710223947.m4a]]
 
 ## The README.md Format 
 <iframe src="https://raw.githubusercontent.com/aruncs31s/es_gcek_electronics_projects_template/refs/heads/main/README.md" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-
 
 Core Idea:
 

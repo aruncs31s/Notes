@@ -1,3 +1,13 @@
+---
+id: Flutter_App
+aliases: []
+tags:
+  - projects
+  - electronics
+  - inverter_gui_touch_screen
+  - flutter_app
+dg-publish: true
+---
 # Flutter Battery Monitor App
 - [[Battery Level]]
 
@@ -46,6 +56,7 @@ CREATE TABLE app_usage_data(
   timestamp TEXT NOT NULL,
   battery_consumption REAL NOT NULL
 );
+
 ```
 
 #### Data Models
@@ -100,12 +111,14 @@ CREATE TABLE app_usage_data(
 - Battery service startup
 
 ### Dependencies Added
+
 ```yaml
 dependencies:
   sqflite: ^2.3.0      # SQLite database
   path: ^1.8.3         # Path utilities
   fl_chart: ^0.68.0    # Chart library
   battery_plus: ^5.0.0 # Battery status API
+
 ```
 
 ### Code Quality Status
@@ -142,10 +155,12 @@ User requested: "check all code and create a sqlite database to store the data a
 ## Usage Instructions
 
 ### Running the App
+
 ```bash
 cd 'c:\Users\arunc\Git\Android\Best-Flutter-UI-Templates\fitness_app_standalone'
 flutter pub get
 flutter run
+
 ```
 
 ### Key Screens
@@ -169,7 +184,9 @@ flutter run
 - [ ] Implement data backup/restore features
 
 ## File Structure
+
 ```
+
 lib/
 ├── models/
 │   └── battery_data.dart          # Data models
@@ -184,6 +201,7 @@ lib/
         ├── battery_status_view.dart      # Status widget
         ├── consumption_graph_view.dart   # Line chart
         └── app_usage_graph_view.dart     # Pie chart
+
 ```
 
 ## Technical Notes

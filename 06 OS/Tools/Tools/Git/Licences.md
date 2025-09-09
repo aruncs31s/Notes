@@ -1,3 +1,12 @@
+---
+id: Licences
+aliases: []
+tags:
+  - os
+  - tools
+  - git
+dg-publish: true
+---
 ### Github License
 
 #### GPL

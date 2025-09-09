@@ -1,16 +1,16 @@
 ---
 id: 1719156550-RSGW
-aliases:
-  - ADC Module 5
+aliases: []
 tags:
-  - communicaiton,S5
+  - academics
+  - btech
+  - s5
 Attendance: 81%
 ExamDate: "2024-12-02"
 Internal: 30
-cssclasses:
-  - wide-page
+cssclasses: 
+dg-publish: true
 ---
-
 # Analog and Digital Communication
 
 Created : 2024-04-16 01:00

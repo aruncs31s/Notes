@@ -1,18 +1,19 @@
 ---
 id: 
-aliases:
-  - ktu
-tags: 
-cssclasses:
-  - wide-page
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - embedded_systems
+cssclasses: 
 ExamDate: 2025-01-02
+dg-publish: true
 ---
 # Embedded Systems
 
 *It an Electro-mechanical which is a ==combination of software and hardware design(working together) to do a specific task==*
 *It is any device that includes a programmable computer but is not itself intended to be a general-purpose computer. Thus, a PC is not itself an embedded computing system, although PCs are often used to build embedded computing systems. But a fax machine or a clock built from a microprocessor is an embedded computing system.*
-
-
 
 ## Contents
 - [[ES Module 1]]
@@ -26,14 +27,13 @@ ExamDate: 2025-01-02
 - [[Academics/S6/Embedded Systems/ES Module 5]]
 - [[ES PYQ]]
 ## Concepts
-- [RTOS](Academics/S6/Embedded%20Systems/RTOS.md)
+- [[RTOS]]
 - [Context Switching]()
 - Shared Memory
 - Dead Lock
 
 > [!NOTE] Dead Lock
 > If two task were tring to access the same resource at the same time ,This situation is known as `Dead Lock` 
-
 
 ### Q & A 
 1.  Describe the principal features of the ARM architecture.

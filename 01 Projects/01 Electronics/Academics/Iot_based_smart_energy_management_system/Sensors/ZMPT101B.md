@@ -1,3 +1,14 @@
+---
+id: ZMPT101B
+aliases: []
+tags:
+  - projects
+  - electronics
+  - academics
+  - iot_based_smart_energy_management_system
+  - sensors
+dg-publish: true
+---
 <h2 align="center">ZMPT101B</h2>
 
 #### Contents
@@ -14,7 +25,6 @@
 #### Specs
 
 ![](ZMPT101B.pdf)
-
 
 #### Specs
 1. Voltage up to **250 volts** can be measured  

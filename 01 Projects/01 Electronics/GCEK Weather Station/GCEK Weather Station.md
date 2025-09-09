@@ -1,17 +1,15 @@
 ---
-dg-publish: true
 id: project_template
-aliases: 
+aliases: []
 tags:
-  - esp32
-  - project
-  - weather_station
+  - projects
   - electronics
+  - gcek_weather_station
+dg-publish: true
 Created: 14-09-2024
 Starting Date: 14-09-2024
 Target Date: ""
 ---
-
 # GCEK Weather Station
 >[!float|right-small] Contents
 >- [[#Methodology]]
@@ -58,7 +56,6 @@ Target Date: ""
 	- When switch close it closes the circuit and causes the current to flow from the **VCC** to **GND** through the **R1** + **Internal PULLUP**(if used) resistors 
 	 
 
-
 >[!blank|left-small] 
 >![[tipping bucket circuit diagram.png]]
 
@@ -78,6 +75,7 @@ attachInterrupt(rain_meter_pin,rain_meter_isr,FALLING);
 void loop(){
   Serial.println(rain_count);
 }
+
 ```
 
  ----
@@ -135,6 +133,7 @@ void loop(){
 #define SFE_WMK_ADC_ANGLE_292_5 3290
 #define SFE_WMK_ADC_ANGLE_315_0 3616
 #define SFE_WMK_ADC_ANGLE_337_5 2755
+
 ```
 
 Obtained Values
@@ -155,6 +154,7 @@ Obtained Values
 4095
 3945
 3948
+
 ```
 
 ##### Temp and Humidity Sensor
@@ -170,7 +170,6 @@ Name: 7semi SHT40 Humidity and Temperature Sensor Probe I2C
 | Black                  | GND          |
 | Yellow                 | SDA          |
 | Green                  | SCL          |
-
 
 #### Pins Used
 

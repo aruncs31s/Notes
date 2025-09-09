@@ -1,7 +1,9 @@
 ---
+id: Doc
+aliases: []
 tags: [31songs, backend, go, api, docs]
+dg-publish: true
 ---
-
 # 31Songs Go Backend 
 
 > Backend for the Local Player/31songs. REST + Socket.IO, sessions, last-played persistence. 
@@ -156,24 +158,32 @@ Base path: `/api`
 
 ## [[Run & Build]]
 Run locally
+
 ```sh
 HOST=127.0.0.1 PORT=5000 MUSIC_DIR=/path/to/music go run .
+
 ```
 
 Build binary
+
 ```sh
 go build -o bin/server .
+
 ```
 
 ## [[Swagger Documentation]]
 
 ### 🎯 **Interactive API Documentation**
 The backend includes comprehensive Swagger/OpenAPI documentation accessible at:
+
 ```
+
 http://localhost:5000/swagger/index.html
+
 ```
 
 ### **Swagger Setup Commands**
+
 ```bash
 # Install Swagger dependencies
 cd /home/aruncs/Projects/Local\ Player/backend2
@@ -190,6 +200,7 @@ go build -o bin/server .
 
 # Start server
 ./bin/server
+
 ```
 
 ### **Available Swagger Endpoints**
@@ -217,12 +228,14 @@ go build -o bin/server .
 ### **Testing with Swagger UI**
 
 #### **1. Open Swagger UI**
+
 ```bash
 # Start server
 cd /home/aruncs/Projects/Local\ Player/backend2 && ./bin/server
 
 # Open browser to:
 http://localhost:5000/swagger/index.html
+
 ```
 
 #### **2. Test Session Creation**
@@ -236,6 +249,7 @@ http://localhost:5000/swagger/index.html
 1. Use the session ID from step 2
 2. Navigate to **Recently Played** section
 3. Try `POST /api/recently-played` with sample data:
+
 ```json
 {
   "trackId": "67c1b262-f254-41de-910c-bebd7f674bb8",
@@ -244,6 +258,7 @@ http://localhost:5000/swagger/index.html
   "duration": 180.5,
   "completed": true
 }
+
 ```
 
 #### **4. Test Statistics**
@@ -262,6 +277,7 @@ http://localhost:5000/swagger/index.html
 
 ### **Regenerating Swagger Docs**
 When you add new endpoints or modify existing ones:
+
 ```bash
 # Regenerate documentation
 cd /home/aruncs/Projects/Local\ Player/backend2
@@ -269,12 +285,14 @@ cd /home/aruncs/Projects/Local\ Player/backend2
 
 # Rebuild and restart server
 go build -o bin/server . && ./bin/server
+
 ```
 
 ### **Swagger Annotation Examples**
 Here are the annotation patterns used in the codebase:
 
 **Basic Endpoint:**
+
 ```go
 // @Summary Create a new session
 // @Description Creates a new lightweight session for tracking user activity
@@ -284,61 +302,81 @@ Here are the annotation patterns used in the codebase:
 // @Success 200 {object} models.APIResponse{data=models.Session}
 // @Failure 500 {object} models.APIResponse
 // @Router /sessions [post]
+
 ```
 
 **With Parameters:**
+
 ```go
 // @Param id path string true "Session ID"
 // @Param X-Session-ID header string false "Optional session ID"
 // @Param request body addRecentlyPlayedRequest true "Track information"
+
 ```
 
 **File Streaming:**
+
 ```go
 // @Produce audio/mpeg,audio/mp4,audio/wav,audio/flac
 // @Success 206 {file} binary "Partial audio content"
+
 ```
 
 ## [[API Examples]]
 
 ### Health
+
 ```bash
 curl -s http://localhost:5000/health
+
 ```
 
 ### System Info
+
 ```bash
 curl -s http://localhost:5000/api/system/info | jq .
+
 ```
 
 ### Create Session
+
 ```bash
 curl -s -X POST http://localhost:5000/api/sessions | jq .
+
 ```
 
 ### Touch Session
+
 ```bash
 curl -s -X PUT http://localhost:5000/api/sessions/<sessionId>/touch | jq .
+
 ```
 
 ### Set Last Played
+
 ```bash
 curl -s -X PUT http://localhost:5000/api/sessions/<sessionId>/last-played \
 	-H 'Content-Type: application/json' \
 	-d '{"trackId":"<trackId>","position":61.2,"isPlaying":true,"volume":0.5,"deviceId":"<deviceId>"}' | jq .
+
 ```
 
 ### Get Last Played
+
 ```bash
 curl -s http://localhost:5000/api/sessions/<sessionId>/last-played | jq .
+
 ```
 
 ### **Restore from Last Played** ⭐
+
 ```sh
 curl -s http://localhost:5000/api/sessions/<sessionId>/restore-last-played | jq .
+
 ```
 
 ### Recently Played Examples ⭐
+
 ```bash
 # Get recent tracks
 curl -s http://localhost:5000/api/recently-played?limit=10 | jq .
@@ -359,22 +397,28 @@ curl -s -X POST http://localhost:5000/api/recently-played \
 
 # Get recently played for specific session
 curl -s http://localhost:5000/api/recently-played/session/<sessionId> | jq .
+
 ```
 
 ### Auto-save Last Played on Playback Update
+
 ```bash
 curl -s -X PUT http://localhost:5000/api/devices/playback \
 	-H 'Content-Type: application/json' \
 	-H 'X-Session-ID: <sessionId>' \
 	-d '{"isPlaying":true,"currentTime":42,"volume":0.7,"currentTrack":{"id":"<trackId>"}}' | jq .
+
 ```
 
 ### Stream Track
+
 ```bash
 curl -I http://localhost:5000/api/tracks/<trackId>/stream
+
 ```
 
 ### Playlist CRUD
+
 ```bash
 # Create
 curl -s -X POST http://localhost:5000/api/playlists \
@@ -390,6 +434,7 @@ curl -s -X POST http://localhost:5000/api/playlists/<playlistId>/tracks \
 curl -s -X PUT http://localhost:5000/api/playlists/<playlistId>/tracks/reorder \
 	-H 'Content-Type: application/json' \
 	-d '{"trackIds":["<trackId1>","<trackId2>"]}' | jq .
+
 ```
 
 ## [[Testing Log]]
@@ -530,6 +575,7 @@ export class StatsService {
     }
   }
 }
+
 ```
 
 #### **Session Integration**
@@ -581,6 +627,7 @@ export class SessionManager {
     }
   }
 }
+
 ```
 
 #### **Auto-tracking Integration**
@@ -604,6 +651,7 @@ const updatePlaybackState = async (state: PlaybackState) => {
     console.warn('Could not sync playback state to backend');
   }
 };
+
 ```
 
 ### **Benefits of Backend Integration**
@@ -621,28 +669,36 @@ const updatePlaybackState = async (state: PlaybackState) => {
 
 Your React StatsWidget is **100% compatible** and will work seamlessly with these backend endpoints! 🎉
 
-
 ## [[Comprehensive Testing Guide]]
 
 ### 🚀 **Quick Test Suite**
 Run this complete test sequence to verify all session and recently played functionality:
 
 #### **1. Basic Server Health**
+
 ```bash
 # Test server connectivity
 curl -s http://127.0.0.1:5000/health
+
 ```
+
 **Expected Output:**
+
 ```json
 {"status":"ok","time":"2025-08-24T00:00:00.000000000+05:30"}
+
 ```
 
 #### **2. System Information**
+
 ```bash
 # Get library statistics
 curl -s http://127.0.0.1:5000/api/system/info | jq .
+
 ```
+
 **Expected Output:**
+
 ```json
 {
   "error": false,
@@ -653,67 +709,100 @@ curl -s http://127.0.0.1:5000/api/system/info | jq .
     "playlists": 0
   }
 }
+
 ```
 
 ### 🔄 **Session Management Tests**
 
 #### **3. Create Session**
+
 ```bash
 echo "=== Creating Session ===" && curl -s -X POST http://127.0.0.1:5000/api/sessions | jq -c '.data | {id, createdAt}'
+
 ```
+
 **Expected Output:**
+
 ```json
 {"id":"a6f42cb7-9d58-48a4-b876-cd6168a8da44","createdAt":"2025-08-24T00:44:06.938713879+05:30"}
+
 ```
 
 #### **4. Touch Session (Keep Alive)**
+
 ```bash
 SESSION_ID="a6f42cb7-9d58-48a4-b876-cd6168a8da44" && curl -s -X PUT http://127.0.0.1:5000/api/sessions/$SESSION_ID/touch | jq -c '.data.message'
+
 ```
+
 **Expected Output:**
+
 ```json
 "session touched"
+
 ```
 
 #### **5. Get Valid Track ID**
+
 ```bash
 echo "=== Getting Track for Testing ===" && curl -s "http://127.0.0.1:5000/api/tracks?limit=1" | jq -r '.error == false and (.data.tracks[0].id // .[0].id)'
+
 ```
+
 **Expected Output:**
+
 ```
+
 f588aa3f-f759-4d23-a753-8df7e56d9a56
+
 ```
 
 #### **6. Set Last Played**
+
 ```bash
 SESSION_ID="a6f42cb7-9d58-48a4-b876-cd6168a8da44" && TRACK_ID="f588aa3f-f759-4d23-a753-8df7e56d9a56" && curl -s -X PUT http://127.0.0.1:5000/api/sessions/$SESSION_ID/last-played -H 'Content-Type: application/json' -d "{\"trackId\":\"$TRACK_ID\",\"position\":45.2,\"isPlaying\":true,\"volume\":0.8,\"deviceId\":\"test-device\"}" | jq -c '.data.message'
+
 ```
+
 **Expected Output:**
+
 ```json
 "last played updated"
+
 ```
 
 #### **7. Get Last Played**
+
 ```bash
 SESSION_ID="a6f42cb7-9d58-48a4-b876-cd6168a8da44" && curl -s http://127.0.0.1:5000/api/sessions/$SESSION_ID/last-played | jq -c '.data | {trackId, position, isPlaying, volume}'
+
 ```
+
 **Expected Output:**
+
 ```json
 {"trackId":"f588aa3f-f759-4d23-a753-8df7e56d9a56","position":45.2,"isPlaying":true,"volume":0.8}
+
 ```
 
 #### **8. 🎯 Restore Last Played (Key Feature)**
+
 ```bash
 SESSION_ID="a6f42cb7-9d58-48a4-b876-cd6168a8da44" && curl -s "http://127.0.0.1:5000/api/sessions/$SESSION_ID/restore-last-played" | jq '.data.message, .data.restoredState.currentTrack.title, .data.restoredState.currentTime'
+
 ```
+
 **Expected Output:**
+
 ```json
 "playback restored from last played"
 "Die With A Smile"
 45.2
+
 ```
 
 **Full Restore Response Example:**
+
 ```json
 {
   "data": {
@@ -745,24 +834,34 @@ SESSION_ID="a6f42cb7-9d58-48a4-b876-cd6168a8da44" && curl -s "http://127.0.0.1:5
   },
   "error": false
 }
+
 ```
 
 ### 📈 **Recently Played Tests**
 
 #### **9. Manual Add to Recently Played**
+
 ```bash
 SESSION_ID="a6f42cb7-9d58-48a4-b876-cd6168a8da44" && TRACK_ID="67c1b262-f254-41de-910c-bebd7f674bb8" && curl -s -X POST http://127.0.0.1:5000/api/recently-played -H 'Content-Type: application/json' -d "{\"trackId\":\"$TRACK_ID\",\"sessionId\":\"$SESSION_ID\",\"deviceId\":\"test-device\",\"duration\":180.5,\"completed\":true}" | jq -c '.data.message'
+
 ```
+
 **Expected Output:**
+
 ```json
 "track added to recently played"
+
 ```
 
 #### **10. Get Recent Tracks**
+
 ```bash
 curl -s "http://127.0.0.1:5000/api/recently-played?limit=3" | jq -c '.data | {total: length, tracks: [.[] | {title: .track.title, artist: .track.artist, playedAt: .playedAt, completed}]}'
+
 ```
+
 **Expected Output:**
+
 ```json
 {
   "total": 3,
@@ -781,19 +880,25 @@ curl -s "http://127.0.0.1:5000/api/recently-played?limit=3" | jq -c '.data | {to
     }
   ]
 }
+
 ```
 
 ##### Simple Test 
 
 ```bash
 curl http://127.0.0.1:5000/api/recently-played?limit=3
+
 ```
 
 #### **11. Get Recently Played Statistics**
+
 ```bash
 curl -s "http://127.0.0.1:5000/api/recently-played/stats" | jq -c '.data'
+
 ```
+
 **Expected Output:**
+
 ```json
 {
   "totalEntries": 37,
@@ -803,37 +908,53 @@ curl -s "http://127.0.0.1:5000/api/recently-played/stats" | jq -c '.data'
   "oldestEntry": "2025-08-23T23:19:28.441423091+05:30",
   "newestEntry": "2025-08-24T00:41:30.713542145+05:30"
 }
+
 ```
 
 #### **12. Get Top Tracks**
+
 ```bash
 curl -s "http://127.0.0.1:5000/api/recently-played/top?limit=3" | jq -c '.data[] | {playCount, title: .track.title, artist: .track.artist}'
+
 ```
+
 **Expected Output:**
+
 ```json
 {"playCount":7,"title":"Sparkle - movie ver.","artist":"Radwimps"}
 {"playCount":4,"title":"Blood (From \"Marco\")","artist":"Ravi Basrur, Dabzee, Rohith Siddappa, Vinayak Sasikumar"}
 {"playCount":2,"title":"Kadhal Aasai","artist":"Yuvanshankar Raja, Sooraj Santhosh"}
+
 ```
 
 #### **13. Filter Recently Played by Session**
+
 ```bash
 SESSION_ID="a6f42cb7-9d58-48a4-b876-cd6168a8da44" && curl -s "http://127.0.0.1:5000/api/recently-played/session/$SESSION_ID" | jq -c '.data | length'
+
 ```
+
 **Expected Output:**
+
 ```json
 5
+
 ```
 
 ### 🔄 **Auto-tracking Integration Tests**
 
 #### **14. Test Auto-tracking with Session**
+
 ```bash
 SESSION_ID="a6f42cb7-9d58-48a4-b876-cd6168a8da44" && TRACK_ID="67c1b262-f254-41de-910c-bebd7f674bb8" && curl -s -X PUT http://127.0.0.1:5000/api/devices/playback -H 'Content-Type: application/json' -H "X-Session-ID: $SESSION_ID" -d "{\"currentTrack\":{\"id\":\"$TRACK_ID\"},\"isPlaying\":true,\"currentTime\":0,\"volume\":0.8}" | jq -c '.data.message'
+
 ```
+
 **Expected Output:**
+
 ```json
 "Playback state updated successfully"
+
 ```
 
 > **Note:** This automatically:
@@ -844,6 +965,7 @@ SESSION_ID="a6f42cb7-9d58-48a4-b876-cd6168a8da44" && TRACK_ID="67c1b262-f254-41d
 ### 🎯 **Complete Test Summary**
 
 Run this comprehensive verification:
+
 ```bash
 echo "=== COMPREHENSIVE API TESTING SUMMARY ===" && \
 echo "✅ Session Management:" && \
@@ -866,10 +988,13 @@ echo "  • Automatic session last-played updates: WORKING" && \
 echo "  • Automatic recently-played tracking: WORKING" && \
 echo "" && \
 echo "🎯 All Features Successfully Tested!"
+
 ```
 
 **Expected Output:**
+
 ```
+
 === COMPREHENSIVE API TESTING SUMMARY ===
 ✅ Session Management:
   • Creating sessions: WORKING
@@ -891,32 +1016,43 @@ echo "🎯 All Features Successfully Tested!"
   • Automatic recently-played tracking: WORKING
 
 🎯 All Features Successfully Tested!
+
 ```
 
 ### 🧪 **Error Scenarios & Edge Cases**
 
 #### Invalid Track ID
+
 ```bash
 curl -s -X POST http://127.0.0.1:5000/api/recently-played -H 'Content-Type: application/json' -d '{"trackId":"invalid-id","sessionId":"test","deviceId":"test"}' | jq .
+
 ```
+
 **Expected Output:**
+
 ```json
 {
   "error": true,
   "message": "track not found: track not found: invalid-id"
 }
+
 ```
 
 #### Non-existent Session
+
 ```bash
 curl -s "http://127.0.0.1:5000/api/sessions/nonexistent/last-played"
+
 ```
+
 **Expected Output:**
+
 ```json
 {
   "error": true,
   "message": "session not found"
 }
+
 ```
 
 ### 📊 **Performance Metrics**
@@ -933,11 +1069,15 @@ curl -s "http://127.0.0.1:5000/api/sessions/nonexistent/last-played"
 - Recently played uses POST to `/api/recently-played` (not `/add`)
 
 **Build Errors**
+
 ```bash
 cd /home/aruncs/Projects/Local\ Player/backend2 && go build -o bin/server .
+
 ```
 
 **Restart Server**
+
 ```bash
 pkill -f "bin/server" 2>/dev/null; sleep 1 && ./bin/server &
+
 ```

@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: Version_3excalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 
@@ -45,6 +45,7 @@ Street Light ^4bkBDm2b
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQB2bQAWGjoghH0EDihmbgBtcDBQMBKIEm4IAFEAMwBZAFYAawAtADEADXjMGAAFAEYAIQBpAE4AR0JG/B5UkshYRArA7CiO
 
@@ -179,5 +180,7 @@ hypSRLlgb/FOgYg3cb/wf9QvPmwD8gAj/1ACMgVoHCM0zaAJADs2b/1/8MzJCjK4YAlAIyA0AwbWN1MA
 2Rn1uaDaHKFj6CD1KBIpAwAwsGAAgFfg06HUnYR1/NU2EDpAkgKhosKLVU9g3/BUBIA6PctS4kIgo8CkUb/cIK+Q2AfNFkDcATQGCBrtPxxIAP8YBAGB+QUBFIBlAGUAAAKTcBPJeALBnKCygg3AABKA0AfhlAMsF1AlgQoNwASgvFV4B2govGoBmQC/FqDR8fwMvRnEagJHhOAHvkCcH4KsDQwgFd4VSD0g1lzngiABtjx1IADDHP9FPKMFvgP4
 
 Vl36C7AfCAxtmAU0AwwuZJIIQAUgtIO7N6QFYEIBGAJCDYB+QNwKBQwgYICuD2COeD5w74fQFUCMoApwC52jBZ3ZA+IK4JuC7gwCCJxd/HjWddwganDyguwIAA==
+
 ```
+
 %%

@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: electronicsfootballexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 
@@ -22,6 +22,7 @@ tags: [excalidraw]
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQB2bQAWGjoghH0EDihmbgBtcDBQMBKIEm4IACliAA4AWQAtAGYAGSgAeQAFAH1nfCajABEjAHEABgBOdtSSyFhECsDsKI5l
 
@@ -1390,5 +1391,7 @@ Z9OFRJGyAD6jchG5SMZOG6cNs4RkATzh2CMM0YhUFuAG5wzThIiNMUY1I2xRmFw/zhTnCrOH01z84epw
 ZOGzcJ/pC9AKM8uAA4KCUaENMCQAa7AkcBg3hxMkWAEXiXAAAAAKGAoZPBsYBncOoADPAPYAAABKbUAKpEtqCVIAhQGOocUAJ3Dqep8wnpAO9wy7hKWJbuH5YDc4WZw4DCAg5JwCcVHnkCqRUsAN5Z5MqRwCyAOtw4IAd0A8jDYACWyr4kbfmwnDAyjCAFaMOiVAHgv3DDaEL6hyAMYbaz8K3CvXLb8w24bDw5tQMqBlgCLK2WtmyyeaAaAALnpa
 
 BDCAMEAMnh0MAiUZz2Ea4CNAQVQ8VNeNCcjDw2IwAdLsXIBqVDgAD9wLXICaQwAA2wAgADbAEAAA
+
 ```
+
 %%

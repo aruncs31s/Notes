@@ -1,9 +1,9 @@
 ---
+id: Structural_Pattern
+aliases: []
 tags:
-  - "#programming"
-  - software_design
-  - design_pattern
-  - creational_pattern
+  - coding
+  - design_patterns
 dg-publish: true
 ---
 # Structural Patterns
@@ -16,6 +16,7 @@ dg-publish: true
 **Purpose**: **Organizing classes and objects into larger structures** to simplify relationships and ensure **flexible and efficient composition**
 
 #### Code Example - Decorator Pattern
+
 ```python
 class Coffee:
     def cost(self):
@@ -41,4 +42,5 @@ coffee = MilkDecorator(coffee)
 coffee = SugarDecorator(coffee)
 
 print(coffee.cost())  # Output: 8
+
 ```

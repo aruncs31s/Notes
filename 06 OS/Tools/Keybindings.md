@@ -1,9 +1,11 @@
 ---
 id: Keybindings
 aliases: []
-tags: []
+tags:
+  - os
+  - tools
+dg-publish: true
 ---
-
 # Keybindings
 
 I use keybindings all the time.Also there are few apps that i really focus on.

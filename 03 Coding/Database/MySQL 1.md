@@ -1,16 +1,20 @@
 ---
 id: MySQL
 aliases: []
-tags: []
+tags:
+  - coding
+  - database
+dg-publish: true
 ---
-
 # MYSQL 
 - [[MariaDB]]
 
 ```
+
  jODe+,cTA1u#
 
 ```
+
 ```
 
 2025-08-01T05:34:21.328015Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
@@ -23,10 +27,11 @@ tags: []
 
 ~
 ❯
+
 ```
 
-
 before deleting /var/lib/mysql
+
 ```
 
 2025-08-01T05:33:26.705728Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
@@ -36,28 +41,33 @@ before deleting /var/lib/mysql
 2025-08-01T05:33:26.708202Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
 2025-08-01T05:33:26.708244Z 0 [ERROR] [MY-010119] [Server] Aborting
 2025-08-01T05:33:26.708570Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
-```
 
+```
 
 ## Install 
 
 ```bash
 sudo pacman -S mysql
+
 ```
 
 ```bash
 sudo mysqld --initialize --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+
 ```
 
 ```txt
  A temporary password is generated for root@localhost: p>uLzaSsl9p!
+
 ```
+
 ## Setup 
 @initial
 
 ```bash
 sudo mysqld_safe --skip-grant-tables --skip-networking &
 mysql -u root
+
 ```
 
 ```mysql
@@ -65,4 +75,5 @@ FLUSH PRIVILEGES;
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'your_new_password';
 FLUSH PRIVILEGES;
 EXIT;
+
 ```

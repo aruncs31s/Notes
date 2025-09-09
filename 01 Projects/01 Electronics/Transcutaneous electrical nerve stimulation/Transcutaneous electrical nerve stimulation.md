@@ -1,16 +1,18 @@
 ---
-dg-publish: true
 id: 20-11-2024-Project
-aliases: 
+aliases: []
 tags:
- - project,Electronics
-Date:
-  Starting: 20-11-2024
-  Target: 03-12-2024
-  End: 17-12-2024
-Status:
-  Working_ON: true
-  Completed: true
+  - projects
+  - electronics
+  - transcutaneous_electrical_nerve_stimulation
+dg-publish: true
+Date: 
+Starting: 20-11-2024
+Target: 03-12-2024
+End: 17-12-2024
+Status: 
+Working_ON: true
+Completed: true
 github: 
 cssClasses: wide-page
 cssClass: image-gallery
@@ -21,12 +23,14 @@ cssClass: image-gallery
 Table 
 file.ctime as "Created" , Date.Started as "Started" , Date.Target as "Completed"
 Where file = this.file
+
 ```
 
 - [[TENS Versions]]
 - [[09 Projects/Transcutaneous electrical nerve stimulation/Ledger|Ledger]]
 
 ### Timeline
+
 ```timeline
 [line-3, body-2]
 + Started</br> 20th Nov 2024
@@ -34,7 +38,9 @@ Where file = this.file
 + To design a period pain releaver based on the principle of Transcutaneous electrical nerve stimulation(TENS) is a technique to stimulate the body's nerves.
 
 ```
+
 ---
+
 ```timeline
 [line-3, body-2]
 + Started</br> 20th Nov 2024
@@ -65,7 +71,6 @@ Where file = this.file
 + ![[version 0.1.0.canvas|version 0.1.0]]
 ![[Tens Device.png]]
 
-
 > [!multi-column]
 >
 >>![[Astable.png]]
@@ -77,8 +82,8 @@ Where file = this.file
 >>![[Inverter.png]]
 >
 >>![[Power Supply.png]]
-```
 
+```
 
 ## References
 1. "Design of Abdominal Pain Reliever based upon the Principle of TENS" , Saurabh P. Pandey ,Saurabh Bansod , Prashant Pal , Shashank Kumar Singh

@@ -1,14 +1,14 @@
 ---
-aliases:
-  - esp now
+id: Node_to_Node_Communication
+aliases: []
 tags:
-  - "#project"
+  - projects
   - electronics
-cssclasses:
-  - wide-page
+  - node_to_node_communication
+cssclasses: 
 Status: Done
+dg-publish: true
 ---
-
 # Node to Node Communication
 >[!SUMMARY]- Table of Contents
 >- [[Node to Node Communication#Node to Node Communication|Node to Node Communication]]
@@ -50,10 +50,7 @@ Status: Done
 - we can use interrupt programming for this
 - ==Green== Wind Direction and black
 
-
 ![[wind_station.excalidraw|1000x300]]
-
-
 
   Expected Values
 
@@ -74,6 +71,7 @@ Status: Done
 #define SFE_WMK_ADC_ANGLE_292_5 3290
 #define SFE_WMK_ADC_ANGLE_315_0 3616
 #define SFE_WMK_ADC_ANGLE_337_5 2755
+
 ```
 
 Obtained Values
@@ -94,6 +92,7 @@ Obtained Values
 4095
 3945
 3948
+
 ```
 
 ### 3. Temp and Humidity Sensor
@@ -181,6 +180,7 @@ Serial.println("IP address: ");
 Serial.println(WiFi.localIP());
 delay(1000);
 }
+
 ```
 
 ##### Single Node Sender Side
@@ -261,6 +261,7 @@ void loop() {
   }
   delay(2000);
 }
+
 ```
 
 #### Using Meany to One
@@ -336,6 +337,7 @@ void loop() {
 
   delay(10000);
 }
+
 ```
 
 ##### Sender Side
@@ -367,7 +369,6 @@ void loop() {
 // } Data;
 
 // Data sender_data;
-
 
 // esp_now_peer_info_t peerInfo;
 
@@ -497,6 +498,7 @@ void loop() {
   }
   delay(10000);
 }
+
 ```
 
 ### Connecting to the Router
@@ -506,6 +508,7 @@ graph TB
 A[Nodes] --> B[Gateway]
 E[Nodes] --> B[Gateway]
 B --> C(Router)
+
 ```
 
 ### Dashboard

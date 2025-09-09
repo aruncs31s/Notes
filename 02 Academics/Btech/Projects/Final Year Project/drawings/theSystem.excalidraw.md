@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: theSystemexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 
@@ -39,7 +39,6 @@ class blk(gr.sync_block):
             self.pre_count = 0
             self.state = 2      # send msg
         return (self.c_len)
-
 
         while (not (self._eof)):
             buff = self.f_in.read (self.Pkt_len)
@@ -89,7 +88,6 @@ class blk(gr.sync_block):
                 j += 1
             self.state = 4
             return (fn_len+8)
-
 
         # send post filler
         key1 = pmt.intern("packet_len")
@@ -219,6 +217,7 @@ f695ae48cde95b017b22d7f39d4450d9187ebc63: [[Pasted Image 20250406180422_449.png]
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQAObQBmGjoghH0EDihmbgBtcDBQMBKIEm4ITSMEAA0ATRqACQBHJOwAYVIAVTgAMUIAJUaANXiAK1SSyFhECsJ9aKR+Usxu
 
@@ -933,5 +932,7 @@ R8QZodONp3yJcFQkBxN6gX5ii6j28UG47xOpwfEJBUgvkwcSzizDDC+iSJ32gWXDwb0QU7ItkFI+vPcI
 soA/wCg5LlOCgBkAdQG5yI9lmUGeedlwe4iy4JZSyVLZAfABq2G7eOUg+khPDTVigsAgAJOEDADgkBgBD+lwEfwJEXH0kdFSAVIDqDSBwYEuUiUASAE+RQoA/YhlUt8AqJCWU6VTiAGc0BuBGHFwAPYgE9HlUzx4kUCrANkB84FIARnVcAHaaDHwGjDNUssh+jHGQKtVZwBuwImElfj5IY1TTVLM+XgAXVJoyBoxrVJrwX3AgVK+U5kAATHfeJUB
 
 TMBWqG7ABwB+aM0kPVE1U4IB+7FPyJppCABfEYaxKRmedZlpmLGaiL7AhlAvBbjYT+HhIBDDR5g1UrVTXMTTQQ95GAAnQNkA+VO3wKZpuNmQ0T4h1ICuwfQAiVNnQJX88rBHqAY5hsGLUtgBS1MWFcABl0BqcJ4NgAEYgeiAgAA=
+
 ```
+
 %%

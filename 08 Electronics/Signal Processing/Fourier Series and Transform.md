@@ -1,13 +1,13 @@
 ---
 id: Fourier Series and Transform
 aliases: []
-tags: []
-cssclasses:
-  - wide-page
+tags:
+  - electronics
+  - signal_processing
+cssclasses: 
+dg-publish: true
 ---
 # Fourier Series and Transforms
-
-
 
 # Fourier Series and Transforms
 
@@ -111,6 +111,7 @@ $$
 _It is an algorithm that is used to compute the Discrete Fourier Transform Faster _
 
 ```
+
 graph LR
 A[Signal In time] -- FFT --->B[Signal in Freq]
 
@@ -137,6 +138,7 @@ S_phase = np.angle(S)
 plt.plot(t, S_mag, ".-")
 plt.plot(t, S_phase, ".-")
 plt.show()
+
 ```
 
 - [[FFT in Python]]

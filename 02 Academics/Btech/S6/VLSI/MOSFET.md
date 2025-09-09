@@ -1,11 +1,15 @@
 ---
 id: MOSFET
-aliases: 
+aliases: []
 tags:
+  - academics
+  - btech
+  - s6
+  - vlsi
+dg-publish: true
 ---
 # MOSFET
 ![](https://cdn1.byjus.com/wp-content/uploads/2021/01/mosfet-circuit.png)
-
 
 ##### Types
 ![](https://cdn1.byjus.com/wp-content/uploads/2022/03/MOSFET.png)
@@ -48,7 +52,6 @@ In the saturation region, the MOSFETs have their _IDS_ constant in spite of an
 > [!NOTE] $V_{gs}$
 > $V_{gs}$​ is crucial because it determines the ==operational state of the MOS transistor==, specifically whether it is in cutoff, triode, or saturation mode.
 
-
 ###### Cut-Off Region
 It happens when 
 $$
@@ -63,7 +66,5 @@ V_{gs} \gt V_t \& V_{ds} \lt \left(V_{gs} - V_t \right)
 $$
 - ie, $V_{gs} \gt V_{th}$ and  $V_{DS}$​ (the voltage difference between the Drain and the Source) is small enough $V_{ds} \lt \left(V_{gs} - V_t \right)$
 
-
 - [ ] finish $I_d$ MOS TRANSISTOR CURRENT EQUATIONS
-
 

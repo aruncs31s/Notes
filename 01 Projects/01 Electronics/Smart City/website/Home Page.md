@@ -1,9 +1,14 @@
 ---
-aliases:
-  - smart city home page
+id: Home_Page
+aliases: []
+tags:
+  - projects
+  - electronics
+  - smart_city
+  - website
 tech: flask
+dg-publish: true
 ---
-
 # Home Page
 - [[01 Projects/01 Electronics/Smart City/website/Device Page]]
 
@@ -15,12 +20,15 @@ tech: flask
 ![[Screenshot 2025-04-19 at 2.39.32 AM.png]]
 ## V0.0.1 Beta
 Current status
+
 ```
+
 # device.csv
 IP,Assigned_Place,Status,Date of Creation,Main_Node,Nearby_Nodes
-```
-This device.csv if first created by the user in which the IP of the device , etc. are typed. 
 
+```
+
+This device.csv if first created by the user in which the IP of the device , etc. are typed. 
 
 ```python
 csv_file = "/Users/aruncs/Desktop/Projects/Kannur-Solar-Battery-Monitoring-System-Website/devices.csv"
@@ -36,10 +44,12 @@ with open(csv_file,newline="") as csvFile:
 	                "ip": row["IP"],
 	            }
 	        )
+
 ```
 
 ```python
 print(devices)
+
 ```
 
 But the `status` attribute here only indicates that if the device is placed on the field or not 
@@ -58,12 +68,16 @@ for i in active_devices:
 
 ```python
 sorted_device = active_devices + inactive_devices
+
 ```
+
 ## Routing
+
 ```python
 @app.route("/")
 def home():
 
 return render_template("home.html",devices=sorted_device)
+
 ```
 

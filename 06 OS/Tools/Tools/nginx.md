@@ -2,9 +2,10 @@
 id: nginx
 aliases: []
 tags:
-  - todo
+  - os
+  - tools
+dg-publish: true
 ---
-
 reverse proxy or port forwarding
 
 # Nginx

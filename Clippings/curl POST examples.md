@@ -1,9 +1,11 @@
 ---
 id: curl POST examples
 aliases: []
-tags: []
+tags:
+  - clippings
 title: curl POST examples
 url: https://gist.github.com/subfuzion/08c5d85437d5d4f00e58
+dg-publish: true
 ---
 curl POST examples
 
@@ -43,8 +45,6 @@ curl POST examples
 > `-X, --request` The request method to use.
 > 
 
-
-
 ## POST
 
 When sending data via a POST or PUT request, two common formats (specified via the `Content-Type` header) are:
@@ -80,25 +80,33 @@ For sending data with POST and PUT requests, these are common `curl` options:
 `application/x-www-form-urlencoded` is the default:
 
 ```
+
 curl -d "param1=value1&param2=value2" -X POST http://localhost:3000/data
+
 ```
 
 explicit:
 
 ```
+
 curl -d "param1=value1&param2=value2" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://localhost:3000/data
+
 ```
 
 with a data file
 
 ```
+
 curl -d "@data.txt" -X POST http://localhost:3000/data
+
 ```
 
 ### POST application/json
 
 ```
+
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST http://localhost:3000/data
+
 ```
 
 ```bash
@@ -113,22 +121,29 @@ curl -vX POST  http://127.0.0.1:5000/api/register \
 with a data file
 
 ```
+
 curl -d "@data.json" -X POST http://localhost:3000/data
+
 ```
 
 ```
+
 {
 	"Content-Type": "application/json",
 	"key1":"value1",
 	"key2":"value2"
 }
+
 ```
 
 ```
+
 param1=value1&param2=value2
+
 ```
 
 ```
+
 {
         
 
@@ -178,9 +193,11 @@ param1=value1&param2=value2
           
 
           }
+
 ```
 
 ```
+
 var app = require('express')();
   var bodyParser = require('body-parser');
   app.use(bodyParser.json()); // for parsing application/json
@@ -190,12 +207,15 @@ var app = require('express')();
   res.end();
 });
  app.listen(3000);
+
 ```
 
 ### POST Form Encoded Data
+
 ```bash
 curl -X POST http://127.0.0.1:5000/register \
 -F "name=arunc" \
 -F "password=simplepass" \
 -F "email=test@gmail.com"
+
 ```

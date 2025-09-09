@@ -1,10 +1,11 @@
 ---
 id: Git Class 1
 aliases: []
-tags: []
+tags:
+  - classes
+  - git
 dg-publish: true
 ---
-
 # Git
 
 ---
@@ -56,6 +57,7 @@ apt install git
 pacman -S git
 dnf install git
 apk add git
+
 ```
 
 - Windows
@@ -82,6 +84,7 @@ Alice->>John: Hey i have built a new game?
 John-->>Alice: Great!
 Alice-)John: You want to see it?
 John->>Alice: Why not
+
 ```
 
 ---
@@ -105,6 +108,7 @@ John-->>Alice: Great!
 Alice-)John: I have made a new level
 John->>Alice: Can i have it ?
 Alice->>John: Sure
+
 ```
 
 ---
@@ -119,6 +123,7 @@ John-->>Alice: Like what!
 Alice-)John: new character and new items
 John->>Alice: Great , but im not sure if this both will be compatible
 Alice-->>John: Hhat should i do
+
 ```
 
 - John has 3 options
@@ -141,6 +146,7 @@ class Game1:
 		...
 	def characters:
 		...
+
 ```
 
 ---
@@ -157,6 +163,7 @@ class Game1:
 		...
 	def characters:
 		...
+
 ```
 
 ---

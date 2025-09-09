@@ -1,4 +1,13 @@
+---
+id: 03_Advanced
+aliases: []
+tags:
+  - coding
+  - python
+dg-publish: true
+---
 ## Error handling
+
 ```python
 try:
 	somecode()
@@ -6,9 +15,11 @@ except SomeError:
 		print("Error")
 finally:
 	print("Always executed")
+
 ```
 
 #eg
+
 ```python
 try:
     file = open('example.txt', 'r')
@@ -20,4 +31,5 @@ except Exception as e:
 finally:
     file.close()
     print("File has been closed.")`
+
 ```

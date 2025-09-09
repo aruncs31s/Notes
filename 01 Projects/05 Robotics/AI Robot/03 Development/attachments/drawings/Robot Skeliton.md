@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: Robot_Skeliton
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 
@@ -696,6 +696,7 @@ d8012b3a373955c53b9aec28baf82cbd624b9292: [[01 Projects/05 Robotics/AI Robot/Pas
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBGAAYEmjoghH0EDihmbgBtcDBQMBKIEm4IOCMjADZmABUAQUkATXjlHlJSABkjZTYW7oBWVJLIWEQKwn1opH5SzG5nHgBm
 
@@ -6358,5 +6359,7 @@ uUAuehRIiTqvhQADAAOE4VGwte9gaAIgAXUAxeYGQAhoAmH+2efXQAzcoOdoax4Jv9RefuefOdoLPQRk
 /MKiYglyYyYDpYy6chCQSeQDAABAAVIhyhA1fY1FAY+fnef68gz2gU+fUoAJAAF9g64AVCA3+fe4A5EY8wAf+fuskVKgTjk/V7wQArjgwBfrWAhSAlKgZVU1BAxcAuAAnJTgBQ5AgHuAKBfP59/nQMjTFZAIm0baV8BfYoAnJTxwg5+NtIAhBf6Bfk6AKy18xAbefLefLIA1o0iV9Ob8+ugFZAZYA9svFt96/YsDoKkAVLQXA0rUwFm8UTAyefjy
 
 UwgAbIsmRoh0Q5BfdgA7z0tBA6poUTA4AooBflNxLBf1wg7sgtBAn3g+ZEy6cSH9APZq+f6QAshflFNCuASEADPAtKsC5A9lpOJCVQ4KhfiV9B7ggUoJrIQZAjAAr9IHIAw6i4AAiRA7QQVq6wAAysAckAQAAA==
+
 ```
+
 %%

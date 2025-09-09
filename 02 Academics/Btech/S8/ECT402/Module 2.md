@@ -1,3 +1,13 @@
+---
+id: Module_2
+aliases: []
+tags:
+  - academics
+  - btech
+  - s8
+  - ect402
+dg-publish: true
+---
 # Module 2
 
 ## Syllabus

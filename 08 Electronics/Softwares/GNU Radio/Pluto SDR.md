@@ -1,11 +1,16 @@
 ---
-aliases: 
+id: Pluto_SDR
+aliases: []
+tags:
+  - electronics
+  - softwares
+  - gnu_radio
 Date: 07-01-25
+dg-publish: true
 ---
 # Pluto SDR
 **Param**
 ![](https://wiki.gnuradio.org/images/7/76/Pluto_FM_fg.png)
-
 
 >[!Note] SDR 
 >Software defined radio(SDR) is a radio communication system where components that have been traditionally implemented in hardware are instead implemented by means of software^[1]
@@ -24,8 +29,8 @@ FF[IF Filter]
 DD[Demodulator]
 A --> B --> C --> D  --> E --> FF --> DD
 F --> E
-```
 
+```
 
 Inside [[Pluto SDR]] is **Zero IF** architector .
 
@@ -35,24 +40,30 @@ Inside [[Pluto SDR]] is **Zero IF** architector .
 ## IIO 
 Linux's Industrial Input/ouput(IIO) infrastructure. The pluto sdr is a iio based device. 
 ### Installition
+
 ```bash
 	sudo pacman -S libiio
+
 ```
 
 #### Depts
+
 ```
+
 cmake --> needs removal
 boost --> needs removal 
 swig --> needs removal 
-```
 
+```
 
 ## Pluto SDR and GNU Radio 
 
 ### **1. FM**
+
 ```mermaid
 graph LR 
 PLuto_sdr --> Rational_Resampler --> FM_Demod --> Multiply_by_const --> Audio_sink
+
 ```
 
 #### Pluto SDR block 
@@ -63,9 +74,8 @@ PLuto_sdr --> Rational_Resampler --> FM_Demod --> Multiply_by_const --> Audio_si
 | iio context ip | 192.168.2.1                     |
 | Sample Rate    | 987                             |
 
-
-
 ## Tweaking
+
 ```bash
 ssh root@192.168.2.1
 # passwd: analog 
@@ -73,4 +83,5 @@ ssh root@192.168.2.1
 fw_setenv attr_name compatible
 fw_setenv attr_val ad9364
 reboot
+
 ```

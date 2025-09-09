@@ -1,6 +1,11 @@
 ---
-aliases: 
+id: Oscillators
+aliases: []
+tags:
+  - electronics
+  - analog_circuits
 Date: 25-11-2024
+dg-publish: true
 ---
 # Oscillators   
 Oscillators make use of **Oscillation** eg: output going **+** and **-**
@@ -12,5 +17,4 @@ Oscillators make use of **Oscillation** eg: output going **+** and **-**
 >[!float|right-small] Barkhausen criterion
 >The loop gain must be **unity** or greater
 >The feedback signal feeding back at the input must be phase-shifted by 360°($2\pi$) (or zero degrees
-
 

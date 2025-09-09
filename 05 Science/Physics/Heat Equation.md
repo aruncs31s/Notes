@@ -1,9 +1,15 @@
+---
+id: Heat_Equation
+aliases: []
+tags:
+  - science
+  - physics
+dg-publish: true
+---
 # Heat Equation
 Created : 2024-05-12 14:37
 
-
 ## Contents
-
 
 $$
 \frac{\partial T}{\partial t}(x,t) = \alpha . \frac { \partial^2T}{\partial x^2} (x,t) 

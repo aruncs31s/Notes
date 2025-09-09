@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: Ripple_Carry_Adder_Drawing
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
-
 
 # Text Elements
 Co,0 ^K7RDkJLv
@@ -52,6 +52,7 @@ FA ^wXbn7Agf
 
 %%
 # Drawing
+
 ```json
 {
 	"type": "excalidraw",
@@ -2020,5 +2021,7 @@ FA ^wXbn7Agf
 	},
 	"files": {}
 }
+
 ```
+
 %%

@@ -1,6 +1,11 @@
 ---
-aliases: 
+id: MacOS
+aliases: []
+tags:
+  - os
+  - macos
 Date: 30-01-25
+dg-publish: true
 ---
 # MacOS
 
@@ -8,4 +13,5 @@ Date: 30-01-25
 
 ```bash
 curl -sS https://webi.sh/nerdfont | sh; \ source ~/.config/envman/PATH.env
+
 ```

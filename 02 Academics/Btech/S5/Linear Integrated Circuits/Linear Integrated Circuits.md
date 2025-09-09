@@ -1,7 +1,12 @@
 ---
 id: LIC
-aliases: 
+aliases: []
 tags:
+  - academics
+  - btech
+  - s5
+  - linear_integrated_circuits
+dg-publish: true
 ---
 # Linear Integrated Circuits
 ## Contents
@@ -9,8 +14,6 @@ tags:
 - [[#Module 2]]
 - [[#Module 3]]
 - [[#Module 5]]
-
-
 
 ### Module 1
 ##### Syllabus
@@ -47,7 +50,6 @@ $$
 $$
 V_o =  V_1 - V_2
 $$
-
 
 Where
 _$V_1$_ => Input voltage at _non-inverting_ input
@@ -215,7 +217,6 @@ $$
 - Ideal Slew Rate is $\infty$
 - But practically for 741 IC , SR is 0.5 $V\over \micro s$
 
-
 ### Module 2
 
 #### Syllabus
@@ -252,7 +253,6 @@ negative feedback
 - band reject active filters,
 - state variable filters.
 
-
 #### RC Phase Shift Osfc = {vocillator
 $$
 fc = {1 \over 2\pi R C \sqrt{6}}
@@ -271,12 +271,8 @@ $$
 Av = {1 \over \beta} = 3 
 $$
 
-
-
-
 ![[Pasted image 20240620100439.png]]
 ![[Pasted image 20240620100605.png]]
-
 
 # Module 5
 

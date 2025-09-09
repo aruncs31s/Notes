@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: voltage_Sensingexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 ## Text Elements
@@ -23,6 +23,7 @@ Volt Meter ^l3i5f2Ld
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBWbR4aOiCEfQQOKGZuAG1wMFAwYuh4cXQAM0CETyp+EsYWdi40eIBmADZ6yEbWTgA5TjFuNraAdgBOMYAGHhnuiEIOYixu
 
@@ -105,5 +106,7 @@ DXJ/OfnpAf5P/d+S/QAVZBL5B/PKe5gKDgLS2+8rGsAK4LTzt5T8iBS/LOzKTWgKC8+egvSBgpQZqOeU
 OUwcI4D40qjTyHFxAGfGwBWAsLcARBOMbAu8XR5hMdwB0EYlIDKBfQAACn2rUA3ENtbwkSDFAJAAAlN6FFTKBiIxSaJXEtbhmw/pLUXgIVDSXxBMlFimhUDGAUIAsa5KTgMdLvj7SMgoqC2Jyh0bCZMggS4IGZHRxWSiAHi/pSUAYxjyZxHk2jEKjGbjKEAFiuwOcwQAk5mANzbxr4v8UMYglNc2BdyHJSMAEaDoQxQFK8RpAScokMjPY1pT6A+F
 
 b+B4cDMpGEokIbkXZQgH2WpFomvCcAL3kF7cI0AwAY/KxCAA
+
 ```
+
 %%

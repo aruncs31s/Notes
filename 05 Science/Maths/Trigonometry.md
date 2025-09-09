@@ -1,6 +1,13 @@
+---
+id: Trigonometry
+aliases: []
+tags:
+  - science
+  - maths
+dg-publish: true
+---
 # Trigonometrics
 Created : 2024-05-14 20:50
-
 
 ## Contents
 - 
@@ -21,6 +28,7 @@ $$
 $$
    \cos\left(x+y\right) = \cos x \cos y - \sin x \sin y
 $$
+
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
@@ -33,6 +41,7 @@ plt.plot(x, y2, "r--", label="cos(x)cos(y) + sin(x)sin(y)")
 plt.legend()
 plt.grid(True)
 plt.show()
+
 ```
 
 ### Properties

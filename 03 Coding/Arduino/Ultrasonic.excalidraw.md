@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: Ultrasonicexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
-
 
 # Text Elements
 - Power Supply	5V DC
@@ -42,6 +42,7 @@ cde82f2c73f7bbdcabe70313928de75a6d9f1cec: https://i0.wp.com/randomnerdtutorials.
 
 %%
 # Drawing
+
 ```json
 {
 	"type": "excalidraw",
@@ -5463,5 +5464,7 @@ cde82f2c73f7bbdcabe70313928de75a6d9f1cec: https://i0.wp.com/randomnerdtutorials.
 	},
 	"files": {}
 }
+
 ```
+
 %%

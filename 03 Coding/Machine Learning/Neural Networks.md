@@ -1,14 +1,17 @@
 ---
 id: Neural Networks
 aliases: []
-tags: []
+tags:
+  - coding
+  - machine_learning
+dg-publish: true
 ---
 # Neural Networks
 
 #### Tools Used
 
-1. [Python](python.md)
-2. [Numpy](numpy.md)
+1. [[python]]
+2. [[numpy]]
 
 ## Contents
 
@@ -25,6 +28,7 @@ bias = 2
 output = inputs[0]*weights[0] + inputs[1]*weights[1]+inputs[2]*weights[2] +bias
 # Todo: Findout why bias is adding insted of multiplying
 print(output)
+
 ```
 
 This code implements the following expression
@@ -46,7 +50,6 @@ output = [
 		inputs[0]*weights_3[0] + inputs[1]*weights_3[1]+inputs[2]*weights_3[2] +bias_3
 ]
 print(output)
-
 
 ```
 
@@ -71,8 +74,8 @@ for neuron_weights, neuron_bias in zip(weights, biases):
     neuron_output += neuron_bias
     output.append(neuron_output)
 
-
 print(output)
+
 ```
 
 > [!Note] Explenation
@@ -92,14 +95,13 @@ for neuron_weights , neuron_inputs in zip(weights,inputs):
     output = neuron_weights * neuron_inputs
 output = output + bias
 print(output)
+
 ```
 
 - This process is repeated to get the output corresponds to each weight and biases
 
 ---
 ### With Numpy
-
-
 
 ##### Dot Product
 
@@ -110,6 +112,7 @@ weights = [0.2,0.8,-0.5,1.0]
 bias = 2
 print(np.dot(inputs,weights) + bias)
 print(np.dot(weights,inputs) + bias)
+
 ```
 
 _position of the inputs,weight does not matter it gives the same result_
@@ -140,6 +143,7 @@ print(np.dot(inputs,weights[1]) + biases[1])
 print(np.dot(weights[1],inputs) + biases[2])
 # weight should be the first arguiment to np.dot()
 print(np.dot(weights,inputs) + biases)
+
 ```
 
 > [!INFO] np.dot() order
@@ -202,6 +206,7 @@ bias= [2,2,3]
 
 output = np.dot(inputs,weights) + bias
 print(output)
+
 ```
 
 ##### Finding the number of rows and columns
@@ -226,4 +231,5 @@ row_y , column_y = y.shape if len(y.shape) > 1 else (1,y.shape[0])
 print("rows of y = " , row_y)
 print("column of y = " , column_y)
 print("dot product of x and y " ,np.dot(np_x,y))
+
 ```

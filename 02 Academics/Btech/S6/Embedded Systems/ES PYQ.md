@@ -1,6 +1,13 @@
 ---
-aliases: 
+id: ES_PYQ
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - embedded_systems
 Date: 04-01-25
+dg-publish: true
 ---
 # ES PYQ
 ## Module 1
@@ -18,7 +25,6 @@ Date: 04-01-25
 1. Write short note on UART and SPI 
 > 1. [[UART]]
 > 2. [[SPI Serial Peripheral Interface]]
-
 
 ## Module 3 
 ## Module 4 

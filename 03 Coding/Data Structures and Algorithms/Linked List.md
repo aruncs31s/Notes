@@ -1,14 +1,13 @@
 ---
 id: Linked List
-aliases:
-  - c linkded List
-tags: 
+aliases: []
+tags:
+  - coding
+  - data_structures_and_algorithms
 Created: 16-08-2024
-cssclasses:
-  - wide-page
+cssclasses: 
 dg-publish: true
 ---
-
 # Linked List
 
 - Elements in a linked list are called nodes
@@ -28,6 +27,7 @@ dg-publish: true
 ```mermaid
 flowchart LR
     head-- *next ---b -- *next ---c-- *next ---tail
+
 ```
 
 - if `Start` == `NULL` `return` linked list is empty
@@ -38,6 +38,7 @@ struct node{
   int value;
   struct node *next;
 }
+
 ```
 
 #### Single Linked Lists
@@ -89,10 +90,12 @@ int main() {
   print_the_list(head);
   return 0;
 }
+
 ```
 
 ```c
 print_nodes((head->next)->next); // we can also access the next element using this style
+
 ```
 
 **Linking**:
@@ -103,6 +106,7 @@ print_nodes((head->next)->next); // we can also access the next element using th
   n3.next = &n2;
   n2.next = &n1;
   n1.next = NULL; // tail
+
 ```
 
 In this example when adding new node say `n4` and if i call the `print_the_list()` with `head` as the actual argument the new node will not print
@@ -112,6 +116,7 @@ node_t n4;
 n4.value = 10;
 n4.next = &n3;
 print_the_list(head); // This will not print the n4
+
 ```
 
 So in order to `print` the n4 we have to set the latest node `n4` as the head
@@ -122,18 +127,21 @@ n4.value = 10;
 n4.next = &n3;
 head = &n4;
 print_the_list(head); // This will not print the n4
+
 ```
 
 Now this will print the following
 
 ```bash
 11 - 3 - 2 - 1 -
+
 ```
 
 Otherwise it would be this
 
 ```c
 3 - 2 - 1 -
+
 ```
 
 **Creating a function to add nodes**:
@@ -145,6 +153,7 @@ node_t *create_new_node(int value) {
   result->next = NULL;
   return result;
 }
+
 ```
 
 **Create new Nodes**:
@@ -159,6 +168,7 @@ node_t *create_new_node(int value) {
   tmp = create_new_node(3);
   tmp->next = head;
   head = tmp;
+
 ```
 
 **Automate Creating new Nodes**:
@@ -169,6 +179,7 @@ for (int i = 0; i < 25; ++i) {
   tmp->next = head;
   head = tmp;
 }
+
 ```
 
 here
@@ -180,6 +191,7 @@ node_t *create_new_node(int value) {
   result->next = NULL;
   return result;
 }
+
 ```
 
 There expanded editon
@@ -191,6 +203,7 @@ for (int i = 0; i < 25; ++i) {
   tmp->next = head;
   head = tmp;
 }
+
 ```
 
 ## References

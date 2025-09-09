@@ -1,8 +1,14 @@
 ---
+id: Optical_Fibre_Communication
+aliases: []
+tags:
+  - academics
+  - btech
+  - s7
+  - optical_fibre_communication
 ExamDate: 2024-11-26
+dg-publish: true
 ---
-
-
 # Module 1
 
 #### Refractive Index
@@ -10,7 +16,6 @@ ExamDate: 2024-11-26
 $$
 n = \frac {\text{volocity of light in vacuum}} {\text{velocity of light in the medium}}
 $$
-
 
 > [!NOTE] Meridional Rays
 > **rays that pass through the axis of the optical fiber**
@@ -60,12 +65,8 @@ NA = \sqrt{n_1 ^ 2 - n_2 ^ 2 }
 }
 $$
 
-
-
-
 # Module 5
 - [ ] Wavelength Division Multiplexing (WDM)
-
 
 #### WDM 
 *Combining number of info carrying wavelength on the same fiber*

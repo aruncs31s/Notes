@@ -1,7 +1,14 @@
 ---
+id: Touch_Display_with_ESP32
+aliases: []
+tags:
+  - electronics
+  - embedded_systems
+  - micro_controllers
+  - interfacing
 robu_link: https://robu.in/product/waveshare-esp32-s3-5inch-display-development-board-32-bit-lx7-dual-core-processor-up-to-240mhz-frequency-with-onboard-antenna-esp32-with-800x480-display-without-touch/?gad_campaignid=17413441824#tab-questions
+dg-publish: true
 ---
-
 # Touch Display With ESP 32 
 1. [[ESP32 display-5.0 Inch HMI Display]]
 - [[LVGL]]
@@ -14,8 +21,6 @@ robu_link: https://robu.in/product/waveshare-esp32-s3-5inch-display-development-
 ![[Touch Display with ESP32-1.png]]
 
 ![[Touch Display with ESP32-2.png]]
-
-
 
 ![[Touch Display with ESP32-3.png]]
 
@@ -55,7 +60,6 @@ robu_link: https://robu.in/product/waveshare-esp32-s3-5inch-display-development-
     for switching output valtage and I/O level of I2C VOUT, 3.3V by default
 21. **RTC battery holder**  
     Compatible with CR927 battery
-
 
 ![[Touch Display with ESP32-4.png]]
 

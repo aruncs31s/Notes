@@ -1,11 +1,12 @@
 ---
-dg-publish: true
 id: es_website_gcek_backend
+aliases: []
 tags:
-  - es_website
-  - backend
+  - projects
+  - web_based
+  - embedded_systems_website
+dg-publish: true
 ---
-
 # Backend
 - [[Flask Backend]]
 - Using [[Web3 Based Backend]]   👎

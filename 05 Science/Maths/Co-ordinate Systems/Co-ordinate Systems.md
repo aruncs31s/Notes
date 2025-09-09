@@ -1,18 +1,15 @@
 ---
 id: Co-ordinate Systems
-aliases:
-  - co-ordinates
-  - cartesian
-  - cylindrical
-  - spherical
-tags: []
+aliases: []
+tags:
+  - science
+  - maths
+  - co-ordinate_systems
 Created: 2024-05-12
-cssclasses:
-  - wide-page
+cssclasses: 
+dg-publish: true
 ---
-
 <h1 align="center"> Co-ordinate Systems</h1>
-
 
 - [[Polar Co-ordinate system]]
 - [[#Cartesian Coordinate System]]
@@ -29,7 +26,6 @@ cssclasses:
 In Polar Coordinates, a point in the plane is determined by its ==distance (radius) from the origin==, now called the Pole, and the ==angle theta==, in radians, between the line from the origin to the point and the x-axis, which is now called the Polar Axis.
 In this co-ordinate system the $r$ corresponds to the distance between the point and the origin , $\theta$ corresponds to the distance between the x axis and the **point**
 
-
 >[!blank|right]
 >$$
 >\begin{align}
@@ -42,7 +38,6 @@ In this co-ordinate system the $r$ corresponds to the distance between the point
 
 ![[polar co-ordinte system.excalidraw]]
 
-
 ### Cartesian Coordinate System
 >[!blank|float-right]
 >![[Co-ordinate Systems Drawing]]
@@ -54,7 +49,6 @@ $$
 $$
 
 > One can identify the position of third axis using ==law of screw== 
-
 
 #### Law of Screw
 >[!multi-column]
@@ -70,8 +64,6 @@ $$
 ### Cylindrical Coordinate System
 >[!blank|right-medium]
 ![[cylindrical co-ordinate system.excalidraw|400x200]]
-
-
 
 Cylindrical coordinates are a natural extension of polar coordinates in 3D space. 
 ##### Differential Displacement
@@ -142,7 +134,6 @@ $$
 | $r$      | $\rho = r\sin \theta$ |
 | $\theta$ | $\phi = \phi$         |
 | $\phi$   | $z = r \cos \theta$   |
-
 
 ### Matrix Transform 
 

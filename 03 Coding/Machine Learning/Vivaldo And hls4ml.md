@@ -1,13 +1,16 @@
 ---
 id: Vivaldo And hls4ml
 aliases: []
-tags: []
+tags:
+  - coding
+  - machine_learning
+dg-publish: true
 ---
-
 #### Requirements
 
 ```bash
 sudo apt-get install python3-venv git cmake
+
 ```
 
 ```bash
@@ -19,6 +22,7 @@ pip install --upgrade pip
 pip install notebook
 ipython kernel install --user --name=.venv_hls4ml
 pip install hls4ml[rolling]
+
 ```
 
 ^1d13b4
@@ -45,6 +49,7 @@ pip install -e . -v
 sudo yum install epel-release
 sudo yum groupinstall 'development tools'
 sudo yum install python-pip python3-venv git cmake
+
 ```
 
 Then do [[#^1d13b4]]

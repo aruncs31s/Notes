@@ -1,5 +1,15 @@
+---
+id: Communication_Device
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - embedded_systems
+  - module_2
+dg-publish: true
+---
 # Communication Device
-
 
 ## Contents
 - [[#Serial Vs Parallel Communication]]
@@ -19,7 +29,6 @@
 | --------------------------------------------------- | -------------------------------------------------------------- |
 | Over a given line or channel on bit can communicate | Multiple bits can communicate over a set of parallel lines<br> |
 | Long or short distance communication                | Short Distance Communication                                   |
-
 
 ## Synchronous Communication
 When the byte or collection of bytes(frames) are transmitted at a constant time intervals with **uniform phase differences**, then the communication is called synchronous communication. 

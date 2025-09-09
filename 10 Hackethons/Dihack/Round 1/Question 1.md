@@ -1,6 +1,11 @@
 ---
+id: Question_1
+aliases: []
+tags:
+  - hackethons
+  - dihack
+  - round_1
 dg-publish: true
-aliases: 
 Date: 31-10-2024
 ---
 # Question 1
@@ -9,11 +14,9 @@ Your friend needs some help from you for creating a circuit **without the use of
 
 - The motor should only be retriggered when the existing obstacle is moved away from the vicinity of 30cm and re-enter the 30 cm range. 
 
-
 </br>
 
 ## Method 1
-
 
 ### Possible steps 
 1. Find a way to measure distance using **[[HC-SR04]]** sensor from it datasheet 
@@ -65,7 +68,6 @@ R_{1} C_{1} &\le 0.0016T_{t} \\ \\
 \end{align}
 $$
 
-
 >let $C_{1} = 0.01 \mu F$ 
 
 $$
@@ -111,10 +113,7 @@ $$
 
 ![[ckt_1.png]]
 
-
 ![[Pasted image 20241016212724.png]]
-
-
 
 #### Designing A Astable Multi-Vibrator 
 - [x] Need to receive from Amarnath ✅2025-07-04/03:36 

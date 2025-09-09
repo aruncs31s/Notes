@@ -1,3 +1,12 @@
+---
+id: canvas
+aliases: []
+tags:
+  - os
+  - tools
+  - obsidian
+dg-publish: true
+---
 ##### Canvas Mindmap
 - Press `Enter` to create brother card;
 - Press `Tab` to create child card;

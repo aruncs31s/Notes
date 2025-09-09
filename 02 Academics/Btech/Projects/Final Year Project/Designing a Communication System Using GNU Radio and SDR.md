@@ -1,3 +1,13 @@
+---
+id: Designing_a_Communication_System_Using_GNU_Radio_and_SDR
+aliases: []
+tags:
+  - academics
+  - btech
+  - projects
+  - final_year_project
+dg-publish: true
+---
 <<<<<<< Updated upstream:01 Academics/Btech/Projects/Final Year Project/Designing a Communication System Using GNU Radio and SDR.md
 ---
 dg-publish: true
@@ -68,7 +78,6 @@ We are designing a communication system using GNU Radio , our initial plan is to
 
 **What we now wanned to do.**
 1. Calculate ber of the communication system (BPSK) 
-
 
 ## **Tasks**
 

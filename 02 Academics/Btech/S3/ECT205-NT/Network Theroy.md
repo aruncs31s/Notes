@@ -1,19 +1,22 @@
 ---
-aliases:
-  - ECT205
-cssclasses:
-  - wide-page
+id: Network_Theroy
+aliases: []
+tags:
+  - academics
+  - btech
+  - s3
+  - ect205-nt
+cssclasses: 
+dg-publish: true
 ---
 >[!blank |right]
 >![[anime-anime-girl.gif]]
-
 
 # Network Theory
 
 ---
 ---
 ---
-
 
 >[!multi-column]
 >
@@ -39,9 +42,4 @@ cssclasses:
 >>[[Old_NOTES/Academics/Btech/S6/ElectroMagnetics/Module 3]]
 >
 >>[!note] Module 4
-
-
-
-
-
 

@@ -1,16 +1,13 @@
 ---
 id: 18-01-25-Project
-aliases:
-  - AI Car
+aliases: []
 tags:
-  - project
+  - projects
   - electronics
-  - ai
-  - ml
+  - ai-powered_accident_avoidance_system
 GithubLink: https://github.com/aruncs31s/AI-Based-Accident-Avoidance-System-AI-BAAS
 Status: Done
-cssclasses:
-  - wide-page
+cssclasses: 
 dg-publish: true
 Starting Date: 2025-02-18
 TargetDate: 2025-02-13
@@ -44,13 +41,16 @@ DoneDate: 2025-03-31
 >            - [[AI Powered Accident Avoidance System#Lane Departure Warning|Lane Departure Warning]]
 
 ```
+
 raspberry pi:
   username: pi
   password: pi
   wifi:
     essid: pi_wifi
     password: 12345678
+
 ```
+
 ## Components
 
 **Initial selection**
@@ -64,7 +64,6 @@ raspberry pi:
 | [Boost Converter](https://amzn.in/d/dno182p) | 1   | 296/-       |
 | Miscellaneous                                |     | 300/-       |
 | Total                                        | -   | 10095/-<br> |
-
 
 #### 19-03-25
 
@@ -116,22 +115,20 @@ graph TD
     F --> H
     G --> H
     H --> B
+
 ```
-
-
-
 
 # Coding
 ## Install the Libs
 
 ```bash
 pip install ultralytics
+
 ```
 
 _note that after some time i have to reinstall ultralytics_
 
 ## Pi to ESP i2c 
-
 
 ```c
 // source : https://dronebotworkshop.com/i2c-arduino-raspberry-pi/ 
@@ -158,8 +155,8 @@ void receiveEvent(int howMany) {
 void loop() {
   delay(100);
 }
-```
 
+```
 
 ### PI Code 
 
@@ -182,6 +179,7 @@ while True:
 
 video.release()
 cv2.destroyAllWindows()
+
 ```
 
 <details> <summmary></summary> </details>
@@ -211,6 +209,7 @@ def main():
 if __name__ == "__main__":
     freeze_support()  # For Windows-based systems, ensuring proper multiprocessing
     main()
+
 ```
 
 - Model run
@@ -259,6 +258,7 @@ while True:
 # Release the video capture and close the window
 video_capture.release()
 cv2.destroyAllWindows()
+
 ```
 
 - Convert.py
@@ -275,13 +275,14 @@ model.export(format="onnx")  # creates 'yolo11n.onnx'
 
 # Load the exported ONNX model
 onnx_model = YOLO("fireppe.onnx")
-```
 
+```
 
 ### Microcontroller Code 
 
 #### Lane Departure Warning
 - It uses ir sensor 
+
 ```c
 #include "ir_sensor.h"
 #include <Arduino.h>
@@ -292,4 +293,5 @@ IR_Sensor::IR_Sensor(uint8_t pin) {
 bool IR_Sensor::is_lane() {
 	return digitalRead(_pin);
 }
+
 ```

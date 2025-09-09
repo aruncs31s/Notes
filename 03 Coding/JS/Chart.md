@@ -1,7 +1,9 @@
 ---
 id: Chart
 aliases: []
-tags: []
+tags:
+  - coding
+  - js
+dg-publish: true
 ---
-
 # Chart

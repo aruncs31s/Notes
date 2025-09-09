@@ -1,9 +1,11 @@
 ---
 id: Rust By Practice
 aliases: []
-tags: []
+tags:
+  - coding
+  - rust
+dg-publish: true
 ---
-
 ## Variables
 
 - [Scope](#scope)
@@ -20,6 +22,7 @@ fn main() {
     assert_eq!(x, 5);
     println!("Success!");
 }
+
 ```
 
 soln
@@ -34,6 +37,7 @@ fn main() {
     assert_eq!(x, 5);
     println!("Success!");
 }
+
 ```
 
 2. Use `mut` to mark a variable as mutable
@@ -47,6 +51,7 @@ fn main() {
     assert_eq!(x, 3);
     println!("Success!");
 }
+
 ```
 
 soln
@@ -60,6 +65,7 @@ fn main() {
     assert_eq!(x, 3);
     println!("Success!");
 }
+
 ```
 
 ### Scope
@@ -76,6 +82,7 @@ fn main() {
     }
     println!("The value of x is {} and value of y is {}", x, y);
 }
+
 ```
 
 ### Char 

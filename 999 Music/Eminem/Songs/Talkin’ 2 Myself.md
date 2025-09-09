@@ -1,3 +1,12 @@
+---
+id: Talkin_2_Myself
+aliases: []
+tags:
+  - music
+  - eminem
+  - songs
+dg-publish: true
+---
 *Ayo, before I start this song man*  
 *I just want to thank everybody for being so patient*  
 *And baring with me over these last couple of years*  
@@ -23,7 +32,6 @@
 *If there is then let me hear just so I know that I'm not the only one*
 
 ---
-
 
 *I went away I guess to open up some lanes*  
 *But there was no one who even knew*  

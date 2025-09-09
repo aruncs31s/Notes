@@ -1,9 +1,14 @@
 ---
 id: analog_interfacing
 aliases: []
-tags: []
+tags:
+  - projects
+  - electronics
+  - academics
+  - iot_based_smart_energy_management_system
+  - esp32
+dg-publish: true
 ---
-
 #### Analog Interfacing
 
 - [Introduction](#introduction)
@@ -66,6 +71,7 @@ fn main() {
     let Max = 2isize.pow(N as u32) -1  ;
     println!("Maximaum Size = {}", Max);
 }
+
 ```
 
 - By Python
@@ -73,6 +79,7 @@ fn main() {
 ```python
 N=int(input("Enter the ADC Value"))
 print("Max Value = " ,2**N -1)
+
 ```
 
 #ComputeVoltage
@@ -88,6 +95,7 @@ let N = 10;
 let Max : f32= (2f32).powi(N) -1.0 ;
 println!("Voltage = {}",(reference_voltage *obtained_adc_val as f32)/Max)
 }
+
 ```
 
 - Dynamic
@@ -134,8 +142,8 @@ fn main() {
         (reference_voltage as f32 * obtained_adc_val as f32) / Max
     )
 }
-```
 
+```
 
 #### Finding Voltage
 
@@ -145,7 +153,9 @@ ADC_BIT = 2
 current_value = int(input("Enter current value"))
 voltage = Vmax *((2 ** 2 - 1 ) / current_value );
 print(f" Voltage =  {voltage}")
+
 ```
+
 ## Example
 
 #### Connecting ADC Sensors With ESP32
@@ -171,6 +181,7 @@ void loop() {
    float LDR_Voltage = ((float)LDR_Reading*3.3/1023);
    Serial.print("Reading: ");Serial.print(LDR_Reading); Serial.print("\t");Serial.print("Voltage: ");Serial.println(LDR_Voltage);
 }
+
 ```
 
 #### Sources
