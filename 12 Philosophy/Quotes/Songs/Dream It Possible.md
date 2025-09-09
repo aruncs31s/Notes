@@ -51,7 +51,7 @@ We will glow in the dark
 Turning dust to gold  
 
 >[!abstract]- *Explanation*
->When you do what you always said, you even inspire the people around you , and its no longer you its just us, they all 
+>When you do what you always said, you even inspire the people around you , and its no longer you its just us, they all share the same dream and shine as bright as gold.
 
 And we'll dream  
 It possible  
@@ -61,6 +61,10 @@ It possible
   
 I will chase, I will reach, I will fly  
 Until I'm Breaking, Until I'm Breaking  
+
+>[!abstract]- *Explanation*
+>I will do what i want util every cell in my body is tired , and never 
+
 Out of my cage, like a bird in the night  
 I know I'm changing, I know I'm changing  
 In, into something big  
