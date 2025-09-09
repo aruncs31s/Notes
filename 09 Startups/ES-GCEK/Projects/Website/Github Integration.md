@@ -1,3 +1,22 @@
+*
+GitHub OAuth Setup Steps:
+Since you've already enabled GitHub OAuth in Supabase, here's what you need to do:
+
+Create a GitHub OAuth App:
+
+Go to GitHub Developer Settings
+Click "New OAuth App"
+Fill in:
+Application name: Your app name
+Homepage URL: http://localhost:4321 (for development)
+Authorization callback URL: https://ozmmrpjujsyivuwblchk.supabase.co/auth/v1/callback
+Configure Supabase:
+
+In your Supabase dashboard, go to Authentication → Settings → Auth Providers
+Enable GitHub provider
+Add your GitHub app's Client ID and Client Secret
+
+
 1. Configure GitHub OAuth App:
 
 - **Create a new OAuth App:**
@@ -41,4 +60,4 @@ JavaScript
 import { createClient } from '@supabase/supabase-js';const supabaseUrl = 'YOUR_SUPABASE_URL';const supabaseAnonKey = 'YOUR_SUPABASE_ANON_KEY';const supabase = createClient(supabaseUrl, supabaseAnonKey);async function signInWithGitHub() {  const { data, error } = await supabase.auth.signInWithOAuth({    provider: 'github',    options: {      redirectTo: 'YOUR_REDIRECT_URL_AFTER_SIGNIN', // Optional    },  });  if (error) {    console.error('Error signing in with GitHub:', error.message);  } else {    console.log('GitHub sign-in initiated:', data);  }}// Call signInWithGitHub() when a user clicks a "Sign in with GitHub" button
 ```
 
-After these steps, users will be able to sign in to your Supabase-backed application using their GitHub accounts.
+After these steps, users will be able to sign in to your Supabase-backed application using their GitHub accounts*.
