@@ -80,13 +80,16 @@ Better than before
 
 
 >[!abstract]- *Explanation*
-> Never compare your self to otheres 
+> Never compare your self to others , compare your own versions , how much i have improved , from time to time , and never stay down.
 
 
 
 And if it takes, takes a thousand lives  
 Then it's worth fighting for  
-  
+
+>[!abstract]- *Explanation*
+> If something is 
+
 It's not until you fall that you fly  
 When your dreams come  
 Alive you're unstoppable  
