@@ -75,7 +75,7 @@ It possible
 ***I know I'm changing, I know I'm changing***  
 
 >[!abstract]- *Explanation*
-> When you don't care about what other people think about you , you can unleash your full potential, its like when you are inside a mask , no one will no what you do , but its lot harder without the mask , because everyone is gonna judge you , so always do without the mask , be you.
+> When you don't care about what other people think about you, you can unleash your full potential. It's like when you are inside a mask, no one will know what you do, but it's a lot harder without the mask, because everyone is gonna judge you, so always do without the mask—be you.
 
 
 ***In, into something big***  
