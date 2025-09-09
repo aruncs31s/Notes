@@ -91,7 +91,7 @@ It possible
 ***Then it's worth fighting for***  
 
 >[!abstract]- *Explanation*
-> If something seems much harder and you sacrifice lot for it , then it's worth fighting for , like some things , no matter how hard you try, its just not seems to work , but never give up on things like that , you will never know what's on the other end. 
+> If something seems much harder and you sacrifice a lot for it, then it's worth fighting for, like some things, no matter how hard you try, it just doesn't seem to work, but never give up on things like that, you will never know what's on the other end.
 
 It's not until you fall that you fly  
 When your dreams come  
