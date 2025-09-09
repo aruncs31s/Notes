@@ -72,11 +72,19 @@ Out of my cage, like a bird in the night
 I know I'm changing, I know I'm changing  
 
 >[!abstract]- *Explanation*
-> When you don't care about what other people think about you , you can unleash your full potential, its like when you are 
+> When you don't care about what other people think about you , you can unleash your full potential, its like when you are inside a mask , no one will no what you do , but its lot harder without the mask , because everyone is gonna judge you , so always do without the mask , be you.
 
 
 In, into something big  
 Better than before  
+
+
+
+>[!abstract]*Explanation*
+>not , staying inside a box and explore new thing
+
+
+
 And if it takes, takes a thousand lives  
 Then it's worth fighting for  
   
