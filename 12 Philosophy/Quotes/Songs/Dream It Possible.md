@@ -88,7 +88,7 @@ And if it takes, takes a thousand lives
 Then it's worth fighting for  
 
 >[!abstract]- *Explanation*
-> If something seems much harder and you sacrifice lot for it , then it's worth fighting for , like some things , no matter how hard you try, its just not seems to work , 
+> If something seems much harder and you sacrifice lot for it , then it's worth fighting for , like some things , no matter how hard you try, its just not seems to work , but never give up on things like that , you will never know what's on the other end. 
 
 It's not until you fall that you fly  
 When your dreams come  
@@ -105,6 +105,9 @@ From the bottom to the top
 We're sparking wild fires  
 Never quit and never stop  
 The rest of our lives  
+
+>[!abstract]- 
+
 From the bottom to the top  
 We're sparking wild fires  
 Never quit and never stop  
