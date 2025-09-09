@@ -13,11 +13,13 @@ dg-publish: true
 - [[Gin CORS]]
 - https://github.com/julienschmidt/httprouter/blob/master/router.go
 
->[!float|right-medium]
+>[!TODO|right-medium]+ Tasks 
 > ```tasks
 > path includes 03 Coding/GO/Gin.md
 > ````
 
+
+> route requests, retrieve request details, and marshal JSON for responses
 ## Installation
 
 ```bash
