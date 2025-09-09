@@ -1,8 +1,12 @@
 ---
+aliases: []
 cssclasses:
-  - wide-page
+- wide-page
+id: wifi_Station
+tags:
+- electronics
+- project
 ---
-
 ```c
 WiFiServer server(80);
 

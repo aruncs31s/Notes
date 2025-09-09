@@ -1,9 +1,10 @@
 ---
-id: main_page
 aliases: []
-tags: []
+id: main_page
+tags:
+- electronics
+- project
 ---
-
 # Main Page
 
 ```bash

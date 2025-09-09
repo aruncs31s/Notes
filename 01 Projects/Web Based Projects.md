@@ -1,3 +1,12 @@
+---
+id: Web Based Projects
+aliases: []
+tags:
+  - exclude
+cssclasses:
+  - wide-page
+---
+
 # Websites
 ```dataview
 table  file.outlinks AS "Modules" , file.mtime as "Last Modified" 

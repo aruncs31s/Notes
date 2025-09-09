@@ -1,13 +1,12 @@
 ---
-id: Solar Battery Monitor
 aliases: []
+id: Solar Battery Monitor
 tags:
-  -  #project
-  -  #btech
-Created: ""
+- project
+- electronics
+Created: ''
 Status: working
 ---
-
 # Solar Battery Monitor
 
 - [[Solar Battery Monitor Programming]]

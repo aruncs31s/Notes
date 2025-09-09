@@ -1,8 +1,12 @@
 ---
 Created: 2024-08-13
-Status: 
-Visibility: 
+Status: null
+Visibility: null
+aliases: []
+id: Pocket Shop Solar
 tags:
+- electronics
+- project
 ---
 # Pocket Shop Solar
 

@@ -1,9 +1,13 @@
 ---
-id: 7-PROJECT
+id: Side Channel Attack Current Monitor
 aliases:
-  - differential power analysis,sidechannel attack
+  - differential power analysis
+  - sidechannel attack
 tags:
-  - project,embedded,cryptography
+  - project
+  - embedded
+  - cryptography
+  - electronics
 Date:
   Started: "12-10-2024"
 GithubLink: https://github.com/aruncs31s/Amplifier-Circuit-For-Side-Channel-DPA-
