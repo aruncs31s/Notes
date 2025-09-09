@@ -106,7 +106,9 @@ We're sparking wild fires
 Never quit and never stop  
 The rest of our lives  
 
->[!abstract]- 
+>[!abstract]- *Explanation*
+>The term we used has to much importance , its like when someone said 
+>"If you want to walk fast walk alone , but if you want to walk far , walk t
 
 From the bottom to the top  
 We're sparking wild fires  
