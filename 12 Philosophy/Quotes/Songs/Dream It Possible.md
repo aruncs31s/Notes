@@ -66,7 +66,7 @@ It possible
 ***Until I'm Breaking, Until I'm Breaking***  
 
 >[!abstract]- *Explanation*
->I will do what i want util every cell in my body is tired , and never going to rest.
+>I will do what I want until every cell in my body is tired, and never going to rest.
 >"Rest in the end, not in the middle"
 
 
