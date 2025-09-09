@@ -25,7 +25,7 @@ So I'll dream, until I make it real
 And all I see is stars  
 
 >[!abstract]*Explanation*
->When you really want something , all you do is dream about it 
+>When you really want something , all you do is dream about it every single day , until its real and no longer just a dream, its when dream come to reality.
 
 
 
