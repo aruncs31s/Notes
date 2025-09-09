@@ -63,10 +63,18 @@ I will chase, I will reach, I will fly
 Until I'm Breaking, Until I'm Breaking  
 
 >[!abstract]- *Explanation*
->I will do what i want util every cell in my body is tired , and never 
+>I will do what i want util every cell in my body is tired , and never going to rest.
+>"Rest in the end, not in the middle"
+
+
 
 Out of my cage, like a bird in the night  
 I know I'm changing, I know I'm changing  
+
+>[!abstract]- *Explanation*
+> When you don't care about what other people s
+
+
 In, into something big  
 Better than before  
 And if it takes, takes a thousand lives  
