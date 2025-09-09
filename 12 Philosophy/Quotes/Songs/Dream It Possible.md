@@ -112,6 +112,6 @@ It possible, oh, ooh
 >[!abstract]- *Explanation*
 >The term we used has to much importance , its like when someone said 
 >"If you want to walk fast walk alone , but if you want to walk far , walk together." , greatest things always achieved as a group , but always remember most of the time , there is always one man or women , who started all this. 
->and **Never Quit** and **Never Stop**, often we stop all this when we get old , but if you really think about *we only get old if we stop trying* , *age begins when the learning stops.*
+>and **Never Quit** and **Never Stop**, often we stop all this when we get old, but if you really think about *we only get old if we stop trying*, *age begins when the learning stops.*
 
 
