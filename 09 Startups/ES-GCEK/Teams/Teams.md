@@ -6,7 +6,7 @@ dg-publish: true
 TOTAL MEMBERS: 10
 ```
 
->[!TODO]+ **Working Memebers**
+>[!TODO]+ **Working Members**
 > - [Arun cs](https://github.com/orgs/Embedded-Systems-GCEK/people/aruncs31s) -> 
 > - [vyshnav kp](https://github.com/orgs/Embedded-Systems-GCEK/people/vyshnav8486)
 > - [Abhaya Govind](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhayaGovind)
