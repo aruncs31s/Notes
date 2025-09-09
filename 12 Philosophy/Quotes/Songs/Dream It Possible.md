@@ -17,13 +17,18 @@ The past, is everything we were
 Don't make us who we are  
 
 >[!abstract]- *Explanation*
->We are not defined by our mistakes, it's okey to blame us for mistake , but the gr
+>We are not defined by our mistakes, it's okey to blame us for mistake , but the greatest thing to do is , to accept the mistakes and move on. 
 
 
 
 So I'll dream, until I make it real  
 And all I see is stars  
-  
+
+>[!abstract]*Explanation*
+>When you really want something , all you do is dream about it 
+
+
+
 It's not until you fall that you fly  
 When your dreams come  
 Alive you're unstoppable  
