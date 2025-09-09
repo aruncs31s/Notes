@@ -13,7 +13,7 @@ dg-publish: true
 - [[Gin CORS]]
 - https://github.com/julienschmidt/httprouter/blob/master/router.go
 
->[!TODO|right-medium]+Tasks 
+>[!float|right-medium]
 > ```tasks
 > path includes 03 Coding/GO/Gin.md
 > ````
