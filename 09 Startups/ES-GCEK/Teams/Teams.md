@@ -58,8 +58,7 @@ TOTAL MEMBERS: 10
 > 24. [svcsam](https://github.com/orgs/Embedded-Systems-GCEK/people/svcsam)
 > 25. [Swetha P](https://github.com/orgs/Embedded-Systems-GCEK/people/Swethap1991)
 > 26. [the-unknown-monkey](https://github.com/orgs/Embedded-Systems-GCEK/people/the-unknown-monkey)
-> 27. [vyshnav kp](https://github.com/orgs/Embedded-Systems-GCEK/people/vyshnav8486)
-> 
+
 ## [AI Assistant Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/ai-assistant-team)
 
 ```sql
