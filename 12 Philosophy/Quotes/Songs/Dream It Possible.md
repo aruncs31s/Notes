@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # Dream It Possible
 
 
@@ -104,7 +107,7 @@ It possible, oh, ooh
 From the bottom to the top  
 We're sparking wild fires  
 Never quit and never stop  
-The rest of our lives  
+The rest of our lives.
 
 >[!abstract]- *Explanation*
 >The term we used has to much importance , its like when someone said 
