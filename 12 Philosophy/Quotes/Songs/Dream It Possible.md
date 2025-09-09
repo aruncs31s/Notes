@@ -108,7 +108,8 @@ The rest of our lives
 
 >[!abstract]- *Explanation*
 >The term we used has to much importance , its like when someone said 
->"If you want to walk fast walk alone , but if you want to walk far , walk t
+>"If you want to walk fast walk alone , but if you want to walk far , walk together." , greatest things always achieved as a group , but always remember most of the time , there is always one man or women , who started all this. 
+>ANd
 
 From the bottom to the top  
 We're sparking wild fires  
