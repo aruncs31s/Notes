@@ -3,6 +3,10 @@
 
 I will run, I will climb, I will soar  
 I'm undefeated, ooh  
+>[!abstract]-
+>"Undefeated" isn’t about never losing; it’s about refusing to stay down
+
+
 **Jumping out of my skin, pull the chord**  
 **Yeah I believe it, ooh**  
 The past, is everything we were  
