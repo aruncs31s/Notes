@@ -20,7 +20,7 @@ dg-publish: true
 ***Don't make us who we are***  
 
 >[!abstract]- *Explanation*
->We are not defined by our mistakes, it's okey to blame us for mistake , but the greatest thing to do is , to accept the mistakes and move on. 
+>We are not defined by our mistakes, it's okay to blame us for mistakes, but the greatest thing to do is to accept the mistakes and move on.
 
 
 
