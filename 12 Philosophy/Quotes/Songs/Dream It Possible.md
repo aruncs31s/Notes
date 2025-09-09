@@ -13,7 +13,7 @@ dg-publish: true
 ***Jumping out of my skin, pull the chord***  
 ***Yeah I believe it, ooh***  
 >[!abstract]- *Explanation*
->not , staying inside a box and explore new thing
+>not staying inside a box and exploring new things
 
 
 ***The past, is everything we were***  
