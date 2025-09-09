@@ -10,7 +10,7 @@ dg-publish: true
 # Teams 
 
 ```sql
-TOTAL MEMBERS: 10
+TOTAL WORKING MEMBERS: 10
 
 ```
 
