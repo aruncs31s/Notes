@@ -1,10 +1,12 @@
 ---
-aliases: 
-Date: 16-06-2025
+id: Position_tester_v001
+aliases: []
 tags:
-  - python
-  - full_script
-  - WholeCode
+  - projects
+  - robotics
+  - ai_robot
+Date: 16-06-2025
+dg-publish: true
 ---
 # Position tester v0.0.1
  ```python
@@ -46,6 +48,7 @@ def move(the_arr):
 if __name__ == "__main__":
     move(f_move)
     move(f_move_2)
+
 ```
 
 ```python
@@ -68,6 +71,8 @@ def move(the_arr):
                 if angles[the_arr[i][0]] == the_arr[i][1]:
                     count += 1
                 time.sleep(0.0005)
+
 ```
+
 ## Logic 
 

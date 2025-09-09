@@ -1,3 +1,10 @@
+---
+id: Class_1
+aliases: []
+tags:
+  - classes
+dg-publish: true
+---
 -> 2025-06-04
 
 - String 
@@ -5,6 +12,7 @@
 - Template 
 - Class , Object .
 - Atemga328p
+
 ```c
 #include <avr/io.h>
 

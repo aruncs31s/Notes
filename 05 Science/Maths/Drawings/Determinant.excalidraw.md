@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: Determinantexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
-
 
 # Text Elements
 a ^XLL8zeln
@@ -90,6 +90,7 @@ g & h
 
 %%
 # Drawing
+
 ```json
 {
 	"type": "excalidraw",
@@ -5204,5 +5205,7 @@ g & h
 	},
 	"files": {}
 }
+
 ```
+
 %%

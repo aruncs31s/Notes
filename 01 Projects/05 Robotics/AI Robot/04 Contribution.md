@@ -1,7 +1,12 @@
 ---
+id: 04_Contribution
+aliases: []
+tags:
+  - projects
+  - robotics
+  - ai_robot
 dg-publish: true
-cssclasses:
-  - wide-page
+cssclasses: 
 ---
 # Contribution
 <ul style="display:flex;text-align:center;justify-content:space-around;list-style:none;padding:0;" >
@@ -10,7 +15,6 @@ cssclasses:
 <li><a href="obsidian://open?vault=AI-Robot-Obsidian-Notes&file=03%20Development">Development</a></li>
 <li><a href="obsidian://open?vault=AI-Robot-Obsidian-Notes&file=04%20Contribution">Contribution</a></li>
 </ul>
-
 
 ## Steps
 All the members that are willing to join are kindly requested to do the following steps 
@@ -22,7 +26,6 @@ All the members that are willing to join are kindly requested to do the followin
 >- [Git Pro](https://git-scm.com/book/en/v2) for advanced users
 >- [Boot.dev](https://www.boot.dev/)
 
-
 1. Create a github Account 
 	- Goto [Github](https://github.com/) and create an account 
 ![[Screenshot 2025-04-25 at 5.39.39 PM.png]]
@@ -30,11 +33,12 @@ All the members that are willing to join are kindly requested to do the followin
 3. Join the [Whatsapp Group](wa.me/9747350188) if not already 
 	1. Send the Name and Github Username to the Group ,like
 		```
+
 		Arun CS
 		aruncs31s 
 		```
-		
 
+		
 
 ## Project Repos 
 1. Root repo -> [Github Repo](https://github.com/aruncs31s/AI-Robot-System)
@@ -48,10 +52,8 @@ Standardisation  is in the sense that making each others work compatible  with e
 4. Development using [Vscode ](https://code.visualstudio.com/) and [Platform IO](https://platformio.org/)
 5. Codebase management using [Github](https://github.com/)
 
-
 >[!important]- Platform IO and Arduino IDE
 >Even though i will use Platform io , i will also be going to maintain an Arduino IDE Compatible version .
-
 
 ### Rules
 1. 

@@ -1,5 +1,15 @@
-
-
+---
+id: Using_Python
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - communication_lab
+  - part_b
+  - expt_4_error_performance_of_bpsk
+dg-publish: true
+---
 - Using Python
 
 ```python
@@ -8,6 +18,7 @@ N=10**3
 M=2
 inputSyms = np.random.randint(low=0, high = M, size=N)
 print(inputSyms)
+
 ```
 
 ^7126c5
@@ -54,6 +65,7 @@ ax.set_xlim(-5,13);ax.grid(True);
 ax.legend();
 plt.show()
 plt.savefig('plot.png')
+
 ```
 
 ^56f9ed
@@ -63,4 +75,5 @@ plt.savefig('plot.png')
 int main(){
 printf("hi");
 }
+
 ```

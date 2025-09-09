@@ -1,9 +1,12 @@
 ---
 id: Memory Segments
 aliases: []
-tags: []
+tags:
+  - electronics
+  - embedded_systems
+  - memory
+dg-publish: true
 ---
-
 # Memory Segments
 
 Process: It is an instance of a program in execution , with its memory and resources
@@ -34,6 +37,7 @@ ________________
 |  Text/Code   |
 |              |
 |______________|
+
 ```
 
 Why this division?
@@ -91,6 +95,7 @@ int main() {
     free(arr);
     return 0;
 }
+
 ```
 
 > [!important]- What happens if you forget to free the memory?
@@ -114,6 +119,7 @@ mindmap
       Excessive or large Local Variables
       Deep call chain
       LargeDataStructures
+
 ```
 
 ### Memory Management in Stack

@@ -1,10 +1,15 @@
 ---
 id: PySDR _ SDR and DSP using Python
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - projects
+  - final_year_project
+  - pysdr___sdr_and_dsp_using_python
 Date: "03-11-2024"
+dg-publish: true
 ---
-
 # PySDR \_ SDR and DSP using Python
 
 ## Introduction
@@ -68,11 +73,13 @@ S_mag = np.abs(S)
 S_phase = np.angle(S)
 plt.plot(t,S_mag,'.-')
 plt.show()
+
 ```
 
 ```python
 plt.plot(t,S_phase,'.-')
 plt.show()
+
 ```
 
 ### FFT
@@ -84,6 +91,7 @@ graph LR
 A[Time domain Signal]
 B[Freq Domain Signal ]
 A -- FFT --> B
+
 ```
 
 - more Here [[FFT in Python]]
@@ -143,6 +151,7 @@ plt.plot(x, y5, "m--", label="cos(x) cos(π/4)")
 plt.legend()
 plt.grid(True)
 plt.show()
+
 ```
 
 Think of it like adding **sine** and **cosine** waves which are made to align with each other for a specific values
@@ -162,6 +171,7 @@ $$
 ```python
 np.abs(X) # for magnitude
 np.angle(x) # for phase
+
 ```
 
 ![qipoints.png](assets/imgs/qipoints.png)
@@ -181,8 +191,8 @@ x(t) &= 0.806\cos(2\pi ft + 0.519)
 \end{align}
 $$
 
-
 ## Pluto SDR
+
 ```bash
 cd ~
 git clone --branch v0.0.14 https://github.com/analogdevicesinc/pyadi-iio.git
@@ -190,4 +200,5 @@ cd pyadi-iio
 pip3 install --upgrade pip
 pip3 install -r requirements.txt
 sudo python3 setup.py install
+
 ```

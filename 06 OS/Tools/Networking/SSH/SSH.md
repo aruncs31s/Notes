@@ -1,4 +1,13 @@
-
+---
+id: SSH
+aliases: []
+tags:
+  - os
+  - tools
+  - networking
+  - ssh
+dg-publish: true
+---
 - [sshd](#sshd)
 
 #### sshd 

@@ -1,9 +1,12 @@
 ---
 id: TaylorSeries
 aliases: []
-tags: []
+tags:
+  - science
+  - maths
+  - series
+dg-publish: true
 ---
-
 # Taylor Series
 
 #### Cosine(x)

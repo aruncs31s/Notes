@@ -1,11 +1,15 @@
 ---
 id: WiFi Programming
-aliases: 
+aliases: []
 tags:
+  - electronics
+  - embedded_systems
+  - micro_controllers
+  - espressif
   - esp32
-  - code
+  - programming
+dg-publish: true
 ---
-
 ### WiFi Programming
 
 1. [[#Get MAC Address]]
@@ -28,6 +32,7 @@ Serial.println(WiFi.macAddress());
 delay(500);
 
 }
+
 ```
 
 ##### Methods
@@ -97,6 +102,7 @@ if (!WiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)) {
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
   }
+
 ```
 
 #### Reconnect After Disconnect
@@ -107,13 +113,14 @@ if ((WiFi.status) != WL_CONNECTED ){
   delay(100);
   WiFi.reconnect();
 }
-```
 
+```
 
 #### CSI
 - First complete [[08 Electronics/Embedded Systems/Micro Controllers/Espressif/ESP32 1/ESP_IDF]]
 - Then complete [[ESP_CSI]]
 HACK: 
+
 ```c
 #include <stdio.h>
 #include "esp_system.h"
@@ -144,11 +151,14 @@ void app_main() {
 ```
 
 **Expected Out**:
+
 ```
+
 Packet Number: 1
 Subcarrier 1: [Amplitude: 0.32, Phase: 1.57]
 Subcarrier 2: [Amplitude: 0.28, Phase: 1.44]
 Subcarrier 3: [Amplitude: 0.30, Phase: 1.53]
 ...
 Subcarrier N: [Amplitude: 0.29, Phase: 1.50]
+
 ```

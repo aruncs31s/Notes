@@ -1,9 +1,13 @@
 ---
 id: IEFT Module 1
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - s5
+  - industrial_economics_foreign_trade
+dg-publish: true
 ---
-
 ## Basic Concepts and Demand and Supply Analysis
 
 - [x] Scarcity and choice ✅ 2024-06-28
@@ -52,13 +56,10 @@ Product possiblility curve/Frontier shows the various combinations of two comodi
 ![[production possibleility curve.excalidraw]]
 ![](https://cdn1.byjus.com/wp-content/uploads/2018/11/commerce/wp-content/uploads/2016/06/Untitled.png)
 
-
 #features
 - Downward slope : Production of one good can be increased only after sacrificing production of some quality of the other good. the few units we sacrifice for the others, as there exists an inverse relationship between the change in quantity of one commodity and the change in quantity of the other commodities.
 - PPC is _concave-shaped_ because more and more units of one commodity are sacrificed to gain an additional unit of another commodity.
 - However, if there is unemployment or inefficiency in resource utilisation, then we can produce at any point inside the PPC.
-
-
 
 ### Firms and its objectives
 
@@ -177,8 +178,6 @@ $$
 
 #### Law of diminishing Utility 
 In economics, the law of diminishing marginal utility states that ==the marginal utility of a good or service declines as more of it is consumed by an individual==. Economic actors receive less and less satisfaction from consuming incremental amounts of a good , ie, ==**Adding an additional factor of production results in smaller increases in output**==
-
-
 
 ## References
 

@@ -1,9 +1,11 @@
 ---
 id: Arrays
 aliases: []
-tags: []
+tags:
+  - coding
+  - data_structures_and_algorithms
+dg-publish: true
 ---
-
 **Re allocating memory to an array**:
 
 ```c
@@ -14,6 +16,7 @@ int x = values[2];
 values = realloc(values,2000*sizeof(int));
 x  = values[600];
 }
+
 ```
 
 #### Linear Search

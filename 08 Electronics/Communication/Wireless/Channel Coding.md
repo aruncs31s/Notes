@@ -1,8 +1,13 @@
 ---
-aliases:
+id: Channel_Coding
+aliases: []
+tags:
+  - electronics
+  - communication
+  - wireless
 Date: 31-10-2024
+dg-publish: true
 ---
-
 # Channel Coding
 
 - [x] What is channel Coding ✅ 2024-11-02

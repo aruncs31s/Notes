@@ -1,6 +1,13 @@
+---
+id: Differential_Equations
+aliases: []
+tags:
+  - science
+  - maths
+dg-publish: true
+---
 # Differential Equations
 Created : 2024-05-18 19:00
-
 
 ## Contents
 - [[#Product Rule]] ^80b357
@@ -12,10 +19,6 @@ The product rule states that if f(x) and g(x) are two differentiable functions o
 $$
 {d\over dx} [f(x) · g(x)] = f'(x) · g(x) + f(x) · g'(x)
 $$
-
-
-
-
 
 ## References
 1. 

@@ -1,6 +1,12 @@
 ---
-aliases:
-  - network theory
+id: Module_1
+aliases: []
+tags:
+  - academics
+  - btech
+  - s3
+  - ect205-nt
+dg-publish: true
 ---
 # NT Module 1
 - [[Krichoff's First Law|KCL]]
@@ -23,10 +29,8 @@ $$
 
 ****
 
-
 ###### Q 1.2 : Find the current on the circuit and voltage across each resistor
 ![[Q 1.2.excalidraw|200x200]]
-
 
 $$
 \begin{align}
@@ -58,9 +62,6 @@ V_{R_{4}}&= I \times R_{4} = 2 \times 10 ^ {-6}\times .5 \times 10^{6}= 1V \\
 \end{align} 
 $$
 
-
-
-
 ### Sources
 - [[#Voltage Source]]
 - [[#Current Source]]
@@ -76,9 +77,6 @@ $$
 V_{t} = v - iR
 $$
 
-
-
-
 #### Current Source 
 
 ![[current source.excalidraw|200x200]]
@@ -88,5 +86,4 @@ where
 $$
 i_{t} = i - \frac{v}{R}
 $$
-
 

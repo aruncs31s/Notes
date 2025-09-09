@@ -1,9 +1,14 @@
 ---
+id: Laws_of_Vectors
+aliases: []
+tags:
+  - science
+  - maths
+  - vector_calculus
 Code: 
 Starting Date: 
-aliases: 
-tags: 
 Created: 22-08-2024
+dg-publish: true
 ---
 # Laws of Vectors
 ### Laws
@@ -16,8 +21,6 @@ Created: 22-08-2024
 
 > In The Second case the $\overrightarrow A$ is clockwise $\overrightarrow B$ is anticlockwise and $\overrightarrow C$ is clockwise
 > $\therefore \overrightarrow A + \overrightarrow C - \overrightarrow B = 0$
-
-
 
 #### Resultant of two vectors
 

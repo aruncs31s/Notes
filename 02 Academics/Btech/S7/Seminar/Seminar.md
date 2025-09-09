@@ -1,12 +1,15 @@
 ---
 id: Seminar
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - s7
+  - seminar
 Created: "13-08-2024"
-cssclasses:
-  - wide-page
+cssclasses: 
+dg-publish: true
 ---
-
 # Seminar
 
 **Topics**:

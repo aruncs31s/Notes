@@ -1,10 +1,14 @@
 ---
+id: day_1
+aliases: []
+tags:
+  - classes
+  - sne
+  - python
 dg-publish: true
 date: 2025-09-03
 ---
-
 # Day 1
-
 
 ## Module 1 
 
@@ -36,18 +40,19 @@ Explicit type conversion (type conver)
 ```python
 # 1
 print("Hi Arun CS")
+
 ```
 
 ```python
 # 2
 print("Hey Sneha")
+
 ```
-
-
 
 ### Her Question
 ####  Implicit Type Conversion 
 - Casting is done automatically 
+
 ```python
 x = 5      # int
 y = 2.5    # float
@@ -70,7 +75,9 @@ print(a, type(a))  # "42" <class 'str'>
 print(b, type(b))  # 42   <class 'int'>
 print(c, type(c))  # 42.0 <class 'float'>
 print(d, type(d))  # "42.0" <class 'str'>
+
 ```
+
 ### Keywords 
 *Python keywords are reserved words that have special meanings and purposes within the Python language*
 
@@ -113,7 +120,6 @@ print(d, type(d))  # "42.0" <class 'str'>
 > | yield    | To return a list of values from a generator                                                           |
 > 
 
-
 ### Datatypes
 
 ```python
@@ -121,40 +127,44 @@ print(d, type(d))  # "42.0" <class 'str'>
 print(type(2))
 print(type(2.0))
 print(type(""))
-```
 
+```
 
 > [!success]- *output*
 > ```
+
 > <class 'int'>
 > <class 'float'>
 > <class 'str'>
 > ```
 
-
 ### Variables 
 *A variable in Python is like a little label you stick onto a piece of data so you can refer to it later*
 Eg:
 Consider , there is a program in which you have to use `13232132131` this number , its like everywhere in the program 
+
 ```python
 something = 13232132131 / 2
 anotherthing = something * 13232132131
+
 ```
+
 sure you can copy paste it but checkout this version
 
 ```python
 number = 13232132131
 something = number /2 
 anotherthing = something * number  
+
 ```
 
 its like giving it a suitable name , so that you can use it by name rather than remembering its value. 
-
 
 ### Operators
 1. Arithmetic
 
 #### Arithmetic Operators
+
 ```python
 a , b  = 1 , 2 
 a + b  # 3 "#" is the single line comment
@@ -164,6 +174,7 @@ a / b  # .5
 a % b  #  1 
 b ** 2 # 4
 a // b # 0
+
 ```
 
 #### Comparison Operator
@@ -188,7 +199,9 @@ a >= b  # False
 
 # Less than or equal to
 a <= b  # True
+
 ```
+
 #### Logical Operators
 
 ```python
@@ -203,9 +216,11 @@ x or y   # True
 # NOT - Inverts the Boolean value 0 -> 1 , 1 -> 0
 not x    # False
 not y    # True
+
 ```
 
 #### Membership Operators
+
 ```python
 lst = [1, 2, 3, 4]
 name = "Arun"
@@ -218,9 +233,11 @@ name = "Arun"
 # NOT IN - True if value is not found in sequence
 5 not in lst   # True
 "y" not in name # True
+
 ```
 
 #### Identity Operators
+
 ```python
 m = [1, 2]
 n = [1, 2]
@@ -233,11 +250,13 @@ m is n    # False (same values but different objects)
 
 # IS NOT - True if variables point to different objects
 m is not n  # True
+
 ```
 
 ```python
 print(m is n) # False , different objects even if values are sae
 print(m == n) # True same value even if different objects
+
 ``` 
 
 #### Bitwise Operators
@@ -268,11 +287,13 @@ a << 1  # 2
 
 #Right Shift (>>)
 a >> 1  # 0
+
 ```
 
 - [ ] explain biwise `not` 🏁 delete 
 
 #### Assignment Operators
+
 ```python
 x = 10
 
@@ -283,14 +304,16 @@ x /= 4  # 5.5
 x %= 3  #  2.5
 x **= 2 #   6.25
 x //= 2 #  3.0
+
 ```
 
-
 ### Type Casting
+
 ```python
 int(3.1) # 3 
 float(3) # 3.0
 str(10) # '10'
+
 ```
 
 ```python
@@ -300,9 +323,10 @@ a = str(a)
 type(a)
 a = float(a)
 type(a)
-```
-![[Pasted image 20250530165358.png]]
 
+```
+
+![[Pasted image 20250530165358.png]]
 
 ### Input , output , processing
 
@@ -312,17 +336,23 @@ a = input("Enter a number")
 
 # output
 print(a)
+
 ```
 
 - One thing to note here that the default type will be a string from the `input()` and you may need to type cast it to work as expected for example 
+
 ```python
 a = input("Enter a number")
 if a==5:
 	print("HI")
+
 ```
+
 - this program will not work as expected (run and find out) (happens because `int(5)` is not same as `str(5)`)
+
 ```python
 a = int(input("Enter a number"))
 if a==5:
 	print("HI")
+
 ```

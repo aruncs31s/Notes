@@ -1,11 +1,14 @@
 ---
 id: Walking
-aliases: 
-tags: 
+aliases: []
+tags:
+  - projects
+  - robotics
+  - ai_robot
+  - development
 dg-publish: true
-widepa:
+widepa: 
 ---
-
 # Walking
 
 The key to walking is to adjust the center of mass.
@@ -16,6 +19,7 @@ The key to walking is to adjust the center of mass.
 ```cpp
 void WalkForward(){
 }
+
 ```
 
 ## Human Walking (Bipedal walking)
@@ -36,6 +40,7 @@ void WalkForward(){
 ```mermaid
 graph TB
 gait --> Swing_Phase & Stance_Phase
+
 ```
 
 #### Stance Phase (60%)
@@ -120,6 +125,6 @@ void calculateLegIK(float x, float y, float z, float &hipAngle, float &kneeAngle
 
     ankleAngle = atan2(y, z) * RAD_TO_DEG - hipAngle;
 }
-```
 
+```
 

@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: esp32_piexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 
@@ -17,6 +17,7 @@ e005f22ce03a2fb573b75f5cb53b0817b397328f: [[pi4 gpio.png]]
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQAObQBmGjoghH0EDihmbgBtcDBQMBKIEm4IOAAzAHUAYWdlUigAEQAWQh4AWQAxAFV8AFZCGoAGAE5UkshYRArCfWikflLM
 
@@ -65,5 +66,7 @@ Fu3hpe3nuPThtqRhte3fXADOh5TgDgDZFNW4BImgG0kyF1h6OxAYEIAQAoESXGI4qVqqDfvftvuwBEEi
 SIGUB6igQQCqB4uwa4YUbwahrXp3o3pEe4YyHbC3ueyMZ5Xhs/t0doefUg0RwkEClvvgkhGZCn24DISjGMgysMn8wsj6iQbcfhHwH/S8c2T2UEVMRqqxnIpEwgCMDYAMDPsTAIAlhFGSDNkBkauvMKBMb0YyHoZuNMzBASlIFwiQaaBIEkekcLCqdIBqbrFwjTAaZIC6DYA1nMdwE0GCHHJ0IgGqbhXAI+0SXhH+lIGUFxAAAoLIjFeBQJqAFn5m
 
 g1BgABKHkaWBAZQevSuSZmZ/2F4XgQipZw5pZ1ZjZsfApshhANhqAFMBO/JlSrZj0Rpuej7LIHpvp3c/cjMbAIgFp1AGO0oDgWgn5jwylIQKAeZNwvchAK5uwH7BAbAHILG3AOADprp0F3p7QpBvEe5xgSDZJ/AVJjMHWTkdIFFs+HmQ8KAAwRxw/BPZEwKiFrwq9Klwl4lt9MAAicAD9BkJkavNAYAXlgiIAA==
+
 ```
+
 %%

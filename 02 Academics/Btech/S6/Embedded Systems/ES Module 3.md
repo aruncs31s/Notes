@@ -1,9 +1,13 @@
 ---
 id: ES Module 3
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - s6
+  - embedded_systems
+dg-publish: true
 ---
-
 # ES Module 3
 
 Created : 2024-06-04 16:14
@@ -38,8 +42,6 @@ Created : 2024-06-04 16:14
    - [ ] ARM instruction execution
    - [ ] ARM implementation
    - [ ] The ARM coprocessor interface.
-
-
 
 ## References
 

@@ -1,3 +1,11 @@
+---
+id: VSWR
+aliases: []
+tags:
+  - electronics
+  - electromagnetics
+dg-publish: true
+---
 # Voltage Standing Wave Ratio
 It is a measure of how efficiently radio-frequency power is transmitted ==from a power source, through a transmission line, into a load== . For example from an power amplifier to antenna through a transmission line.
 >[!blank|right-small]

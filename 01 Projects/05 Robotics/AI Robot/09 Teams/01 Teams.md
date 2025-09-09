@@ -1,11 +1,14 @@
 ---
+id: 01_Teams
+aliases: []
+tags:
+  - projects
+  - robotics
+  - ai_robot
+  - teams
 dg-publish: true
 ---
-
 # Teams 
-
-
-
 
 **Available Members**
 1. Amaya Pramod P V [Github](https://github.com/AmayaPramod)
@@ -22,12 +25,10 @@ dg-publish: true
 12. Sneha SJ [Github](https://github.com/Sneha-SJ-05)
 13. Abhinav M [Github](https://github.com/AbhinavM2005)
 
-
 ## Team Formation
 1. Hardware
 2. Supporting Software for Hardware
 3. AI Stuff
-
 
 #### Hardware
 Hardware part is the dificult one in this to operate becase not everyone can access the hardware at the same time. But there are few things to consider 

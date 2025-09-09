@@ -1,11 +1,11 @@
 ---
 id: Go
-aliases: 
+aliases: []
 tags:
+  - coding
   - go
 dg-publish: true
 ---
-
 # GO
 
 - [[Gin]]
@@ -22,6 +22,7 @@ dg-publish: true
 ```tasks
 not done
 path includes 03 Coding/Go
+
 ```
 
 ## Creating New Project
@@ -29,21 +30,25 @@ path includes 03 Coding/Go
 ```bash
 mkdir project_name
 go mod init project_name
+
 ```
 
 This works
 
 ```
+
 ❯ mkdir math_
 ❯ cd math_
 ❯ nvim p1.go
 ❯ go run .
 My favorite number is 2
+
 ```
 
 ```bash
 mkdir prog_name
 cd prog_name
+
 ```
 
 ```go
@@ -61,6 +66,7 @@ func main() {
 ```bash
 go build ./hello.go
 go run .
+
 ```
 
 ---
@@ -93,6 +99,7 @@ import (
 func main() {
 	fmt.Println(math.pi)
 }
+
 ```
 
 and this one is correct
@@ -108,25 +115,24 @@ import (
 func main() {
 	fmt.Println(math.Pi)
 }
+
 ```
 
-
 ### IO 
+
 ```go
 fmt.Print("Enter product code: ")
 code, _ := reader.ReadString('\n')
 code = strings.TrimSpace(code)
-```
 
+```
 
 ### Var
 - use camelCase for variables also 
 
-
 #### Types
 >[!NOTE] **Concrete Types**
 >A concrete type is a data type that is not an **interface**
-
 
 ```go
 bool
@@ -160,8 +166,8 @@ var i, j int = 1, 2
 k := 3 // not available outside the function
 // it can detect type.
 c, python, java := true, false, "no!"
-```
 
+```
 
 `issue@var_def_init obsidian`
 
@@ -179,12 +185,16 @@ type Students struct {
 	LevelSeven bool   `json:"level_6"`
 }
 u := models.Students
+
 ```
 
 - [ ] Check why this is working and the first one dont 
+
 ```go
 u := models.Students{}
+
 ```
+
 ```go
 package main
 
@@ -197,6 +207,7 @@ func main() {
 	var s string
 	fmt.Printf("%v %v %v %q\n", i, f, b, s) // 0 0 false ""
 }
+
 ```
 
 ##### Type Conversion
@@ -209,12 +220,14 @@ var u uint = uint(f) // 42 int again
 i := 42 // 42 int
 f := float64(i) // 42.00 ??
 u := uint(f) // 42 int
+
 ```
 
 ###### Converting from `string`
 
 ```go
 func Atoi(str string) (int, error)
+
 ```
 
 >[!NOTE]- **Example**
@@ -228,7 +241,6 @@ func Atoi(str string) (int, error)
 >}
 >```
 
-
 ##### Type inference
 
 ```go
@@ -237,6 +249,7 @@ j := i // j is an int
 i := 42           // int
 f := 3.142        // float64
 g := 0.867 + 0.5i // complex128
+
 ```
 
 ##### Numeric Constants
@@ -267,6 +280,7 @@ func main() {
 	fmt.Println(needFloat(Small))
 	fmt.Println(needFloat(Big))
 }
+
 ```
 
 ---
@@ -278,6 +292,7 @@ a, b = swap("hello", "world")
 // is equavalent to
 
 a,b := swap("hello","world")
+
 ```
 
 ## Functions
@@ -286,6 +301,7 @@ a,b := swap("hello","world")
 func <function_name>(<type args>) <return_type> {
 	return <expression>
 }
+
 ```
 
 ```go
@@ -303,23 +319,27 @@ func main(){
 fmt.Println(add(1,2))
 fmt.Println(add_1(1,2))
 }
+
 ```
 
 ```go
 return x + y // possible
 return x,y // possible
+
 ```
 
 ```go
 func sum(x,y int) int {
 return x + y
 }
+
 ```
 
 ```go
 func swap(x, y string) (string, string)  { // multiple return values  or tuple return
 	return y, x
 }
+
 ```
 
 calling
@@ -329,6 +349,7 @@ func main() {
 	a, b := swap("hello", "world")
 	fmt.Println(a, b)
 }
+
 ```
 
 ### Return Values
@@ -350,6 +371,7 @@ func split(sum int) (x, y int) {
 func main(){
   fmt.Println(split(10))
 }
+
 ```
 
 Same as
@@ -366,6 +388,7 @@ func split(sum int) (x, y int) {
 func main(){
   fmt.Println(split(10))
 }
+
 ```
 
 ## Iterative Statements
@@ -374,6 +397,7 @@ func main(){
 for i := 0; i < 10; i++ {
         fmt.Println(i)
      }
+
 ```
 
 ```go
@@ -388,6 +412,7 @@ func main() {
 	}
 	fmt.Println(sum)
 }
+
 ```
 
 ```go
@@ -403,6 +428,7 @@ func main() {
 	}
 	fmt.Println(sum)
 }
+
 ```
 
 > [!NOTE]
@@ -420,6 +446,7 @@ func main() {
 // infinite loop
 for {
 	}
+
 ```
 
 ### Switches
@@ -439,6 +466,7 @@ func main() {
 		fmt.Printf("%s.\n", os)
 	}
 }
+
 ```
 
 ## Conditional
@@ -447,6 +475,7 @@ func main() {
 if x < 0 { // no () but must -> {}
 		return sqrt(-x) + "i"
 	}
+
 ```
 
 ### Short if
@@ -472,6 +501,7 @@ func main() {
 		pow(3, 3, 20),
 	)
 }
+
 ```
 
 ```go
@@ -481,6 +511,7 @@ func pow(x, n, lim float64) float64 {
 	}
 	return v // this will result in an error {undifined}
 }
+
 ```
 
 ```go
@@ -490,6 +521,7 @@ if v := math.Pow(x, n); v < lim {
 		fmt.Printf("%g >= %g\n", v, lim) // v is also in scope
 	}
 v + 10 // error not in scope
+
 ```
 
 ## Interfaces
@@ -501,6 +533,7 @@ _“Any type that has this method is allowed.”_ ^d2e304
 type Bird interface {
     Fly() string
 }
+
 ```
 
 Any type that has a method `Fly() string` is considered a `Bird`.
@@ -508,7 +541,6 @@ Any type that has a method `Fly() string` is considered a `Bird`.
 ### Map Interface
 
 ![[Go MAP.png|200]]
-
 
 ## Pointers 
 
@@ -520,6 +552,8 @@ func BrokenSwap(a int, b int) {
 func RealSwap(a *int, b *int) {
   *a, *b = *b, *a
 }
+
 ```
+
 ## References
 1. _Learning Go: An Idiomatic Approach to Real-World Go Programming_

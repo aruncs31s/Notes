@@ -1,10 +1,13 @@
 ---
-cssclasses:
-  - wide-page
-aliases: 
-tags: 
+id: Hash_Table
+aliases: []
+tags:
+  - coding
+  - data_structures_and_algorithms
+cssclasses: 
 Created: 17-09-2024
-Status:
+Status: 
+dg-publish: true
 ---
 # Hash Table
 - Constant time $O(1)$
@@ -13,8 +16,11 @@ Status:
 ```mermaid
 graph LR 
 A(input)--> b[Hash] --> id1[(Memory)]
+
 ```
+
 #smamplehashFunction
+
 ```c
 unsigned int hash_funcion(char *name) {
   int length = strlen(name);
@@ -25,4 +31,5 @@ unsigned int hash_funcion(char *name) {
   }
   return hash_value;
 }
+
 ```

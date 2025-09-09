@@ -1,3 +1,12 @@
+---
+id: Observer_Design_Pattern
+aliases: []
+tags:
+  - coding
+  - design_patterns
+  - behavioral_pattern
+dg-publish: true
+---
 # Observer  Pattern 
 
 >   lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing , but since it’s also going to notify other objects about the changes to its state, we’ll call it publisher.All other objects that want to track changes to the publisher’s state are called subscribers.
@@ -26,11 +35,14 @@ subscriber2 = Subscriber("Subscriber 2")
 publisher.subscribe(subscriber1)
 publisher.subscribe(subscriber2)
 publisher.notify("Hello, Subscribers!")
+
 ```
+
 Now, whenever an important event happens to the publisher, it goes over its subscribers and calls the specific notification method on their objects.
 
 ![](https://refactoring.guru/images/patterns/diagrams/observer/structure-indexed.png?id=2ca2c123503ede860740af2a22bc4b4d)
  
+
 ## Example in Go
 
 ```go
@@ -41,10 +53,8 @@ type Subject interface {
     deregister(observer Observer)
     notifyAll()
 }
+
 ```
-
-
-
 
 ## References 
 1. https://refactoring.guru/design-patterns/observer

@@ -1,3 +1,9 @@
+---
+id: README
+aliases: []
+tags: []
+dg-publish: true
+---
 # Notes Repository Structure
 
 This repository follows a numbered directory organization system for easy navigation and logical grouping of content.

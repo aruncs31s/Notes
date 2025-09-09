@@ -1,11 +1,16 @@
 ---
 id: Solar Tracking
 aliases: []
-tags: []
+tags:
+  - projects
+  - electronics
+  - academics
+  - iot_based_smart_energy_management_system
+  - solar_tracking
+dg-publish: true
 ---
-
 ## Solar Tracking
-- [Introduction](Introduction.md)
+- [[Introduction]]
 - [Tasks](#tasks)
 - [Todos](#todos)
 - [Codes](#codes)
@@ -43,10 +48,10 @@ $$ ServoMotor = Rotate_{Clock Wise}$$
 $$else$$
 $$ ServoMotor = Rotate_{Anti Clockwise}$$
 
-
 #### Codes
 
 #TestCode
+
 ```c
 #include <Servo.h>
 
@@ -65,7 +70,6 @@ int ldrtopl = 2; //top left LDR A2 pin
 
 int ldrbotr = 0; // bottom right LDR A0 pin
 int ldrbotl = 3; // bottom left LDR A3 pin
-
 
  void setup () 
  {
@@ -244,6 +248,7 @@ void loop() {
 
   delay(50);
 }
+
 ```
 
 #modifiedCode
@@ -348,10 +353,11 @@ void loop() {
 
   delay(50);
 }
+
 ```
 
-
 #### Test Code 1
+
 ```cpp
 /*
 
@@ -562,6 +568,7 @@ Servo_1.write(current_Servo_1_value);
 delay(50);
 
 }
+
 ```
 
 #### Test Codes
@@ -640,7 +647,9 @@ z
   
   delay(dtime);
 }
+
 ```
+
 #### References
 
 - [[Projects/Iot_based_smart_energy_management_system/Files/PDFs/Solar Trackng System.pdf]]

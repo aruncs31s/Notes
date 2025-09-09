@@ -1,12 +1,15 @@
 ---
 id: project_template
 aliases: []
-tags: []
+tags:
+  - projects
+  - others
+  - weather_data_scraper
 Created: "14-09-2024"
 Starting Date: "14-09-2024"
 Target Date: ""
+dg-publish: true
 ---
-
 # Weather Data Scraper
 
 Designed to scrape 
@@ -26,12 +29,10 @@ url = "http://172.16.32.8/data"
 
 current_date = datetime.now().strftime("%Y-%m-%d")
 
-
 def set_file(new_date):
     output_file = f"readings/normal/{new_date}_log.txt"
     output_file_csv = f"readings/csv/{new_date}_log.csv"
     get_reading(new_date, output_file, output_file_csv)
-
 
 def get_reading(current_date, output_file, output_file_csv):
     try:
@@ -75,7 +76,6 @@ def get_reading(current_date, output_file, output_file_csv):
         time.sleep(10)
         current_date = datetime.now().strftime("%Y-%m-%d")
         set_file(current_date)
-
 
 if __name__ == "__main__":
     set_file(current_date)

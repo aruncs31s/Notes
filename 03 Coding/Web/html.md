@@ -1,9 +1,11 @@
 ---
 id: html
 aliases: []
-tags: []
+tags:
+  - coding
+  - web
+dg-publish: true
 ---
-
 #### Grid Layout
 
 ```html
@@ -16,4 +18,5 @@ tags: []
     <div class="blue">Float Column 2</div>
   </div>
 </div>
+
 ```

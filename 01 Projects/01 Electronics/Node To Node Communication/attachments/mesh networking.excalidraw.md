@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: mesh_networkingexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 ## Text Elements
@@ -37,6 +37,7 @@ Gateway ^fyUga6oY
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBmbQAGGjoghH0EDihmbgBtcDBQMBLoeHF0QOwojmVg1JLIRhZ2LjQeJIAWflLm1k4AOU4xbgBGDoAOAE4JpKT4pJ7IQg5i
 
@@ -171,5 +172,7 @@ kA2BsRSAJyUKAGAQgErVfwavx3sdPN/REAsUIEBOB9AVEHZ9D3E4hXgYAlSngDwA/Rxr8oA1ANoh0AjI
 1F9AwwPwASVdoAntWVUxRtFQ+EvQgAjANgAMAszBgAIBC4F5CtlDvIn1WxmoRsB3kGmDQP0AsZQ4UqArwXYBwESAPfWSIEg3nRoRVIX8C9Bl4P0HdApgHIJyDsQHOBSkD5UthUFSgg4FoI20fgPICiQHgKSdDfCADgBAgMwGEBmAAEFjhiAJIIQJPjHOGshY4XcVUgsgXAE0BggAHU+tV4QgHitTNQtD/82PIe0zg60fAx9xxiKP1bVmAZEELQ4A
 
 TCDYA1gLQKGCRgq60p4oSREHCBUKIpFPAgAA
+
 ```
+
 %%

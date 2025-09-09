@@ -1,9 +1,11 @@
 ---
 id: Subtle Art Of Not Giving A F
 aliases: []
-tags: []
+tags:
+  - philosophy
+  - quotes
+dg-publish: true
 ---
-
 - feedback loop from hell
 
 ```text

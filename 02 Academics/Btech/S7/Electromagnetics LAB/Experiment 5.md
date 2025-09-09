@@ -1,6 +1,13 @@
 ---
-aliases: 
+id: Experiment_5
+aliases: []
+tags:
+  - academics
+  - btech
+  - s7
+  - electromagnetics_lab
 Date: 13-11-2024
+dg-publish: true
 ---
 # Isolation of E,H,Magic Tee
 

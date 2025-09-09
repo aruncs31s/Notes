@@ -1,5 +1,7 @@
 ---
 id: ipad
 aliases: []
-tags: []
+tags:
+  - short_notes
+dg-publish: true
 ---

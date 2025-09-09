@@ -1,3 +1,11 @@
+---
+id: Newtons_laws_of_motion
+aliases: []
+tags:
+  - science
+  - physics
+dg-publish: true
+---
 # Newton's Laws of Motion
 
 ## 1st Law

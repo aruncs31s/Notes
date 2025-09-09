@@ -1,7 +1,13 @@
-
-
-
-
+---
+id: ECT402_PYQ
+aliases: []
+tags:
+  - academics
+  - btech
+  - s8
+  - ect402
+dg-publish: true
+---
 # 2023 Supplementary Exam 
 [QP Link](https://drive.google.com/drive/folders/1ye25K0pNKDLqqBM2thufvUbqNqmhWLT5)
 #### 1. Compare and contrast the analog and digital cellular systems
@@ -22,7 +28,6 @@
 #### Module 1
 1. Describe the features of the GSM system architecture with the help of a neat
 block diagram.
-
 
  
 ##, Q1
@@ -74,7 +79,6 @@ Outage Probability is *the probability that the received Signal-to-Noise Ratio* 
 \mathbf{SINR} = \frac{\text{Signal Power}}{\text{Noise + Interference Power}}
 >$$
 
-
 >[!Note] Outage Probability
 >**outage probability** of a communication channel is *the probability that a given information rate is not supported*, because of variable channel capacity. Outage probability is defined as the *probability that information rate is less than the required threshold information rate*. It is *the probability that an outage will occur within a specified time period*[^1]
 
@@ -89,11 +93,5 @@ $$
 - $\gamma_{th}$: SNR threshold required for reliable communication
 - $P_{r}$ Probability operator
 
-
-
 [^1]:https://en.wikipedia.org/wiki/Outage_probability
-
-
-
-
 

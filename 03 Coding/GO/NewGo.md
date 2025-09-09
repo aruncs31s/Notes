@@ -1,3 +1,11 @@
+---
+id: NewGo
+aliases: []
+tags:
+  - coding
+  - go
+dg-publish: true
+---
 # Go Programming Language - Complete Guide
 
 > [!info] Go (Golang) Overview
@@ -30,6 +38,7 @@ import "fmt"
 func main() {
     fmt.Println("Hello, World!")
 }
+
 ```
 
 ### Package System
@@ -48,6 +57,7 @@ import (
     _ "image/png"  // Blank import (init only)
     alias "very/long/package/name" // Alias import
 )
+
 ```
 
 ### Variables and Constants
@@ -94,6 +104,7 @@ const (
     MB                    // 1048576
     GB                    // 1073741824
 )
+
 ```
 
 ## Data Types
@@ -141,6 +152,7 @@ var b byte = 255
 
 // Rune (alias for int32, represents Unicode code point)
 var r rune = '♠'
+
 ```
 
 ### Composite Types
@@ -162,6 +174,7 @@ var initialized = [2][3]int{{1, 2, 3}, {4, 5, 6}}
 length := len(arr)
 // Arrays are value types (copied on assignment)
 arr2 := arr // Creates a copy
+
 ```
 
 #### Slices
@@ -195,6 +208,7 @@ copy(dest, slice)
 slice = append(slice[:i], slice[i+1:]...)
 // Insert element at index i
 slice = append(slice[:i], append([]int{newElement}, slice[i:]...)...)
+
 ```
 
 #### Maps
@@ -223,6 +237,7 @@ for key, value := range m {
 if value, exists := m["key"]; exists {
     fmt.Println("Key exists with value:", value)
 }
+
 ```
 
 #### Pointers
@@ -253,6 +268,7 @@ func increment(x *int) {
 // New function
 p = new(int)                     // Allocates memory and returns pointer
 *p = 42
+
 ```
 
 ## Control Structures
@@ -303,6 +319,7 @@ case x < 0:
 default:
     fmt.Println("Zero")
 }
+
 ```
 
 ### Loops
@@ -355,6 +372,7 @@ go func() {
 for value := range ch {
     fmt.Println(value)
 }
+
 ```
 
 ### Flow Control
@@ -392,6 +410,7 @@ start:
         goto start
     }
 }
+
 ```
 
 ## Functions
@@ -432,6 +451,7 @@ func sum(numbers ...int) int {
 
 // Call: sum(1, 2, 3, 4)
 // Call with slice: sum(slice...)
+
 ```
 
 ### Advanced Function Features
@@ -502,6 +522,7 @@ func copyFile(src, dst string) error {
     _, err = io.Copy(dstFile, srcFile)
     return err
 }
+
 ```
 
 ### Function Patterns
@@ -563,6 +584,7 @@ func NewConfig(opts ...Option) *Config {
 }
 
 // Usage: NewConfig(WithHost("example.com"), WithPort(443), WithSSL())
+
 ```
 
 ## Structs and Methods
@@ -611,6 +633,7 @@ type Point struct {
     int // Anonymous field
     int // Multiple anonymous fields of same type not allowed
 }
+
 ```
 
 ### Methods
@@ -662,6 +685,7 @@ func (c Circle) Area() float64 {
 func (c Circle) Perimeter() float64 {
     return 2 * math.Pi * c.Radius
 }
+
 ```
 
 ### Advanced Struct Features
@@ -703,6 +727,7 @@ emp := Employee{
     Salary: 50000,
 }
 info := emp.GetFullInfo() // Method promoted from Person
+
 ```
 
 ## Interfaces
@@ -745,6 +770,7 @@ case string:
 default:
     fmt.Printf("Unknown type: %T\n", v)
 }
+
 ```
 
 ### Interface Patterns
@@ -805,6 +831,7 @@ type FileReadWriter interface {
     FileReader
     FileWriter
 }
+
 ```
 
 ### Advanced Interface Concepts
@@ -852,6 +879,7 @@ if w == nil {
 } else {
     fmt.Println("w is not nil but contains nil pointer")
 }
+
 ```
 
 ## Concurrency
@@ -884,6 +912,7 @@ for i := 0; i < 5; i++ {
 }
 
 wg.Wait()
+
 ```
 
 ### Channels
@@ -928,6 +957,7 @@ go func() {
 for value := range ch {
     fmt.Println(value)
 }
+
 ```
 
 ### Advanced Channel Patterns
@@ -1026,6 +1056,7 @@ func workerPool(jobs <-chan int, results chan<- int, numWorkers int) {
         close(results)
     }()
 }
+
 ```
 
 ### Synchronization Primitives
@@ -1097,6 +1128,7 @@ func atomicIncrement() {
 func atomicRead() int64 {
     return atomic.LoadInt64(&atomicCounter)
 }
+
 ```
 
 ## Memory Management
@@ -1131,6 +1163,7 @@ func usePool() {
     defer pool.Put(buf)
     // Use buf
 }
+
 ```
 
 ### Garbage Collection
@@ -1175,6 +1208,7 @@ func (r *Resource) Close() {
         runtime.SetFinalizer(r, nil)
     }
 }
+
 ```
 
 ## Error Handling
@@ -1214,6 +1248,7 @@ result, err := divide(10, 0)
 if err != nil {
     log.Fatal(err)
 }
+
 ```
 
 ### Advanced Error Handling
@@ -1265,6 +1300,7 @@ func (r Result[T]) IsOk() bool {
 func (r Result[T]) Unwrap() (T, error) {
     return r.Value, r.Error
 }
+
 ```
 
 ## Advanced Features
@@ -1326,6 +1362,7 @@ type GetSetter[T any] interface {
     Getter[T]
     Setter[T]
 }
+
 ```
 
 ### Reflection
@@ -1399,6 +1436,7 @@ func callMethod(obj interface{}, methodName string, args ...interface{}) {
         fmt.Printf("Result: %v\n", result.Interface())
     }
 }
+
 ```
 
 ### Code Generation
@@ -1441,6 +1479,7 @@ var configData []byte
 
 //go:embed static
 var staticFiles embed.FS
+
 ```
 
 ### Unsafe Operations
@@ -1486,6 +1525,7 @@ func structOffsets() {
     fmt.Printf("Offset of B: %d\n", unsafe.Offsetof(Example{}.B))
     fmt.Printf("Offset of C: %d\n", unsafe.Offsetof(Example{}.C))
 }
+
 ```
 
 ## Best Practices
@@ -1529,6 +1569,7 @@ func (u *User) GetUsername() string { // Exported method
 func (u *User) setPassword(pwd string) { // Unexported method
     // Implementation
 }
+
 ```
 
 ### Error Handling Best Practices
@@ -1586,6 +1627,7 @@ func (e NetworkError) Error() string {
 func (e NetworkError) Unwrap() error {
     return e.Err
 }
+
 ```
 
 ### Testing
@@ -1662,6 +1704,7 @@ func (m *MockUserRepository) GetUser(id int) (*User, error) {
     }
     return user, nil
 }
+
 ```
 
 ## Performance Optimization
@@ -1709,6 +1752,7 @@ func profileCPU() {
     
     // Your code to profile
 }
+
 ```
 
 ### Optimization Techniques
@@ -1779,6 +1823,7 @@ func processData(data []byte) []byte {
     // Process data using buf
     return result
 }
+
 ```
 
 ### Concurrency Optimization
@@ -1838,6 +1883,7 @@ func batchProcess(items []Item, batchSize int) {
         processBatch(batch)
     }
 }
+
 ```
 
 This comprehensive guide covers Go from basics to advanced features. Each section includes practical examples and best practices for real-world development.

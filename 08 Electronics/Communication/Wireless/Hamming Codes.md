@@ -1,6 +1,12 @@
 ---
-aliases: 
+id: Hamming_Codes
+aliases: []
+tags:
+  - electronics
+  - communication
+  - wireless
 Date: 02-11-2024
+dg-publish: true
 ---
 # Hamming Codes
 - Provides detection and correction 

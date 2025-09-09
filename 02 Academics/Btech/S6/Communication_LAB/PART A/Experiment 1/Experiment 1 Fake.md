@@ -1,9 +1,20 @@
+---
+id: Experiment_1_Fake
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - communication_lab
+  - part_a
+  - experiment_1
+dg-publish: true
+---
 # Experiment 1
 ## FM generation and demodulation using PLL 565
 Created : 2024-04-29 01:29
 
 ## Contents
-
 
 ### Aim:
 To generate frequency modulated signal and to demodulate the Frequency Modulated signal using PLL.
@@ -37,13 +48,9 @@ Figure1. FM generator using <b>IC565</b>
 
 ![[Pasted image 20240429092338.png]]
 
-
-
 ## Using IC4046B
 
 ![](https://www.homemade-circuits.com/wp-content/uploads/2023/03/IC-4046-pinout-details.jpg)
-
-
 
 ## References
 

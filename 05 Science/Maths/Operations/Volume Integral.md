@@ -1,4 +1,12 @@
-
+---
+id: Volume_Integral
+aliases: []
+tags:
+  - science
+  - maths
+  - operations
+dg-publish: true
+---
 # Volume Integral
 
 There are 2 types

@@ -1,6 +1,11 @@
 ---
-aliases: 
+id: Trading
+aliases: []
+tags:
+  - science
+  - trading
 Date: 28-01-25
+dg-publish: true
 ---
 # Trading
 

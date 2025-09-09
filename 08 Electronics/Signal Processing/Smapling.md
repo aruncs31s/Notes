@@ -1,10 +1,13 @@
 ---
-cssclasses:
-  - wide-page
-aliases: 
-tags: 
+id: Smapling
+aliases: []
+tags:
+  - electronics
+  - signal_processing
+cssclasses: 
 Created: 15-08-2024
-Status:
+Status: 
+dg-publish: true
 ---
 # Smapling
 

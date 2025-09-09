@@ -1,3 +1,14 @@
+---
+id: Slected_Devicejs
+aliases: []
+tags:
+  - projects
+  - web_based
+  - kannur_solar_battery_monitor_website
+  - website
+dg-publish: true
+---
+
 ```js
 debug = 1;
 timeOffset = -60000;
@@ -112,8 +123,6 @@ function updateLiveChart() {
     .catch((error) => console.error("Error fetching today's data:", error));
 }
 
-
-
 // New async Functions
 async function updateOldChart_a(day, theChart) {
   try {
@@ -137,8 +146,6 @@ async function updateOldChart_a(day, theChart) {
     console.error(`Error fetching data for prev_1:`, error);
   }
 }
-
-
 
 let lates_data = [];
 

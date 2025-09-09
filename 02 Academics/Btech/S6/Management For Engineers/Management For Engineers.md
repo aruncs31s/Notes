@@ -1,5 +1,14 @@
+---
+id: Management_For_Engineers
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - management_for_engineers
+dg-publish: true
+---
 # Management For Engineers
-
 
 ## Contents
 - [[MFE Module 1]]
@@ -22,8 +31,6 @@
 <!--toc:end-->
 
 Created : 2024-04-16 17:51
-
-
 
 ## Module 3 Productivity and Decision Making
 
@@ -65,12 +72,11 @@ $$
 VA \ per \ employee = \frac{Firm's \ Value  \ Added($)}{Total\ No.\ of \ employees \ on \ firm's \ payroll}
 $$
 
-
-
-
 ## Module 4 Project Management
+
 ```bash
 xdg-open "/home/aruncs/Desktop/BTECH/S6/MFE/KTU NOTES/Module 4 - HUT 310 -Ktunotes.in (1).pdf" &>/dev/null
+
 ```
 
 ### Syllabus
@@ -93,7 +99,6 @@ xdg-open "/home/aruncs/Desktop/BTECH/S6/MFE/KTU NOTES/Module 4 - HUT 310 -Ktunot
   2. Time
   3. Resources
 - The relationship is generally represented as an quilateral triangle(Qualit Triangle)
-
 
 ![](Pasted%20image%2020240417010147.png)
 
@@ -131,10 +136,6 @@ CPM is a technique which is used for the projects where the ==time needed for co
 - It calculates the **critical path**, which is the longest sequence of tasks or the shortest duration for project completion
 #### **PERT (Program Evaluation and Review Technique)**
 Used for ==managing projects with uncertain activity durations and probabilistic estimates==. Incorporates three time estimates (**optimistic**, **most likely**, and **pessimistic**) for each activity to calculate expected project duration. Useful for projects where activity durations are uncertain or influenced by external factors.
-
-
-
-
 
 ## References
 1. 

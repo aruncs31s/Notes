@@ -1,15 +1,18 @@
 ---
 id: Python Json
 aliases: []
-tags: []
+tags:
+  - coding
+  - python
+dg-publish: true
 ---
-
 # Python Json
 
 ```python
 import json
 x = {"SomeKey": "SomeValue"}
 print(x["SomeKey"])
+
 ```
 
 - List and other data types at the top level of a `JSON` document

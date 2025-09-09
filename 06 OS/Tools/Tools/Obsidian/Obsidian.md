@@ -1,8 +1,13 @@
 ---
-cssclasses:
-  - wide-page
+id: Obsidian
+aliases: []
+tags:
+  - os
+  - tools
+  - obsidian
+cssclasses: 
+dg-publish: true
 ---
-
 ### Plugins
 
 - [[Canvas Mindmap]]
@@ -16,14 +21,10 @@ cssclasses:
 ##### Multi Coulmn layout
 - [ ] Need to check out the following pages 
 
-
-
 - https://www.reddit.com/r/ObsidianMD/comments/1efwryy/someone_knows_how_to_make_my_obsidian_look_like/
 - https://github.com/efemkay/obsidian-modular-css-layout/tree/main?tab=readme-ov-file#installation--download-and-enable
 - https://github.com/Mara-Li/obsidian-snippet-downloader
 - https://github.com/r-u-s-h-i-k-e-s-h/Obsidian-CSS-Snippets/tree/Collection?tab=readme-ov-file
-
-
 
 > [!multi-column]
 >
@@ -44,8 +45,6 @@ cssclasses:
 >> - [ ] Develop draft sketches
 
 ## Icon Links Dashboard using `[!multi-column|center-fixed-small]`
-
-
 
 > [!multi-column]
 >

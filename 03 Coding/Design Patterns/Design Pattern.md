@@ -2,13 +2,11 @@
 id: Design Pattern
 aliases: []
 tags:
-  - programming
-  - software_design
-cssclasses:
-  - wide-page
+  - coding
+  - design_patterns
+cssclasses: 
 dg-publish: true
 ---
-
 # Design Patterns
 - [ ] Checkout MVVM 
 - [ ] Checkout **Atomic Design methodology**
@@ -67,6 +65,7 @@ Design patterns are **descriptions of communicating objects and classes** that a
 
 #### Guard Clauses Technique 
 > Used to write , **Cleaner** and more **readable code**
+
 ```c++
 void someFunction(){
   if (wifi){
@@ -86,6 +85,7 @@ void someFunction(){
     return;
   }
 }
+
 ```
 
 This change to 
@@ -106,6 +106,7 @@ void someFunction(){
   }
   someFunction();
 }
+
 ```
 
 ---

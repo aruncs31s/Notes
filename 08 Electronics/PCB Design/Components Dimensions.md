@@ -1,6 +1,11 @@
 ---
-aliases: 
+id: Components_Dimensions
+aliases: []
+tags:
+  - electronics
+  - pcb_design
 Date: 23-10-2024
+dg-publish: true
 ---
 # Components Dimensions
 

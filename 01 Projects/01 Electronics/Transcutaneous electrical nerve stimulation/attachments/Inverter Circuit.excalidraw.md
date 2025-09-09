@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: Inverter_Circuitexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 ## Text Elements
@@ -27,6 +27,7 @@ a ^ePqrDdSj
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQA2bQB2GjoghH0EDihmbgBtcDBQMBLoeHF0QOwojmVg1JLIRhZ2LjQAZgBGAE5+UubWTgA5TjFuABZ4zoAOAFZ26e7OvshC
 
@@ -271,5 +272,7 @@ w9jIH93ci4yycq49kQAT3w9gEFvTAC9PZD3sgRPYj2Yd8+Dz3M9jIEj2JdNCNL3Q98PYDov12Pfj2a9j
 F1HYULijtwjWGzF33a9w1U8gpm0gDhWSsyUa6W3lkfcMCSANEARge9mA5IA0bDYDX3cATQGCAIYnMhIAuCCSiGH8AHSGtD4wAAApog3gGglqD70CpoZQAAEpYwA8eUAPwHMC2AyD3AEoOqoagF4AeDvg55B6D2YCYPM2ZfYr2iQFvc5HOAHnbb37uA8Y2RJRqdAkovCnA9lhPtuPeWKsV3UbuAdJ93egXtDp+BQGy4fQ4QBRDuwGedqgZgGeAdJu
 
 AAwOEALA9UO8DgUE5HGAb4C/3S6Kxx3ywgYIGqBuIJcd/H+Rx/Dep/VgGf3JHYXw9cP3D9WHohwAStA17wgZ7jogQAOiCAA=
+
 ```
+
 %%

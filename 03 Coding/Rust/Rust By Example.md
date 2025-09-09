@@ -1,6 +1,13 @@
+---
+id: Rust_By_Example
+aliases: []
+tags:
+  - coding
+  - rust
+dg-publish: true
+---
 # Rust By Example
 Created : 2024-04-12 21:05
-
 
 ## Contents
 - [Primitives]()
@@ -57,26 +64,27 @@ fn main() {
 >let x = 10;
 >x = 20;
 >```
+
 >It throws errror due to the variable x being `immutable` so we need to make it mutable
 >
 >```rust
 >let mut x = 10;
 > x = 20```
+
 > 
-
-
 
 >
 
-
-
 ### Vectors
+
 ```rust
 fn main() {
     let mut new_vector = vec![33, 44, 55];
     // Accesing the First element
     println!("{:?}", new_vector[0])
 }
+
 ```
+
 ## References
 1. https://doc.rust-lang.org/stable/rust-by-example/#rust-by-example

@@ -1,12 +1,13 @@
 ---
-cssclasses:
-  - wide-page
-aliases:
-  - cpp class
+id: Classes
+aliases: []
 tags:
-  - "#coding"
+  - coding
+  - basics
+cssclasses: 
 Created: 10-10-2024
-Status:
+Status: 
+dg-publish: true
 ---
 # Classes
 
@@ -37,6 +38,7 @@ int main(int argc, char *argv[]) {
   std::cout << x1.x << "\n";
   std::cout << x1.y << "\n";
 }
+
 ```
 
 ### With Parameters 
@@ -57,9 +59,11 @@ int main(int argc, char *argv[]) {
   std::cout << x1.x << "\n";
   std::cout << x1.y << "\n";
 }
+
 ```
 
 ### Multiple Constructors
+
 ```cpp
 #include <iostream>
 class co_ordinates {
@@ -86,4 +90,5 @@ int main(int argc, char *argv[]) {
   std::cout << x2.x << "\n";
   std::cout << x2.y << "\n";
 }
+
 ```

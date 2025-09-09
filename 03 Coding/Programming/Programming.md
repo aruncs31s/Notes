@@ -1,3 +1,11 @@
+---
+id: Programming
+aliases: []
+tags:
+  - coding
+  - programming
+dg-publish: true
+---
 # Programming
 
 ## Programming Paradigm

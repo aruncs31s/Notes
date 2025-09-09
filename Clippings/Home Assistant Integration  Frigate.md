@@ -1,12 +1,15 @@
 ---
+id: Home_Assistant_Integration_Frigate
+aliases: []
+tags:
+  - clippings
 title: "Home Assistant Integration | Frigate"
 source: "https://docs.frigate.video/integrations/home-assistant/"
-author:
-published:
+author: 
+published: 
 created: 2025-06-21
 description: "The best way to integrate with Home Assistant is to use the official integration."
-tags:
-  - "clippings"
+dg-publish: true
 ---
 The best way to integrate with Home Assistant is to use the [official integration](https://github.com/blakeblackshear/frigate-hass-integration).
 
@@ -28,6 +31,7 @@ Available via HACS as a default repository. To install:
 
 ```markdown
 Home Assistant > HACS > Click in the Search bar and type "Frigate" > Frigate
+
 ```
 
 - Restart Home Assistant.
@@ -35,9 +39,10 @@ Home Assistant > HACS > Click in the Search bar and type "Frigate" > Frigate
 
 ```markdown
 Home Assistant > Settings > Devices & Services > Add Integration > Frigate
+
 ```
 
-Note: You will also need [media\_source](https://www.home-assistant.io/integrations/media_source/) enabled in your Home Assistant configuration for the Media Browser to appear.
+> [!note] You will also need [media\_source](https://www.home-assistant.io/integrations/media_source/) enabled in your Home Assistant configuration for the Media Browser to appear.
 
 ### (Optional) Lovelace Card Installation
 
@@ -69,6 +74,7 @@ services:
     ports:
       - "172.17.0.1:5000:5000"
       ...
+
 ```
 
 #### Home Assistant not running with host networking or in a separate compose file
@@ -89,6 +95,7 @@ services:
     ports:
       # - "172.17.0.1:5000:5000"
       ...
+
 ```
 
 ### HassOS Addon
@@ -119,6 +126,7 @@ services:
     ports:
       - "8971:8971"
       ...
+
 ```
 
 #### Tailscale or other private networking
@@ -133,12 +141,14 @@ services:
     ports:
       - "<tailscale_ip>:5000:5000"
       ...
+
 ```
 
 ## Options
 
 ```markdown
 Home Assistant > Configuration > Integrations > Frigate > Options
+
 ```
 
 | Option | Description |
@@ -177,36 +187,42 @@ To load a thumbnail for a tracked object:
 
 ```markdown
 https://HA_URL/api/frigate/notifications/<event-id>/thumbnail.jpg
+
 ```
 
 To load a snapshot for a tracked object:
 
 ```markdown
 https://HA_URL/api/frigate/notifications/<event-id>/snapshot.jpg
+
 ```
 
 To load a video clip of a tracked object using an Android device:
 
 ```markdown
 https://HA_URL/api/frigate/notifications/<event-id>/clip.mp4
+
 ```
 
 To load a video clip of a tracked object using an iOS device:
 
 ```markdown
 https://HA_URL/api/frigate/notifications/<event-id>/master.m3u8
+
 ```
 
 To load a preview gif of a tracked object:
 
 ```markdown
 https://HA_URL/api/frigate/notifications/<event-id>/event_preview.gif
+
 ```
 
 To load a preview gif of a review item:
 
 ```markdown
 https://HA_URL/api/frigate/notifications/<review-id>/review_preview.gif
+
 ```
 
 ## RTSP stream
@@ -225,18 +241,21 @@ Use a different port number:
 
 ```markdown
 rtsp://<frigate_host>:2000/front_door
+
 ```
 
 Use the camera name in the stream URL:
 
 ```markdown
 rtsp://<frigate_host>:2000/{{ name }}
+
 ```
 
 Use the camera name in the stream URL, converting it to lowercase first:
 
 ```markdown
 rtsp://<frigate_host>:2000/{{ name|lower }}
+
 ```
 
 ## Multiple Instance Support
@@ -253,10 +272,12 @@ When multiple Frigate instances are configured, [API](https://docs.frigate.video
 
 ```markdown
 https://HA_URL/api/frigate/<client-id>/notifications/<event-id>/thumbnail.jpg
+
 ```
 
 ```markdown
 https://HA_URL/api/frigate/<client-id>/clips/front_door-1624599978.427826-976jaa.mp4
+
 ```
 
 #### Default Treatment

@@ -1,8 +1,13 @@
 ---
 id: VLSI Module 1
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - s6
+  - vlsi
 mindmap-plugin: basic
+dg-publish: true
 ---
 # VLSI Design Methodologies
 
@@ -83,7 +88,6 @@ An application-specific integrated circuit is an integrated circuit (IC) that’
 
 ![|400x300](https://www.electronicshub.org/wp-content/uploads/2020/01/Types-of-ASIC.jpg)
 
-
 - Full Custom
 - [[#Semi-Custom ASIC|Semi Custom]]
   - Standard Cell Based
@@ -100,8 +104,6 @@ An application-specific integrated circuit is an integrated circuit (IC) that’
 - ==To shorten the design time and cut down the cost of full-custom ASICs==, numerous other design approaches have been developed and these are called as Semi- Custom ASIC Designs.  
 - All logic cells are pre-designed & some mask layers are customized.  
 
-
-
 ###### Standard cell based:  
 ![](https://www.electronicshub.org/wp-content/uploads/2020/01/Standard-Cell-Design.jpg)
 
@@ -117,7 +119,6 @@ An application-specific integrated circuit is an integrated circuit (IC) that’
 #disadvantages 
 - The disadvantage is the time and expense to make a standard library and to fabricate these designs.  
 
-
 ##### Gate Array Based ASIC
 - In a gate-array-based ASIC, the transistors are predefined on the silicon wafer.  
 - The predefined pattern of transistors is called the base array.  
@@ -128,7 +129,6 @@ Three types:
 - Channeled gate array  
 - Channelless gate array  
 - Structured gate array  
-
 
 #### SOC(System On Chip)
 A **system on a chip** or **system-on-chip** is an integrated circuit that integrates most or all components of a computer or other electronic system.
@@ -146,7 +146,6 @@ A **field-programmable gate array** (**FPGA**) is a ==type of configurable int
 > Configurable Logic Blocks will be consist of 4 componets
 > Contents
 
-
 #applications
 1. telecommunications
 2. automotive
@@ -157,5 +156,4 @@ A **field-programmable gate array** (**FPGA**) is a ==type of configurable int
 1. [Ktu Syllabus]()
 2. https://en.wikipedia.org/wiki/Field-programmable_gate_array
 3. 
-
 

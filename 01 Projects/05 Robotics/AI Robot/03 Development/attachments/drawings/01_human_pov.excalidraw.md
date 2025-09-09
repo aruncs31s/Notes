@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: 01_human_povexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 
@@ -49,6 +49,7 @@ Human POV ^HWenfpC4
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBGAAYEmjoghH0EDihmbgBtcDBQMBKIEm4IAGkAIQBVAGF6owB1AA4EAEFLACVCTXr8YgBZWoAVVJLIWEQKwn1opH5SzG5n
 
@@ -1079,5 +1080,7 @@ OUAfbHPncedNAfPnP+cv55/mMgDv53VTCgEf5q/mb+cgFjdnNZBgF8AW40Mc2pAWf+Zv5vs9m/zQFqAB
 U+ouuGlBeBYyANXNg2fqo8/mpQBIAFIKIUH35iwXiAENAIscgQBsFuSRhgCRIDOAfIOFWy1MxSxIAMNBjEDhUwYB76EinXAAAAAp0eTLTc4Ay00YQfvg1gAAASktALSQPG0N4TpApkrFAEIXWCE4oH4BOKAy4KIXYhY6wbAX4BYQAPs8+JE4AFMAqOG4LLSRVIDkkH4RjECyAXAAPBapgM/zz4LSgK0LfgB8gnfnJwqxgDSRCREnC3IW7AF6wYTh
 
 scJ8guABxqLpgagraheCAEaQcEHWwP46EAFGAREhO8y0FvKgwgGCAKYWWEDekUyARJDYXN5BwfoMkbSADAHwB5YWihelgKfMxvw6AKYXGAFmFjkBq0vAAShBoc3ITIhAUICQgIAA
+
 ```
+
 %%

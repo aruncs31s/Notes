@@ -1,16 +1,22 @@
 ---
-aliases: 
+id: Architecture_design
+aliases: []
+tags:
+  - electronics
+  - embedded_systems
 Date: 2024-08-09
+dg-publish: true
 ---
-
-
 # Architecture design
 #### Instruction Execution
+
 ```mermaid
 graph LR
 A[PC] --> B[Instruction Decoder]
 B --> C[ALU]
+
 ```
+
 The flow diagram shows a simple Instruction Execution 
 - **Program Counter(PC):**  It Stores the address of the instruction which is to be executed ,and the processor uses this **address** to fetch the instruction form the  **Memory** 
 - **Decoding :** Here the instruction is get decodes to a format that the computer can understand(zeros and ones 01001)
@@ -22,10 +28,12 @@ The flow diagram shows a simple Instruction Execution
 #### Critical Path
 *The critical path for an instruction is the most time consuming path through the architecture for that instruction*
 Most instructions starts from **Program Counter(PC)** then to process through architecture and 
+
 ```mermaid
 graph LR
 A[PC] --> B(Architecture)
 B --> A
+
 ```
 
 ## Contents

@@ -1,3 +1,14 @@
+---
+id: highcharts
+aliases: []
+tags:
+  - projects
+  - web_based
+  - kannur_solar_battery_monitor_website
+  - website
+dg-publish: true
+---
+
 ```JS
 
 function createChart(containerId, title, yAxisTitle, seriesName) {
@@ -70,4 +81,5 @@ function createChart(containerId, title, yAxisTitle, seriesName) {
     },
   });
 }
+
 ```

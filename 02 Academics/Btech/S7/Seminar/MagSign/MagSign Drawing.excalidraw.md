@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: MagSign_Drawingexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 ## Text Elements
@@ -24,6 +24,7 @@ afa57f14e47dcecae838dcf4dcbaf6e19643d8c3: [[auth process.png]]
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBWbR4aOiCEfQQOKGZuAG1wMFAwYogSbggAdU0AEQBlYnoATQBpFOLIWERywn1opH4SzG5nHniABgHIGGGAZlHtADYx5bGF
 
@@ -124,5 +125,7 @@ TJxFEw5h9AnIIpA3Re0DASDIgDmO2AoM4GW6eB5PZ9vSLoHSDjBig8RAUq/aCm9Bsg+QQoNUGRQAOgel
 AjQK7OBzWp0zumiQksHQaMBsADAJDBgAQGlQKZSWSpdQkIYMMqHl0p2RVfbGIPEgSANxAnHQY6PEBOQCAXTDinwQ85iAH4NgF5F8O4BNAwQV1cMZIDZ4ZokEREIJFIDKB8QAACi67UBeA3sbY1sdu0JAAAlIKDFTKBjlqSVYxsY5ITBeACcPY3cYOPxBjj9RkI7jiFg6HKUnAT1egcr0IAxUo0HnHuRmiZApjMxy5bbX+JEBdMg+koHziQM1aITr
 
 pEVHKnBMIB6jdgOcAgGwDZBagfOOAGMYmN85pjCVJCNicICMBrIZR/ABUdUSYrPAURuqggnpT6BwjhuRnUGvn0y6mEZJik1SZAzgGN6/5YINaGAAhRnQQAA=
+
 ```
+
 %%

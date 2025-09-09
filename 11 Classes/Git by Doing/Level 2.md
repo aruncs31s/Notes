@@ -1,14 +1,16 @@
 ---
-github: https://github.com/aruncs31s/git_by_doing_level_2
+id: Level_2
+aliases: []
 tags:
+  - classes
   - git_by_doing
-  - for_students
-  - sub_module
+github: https://github.com/aruncs31s/git_by_doing_level_2
 Status: Done
 dg-publish: true
 type: Tasks,Quiz
 ---
 # Level 2
+
 ```dataview
 Table without ID  file.name as "Name" , github as Link , status as Status
 where file = this.file
@@ -23,14 +25,13 @@ Task: Understanding `git add` and `git status`
 | Task 2 | `python task_2.py ` | `git status`  | `status`  |
 | Task 3 | `python task_3.py ` | `git restore` | `restore` |
 
-
-
 > [!IMPORTANT]
 > First Run `task_1.py`
 >
 > ```bash
 >python task_1. Py
 > ```
+
 >
 > It will tell you to add some file , so you can type 'n' to exit program or press "CTRL and c" at the same time and interrept it.
 > The run the task_1. Py again , and answer the question.
@@ -40,11 +41,13 @@ Task: Understanding `git add` and `git status`
 > ```bash
 > python task_2. Py
 > ```
+
 > Then Run `task_3.py`
 >
 > ```bash
 > python task_2. Py
 > ```
+
 > After finishing the Task 3, run the quiz. Py
 >```python
 > Python quiz. Py
@@ -98,15 +101,18 @@ So i run
 
 ```bash
 git add add_me
+
 ```
 
 ![alt text](imgs/image-4.png)
 Now there is a new section and it says
 
 ```
+
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
         new file:   add_me
+
 ```
 
 is says `.... to unstage` so the file add_me is `staged`.
@@ -118,7 +124,6 @@ is says `.... to unstage` so the file add_me is `staged`.
 1. To add new files to staging area
 2. When you modify an exisiting file and upload the modified file.
 
-
 >[!TIP] 
 > You can add multiple files or just add all files using `-A` option
 > ```bash
@@ -128,6 +133,8 @@ is says `.... to unstage` so the file add_me is `staged`.
 ## `git restore`
 
 As i've said earlier , when you use  `git add` the file get stages , so when i file staged the `git` start do things to that file , and one of them is to keep a copy of that file and if you accidently delete a staged file , you can recover it using the following command
+
 ```bash
 git restore <file name>
+
 ```

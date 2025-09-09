@@ -1,12 +1,16 @@
 ---
 id: Make AVR Programming
 aliases: []
-tags: []
-Date:
-  Started: "2024-12-12"
+tags:
+  - electronics
+  - embedded_systems
+  - avr
+  - atmega328p
+Date: 
+Started: "2024-12-12"
 cssClasses: wide-page
+dg-publish: true
 ---
-
 Make: AVR Programming
 **Requirement**:
 
@@ -22,6 +26,7 @@ Make: AVR Programming
 ![[8051 pinout.png]]
 
 ```
+
 stty -F /dev/tty.iap ispeed 19200
 
 ```
@@ -65,9 +70,11 @@ int main(void) {
 /* End event loop */
 /* This line is never reached */
 }
+
 ```
 
 ````
+
 // ---------------
 //   Pin Defines
 // ---------------
@@ -163,8 +170,10 @@ int main(void) {
 ## Analog Interfacing
 
 - `ADSC` set one to start the conversion
+
 ```c
 ADCSRA = 1 << ADSC;
+
 ````
 
 ### References

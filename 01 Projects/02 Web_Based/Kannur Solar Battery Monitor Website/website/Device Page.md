@@ -1,15 +1,14 @@
 ---
 id: Device Page
-aliases:
-  - smart city device page
+aliases: []
 tags:
+  - projects
+  - web_based
+  - kannur_solar_battery_monitor_website
   - website
-  - smartcity
-cssclasses:
-  - wide-page
+cssclasses: 
 dg-publish: true
 ---
-
 > [!blank|right-small]+ Pages
 > There are mainly 4 pages , `Home` , `devices`,`info`, and `about`
 >
@@ -24,7 +23,6 @@ dg-publish: true
 - [[Slected Device.js]]
 - [[Slected Device.css]]
 - [[Selected Device.html]]
-
 
 The device page should do the following
 
@@ -42,27 +40,30 @@ The device page should do the following
 8. updateOldChart_6()
 
 ## updateDashboard()
+
 ```mermaid
 graph LR 
 relay_staus & battery_voltage & current_node --> a(updateDashboard) --> updateLiveChart 
+
 ```
 
-
 ### Get current node 
-
 
 ```javascript
 const current_node = document
   .getElementById("current-node")
   .innerHTML.split(":")
   .map((part) => part.trim())[1];
+
 ```
 
 ### Getting the latest data 
 
 ```bash
 curl localhost:5000/api/data?device_id=Chittariparamba
+
 ```
+
 **node**
 
 ```js
@@ -79,6 +80,7 @@ fetch(`http://localhost:8000/api/data?device_id=${current_node}`)
   .catch((error) => console.error("Error fetching data:", error));
 
 ```
+
 ```javascript
 fetch(`/api/data?device_id==${current_node}`))
 	.then((data) => {
@@ -87,8 +89,8 @@ fetch(`/api/data?device_id==${current_node}`))
 		batteryElement.textContent = latest.battery_voltage;
 	})
 	.catch((error) => console.error("Error fetching data:", error));
-```
 
+```
 
 ```js
 
@@ -119,7 +121,9 @@ setInterval(() => {
 }, 15000);
 
 ```
+
 #### Current method
+
 ```js
 
 // Fix setInterval for live updates by removing `await`
@@ -148,23 +152,31 @@ setInterval(() => {
 }, 5000);
 
 ```
+
 But this fails 
 
 #### new Method + async
 [type:: Skeliton]
 
 [layer::1]
+
 ```js
 async function get_latest_data(){}
+
 ```
+
 [layer:: 2]
+
 ```js
 async function get_latest_data(){
   try {}
   catch(error){}
 }
+
 ```
+
 [layer::3]
+
 ```js
 async function get_latest_data(){
   try {
@@ -179,10 +191,10 @@ async function get_latest_data(){
     return null;
   }
 }
+
 ```
+
 [layer:: 4]
-
-
 
 ```js
 
@@ -218,10 +230,13 @@ async function get_latest_data() {
     return null;
   }
 }
+
 ```
+
 ### UpdateOldCharts
 
 #### Old Method
+
 ```js
 async function updateOldChart_1() {
   fetch(`/api/data/old?device_id=${current_node}&day=1`)
@@ -248,8 +263,11 @@ async function updateOldChart_1() {
     })
     .catch((error) => console.error("Error fetching data for prev_1:", error));
 }
+
 ```
+
 #### New method 
+
 ```js
 async function updateOldChart(day, chart) {
   try {
@@ -303,8 +321,8 @@ async function updateOldChart_a_1() {
     console.error(`Error fetching data for prev_1:`, error);
   }
 }
-```
 
+```
 
 ```js
 current_node = 'Chittariparamba'
@@ -328,4 +346,5 @@ async function updateOldChart() {
   }
 }
 updateOldChart()
+
 ```

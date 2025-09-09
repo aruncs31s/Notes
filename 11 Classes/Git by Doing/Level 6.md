@@ -1,8 +1,9 @@
 ---
+id: Level_6
+aliases: []
 tags:
+  - classes
   - git_by_doing
-  - for_students
-  - sub_note
 github: https://github.com/aruncs31s/git_by_doing_level_6
 type: Automated
 Status: Done
@@ -11,13 +12,16 @@ dg-publish: true
 # Level 6
 - [[Git API]]
 - [[GO Code]]
+
 ```dataview
 Table without ID  file.name as "Name" , github as Link , status as Status, file.inlinks as Mentioned
 where file = this.file
+
 ```
 
 ## Lets recap 
 Up until you have seen the following commands 
+
 ```bash
 git status # to check the status of the repo 
 git log # to see the commit history
@@ -28,14 +32,18 @@ git log # to see the commit history
 git branch # to see the branches
 git checkout # to switch branches
 git config # to mess with configuration
+
 ```
+
 And you will need to use most of them inorder to complete this level. 
 
 ## New Commands
 in this level you are going to learn the following commands. 
+
 ```bash
 git pull 
 git push 
+
 ```
 
 > [!abstract]- Dev Notes
@@ -49,6 +57,7 @@ git push
 > ```bash
 > go run ./level_6.go
 > ```
+
 > You have to do what the program says to complete the task , if you do it right your attendance will be marked the remote repository.
 
 Inorder to do this level you must have finished the previous level , beacuse in the previous level you have configured your git. If you have not properly configured your git , this may fail. And your "user.name" should match you actual name.
@@ -67,7 +76,9 @@ You must have already seen `git add` , `git commit` etc , So you have to use tho
 git add -A
 git commit -m "Your message here"
 git push origin main 
+
 ```
+
 This will add all the changes you have made and upload it to the remote repo. 
 
 ### *What if someone else has also made some changes?*

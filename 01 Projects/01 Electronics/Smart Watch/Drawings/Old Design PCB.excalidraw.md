@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: Old_Design_PCBexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 
@@ -14,6 +14,7 @@ GND of the Vin ^p0fF7Qpf
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQB2bQAWGjoghH0EDihmbgBtcDBQMBLoeHF0Ig4kflLGFnYuNB4AVgBGWsh61k4AOU4xbjaAZiSk4YA2AE4pgAYkzohCDmIs
 
@@ -330,5 +331,7 @@ co95hnASLFRYqEAQABDZCQFGCdgY4AAgfkFso++CxYkQD0oRLEZAMLF0PQgGXidLHxY7IBZY/QCAgB37
 ABOC/ALzR6oGLFsnbEDHgdszFuQgxwacty9cX9SLY57HugfAC6rbtAA7WiLUiP9zkBQLFGANgAGATzF1AAgCoGbZgaFPWrB8HbHtYnyxBqFYAxY0MAkAObEt/BbGBYrHHEAeEAIAVn5+GfHGr/YgAvANgCrAPt6aAYIBDKTzokAL7DtIXCDugMzTKAIMAAACmegBKD32POO5x1AAlBAAEoGQKFRJsPRASUKQB2cbgAucVUgBcerE5cbLihcRJhzc
 
 EtimsXiA+sXoJOAHFZo1KFREoKv9/UO0gsgLgBacbbBjHtgBn1KHsPwHY8fMV/cgUNoJm4IRMd1E+RNAE8Ay9rhs7HnABKcdTi7Hibj6cSiA9BIwBfgFDiAqD6dCQfiiBsWSADAPdifiH9oXdKgR+ID5pCAIHjg8TRAnIOABWkOPtfgcAA3tI5AgAA==
+
 ```
+
 %%

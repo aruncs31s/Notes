@@ -1,14 +1,13 @@
 ---
 id: 02 Flask APIs
-aliases:
-  - es backend flask api
+aliases: []
 tags:
-  - api
-  - flask
-  - es_website
+  - projects
+  - web_based
+  - embedded_systems_website
   - backend
+dg-publish: true
 ---
-
 # Flask APIs
 >[!blank]
 >- [x] `/api/login` ✅ 2025-07-10
@@ -35,6 +34,7 @@ tags:
 >     return jsonify({"status": "success", "message": "Login successful!"}), 200
 >
 > ```
+
 >
 > > [!check]+ **Test `/api/login`**
 > >
@@ -58,6 +58,7 @@ tags:
 >             )
 >     return jsonify({"status": "error", "message": "Not logged in"}), 401
 > ```
+
 >
 > > [!check]- **Test `root` `/`**
 > >
@@ -65,6 +66,7 @@ tags:
 > > curl -s http://localhost:5000/ \
 > > --cookie "session=eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIn0.aGr_AA.YPS7NYQnu1Iwb3x-zSAoGv_4SbA"
 > > ```
+
 > >
 > > ```json
 > > {
@@ -119,6 +121,7 @@ tags:
 >     )
 >
 > ```
+
 >
 > > [!check]+ **Test `/upload_profile_pic`**
 > >
@@ -127,6 +130,7 @@ tags:
 > >   -F "profile_pic=@test.png" \
 > >   --cookie "session=eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIn0.aGr_AA.YPS7NYQnu1Iwb3x-zSAoGv_4SbA"
 > > ```
+
 > >
 > > > [!success]+ **`response`**
 > > >
@@ -162,6 +166,7 @@ tags:
 >         return jsonify({"status": "error", "message": str(e)}), 500
 >     return jsonify({"status": "success", "message": "User registered successfully"}), 201
 > ```
+
 > > [!check]+ Test `/api/register`
 > > ![[curl POST examples#^00546a]]
 > >
@@ -172,7 +177,6 @@ tags:
   "status": "success"
 >>>}
 >>>```
-
 
 ### Login
 
@@ -193,9 +197,11 @@ async function fetchData() {
 }
 
 fetchData();
+
 ```
 
 #### Using Curl 
+
 ```bash
 url="http://localhost:5000"
 curl -X POST "$url/api/login" \
@@ -204,6 +210,7 @@ curl -X POST "$url/api/login" \
   "email": "aruncs31ss@proton.me",
   "password": "pass1234"
 }'
+
 ```
 
 > [!success]- *response*
@@ -214,7 +221,6 @@ curl -X POST "$url/api/login" \
 >   "status": "success"
 > }
 > ```
-
 
 ### Register
 
@@ -232,7 +238,6 @@ curl -vvX POST "$url/api/register" \
 
 ```
 
-
 > [!success]- *response*
 > ```json
 > {
@@ -240,9 +245,6 @@ curl -vvX POST "$url/api/register" \
 >   "status": "success"
 > }
 > ```
-
-
-
 
 ## Content Upload
 

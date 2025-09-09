@@ -1,6 +1,11 @@
 ---
+id: Microwave_Engineering
+aliases: []
 tags:
-  - communicaiton
+  - electronics
+  - communication
+  - wireless
+dg-publish: true
 ---
 # Microwave Engineering
 

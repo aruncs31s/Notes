@@ -1,8 +1,11 @@
 ---
+id: HTTP_Servers
+aliases: []
 tags:
+  - coding
   - go
+dg-publish: true
 ---
-
 # HTTP Servers 
 ## Midlewares 
 It sits between  `server` and main `request handler`, it can process the incoming request before  it reaches the business logic and can process after business logic has run.
@@ -13,14 +16,12 @@ It sits between  `server` and main `request handler`, it can process the incomin
 - Modify response objects
 - Chain multiple middlewares together
 
-
 ###### Grabing the user agent
+
 ```go
 userAgent := r.Header.Get("User-Agent")
+
 ```
-
-
-
 
 ```go
 package main
@@ -74,16 +75,20 @@ func main() {
 	// Optional: you can run a real server for local testing
 	http.ListenAndServe(":8090", SetupServer())
 }
+
 ```
 
 -  `w http.ResponseWriter` -> This is an interface that the server uses to write the HTTP response back to the client.
 - `r *http.Request` -> This represents the incoming HTTP request from the client. It contains information like the request URL, headers, and body.
+
 ```go
 type HandlerFunc func(ResponseWriter, *Request)
 func (f HandlerFunc) ServeHTTP(w ResponseWriter, r *Request) {
     f(w, r)
 }
+
 ```
+
 ```go
 // Basic middleware structure
 func middleware(next http.Handler) http.Handler {
@@ -98,5 +103,6 @@ func middleware(next http.Handler) http.Handler {
         fmt.Println("After handler")
     })
 }
+
 ```
 

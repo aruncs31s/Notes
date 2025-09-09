@@ -1,9 +1,14 @@
 ---
 id: Monitoring Server
 aliases: []
-tags: []
+tags:
+  - projects
+  - electronics
+  - academics
+  - iot_based_smart_energy_management_system
+  - energy_monitoring
+dg-publish: true
 ---
-
 # Monitoring Server
 
 ## Contents
@@ -108,7 +113,6 @@ void loop() {
     /*temperatureF = 1.8 * bme.readTemperature() + 32;
     Serial.print("Temperature (ºC): ");
     Serial.println(temperatureF);*/
-
 
     // Write to ThingSpeak. There are up to 8 fields in a channel, allowing you to store up to 8 different
     // pieces of information in a channel.  Here, we write to field 1.

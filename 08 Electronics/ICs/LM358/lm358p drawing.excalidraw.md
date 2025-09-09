@@ -2,10 +2,12 @@
 id: Drawing 2024-11-15 21.39.41.excalidraw
 aliases: []
 tags:
-  - excalidraw
+  - electronics
+  - ics
+  - lm358
 excalidraw-plugin: parsed
+dg-publish: true
 ---
-
 ==⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
 
 # Excalidraw Data
@@ -55,6 +57,7 @@ LM358P ^iA5ZAIUa
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBWbR4aOiCEfQQOKGZuAG1wMFAwYogSbghlIwAZAA544gBOAHV4uEk7AGkAa0kAUQA2AHFSXpTiyFhEcsDsKI5lYLGSzG5n
 
@@ -157,5 +160,7 @@ CACACgJHGoPNrJ9VmpYPzBEA9xXQR4MQVKVVGUGyjKwmKJUfSAFGfycO2g2EwKD1GKjVRxmB7JYOdHsA
 uNgmIT+AFMAex2D/cDItFUyAfRu2dGjAbAAwCkeIwEB3Y0OMNOWuw0btXj6QZY36ReTJRpupAbXlvBIAmG6YbJ4gBKAQAGJfqFokgGjGCoIB3jwa4IHuq5N2YGIQVfAMElIDKAaQAACg73UBeAj0tU7XxRAJAAAlAKCdjKACwvIaYAqdwDKmBwqptBRafNNan4gup7RkcdGMahNjosTgImNNoPwnYJYejHLIYiZAxTa0eQ9gCIB8nTe4ORjOkaRo
 
 Wg7YxApGvabsCcsEAswZgGKEYxwAhT40UU5oHFP+9y4swQgIwDxhEmjOvLG3rPDSB5mL08sIQOiAMBAn5MWhkXaRDGF/g8zBZoszrPHzgBvk7s4IPWEghtggAA==
+
 ```
+
 %%

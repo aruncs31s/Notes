@@ -1,9 +1,16 @@
 ---
-aliases: 
+id: ESP-12F
+aliases: []
+tags:
+  - electronics
+  - embedded_systems
+  - micro_controllers
+  - espressif
+  - esp-12f
 Date: 24-01-25
+dg-publish: true
 ---
 # ESP-12F
-
 
 ## Programming
 
@@ -15,8 +22,6 @@ Date: 24-01-25
 >This might work on all the esp8266 varients. 
 
 - [ ] Can  i use this CH_EN pin to save power.
-
-
 
 ### Pin Config
 
@@ -40,8 +45,6 @@ The **GPIO 0** needs to be low in Programming or downlading mode and high in **r
 ![[Screenshot 2025-02-08 at 12.04.06 AM.png]]
 ![[Screenshot 2025-02-08 at 12.05.30 AM.png]]
 ![[node-esp-12e.png]]
-
-
 
 ## Power Supply
 - There is $10\micro F$ and $100nF$ capacitors are connected between the power rails ? 

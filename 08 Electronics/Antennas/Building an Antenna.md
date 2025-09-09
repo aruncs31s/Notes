@@ -1,17 +1,17 @@
 ---
 id: Building an Antenna
 aliases: []
-tags: []
+tags:
+  - electronics
+  - antennas
 Created: "15-08-2024"
-cssclasses:
-  - wide-page
+cssclasses: 
+dg-publish: true
 ---
-
 # Building an Antenna
 ## Types of Antenna 
 1. [[#Microstrip Antenna]]
 	1. [[#Patch Antenna]]
-
 
 ### Microstrip Antenna 
 
@@ -22,17 +22,11 @@ cssclasses:
 >[!blank|left-small]
 >![[patch antenna.excalidraw]]
 
-
-
 >
-
 
 >*Patch antenna is a type of microstrip antenna with low profile which can be mounted on a surface*[^1]
 
 [^1]:https://en.wikipedia.org/wiki/Patch_antenna#:~:text=The%20patch%20antenna%20is%20mainly,it%20on%20printed%20circuit%20boards.
-
-
-
 
 > [!blank|right-medium]
 >
@@ -66,6 +60,7 @@ Sometimes its called massive **MIMO**
 graph LR
 A[Hybrid Beam Forming Arch] --> B(Analog Beam Former)
 A --> C(Digital Pre-Coder)
+
 ```
 
 ### Process

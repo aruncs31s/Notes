@@ -1,9 +1,18 @@
+---
+id: Behavioral_Pattern
+aliases: []
+tags:
+  - coding
+  - design_patterns
+dg-publish: true
+---
 ### 🤝 Behavioral Patterns
 - [[Strategy Pattern]]
 - [[Observer Design Pattern]]
 **Purpose**: Concerned with **communication between objects**, focusing on **how responsibility is distributed** and **how algorithms are handled**
 
 #### Code Example - Observer Pattern
+
 ```python
 class Subject:
     def __init__(self):
@@ -33,4 +42,5 @@ subject.notify("New order received.")
 # Output: 
 # Sending email: New order received.
 # Sending SMS: New order received.
+
 ```

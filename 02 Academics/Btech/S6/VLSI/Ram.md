@@ -1,9 +1,13 @@
 ---
 id: Ram
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - s6
+  - vlsi
+dg-publish: true
 ---
-
 # Ram
 
 - There are two types of RAM
@@ -27,7 +31,6 @@ It is a type of Random Access Memory(RAM) that uses latching circuit[^3](flip fl
 *WL* -> WordLine
 *BL* -> WordLine
 
-
 > [!important]  Word Line
 > The Word Line is another signal line in [SRAM](Ram.md#SRAM) that is ==used to select a specific row of memory cells==.
 >  - ==When a word line is activated (brought to a high voltage),== it enables access to the memory cells in the corresponding row.
@@ -48,8 +51,6 @@ It is a type of Random Access Memory(RAM) that uses latching circuit[^3](flip fl
 
 - If a 1 is created in one side, then automatically , a 0 is generated at other side due to inverters.
 - If access transistors are off, then the cell holds the value
-
-
 
 #### SRAM Read Write Operation
 

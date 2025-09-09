@@ -1,12 +1,14 @@
 ---
 id: Gnu Radio
 aliases: []
-tags: []
+tags:
+  - electronics
+  - softwares
+  - gnu_radio
 Created: "09-10-2024"
-cssclasses:
-  - wide-page
+cssclasses: 
+dg-publish: true
 ---
-
 # Gnu Radio
 
 - [[Old Notes]]
@@ -33,6 +35,7 @@ cssclasses:
 >>> (1,2,3,(2,3,4))[3][:]
 (2, 3, 4)
 >>>
+
 ```
 
 #### Types

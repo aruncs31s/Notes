@@ -1,7 +1,13 @@
 ---
-dg-publish: true 
+id: S_Report
+aliases: []
+tags:
+  - academics
+  - btech
+  - projects
+  - final_year_project
+dg-publish: true
 ---
-
 # Project 
 Our project is to implemnt a communication system using Software Defined Radio(SDR) in 5Ghz using the Adalm Pluto SDR  in **GNU Radio**
 

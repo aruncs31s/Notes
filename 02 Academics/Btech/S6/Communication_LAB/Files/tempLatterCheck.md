@@ -1,3 +1,14 @@
+---
+id: tempLatterCheck
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - communication_lab
+  - files
+dg-publish: true
+---
 clc; close all ; clear
 
 function [ x]  = pcm(y)
@@ -44,7 +55,6 @@ function [ x]  = pcm(y)
     snr1=['SNR:',num2str(r)];
     disp(snr1)
 
-
     l=[8,16,32,64,128];
     for i=1:length(l)
         r(i)=pcm(l(i));
@@ -56,5 +66,4 @@ function [ x]  = pcm(y)
     xlabel('L')
     ylabel('SNR')
 end
-
 

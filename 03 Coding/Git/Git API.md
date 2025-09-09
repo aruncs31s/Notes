@@ -1,3 +1,12 @@
+---
+id: Git_API
+aliases: []
+tags:
+  - coding
+  - git
+dg-publish: true
+---
+
 ```go
 package main
 

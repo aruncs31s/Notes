@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: esp32_non_linearexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 ## Text Elements
@@ -23,6 +23,7 @@ ESP32 ADC ^4McPxyP2
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBmbQAGGjoghH0EDihmbgBtcDBQMBKIEm4IACsAVmcAdgA1GAApAFEAM2IAIRhqgGUAMQAOAGllAEEAYQA5VJLIWEQK3FJS
 
@@ -105,5 +106,7 @@ doNUFLgnBnAFcZgBXAoD5xbw3A+JNYMCAFh9CBkxGHswkQ5QLmjeIdtYT8jDJKSDpNFGJUOBuEoZiMev
 xk6KZF+i2xcYoGCHj90hRSAO4sMXGLTFdIquQyNKD+LsgdikxYtE3yzyIp7g6xQYoiXGKK492BeW4psUBKMgpcKmafl0XhKoAkSgYDNPGHQywlGSpJRkCKWUTLh38hJR4oyDcZmJGmKxfksiUSheCQhIPMBjqWZL9ArQQQlHH4KIIU4ui5gNgDWBigs87+V4K2iTqiZASVeGRWMomX4AI8VCVknnVs5UMH2rbGRUYDYAGBpF5CAgOGnuHfAoaXwM
 
 4OZSBEh4elFS/QCkt/G3oIASyKxUyBIDayXcH2FMRtnMU5wughIKSKSEmCAgQVIKuUEGmUBoD94pIVoCODhVwqIAty/JUErxDZKdMnAV+RzkCBmBhAzAfOD8s+V9FU5H6INNGBTFcEc4WQXAJoGCCCRRZYSogKsLoX4E0x8illX/ADQ5YWVtyuwJUGzE5A+gaYuALpDYBCj+lNKulW7PDTgAgs1g0UIgLQDABswIAbMEAA==
+
 ```
+
 %%

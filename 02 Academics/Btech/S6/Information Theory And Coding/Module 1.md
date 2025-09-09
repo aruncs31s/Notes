@@ -1,3 +1,13 @@
+---
+id: Module_1
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - information_theory_and_coding
+dg-publish: true
+---
 # ITC Module 1
 Created : 2024-05-30 14:40
 
@@ -30,14 +40,11 @@ $$
 -> $\large r_s$ = Symbol Rate 
 -> $R$ = Information Rate
 
-
 #### Properties of Entropy 
 1. The entropy function is continuous in each and every independent variable $P_k$ in the interval $(0,1)$.  
 *Since p1 is continuous in the interval (0,1), logarithm of a continuous function is also continuous*.
 2.  $H(S) = 0$, if and only if the probability $P_k = 1$ for some k and the remaining probabilities in the set are all zero; this lower bound on entropy corresponds to no uncertainty.  
 3. $H(S) = \log_2K$, if and only if $P_k = \large{1\over K}$ for all k (i.e., all the symbols in the alphabet S are equiprobable); this upper bound on entropy ==corresponds to maximum uncertainty.==
-
-
 
 ## References
 1. 

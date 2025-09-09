@@ -1,9 +1,17 @@
 ---
+id: Teams
+aliases: []
+tags:
+  - startups
+  - es-gcek
+  - teams
 dg-publish: true
 ---
 # Teams 
+
 ```sql
 TOTAL MEMBERS: 10
+
 ```
 
 >[!TODO]+ **Working Members**
@@ -60,7 +68,9 @@ Designers: 2
 Developers: 4
 Testers: 2
 Refactorers : 1 
+
 ```
+
 [Whatsapp Group Link](https://chat.whatsapp.com/Ga3031FhGwwFcBlmVDQV36)
 
 | Name                                                                                     | Role       | Status | Contributions |
@@ -86,6 +96,7 @@ Designers: 2
 Developers: 2
 Testers: 2
 Refactorers : 0 
+
 ```
 
 | Name                                                                                     | Role               | Status | Contributions |
@@ -98,13 +109,13 @@ Refactorers : 0
 ✅ -> Currently Done any Contribution 
 ❌ -> Currently Has not done any Contribution
 
-
 ##  [Hardware Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/hardware-team)
 
 ```sql
 MEMBERS: 7
 Designer: 3
 Builder: 4
+
 ```
 
 | Name                                                                                     | Role     | Status | Contributions |
@@ -123,7 +134,6 @@ Builder: 4
 
 ## [Software Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/software)
 
-
 | Name                                                                                     | Role                 | Status |
 | ---------------------------------------------------------------------------------------- | -------------------- | ------ |
 | [Harikesh O P](https://github.com/orgs/Embedded-Systems-GCEK/people/HarikeshopGCEK)      | Designer , Developer | ✅      |
@@ -141,8 +151,8 @@ Designers: 3
 Developers: 6
 Refactorers : -
 Nill : 1
-```
 
+```
 
 | Name                                                                                          | Role                 | Status | Contributions |
 | --------------------------------------------------------------------------------------------- | -------------------- | ------ | ------------- |

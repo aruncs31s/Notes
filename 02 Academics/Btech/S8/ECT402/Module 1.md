@@ -1,3 +1,13 @@
+---
+id: Module_1
+aliases: []
+tags:
+  - academics
+  - btech
+  - s8
+  - ect402
+dg-publish: true
+---
 # Module 1
  - **Introduction to Wireless Communication Systems**
 - [x] Generations: 2G, 3G, 4G, 5G. ✅ 2025-04-18
@@ -14,14 +24,15 @@
 - [ ] improving coverage and capacity – cell splitting,
 - [ ] sectoring, microcells.
 
-
 ## Introduction
 - At their core, these systems use electromagnetic waves—radio, microwave, sometimes even infrared or millimeter waves—to carry signals across space without needing a physical connection.
 
 ```mermaid
 graph LR 
 Transmitter --> Medium --> Receiver
+
 ```
+
 - A transmitter takes your information (`voice`, `text`, `video`), converts it into an electrical signal, **and modulates it onto a carrier wave** (a high-frequency signal suitable for transmission).
 - That carrier rides through the wireless medium—air, vacuum, sometimes even water.
 - A receiver picks it up, demodulates it, and extracts the *original information*.
@@ -40,7 +51,9 @@ timeline
 	2010 : 4G
 	2020 : 5G
 	2030 : 6G
+
 ```
+
 ```mermaid
 mindmap
 	root((Generations))
@@ -81,8 +94,8 @@ mindmap
 				OFDM/BDMA
 		
 			
-```
 
+```
 
 - [[1G]]
 - [[2G]]
@@ -97,12 +110,10 @@ from #generations
 
 ```
 
-
 ## WLAN
 - within an area of building/school etc
 - 2.4GHz Band
 - the `phy` and `MAC` layer is specified by the IEEE802.11 standard
-
 
 | Wi-Fi Standards Evolution | Standard | Max Speed   | Frequency | Year Introduced |
 | ------------------------- | -------- | ----------- | --------- | --------------- |
@@ -130,25 +141,21 @@ from #generations
 - Based on IEEE 802.16 
 - 
 
-
 ### Wireless Spectrum allocation, Standards.
 
 ![](https://cdn.britannica.com/76/276-050-7BFF196F/position-light-electromagnetic-spectrum-range-right.jpg)
 
-
-
-
-
 ## The Cellular Concept
 - It replaces the single big transmitter (high  power) transmitter with many low power transmitter(cells) 
-
 
 ### Making Call
 
 ```mermaid
 graph LR
 A[Mobile] & AB[Mobile] & ABB[Mobile] --> B(Base Transceiver Station) --> C[MSC] --> D[Mobile] & DD[Mobile] & DDD[Mobile]
+
 ```
+
 - MSC -> mobile switching center , mobile telecommunication switching center
 - Base Transceiver
 ### Frequency Reuse (Frequency Planning)
@@ -168,8 +175,8 @@ A hard handoff is essentially a “break before make” connection.
 Q.  how does fading occur , derive the expression for doplar shift
  Fading refers to the variation in signal strength over time or space due to various interference effects
  
+
 ## Multiple Access
 *It is the application of multiplexing*
 1. [[FDMA]]
-
 

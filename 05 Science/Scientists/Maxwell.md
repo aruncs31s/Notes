@@ -1,5 +1,9 @@
 ---
-aliases: 
+id: Maxwell
+aliases: []
+tags:
+  - science
+  - scientists
 Date: 28-10-2024
 dg-publish: true
 ---
@@ -39,5 +43,4 @@ Where
 ### $\nabla \cdot B = 0$
 - It says that [[Divergence]] of a magnetic field is zero
 There are couple of things that can get from this equation like , there is no ==source== or ==sink== in magnetic field . Also there is no magnet with ==monopole==, ie if we cut a magnet in half we will get a new magnet with north and south pole 
-
 

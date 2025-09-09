@@ -1,8 +1,17 @@
 ---
-aliases: 
+id: FFT_in_Python
+aliases: []
+tags:
+  - academics
+  - btech
+  - projects
+  - final_year_project
+  - pysdr___sdr_and_dsp_using_python
 Date: 03-11-2024
+dg-publish: true
 ---
 # FFT in Python
+
 ```python
 import numpy as np
 
@@ -16,6 +25,7 @@ S_phase = np.angle(S)
 plt.plot(t, S_mag, ".-")
 plt.plot(t, S_phase, ".-")
 plt.show()
+
 ```
 
 [Source ](https://pysdr.org/content/frequency_domain.html)
@@ -38,6 +48,7 @@ plt.plot(f, S_mag,'.-')
 plt.figure(1)
 plt.plot(f, S_phase,'.-')
 plt.show()
+
 ```
 
 ## Windowing
@@ -53,9 +64,9 @@ Windowing is used to avoid sudden transition in first and last samples and which
 
 ![[windows.png]]
 
-
 ```python
 s = s * np.hamming(100)
+
 ```
 
 ## FFT Sizing 
@@ -66,8 +77,8 @@ s = s * np.hamming(100)
 - Freq over time plot 
 - shown by spectrum analyzer 
 
-
 ## FFT Implementation
+
 ```mermaid
 flowchart TD
 A[x0]
@@ -83,11 +94,12 @@ A --> S1
 B --> WN1 --> S1 
 S1-->Y1 
 
-
 A --> S2
 B  --> WN2 --> S2 
 S2-->Y2
+
 ```
+
 Where **x0,x1** are the inputs and **y0,y1** are the outputs and $\large W_{N}^k = e^{{j 2 \pi k }\over N}$  --> Twiddle Factor
 
 $$
@@ -96,6 +108,5 @@ y_{0} &=x_{0} + x_{1} W_{N}^k \\ \tag{1}
 y_{1} &= x_{0} 0- x_{1} W_{N}^k 
 \end{align}
 $$
-
 
 ![](https://pysdr.org/_images/butterfly2.svg)

@@ -1,10 +1,16 @@
 ---
-cssclasses:
-  - wide-page
-aliases: 
-tags: 
+id: ESP32_Web_Programming
+aliases: []
+tags:
+  - electronics
+  - embedded_systems
+  - micro_controllers
+  - espressif
+  - esp32
+cssclasses: 
 Created: 25-08-2024
-Status:
+Status: 
+dg-publish: true
 ---
 # ESP32 Web Programming
 
@@ -26,6 +32,8 @@ To fix this we use **bi-directional capabilities of `WebSocket`** to build a res
 	1. `WiFi.h` 
 	2. AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
+
 ```
+
 2. Connect to wifi [[WiFi Programming#Connecting to WiFi|Using This]]
 3. 

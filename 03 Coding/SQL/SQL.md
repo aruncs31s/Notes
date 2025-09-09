@@ -1,3 +1,11 @@
+---
+id: SQL
+aliases: []
+tags:
+  - coding
+  - sql
+dg-publish: true
+---
 # SQL 
 
 ### JOINs
@@ -36,9 +44,9 @@ $$
 Y = A \cup B
 $$
 
-
 ```sql
 SELECT * FROM sakila.film_actor;
+
 ```
 
 > [!info] What this query does:
@@ -48,6 +56,7 @@ SELECT * FROM sakila.film_actor;
 
 > [!example] Sample Output Structure
 > ```
+
 > actor_id | film_id | last_update
 > ---------|---------|------------
 > 1        | 1       | 2006-02-15 05:05:03
@@ -76,6 +85,7 @@ SELECT f.title, a.first_name, a.last_name
 FROM sakila.film f
 RIGHT JOIN sakila.film_actor fa ON f.film_id = fa.film_id
 RIGHT JOIN sakila.actor a ON fa.actor_id = a.actor_id;
+
 ```
 
 > [!tip] Key Points
@@ -121,10 +131,12 @@ SELECT COUNT(*) FROM Brands;
 
 -- Select distinct brand names (if duplicates exist)
 SELECT DISTINCT brand_name FROM Brands;
+
 ```
 
 > [!example] Sample Output
 > ```
+
 > brand_id | brand_name
 > ---------|------------
 > 1        | Nike
@@ -155,6 +167,7 @@ UPDATE Brands SET brand_name = 'New Brand Name' WHERE brand_name = 'Old Brand';
 -- DELETE
 DELETE FROM Brands WHERE brand_id = 1;
 DELETE FROM Brands WHERE brand_name = 'Puma';
+
 ```
 
 ### Common SQL Query Issues
@@ -195,8 +208,10 @@ DELETE FROM Brands WHERE brand_name = 'Puma';
 > [!info] Converting SQL queries to GORM (Go)
 
 **SQL Query:**
+
 ```sql
 SELECT * FROM Brands WHERE brand_id = 1;
+
 ```
 
 > [!bug] Incorrect GORM Syntax
@@ -266,6 +281,7 @@ SELECT * FROM Brands WHERE brand_id = 1;
 
 > [!bug] Common GORM Scan Error
 > ```
+
 > sql: Scan error on column index 1, name "brand_name": unsupported Scan, 
 > storing driver.Value type string into type *[50]string
 > ```
@@ -345,7 +361,9 @@ SELECT * FROM Brands WHERE brand_id = 1;
 
 ```sql
 siteid = :defsite
+
 ```
+
 which means `site.siteid = maxuser.defsite` 
 
 #### One-To-One
@@ -363,6 +381,7 @@ CREATE TABLE user_profiles (
     user_id INT UNIQUE,
     profile_data VARCHAR(255),
     FOREIGN KEY (user_id) REFERENCES users(user_id));
+
 ```
 
 ```sql
@@ -377,7 +396,9 @@ type UserProfile struct {
     UserID      int    `gorm:"uniqueIndex;column:user_id"`
     ProfileData string `gorm:"size:255"`
 }
+
 ```
+
 ### Database Relationship Symbols (ERD Notation)
 
 > [!info] Entity Relationship Diagram (ERD) Symbols
@@ -394,6 +415,7 @@ type UserProfile struct {
 
 > [!example] Reading the Symbols
 > ```
+
 > Table A -|-- Table B    (One-to-One)
 > Table A -|< Table B     (One-to-Many: A has many B)
 > Table A >|< Table B     (Many-to-Many)
@@ -408,11 +430,14 @@ type UserProfile struct {
 > - `||` represents "one or more" (mandatory)
 
 **Examples:**
+
 ```
+
 User -|< Order          # One User can have Many Orders
 Order >|- Product       # Many Orders can have One Product
 Student >|< Course      # Many Students can take Many Courses
 Person -|-- Passport    # One Person has exactly One Passport
+
 ```
 
 > [!tip] How to Read Relationships
@@ -450,8 +475,6 @@ Example: `Customer -|< Order` means "One Customer can have Many Orders"
 ![alt text](image-1.png)
 
 Which means that *Every Customer_Ownership must be a customer* 
-
-
 
 ##### Key Relationships
 

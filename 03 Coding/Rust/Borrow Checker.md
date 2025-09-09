@@ -1,3 +1,11 @@
+---
+id: Borrow_Checker
+aliases: []
+tags:
+  - coding
+  - rust
+dg-publish: true
+---
 # Borrow Checker
 
 ![[Pasted image 20240615024721.png]]

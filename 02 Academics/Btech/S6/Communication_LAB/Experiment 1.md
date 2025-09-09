@@ -1,9 +1,16 @@
+---
+id: Experiment_1
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - communication_lab
+dg-publish: true
+---
 # FM Modulation and Demodulation Using IC 4046B
 
-
 ## Contents
-
-
 
 #### 4046B 
 It is a PLL IC 
@@ -29,8 +36,6 @@ Pin#16 = VDD (+supply voltage)
 
 ### Circuit Diagram
 ![[Drawing 2024-07-03 12.59.32.excalidraw]]
-
-
 
 ## References 
 - [PLL IC](https://www.homemade-circuits.com/ic-4046-datasheet-pinout-working-application-circuit/)

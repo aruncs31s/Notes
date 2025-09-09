@@ -1,17 +1,18 @@
 ---
-
-excalidraw-plugin: parsed
+id: servosexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 
 ## Text Elements
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBGAAYEmjoghH0EDihmbgBtcDBQMBKIEm4IIWYAZQARADYASSSAJWrCACtiZQAheuUAGXqABQB2VJLIWEQKwOwojmVgidLM
 
@@ -32,5 +33,7 @@ rAKqHtZE6PsRkfeB8j74BPoEmJni9Eby3jvKJdi0kZEgRfK+H874P2iWY0RUR8KUR0WwCgFlcDB2AZAH
 o4RFVACMegciRqQZQooAAUMIdyF0JQS6gNJdgAEpNQIOUPmNUswcW4HxcJUlPBmW8DZckLYlL7nuNSZvDKCAwnP04M9Vu2pmoIOLKCxYVz6xZBhXClBiLSjYCIICtANdUQcEDtSTVztYGgV1ddBAPLSh2A6AgeYNRtVwAhVC7VsLpqT2VRHeYhBGCLwufgWVZ9RmG3SG61aqIBH0gMCMmYccOoDzHk6hFTUDDVADcKm+zqQKhAvm6j1XqW74HwWA
 
 OG2pdThAoS2EALYgA===
+
 ```
+
 %%

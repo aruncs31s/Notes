@@ -1,9 +1,14 @@
 ---
+id: Version_1
+aliases: []
+tags:
+  - projects
+  - electronics
+  - kannur_solar_battery_monitor
+  - versions
 dg-publish: true
-aliases:
 Date: 24-10-2024
 ---
-
 # Version 1
 
 - [ ] change to h2
@@ -37,9 +42,7 @@ Date: 24-10-2024
 
 ^dc412a
 
-
 </br>
-
 
 ## Module Wise Cost
 

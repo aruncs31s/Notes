@@ -1,9 +1,13 @@
 ---
-cssclasses:
-  - wide-page
+id: PID_Control
+aliases: []
+tags:
+  - electronics
+  - control_system
+cssclasses: 
 Date: 2024-12-10
+dg-publish: true
 ---
-
 # PID Control 
 
 *Proportional Integral Derivative(PID) Controller is a [[Feedback]] based control mechanism*
@@ -30,7 +34,6 @@ In **PID** control
 
 ## Working
 
-
 The PID controller automatically compares the desired target value (**setpoint or SP**) with the actual value of the system (**process variable or PV**). The difference between these two values is called the error value, denoted as $e(t)$[^1]
 
 [^1]:https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_controller
@@ -42,8 +45,6 @@ The PID controller automatically compares the desired target value (**setpoint o
 
 In **Proportional Control** the control signal will rise to its maximum when an error has been occurred and try to compensate it . This is a continues process where error checking always happen and in some situations the control signal wont be able to correct the output 
 
-
-
 ![[ball experiment.excalidraw]]
 
 > In the example of balancing the ball it is observed that 
@@ -51,7 +52,4 @@ In **Proportional Control** the control signal will rise to its maximum when an 
   
 ## Source 
 Image : https://en.wikipedia.org/wiki/File:PID_en.svg
-
-
-
 

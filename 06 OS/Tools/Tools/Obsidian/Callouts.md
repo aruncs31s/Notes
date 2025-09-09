@@ -1,8 +1,12 @@
 ---
-aliases:
-  - obsidian_callouts
+id: Callouts
+aliases: []
+tags:
+  - os
+  - tools
+  - obsidian
+dg-publish: true
 ---
-
 # Callouts
 
 > [!tip] A tip

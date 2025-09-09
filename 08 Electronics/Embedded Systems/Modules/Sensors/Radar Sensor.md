@@ -1,3 +1,13 @@
+---
+id: Radar_Sensor
+aliases: []
+tags:
+  - electronics
+  - embedded_systems
+  - modules
+  - sensors
+dg-publish: true
+---
 # RCWL-0516 Radar Sensor
 ### Introduction
 - The [PIR sensor](https://lastminuteengineers.com/pir-sensor-arduino-tutorial/) , because they only detect movement from living things, they will generate fewer false alarms.
@@ -12,8 +22,6 @@
 5. Transmission Power   `30mW (max.)`
 6. Output Timing                `~ 2s`
 7. Regulated Output         `3.3V, 100mA`
-
-
 
 ### Pin Diagram
 ![](https://www.electronicwings.com/storage/PlatformSection/TopicContent/497/description/RCWL-0516%20Pin%20Diagram.jpg)
@@ -60,7 +68,9 @@ void loop() {
     }
   }
 }
+
 ```
+
 - From [[#References| 1]]
 
 ## References

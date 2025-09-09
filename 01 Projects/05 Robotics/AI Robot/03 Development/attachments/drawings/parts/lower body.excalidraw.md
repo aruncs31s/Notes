@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: lower_bodyexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 
@@ -179,6 +179,7 @@ e2e43d8cd4e7366dc6a421a85ab3e52f54a94284: $$\color{blue} \begin{bmatrix}
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBGAAYEmjoghH0EDihmbgBtcDBQMBKIEm4IAEkAK3oeAEUAUUJGo0weCmVSAGEAEQA2OAAxZQApVJLIWEQKwOwojmVgidLM
 
@@ -971,5 +972,7 @@ XWX1NwpRiheSdwtRDcYLJjKhg4KL5ooNIxaK8o1l9CKKljMWCkIKjgOoiGkA4AFqIqIBeIBY0aAAMQEy
 it5jaWHbiqeIz6N7rQeK1/APofctRIBWAQMAHonFAO6Mt4Am4WdwKClnQasdp4sFAa0BWTCxcndQgijvNXgI7gHPs5dNGAi88BgACAGmcCcoOkBomJ4hB4rLi2Mo76SniroASACPDNuL74oX/XiAjfzywCDASAGr4CWBGgBWWPE4UPA/ihbw84AbAcUAC4CP0ZUAAAApR4GoAQElbgBgS6BK0oAAASnNAORZYAw0kA9AwEtwASBKOMD+iZMAcEvg
 
 SoLAkEs7ICuLo4uDAauKWFk4AYsAB4v4oORYgICWWJfw84CyAfTRggCFgWhc0shaQTiKVlh9iyKKLZBkWKrw0WyISuwBqgFwIBJkVll7Yf4hQSF/i5hKKxBpAeYBN83/kZdN4/CPiiKgwgGCAWRLdUBmWZusDAHHi+kAFhNeoAwBReVUS8hKibh/NWsBZEsYAAhJxQGFQGyBwADVgBExwgHlgHJNkICAAA==
+
 ```
+
 %%

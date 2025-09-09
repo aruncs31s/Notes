@@ -1,9 +1,13 @@
 ---
 id: MFE Module 1
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - s6
+  - management_for_engineers
+dg-publish: true
 ---
-
 # MFE Module 1
 
 Created : 2024-06-09 21:42

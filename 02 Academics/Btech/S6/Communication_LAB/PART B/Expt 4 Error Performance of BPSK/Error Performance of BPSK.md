@@ -1,8 +1,14 @@
 ---
+id: Error_Performance_of_BPSK
+aliases: []
 tags:
-  - modulationSchemes
-aliases:
-  - bpsk
+  - academics
+  - btech
+  - s6
+  - communication_lab
+  - part_b
+  - expt_4_error_performance_of_bpsk
+dg-publish: true
 ---
 # Error Performance of BPSK
 - [[pySDR#^c938fb|Using Python]]
@@ -40,20 +46,18 @@ $$S_2 (t) = √Eb Ø1 (t) \ \ 0≤ t< Tb$$
 > Where $S_1$ and $S_2$ represents transmitted signals corresponding to bit 1 and bit 0, respectively.
 > The signal space is 1 dimensional ($N=1$) having two message points ($M = 2$)*
 
-
 ![[BPSK Block diagram]]
-
 
 ##### BPSK Reciever
 - The recieved *BPSK* signal is applied to a *correlator*[^2] which is also supplied with a locally generated reference signal $\phi_1 (t)$. 
 - The correlated output is then compared with *threshold* voltage
+
 ```c
 recieved_Signal = (x>0)? 1 : 0
+
 ```
 
 [^2]: A *correlator* is a signal processing device that measures the similarity between two signals
-
-
 
 ---
 
@@ -70,13 +74,13 @@ below the threshold 0.
 6. **Plot The wave** Plot the simulated BER against the SNR values and compare it with the theoretical BER curve
 for BPSK over AWGN
 
-
 - Modulation : bpskMod()
 - Demodulation : bpskDemod()
 
 ---
 #### Code 
 #wholeCode
+
 ```python
 N=10000000;
 EbN0dB = -6:2:10;
@@ -116,26 +120,27 @@ grid on;
 
 [[Using Python#^56f9ed|Above Code Using Python]]
 
-
-
 #### Explenation / Setps
 
 1. 
 > ```matlab
 >N=1000000
 >```
+
 >Is used to Specify the number signals which are going to be generated
 
 2.
 > ```matlab
 > EbN0dB = -6:2:10;
 >```
+
 >This value reperesents the *signal-to-noise* ratio in *dB*[^3] and the value is from -6 to 10 with a step size of 2 
 3. 
 >```matlab
 >data=randn(1,N)>=0;
 > bpskModulated = 2*data-1;
 >```
+
 >-> [[Using Python#^7126c5]]
 >First line generates random bit which has vlues 0 and 1
 >Then the second line maps `1` to `1` and `0` to `-1`
@@ -144,10 +149,12 @@ grid on;
 
 4. 
 >```
+
   > M = 2;
   > Rm=log2(M);
   > Rc=1; 
 >```
+
 >Here `M` represents the number of symbols in this modulation scheme(BPSK) 
 >`Rm` Represents the code rate and in this case $2^1 = 2$  -> $\log_2(2) = 1$ -> $R_m = 1$ 
 >
@@ -157,6 +164,7 @@ grid on;
 > BER = zeros(1,length(EbN0dB));
 >index=1
 >```
+
 > `BER`([[Bit error rate]]) is used to store the value of *Bit error rates*
 > Index is set to 1 to start he computation from index 1 due to matlab uses 1 as starting index
 
@@ -164,37 +172,44 @@ grid on;
 > ```matlab
 > for k=EbN0dB,
 > ```
+
 > This `for` iterates through each value in the `EbN0dB`
 
 7. 
  >```matlab
  > EbN0 = 10.^(k/10);
  > ```
+
  > This converts `dB` to linear value 
  
  8.
 >```
+
 > noiseSigma = sqrt(1./(2*Rm*Rc*EbN0)); 
 > noise = noiseSigma*randn(1,length(bpskModulated));
 >```
+
 >Here the standard deviation of the noise is calculated based on the current `EbN0` value which is now in linear.Then Gaussian noise with this standard deviation is then generated
 
 9. **Calculating the received signal**
 >```matlab
 >received = bpskModulated + noise;
 >```
+
 >Calculates the received signal by taking the sum of both `bpskModulated` and `noise`
 
 10. **Demodulation**
 >```matlab
 >estimatedBits=(received>=0);
 >```
+
 >in this $estimatedBit = (received>=0)?\  1\  :\  0$ 
 
 11. **Calculate the Bit Error Rate**
 > ```matlab
 > BER(index) = sum(xor(data,estimatedBits))/length(data);
 >```
+
 >This calculates the Bit Error Rate (BER) by comparing the original data sequence (`data`) with the estimated data sequence (`estimatedBits`) and counting the number of bit errors
 >And the result is normalized by dividing by the length of the data sequence.
 >By expanding this line 
@@ -209,6 +224,7 @@ grid on;
 >index=index+1;
 > end
 >```
+
 >This line increments the index and that causes the the index to point the next element in the *BER* 
 
 13. **Plotting The Graph**
@@ -227,21 +243,19 @@ grid on;
 > ```
 
 ```
-theoreticalBER = 0.5 * erfc(sqrt(10.^(EbN0dB / 10)));
-```
-*This calculates the theoretical BER for BPSK using the complementary error function*
 
+theoreticalBER = 0.5 * erfc(sqrt(10.^(EbN0dB / 10)));
+
+```
+
+*This calculates the theoretical BER for BPSK using the complementary error function*
 
 [^3]: 
 [^4]: XOR returns `1` if the corresponding bits are different and `0` if they are the same.
 
-
 #output
 
 ![[expt1_graph.png]]
-
-
-
 
 #### Class Notes
 
@@ -267,6 +281,7 @@ data = randn(1,N)>=0 ;
 
 ```Matlab
 bpskModulated = 2*data-1;
+
 ```
 
 2. Define channel add noise to it
@@ -275,8 +290,8 @@ bpskModulated = 2*data-1;
 ```matlab
 noiseSigma = sqrt(1./(2*Rm*Rc*EbN0))
 noise = noiseSigma * randn(2,length(bpskModulated)) % length... = 10
-```
 
+```
 
  
 3. Identify The massege
@@ -284,11 +299,14 @@ noise = noiseSigma * randn(2,length(bpskModulated)) % length... = 10
 
 ```matlab
 recieved  = bpskModulated + noise
+
 ```
 
 - Threshold detector
+
 ```matlab
 estimatedBits = (received>=0)
+
 ```
 
 - Detect No of Error Bits

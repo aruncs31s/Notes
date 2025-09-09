@@ -1,10 +1,13 @@
 ---
 id: Digital Modulation
 aliases: []
-tags: []
+tags:
+  - electronics
+  - communication
+  - wireless
 Date: "03-11-2024"
+dg-publish: true
 ---
-
 # Digital Modulation
 - [[OFDM]]
 - [ ] ASK,

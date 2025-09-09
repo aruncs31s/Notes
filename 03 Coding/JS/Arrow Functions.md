@@ -1,7 +1,17 @@
+---
+id: Arrow_Functions
+aliases: []
+tags:
+  - coding
+  - js
+dg-publish: true
+---
 # Arrow Functions
 - [[Immediately invoked functions]]
+
 ```js
 (params) => {expressions}
+
 ```
 
 ```js
@@ -15,4 +25,5 @@ let sum = numbers.reduce((a, b) => a + b);
 return sum / numbers.length;
 };
 console.log(average(arr));
+
 ```

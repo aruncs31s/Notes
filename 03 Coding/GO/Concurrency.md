@@ -1,16 +1,19 @@
 ---
 id: Concurrency
 aliases: []
-tags: []
-cssclasses:
-  - wide-page
+tags:
+  - coding
+  - go
+cssclasses: 
+dg-publish: true
 ---
-
 # Concurrency
 
 ```go
 go doSomething()
+
 ```
+
 - it spawns new [[goroutine]]
 
 ## Channels
@@ -37,8 +40,8 @@ func main() {
 
 	fmt.Println(value)
 }
-```
 
+```
 
 ```go
 package main
@@ -63,17 +66,20 @@ func main() {
 
 	fmt.Println(value)
 }
+
 ```
+
 ^prog1
 
 ```
+
 Before Passing 3 
 After passing 1 
 Before start 1 
 Send 4 
 42
-```
 
+```
 
 ```go
 
@@ -99,17 +105,19 @@ func main() {
 
 	fmt.Println(value)
 }
+
 ```
+
 ^prog2
 
-
 ```
+
 Before Passing
 Before start
 After passing
 42
-```
 
+```
 
 > [!multi-column]
 > 
@@ -126,16 +134,19 @@ After passing
 > > [!blank|float-left]
 >> p_1
 >> ```
+
 >>Before Passing
 >>After passing
 >>Before start
 >>Send
 >>42
 >>```
+
 > 
 >> [!blank|float-right]
 >> p_2
 >> ```
+
 >> Before Passing
 >> Before start
 >> Send
@@ -155,7 +166,6 @@ After passing
 >> graph TB 
 >> channel_creation --> goroutine_launch --> race --> 
 >>```
-
 
 - [ ] fix this latter 
 
@@ -203,9 +213,6 @@ After passing
      * fmt.Println("Send")
          * OUTPUT: Send
  * Both goroutines have now finished their work, and the program exits.
-
-
-
 
 #### Channel Close 
 

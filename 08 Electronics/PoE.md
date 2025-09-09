@@ -1,9 +1,10 @@
 ---
 id: PoE
 aliases: []
-tags: []
+tags:
+  - electronics
+dg-publish: true
 ---
-
 # PoE
 
 ## Prerequisites

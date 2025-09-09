@@ -1,6 +1,12 @@
 ---
-aliases: 
+id: OFDM
+aliases: []
+tags:
+  - electronics
+  - communication
+  - wireless
 Date: "17-03-25"
+dg-publish: true
 ---
 # OFDM
 ### Cyclic Prefics

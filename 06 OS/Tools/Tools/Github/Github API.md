@@ -1,4 +1,14 @@
+---
+id: Github_API
+aliases: []
+tags:
+  - os
+  - tools
+  - github
+dg-publish: true
+---
 # GITHUB API
+
 ```yaml
 on:
   workflow_dispatch:

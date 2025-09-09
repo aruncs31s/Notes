@@ -1,10 +1,14 @@
 ---
 id: Web Programming
-aliases: 
+aliases: []
 tags:
-  - "#esp32"
-  - "#code"
-  - "#arduinoide"
+  - electronics
+  - embedded_systems
+  - micro_controllers
+  - espressif
+  - esp32
+  - programming
+dg-publish: true
 ---
 # Web Programming
 ## Sending Post
@@ -60,4 +64,5 @@ void loop() {
 
   delay(30000);
 }
+
 ```

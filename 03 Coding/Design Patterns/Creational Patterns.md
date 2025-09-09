@@ -1,9 +1,9 @@
 ---
+id: Creational_Patterns
+aliases: []
 tags:
-  - "#programming"
-  - software_design
-  - design_pattern
-  - creational_pattern
+  - coding
+  - design_patterns
 dg-publish: true
 ---
 # Creational Patterns
@@ -20,6 +20,7 @@ dg-publish: true
 - **Singleton**: Ensure a class has only one instance with global access
 
 #### Code Example - Factory Pattern
+
 ```python
 class Animal:
     def speak(self):
@@ -42,4 +43,5 @@ def animal_factory(animal_type):
 # Usage
 pet = animal_factory("dog")
 print(pet.speak())  # Output: Woof!
+
 ```

@@ -1,14 +1,21 @@
 ---
+id: HDLC
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - embedded_systems
+  - module_2
 type: synchronous
+dg-publish: true
 ---
-
 # HLDC (High Level Data Link Control)
 
 - [Transfer Modes](#transfer%20modes)
 - [Types of HDLC Frames](#types%20of%20hdlc%20frames)
 - [Structure](#structure)
 - 
-
 
 High-level Data Link Control (HDLC) is a group of communication protocols of the **data link layer** for transmitting data between network points or nodes. Since it is a **data link protocol**, ==data is organized into frames==. A frame is transmitted via the network to the destination that ==verifies its successful arrival==. It is a bit - oriented protocol that is applicable for ==both point - to - point and multipoint communications.==
 - Establish and maintain reliable communication between two devices
@@ -32,7 +39,6 @@ Supports 2 types of transfer modes = Normal Response Mode, asynchronous balanced
     
 - **U-frame** − U-frames or Un-numbered frames are used for myriad miscellaneous functions, like link management. It may contain an information field, if required. The first two bits of control field of U-frame is 11.
 ![](https://www.tutorialspoint.com/assets/questions/media/15399/hdlc_frame2.jpg)
-
 
 #### Structure
 #arch
@@ -59,7 +65,6 @@ Supports 2 types of transfer modes = Normal Response Mode, asynchronous balanced
     - **Asynchronous Response Mode (ARM)**: Allows secondary stations to initiate communication with the primary station.
     - **Asynchronous Balanced Mode (ABM)**: Suitable for multipoint communication, where multiple stations can communicate with each other in a peer-to-peer fashion.
 7. **Error Detection and Control**: HDLC incorporates mechanisms for error detection and control, including CRC in the trailer for detecting transmission errors and acknowledgment and retransmission mechanisms for ensuring reliable data delivery
-
 
 ## References
 1. https://www.tutorialspoint.com/high-level-data-link-control-hdlc

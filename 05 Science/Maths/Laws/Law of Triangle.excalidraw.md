@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: Law_of_Triangleexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
-
 
 # Excalidraw Data
 ## Text Elements
@@ -30,6 +30,7 @@ $$
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebTieGjoghH0EDihmbgBtcDBQMELoeHF0Qn1opH4ixhZ2LjQATgA2asha1k4AOU4xbgBGAHZBgGYAVn6eHkGxtohCDmIsbghc
 
@@ -90,5 +91,7 @@ BNbjhk6a6Hq67l89G5LwAl5Vg4A4AfgEVAM8hoBQw0gVgBxSBFxqgGBCAEAKAJZ13vdN3Gnt2ihsARBy
 KOeqeuf/u2xjTqLKEwy2VsAIRPgxdPIlzu4Ypn0Jg9FgptkPSTIDejR8AABNKzDZV6SQoKUcHuZMS3SAIwNgAwM7g/AgENrAsrVUIqoqgxsFBX5n1IOnoCpAvEVseX64EgKD0oPbOebjt7nclRCWI0MSM0fURoYv4vuYoyuYf15QCsMqc0NsHYev+v8viAZTmPvZ7SVnplzgPqn5Y8QIMwYQZgfzbP9P1lCZz5f1jibjijFRdIUu4ITcGTljogOA
 
 bgJfpsXjq76T0gEN8kX1sNtfnfhAVvuwB4GHTIL4XjuAKWNgJYLX+fyY8AJRCZx6HMYATCEATCIAA===
+
 ```
+
 %%

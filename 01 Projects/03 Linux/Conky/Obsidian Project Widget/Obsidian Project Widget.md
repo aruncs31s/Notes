@@ -1,13 +1,14 @@
 ---
 id: Obsidian Project Widget
-aliases: 
+aliases: []
 tags:
-  - "#project"
+  - projects
   - linux
-Status:
-  - Active
+  - conky
+  - obsidian_project_widget
+Status: 
+dg-publish: true
 ---
-
 # Obsidian Project Widget
 
 ## Features
@@ -16,7 +17,6 @@ Status:
 - [ ] categorize projects according to their status
 
 Status = {Done , Acticve , Dropped}
-
 
 ```python
 files = get_md_files(notes_dir)
@@ -32,9 +32,13 @@ Searching for `#project` in a file is will also select any file that uses `#proj
 
 So in order to do that ,
 1. extract a specific part
+
 ```
+
 ---
 // properties
 ---
+
 ```
+
 more specifically the properties of files. which start with `---` and ends with `---`

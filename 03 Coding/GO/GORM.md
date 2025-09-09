@@ -1,13 +1,12 @@
 ---
+id: GORM
+aliases: []
 tags:
+  - coding
   - go
-  - database
-  - framework
-  - relational
-cssclasses:
-  - wide-page
+cssclasses: 
+dg-publish: true
 ---
-
 # GORM
 - [[Using SOLID Principle]]
 - [[Relations]]
@@ -15,9 +14,11 @@ cssclasses:
 ```bash
 go get -u gorm.io/gorm
 go get -u gorm.io/driver/sqlite
+
 ```
 
 #sampleCode 
+
 ```go
 package main
 
@@ -59,6 +60,7 @@ func main() {
   // Delete - delete product
   err = gorm.G[Product](db).Where("id = ?", product.ID).Delete(ctx)
 }
+
 ```
 
 ```go
@@ -101,11 +103,10 @@ func main() {
   // Delete - delete product
   db.Delete(&product, 1)
 }
+
 ```
 
 ![alt text](image.png)
-
-
 
 ## Working with Brands Table
 
@@ -189,6 +190,7 @@ func main() {
   // Delete - With condition
   db.Where("brand_name = ?", "Puma").Delete(&Brand{})
 }
+
 ```
 
 > [!tip] GORM Tags Explained
@@ -225,9 +227,9 @@ func main() {
 > db.Limit(1).Find(&brands)
 > db.Find(&brands).Limit(1)
 > ```
+
 > They are both not same , the first one does the job but the second one dont find out why ?  
 > - [ ] Find why the second one is not working?
-
 
 #### Geting First One.
 
@@ -260,6 +262,7 @@ func main() {
 	db.Limit(1).Find(&brands)
 	fmt.Println(brands)
 }
+
 ```
 
 ## Checking if Records Exist
@@ -333,6 +336,7 @@ func recordExists(db *gorm.DB, condition string, args ...interface{}) bool {
 	db.Model(&Brands{}).Where(condition, args...).Count(&count)
 	return count > 0
 }
+
 ```
 
 > [!example] Why `db.Find(&brands).Limit(1)` doesn't work?
@@ -343,6 +347,7 @@ func recordExists(db *gorm.DB, condition string, args ...interface{}) bool {
 > // This properly limits the query  
 > db.Limit(1).Find(&brands)  // Limit is applied BEFORE Find executes
 > ```
+
 > 
 > **Reason**: GORM chain methods must be in the correct order. `Find()` executes the query immediately, so any methods after it are ignored.
 
@@ -359,10 +364,6 @@ func recordExists(db *gorm.DB, condition string, args ...interface{}) bool {
 > - Placing `Limit()` after `Find()`
 > - Ignoring other database errors besides "not found"
 
-
-
-
-
 ## Multiple IDs
 Extracted from [[Gin#^acd852]]
 
@@ -372,22 +373,26 @@ result := db.Find(&users, uintIDs)
 if result.Error != nil {  
 // Handle error  
 }
+
 ```
 
 Alternative
+
 ```go
 var users []User
 result := db.Where("id IN ?", uintIDs).Find(&users)
+
 ```
 
 ## Error Handling 
 
-
 ```
+
 ErrRecordNotFound
-```
-*Only For*  ->  `First`, `Last`, `Take`.
 
+```
+
+*Only For*  ->  `First`, `Last`, `Take`.
 
 ### Errors 
 
@@ -395,9 +400,8 @@ ErrRecordNotFound
 if db.RowsAffected == 0 && db.Statement.RaiseErrorOnNotFound && db.Error == nil {
 	db.AddError(ErrRecordNotFound)
 }
+
 ```
-
-
 
 ## Transactions 
 - First Check if the staff with `staff_id(string)` exists 

@@ -1,14 +1,16 @@
 ---
-aliases:
-  - cross-origin requests
+id: CORS
+aliases: []
+tags:
+  - coding
+  - web
+dg-publish: true
 ---
 # CORS
 **SOP**: Same Origin Policy is a security measure that prevents a web page from making requests to a different domain than the one that served the web page.
 **CORS**: Cross-Origin Resource Sharing is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served.
 
-
 - [ ] complete this https://youtu.be/E6jgEtj-UjI?si=CDk48ZjkkroJiMkg
-
 
 ### CORS in Express.js
 
@@ -26,8 +28,6 @@ app.listen(3000, () => {
 });
 
 ```
-
-
 
 ## CORS Headers
 

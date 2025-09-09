@@ -1,13 +1,13 @@
 ---
-dg-publish: true
 id: 11-04-25-Project
-aliases: 
+aliases: []
 tags:
-  - project
-  - website
+  - projects
+  - web_based
+  - gcek_iot_training_course
+dg-publish: true
 github: 
-cssclasses:
-  - wide-page
+cssclasses: 
 Status: Dropped
 ---
 # GCEK IOT Training Course
@@ -22,6 +22,7 @@ Status: Dropped
 > > LIST
 > > FROM outgoing([[]])
 > > ```
+
 > >
 > > ###### Sub Notes
 > >
@@ -29,6 +30,7 @@ Status: Dropped
 > > LIST
 > > WHERE contains(file.folder, this.file.folder) AND file.name != this.file.name
 > > ```
+
 >
 > > [!todo]+ Tasks
 > >

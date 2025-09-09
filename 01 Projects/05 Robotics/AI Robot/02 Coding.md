@@ -1,5 +1,10 @@
 ---
-aliases: 
+id: 02_Coding
+aliases: []
+tags:
+  - projects
+  - robotics
+  - ai_robot
 Date: 13-11-2024
 dg-publish: true
 ---
@@ -9,8 +14,8 @@ dg-publish: true
 ```tasks
 not done
 path includes 02 Coding.md 
-```
 
+```
 
 ## Libs
 >```dataview
@@ -18,13 +23,9 @@ path includes 02 Coding.md
 >from #c_lib and #ai_robot 
 >```
 
-
-
-
 - [[robo.h]]
 - [[robot-database.h]]
 - 
-
 
 ## Program Flow 
 Here is a quick program functional flow , from the microcontroller perspective 
@@ -32,6 +33,7 @@ Here is a quick program functional flow , from the microcontroller perspective
 2. Initializes the Servo Motors to previous position 
 3. Check if they are in their initial positions ?
 	 - Servo motors does not support checking of angle. So im gonna use a server for that.
+
 ```mermaid
 graph TB
 A[Initializes the Wifi] & AA[Initializes the Server Endpoints] --> Main_Thread
@@ -41,7 +43,6 @@ D[API End Points] --> Main_Thread
  ```
 
 - [ ] Complete the below 📅 2025-05-24 
-
 
 ```mermaid
 sequenceDiagram
@@ -64,8 +65,8 @@ sequenceDiagram
 	Flask API->>SQLite DB: Insert new robot
 	SQLite DB-->>Flask API: Confirm insertion
 	Flask API-->>ESP32: JSON response (201 Created)
-```
 
+```
 
 There are 3 main Hardware componets that will effect the programming 
 1. [[PCA9685]] -> For Driving the motor 
@@ -81,6 +82,7 @@ This is the PCA9685  driver #sampleCode  , here is its order
 >```cpp
 >Adafruit_PWMServoDriver board1 = Adafruit_PWMServoDriver(0x40); 
 >```
+
 >
 >```cpp
 >// Adafruit_PWMServoDriver.cpp
@@ -88,6 +90,7 @@ This is the PCA9685  driver #sampleCode  , here is its order
 >Adafruit_PWMServoDriver(const uint8_t addr);
 >Adafruit_PWMServoDriver(const uint8_t addr, TwoWire &i2c);
 >```
+
 >There are 3 defenitions 
 >
 >```cpp
@@ -99,10 +102,10 @@ This is the PCA9685  driver #sampleCode  , here is its order
 >	 *  @param  addr The 7-bit I2C address to locate this chip, default is 0x40
 >	 *  @param  i2c  A reference to a 'TwoWire' object that we'll use to communicate
 >```
+
 >
 2. Initialize the board 
 - [ ] Complete these steps 📅 2025-05-24  
-
 
 ## Servo 
 There is mainly x things
@@ -120,6 +123,7 @@ There is mainly x things
 >>#define SERVO_FREQ 50
 >>#define CONTROLLER_I2C_ADDR 0x41
 >>```
+
 >
 >>[!Abstract]- Why 
 >>
@@ -137,13 +141,12 @@ There is mainly x things
 ## Movements
  
 
-
 # Software
 Going to use [[platformio]] for development and [[C++|cpp]] as the programming language , [[vscode]] as the editor(ide). 
 
-
 ```cpp
 Adafruit_PWMServoDriver board1 = Adafruit_PWMServoDriver(CONTROLLER_I2C_ADDR);      
+
 ```
 
 ```cpp
@@ -163,4 +166,5 @@ Robo rl2(PIN_RL2, board1);
 Robo rl3(PIN_RL3, board1);
 Robo lf(PIN_LF, board1);
 Robo rf(PIN_RF, board1);
+
 ```

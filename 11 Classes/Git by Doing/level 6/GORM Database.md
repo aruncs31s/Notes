@@ -1,4 +1,12 @@
-
+---
+id: GORM_Database
+aliases: []
+tags:
+  - classes
+  - git_by_doing
+  - level_6
+dg-publish: true
+---
 # GORM Database 
 
 When adding `GetByUsername`
@@ -6,6 +14,7 @@ When adding `GetByUsername`
 
 **Repository pattern interface**
 ? To abstract the data access layer of an Application
+
 ```go
  type StudentsRepository interface {
         GetAll() ([]models.Students, error)
@@ -29,4 +38,5 @@ type StudentsRepository interface {
         Delete(id uint) error
       	GetByUsername(username string) (*models.Students, error)
  }
+
 ```

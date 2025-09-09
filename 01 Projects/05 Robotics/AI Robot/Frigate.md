@@ -1,11 +1,22 @@
+---
+id: Frigate
+aliases: []
+tags:
+  - projects
+  - robotics
+  - ai_robot
+dg-publish: true
+---
 ## Homeassistant Integration
 **requires** : MQTT , HACS 
+
 ```bash
 wget -O - https://get.hacs.xyz | bash -
-```
-
 
 ```
+
+```
+
 docker run -d \
   --name frigate \
   --restart=unless-stopped \
@@ -23,8 +34,10 @@ docker run -d \
   -p 8555:8555/tcp \
   -p 8555:8555/udp \
   ghcr.io/blakeblackshear/frigate:stable
+
 ```
 
 ```bash
 docker ps
+
 ```

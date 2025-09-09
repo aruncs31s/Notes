@@ -1,3 +1,11 @@
+---
+id: Repository_Design_Pattern
+aliases: []
+tags:
+  - coding
+  - design_patterns
+dg-publish: true
+---
 # Repository Design Pattern
 
 ## Overview
@@ -24,6 +32,7 @@ The Repository Design Pattern is a design pattern that encapsulates the logic ne
                        │   Concrete      │
                        │   Repository    │
                        └─────────────────┘
+
 ```
 
 ## Implementation Examples
@@ -39,6 +48,7 @@ type UserRepository interface {
     Delete(id string) error
     List(limit, offset int) ([]*User, error)
 }
+
 ```
 
 ### Concrete Implementation
@@ -69,6 +79,7 @@ func (r *userRepository) GetByID(id string) (*User, error) {
     }
     return &user, nil
 }
+
 ```
 
 ### Usage in Service Layer
@@ -90,6 +101,7 @@ func (s *UserService) CreateUser(name, email string) error {
     }
     return s.userRepo.Create(user)
 }
+
 ```
 
 ## Benefits
@@ -141,6 +153,7 @@ type Repository[T any] interface {
     Delete(id string) error
     List() ([]T, error)
 }
+
 ```
 
 ### 2. **Unit of Work Pattern**
@@ -154,6 +167,7 @@ type UnitOfWork interface {
     Commit() error
     Rollback() error
 }
+
 ```
 
 ## Best Practices

@@ -1,9 +1,10 @@
 ---
 id: Object Oriented Programming With C++ E Balagurusamy
 aliases: []
-tags: []
+tags:
+  - coding
+dg-publish: true
 ---
-
 # Object Oriented Programming With C++ E Balagurusamy
 
 #### Introduction to OOP
@@ -23,6 +24,7 @@ using namespace std;
 int main(){
   cout << "Some String\n"; // Prints "Some String"
 }
+
 ```
 
 if `using namespace std` is not included the above program will become
@@ -32,6 +34,7 @@ if `using namespace std` is not included the above program will become
 int main(){
 std::cout << "Some String\n"; // Prints "Some String"
 }
+
 ```
 
 How to execute this program?
@@ -39,6 +42,7 @@ How to execute this program?
 ```bash
 g++ program_name.cpp -o bin_file_name
 ./bin_file_name
+
 ```
 
 #### Basic I/O Programming
@@ -54,6 +58,7 @@ int main(int argc, char *argv[]) {
   cin >> some_string;
   cout << "Entered String is " << some_string;
 }
+
 ```
 
 New datatype `string`
@@ -71,6 +76,7 @@ void main() {
   /* comment \*/ / i = i + 1;
   cout << i;
 }
+
 ```
 
 - program should include `using namespace std;` otherwise `cout` should be replaced with `std::cout`
@@ -88,6 +94,7 @@ int main() {
   /* comment */ i = i + 1;
   cout << i;
 }
+
 ```
 
 2. Identify the errors in the following
@@ -98,6 +105,7 @@ void main() {
   short i = 2500, j = 3000;
   cout >> "i + j = " >> -(i+j);
 }
+
 ```
 
 - `>>` should be `<<`
@@ -112,6 +120,7 @@ int main() {
   short i = 2500, j = 3000;
   cout << "i + j = " << -(i + j);
 }
+
 ```
 
 3. What wiil happen when you run the following program?
@@ -129,6 +138,7 @@ void main() {
   divResult = i / modResult;
   cout << divResult;
 }
+
 ```
 
 - Divided by Zero error ?

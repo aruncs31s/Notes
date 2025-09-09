@@ -1,3 +1,13 @@
+---
+id: PYQ_2
+aliases: []
+tags:
+  - academics
+  - btech
+  - s8
+  - ect402
+dg-publish: true
+---
 # PYQ 2
 
 ## Questions

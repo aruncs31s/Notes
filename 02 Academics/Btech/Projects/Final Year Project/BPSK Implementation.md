@@ -1,5 +1,11 @@
 ---
-aliases: 
+id: BPSK_Implementation
+aliases: []
+tags:
+  - academics
+  - btech
+  - projects
+  - final_year_project
 Date: "07-04-25"
 dg-publish: true
 ---
@@ -15,8 +21,8 @@ dg-publish: true
 > hi im arun 
 > hi im arun
 >```
->then , the the EPB(Embedded Python Block) will first read the say 10Bytes "hi im arun" , then transmits it , under the hood , it first sends a preamble like %UUUU] , then the data("hi im arun") then a post filter "#EOF" for marking it is the end of file . 
 
+>then , the the EPB(Embedded Python Block) will first read the say 10Bytes "hi im arun" , then transmits it , under the hood , it first sends a preamble like %UUUU] , then the data("hi im arun") then a post filter "#EOF" for marking it is the end of file . 
 
 2. **Stream CRC32** : It computes the 32 bit checksum for the data 
 3. **Protocol Formater** : adds a header with acccess code 

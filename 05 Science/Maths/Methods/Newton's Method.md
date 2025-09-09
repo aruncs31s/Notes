@@ -1,12 +1,17 @@
+---
+id: Newtons_Method
+aliases: []
+tags:
+  - science
+  - maths
+  - methods
+dg-publish: true
+---
 # Newton's Method
 Created : 2024-05-12 14:58
 
-
 ## Contents
 `
-
-
-
 
 ```python
 import matplotlib.pyplot as plt
@@ -42,9 +47,8 @@ for root in roots:
 
 # Display the plot
 plt.show()
+
 ```
-
-
 
 ## References
 1. https://youtu.be/-RdOwhmqP5s?si=IqjEDFoufcb04VTp

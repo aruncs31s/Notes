@@ -1,3 +1,11 @@
+---
+id: ElectroMagnetics
+aliases: []
+tags:
+  - electronics
+  - electromagnetics
+dg-publish: true
+---
 # ElectroMagnetics
 - [[Maxwell|Maxwell's Equations]]
 

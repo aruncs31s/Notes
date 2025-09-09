@@ -1,7 +1,12 @@
 ---
+id: SSD
+aliases: []
+tags:
+  - classes
+  - sne
+  - ssd
 dg-publish: true
 ---
-
 # SSD
 
 $\Phi_{s}$ **semiconductor work function?**: The **work function** of a semiconductor is the minimum energy needed to remove an electron from the **Fermi level** of the semiconductor to a point just outside its surface (into vacuum).
@@ -15,11 +20,8 @@ $$
 - $E_{C}$​ = energy level of conduction band minimum
 - $E_{F}$​ = Fermi level energy
 
-
 Band Gap (Eg) needed for an electron to break free from its atom and become a free charge carrier.
 **forbidden band**:(band gap) It is the range of energy that electrons in a solid **cannot possess**.
-
-
 
 # Energy Band Diagram: A Scientific Explanation
 
@@ -52,7 +54,6 @@ As the atoms are brought even closer to the equilibrium interatomic distance (5.
 The **Band Gap (**Eg​**)** is the energy difference between the top of the valence band (Ev​) and the bottom of the conduction band (Ec​). It represents the minimum energy required to excite an electron from a bound state in the valence band to a mobile state in the conduction band. The magnitude of this gap is the primary determinant of a material's classification as a conductor (Eg​=0), semiconductor (small Eg​), or insulator (large Eg​).
 
 The diagram therefore provides a clear visualization of how the fundamental principles of quantum mechanics and atomic interactions lead to the characteristic electronic properties of a semiconductor material.
-
 
 In a solid, many atoms are brought together, so that the split energy levels form essentially continuous bands of energies. As an example, Fig. 3–3 illustrates the imaginary formation of a silicon crystal from isolated silicon atoms. Each isolated silicon atom has an electronic structure 1s 2 2s 2 2p6 3s 2 3p2 in the ground state. Each atom has available two 1s states, two 2s states, six 2p states, two 3s states, six 3p states, and higher states (see Tables 2–1 and 2–2). If we consider N atoms, there will be 2N, 2N, 6N, 2N, and 6N states of type 1s, 2s, 2p, 3s, and 3p, respectively. As the interatomic spacing decreases, these energy levels split into bands, beginning with the outer (n = 3) shell. As the “3s” and “3p” bands grow, they merge into a single band composed of a mixture of energy levels. This band of “3s–3p” levels contains 8N available states. As the distance between atoms approaches the equilibrium interatomic spacing of silicon, this band splits into two bands separated by an energy gap Eg. The upper band (called the conduction band) contains 4N states, as does the lower (valence) band. Thus, apart from the low-lying and tightly bound “core” levels, the silicon crystal has two bands of available energy levels separated by an energy gap Eg wide, which contains no allowed energy levels for electrons to occupy. This gap is sometimes called a “forbidden band,” since in a perfect crystal it contains no electron energy states.
 

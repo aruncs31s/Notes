@@ -1,4 +1,12 @@
-
+---
+id: S7_PYQ
+aliases: []
+tags:
+  - academics
+  - btech
+  - s7
+dg-publish: true
+---
 # ISE
 
 ## Part  A 

@@ -1,8 +1,16 @@
 ---
-aliases: 
+id: Digital_Communication
+aliases: []
+tags:
+  - electronics
+  - communication
+  - wireless
+  - digital_communication
 Date: 01-01-2025
+dg-publish: true
 ---
 # Digital Communication
+
 ```mermaid
 graph LR
 A[Source]
@@ -17,7 +25,9 @@ C--> CE & CD
 
 A --> SE --> CE
 CD --> SD --> B
+
 ```
+
 - In 1948 **Claude Shannon** 
 - Communication system is complex , which is in the sence that there are so meny softwares and so meny hardwares. (The amount of hardware and the amount of software we are dealing with is huge).
 - Although we can understand because it is highly structured.
@@ -30,12 +40,15 @@ In source we are dealing with **how much size?** and in channel we are dealing w
 ### Source Coding 
 
 **Encoding**
+
 ```mermaid
 graph LR 
 Analog --> A[Sequence]
 Sequence --> Symbols
 B[Symbols] --> Bits 
+
 ```
+
 Almost all the signal or quantities what ever you call it, will be in analog form . So the first thing we have to do is to convert them into digital form, because we have to store it. Right? 
 Which is kinda not true , because in old days some videos tapes contains audio as pure analog thing embedded in the film , or take an example of a music casset. What changed? 
 - Why do we prefer digital? 
@@ -47,14 +60,8 @@ But what does we gain from it ?
 2. etc.etc.
 And Source encoding plays a huge role in this. Whether in communication or just storing .
 
-
-
-
-
 **Decoding**
 - [ ] Complete this 
-
-
 
 ## Modulation Schemes
 Modulation schemes are interesting , better (higher order) modulation schemes try to transmit maximum amount of data as possible eg [[QPSK]] transmitts twise data as [[BPSK]]
@@ -73,15 +80,14 @@ Few points to remember
 ```python
 import numpy as np 
 print(np.pi)
-```
 
+```
 
 ### Complex Systems
 
 1. Low cost with high complexity requires large volume, long development time, and careful design.
 2. Complex systems are often dont work or are not robust
 3. Special applications, since they involve small numbers, must extend the chips used in more general systems with relatively simple extensions.
-
 
 ## Source Coding 
 **Requirements**: Probability

@@ -1,3 +1,14 @@
+---
+id: RISC
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - embedded_systems
+  - module_3
+dg-publish: true
+---
 # RISC
 - A fixed (32-bit) instruction size with few formats; CISC processors typically had variable length instruction sets with many formats.
 - A load-store architecture where instructions that process data operate only on registers and are separate from instructions that access memory; CISC processors typically allowed values in memory to be used as operands in data processing instructions.
@@ -13,5 +24,4 @@
 
 3. Higher Performance 
 - [ ] Invest more about higher performance and complete this
-
 

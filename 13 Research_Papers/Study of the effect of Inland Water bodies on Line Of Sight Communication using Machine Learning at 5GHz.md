@@ -1,8 +1,10 @@
 ---
-aliases:
-  - ansy miss paper
+id: Study_of_the_effect_of_Inland_Water_bodies_on_Line_Of_Sight_Communication_using_Machine_Learning_at_5GHz
+aliases: []
+tags:
+  - research_papers
+dg-publish: true
 ---
-
 # Study of the effect of Inland Water bodies on Line Of Sight Communication using Machine Learning at 5GHz
 
 **Abstract:** This paper studied the the effect of inland water bodies on 5GHz Communication and Modeled a Line Of Sight(LOS) communication channel over inland water bodies using **[[Machine Learning]]**, and shows that the attenuation of signal **during day** and less attenuation during **night**
@@ -62,9 +64,11 @@ It is a subdivision of supervised learning method.
 [^1]: Doppler spread refers to **the widening of the spectrum of a narrow-band signal transmitted through a multipath propagation channel**
 [^2]: Multipath Fading: **the phenomenon of fluctuations in signal strength formed by incoherent combination of signals coming from different directions through reflection or scattering with the direct signal**.
 [^3]: Diffraction: **the bending of waves around obstacles and the spreading of waves by openings**. It happens when the size of the object and the wavelength of the signal are comparable.
+
 ```python
 def diffreaction(wavelength, size):
     return 1.22 * wavelength / size
+
 ```
 
 ## Measurement Setup

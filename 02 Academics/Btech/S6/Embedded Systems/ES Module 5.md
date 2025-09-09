@@ -1,7 +1,16 @@
+---
+id: ES_Module_5
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - embedded_systems
+dg-publish: true
+---
 # Module 5
 
 Created : 2024-05-13 11:53
-
 
 ## Contents
 
@@ -31,7 +40,6 @@ A process consists of executable program (codes), state of which is controlled b
 1. Running
 2. Blocked
 3. Finished
-
 
 #### Tasks
 ### References

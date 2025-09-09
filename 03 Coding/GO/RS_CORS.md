@@ -1,11 +1,13 @@
 ---
 id: RS_CORS
 aliases: []
-tags: []
+tags:
+  - coding
+  - go
+dg-publish: true
 ---
-
-
 # RS/CORS 
+
 ```go
 import (
     "github.com/rs/cors"
@@ -28,5 +30,6 @@ func main() {
     log.Println("Server starting on :8080")
     log.Fatal(http.ListenAndServe(":8080", handler))
 }
+
 ```
 

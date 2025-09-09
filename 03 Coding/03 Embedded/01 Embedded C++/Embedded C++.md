@@ -1,3 +1,12 @@
+---
+id: Embedded_C
+aliases: []
+tags:
+  - coding
+  - embedded
+  - embedded_c
+dg-publish: true
+---
 # Embedded Development 
 If you are comming from or after fininshing `ethical-hacking/prerequisites/c++` from [this link]() , this is not my actual note instead , this is a customized note that will serve as an introductory guide to emmbedded C++ which is derived from [[01 Embedded C++]]. But i dont recomment reading [[01 Embedded C++]] which is my actual note but some may not understand beacuse it is written by me . 
 - [ ] update the link 
@@ -36,14 +45,15 @@ These two will be discussed in the following chapters
 
 ### Reducing the cost 
 Lets consider the previous example again try to replace the componets 
+
 ```mermaid
 graph LR
 Raspberry_pi --> ESP32 
 USB_Microphone --> I2C_Mic
 Bigger_Battery --> smaller_battery
 Big_SMPS --> small_4.2v_Charger
-```
 
+```
 
 | Item          | Cost |
 | ------------- | ---- |
@@ -61,10 +71,12 @@ Consider you have an `ESP32` you have to power it using `220V 50Hz`. First thing
 2. Make it dc using **diodes**
 3. Filter spikes using capacitors 
 4. use a variable voltage controller to get the decired output 
+
 ```mermaid
 graph LR 
 AC --> Transformer --> Bridge_Rectifier --> Filter --> Voltage_Regulator
-```
-This flow might change , but 
 
+```
+
+This flow might change , but 
 

@@ -1,13 +1,12 @@
 ---
 id: 02 Login Feature
-aliases: 
+aliases: []
 tags:
-  - sub_note
-  - es_website
-  - backend
+  - projects
+  - web_based
+  - embedded_systems_website
 dg-publish: true
 ---
-
 # Login
 
 - [[#Steps]]
@@ -64,8 +63,10 @@ dg-publish: true
 @end Links
 
 ```
+
 app_name: es_website
 email: aruncs31ss@gmail.com
+
 ```
 
 ## Backend
@@ -90,8 +91,10 @@ Google Cloud Platform
    configure it. -> When i clicked it took me to Branding page.
 
 ```
+
 app_name: ES_Website
 mail: aruncs31ss@gmail.com
+
 ```
 
 2. Choose User Type:
@@ -115,7 +118,9 @@ mail: aruncs31ss@gmail.com
    "Credentials" tab on the left-hand menu.
 
 ```
+
 client_id: 648118709365-es66btc3rfvbhf6hhbs3v0vr4p3tki8f.apps.googleusercontent.com
+
 ```
 
 2. CORS Error
@@ -132,4 +137,5 @@ app.use(
     credentials: true, // Allow cookies to be sent
   }),
 );
+
 ```

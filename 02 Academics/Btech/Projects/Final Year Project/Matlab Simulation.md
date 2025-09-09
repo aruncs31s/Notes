@@ -1,6 +1,13 @@
 ---
-aliases: 
+id: Matlab_Simulation
+aliases: []
+tags:
+  - academics
+  - btech
+  - projects
+  - final_year_project
 Date: 30-10-2024
+dg-publish: true
 ---
 # Matlab Simulation
 

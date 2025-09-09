@@ -1,10 +1,11 @@
 ---
+id: Strategy_Pattern_Using_Golang
+aliases: []
 tags:
-  - programming
-  - design_pattern
-  - behavioural_pattern
-  - go
-  - "#work"
+  - coding
+  - design_patterns
+  - behavioral_pattern
+dg-publish: true
 ---
 # Strategy Pattern Using Golang
 
@@ -52,12 +53,15 @@ func main() {
 ```
 
 ## Interface
+
 ```go
 // Strategy interface defines the execution contract
 type ExecutionStrategy interface {
 	Execute(command string, args ...string) (string, error)
 }
+
 ```
+
 What does this mean 
 
 First recall what is an interface ![[Go#Interfaces]]
@@ -66,6 +70,7 @@ So in this case  any type that has` Execute()`  method is considered as an `Exec
 ## Strategies 
 
 1. `SynchronousStrategy`
+
 ```go
 // SynchronousStrategy executes commands synchronously
 type SynchronousStrategy struct{}
@@ -78,8 +83,11 @@ func (s *SynchronousStrategy) Execute(command string, args ...string) (string, e
 	}
 	return string(output), nil
 }
+
 ```
+
 2. `TimeoutStrategy`
+
 ```go
 // TimeoutStrategy executes commands with a timeout
 type TimeoutStrategy struct {

@@ -1,3 +1,12 @@
+---
+id: Position_Testing
+aliases: []
+tags:
+  - projects
+  - robotics
+  - ai_robot
+dg-publish: true
+---
 # Position Testing
 
 ```python
@@ -14,10 +23,11 @@ while True:
     id = int(input("Enter servo ID (0-15): "))
     val = int(input("Enter angle (0-180): "))
     set_position(id, val)
+
 ```
 
-
 # Get initial position from the web
+
 ```python
 from position_scraper import extract_positions
 print(
@@ -25,4 +35,5 @@ print(
         "https://github.com/AI-Robot-GCEK/robo-initial-positions/blob/main/src/initial-positions.h"
     )
 )
+
 ```

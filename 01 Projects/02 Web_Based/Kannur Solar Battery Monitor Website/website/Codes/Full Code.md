@@ -1,7 +1,13 @@
 ---
 id: Full Code
 aliases: []
-tags: []
+tags:
+  - projects
+  - web_based
+  - kannur_solar_battery_monitor_website
+  - website
+  - codes
+dg-publish: true
 ---
 
 ```javascript
@@ -268,4 +274,5 @@ function createChart(containerId, title, yAxisTitle, seriesName) {
     },
   });
 }
+
 ```

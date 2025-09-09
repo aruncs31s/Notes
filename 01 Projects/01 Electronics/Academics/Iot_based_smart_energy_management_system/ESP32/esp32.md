@@ -1,7 +1,13 @@
 ---
 id: esp32
 aliases: []
-tags: []
+tags:
+  - projects
+  - electronics
+  - academics
+  - iot_based_smart_energy_management_system
+  - esp32
+dg-publish: true
 ---
 ## ESP32
 
@@ -40,9 +46,6 @@ tags: []
 - [[Projects/Iot_based_smart_energy_management_system/Files/PDFs/Cadence_Tensillica_Xtensa_LX6_ds.pdf]]
 - 
 
-
-
-
 #### LDR Interfacing
 
 ```c
@@ -59,9 +62,9 @@ void loop() {
 
 ```
 
-
 #### PIR Interfacing
 [Source](https://www.electronicwings.com/esp32/pir-sensor-interfacing-with-esp32)
+
 ```c
   Serial.println("Waiting For Power On Warm Up");
   delay(20000); /* Power On Warm Up Delay */
@@ -91,6 +94,7 @@ void loop() {
   //   delay(100);
   // } 
 }
+
 ```
 
 ---
@@ -124,7 +128,6 @@ void loop() {
 
 ```
 
-
 #### Servo Motor Interfacing 2
 
 #TestCode
@@ -157,14 +160,13 @@ void loop() {
     delay(15);
   }
 }
+
 ```
 
 #### Relay Module Interfacing
 [Source](https://esp32io.com/tutorials/esp32-relay)
 
 ![|500x300](https://esp32io.com/images/tutorial/esp32-relay-pinout.jpg)
-
-
 
 | Pins | Uses                                   |
 | ---- | -------------------------------------- |
@@ -181,6 +183,7 @@ void loop() {
 ![|500x300](https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2019/12/relay-esp32-wiring.png?quality=100&strip=all&ssl=1)
 
 #TestCode 
+
 ```cpp
 void setup(){
 
@@ -188,13 +191,9 @@ Serial.begin(115200);
 
 ```
 
-
-
 #### Interfaced Pins
 
 #PinConfiguration
-
-
 
 | Pin No | GPIO          | Used For                                        |                   |
 | :----- | :------------ | :---------------------------------------------- | ----------------- |
@@ -215,6 +214,7 @@ Serial.begin(115200);
 | D05    | GPIO05        | Connecting Voltage Sensor                       | E Monitoring      |
 
 #pinDefine
+
 ```c
 // Define the GPIO (2,15) pin connected to the servo
 const int SERVO_PIN_1 = 2;
@@ -224,12 +224,11 @@ const int LDR_LEFT_TOP = 36;
 const int LDR_LEFT_BOTTOM = 39;
 const int LDR_RIGHT_TOP = 34;
 const int LDR_RIGHT_BOTTOM = 35;
+
 ```
 
-
-
-
 #### Multi Threding
+
 ```c
 /*
 Source : https://randomnerdtutorials.com/esp32-dual-core-arduino-ide/ */
@@ -306,9 +305,7 @@ void loop() {
   
 }
 
-
 ```
-
 
 ##### Attempt 1
 - main.cpp
@@ -431,8 +428,8 @@ Serial.print("Task2 running on core ");
 Serial.println(xPortGetCoreID());
 
 };
-```
 
+```
 
 ###### config.h
 
@@ -494,9 +491,11 @@ Serial.println(xPortGetCoreID());
   
 
 #endif
+
 ```
 
 - project.h
+
 ```cpp
 #include <vector>
 
@@ -555,6 +554,7 @@ Serial.print(pin_arr[0]); Serial.print(" and "); Serial.print(pin_arr[1]);
 Project_Config() {}
 
 };
+
 ```
 
 ```cpp
@@ -605,4 +605,5 @@ if (avgtop < avgbot)
   }
   delay(50);
 }
+
 ```

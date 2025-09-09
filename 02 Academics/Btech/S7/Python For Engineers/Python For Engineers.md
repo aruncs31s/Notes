@@ -1,19 +1,21 @@
 ---
 id: Python For Engineers
-aliases:
-  - cst445
-  - python
-tags: []
+aliases: []
+tags:
+  - academics
+  - btech
+  - s7
+  - python_for_engineers
 Created: "2024-07-23"
 ExamDate: "2024-11-29"
-cssclasses:
-  - wide-page
+cssclasses: 
+dg-publish: true
 ---
-
 # Python For Engineers
 
 ```python
 print("Hello World")
+
 ```
 
 ## Contents

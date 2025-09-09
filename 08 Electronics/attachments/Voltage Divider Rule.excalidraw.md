@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: Voltage_Divider_Ruleexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 ## Text Elements
@@ -20,6 +20,7 @@ Vin ^gJyv27QF
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBmbQAGGjoghH0EDihmbgBtcDBQMBLoeHF0Ig4kflLGFnYuNABGAA4AVgB2Wsh61k4AOU4xbgAWHnjR0ebRzqSeiEIOYixu
 
@@ -94,5 +95,7 @@ boMY5l05sUAIQHOHLpCQCkOLT3hACFy4BlQgcd7COE0BShcAZNPTMqGOCkRmg2AU4DwBjCaAxAswXmMc
 GQT6NFWQKoYspMUjIJuBd4WFEpwUoqdv2E4vcxO2kiqSlNCl8dkeT48qdFIakZBOOn3fZN91anJSoAqUjSUEOn7g9Cp7U/QHBGObEiboi/RKcwHviBh8AUGS2I/itScIVRUOHKLNPmmQg/0BIN0MWAtTnpooJYAWAaESkHgDAWk3aAQELZltzqUORKO6FmA9hUao0/qY5NykhISsHeeEKQEB47DSAJAe7o0ggDxgSAsREeBxEDA/JQwfoZUHDLhk
 
 5gc2ygL8FpDDBwQdgGMjGV6kjRvS4pWIEqYG04DZ9Epr6BAGYGEDMB1wgMpQs1JQIQA4CObXeIDIGwjwsg3E4ILhFR5A8iANeCzqQELYLAS8ek/mYLIIxZsDkoshAK9LsDvwEAfuB4CXjgA+Y2AKwCaRzNiG8C6ASMcIMGggggAIIQAA
+
 ```
+
 %%

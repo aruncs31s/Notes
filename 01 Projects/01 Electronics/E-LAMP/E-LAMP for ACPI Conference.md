@@ -1,13 +1,14 @@
 ---
-aliases:
-  - 20250700-ieee
+id: E-LAMP_for_ACPI_Conference
+aliases: []
 tags:
-  - project
+  - projects
   - electronics
+  - e-lamp
 github: https://github.com/aruncs31s/e-vilakku-for-IEEE-ACPI-conference-GCEK
 Status: Done
-cssclasses:
-  - wide-page
+cssclasses: 
+dg-publish: true
 ---
 # E - Vilakku 
 >[!SUMMARY]- Table of Contents
@@ -26,15 +27,12 @@ cssclasses:
 **Relay Module**
 ![[Pasted image 20250705192052.png]]
 
-
 ## Coding
-
 
 ### MACs
 // New Receiver : `C4:D8:D5:12:C6:03`
 %% Receiver %%: `48:3F:DA:47:80:41` 
 Sender: `24:D7:EB:EE:BC:40`
-
 
 ### Sender
 
@@ -115,8 +113,8 @@ void loop() {
   }
   delay(50);
 }
-```
 
+```
 
 #### New Code with debounce error reduce
 
@@ -203,6 +201,7 @@ void loop() {
   }
   delay(50);
 }
+
 ```
 
 ### Reducing Debouncing

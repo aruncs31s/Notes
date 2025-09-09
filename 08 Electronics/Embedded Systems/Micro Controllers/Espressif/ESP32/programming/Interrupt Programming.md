@@ -1,16 +1,18 @@
 ---
 id: Interrupt Programming
-aliases:
-  - esp32 interrupt
+aliases: []
 tags:
+  - electronics
+  - embedded_systems
+  - micro_controllers
+  - espressif
   - esp32
-  - "#code"
+  - programming
 Created: 24-08-2024
 Status: true
-cssclasses:
-  - wide-page
+cssclasses: 
+dg-publish: true
 ---
-
 # Interrupt Programming
 
 How It Works
@@ -20,6 +22,7 @@ How It Works
 
 ```c
 attachInterrupt(GPIOPin,ISR,Mode);
+
 ```
 
 **ISR** : It is the function that we want to execute when interrupt occurs on that pin
@@ -30,6 +33,7 @@ attachInterrupt(GPIOPin,ISR,Mode);
 void IRAM_ATTR ISR() {
     Statements;
 }
+
 ```
 
 rules:
@@ -69,4 +73,5 @@ void loop(){
   Serial.println(wind_count);
   delay(100);
 }
+
 ```

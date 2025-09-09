@@ -1,3 +1,11 @@
+---
+id: Rust
+aliases: []
+tags:
+  - coding
+  - rust
+dg-publish: true
+---
 # Rust
 - [[Rust By Practice]]
 - [[Coding/Rust/Rust By Example/Rust By Example|Rust By Example]]
@@ -10,9 +18,12 @@
 - [[Borrow Checker]]
 
 ### Directives
+
 ```rust
 #![allow(unused)]
+
 ```
+
 *To permit unused variables*
 
 ### Format Specifiers
@@ -23,6 +34,7 @@
 
 ```rust
 println!("result = {} ",result )
+
 ```
 
 ```rust
@@ -30,11 +42,13 @@ fn main() {
     let some_array = [ 1,2,3,4,5,6,7,8];
     println!("{}",some_array);
 }
+
 ```
 
 ### Conditional Statements
 
 #### If Else
+
 ```rust
 fn main(){
     let some_value: i32 = 50;
@@ -45,9 +59,11 @@ fn main(){
         println!("False");
     }
 }
+
 ```
 
 #### Match
+
 ```rust
 #![allow(unused)]
 
@@ -66,6 +82,7 @@ fn main() {
 `_` -> to match everything else
 
 ##### Ordering
+
 ```rust
 #![allow(unused)]
 use std::cmp::Ordering;
@@ -80,14 +97,13 @@ fn main() {
     Ordering::Equal => println!("The both Variables Matched"),
     }
 }
+
 ```
+
 When using `Ordering` we should import `cmp::Ordering`
 
 ### Vectors
 
-
-
 ### Match
 ![[Pasted image 20240303195835.png]]
-
 

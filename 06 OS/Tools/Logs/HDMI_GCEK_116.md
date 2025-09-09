@@ -1,3 +1,12 @@
+---
+id: HDMI_GCEK_116
+aliases: []
+tags:
+  - os
+  - tools
+  - logs
+dg-publish: true
+---
 Screen 0: minimum 8 x 8, current 1366 x 768, maximum 32767 x 32767
 eDP1 connected primary 1366x768+0+0 (normal left inverted right x axis y axis) 340mm x 190mm
    1366x768      60.06*+  47.99 

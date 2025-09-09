@@ -1,6 +1,11 @@
 ---
-aliases: 
+id: Wire
+aliases: []
+tags:
+  - coding
+  - arduino
 Date: 18-10-2024
+dg-publish: true
 ---
 # Wire
 Arduino **Wire** Uses the [[08 Electronics/Embedded Systems/communication/I2C|I2C]] Protocol for Communication
@@ -28,6 +33,7 @@ void loop() {
   Serial.println(c);
   delay(500);
 }
+
 ```
 
 ```c

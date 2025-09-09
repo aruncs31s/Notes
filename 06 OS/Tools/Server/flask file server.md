@@ -1,10 +1,13 @@
 ---
 id: flask file server
 aliases: []
-tags: []
+tags:
+  - os
+  - tools
+  - server
 Date: "2024-08-04"
+dg-publish: true
 ---
-
 # flask file server
 
 ## Contents
@@ -17,6 +20,7 @@ Authention is provided in the code in the form of `user:passwd` so i have to enc
 
 ```bash
 echo -n 'user:passwd' | openssl base64
+
 ```
 
 ## References

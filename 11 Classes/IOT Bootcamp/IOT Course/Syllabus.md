@@ -1,4 +1,12 @@
-
+---
+id: Syllabus
+aliases: []
+tags:
+  - classes
+  - iot_bootcamp
+  - iot_course
+dg-publish: true
+---
 Module 1: Sensor/actuator integration (digital , Analog I/O sensors ,PWM ,DC ,Servo
 
 motors , I2C , SPI , UART sensors).

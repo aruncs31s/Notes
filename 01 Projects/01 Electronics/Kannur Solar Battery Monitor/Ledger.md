@@ -2,11 +2,12 @@
 id: Ledger
 aliases: []
 tags:
-  - money
+  - projects
+  - electronics
+  - kannur_solar_battery_monitor
 Date: "23-10-2024"
 dg-publish: true
 ---
-
 # Ledger Kannur Solar Battery Meter
 
 - [[Documents]]

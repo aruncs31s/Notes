@@ -1,11 +1,17 @@
 ---
+id: ISE
+aliases: []
+tags:
+  - academics
+  - btech
+  - s7
 ExamDate: 2024-12-03
+dg-publish: true
 ---
 # ISE
 - [[S7 PYQ]]
 
 ## Module 1 
-
 
 ### Safety 
 "**Safety** refers to the condition of being protected from harm, danger, or risks."

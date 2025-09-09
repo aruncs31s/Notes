@@ -1,12 +1,23 @@
+---
+id: Eye_Diagram
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - communication_lab
+  - part_b
+  - experiment_5
+dg-publish: true
+---
 # Eye Diagram
 Created : 2024-04-29 10:48
-
 
 ## Contents
 - 
 
-
 #WholeCode 
+
 ```c
 close all; 
 clear ;
@@ -23,7 +34,6 @@ rcFilter=rcosdesign(rolloff,span,sps,'normal') ; % normal=> sqrt for sqrt filter
 
 fvtool(rcFilter,'Analysis,'impulse');
 
-
 Bipolar_Data = 2* randi([0 1], 50 , 1) - 1;
 
 Upsampled_and_filtered = upfirdn(Bipolar_Data, rcFilter,sps,1)
@@ -38,7 +48,6 @@ rxSignal = awgn(Upsampled_and_filtered,snr,'measured');
 rxFilteredSignal = upfirdn(rxSignal,rcFilter,1,sps);
 rxFilteredSignal = rxFilteredSignal(filterlength + 1 :end -filterlength);
 
-
 % Adding Noise
 rxSignal = rxSignal + randn(size(rxSignal))*.01 ;
 
@@ -47,6 +56,8 @@ figure
 stem(Bipolar_Data,'filled')
 hold on
 plot(rxF)
+
 ```
+
 ## References
 1. 

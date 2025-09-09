@@ -1,9 +1,15 @@
+---
+id: level_2
+aliases: []
+tags:
+  - classes
+  - python_learn_by_doing
+dg-publish: true
+---
 # Level 2
-
 
 ## Coding 
 - Using Behavioural Design Pattern
-
 
 ### Classes 
 - **Status** must be shared between all the other objects.
@@ -23,15 +29,17 @@
 | Files      | To manage and track the files in the application | Git, Status |
 | Question   | To manage and track the questions in the application | Status, Files |  
 
-
 ### Flow of Control
 
 1. First create a `Git` object. The username can be passed as as an argument or can be set later. 
+
 ```python
 def initialize_git() -> Git:
     username = input("Enter your GitHub username: ")
     return Git(username=username)
+
 ```
+
 There is an another level of verification of username in the `Git` class itself.
 
 ```python
@@ -44,4 +52,5 @@ class Git:
             self.ask_username()
             if self.username == "":
                 raise ValueError("Username cannot be empty")
+
 ```

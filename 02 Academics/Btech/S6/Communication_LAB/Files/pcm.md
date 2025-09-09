@@ -1,3 +1,15 @@
+---
+id: pcm
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - communication_lab
+  - files
+dg-publish: true
+---
+
 ```c
 time=0:0.0005:0.05;
 freq_msg=100;
@@ -41,8 +53,6 @@ r=snr(index,noise);
 snr1=['SNR:',num2str(r)];
 disp(snr1)
 
-
-
 l=[8,16,32,64,128];
 for i=1:length(l)
     r(i)=snrRatios(l(i));
@@ -53,4 +63,5 @@ grid on
 title('L vs SNR')
 xlabel('L')
 ylabel('SNR')
+
 ```

@@ -1,11 +1,17 @@
 ---
-aliases: 
+id: main_Exam
+aliases: []
+tags:
+  - academics
+  - btech
+  - s7
+  - python_for_engineers
 Date: 28-11-2024
+dg-publish: true
 ---
 # main Exam
 
 ### Functional Oriented
-
 
 ```python
 def square(num):
@@ -21,8 +27,8 @@ print(f"Square of Number: {result}")
 print(f"10 sqare is {square(10)}")
 
 print(f"Which is large 10 , 20 , large is = {which_is_large(10,20 )}")
-```
 
+```
 
 ### OOP
 
@@ -41,11 +47,9 @@ class someClass:
 
 newNumber = someClass(10,20)
 
-
 print(f"Sqare =  {newNumber.square(10)}")
 
 ```
-
 
 #### Class
 
@@ -58,9 +62,8 @@ class nameOfClass(oldClass):
 	. . .
 	methods 
 A = nameOfClass(01,22,33)
+
 ```
-
-
 
  ### Try except
   - The try and except block in Python is used for **exception handling**. 
@@ -73,4 +76,5 @@ try:
     print("Result:", result)
 except ZeroDivisionError:
     print("Error: Cannot divide by zero!")
+
 ```

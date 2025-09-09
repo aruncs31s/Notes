@@ -1,9 +1,13 @@
 ---
-tags: 
-cssclasses:
-  - wide-page
+id: LCD
+aliases: []
+tags:
+  - classes
+  - sne
+  - lcd
+cssclasses: 
+dg-publish: true
 ---
-
 # Questions 
 
 $$
@@ -15,10 +19,6 @@ $$
 
 \end{align}
 $$
-
-
-
-
 
 Convert $(356)_{10}$ to $(X)_{16}$ 
 ![[LCD.png]]

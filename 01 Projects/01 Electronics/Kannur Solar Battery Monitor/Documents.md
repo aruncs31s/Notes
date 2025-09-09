@@ -1,6 +1,12 @@
 ---
-aliases: 
+id: Documents
+aliases: []
+tags:
+  - projects
+  - electronics
+  - kannur_solar_battery_monitor
 Date: 23-10-2024
+dg-publish: true
 ---
 # Documents
 ### Older 
@@ -8,7 +14,6 @@ Date: 23-10-2024
 ### 05-10-2024
 
 ![[dc dc Connector.png|700x500]]
-
 
 - Cost: **310/-** for 10 Pics DC Connectors 
 #### Total Cost 
@@ -29,12 +34,6 @@ Date: 23-10-2024
 >> 
 >> 
 
-
-
-
-
-
-
 > [!multi-column]
 >
 >> [!blank]
@@ -53,7 +52,6 @@ Date: 23-10-2024
 | Kannur      | Dharmassala | 23   |
 |             | Total       | 46/- |
 #### Electronics Components Cost
-
 
 | Item                    | Quantity | Single Unit Cost | Total Cost |
 | ----------------------- | -------- | ---------------- | ---------- |

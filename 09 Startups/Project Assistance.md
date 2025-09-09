@@ -1,3 +1,10 @@
+---
+id: Project_Assistance
+aliases: []
+tags:
+  - startups
+dg-publish: true
+---
 # Project Assistance
 Our aim is to assist , 
 ## MOTO 
@@ -7,6 +14,7 @@ Our aim is to assist ,
 ```mermaid
 graph LR
 A(Reasarch) --> B(BOM) --> C(Continues Assesment) --> D(Client Feedback) --> A 
+
 ```
 
 ## Current Members

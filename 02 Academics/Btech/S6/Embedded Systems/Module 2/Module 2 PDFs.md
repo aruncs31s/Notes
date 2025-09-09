@@ -1,9 +1,14 @@
 ---
 id: Module 2 PDFs
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - s6
+  - embedded_systems
+  - module_2
+dg-publish: true
 ---
-
 - [Presentation](#presentation)
 
 #### PDFs
@@ -18,9 +23,6 @@ tags: []
 
 ![[memory2.pdf]]
 
-
 ![[communication_protocols.pdf]]
-
-
 
 ![[memory3.pdf]]

@@ -1,3 +1,14 @@
+---
+id: LDR_Sensor
+aliases: []
+tags:
+  - projects
+  - electronics
+  - academics
+  - iot_based_smart_energy_management_system
+  - sensors
+dg-publish: true
+---
 <h2 align="center">LDR Sensor</h2>
 
 - [Introduction]()
@@ -7,10 +18,7 @@
 #### Introduction
 An LDR (Light Dependent Resistor) sensor is a type of photoresistor that varies its resistance based on the amount of light it is exposed to -- tgpt 
 
-
-
 ![[Projects/Iot_based_smart_energy_management_system/Files/Images/Pasted image 20240328225646.png|300x250]]
-
 
 `Credit` [Interfcaing Code](https://github.com/yash-sanghvi/ESP32/blob/master/AnalogReadWithLDR/AnalogReadWithLDR.ino)
 
@@ -25,6 +33,7 @@ void loop() {
    float LDR_Voltage = ((float)LDR_Reading*3.3/1023);
    Serial.print("Reading: ");Serial.print(LDR_Reading); Serial.print("\t");Serial.print("Voltage: ");Serial.println(LDR_Voltage);
 }
+
 ```
 
 #### Sources

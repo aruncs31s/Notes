@@ -1,7 +1,14 @@
-
+---
+id: Parity
+aliases: []
+tags:
+  - electronics
+  - embedded_systems
+  - communication
+dg-publish: true
+---
 #### Topics
 - [Parity Bit]()
-
 
 ##### Parity Bit
 ![[Academics/S6/Embedded Systems/Files/Images/Pasted image 20240311232123.png]]

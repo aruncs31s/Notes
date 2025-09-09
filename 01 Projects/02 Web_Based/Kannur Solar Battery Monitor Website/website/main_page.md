@@ -1,13 +1,16 @@
 ---
 id: main_page
-aliases: 
+aliases: []
 tags:
+  - projects
+  - web_based
+  - kannur_solar_battery_monitor_website
   - website
-  - smartcity
+dg-publish: true
 ---
-
 # Main Page
 
 ```bash
 pip install bootstrap-flask
+
 ```

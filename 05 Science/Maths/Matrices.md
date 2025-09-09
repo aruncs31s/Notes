@@ -1,9 +1,11 @@
 ---
 id: Matrices
 aliases: []
-tags: []
+tags:
+  - science
+  - maths
+dg-publish: true
 ---
-
 # Matrices
 
 Created : 2024-05-14 15:10
@@ -52,7 +54,6 @@ $$
 \overrightarrow v = \begin{bmatrix} 1 & 4 & 7  \\  2& 5& 8  \\ 3& 6& ==9== \end{bmatrix}
 $$
 
-
 #### Dot Product
 $$
 \begin{bmatrix}
@@ -72,8 +73,6 @@ $$
 ##### Poroperties
 1. If the vectors are pointing in the same direction then the dot product is positive
 
-
-
 ```js
 const a = [1,3,4] 
 const b = [3,4,5]
@@ -86,15 +85,12 @@ dotProduct = (a,b) => {
 		return result ;
 }
 console.log( "Input vector 1 = "+ a + "\nInput Vector 2 = " +b + "\nDot Product = " + dotProduct(a ,b))
+
 ```
 
 > [!NOTE] Order of Projection
 > In dot product calculation the order of projection doesn't really matter we can project $\overrightarrow v$ over $\overrightarrow w$ or $\overrightarrow w$ over $\overrightarrow v$ the order doesn't really matter
 > Contents
-
-
-
-
 
 #### Reduced Row Echelon Form
 
@@ -134,10 +130,6 @@ $$
 
 <!-- TODO: -->
 #todo Rank
-
-
-
-
 
 #### 
 

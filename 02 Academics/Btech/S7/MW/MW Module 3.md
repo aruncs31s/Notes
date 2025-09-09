@@ -1,6 +1,13 @@
 ---
-aliases: 
+id: MW_Module_3
+aliases: []
+tags:
+  - academics
+  - btech
+  - s7
+  - mw
 Date: 20-11-2024
+dg-publish: true
 ---
 # MW Module 3
 
@@ -25,5 +32,4 @@ $$
 $$
 Q_{max} = 0 , 180 
 $$
-
 

@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: Transistor_Q1excalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 
@@ -36,6 +36,7 @@ Ib ^aH5xV7hy
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQB2bQAWGjoghH0EDihmbgBtcDBQMBLoeHF0Ig4kflLGFnYuNABWHgAOWsh61k4AOU4xbgBGAE42tp54gAYANimRzohCDmIs
 
@@ -182,5 +183,7 @@ E+RMcO64pS9kaZE+RrwGMF1+qUd5EZAMELhbfBtxuFHxRkUT5F5RmFt6G2i2UQlEZAzcl1YaK+9FVElR
 EGwCrA2Jp37BAGVu5YkAy9FhhEQHoO7CkAygMGAAAFPPinIMHEjGIx1ALKDtwAAJRsgjisoAsQ8UE4KwxuAAjGvwaMfmASgvACTHoxzQFjHXRcUUaghRJIBlHaKnAAr69GmQI4p0YdOkThYYWQEDG5Ir/u8ZEAX0agACxkAAzrKRaYSCZlCeThZSSxCANdF2As4MZI5AQVLgBwAf0QDEM6mgMDEuSGwK7QyMCABCBHR+ACdE4khKOkD6xRyOXJCA
 
 NIAYBDRZlHaE0eJ7B9zaKjAEbEeggDorjgAc6DybBAfdhJFSwQAA
+
 ```
+
 %%

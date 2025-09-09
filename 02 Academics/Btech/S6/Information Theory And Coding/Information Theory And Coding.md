@@ -1,10 +1,15 @@
 ---
+id: Information_Theory_And_Coding
 aliases: {Itc}
+tags:
+  - academics
+  - btech
+  - s6
+  - information_theory_and_coding
 ExamDate: 2024-12-31
+dg-publish: true
 ---
-
 # Information theory and Coding
-
 
 ## Contents
 
@@ -13,7 +18,6 @@ ExamDate: 2024-12-31
 - [[Module 5]]
 - [[PYQ]]
 - Shannon Limit
-
 
 #### Shannon Limit
 [https://www.gaussianwaves.com/2008/04/channel-capacity/](https://www.gaussianwaves.com/2008/04/channel-capacity/)

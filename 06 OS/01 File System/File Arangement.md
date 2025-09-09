@@ -1,10 +1,12 @@
 ---
 id: File Arangement
 aliases: []
-tags: []
+tags:
+  - os
+  - file_system
 kanban-plugin: board
+dg-publish: true
 ---
-
 ## Current Arrangement
 
 ```
@@ -26,4 +28,5 @@ kanban-plugin: board
 ├──  Templates/
 ├──  Videos/
 └──  Youtube/
+
 ```

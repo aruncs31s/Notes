@@ -2,14 +2,12 @@
 id: Projects
 aliases: []
 tags:
-  - exclude
+  - projects
 banner: "01 Projects/Common/banner.jpg"
-cssclasses:
-  - wide-page
+cssclasses: 
+dg-publish: true
 ---
-
 # Projects
-
 
 > [!summary]- _All Projects_
 >
@@ -31,12 +29,14 @@ The `dir` structure
 >
 
 ```
+
 Projects/
 	01 Electronics
 	02 Web_Based
 	03 Linux
 	04 AI & ML
 	05 Robotics
+
 ```
 
 I also included websites in the [[Web Based Projects]]
@@ -49,6 +49,7 @@ I also included websites in the [[Web Based Projects]]
 > > LIST
 > > from #project and #electronics
 > > ```
+
 >
 > > [!Abstract]+ Websites
 > >
@@ -56,6 +57,7 @@ I also included websites in the [[Web Based Projects]]
 > > LIST
 > > from #project and #website
 > > ```
+
 >
 > > [!Abstract]+ AI ML
 > >
@@ -100,22 +102,26 @@ I also included websites in the [[Web Based Projects]]
 > > If i am doing an electronics project , then it will have a **schematic diagram** , **Microcontroller codes** if i've used any , also there will be notes folder it will be something like
 > >
 > > ```
+
 > > ...System
 > > 	...Schematics
 > > 	....Microcontroller_Codes
 > > 	...Website
 > > 	...Obsidian_Notes
 > > ```
+
 > >
 > > This is well organised in terms of structure and format. Because the codes are separated well .
 > >
 > > ```bash
 > > git clone --recursive ...System
 > > ```
+
 > >
 > > will be able to clone the entire system
 > >
 > > ```
+
 > > ├── Documents.md
 > >   >>  ├── Kannur Solar Batter Monitor Sketch.md
 > >   >>  ├── Kannur Solar Battery Meter Canvas.canvas
@@ -170,6 +176,7 @@ I also included websites in the [[Web Based Projects]]
 > > not done
 > > due on today
 > > ```
+
 >
 > > [!Important]- Completed Tasks
 > >
@@ -192,6 +199,7 @@ I also included websites in the [[Web Based Projects]]
 > > happens in this month
 > >
 > > ```
+
 >
 > > [!Important] Completed Tasks
 > >

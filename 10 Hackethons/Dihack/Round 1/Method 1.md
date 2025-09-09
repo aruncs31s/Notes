@@ -1,8 +1,12 @@
 ---
-aliases: 
-Date: 29-10-2024
+id: Method_1
+aliases: []
 tags:
-  - abs_link
+  - hackethons
+  - dihack
+  - round_1
+Date: 29-10-2024
+dg-publish: true
 ---
 # Method 1
 
@@ -16,6 +20,7 @@ So I have to make a communication system using the `i2c` protocol where i have m
 	- Master controls the **Water valves**
 
 ### Master 
+
 ```c
 #include <Wire.h>
 #include <stdio.h>
@@ -56,10 +61,12 @@ void loop() {
   //Serial.println("Value From Three: " + String(float_valueFromThree));
   delay(1000);
 }
+
 ```
 
 ### Slave Code 
 #### Version 1 
+
 ```c
 // Slave 1 Just Communication
 #include <Wire.h>
@@ -76,7 +83,6 @@ void loop(){
 }
 
 ```
-
 
 ```c
 int val = 0; 
@@ -98,8 +104,8 @@ void loop(){
 	digitalWrite(soi lPower, LOW);//turn off the sensor
 	Serial.print(val);
 }
-```
 
+```
 
 ```c
 // Slave 1
@@ -131,7 +137,6 @@ void loop(){
 	Serial.println(val);
 	delay(100);
 }
-
 
 ```
 

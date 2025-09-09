@@ -2,13 +2,13 @@
 id: database
 aliases: []
 tags:
+  - projects
+  - web_based
+  - kannur_solar_battery_monitor_website
   - website
-  - smartcity
-cssclasses:
-  - wide-page
+cssclasses: 
 dg-publish: true
 ---
-
 # Database
 
 - [ ] Check if is there any way to minimize the use of database in this project #fix
@@ -17,10 +17,12 @@ dg-publish: true
 
 ```python
 import sqlite3
+
 ```
 
 ```python
 sqlite3.register_adapter(datetime, lambda val: val.isoformat())
+
 ```
 
 - Used to convert to `ISO 8601` format
@@ -41,6 +43,7 @@ erDiagram
         TEXT main_node "Not Null"
         DATETIME created_data "Not Null, Default: CURRENT_TIMESTAMP"
     }
+
 ```
 
 ```mermaid
@@ -74,6 +77,7 @@ erDiagram
     }
 
     device_info ||--o{ timeseries_data : "has"
+
 ```
 
 # Functions
@@ -90,11 +94,13 @@ This is used to test the functionality without actually the microcontroller conn
             print(f"Updating random data for {ip}")
             round_random_voltage = round(random.uniform(8.7, 12), 2)
             self.insert_data(ip ,round_random_voltage)
+
 ```
 
 > [!blank|right-small]+
 >
 > ```
+
 > print(ip_list)
 > [
 > '192.168.1.1',
@@ -120,6 +126,7 @@ It receives a `ip_list` which is the list of ip of all the [[ESP8266]] running .
             (device_id, timestamp, voltage),
         )
         self.conn.commit()
+
 ```
 
 #### 3 Updating data from the esp32
@@ -144,6 +151,7 @@ def get_data():
         for row in raw_data
     ]
     return jsonify(data), 200
+
 ```
 
 this is the current function but it can be modified to get the live data[^1] from the
@@ -162,6 +170,7 @@ def get_live_data():
         }
     ]
     return jsonify(data), 200
+
 ```
 
 [^1]: Live data in the sense that it will directly come from the `ESP8266` server itself without any delay.

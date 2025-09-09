@@ -2,19 +2,21 @@
 id: GORoutines
 aliases: []
 tags:
+  - coding
   - go
+dg-publish: true
 ---
 # GO Routines
 
 ```go
 name := make(chan Type, capacity<optional>)
+
 ```
 
 ```go
 ch1, ch2 := make(chan int), make(chan string, 5)
+
 ```
-
-
 
 ```go
 func main() {
@@ -34,6 +36,7 @@ func main() {
     fmt.Println(<-ch) // "four"
     fmt.Println(<-ch) // "five"
 }
+
 ```
 
 ```go
@@ -55,9 +58,11 @@ func main() {
 	go say("first")
 	say("second")
 }
+
 ```
 
 ```
+
 first 0
 second 0 // here
 second 1
@@ -70,7 +75,9 @@ first 4
 second 4
 
 ```
+
 - Example 2
+
 ```go
 package main
 
@@ -104,11 +111,12 @@ func main() {
 	pgDuration := time.Since(startTime)
 	fmt.Printf("\nProgram Finished in %s", pgDuration)
 }
-```
 
+```
 
 > [!success]+ **Output**
 > ```
+
 > Parsing JSON
 > Getting Commits form github
 > Finished Parsing JSON
@@ -123,8 +131,8 @@ In this example the flow goes like this
 ```mermaid
 graph LR
 start --> fetch_json & get_commit_count  --> result  
-```
 
+```
 
 ## File Processing using Go Routines
 Requirement is to read a `json` file and get a specific element from the file , since the file processing takes too much time it is best to use [[Concurrency]] for this , it may be as follows
@@ -132,12 +140,8 @@ Requirement is to read a `json` file and get a specific element from the file , 
 - read the `json` file , start new job 
 - tell the function which depents on job to wait for it to finish 
 
-
-
  
 - [ ] checkout `sync.WaitGroup`
-
-
 
    2. Potential Deadlock: In helper/checkNames.go, you only send a value to the channel if a name matches. If the loop finishes and no name is
       found, you never send false, and the program will hang forever waiting on the channel.

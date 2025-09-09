@@ -2,11 +2,9 @@
 id: Home
 aliases: []
 tags: []
-cssclasses:
-  - wide-page
+cssclasses: 
 dg-publish: true
 ---
-
 # HOME
 
 - [[Projects]]
@@ -14,6 +12,7 @@ dg-publish: true
 ```widgets
 type: quote
 quote: When you stare into the abyss, the abyss stares back at you.
+
 ```
 
 ## Tasks
@@ -23,6 +22,7 @@ quote: When you stare into the abyss, the abyss stares back at you.
 ```dataview
 CALENDAR due
 WHERE typeof(due) = "date"
+
 ```
 
 ```tasks
@@ -32,6 +32,7 @@ path includes 98 Private/Todo.md
 
 ```todoist
 filter: "today | overdue"
+
 ```
 
 > [!todo] Just DO
@@ -59,6 +60,7 @@ filter: "today | overdue"
 > > FROM #project
 > > LIMIT 7
 > > ```
+
 >
 > > [!float|wide-3]+ Notes
 > >
@@ -80,6 +82,7 @@ filter: "today | overdue"
 > > not done
 > > path includes Work/
 > > ```
+
 >
 > > [!success|wide-3]+ Done
 > >
@@ -98,6 +101,7 @@ filter: "today | overdue"
 > > not done
 > > path includes 09 Startups
 > > ```
+
 >
 > > [!success|wide-3]+ Done
 > >
@@ -110,6 +114,7 @@ filter: "today | overdue"
 
 ```dataview
 CALENDAR file.ctime
+
 ```
 
 > [!IMPORTANT]- **Keep It up to date**
@@ -120,6 +125,7 @@ CALENDAR file.ctime
 > > import os as win
 > > win.system("cd C:/Users/arunc/Git/Notes && dir && git pull origin main")
 > > ```
+
 >
 > > [!NOTE]- **Linux**
 > >
@@ -132,4 +138,5 @@ CALENDAR file.ctime
 ```tasks
 not done
 limit 10
+
 ```

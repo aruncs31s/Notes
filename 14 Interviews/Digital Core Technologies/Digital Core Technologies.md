@@ -1,6 +1,10 @@
 ---
+id: Digital_Core_Technologies
+aliases: []
+tags:
+  - interviews
+  - digital_core_technologies
 dg-publish: true
-aliases: 
 Date: 03-01-2025
 ---
 # Digital Core Technologies
@@ -32,7 +36,6 @@ Date: 03-01-2025
 	- Motors
 	- Sensors
 
-
 ## Microcontrollers
 
 ```mermaid
@@ -45,6 +48,6 @@ A --> B & C & D
 C --> CA[8 Bit] & CB[16 Bit] & CC[32 Bit]
 D --> DA[CISC] & DB[RISC] 
 B --> BA[External Memory Controller] & BB[Embedded Memory Contorller]
-```
 
+```
 

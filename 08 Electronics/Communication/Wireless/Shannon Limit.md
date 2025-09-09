@@ -1,9 +1,12 @@
 ---
 id: Shannon Limit
 aliases: []
-tags: []
+tags:
+  - electronics
+  - communication
+  - wireless
+dg-publish: true
 ---
-
 # Shannon Limit
 
 $$

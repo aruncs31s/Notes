@@ -2,13 +2,13 @@
 id: APIs
 aliases: []
 tags:
-  - smartcity
+  - projects
+  - web_based
+  - kannur_solar_battery_monitor_website
   - website
-cssclasses:
-  - wide-page
+cssclasses: 
 dg-publish: true
 ---
-
 ## Fetching Data
 
 Used functions ->
@@ -33,6 +33,7 @@ def get_data():
         for row in raw_data
     ]
     return jsonify(data), 200
+
 ```
 
 ```bash
@@ -42,6 +43,7 @@ $ curl localhost:8000/api/data
   "message": "Device ID is required",
   "status": "error"
 }
+
 ```
 
 ## /api/data/old
@@ -75,11 +77,13 @@ def get_old_data():
         for row in raw_data
     ]
     return jsonify(data), 200
+
 ```
 
 #response
 
 ```
+
 $ curl "localhost:8000/api/data/old?device_id=Chittariparamba&day=2"
 [
   {
@@ -91,12 +95,15 @@ $ curl "localhost:8000/api/data/old?device_id=Chittariparamba&day=2"
     "timestamp": "2025-05-08 21:40:22"
   }
 ]
+
 ```
 
 ```
+
 args:
   device_id(str)
   day(int)
+
 ```
 
 - Obtain the args
@@ -106,6 +113,7 @@ current_node, day = (
         request.args.get("device_id"),
         request.args.get("day")S
 )
+
 ```
 
 - get the `current_node_ip`
@@ -122,6 +130,7 @@ current_node_ip = esp_devices.get_ip_of_the_node(current_node)
 ```python
 if test:
     db.update_random_data()
+
 ```
 
 [flag:: `test`] _is set to 1_
@@ -131,6 +140,7 @@ if test:
 ```python
 
 the_date = (datetime.now() - timedelta(days=int(day))).strftime("%Y-%m-%d")
+
 ```
 
 - get data corresponding to that
@@ -138,6 +148,7 @@ the_date = (datetime.now() - timedelta(days=int(day))).strftime("%Y-%m-%d")
 ```python
 
 raw_data = db.get_10_min_interval_data(device_id=current_node_ip, date=the_date)
+
 ```
 
 - Return the data
@@ -152,4 +163,5 @@ data = [
     ]
     # print(data)
     return jsonify(data), 200
+
 ```

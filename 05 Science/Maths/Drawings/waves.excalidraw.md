@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: wavesexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
-
 
 # Excalidraw Data
 ## Text Elements
@@ -19,6 +19,7 @@ $$
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBmbQAGGjoghH0EDihmbgBtcDBQMBLoeHF0Ig4kflLGFnYuNABGJIBWWsh61k4AOU4xbmaeEYAOAE4kyfjOiEIOYixuCFw2
 
@@ -41,5 +42,7 @@ Qt0FNcBHHRaTBAmgtS4E0C6Ze8QEA8HiM0YYRwhYEBFmhUuxERFgCrOAFiKw4BwGhGA7gpZoAgUyMsbs
 rbrglKZmqN2bc2QkIEYCo61Ci6sjVAD1AAVLAUAnhEGUE0So7M2kRrdfWwNm4W2ATYMBUCpya3+qzfoBsCxoLDtgmFP8QEQRlWwCiCEAANORIwelM3GPEJmzl54jkFcwVdyp8BuKGBGbQPB1GH1GAMl0I4XSCqMGwAwHLjIECEBUKZ18u4Ac5BLUR4660epjZ9YuEAnrLuNCQctla/SCrg/cM1aBZbbmVGFdUdxxi4dw3qb4CBlB5j/BqBs2wKMU
 
 YgFLYtUAg3olTVARoP9kGQDgIEMwwhmAAHFSDwYrRUf510X5EfNvxnG6GTwcFxcEZcyIf2zGwEQOA3AFMgtKDJnlaB1OMiEFAKoFR1O0ZrXYH2CBsA5EhDJuAcU2CLGnbJ+2wVwDSwgHjcIHKGVViAA=
+
 ```
+
 %%

@@ -1,10 +1,15 @@
 ---
-aliases:
+id: MagSign
+aliases: []
+tags:
+  - academics
+  - btech
+  - s7
+  - seminar
 Date: 22-10-2024
-cssclasses:
-  - wide-page
+cssclasses: 
+dg-publish: true
 ---
-
 # MagSign
 - [[Report]]
 - [[MagSign Canvas.canvas|MagSign Canvas]]
@@ -33,9 +38,7 @@ Securing the sensitive information is very essential can reduce the chance of da
 #### Need For better authentication 
 Authentication is a way to protect the data from unauthorized user accessing it. But it also brings great computational complexity , so the devs often skips the complex part and employs a less complex password or authentication method which is not secure. 
 
-
 ## 2. Literature Review
-
 
 | Authors                                                                                                | Year | Title                                                                                       | Inference                                                                                                                                                                                                                                         |
 | ------------------------------------------------------------------------------------------------------ | ---- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -47,7 +50,6 @@ So what is the need for authentication
 - To protect sensitive information 
 - To prevent unauthorized access 
 - To prevent data breach
-
 
 ## 4. Drawbacks of existing tech
 #### Limitations of Traditional Methods
@@ -61,7 +63,6 @@ So what is the need for authentication
     - Passwords can be **stollen**
     - **Biometrics data Can be spoofed**
   - **High Resource Requirement**: The Amazon Echo requires $1GHz$ ARM processor and $256MB$ ram to support voice signal analysis
-
 
 ## 5. How Magsign Avoids that
 
@@ -80,6 +81,4 @@ So what is the need for authentication
 ## 9. Reference
 
 ## 10. Thank$\mu$
-
-
 

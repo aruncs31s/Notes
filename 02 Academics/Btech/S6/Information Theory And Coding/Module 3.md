@@ -1,9 +1,13 @@
 ---
 id: Module 3
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - s6
+  - information_theory_and_coding
+dg-publish: true
 ---
-
 # Module 3
 
 Created : 2024-05-31 16:26
@@ -80,9 +84,7 @@ A block code consists of a set of fixed length **codewords**. ==The fixed length
 
 > A block code of size M is defined over an alphabet with $q$ symbols is a set of M q-ary sequence , each of length $n$ . In the special case that $q$=2 , the symbol are called bits and the code is said to be binary code .Usually , $M=q^k$ for some integer $k$ , and we call such code as an $(n,k)$ code
 
-
 ![[Pasted image 20240601031450.png]]
-
 
 ![[Pasted image 20240601031508.png]]
 
@@ -90,10 +92,7 @@ A block code consists of a set of fixed length **codewords**. ==The fixed length
 
 ![[Pasted image 20240601031926.png]]
 
-
 ![[Pasted image 20240601032145.png]]
-
-
 
 ![[Pasted image 20240601032452.png]]
 ![[Pasted image 20240601032731.png]]

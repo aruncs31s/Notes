@@ -1,9 +1,13 @@
 ---
 id: Listing
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - xplore
+  - listing
+dg-publish: true
 ---
-
 # Listing
 
 - [ ] S6 ECE B(Mini Project)

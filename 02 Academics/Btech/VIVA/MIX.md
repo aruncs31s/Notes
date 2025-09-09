@@ -1,6 +1,12 @@
 ---
-aliases: 
+id: MIX
+aliases: []
+tags:
+  - academics
+  - btech
+  - viva
 Date: "08-04-25"
+dg-publish: true
 ---
 # MIX
 1. Combinational vs  Sequential Circuits

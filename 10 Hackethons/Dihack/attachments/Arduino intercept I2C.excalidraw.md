@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: Arduino_intercept_I2Cexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 ## Text Elements
@@ -300,6 +300,7 @@ Intercepter ^7zL30Pu4
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBWbQBGGjoghH0EDihmbgBtcDBQMBLoeHF0KCwoVJLIRhZ2LjQkgGYANgAOflKG1k4AOU4xbiSABgAWVp5OsfG+QshCDmIs
 
@@ -1392,5 +1393,7 @@ m5ZYoAu+sBgeNsxiFBU3+QALnXeUPzAYF8A5NuIW/95vPlveRRbzSCNWyLEQfk5W6rbP3mggEEAX4BpX
 xkA73kxlrJwW6AN28BjkIA/AB3Q4RAxdGdUZ2Y5EHZaYIAak3aA7LIB9Esc6AR5mGjELcWn287jBgCV2/UABABBQJNg0oSEoLBT/1AAOxvbGQBb20YYxTgN2/6An/UfpHk9gvif9VUA+NvlcKfb9DuK7JVyVHpGJEpjlbjMO0Lk8SAfSGZOrkD0nLgAsYwmYrgU46BSO9QA1aAJAPbdvkBx/JXASKAyET6AEjuNcByA5ICaO7I7sTQpjPwQu9ur2
 
 zCAeEb2axxEKqDQhL5AFSABpA958SBZAB6AwQAtgNaiUCy0ZPTeRiQ12/juwgBPWXD5BtT6O3YAIkAO4MwAuwZLaiyQqwD7iHY7/Ds0gDpAjADYPHaA+DvG+GEAwQApIBIQbcRhat5AslwBUKjNFcBVwNookTv5ftLEYDA4YHFA4ADBYGKs4QA65G+AIABvgEAAA
+
 ```
+
 %%

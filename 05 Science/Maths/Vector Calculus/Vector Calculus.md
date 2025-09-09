@@ -1,8 +1,12 @@
 ---
 id: Vector Algebra
-aliases: 
-cssclasses:
-  - wide-page
+aliases: []
+tags:
+  - science
+  - maths
+  - vector_calculus
+cssclasses: 
+dg-publish: true
 ---
 <h1 align="center"> Vector Calculus </h1> 
 

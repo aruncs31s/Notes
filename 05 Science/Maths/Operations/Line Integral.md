@@ -1,3 +1,12 @@
+---
+id: Line_Integral
+aliases: []
+tags:
+  - science
+  - maths
+  - operations
+dg-publish: true
+---
 # Line Integrals
 Line integrals are related to given integration of a vector $A$ along a paths situated on a curve in space
 
@@ -11,8 +20,6 @@ $$
 \int_L A.dl = \oint A.dl
 $$
 >and this is known as contour integral or path intrgral
-
-
 
 #exampleProblem 
 ![[Old_NOTES/Academics/Btech/S6/ElectroMagnetics/Module 1/Drawings/line integrals.excalidraw]]

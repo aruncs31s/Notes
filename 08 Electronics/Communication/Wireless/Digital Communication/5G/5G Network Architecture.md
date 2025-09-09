@@ -1,6 +1,13 @@
 ---
-aliases: 
+id: 5G_Network_Architecture
+aliases: []
+tags:
+  - electronics
+  - communication
+  - wireless
+  - digital_communication
 Date: 13-10-2024
+dg-publish: true
 ---
 # 5G Network Architecture
 
@@ -9,7 +16,9 @@ graph LR
 A[5GC] --> B[Baseband Unit] 
 B --> C[Remote Radio Head] 
 C --> D[UE]
+
 ```
+
 **UE**-> User Equipment 
 **Downlink Direction**: When the user receives(gNodeB --> User)
 **Uplink Direction**: When the user transmitts (UE --> gNodeB)

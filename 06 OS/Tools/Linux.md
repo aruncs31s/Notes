@@ -1,7 +1,10 @@
 ---
 id: Linux
 aliases: []
-tags: []
+tags:
+  - os
+  - tools
+dg-publish: true
 ---
 # Linux
 - [[Automation]]
@@ -31,11 +34,13 @@ Euler 40``
 
 ```bash
 yay -S zenmap
+
 ```
 
 Depts:
 
 ```
+
  python-autocommand-2.2.2-6  python-fastjsonschema-2.20.0-1
               python-jaraco.context-5.3.0-1  python-jaraco.functools-4.0.2-1
               python-jaraco.text-4.0.0-1  python-more-itertools-10.3.0-1

@@ -1,6 +1,12 @@
 ---
-aliases: 
+id: PCB_Soldering
+aliases: []
+tags:
+  - academics
+  - btech
+  - xplore
 Date: 16-01-25
+dg-publish: true
 ---
 # PCB Soldering
 

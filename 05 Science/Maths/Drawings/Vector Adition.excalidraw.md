@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: Vector_Aditionexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
-
 
 # Excalidraw Data
 ## Text Elements
@@ -17,6 +17,7 @@ f9fbdf5db66d1a31b7db0850591a975eaadd23f8: $$\overrightarrow W$$
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebTieGjoghH0EDihmbgBtcDBQMELoeHF0XFJSNip+IsYWdi40ABYAVhrIOtZOADlOMW4eAEYeHgA2JtHB9ohCDmIsbghcAAYk
 
@@ -119,5 +120,7 @@ EazKZacyfOnYukZECZH4jHGDHQ5o80QAMjsR+I4ke/ySZXNRRmIxkCyMJH+ir+T1N6jBBVHijNR1IP1i
 gNgAYA8N4YCAeqW0hOBjp3GSj/RsKYsAgTdHjQJABrE1m2OeHiTFuTYqYiiT4A0I6oR4BOEZOMmOM0HaYINmUB+1Bk6oBsFsF5O8nWTEAbE+cbqNohmJ52TgK1pRS55AgZgYQMwH0gyJiApJ0oG9ga1pBBs8cGRDeheJ3pcAmgYIBuFO1FBsARAO7NYbDoSgOAdxSNZafezg45wIdPVNibsDqoNszAK4NabgCGQ2A8wR4/qcNOrlwAcMdHcEBLBV
 
 gQAVYIAA
+
 ```
+
 %%

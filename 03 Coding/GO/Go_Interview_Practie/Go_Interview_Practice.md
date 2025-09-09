@@ -1,3 +1,13 @@
+---
+id: Go_Interview_Practice
+aliases: []
+tags:
+  - coding
+  - go
+  - go_interview_practie
+dg-publish: true
+---
+
 ```go
 	wordCount := make(map[string]int)
 	filter := regexp.MustCompile(`[^a-zA-Z0-9]+`)
@@ -33,9 +43,11 @@
 	}
 
 	fmt.Println(wordCount)
+
 ```
 
 old
+
 ```go
 wordCount := make(map[string]int)
 	filter := regexp.MustCompile(`[^a-zA-Z0-9]+`)
@@ -58,4 +70,5 @@ wordCount := make(map[string]int)
 		}
 		onceTried[words[i]] = 1
 	}
+
 ```

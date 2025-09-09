@@ -1,3 +1,12 @@
+---
+id: Project
+aliases: []
+tags:
+  - coding
+  - github
+  - organization
+dg-publish: true
+---
 # Organization Project 
 
 ## Prioritized backlog

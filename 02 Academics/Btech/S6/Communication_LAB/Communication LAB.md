@@ -1,9 +1,13 @@
 ---
 id: Communication LAB
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - s6
+  - communication_lab
+dg-publish: true
 ---
-
 #### Experiments
 - [x] [[Experiment 1 Fake]] ✅ 2024-05-18
 - [ ] [[Experiment 1]]

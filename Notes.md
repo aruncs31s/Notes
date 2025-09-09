@@ -1,4 +1,7 @@
 ---
+id: Notes
+aliases: []
+tags: []
 dg-home: true
 dg-publish: true
 ---

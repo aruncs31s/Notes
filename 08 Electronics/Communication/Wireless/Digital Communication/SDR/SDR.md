@@ -1,6 +1,14 @@
 ---
-aliases: 
+id: SDR
+aliases: []
+tags:
+  - electronics
+  - communication
+  - wireless
+  - digital_communication
+  - sdr
 Date: "29-03-25"
+dg-publish: true
 ---
 # SDR
 1. RF Front End --> antennas Filters Amplifiers

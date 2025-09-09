@@ -1,14 +1,14 @@
 ---
+id: Builder
+aliases: []
 tags:
-  - "#programming"
-  - software_design
-  - design_pattern
-  - creational_pattern
+  - coding
+  - design_patterns
+  - creational
 dg-publish: true
 ---
 # Builder Pattern 
 > **Builder** is a creational design pattern that *allows you to construct complex objects step by step*. It separates the construction of a complex object from its representation, allowing the same construction process to create different representations.
-
 
 ```ts
 class HTTPRequest{
@@ -66,6 +66,7 @@ const request = new RequestBuilder()
         body: JSON.stringify({ key: 'value' })
     })
     .build();
+
 ```
 
 #### ✅ **Benefits**

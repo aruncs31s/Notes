@@ -2,20 +2,19 @@
 id: Level 0
 aliases: []
 tags:
+  - classes
   - git_by_doing
-  - sub_module
-  - for_students
 Status: Done
 dg-publish: true
 github: https://github.com/aruncs31s/level_0
 type: Automated
 ---
-
 # Level 0
 
 ```dataview
 Table without ID  file.name as "Name" , github as Link , status as Status, file.inlinks as Mentioned
 where file = this.file
+
 ```
 
 - [x] `.git folder` ✅ 2025-07-13
@@ -29,10 +28,12 @@ Task: Getting a gthub repository the right way
 > ```bash
 > Bash check. Sh
 > ```
+
 >
 > If you see the following message read the github page again
 >
 > ```
+
 > Faild , Try Again
 > READ the webpage again
 > ```
@@ -44,12 +45,14 @@ Task: Getting a gthub repository the right way
 
 ```bash
 git clone <the repocitory url>
+
 ```
 
 Eg:
 
 ```bash
 git clone https://github.com/aruncs31s/level_0
+
 ```
 
 - If you download code from GitHub, remember the word download, it does not downloads the `.git` folder

@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: Gcek_Weather_Stataion_Sketch
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 ## Text Elements
@@ -172,6 +172,7 @@ b1906dc43c8431b2d7e29d1f2707195e755589fc: [[initial circuit diagram.png]]
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBWbR4aOiCEfQQOKGZuAG1wMFAwYuh4cXQoLCgU4shGFnYuNHiAZgAOfhL61k4AOU4xbgBGFoB2FoAWAAYeHjaJzshCDmIs
 
@@ -664,5 +665,7 @@ vFlnMtZ9K5LQwbsvVl/QAKgh7qDlxss1l4qW/IToBjl9ssTlzL41OGcsll4LqGq0JX1lnsvpAaZaoxj0
 Y3QIy4V9DApIZZPew9JAF9XAAAACmZ81AEr4VYFBV5IC5I8QAAAlKCB9II2C4CARhSAFRXaK9UhRYLBBuGgyAWK+xWYK5mW3oM2X0QAqD9ls9Bty1hx9IOXBvENtGeTrgAiK5IGnNEHln1TNlfEBkAZssIAoADsUgGDBW7AGuhWGswBRofSN8KwgA9y2pXggBpXokFqZMkLxy1WMBXrBF9GInGEBggM5XWg1Z4tYKsmzy+UAZMv7ZacM8BnK4wBc
 
 IMCB+UIGWNRMYMj+sAA00I5AgAA=
+
 ```
+
 %%

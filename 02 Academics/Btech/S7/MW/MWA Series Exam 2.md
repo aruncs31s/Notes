@@ -1,6 +1,13 @@
 ---
-aliases: 
+id: MWA_Series_Exam_2
+aliases: []
+tags:
+  - academics
+  - btech
+  - s7
+  - mw
 Date: 15-10-2024
+dg-publish: true
 ---
 # MWA Series Exam 2
 ## Topics 
@@ -39,7 +46,6 @@ $$
 $$
 L = L_{eff} - 2 \Delta L
 $$
-
 
 ##### Example Problem 
 **Q**: Design a rectangular microstrip antenna using  a substrate (RT/duroid 5880 ) with *dielectric constant of 2.2* , *h = 0.1588cm* so to resonate at *$10GHz$*

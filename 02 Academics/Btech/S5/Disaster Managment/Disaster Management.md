@@ -1,9 +1,13 @@
 ---
 id: Disaster Management
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - s5
+  - disaster_managment
+dg-publish: true
 ---
-
 # Disaster Management
 
 ## Module 1
@@ -76,7 +80,6 @@ Earth has 4 Concentric Zones
 > **Regions Affected**: Primarily affects the southeastern coast of India, including Tamil Nadu, Andhra Pradesh, and parts of Karnataka and Kerala.
 >   
 > **Characteristics**: Brings moderate rainfall, essential for crops like rice and provides crucial water resources for these regions.
-
 
 ### Hazard mapping
 1. Remote Sensing Data

@@ -1,3 +1,11 @@
+---
+id: Tweepy
+aliases: []
+tags:
+  - coding
+  - python
+dg-publish: true
+---
 #### Example 
 
 ```python
@@ -12,13 +20,14 @@ api = tweepy.API(auth)
 public_tweets = api.home_timeline()
 for tweet in public_tweets:
     print(tweet.text)
-```
 
+```
 
 1. **By X dev Platform**
 
 ```bash
 pip install requests tweepy requests_oauthlib flask
+
 ```
 
 ```python 
@@ -30,15 +39,16 @@ import requests
 import tweepy
 from requests_oauthlib import OAuth2Session
 from flask import Flask, request, redirect, session, url_for, render_template
+
 ```
 
 3. To start, you will need to set up your application as a Flask app. After that, you will need to set a secret key for your app.
+
 ```python
 app = Flask(__name__)
 app.secret_key = os.urandom(50)
+
 ```
-
-
 
 5. **By Project Raspberry pi**
 
@@ -61,9 +71,11 @@ twitter = Twython(
 message = "Hello World!"
 twitter.update_status(status=message)
 print("Tweeted: " + message)
+
 ```
 
 3. **By Geeks for Geeks** 
+
 ```python
 # importing the module`
 

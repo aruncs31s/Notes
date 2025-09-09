@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: rectangular_waveguideexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 ## Text Elements
@@ -23,6 +23,7 @@ d ^KWJWapUw
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebTiARgAGGjoghH0EDihmbgBtcDBQMBKIEm4IACsAawAJACF6imcABQApAA4AEQBOAHZiADYAdQBZOAB9NoBFVJLIWEQKog4k
 
@@ -99,5 +100,7 @@ BKuNwfIO0sc0bFwnG3QCJteOJUzNgBWeYUhXmWpHNrGzo4VAxA2QJgL83KJwUWO6AYCMQGIAfB2OjRTj
 AJN9N6bDOyCgyfpmeH0ZACBmfTvpv0lbH6Ouk4y4ZGQISMBJ5pEzUZUAdGQpDy6KEYZwMtGfDJqkgViMDM3GRkE0hptKOt4FGYzOpnfT5SALR9Ax1KDEymZGQA6dwkTrFI+ZHM/QB2AgKWNykTdY6cwGwD/BqQRsd9BWHP4rlAEl3CztdPVmaz8AMkQNJPVjCSRpwF0EON6hjQ/k2ABgI6QdAICTE5iVuMMCP1D7nRUsouOWSTP0BkyJ4N2Lmu2A
 
 RBl4SAlUmdhBMwqQyZapQeoKCDViQhtOacnoJpH4nqgRiygOka6I7BdAC5BczOZnSk6Uz+Z+MwELTLNKcB0plmQIGYGEDMAVIcc6OYEQKR9wRi9oTCuFhVhZBtYwQJiClOxkGiVpZE0oIrjOk9dx5kAYQFAFpTTyEA/suwJUAQBTjmANIRXHAFGBsBSkisgeYfnABNIkuwQD0H6BAB+ggAA=
+
 ```
+
 %%

@@ -1,7 +1,12 @@
 ---
 id: VLSI Module 4
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - s6
+  - vlsi
+dg-publish: true
 ---
 # Module 4 Arithmetic circuits
 - Adders:
@@ -70,10 +75,7 @@ if $P_0P_1P_2P_3 = BP =1$ carry is directly passed to ==next block== .ie , $C_{o
 $$
 T{p}= T{setup} + MT{carry} + (N/M-1) T{bypass}+(M-1)TCarry+ T{sum}
 
-
 $$
-
-
 
 > - $T{setp}$ = time to create generate & propagate signal
 > - $T{carry}$ = Propagation delay through single bit
@@ -92,8 +94,6 @@ $$
 - Once the real values of incoming carry is known, correct result is selected with a single multiplexer stage.
 
 ![[Linear Carry adder.canvas|Linear Carry adder]]
-
-
 
 > Consider the block of adder, which is adding bits K to K+3.
 >
@@ -128,5 +128,4 @@ T_{add} = T_{setup} + Mt_{carry} + (\sqrt{2N})T_{mux} + T_{sum}
 $$
 
 ![[sqrt,ripple,linear select performance graph]]
-
 

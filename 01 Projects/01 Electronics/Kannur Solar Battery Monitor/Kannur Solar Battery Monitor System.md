@@ -1,25 +1,24 @@
 ---
 id: 06010-2024-Smart-City
-aliases:
-  - Smart city
+aliases: []
 tags:
-  - "#project"
-  - "#electronics"
-Date:
-  Started: 06-10-2024
-  Target: 28-10-2024
+  - projects
+  - electronics
+  - kannur_solar_battery_monitor
+Date: 
+Started: 06-10-2024
+Target: 28-10-2024
 Status: Done
 dg-publish: true
-github:
-  - https://github.com/aruncs31s/Kannur-Solar-Battery-Monitoring-System
+github: 
 ---
-
 # Kannur Solar Battery Monitor System
 
 ```dataview
 Table
 file.ctime as "Created" , Date.Started as "Started" , Date.Target as "Completed"
 Where file = this.file
+
 ```
 
 ```widgets
@@ -27,6 +26,7 @@ type: countdown
 date: 2025-06-09 00:00:00
 to: Complete the Project 🎉
 completedLabel: Project is done 🎉
+
 ```
 
 - [[#Components Used]]

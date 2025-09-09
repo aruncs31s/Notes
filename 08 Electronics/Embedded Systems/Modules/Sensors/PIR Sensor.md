@@ -1,8 +1,17 @@
+---
+id: PIR_Sensor
+aliases: []
+tags:
+  - electronics
+  - embedded_systems
+  - modules
+  - sensors
+dg-publish: true
+---
 [Source](https://www.electronicwings.com/esp32/pir-sensor-interfacing-with-esp32)
 - [Introduction]()
 - [Interfacing]()
 - [Circuit Diagram]()
-
 
 #### Introduction
 - PIR (Passive Infrared) sensor is a type of electronic sensor used to detect the presence of living beings by measuring changes in the infrared (IR) radiation in the environment. 
@@ -12,20 +21,14 @@
 - Operating Voltage `5V – 12V`
 - Output Signal Voltage `3.3V`
 
-
 ##### Operating Modes
 1. **Single Trigger Mode**: The constant motion will cause a single trigger.
 2. **Multiple Trigger Mode**: The constant motion will cause a series of triggers.
-
-
-
 
 #### Interfacing
 [Credit](https://www.electronicwings.com/esp32/pir-sensor-interfacing-with-esp32)
 
 ![image|400x300](https://www.electronicwings.com/storage/PlatformSection/TopicContent/444/description/PIR%20Sensor%20Interfacing%20with%20ESP32.jpg)
-
-
 
 *Note*
 - Keep Far form WiFi Antenna [why](https://www.electronicwings.com/esp32/pir-sensor-interfacing-with-esp32)
@@ -66,4 +69,5 @@ void loop() {
     delay(1000);
   } 
 }
+
 ```

@@ -1,3 +1,11 @@
+---
+id: Inversion_of_control
+aliases: []
+tags:
+  - coding
+  - design_patterns
+dg-publish: true
+---
 # Inversion Of Control IoC
 is a design principle in which custom-written portions of a computer program receive the flow of control from an external source
 

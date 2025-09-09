@@ -1,5 +1,11 @@
-
-
+---
+id: Tui_Apps
+aliases: []
+tags:
+  - os
+  - tools
+dg-publish: true
+---
 ### **T-ui Apps**
 1. [[Yazi]]:Terminal file explorer written in Rust BTW
 

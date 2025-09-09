@@ -1,3 +1,11 @@
+---
+id: GO_Code
+aliases: []
+tags:
+  - classes
+  - git_by_doing
+dg-publish: true
+---
 # Codin 
 
 - [[GORM Database]]

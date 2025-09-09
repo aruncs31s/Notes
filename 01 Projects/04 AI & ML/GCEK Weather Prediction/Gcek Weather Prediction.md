@@ -2,13 +2,15 @@
 id: Gcek Weather Prediction
 aliases: []
 tags:
-  - project
+  - projects
+  - ai_ml
+  - gcek_weather_prediction
 Completed: false
 Starting Date: "2024-09-12"
 Status: true
 Target Date: "2024-09-23"
+dg-publish: true
 ---
-
 # Gcek Weather Prediction
 
 #tasks

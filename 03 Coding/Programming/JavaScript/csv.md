@@ -1,10 +1,12 @@
 ---
 id: csv
-aliases:
-  - csv handling
-tags: []
+aliases: []
+tags:
+  - coding
+  - programming
+  - javascript
+dg-publish: true
 ---
-
 # CSV
 
 **Modules**: `fs`
@@ -22,4 +24,5 @@ fs.createReadStream("./2024-09-09_log.csv", { encoding: "utf8" })
   .on("error", (error) => {
     console.log(error);
   });
+
 ```

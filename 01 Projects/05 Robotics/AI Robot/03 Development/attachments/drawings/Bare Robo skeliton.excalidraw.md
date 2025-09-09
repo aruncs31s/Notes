@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: Bare_Robo_skelitonexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 
@@ -429,6 +429,7 @@ e42901113191431eb4d89e299cb3e0b1cea66c40: [[Pasted Image 20250608012811_098.png]
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBGAAYEmjoghH0EDihmbgBtcDBQMBKIEm4IAE0AVUx4gHUESskYAEcAdgBBVgBlABEARQQADUqAaVSSyFhECqCiOSR+Usxu
 
@@ -2963,5 +2964,7 @@ aMUcwTvNNPI1+Ycwlk1GFN/wrIrXYodAYAroGkrE1bIcAfYBoABogEyAEcIQRAywAGAClUPX7GVZUccW
 gUo6atWNJ3P8YGeDBbkLQGkuVHAwEgXQDQcstALhgOJsGr1/v0p1E4JL8ZYp3fIBLQBcSFYrEDNjoiLxJDUWQAGkoAYAUb8DAACAC4SHTYHtALVxMyBsnc+O/RUOZOBUAHKYSAAx5xUd2qAcZ3D4AUjY84DGdznxfMxbkU0Wxq2I8nPM7q9A2MA8zGUQG1wPHt3AAAAAKe+q/h8uQCHO9agXZAAAAlM6ADCQcz1keDBwFha0qAfZ3q7BwpCtQK6Q
 
 WBebYA5zu46B+O/cd4KABe8/MDFiEWO6JIBhIesA0YFhUm1sWp89tAA0OVmABIDjCLRbIo7gfBwgA04KRyAZCu87uwAVssvMAIkTRbHLtRZ3JYFQXf7yGlwj+IRgABy5RQCdO7QIGEAYIApMCPm5w+X/4EJQR2cJyA55cOCAMAAeeUl3/MCT5Qb/l2XHi7hAABLvFOC2cvAAAPALxMTxjEkAs4BHAEAAA===
+
 ```
+
 %%

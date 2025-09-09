@@ -1,9 +1,14 @@
 ---
 id: ESP_IDF
 aliases: []
-tags: []
+tags:
+  - electronics
+  - embedded_systems
+  - micro_controllers
+  - espressif
+  - esp32
+dg-publish: true
 ---
-
 # ESP_IDF
 
 ## DefCon23 ESP-IDF Getting Started
@@ -38,6 +43,7 @@ cd ./esp-idf
 ./install.sh esp32
 . export.sh
 idf.py -help
+
 ```
 
 #### Create Project
@@ -45,6 +51,7 @@ idf.py -help
 ```bash
 idf.py create-project project_name
 cd ./project_name
+
 ```
 
 #### Project Structure
@@ -59,6 +66,7 @@ cd ./project_name
     └── smart_blink.c
 
 2 directories, 3 files
+
 ```
 
 2. `CMakeLists.txt` declare the entire project
@@ -69,6 +77,7 @@ cmake_minimum_required(VERSION 3.16)
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 project(smart_blink)
+
 ```
 
 3. `main/CMakeLists.txt` to register the main component
@@ -76,6 +85,7 @@ project(smart_blink)
 ```js
 idf_component_register(SRCS "smart_blink.c"
                     INCLUDE_DIRS ".")
+
 ```
 
 4. Source file for the main component
@@ -85,6 +95,7 @@ idf_component_register(SRCS "smart_blink.c"
 void app_main(void){
   printf("Hello World\n")
 }
+
 ```
 
 - Here `app_main()` is the entry point of the project
@@ -115,16 +126,19 @@ void app_main(void){
 
 ```bash
 idf.py set-target esp32
+
 ```
 
 After configuration `build` directory will be created which stores all the temporary files needed for the project
 
 ```
+
  ./
 ├──  build/
 ├──  CMakeLists.txt
 ├──  main/
 └──  sdkconfig
+
 ```
 
 #### Building the project
@@ -133,6 +147,7 @@ After configuration `build` directory will be created which stores all the tempo
 
 ```bash
 idf.py all
+
 ```
 
 ### Installation: Linux
@@ -145,6 +160,7 @@ idf.py all
 
 ```bash
 sudo pacman -S --needed gcc git make flex bison gperf python cmake ninja ccache dfu-util libusb
+
 ```
 
 2. Get ESP IDF
@@ -162,18 +178,21 @@ source export.sh
 
 ```bash
 alias get_idf='/path/to/esp-idf/export.sh'
+
 ```
 
 ```bash
 git clone --recursive  https:/github.com/espressif/esp-idf.git
 cd esp-idf
 ./install.sh
+
 ```
 
 Set `IDF_PATH` in your environment to the path of the esp-idf directory.
 
 ```bash
 export IFD_PATH=~/path_to/esp-idf
+
 ```
 
 #install_all
@@ -182,6 +201,7 @@ export IFD_PATH=~/path_to/esp-idf
 git clone --recursive  https:/github.com/espressif/esp-idf.git
 cd esp-idf
 ./install.sh
+
 ```
 
 ### Basics

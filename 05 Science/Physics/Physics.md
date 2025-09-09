@@ -1,3 +1,11 @@
+---
+id: Physics
+aliases: []
+tags:
+  - science
+  - physics
+dg-publish: true
+---
 # Physics
 - [Forces](#forces)
 - [[PDE]]
@@ -5,11 +13,9 @@
 - [[Kinematics and Dynamics]]
 #### Forces
 
-
 > [!INFO] Strong Nuclear Force
 > We know **similar** charges repel each other and **opposite** charges attract eachother but  why the protons inside and atom not repelling each other ? 
 > - One thing that the strong Nuclear force experienced by protons and nutrons so the `strong nuclear force` will exceed force experienced due to the charges(electric force)
-
 
 - [x] Laws of motion ✅2025-07-04/03:36 
 - [x] Principle of relativity ✅2025-07-04/03:36 
@@ -19,7 +25,6 @@ The vector itself is independant of which co-ordinate system we use.
 
 #### Laws of Co-varients
 Laws of physics will stay the same even if you change the references. 
-
 
 1. Translation Symmetry of the universe -> Conservation of Momentum
 2. Rotational Symmetry of the universe ->  Conservation of angular momentum

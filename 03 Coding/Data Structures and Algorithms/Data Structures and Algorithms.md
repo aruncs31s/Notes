@@ -1,9 +1,11 @@
 ---
 id: Data Structures and Algorithms
 aliases: []
-tags: []
+tags:
+  - coding
+  - data_structures_and_algorithms
+dg-publish: true
 ---
-
 # Data Structures And Algorithms
 
 ## Contents
@@ -32,6 +34,7 @@ for(int i = 0 ; i < count/* n+1 times */ ; ++i/*n times*/){
 
   sum++; /* n times */
 // Total 2n+2 times => 0(n)
+
 ```
 
 #### Linear Search

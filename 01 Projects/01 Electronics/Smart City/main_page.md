@@ -1,11 +1,15 @@
 ---
 id: main_page
 aliases: []
-tags: []
+tags:
+  - projects
+  - electronics
+  - smart_city
+dg-publish: true
 ---
-
 # Main Page
 
 ```bash
 pip install bootstrap-flask
+
 ```

@@ -1,3 +1,12 @@
+---
+id: Classes
+aliases: []
+tags:
+  - coding
+  - js
+dg-publish: true
+---
+
 ```js
 class Shoe {
 	constructor(brand, model, size) {
@@ -27,6 +36,7 @@ console.log('count =', Shoe.count); // 3
 console.log('s2 = ' + s2); // Nike Free 5 in size 12
 console.log('s1.equals(s2) =', s1.equals(s2)); // false
 console.log('s1.equals(s3) =', s1.equals(s3)); // true
+
 ```
 
 ```js
@@ -43,8 +53,8 @@ class Shoe {
 let s = new Shoe();
 s.size = 13; // invokes setter
 console.log(s.size); // invokes getter
-```
 
+```
 
 ```js
 class Shoe {
@@ -60,6 +70,7 @@ this._size = size;
 let s = new Shoe();
 s.size = 13; // invokes setter
 console.log(s.size); // invokes getter
+
 ```
 
 >*using size instead of _size for the “backing field” would cause a `ModuleEvaluationError` with message “Maximum call stack size exceeded”*

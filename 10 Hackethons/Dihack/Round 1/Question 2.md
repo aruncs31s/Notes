@@ -1,7 +1,12 @@
 ---
+id: Question_2
+aliases: []
+tags:
+  - hackethons
+  - dihack
+  - round_1
 dg-publish: true
 ---
-
 # Question 2 
 
 ^e20f4d
@@ -13,6 +18,7 @@ You are given two Arduino boards (Arduino A and Arduino B) that are communicatin
 ### Ans:
 ![[Arduino intercept I2C.excalidraw]]
 #### **Master Code (Arduino A)**:
+
 ```c
 // Master Code 
 // Github  : https://github.com/aruncs31s/
@@ -32,9 +38,11 @@ void loop() {
 	x=  random(0, 255);;
 	delay(1000);
 }
+
 ```
 
 #### **Slave Code (Arduino B)**
+
 ```c
 // Slave Code 
 // Date : 2024-10-13 
@@ -52,10 +60,11 @@ void receiveCallback(int bytes){
 void loop() {
 	delay(1000);
 }
+
 ```
 
-
 #### **Intercepter Code (Arduino C)**:
+
 ```c
 // Intercepted Code
 // Date : 2024-10-13
@@ -85,14 +94,11 @@ void setup() {
     scan_for_i2c();                  // Scan for I2C device
   }
 
-
 void loop() { 
 	delay(1000);
  }
+
 ```
-
-
-
 
 ## References
 

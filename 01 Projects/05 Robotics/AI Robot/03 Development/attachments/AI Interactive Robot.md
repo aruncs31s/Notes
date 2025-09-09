@@ -1,10 +1,15 @@
 ---
 id: AI Interactive Robot
 aliases: []
-tags: []
+tags:
+  - projects
+  - robotics
+  - ai_robot
+  - development
+  - attachments
 Date: "13-11-2024"
+dg-publish: true
 ---
-
 # AI Interactive Robot
 
 ## Components Used

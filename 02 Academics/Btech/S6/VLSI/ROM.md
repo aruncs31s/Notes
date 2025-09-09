@@ -1,6 +1,15 @@
+---
+id: ROM
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - vlsi
+dg-publish: true
+---
 # ROM
 Created : 2024-04-18 00:07
-
 
 ## Contents
 
@@ -10,7 +19,6 @@ Created : 2024-04-18 00:07
 - ![[WordLine]]
 - ![[BitLine]]
 
-
 ## References
-1. [WordLine](WordLine.md)
-2. [BitLine](BitLine.md)
+1. [[WordLine]]
+2. [[BitLine]]

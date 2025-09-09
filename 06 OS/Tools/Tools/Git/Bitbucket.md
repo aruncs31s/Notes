@@ -1,3 +1,12 @@
+---
+id: Bitbucket
+aliases: []
+tags:
+  - os
+  - tools
+  - git
+dg-publish: true
+---
 # Bitbucket 
 How to clone Private
 
@@ -5,6 +14,7 @@ How to clone Private
 
 ```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"
+
 ```
 
 2. Add the public key to your Bitbucket account:
@@ -16,6 +26,7 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 
 ```bash
 git clone git@bitbucket.org:username/repo.git
+
 ```
 
 Replace username and repo with your Bitbucket username and repository name.

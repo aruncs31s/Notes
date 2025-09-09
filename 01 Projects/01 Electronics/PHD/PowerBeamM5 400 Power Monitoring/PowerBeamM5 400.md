@@ -2,9 +2,12 @@
 id: PowerBeamM5 400
 aliases: []
 tags:
-  - "[]:w"
+  - projects
+  - electronics
+  - phd
+  - powerbeamm5_400_power_monitoring
+dg-publish: true
 ---
-
 # Power Beam M5 400
 
 #### IP Configurations

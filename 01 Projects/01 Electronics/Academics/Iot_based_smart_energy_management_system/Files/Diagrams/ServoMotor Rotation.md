@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: ServoMotor_Rotation
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
-
 
 # Text Elements
 Servo ^YKZEOPbN
@@ -52,6 +52,7 @@ Ant Clcok Wise ^pCiLTmNr
 
 %%
 # Drawing
+
 ```json
 {
 	"type": "excalidraw",
@@ -2342,5 +2343,7 @@ Ant Clcok Wise ^pCiLTmNr
 	},
 	"files": {}
 }
+
 ```
+
 %%

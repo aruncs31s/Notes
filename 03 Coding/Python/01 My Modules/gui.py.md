@@ -1,9 +1,12 @@
 ---
-aliases: 
-Date: 15-06-2025
+id: guipy
+aliases: []
 tags:
-  - python_module
-  - dependency
+  - coding
+  - python
+  - my_modules
+Date: 15-06-2025
+dg-publish: true
 ---
 # gui.py
 
@@ -21,7 +24,9 @@ def create_servo_slider(frame, servo_id, initial_value,slider_label):
     )
     slider.set(initial_value) 
     return slider
+
 ```
+
 - It creates a slider 
 - **requires**: `frame` , `servo_id`, `initial_value`, `slider_label` 
 - `initial_value` is scraped from [here](https://github.com/AI-Robot-GCEK/robo-initial-positions/blob/main/src/initial-positions.h) 
@@ -66,4 +71,5 @@ def gui_main(SERVO_COUNT, initial_angles,servo_values,servo_names):
         row, col = divmod(id, 4)  # Calculate row and column for 4x4 grid
         slider.grid(row=row, column=col, padx=5, pady=5)  # Use grid for layout
     root.mainloop()
+
 ```

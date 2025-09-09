@@ -1,9 +1,12 @@
 ---
-dg-publish: true
-aliases: 
-Date: 29-10-2024
+id: Question_3
+aliases: []
 tags:
-  - abs_link
+  - hackethons
+  - dihack
+  - round_1
+dg-publish: true
+Date: 29-10-2024
 ---
 # Question 3
 Construct a system for below home garden.
@@ -17,6 +20,7 @@ Construct a system for below home garden.
 - [[Method 1]]
 
 #### Code
+
 ```c
 int val = 0; 
 int soilPin = A0;
@@ -37,15 +41,14 @@ void loop(){
 	digitalWrite(soi lPower, LOW);//turn off the sensor
 	Serial.print(val);
 }
-```
 
+```
 
 ### Ans
 #### Requirements
 - **I2C** Master controls the water pump 
 - **I2C** Master controls the water values 
 - All **I2C** will be on same bus 
-
 
 >Water Pump- 28VDC, 500mA
 >Water Valve- 12VDC, 300mA (Normally closed.)
@@ -73,6 +76,7 @@ So i have to make the **I2C as master** using
 ##### Receiver Code
 Initial Codes
 1. Just read 
+
 ```c
 // Receiver Code
 #incude <Wire.h>
@@ -90,9 +94,11 @@ void loop() {
 		}
 	delay(500);
 }
+
 ```
 
 2. Multi slave 
+
 ```c
 #include <Wire.h>
 #include <stdio.h>
@@ -131,10 +137,12 @@ void loop() {
   Serial.println("Value From Three: " + String(float_valueFromThree));
   delay(1000);
 }
+
 ```
 
 ##### Sender  Code 
 1. Single Slave 
+
 ```c
 // Sender Code
 
@@ -150,9 +158,11 @@ void requestEvent() {
 	Wire.write("10"); // respond with message of 6 bytes
   // as expected by master
 }
+
 ```
 
 2. Multi slave 
+
 ```c
 // Slave 1
 #include <Wire.h>
@@ -167,6 +177,7 @@ void requestThen(){
 void loop(){
 	delay(100);
 }
+
 ```
 
 ```c
@@ -183,6 +194,7 @@ void requestThen(){
 void loop(){
 	delay(100);
 }
+
 ```
 
 ```c
@@ -199,7 +211,9 @@ void requestThen(){
 void loop(){
 	delay(100);
 }
+
 ```
+
 ### Stes
 1. [ ] created a program that communicates with multiple slaves ⏫ 
 2. [ ] Now interface the moisture sensor 

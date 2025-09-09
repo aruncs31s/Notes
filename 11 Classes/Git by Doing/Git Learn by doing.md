@@ -1,11 +1,12 @@
 ---
 id: Git Learn by doing
 aliases: []
-tags: []
+tags:
+  - classes
+  - git_by_doing
 dg-publish: true
 startTime: Sat Jul 12 09:51:16 PM IST 2025
 ---
-
 # Git Learn By Doing
  - [[Level 5]]
 
@@ -15,6 +16,7 @@ It is planed to teach git in 100(guessing) Levels. Starting from clone to fully 
 Table  file.ctime as "Created" , file.mtime as "Modified" , type as "Type",status as "Status"
 from #git_by_doing
 sort file.name asc
+
 ```
 
 ---
@@ -23,7 +25,6 @@ How this is planned: The difficulty will increase from task to task by end of th
 
 ## Project Outline 
 This is planned in a way that , every each task from [[Level 0]] to [[Level 100]] (hopefully) mock the , real world scenario, 
-
 
 | Level       | What you Will Learn                      | Is Mandatory |
 | ----------- | ---------------------------------------- | ------------ |
@@ -35,8 +36,6 @@ This is planned in a way that , every each task from [[Level 0]] to [[Level 100]
 | [[Level 5]] | `git config`                             | Yes          |
 | [[Level 6]] | `git pull` , `git push`                  | Yes          |
 
-
-
 ## Installing Git
 
 1. Windows: click [here](https://git-scm.com/downloads/win) to download
@@ -47,6 +46,7 @@ This is planned in a way that , every each task from [[Level 0]] to [[Level 100]
    > ```bash
    > git -v
    > ```
+
    >
    > > [!note]- If not installed
    > >

@@ -1,15 +1,16 @@
 ---
+id: Facade
+aliases: []
 tags:
-  - "#programming"
-  - software_design
-  - design_pattern
-  - creational_pattern
+  - coding
+  - design_patterns
+  - structural
 dg-publish: true
 ---
-
 # Facade Pattern
 
 ## Without Facade
+
 ```ts
 const paymentProc = new PaymentProcessor();
 const inventorySystem = new InventorySystem();
@@ -25,8 +26,11 @@ if (fraudChecker.verify(user)){
         console.log("Item out of stock");
     }
 }
+
 ```
+
 ### Without Facade in Go
+
 ```go
 package main
 import "fmt"
@@ -75,16 +79,19 @@ func main() {
         }
     }
 }
+
 ```
 
-
 ## With Facade
+
 ```ts
 const orderSystem = new OrderFacade();
 orderSystem.placeOrder(user, item);
+
 ```
 
 ### With Facade in Go 
+
 ```go
 package main
 import "fmt"
@@ -114,7 +121,6 @@ func (f *OrderFacade) PlaceOrder(user User, item Item) {
         }
     }
 }
+
 ```
-
-
 

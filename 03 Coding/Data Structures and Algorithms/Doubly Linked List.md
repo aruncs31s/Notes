@@ -1,9 +1,11 @@
 ---
 id: Doubly Linked List
 aliases: []
-tags: []
+tags:
+  - coding
+  - data_structures_and_algorithms
+dg-publish: true
 ---
-
 # Doubly Linked List
 
 ## Resources

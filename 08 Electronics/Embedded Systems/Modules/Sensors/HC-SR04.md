@@ -1,11 +1,13 @@
 ---
-aliases:
-  - ultrasonic sensor
-Date: 12-10-2024
+id: HC-SR04
+aliases: []
 tags:
-  - arduino
-  - esp32
-  - esp8266
+  - electronics
+  - embedded_systems
+  - modules
+  - sensors
+Date: 12-10-2024
+dg-publish: true
 ---
 # HC-SR04
 >[!blank|right-small]
@@ -76,8 +78,8 @@ $$
 
 $$
 
-
 Source[^1]
+
 ```c
 unit8_t trig=9;
 uint8_t echo=8;
@@ -112,6 +114,7 @@ void loop()
 	}
 	delay(1000);
 }
+
 ```
 
 [^1]: [Datasheet](https://www.handsontec.com/dataspecs/HC-SR04-Ultrasonic.pdf) It is not the origional datasheet i think but it has some pretty usefull information and sample code 

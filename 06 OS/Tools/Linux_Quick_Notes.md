@@ -1,9 +1,11 @@
 ---
 id: Linux_Quick_Notes
 aliases: []
-tags: []
+tags:
+  - os
+  - tools
+dg-publish: true
 ---
-
 - [x] mv plank.bak to plank
 
 #### 2024-07-28

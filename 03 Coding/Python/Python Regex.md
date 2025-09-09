@@ -1,10 +1,13 @@
 ---
-cssclasses:
-  - wide-page
-aliases: 
-tags: 
+id: Python_Regex
+aliases: []
+tags:
+  - coding
+  - python
+cssclasses: 
 Created: 04-10-2024
-Status:
+Status: 
+dg-publish: true
 ---
 # Python Regex
 - Modules - `re`

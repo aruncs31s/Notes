@@ -1,14 +1,12 @@
 ---
 id: Gin
-aliases: 
+aliases: []
 tags:
+  - coding
   - go
-  - framework
-  - backend
-cssclasses:
-  - wide-page
+cssclasses: 
+dg-publish: true
 ---
-
 # Gin
 
 - [[httprouter]]
@@ -24,14 +22,17 @@ cssclasses:
 
 ```bash
 go get -u github.com/gin-gonic/gin
+
 ```
 
 ```bash
 import "github.com/gin-gonic/gin"
 import "net/http"
+
 ```
 
 ## Basics  
+
 ```go
 package main
 import "github.com/gin-gonic/gin"
@@ -44,9 +45,8 @@ func main() {
   })
   router.Run() // listen and serve on 0.0.0.0:8080
 }
+
 ```
-
-
 
 ```go
 package main
@@ -67,6 +67,7 @@ func main() {
   })
   router.Run() // listen and serve on 0.0.0.0:8080
 }
+
 ```
 
 #### GET
@@ -77,6 +78,7 @@ func main() {
 	r.GET("/ping", controllers.PostCreate)
 	r.Run()
 }
+
 ```
 
 ### Creating a post
@@ -103,6 +105,7 @@ func PostCreate(c *gin.Context) {
 		"message": "post created successfully",
 	})
 }
+
 ```
 
 router.Run() // listen and serve on 0.0.0.0:8080
@@ -116,19 +119,18 @@ router.Run() // listen and serve on 0.0.0.0:8080
 router.Run() // uses default port or env{PORT}
 router.Run("192.168.1.100:8080") // explicit def
 router.Run(":8080") // explicit def
+
 ````
 
 - [ ] Check what it is
 
 ```go
 router.SetTrustedProxies([]string{"192.168.1.2"})
+
 ```
 
 - [ ] also check proxies
 - [ ] also checkout deployment https://gin-gonic.com/en/docs/deployment/
-
-
-
 
 ## `gin.Cotext`
 Context is the most important part of gin. It allows us to pass variables between middleware, manage the flow, validate the JSON of a request and render a JSON response for example
@@ -156,16 +158,15 @@ type Context struct {
 	Accepted [][string](https://pkg.go.dev/builtin#string)
 	// contains filtered or unexported fields
 }
+
 ```
+
 #### Advantages of Context
 
 1. **Request Cancellation**: If an HTTP request is cancelled (user closes browser, network timeout), the database query gets cancelled too ^f7cbe2
 2. **Timeout Control**: Prevents long-running queries from blocking indefinitely
 3. **Request Tracing**: Allows tracing requests across different services/layers
 4. **Graceful Shutdown**: During server shutdown, ongoing requests can be cancelled properly
-
-
-
 
 ## IDs 
 ### Single ID 
@@ -178,9 +179,11 @@ id, err := strconv.ParseUint(idStr, 10, 64) // Convert string to uint64
 if err != nil {  
 }  
 })
+
 ```
 
 ### Multiple IDs 
+
 ```go
 router.GET("/users", func(c *gin.Context) {
     idsStr := c.Query("ids") // Get comma-separated list of IDs
@@ -195,11 +198,10 @@ router.GET("/users", func(c *gin.Context) {
     }
     // Now 'uintIDs' can be used in GORM
 })
+
 ```
 
 ^acd852
-
-
 
 ## Reference and Links
 

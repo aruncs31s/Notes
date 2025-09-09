@@ -1,20 +1,22 @@
 ---
-aliases: 
-Date: 30-06-2025
+id: 03_Login
+aliases: []
 tags:
-  - es_website
-  - frontend
+  - projects
+  - web_based
+  - embedded_systems_website
+Date: 30-06-2025
+dg-publish: true
 ---
 # 03 Login
 >[!blank|right]
 >![[login.png|right|250x300]] 
 
-
-
 - [[Backend]]
 - [[auth]]
 
 Button Located at `src/components/ui/buttons/LoginBtn.astro`
+
 ```js
 ---
 const { title = "Log in" } = Astro.props;
@@ -63,37 +65,47 @@ const userSVG = `<svg
 - This section contains JavaScript/TypeScript code that runs on the server during build time
 1. Component Script
 2. Scope Isolation
+
 ```js
 ---
 ---
+
 ```
 
 ```js
 const { title = "Log in" } = Astro.props;
+
 ```
+
 `= "Log in"` sets a default value of "Log in" if no title prop is provided
 ie
+
 ```js
 <LoginBtn title="Sign In" /> // Value Will BE "Sign In"
 <LoginBtn /> // Value will be "Log in"
+
 ```
 
 ```ts
 interface Props {
   title?: string;
 }
+
 ```
+
 1. `interface Props` - Declares a TypeScript interface named "Props" 
 2. `title?: string` - Defines a property with:
 - Name: `title`
 - Type: `string`
 - Optional: `?` makes this prop optional
 Without this 
+
 ```ts
 <LoginBtn 
   title={123}          
   wrongProp="test"      
 />
+
 ```
 
 >[!Note]- `props`
@@ -107,6 +119,7 @@ Without this
 >title?: string;
 >}
 >```
+
 >
 >- This will create a type definition named `Props`
 >- Specifies that any object implementing this interface can have a `title` property

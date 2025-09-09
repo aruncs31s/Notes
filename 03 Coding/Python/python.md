@@ -1,9 +1,11 @@
 ---
 id: python
 aliases: []
-tags: []
+tags:
+  - coding
+  - python
+dg-publish: true
 ---
-
 # Python
 
 - [[datetime]]
@@ -13,32 +15,34 @@ tags: []
 ## Frameworks
 - [[Flask]]
 ️
+
 ## Modules
 
 - [[Modules]]
-- [Numpy](numpy.md)
-- [matplotlib](./matplotlib.md)
+- [[numpy]]
+- [[matplotlib]]
 - [[Pyaudio]]
 - [[Python Regex]]
 - [[Manim]]
 
 ## Custom Libs
+
 ```dataview 
 TABLE file.link as "File", file.name as "Name"
 From #python_module 
+
 ```
 
-
-
 ### update
+
 ```bash
 git clone <repo_url>
 python3 -m venv .venv
 pip install --upgrade setuptools wheel twine
 python3 setup.py sdist bdist_wheel
 twine upload dist/*
-```
 
+```
 
 ## Contents
  - [[Advanced Pyton]]
@@ -52,7 +56,9 @@ twine upload dist/*
 a = [ 1,2,3]
 b = [a,a,a]
 print(b[1][1])
+
 ```
+
 #### Zip
 
 - [Iterating over the zip objects](#iterating%20over%20the%20zip%20objects)
@@ -62,12 +68,15 @@ x = [1, 0]
 y = [2, 0]
 z = zip(x, y)
 print(tuple(z))
+
 ```
 
 #output
 
 ```
+
 ((1, 2), (0, 0))
+
 ```
 
 wha
@@ -83,6 +92,7 @@ for item in zipped: print(item)
 '''output
 (1, 'a') (2, 'b') (3, 'c')
 '''
+
 ```
 
 ###### Iterating over the zip objects
@@ -93,6 +103,7 @@ for item in zip(weights,biases):
 '''
 	([2, 4, 5], 2) ([3, 4, 5], -1) ([0.1, 0.2, 0.3], -2)
 	'''
+
 ```
 
 - Or convert it to a list to see its contents explicitly
@@ -127,12 +138,14 @@ _Lists are used to store multiple items in a single variable._
 ```python
 someList = [1,2,3]
 print(someList)
+
 ```
 
 ###### Finding the length
 
 ```python
 print(len(someList))
+
 ```
 
 ##### Shapes
@@ -171,6 +184,7 @@ a_3D_list = [
 ]
 print(a_3D_list[0][0][2])
 # 3
+
 ```
 
 - In the above example the first index corresponds to the 1 element in the outermost list that is consider this example an_lol\[i]\[j\]\[k]
@@ -178,10 +192,10 @@ print(a_3D_list[0][0][2])
   - ==j== = index of the column of the selected list
   - ==k== = index
 
-
 #### `.split()`
 
 ```python
 major, minor, patch = chardet_version.split(".")[:3]
+
 ```
 

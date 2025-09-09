@@ -1,8 +1,9 @@
 ---
-dg-publish: true
+id: C_for_Students
+aliases: []
 tags:
-  - "#ai_robot"
-  - for_students
+  - coding
+dg-publish: true
 ---
 # C++ For Students
 
@@ -14,12 +15,14 @@ tags:
 >4. Output of a programm will be inside a collapsed callout 
 >5. Feel free to correct the error and send a pr to [this](https://github.com/aruncs31s/Notes) repo 
 
-
 # TODO 
+
 ```tasks
 not done 
 path includes C++ for Students
+
 ```
+
 # Basics
 
 - First program
@@ -32,7 +35,6 @@ path includes C++ for Students
 ##  Introduction 
 Basics of all programming languages are almost the same , so if you have already know another programming language just skip this part.
 
-
 >[!todo]- **Programmer Note **
 >1. Compatible OS[^1]  Environment  
 >	- **windows** should be fine but i highly recommend using **wsl** on windows. 
@@ -43,13 +45,13 @@ Basics of all programming languages are almost the same , so if you have already
 >2. Editor , i personally use **vim** , **neovim** , **vscode** for coding. But when im just learning something i always tends to use **neovim** because it is light weight and feels good to use. 
 >3. Compiler , **linux** comes pre installed with **[clang](https://clang.llvm.org/)** 
 
-
  [^1]: OS means operating system, which is the programs that allows you to interract with your computer 
 
 ## First Program 
 When someone try to learn programming language the first thing they write is a **Hello World** program -> more about it [here](https://press.rebus.community/programmingfundamentals/chapter/hello-world/#:~:text=A%20%E2%80%9CHello%2C%20world!%E2%80%9D,very%20first%20program%20people%20write.) 
 
 #completeCode 1
+
 ```cpp
 #include <iostream>  
 using namespace std;  
@@ -58,7 +60,9 @@ int main() {
   cout << "Hello World!";  
   return 0;  
 }
+
 ```
+
 **How to execute it?**
 - Open any editor 
 - type/copy what is in the snippet[^2] and paste it in the editor 
@@ -67,6 +71,7 @@ int main() {
 >```bash
 > g++ <your_program_name> -o <output_file_name>
 >```
+
 - Run the program using the command
 >```bash
 >./<output_file_name>
@@ -81,51 +86,57 @@ int main() {
 - After executing you will get the following output 
 
 ```
-Hello World!
-```
 
+Hello World!
+
+```
 
 ### Explenation 
 
 ```cpp
 #include <iostream>  
+
 ```
+
 - `#include <iostream>` is a preprocessor directive that tells the compiler to include the standard input-output stream library, which is necessary for using `cout` and `cin`. (it is same as #include <stdio.h> in C)
 
 ```cpp
 using namespace std;  
+
 ```
 
 - `using namespace std` means that we can use names for objects and variables from the standard library.
   - if you dont include the `using namespace std` you will be doing `std::cout` instead of just typing `cout`  
 For example 
 #completeCode 2
+
 ```cpp
 #include <iostream>
 using namespace std;
 int main(){
   cout << "Some String\n"; // Prints "Some String"
 }
+
 ```
 
 if `using namespace std` is not included the above program will become
 
 #completeCode 3 
+
 ```cpp
 #include <iostream>
 int main(){
 std::cout << "Some String\n"; // Prints "Some String"
 }
+
 ```
-
-
-
 
 ### Executing your first program
 
 ```bash
 g++ program_name.cpp -o bin_file_name
 ./bin_file_name
+
 ```
 
 ![[Screenshot 2025-05-13 at 6.54.34 AM.png]]
@@ -137,6 +148,7 @@ g++ program_name.cpp -o bin_file_name
 *Displaying something on the terminal.*
 
 #completeCode 4
+
 ```cpp
 #include <iostream>  
 using namespace std;  
@@ -144,11 +156,13 @@ int main() {
   cout << "Hello World!" << endl;  
   return 0;  
 }
+
 ```
 
 ### Escape characters 
 Complete list of escape characters can be found [here](https://www.geeksforgeeks.org/cpp-escape-sequences/)
 #### New Line 
+
 ```cpp
 #include <iostream>  
 using namespace std;  
@@ -157,29 +171,37 @@ int main() {
   cout << "Hello \n World!";  
   return 0;  
 }
+
 ```
 
 ```
+
 Hello 
 World!
+
 ```
 
 ![[Screenshot 2025-05-13 at 12.25.29 PM.png]]
 ### Comments
 *Comments will be excluded by the compiler.*
+
 ```cpp
 // This is a comment in c++
+
 ```
+
 ```cpp
 /* 
 This is a multi-line comment in c++
 */
+
 ```
 
 ## Variables
 a variable is a **named storage** location in the computer's memory that holds a value.
 
 #example 
+
 ```cpp
 int a = 10;
 double b = 10.10;
@@ -187,12 +209,14 @@ char letter = 'A';
 const char* some_string = "Hello World";
 std::string some_another_string = "Hello, world";
 bool something = false; 
+
 ```
 
 ![[Screenshot 2025-05-13 at 12.28.23 PM.png]]
 a variable in the sense that their value can be changed during the execution of the program. 
 
 #snippet 
+
 ```cpp
 int x = 10;
 x = 20; // x is now 20
@@ -206,7 +230,6 @@ x = 30; // x is now 30
 >#include \<string>
 >```
 
-
 ```cpp
 // valid 
 int a =10 , b=20 , c 30 ;
@@ -217,18 +240,20 @@ int a = 10;
 // valid 
 int a ;
 a = 10 ; 
+
 ```
 
 ### Constants 
 *also called **literals*** eg: string literals 
+
 ```cpp 
 const int number = 10 ;
 // Error 
 number = 20;
+
 ```
 
 - the value of the constant can't be changed after the first assingment , and it is initialized the moment it is created. 
-
 
 ![[Screenshot 2025-05-13 at 12.30.20 PM.png]]
 ## Datatypes 
@@ -238,6 +263,7 @@ number = 20;
 3. User Defined Datatypes 
 
 ### Primitive Data Types 
+
 ```cpp
 // Integer types 
 int x = 500; // 4 bytes 
@@ -257,10 +283,12 @@ wchar_t x = L"😅";
 // Boolean  (0 -> false , 1 -> true)
 bool isComplete = true ;
 bool isComplete = 1 ;
+
 ```
 
 --- 
 ##### Size of Datatypes 
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -286,11 +314,12 @@ int main(){
     print_size(sizeof(char)) ;
     print_size(sizeof(wchar_t)) ; 
 }
-```
 
+```
 
 >[!success]- **Output**
 >```
+
 >Integers
 >----------
 >4 bytes ; 32bits
@@ -310,15 +339,12 @@ int main(){
 >4 bytes ; 32bits
 >```
 
-
 - size of `bool` is 1 bit 
-
 
 ### Derived Datatypes
 1. Arrays
 2. Pointers 
 3. References
-
 
 #### Arrays
 
@@ -328,6 +354,7 @@ int b[3] = {1, 2, 3};
 char c[] = "abc";
 char d[] = {'a', 'b', 'c'}; 
 char e[3] = {'a', 'b', 'c'};
+
 ```
 
 #example 
@@ -360,10 +387,12 @@ int main() {
     return 0;
 }
  
+
 ```
 
 >[!success]- **Output**
 >```
+
 >1 2 3 
 >1 2 3 
 >a b c  
@@ -371,16 +400,16 @@ int main() {
 >a b c
 >```
 
-
-
 ### Pointers
 A more notes of pointer can be found here -> [[Pointers]]
 
 ```cpp
 type* pointer_name;
+
 ```
 
 #examples 
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -394,6 +423,7 @@ int main() {
     cout << "Value pointed to by ptr: " << *ptr << endl;
     return 0;
 }
+
 ```
 
 ```op
@@ -401,8 +431,8 @@ Value of x: 5
 Address of x: 0x7ff7bf3ea2f8
 Value of ptr: 0x7ff7bf3ea2f8
 Value pointed to by ptr: 5
-```
 
+```
 
 - `&x` means address of x 
 
@@ -422,10 +452,9 @@ There is actually 4 more operators namely
 10. Scope Resolution Operator (`::`)
 You will study the last 3 in [[C++ for Students#Intermediate]] Section 
 
-
-
 ### Arithmetic Operators
 lets `a=10` , `b=5`
+
 ```cpp
 // Addition
 c = a + b ; // c = 15 
@@ -447,12 +476,12 @@ c = a/b; // c = 2
 // Mod 
 
 c = a % b ; // c = 0 
+
 ```
 
 ![[Screenshot 2025-05-13 at 12.38.56 PM.png]]
 >[!Note]- `print_c`
 > `print_c()` is a **function** which *prints out* the value of `c` and you will learn about **functions** in [[#Intermediate]] section 
-
 
 | Operator | Operation        | example | Returns |
 | -------- | ---------------- | ------- | ------- |
@@ -462,12 +491,12 @@ c = a % b ; // c = 0
 | *****    | multiplication   | 10 * 2  | 20      |
 | **%**    | modulus operator | 10 % 3  | 1       |
 
-
 ### Assignment operators 
+
 ```cpp
 int a = 10 ; // Assigns the value 10 to variable a 
-```
 
+```
 
 ### Bitwise Operations
 
@@ -491,8 +520,8 @@ c = a << 2; // c = 1010 << 2 = 0b101000 -> 40
 
 // bitwise right shift 
 c = a >> 2 ; // c = 1010 >> 2 = 0b0010 -> 2 
-```
 
+```
 
 ![[Screenshot 2025-05-13 at 12.59.08 PM.png]]
 ![[Screenshot 2025-05-13 at 12.59.16 PM.png]]
@@ -508,8 +537,6 @@ c = a >> 2 ; // c = 1010 >> 2 = 0b0010 -> 2
 | **>>**   | right shift  |
 
 ### Relational operator 
-
-
 
 ```cpp
 int a = 10 ;
@@ -531,6 +558,7 @@ a >= 10 ; // true
 // Less than 
 a < b; // true 
 a <= 10; // true
+
 ```
 
 *comparison operators are normally used to check some conditions*
@@ -563,7 +591,9 @@ a > b || a < c ; // false | true -> true
 
 !(a > b) ; // !false -> true 
 !(a < b) ; // !true -> false 
+
 ```
+
 ![[Screenshot 2025-05-13 at 1.12.28 PM.png]]
 
 | Operator | Name        |
@@ -574,17 +604,12 @@ a > b || a < c ; // false | true -> true
 
 ### Comma Operator
 
-
 ![[Screenshot 2025-05-13 at 4.58.46 PM.png]]
-
 
 ---
 
 >[!Note]
 >You have reached the end of the `c++/basics` now go to [[Intermediate|C++/Intermediate]] 
-
-
-
 
 ## Storage Classes
 1. Automatic Storage Class (`auto`)
@@ -600,31 +625,38 @@ int main() {
     auto a = 10;
     std::cout << a;
 }
+
 ```
+
 this is same as 
+
 ```cpp
 #include <iostream>
 int main() {
     int a = 10;
     std::cout << a;
 }
+
 ```
 
-
 ### Static Storage Class (`static`)
+
 ```cpp
 #include <iostream>
 int main() {
 		static int a = 10;
 		std::cout << a;
 }
+
 ```
+
 - value of a `static` variable will remaind during the entire program excecution, even if it goes out of scope.
 
 or *The static storage class instructs the compiler to keep a local variable in existence during the life-time of the program* [Source](https://cds.iisc.ac.in/wp-content/uploads/DS286.AUG2016.Lab2_.cpp_tutorial.pdf)
 
 **why**:
 consider this program 
+
 ```cpp
 #include <iostream> 
 void call_me(){
@@ -637,14 +669,21 @@ int main(){
     call_me();
     call_me();
 }
+
 ```
+
 Why do you think the output will be ? some thing like this 
+
 ```
+
 1
 1
 1
+
 ```
+
 if you execute this program 
+
 ```cpp
 #include <iostream> 
 void call_me(){
@@ -657,20 +696,28 @@ int main(){
     call_me();
     call_me();
 }
+
 ```
+
 its output will be 
+
 ```
+
 1
 1
 1
+
 ```
+
 but for the first program the output will be 
+
 ```
+
 1
 2
 3
-```
 
+```
 
 ![[Screenshot 2025-05-28 at 11.54.42 PM.png]]
 **static** storage classes are often used to find total number of objects of some class , you will learn about c++ class in [[Intermediate|this]] **intermediate** section. 
@@ -686,8 +733,8 @@ int main() {
     register int a = 10;
     std::cout << a;
 }
-```
 
+```
 
 # Intermediate
 
@@ -708,11 +755,8 @@ In this section you will learn about this is not in some particular order
 | #example        | example          |
 | syntactic sugar | make it readable |
 
-
-
  >[!important]
  >You should know [[Basics|this]] before doing this. 
-
 
 ## 1. Functions 
 **Def:** According to [this](https://www.geeksforgeeks.org/c-functions/) article  -> A function in C is a set of statements that, when called, perform some specific tasks 
@@ -722,17 +766,17 @@ return_type function_name(arguments){
 	// block of code..
 	return <value>;
 }
+
 ```
 
 - the `return_type` can be -> `int,float etc` or custom data type made using **structs** 
 
-
 **why:** As  far as i know you can write an entire application which does not have functions(i meant user defined functions) except `main()` , this is ok for simple programs that we do first while learning , but as we get hands on the real world problems , functions are must , otherwise you will end up with a file that is few mega bites in size. Using only a single function is not impossible but the main use of functions is to **reduce code** and **reuse code**.   
-
 
 ```mermaid
 graph LR
 function_1 & function_2 & function_3 --> Single_Program
+
 ```
 
 **when:** For example lets consider a psudo[^1] finding roots of a quadratic equation.
@@ -742,12 +786,14 @@ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2 a }
 $$
 
 This code is written without functions , for the time being ignore the `main()` function 
+
 ```cpp
 float a , b , c ; // for storing coeefficients
 a = 1 ; b = 2 ; c = -3 ;
 float x1 , x2  ; // storing the result
 x1 = -b + sqrt(b*b - 4*a*c) / 2 * a ;
 x2 = -b - sqrt(b*b - 4*a*c) / 2 * a;
+
 ```
 
 This is written with functions 
@@ -759,9 +805,10 @@ void get_roots(float a , float b , float c , float &x1,float &x2){
 }
 float x1, x2 ; 
 get_roots(1,2,-3,x1,x2);
-```
-You can see that that the program is gotten bigger. But if we try to compute roots of 5 quadratic equations the first program will become 
 
+```
+
+You can see that that the program is gotten bigger. But if we try to compute roots of 5 quadratic equations the first program will become 
 
 ```cpp
 float a , b , c ; // for storing coeefficients
@@ -781,7 +828,9 @@ x2 = -b - sqrt(b*b - 4*a*c) / 2 * a;
 a = 1 ; b = 3 , c = 4 
 x1 = -b + sqrt(b*b - 4*a*c) / 2 * a ;
 x2 = -b - sqrt(b*b - 4*a*c) / 2 * a;
+
 ```
+
 Now the program with function will become 
 
 ```cpp
@@ -795,16 +844,19 @@ get_roots(1,2,-3,x1,x2);
 get_roots(1,2,-3,x1,x2);
 get_roots(1,2,-3,x1,x2);
 get_roots(1,2,-3,x1,x2);
+
 ```
+
 One can say that in the non function program , i'm just assigning arbitrary values to `a,b` and `c` then calculating using `x2 = -b - sqrt(b*b - 4*a*c) / 2 * a;`
-
-
 
 [^1]: #todo Find the exact word 
 ###  Declaration or function prototyping 
+
 ```cpp
 type functionName(argument_lists);
+
 ```
+
 type is essentially means the **return type** of the function. 
 
 #examples 
@@ -812,11 +864,12 @@ type is essentially means the **return type** of the function.
 ```cpp
 int sum(int a , int b);
 int sum(int,int);
-```
 
+```
 
 ### Return type 
 Consider this following program 
+
 ```cpp
 #include <iostream>
 int sum(int number_1,int number_2){
@@ -827,12 +880,16 @@ int main(){
     int c = sum(a,b);
     std::cout << "a + b = " <<  c << std::endl;
 }
+
 ```
 
 ```output
 a + b = 15
+
 ```
+
 There is a function named `sum` which has a **return type** of `int` , the return type is chose according to what type of data we are expecting from the function. For simplicity  lets consider the following program which is similar to the above program 
+
 ```cpp
 #include <iostream>
 int sum(int number_1,int number_2){
@@ -843,12 +900,17 @@ int main(){
     int c = sum(a,b);
     std::cout << "a + b = " <<  c << std::endl;
 }
+
 ```
+
 the main change is that `a` is now 10.1 and `b` is now 5.4 
 **output**
+
 ```output 
 a + b = 15
+
 ```
+
 But we can not see any difference in the **output** it is still $15$ also we get warnings like `implicit conversion from double to int` 
 
 ![[Screenshot 2025-05-13 at 6.54.57 PM.png]]
@@ -866,13 +928,13 @@ int main(){
     float c = sum(a,b);
     std::cout << "a + b = " <<  c << std::endl;
 }
+
 ```
 
 ```output
 a + b = 15.5
+
 ```
-
-
 
 **Can we achieve this using only int?** YES
 
@@ -894,12 +956,15 @@ int main(){
     std::cout << "a + b = " << res.integer_part + (res.decimal_part/10.0) << std::endl;
     return 0;
 }
+
 ```
+
 ```output
 a + b = 15.5
-```
-we can see that there are already extra complexity , and if the number is `0.01` instead of `0.1` this program will fail. but we can overcome that using a while or for loop by simply checking the length of the **integer**
 
+```
+
+we can see that there are already extra complexity , and if the number is `0.01` instead of `0.1` this program will fail. but we can overcome that using a while or for loop by simply checking the length of the **integer**
 
 >[!Summary] choosing datatypes
 >Data type is must be chose carefully , most of the round off errors will happen due to incorrect datatypes and data types can also influence the performance of the program 
@@ -923,6 +988,7 @@ int main() {
     struct Point p = create_point(3, 4);
     cout  << p.x << ", " << p.y << endl;
 }
+
 ```
 
 #syntactic_sugar
@@ -944,13 +1010,14 @@ int main() {
     Point p = create_point(3, 4);
     cout  << p.x << ", " << p.y << endl;
 }
-```
 
+```
 
 ## 2. Scope 
 **Def:** *Scope of a variable the region of code within which a variable is accessible*[^1]. 
 - the scope of a variable is constrained inside `{}`  
 [^1]: https://docs.julialang.org/en/v1/manual/variables-and-scoping
+
 ```cpp
 #include <iostream>
 int a = 10;
@@ -966,6 +1033,7 @@ int main(){
 
     std::cout << "global a = " << ::a << std::endl;
 }
+
 ```
 
 ```output
@@ -973,10 +1041,10 @@ global a = 10
 from function a = 10
 local a = 5
 global a = 10
+
 ```
 
 **Why:** the scope thing allows us to use/reuse names for local access , for example almost every programmer uses **i** then **j** for loops or as the **iterator** , scope is the best way to avoid pollution , if there no scopes we have to find new names for each variable that is going to be declared . 
-
 
 ## Control Statements 
 - if-else
@@ -987,15 +1055,19 @@ global a = 10
 
 ### if-else
 #syntax
+
 ```cpp
 if (expression)
 	statement
+
 ```
+
 ```cpp
 if (expression)
 	statement
 else
 	statement
+
 ```
 
 ```cpp
@@ -1005,21 +1077,29 @@ else if (expression)
 	statement 
 else
 	statement 
+
 ```
+
 - we can also chain if-else 
+
 ```cpp
 if (expression)
 	if(expression)
 		if(expression)
 			statement
+
 ```
+
 which is similar to 
+
 ```cpp
 if(expression && expression && expression)
 	statement
+
 ```
 
 #examples 
+
 ```cpp
 #include <iostream>
 int main(){
@@ -1028,13 +1108,13 @@ if (a == 10 ){
 	std::cout << "HI" << std::endl;
 	}
 }
+
 ```
 
 ```op
 HI
+
 ```
-
-
 
 ```cpp
 #include <iostream>
@@ -1044,14 +1124,18 @@ if (a == 9 ){
 	std::cout << "HI" << std::endl;
 	}
 }
+
 ```
+
 ```output
 // Nothing will be here 
+
 ```
 
 >[!note] true and flase 
 >a value other than 1 is consderd as true , so the following programs all will output the same result 
 >
+
 ```cpp
 > #include <iostream>
 int main(){
@@ -1060,6 +1144,7 @@ if (a - 5 ){ // true
  	std::cout << "HI" << std::endl;
  	}
  }
+
 ```
 
  ```cpp
@@ -1072,21 +1157,20 @@ if (a - 5 ){ // true
  }
  ```
 
-
 ### While
 
 ```cpp
 while(expression)
 	statement
+
 ```
 
 - [ ] Complete loops 
 
-
-
 ## C++ Structs
 You all will be familiar with C structs if dont check this [[Basics|Structs]]. 
 Look at one #example
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -1102,13 +1186,18 @@ int main(){
     Point p1(10, 20);
     p1.display();
 }
+
 ```
+
 First thing you can notice is that , in struct definition there are member functions , Constructor etc.
 
 **Constructor**
+
 ```cpp
 Point(int _x, int _y) : x(_x), y(_y) {}
+
 ```
+
 This will assign value `_x` to `x` and value `_y` to `y`  . You can extend this to make things like the following.
 
 ```cpp
@@ -1116,9 +1205,10 @@ Point(int _x, int _y) {
         x = _x * 100;
         y = _y * 100;
     }
-```
-This is exactly like the C++ Class constructor.
 
+```
+
+This is exactly like the C++ Class constructor.
 
 **Member Functions**
 
@@ -1126,10 +1216,9 @@ This is exactly like the C++ Class constructor.
 void display() {
         cout << "Point(" << x << ", " << y << ")" << endl;
     }
+
 ```
 
 you can call them by `struct_name.function_name()` just like accessing the value inside a struct 
-
-
 
 # Advanced 

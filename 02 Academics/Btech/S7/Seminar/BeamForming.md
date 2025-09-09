@@ -1,16 +1,19 @@
 ---
-cssclasses:
-  - wide-page
-aliases:
-  - spatial filtering
-tags: 
+id: BeamForming
+aliases: []
+tags:
+  - academics
+  - btech
+  - s7
+  - seminar
+cssclasses: 
 Created: 04-09-2024
-Status:
+Status: 
+dg-publish: true
 ---
 # BeamForming
 >[!blank|right-medium]
 >![[BeamForming.excalidraw]]
-
 
 BeamForming is a technique used in **Sensor Arrays** for directional signal transmission or reception.[^1]
 - Achieved by combining the Array elements in a way that it causes **[[Interference]]**

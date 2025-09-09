@@ -1,14 +1,19 @@
 ---
-aliases: 
-Date: 24-05-2025
+id: roboh
+aliases: []
 tags:
-  - c_lib
+  - projects
+  - robotics
   - ai_robot
+  - coding
+Date: 24-05-2025
+dg-publish: true
 ---
 # robo.h
 ## Constructor 
 - [function:: default_constructor] has requires to provide [args:: `_servo_id`  and a  `Adafruit_PWMServoDriver `] Instance
 - 
+
 ```cpp
 Robo::Robo(uint8_t _servo_id , Adafruit_PWMServoDriver& board) : 
     _servo_id(_servo_id), _board(board) {
@@ -73,8 +78,11 @@ Robo::Robo(uint8_t _servo_id , Adafruit_PWMServoDriver& board) :
     _previous_angle = _current_angle;
     board.setPWM(_servo_id, 0, get_pulse(_initial_angle));
 }
+
 ```
+
 ## Member Functions 
+
 ```cpp
 uint8_t get_total_num_servos();
 uint8_t get_current_num_servos();
@@ -85,6 +93,7 @@ void set_angle(uint8_t _angle);
 void set_pulse(uint16_t _pulse);
 uint16_t get_pulse(uint8_t _angle);
 void begin();
+
 ```
 
 ## Member Functions Def;
@@ -222,7 +231,6 @@ uint16_t Robo::get_pulse(uint8_t _angle){
     return _pulse;
 }
 
-
 uint8_t Robo::get_current_angle() { 
     return _current_angle; 
 }
@@ -231,7 +239,6 @@ uint16_t Robo::get_current_pulse() {
     return get_pulse(_current_angle); 
 
 }
-
 
 void Robo::set_angle(uint8_t _angle) {
     _current_angle = _angle;
@@ -243,9 +250,5 @@ void Robo::set_pulse(uint16_t _pulse) {
     _current_angle = map(_pulse, SERVO_MIN, SERVO_MAX, SERVO_ANGLE_MIN, SERVO_ANGLE_MAX);
     _board.setPWM(_servo_id, 0, _pulse);
 }
-
-
-
-
 
 ```

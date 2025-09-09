@@ -1,6 +1,12 @@
 ---
-aliases: 
+id: Versions
+aliases: []
+tags:
+  - projects
+  - electronics
+  - sidechannel_attach_current_monitor
 Date: 16-01-25
+dg-publish: true
 ---
 # Versions
 

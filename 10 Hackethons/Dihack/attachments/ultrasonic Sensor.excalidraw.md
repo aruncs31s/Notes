@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: ultrasonic_Sensorexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 ## Text Elements
@@ -19,6 +19,7 @@ GND ^q1AFGfUR
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBWbQBGGjoghH0EDihmbgBtcDBQMBKIEm4IXAAzADUARwBhGHwATR4ATgBrAH0ASQAOACtlUnj+uHbUkshYRAqgojkkflLM
 
@@ -63,5 +64,7 @@ DKLqLtKiM6LwBelKg4A4B9RnpnEZgMRMhsUyEVgGBCAEAKB8ZBjTLhieQqgHrHrhQIBsARBnZegdx9B9
 aMhTwz05as8eoM9JbcbabPrpscJa9rZnrmBsBmQdRSIVoxglZoF9pKT5pKMzqTazbWg7Q5zkh15KT41BJGYJcIAjA2ADADqW4CBXDOwb1mbpaKai5H8IAjazqRgSAvymr/qE7iB9QEA4BIL38SAzsupVbcBNBggryUSDFTC+E7ZUAIZ8YOQoZSBlBRQAAKJ4D03geE1uluh4eIAASlNAcOUDzFVAqDrsbuKXpF4GpOoHHrHs7p7vDqVt4Iynpr5M
 
 4EytKB7IcKLFMLGwhiyALqLu4AotQsWAPqWu3NlOOs1NPpDDsMg0vtcPDrsEGAQHJmYF1FlLgFzoQHzsLqmkPtKDFD5MYBwgDvwCDv51DnSHJmWlFKEEZAMANoF1wMvK3ND0eSgaAZAd3lgnAA8RLO1HCGGibBACbCAA
+
 ```
+
 %%

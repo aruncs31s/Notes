@@ -1,17 +1,18 @@
 ---
+id: Flask
+aliases: []
 tags:
+  - coding
   - python
-  - framework
+  - flask
+dg-publish: true
 ---
-
 # Flask
-
-
-
 
 ## APIs 
 
 ### GET 
+
 ```python
 @app.route("/api/data", methods=["GET"])
 def get_data():
@@ -32,10 +33,11 @@ def get_data():
         for row in raw_data
     ]
     return jsonify(data), 200
+
 ```
 
-
 #### Example POST
+
 ```python
 from flask import Flask, jsonify, request
 app = Flask(__name__)
@@ -47,18 +49,21 @@ def register():
     print(f"Name: {name}, Email: {email}, Password: {password}")
     return jsonify({"status": "success", "message": name})
 
-
 if __name__ == "__main__":
     app.run(debug=True)
+
 ```
 
 For this the following wont work 
 ![[curl POST examples#^00546a]]
 
 Because my code uses 
+
 ```python
 request.form.get("name")
+
 ```
+
 This expects **form-encoded data** (like `application/x-www-form-urlencoded` or `multipart/form-data`, not JSON).
 
 If i change it like this
@@ -71,6 +76,7 @@ def register():
     password = data.get("password")
     print(f"Name: {name}, Email: {email}, Password: {password}")
     return jsonify({"status": "success", "message": name})
+
 ```
 
 ^14bd6e
@@ -84,7 +90,6 @@ def register():
 }
 
 ```
-
 
 ### POST Upload Image
 

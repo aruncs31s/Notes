@@ -1,6 +1,10 @@
 ---
+id: Study_Session_Materials
+aliases: []
+tags:
+  - interviews
+  - digital_core_technologies
 dg-publish: true
-aliases: 
 Date: 03-01-2025
 ---
 # Study Session Materials
@@ -50,7 +54,6 @@ Engineering is finding **Practical Solutions** (also optimal solutions) to ==rea
 
 **Eg:** 
 
-
 | Ideal Problem            | **Real Life Problems** |
 | ------------------------ | ---------------------- |
 | $2\times 2 = 4$          | Crossing a river       |
@@ -73,7 +76,6 @@ Engineering branch which make use ==Behaviour==  of **Electrons** to **Solve Rea
 
 - From where do we get our **Workforce (Electrons)?**
 - How to **Motivate** the **workforce Electrons**? 
-
 
 ##### Electro-Motive Force (EMF)
 
@@ -115,7 +117,6 @@ or $\text{Potential} * \text{Current (integrated over time)}$
 
 **Q:** How the current source is limiting the current?
 
-
 ### Resistance 
 Parameters when choosing  -> Tolerence,Power,Size,Cost 
 
@@ -145,8 +146,6 @@ $$
 - when the frequency increases the **Reactance/Impedance** also increases , causing to act as **open circuit** in high frequency and **short circuit in low frequency** 
 >[!Important] Inductor on Steady Currents 
 >Steady current does not effect the inductor , only the **change** in current that effects the inductor 
-
-
 
 ---
 

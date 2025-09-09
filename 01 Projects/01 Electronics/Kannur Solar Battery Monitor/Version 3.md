@@ -1,6 +1,12 @@
 ---
-aliases: 
+id: Version_3
+aliases: []
+tags:
+  - projects
+  - electronics
+  - kannur_solar_battery_monitor
 Date: "06-02-25"
+dg-publish: true
 ---
 # Version 3
 The version 3 started in **06-02-25**  which entirely changes the philosophy in a way that which result(may be) in higher efficiency 
@@ -8,12 +14,10 @@ The version 3 started in **06-02-25**  which entirely changes the philosophy in 
 -  Moved the server from the ESP8266 to more powerfull computer 
 - Only send data when there are any change ? and less frequent.
 
-
 # Codes
 
-
-
 ## ESP8266 Code
+
 ```cpp
 
 ```
@@ -28,10 +32,11 @@ esp_url = "http://192.168.58.43/data"
 ```python
 @app.route('/api/data', methods=['POST'])
 @app.route('/api/data', methods=['GET'])
+
 ```
 
-
 ##### device.css
+
 ```css
 @import './base.css';
 header {
@@ -300,4 +305,5 @@ flex-direction: row;
 justify-content: space-around;
 
 }
+
 ```

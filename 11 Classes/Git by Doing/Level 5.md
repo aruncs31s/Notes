@@ -1,9 +1,10 @@
 ---
-github: https://github.com/aruncs31s/git_by_doing_level_5
+id: Level_5
+aliases: []
 tags:
-  - for_students
+  - classes
   - git_by_doing
-  - sub_module
+github: https://github.com/aruncs31s/git_by_doing_level_5
 Status: Done
 dg-publish: true
 website_link: https://aruncs31s-notes-vercel.vercel.app/11-classes/git-by-doing/level-5/
@@ -13,11 +14,14 @@ website_link: https://aruncs31s-notes-vercel.vercel.app/11-classes/git-by-doing/
 ```dataview
 Table without ID  file.name as "Name" , github as Link , status as Status, file.inlinks as Mentioned
 where file = this.file
+
 ```
+
 ---
 > Task: To configure `git` properly , and explore additional usage of `git log`.
 ## Lets recap 
 Up until you have seen the following commands 
+
 ```bash
 git status # to check the status of the repo 
 git log # to see the commit history
@@ -26,7 +30,9 @@ git commit # to commit the staged files
 git log # to see the commit history
 git branch # to see the branches
 git checkout # to switch branches
+
 ```
+
 And you will need to use most of them inorder to complete this level. 
 ### Configuring Git
 Let's start by properly configuring `git`. I have already explained `git log` in [[Level 3]] of this course. And you may remember the following, a single log entry may look like this. 
@@ -40,20 +46,31 @@ You can see that , there are a few details like
 - The date and time of the commit etc. 
 But have you ever thought from where did the `git` obtains this information?.
 if you type the following:
+
 ```bash
 git config --get user.name
+
 ```
+
 you will obtain the following
+
 ```
+
 Arun CS
+
 ```
+
 and to get the `email` run the following.
+
 ```bash 
 git config --get user.email
+
 ```
 
 ```
+
 aruncs31ss@gmail.com
+
 ```
 
 I was able to get this because i configured it , when i installed `git`. 
@@ -61,10 +78,14 @@ In order to configure things like `name` and `email` , run the following
 
 ```bash
 git config user.name "Arun CS"
+
 ```
+
 For example if you want to change you name to something like "Dog", you can run the following command:
+
 ```bash
 git config user.name "Dog"
+
 ```
 
 ![[gitconfig-1.png]]
@@ -72,14 +93,18 @@ git config user.name "Dog"
 This type of configuration is called `local` or `project` or `repo` level configuration. What i mean by that is that , look at the following example, 
 ![[localconfig.png]]
 when i run 
+
 ```bash
 git config --get user.name
+
 ```
+
 it prints `Dog` , but when i change repo , or directory the name also changes. 
 To make the changes `global` you should use the `--global` flag like this,
 
 ```bash
 git config --global user.name "Arun CS"
+
 ```
 
 >[!tip]
@@ -87,18 +112,22 @@ git config --global user.name "Arun CS"
 > ![[Screenshot 2025-07-19 at 2.55.11 PM.png]]
 
 So there are 2 types of configuration , and the are `global` and `local` and stored in `~/.gitconfig` and `.git/config` respectively.
+
 ```mermaid
 graph LR
 		A[Git Config] --> B[Global Config]
 		A --> C[Local Config]
 		B --> D[~/.gitconfig]
 		C --> E[.git/config]
+
 ```
+
 >[!tip]- on Linux
 >you can check the global config by running the following 
 >```bash
 >cat ~/.gitconfig
 >```
+
 >>[!success]- **output**
 >>```ini
 >>[user]
@@ -108,10 +137,12 @@ graph LR
 >>[http]
 >>postBuffer = 524288000
 >>```
+
 >and `local` by 
 >```bash
 >cat .git/config
 >```
+
 >>[!success]- **output**
 >>```ini
 >>[core]
@@ -137,7 +168,6 @@ graph LR
 - Others can easily verify who made the commit.
 - And it is required for features like `git blame`, which shows who last modified each line of a file.
 
-
 ## Where these will be used?
 You have already learned about `git commit` and `git log` in [[Level 3]] , right?. So when you do a `git log` you see see the following right?
 - Your name 
@@ -150,14 +180,18 @@ For example you can check if someone named `zeidan` had made any commit , and wh
 
 ```bash
 git log --author=zeidan
+
 ```
+
 ![[zeidancommit2.png]]
 There is only single commit becouse , zeidan has done only one commit , and if you also want what he have changed you can include the `-p` flag 
+
 ```bash
 git log --author=zeidan -p
-```
-![[zeidancommit3.png]]
 
+```
+
+![[zeidancommit3.png]]
 
 ![[draw1.png]]
 So you get a lot of infomation from using `git log` and with the `-p` flag.

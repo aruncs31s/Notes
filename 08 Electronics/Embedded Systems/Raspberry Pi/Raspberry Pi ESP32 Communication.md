@@ -1,6 +1,12 @@
 ---
-aliases: 
+id: Raspberry_Pi_ESP32_Communication
+aliases: []
+tags:
+  - electronics
+  - embedded_systems
+  - raspberry_pi
 Date: "23-03-25"
+dg-publish: true
 ---
 # Raspberry Pi ESP32 Communication
 

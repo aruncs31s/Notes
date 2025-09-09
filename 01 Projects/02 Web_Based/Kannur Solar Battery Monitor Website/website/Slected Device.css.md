@@ -1,3 +1,14 @@
+---
+id: Slected_Devicecss
+aliases: []
+tags:
+  - projects
+  - web_based
+  - kannur_solar_battery_monitor_website
+  - website
+dg-publish: true
+---
+
 ```css
 @import './base.css';
 
@@ -120,8 +131,6 @@ __
     margin-top: 10px;
     font-style: italic;
 }
-
-
 
 /* main .device-status {
     margin: 20px;
@@ -304,4 +313,5 @@ https://getcssscan.com/css-buttons-examples
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
 }
+
 ```

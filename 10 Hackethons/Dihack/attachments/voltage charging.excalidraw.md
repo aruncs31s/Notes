@@ -1,11 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
+id: voltage_chargingexcalidraw
+aliases: []
 tags: [excalidraw]
-
+excalidraw-plugin: parsed
+dg-publish: true
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
 
 # Excalidraw Data
 ## Text Elements
@@ -23,6 +23,7 @@ Vc> old Vc ^mi44k0dm
 
 %%
 ## Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBWbR4aOiCEfQQOKGZuAG1wMFAwYuh4cXQiDiR+EsYWdi40AEYANgAOGsg61k4AOU4xbiaATgBmABYeUYAGHnjhzohCDmIs
 
@@ -149,5 +150,7 @@ b/z702v2x003UAdNsSsnczuSdwXQWhCzC7fuRmdX3Eo2xXkquNpEzjzVLXVaS7ZUYxCAOMeGKMZXUrbe
 KQFiMedMHxARFxCrA8+gSAaIBANaMILFf8vcMNgKsGnDYPNAwQHV2rfy/MFe0b4XF+sGZaegAAFE7WoC8BwFg3qSO2viAABKd0A72UD9hsIXX5QL15EgDfFvYRkUKN4m8peuP1/ejLx9V6cBQXjxh3vskweqissuARr+cmqcJhbbhACr5d5KDYPP3OAkV9yHjEz4nvbvFL3YEhAIBxkzAG115xq91eGvTXvoQMLfd8hVejAXONF/wCxeqHaONIOM
 
 l2i68LKl9fQHZ7ErIXB3+WaCOCCR9Q+Yf6EO98WZs5Ihwg3IstAtCAA=
+
 ```
+
 %%

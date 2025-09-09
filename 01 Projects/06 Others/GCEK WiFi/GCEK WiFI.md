@@ -1,15 +1,16 @@
 ---
 id: Project name
-aliases:
-  - auto login
+aliases: []
 tags:
-  - gcek,project
+  - projects
+  - others
+  - gcek_wifi
 Completed: false
 Starting Date: 2024-09-14
 Status: false
 Target Date: 2024-09-23
+dg-publish: true
 ---
-
 # GCEK WiFi
 
 #tasks
@@ -20,4 +21,5 @@ Target Date: 2024-09-23
 
 ```bash
 curl -d "usrname=<username>&newpasswd=<passwd>&terms=on&page_sid=internal&update_btn=Login" http://172.16.0.2:2280/submit/user_login.php
+
 ```

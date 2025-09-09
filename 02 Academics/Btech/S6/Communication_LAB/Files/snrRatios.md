@@ -1,4 +1,14 @@
-
+---
+id: snrRatios
+aliases: []
+tags:
+  - academics
+  - btech
+  - s6
+  - communication_lab
+  - files
+dg-publish: true
+---
 
 ```cpp
 function[r]= snrRatios(l)
@@ -21,4 +31,5 @@ end
 noise=quants-samp_signal;
 r=snr(index,noise);
 end
+
 ```

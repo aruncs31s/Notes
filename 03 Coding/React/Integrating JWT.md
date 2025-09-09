@@ -1,3 +1,11 @@
+---
+id: Integrating_JWT
+aliases: []
+tags:
+  - coding
+  - react
+dg-publish: true
+---
 # Integrating JWT 
 
 ```js
@@ -54,8 +62,8 @@ const handleLoginSubmit = async () => {
 
 ```
 
-
 ## Registration 
+
 ```jsx
 const handleSignupSubmit = async () => {
   setLoading(true);
@@ -114,6 +122,7 @@ const handleSignupSubmit = async () => {
 ```
 
 ## Logout
+
 ```js
 const handleLogout = () => {
   localStorage.removeItem("token");

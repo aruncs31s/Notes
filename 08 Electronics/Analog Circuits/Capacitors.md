@@ -1,6 +1,11 @@
 ---
-aliases: 
+id: Capacitors
+aliases: []
+tags:
+  - electronics
+  - analog_circuits
 Date: "01-04-25"
+dg-publish: true
 ---
 # Capacitors
 

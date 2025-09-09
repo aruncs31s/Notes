@@ -1,10 +1,14 @@
 ---
 id: MW Module 1
 aliases: []
-tags: []
+tags:
+  - academics
+  - btech
+  - s7
+  - mw
 Date: "16-11-2024"
+dg-publish: true
 ---
-
 # MW Module 1
 
 - [x] Basic Antenna Parameters ✅ 2024-11-19
