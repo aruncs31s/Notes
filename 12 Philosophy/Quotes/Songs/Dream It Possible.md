@@ -44,11 +44,15 @@ Take a shot, chase the
 Sun, find the beautiful  
 
 >[!abstract]- *Explanation*
->Never be afraid to take risks , there is nothing you gain from not taking risks , and never even think about back
+>Never be afraid to take risks , there is nothing you gain from not taking risks , and never even think about backup plans , just always put your 100.
 
 
 We will glow in the dark  
 Turning dust to gold  
+
+>[!abstract]- *Explanation*
+>When you do what you always said, you even inspire the people around you , and its no longer you its just us, they all 
+
 And we'll dream  
 It possible  
 Possible, ooh  
