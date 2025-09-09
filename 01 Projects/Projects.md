@@ -32,10 +32,12 @@ The `dir` structure
 
 Projects/
 	01 Electronics
-	02 Web_Based
+	02 Web Based
 	03 Linux
 	04 AI & ML
 	05 Robotics
+	06 Others
+	07 Software
 
 ```
 
