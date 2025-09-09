@@ -33,7 +33,7 @@ dg-publish: true
 ***It's not until you fall that you fly***  
 
 >[!abstract]- *Explanation*
-> "If you do what you do , you get what you get." you will always achieve that extra when you do what other people don't, and everyone is scared at first , but the fear is not come to stay , it came to test that do you really, actually want this.
+> "If you do what you do, you get what you get." You will always achieve that extra when you do what other people don't, and everyone is scared at first, but the fear did not come to stay, it came to test whether you really, actually want this.
 
 
 ***When your dreams come***  
