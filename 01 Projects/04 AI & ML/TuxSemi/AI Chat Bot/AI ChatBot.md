@@ -1,11 +1,15 @@
 ---
-Status: false
-Starting Date: 2024-07-01
-Target Date: 2024-09-20
-Events: ""
+Events: ''
 Sensitivity: Private
+Starting Date: 2024-07-01
+Status: false
+Target Date: 2024-09-20
+aliases: []
+id: AI ChatBot
 tags:
-  - project
+- project
+- ml
+- ai
 ---
 # AI Chat Bot
 

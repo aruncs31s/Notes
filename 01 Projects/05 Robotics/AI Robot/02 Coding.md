@@ -1,7 +1,12 @@
 ---
-aliases: 
 Date: 13-11-2024
+aliases: null
 dg-publish: true
+id: 02 Coding
+tags:
+- ai
+- project
+- robotics
 ---
 # Coding 
 - [[replay tester]]

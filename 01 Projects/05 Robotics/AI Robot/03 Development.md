@@ -1,7 +1,13 @@
 ---
-dg-publish: true
+aliases: []
 cssclasses:
-  - wide-page
+- wide-page
+dg-publish: true
+id: 03 Development
+tags:
+- ai
+- project
+- robotics
 ---
 # Development 
 - [[Angle table]]

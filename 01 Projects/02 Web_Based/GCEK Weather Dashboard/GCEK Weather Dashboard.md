@@ -1,16 +1,15 @@
 ---
-id: dashboard
-aliases:
-  - gcek dashboard
-tags:
-  - "#project"
-  - dashboard
-  - gcek
-  - website
 Created: 2024-09-14
 Starting Date: 14-09-2024
-Target Date: ""
 Status: dropped
+Target Date: ''
+aliases:
+- gcek dashboard
+id: dashboard
+tags:
+- website
+- gcek
+- project
+- dashboard
 ---
-
 # GCEK Weather Dashboard

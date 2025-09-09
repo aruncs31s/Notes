@@ -1,6 +1,9 @@
 ---
-aliases: 
 Date: 23-10-2024
+aliases: null
+id: Documents
+tags:
+- electronics
 ---
 # Documents
 ### Older 

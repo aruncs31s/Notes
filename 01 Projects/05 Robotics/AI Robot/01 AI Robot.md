@@ -1,17 +1,18 @@
 ---
-id: 9-PROJECT
-aliases: 
-tags:
-  - project
-  - status/open
 Date:
   Started: 13-11-2024
   Target: 01-06-2025
 Target_Date: 2025-06-01
-status: not_done
+aliases: null
 dg-publish: true
+id: 9-PROJECT
+status: not_done
+tags:
+- robotics
+- ai
+- project
+- status/open
 ---
-
 # AI Robot
 
 

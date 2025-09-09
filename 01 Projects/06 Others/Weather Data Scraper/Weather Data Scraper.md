@@ -1,12 +1,12 @@
 ---
-id: project_template
+Created: 14-09-2024
+Starting Date: 14-09-2024
+Target Date: ''
 aliases: []
-tags: []
-Created: "14-09-2024"
-Starting Date: "14-09-2024"
-Target Date: ""
+id: project_template
+tags:
+- project
 ---
-
 # Weather Data Scraper
 
 Designed to scrape 

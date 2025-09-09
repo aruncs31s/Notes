@@ -1,17 +1,16 @@
 ---
-dg-publish: true
-id: project_template
-aliases: 
-tags:
-  - esp32
-  - project
-  - weather_station
-  - electronics
 Created: 14-09-2024
 Starting Date: 14-09-2024
-Target Date: ""
+Target Date: ''
+aliases: null
+dg-publish: true
+id: project_template
+tags:
+- esp32
+- project
+- weather_station
+- electronics
 ---
-
 # GCEK Weather Station
 >[!float|right-small] Contents
 >- [[#Methodology]]

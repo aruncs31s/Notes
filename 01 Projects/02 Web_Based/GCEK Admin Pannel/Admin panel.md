@@ -1,11 +1,10 @@
 ---
+aliases: null
 id: Admin panel
-aliases: 
 tags:
-  - project
-  - website
+- website
+- project
 ---
-
 # Admin Panel
 
 ```bash

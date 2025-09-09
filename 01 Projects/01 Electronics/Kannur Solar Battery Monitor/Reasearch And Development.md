@@ -1,6 +1,9 @@
 ---
-aliases: 
 Date: 03-02-25
+aliases: null
+id: Reasearch And Development
+tags:
+- electronics
 ---
 # Reasearch And Development
 

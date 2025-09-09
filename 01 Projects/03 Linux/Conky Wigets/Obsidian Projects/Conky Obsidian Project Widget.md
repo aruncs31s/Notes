@@ -1,7 +1,8 @@
 ---
-id: Untitled
 aliases: []
-tags: []
+id: Untitled
+tags:
+- project
+- linux
 ---
-
 # Obsidian Project Wiget

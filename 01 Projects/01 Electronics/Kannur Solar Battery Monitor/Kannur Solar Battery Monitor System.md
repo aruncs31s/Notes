@@ -1,19 +1,18 @@
 ---
-id: 06010-2024-Smart-City
-aliases:
-  - Smart city
-tags:
-  - "#project"
-  - "#electronics"
 Date:
   Started: 06-10-2024
   Target: 28-10-2024
 Status: Done
+aliases:
+- Smart city
 dg-publish: true
 github:
-  - https://github.com/aruncs31s/Kannur-Solar-Battery-Monitoring-System
+- https://github.com/aruncs31s/Kannur-Solar-Battery-Monitoring-System
+id: 06010-2024-Smart-City
+tags:
+- project
+- electronics
 ---
-
 # Kannur Solar Battery Monitor System
 
 ```dataview

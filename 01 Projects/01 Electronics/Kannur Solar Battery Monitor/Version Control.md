@@ -1,6 +1,9 @@
 ---
-aliases: 
-Date: "10-02-25"
+Date: 10-02-25
+aliases: null
+id: Version Control
+tags:
+- electronics
 ---
 # Version Control
 

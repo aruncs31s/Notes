@@ -1,10 +1,13 @@
 ---
-cssclasses:
-  - wide-page
-aliases: 
-tags: 
 Created: 01-10-2024
-Status:
+Status: null
+aliases: null
+cssclasses:
+- wide-page
+id: Solar Battery Monitor Programming
+tags:
+- project
+- electronics
 ---
 # Solar Battery Monitor Programming
 - [[#Relay Interfacing]]

@@ -1,7 +1,15 @@
 ---
-tags: [31songs, backend, go, api, docs]
+aliases: []
+id: Doc
+tags:
+- project
+- docs
+- backend
+- website
+- 31songs
+- go
+- api
 ---
-
 # 31Songs Go Backend 
 
 > Backend for the Local Player/31songs. REST + Socket.IO, sessions, last-played persistence. 
