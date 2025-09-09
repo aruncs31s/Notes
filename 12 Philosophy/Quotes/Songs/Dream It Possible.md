@@ -37,12 +37,14 @@ When your dreams come
 Alive you're unstoppable  
 
 >[!abstract]- *Explanation*
-> When your dreams comes true , you will be just unstoppable , it will
+> When your dreams comes true , you will be just unstoppable , you will feel it when you get to that point.
 
 
 Take a shot, chase the  
 Sun, find the beautiful  
 
+>[!abstract]- *Explanation*
+>Never be afraid to take risks , there is nothing you gain from not taking risks , and never even think about back
 
 
 We will glow in the dark  
