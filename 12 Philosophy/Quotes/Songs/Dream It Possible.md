@@ -88,7 +88,7 @@ And if it takes, takes a thousand lives
 Then it's worth fighting for  
 
 >[!abstract]- *Explanation*
-> If something is 
+> If something seems much harder and you sacrifice lot for it , then it's worth fighting for , like some things , no matter how hard you try, its just not seems to work , 
 
 It's not until you fall that you fly  
 When your dreams come  
