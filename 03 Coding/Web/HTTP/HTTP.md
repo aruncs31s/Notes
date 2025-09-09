@@ -1,3 +1,12 @@
+---
+cssclasses:
+  - wide-page
+dg-publish: true
+tags:
+  - web
+  - http
+---
+
 ### HTTP GET and POST Methods
 
 HTTP methods define actions for interacting with web resources. Here's a simple explanation of GET and POST, two of the most common ones:
