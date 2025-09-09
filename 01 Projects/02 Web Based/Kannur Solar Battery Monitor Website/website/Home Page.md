@@ -13,9 +13,9 @@ dg-publish: true
 # Home Page
 >[!blank|right-small]+ Pages 
 >There are mainly 4 pages , `Home` , `devices`,`info`, and `about`
->- [[01 Projects/02 Web_Based/Kannur Solar Battery Monitor Website/website/Home Page]]
->- [[01 Projects/02 Web_Based/Kannur Solar Battery Monitor Website/website/Device Page]]
->- [[01 Projects/02 Web_Based/Kannur Solar Battery Monitor Website/website/main_page]]
+>- [[01 Projects/02 Web Based/Kannur Solar Battery Monitor Website/website/Home Page]]
+>- [[01 Projects/02 Web Based/Kannur Solar Battery Monitor Website/website/Device Page]]
+>- [[01 Projects/02 Web Based/Kannur Solar Battery Monitor Website/website/main_page]]
 >Others
 >- [[database]]
 
