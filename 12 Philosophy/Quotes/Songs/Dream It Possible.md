@@ -30,11 +30,13 @@ And all I see is stars
 It's not until you fall that you fly  
 
 >[!abstract]*Explanation*
-> "If you do what you do , you get what you get." you will always achieve that extra when you do what other people don't. 
+> "If you do what you do , you get what you get." you will always achieve that extra when you do what other people don't, and everyone is scared at first , but the fear is not come to stay , it came to test that do you really, actually want this.
 
 
 When your dreams come  
 Alive you're unstoppable  
+
+>
 Take a shot, chase the  
 Sun, find the beautiful  
 
