@@ -3,14 +3,24 @@
 
 I will run, I will climb, I will soar  
 I'm undefeated, ooh  
->[!abstract]- Explanation
+>[!abstract]- *Explanation*
 >"Undefeated" isn’t about never losing; it’s about refusing to stay down
 
 
 **Jumping out of my skin, pull the chord**  
 **Yeah I believe it, ooh**  
+>[!abstract]*Explanation*
+>not , staying inside a box and explore new thing
+
+
 The past, is everything we were  
 Don't make us who we are  
+
+>[!abstract]*Explanation*
+>not , staying inside a box and explore new thing
+
+
+
 So I'll dream, until I make it real  
 And all I see is stars  
   
