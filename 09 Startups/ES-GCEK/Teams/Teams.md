@@ -15,7 +15,7 @@ TOTAL MEMBERS: 10
 > - [Nivedh-r](https://github.com/orgs/Embedded-Systems-GCEK/people/Nivedh-r)
 > - [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil)
 > - [Sneha-SJ-05](https://github.com/orgs/Embedded-Systems-GCEK/people/Sneha-SJ-05)
-> - [Albertjoe007](https://github.com/orgs/Embedded-Systems-GCEK/people/Albertjoe010)
+> - [Albertjoe007](https://github.com/orgs/Embedded-Systems-GCEK/people/Albertjoe007)
 > - [Krishnasree-A-V](https://github.com/orgs/Embedded-Systems-GCEK/people/Krishnasree-A-V)
 > - [Anu19692004](https://github.com/orgs/Embedded-Systems-GCEK/people/isro19692004geck)
 > - [sanjusathian](https://github.com/orgs/Embedded-Systems-GCEK/people/sanjusathian)
