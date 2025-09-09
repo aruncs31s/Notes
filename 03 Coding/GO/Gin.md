@@ -5,8 +5,8 @@ tags:
   - coding
   - go
 cssclasses:
+  - wide-page
 dg-publish: true
-cssClass: wide-page
 ---
 # Gin
 
