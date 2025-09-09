@@ -1,4 +1,4 @@
-# 
+# Dream It Possible
 
 
 I will run, I will climb, I will soar  
@@ -109,22 +109,6 @@ The rest of our lives
 >[!abstract]- *Explanation*
 >The term we used has to much importance , its like when someone said 
 >"If you want to walk fast walk alone , but if you want to walk far , walk together." , greatest things always achieved as a group , but always remember most of the time , there is always one man or women , who started all this. 
->and **Never Quit** and **Never Stop**, often we stop all this when we get old , but if you really think about *we only get old if we stop trying* , *age begins when the learning stops/*
+>and **Never Quit** and **Never Stop**, often we stop all this when we get old , but if you really think about *we only get old if we stop trying* , *age begins when the learning stops.*
 
 
-From the bottom to the top  
-We're sparking wild fires  
-Never quit and never stop  
-It's not until you fall that you fly  
-  
-When your dreams come  
-Alive you're unstoppable  
-Take a shot, chase the  
-Sun, find the beautiful  
-We will glow in the dark  
-Turning dust to gold  
-And we'll dream  
-It possible  
-Possible, ooh  
-And we'll dream  
-It possible
