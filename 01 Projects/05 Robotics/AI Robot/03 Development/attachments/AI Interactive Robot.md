@@ -1,10 +1,12 @@
 ---
-id: AI Interactive Robot
+Date: 13-11-2024
 aliases: []
-tags: []
-Date: "13-11-2024"
+id: AI Interactive Robot
+tags:
+- ai
+- project
+- robotics
 ---
-
 # AI Interactive Robot
 
 ## Components Used

@@ -1,10 +1,12 @@
 ---
+Date:
+  Created: '2024-12-20'
+aliases: []
 dg-publish: true
 id: Smart Watch Versions
-aliases: []
-tags: []
-Date:
-  Created: "2024-12-20"
+tags:
+- electronics
+- project
 ---
 # Smart Watch Versions
 

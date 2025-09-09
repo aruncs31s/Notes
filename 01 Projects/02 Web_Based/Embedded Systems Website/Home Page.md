@@ -1,11 +1,12 @@
 ---
+aliases: null
 id: Home Page
-aliases: 
 tags:
-  - es_website
-  - frontend
+- frontend
+- es_website
+- website
+- project
 ---
-
 # Home Page
 
 - [ ] 📅 2025-07-04  Test Conky

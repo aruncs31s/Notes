@@ -1,12 +1,12 @@
 ---
-id: Ledger
+Date: 23-10-2024
 aliases: []
-tags:
-  - money
-Date: "23-10-2024"
 dg-publish: true
+id: Ledger
+tags:
+- electronics
+- money
 ---
-
 # Ledger Kannur Solar Battery Meter
 
 - [[Documents]]

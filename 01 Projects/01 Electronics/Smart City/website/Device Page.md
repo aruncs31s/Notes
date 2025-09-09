@@ -1,6 +1,10 @@
 ---
 aliases:
-  - smart city device page
+- smart city device page
+id: Device Page
+tags:
+- electronics
+- project
 ---
 # Device Page
 This page will contain the battery voltage graph and the relay button

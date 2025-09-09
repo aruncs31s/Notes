@@ -1,17 +1,16 @@
 ---
-id: Embedded Systems Website
-aliases: 
-tags:
-  - project
-  - website
-  - es_website
-  - "#main_page"
-cssclasses:
-  - wide-page
 Status: Active
+aliases: null
+cssclasses:
+- wide-page
 dg-publish: true
+id: Embedded Systems Website
+tags:
+- main_page
+- es_website
+- website
+- project
 ---
-
 # ES Website
 
 

@@ -1,13 +1,14 @@
 ---
-aliases:
-  - 20250700-ieee
-tags:
-  - project
-  - electronics
-github: https://github.com/aruncs31s/e-vilakku-for-IEEE-ACPI-conference-GCEK
 Status: Done
+aliases:
+- 20250700-ieee
 cssclasses:
-  - wide-page
+- wide-page
+github: https://github.com/aruncs31s/e-vilakku-for-IEEE-ACPI-conference-GCEK
+id: E-LAMP for ACPI Conference
+tags:
+- electronics
+- project
 ---
 # E - Vilakku 
 >[!SUMMARY]- Table of Contents

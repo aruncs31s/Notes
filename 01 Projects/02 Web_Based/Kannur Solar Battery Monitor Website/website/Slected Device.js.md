@@ -1,3 +1,11 @@
+---
+aliases: []
+id: Slected Device.js
+tags:
+- project
+- website
+---
+
 ```js
 debug = 1;
 timeOffset = -60000;

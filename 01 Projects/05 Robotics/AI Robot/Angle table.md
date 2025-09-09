@@ -1,3 +1,12 @@
+---
+aliases: []
+id: Angle table
+tags:
+- project
+- robotics
+- ai
+---
+
 
 | Servo | Unit       |     | $\theta_{0}$ | $\text{when } \theta = 0$  | $\text{when } \theta = \pi$ |
 | ----- | ---------- | --- | ------------ | -------------------------- | --------------------------- |

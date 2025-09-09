@@ -7,9 +7,9 @@ dg-publish: true
 id: project_template
 tags:
 - esp32
-- project
 - weather_station
 - electronics
+- project
 ---
 # GCEK Weather Station
 >[!float|right-small] Contents

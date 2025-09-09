@@ -1,7 +1,9 @@
 ---
-id: esp32
 aliases: []
-tags: []
+id: esp32
+tags:
+- electronics
+- project
 ---
 ## ESP32
 

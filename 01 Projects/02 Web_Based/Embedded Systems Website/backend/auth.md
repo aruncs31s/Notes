@@ -1,9 +1,12 @@
 ---
+aliases: []
+id: auth
 tags:
-  - es_website
-  - backend
+- backend
+- es_website
+- website
+- project
 ---
-
 `src/assets/scripts/auth.js`
 
 ```js

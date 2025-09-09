@@ -1,11 +1,11 @@
 ---
-id: Energy Management
 aliases:
-  - energy_management
-tags: []
+- energy_management
+id: Energy Management
+tags:
+- electronics
+- project
 ---
-
-
 <!-- 2024-03-29 -->
 
 ### Contents

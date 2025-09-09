@@ -1,10 +1,14 @@
 ---
-aliases: 
 Date: 18-06-2025
-tags:
-  - python
-  - sub_module
+aliases: null
 dg-publish: true
+id: Servos
+tags:
+- sub_module
+- project
+- python
+- ai
+- robotics
 ---
 # Servos
 

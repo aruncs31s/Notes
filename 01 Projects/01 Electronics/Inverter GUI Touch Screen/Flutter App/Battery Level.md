@@ -1,3 +1,11 @@
+---
+aliases: []
+id: Battery Level
+tags:
+- project
+- electronics
+---
+
 # Battery Level
 - 12.8V
 

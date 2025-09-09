@@ -1,11 +1,11 @@
 ---
+Created: ''
+Status: working
 aliases: []
 id: Solar Battery Monitor
 tags:
-- project
 - electronics
-Created: ''
-Status: working
+- project
 ---
 # Solar Battery Monitor
 

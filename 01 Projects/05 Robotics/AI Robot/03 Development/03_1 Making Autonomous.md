@@ -1,3 +1,12 @@
+---
+aliases: []
+id: 03_1 Making Autonomous
+tags:
+- project
+- robotics
+- ai
+---
+
 
 # Making Autonomous
 

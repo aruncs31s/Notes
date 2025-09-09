@@ -1,9 +1,10 @@
 ---
-id: Monitoring Server
 aliases: []
-tags: []
+id: Monitoring Server
+tags:
+- electronics
+- project
 ---
-
 # Monitoring Server
 
 ## Contents

@@ -1,3 +1,12 @@
+---
+aliases: []
+id: Self Balancing
+tags:
+- project
+- robotics
+- ai
+---
+
 # Self Balancing 
 
 ### Basics 

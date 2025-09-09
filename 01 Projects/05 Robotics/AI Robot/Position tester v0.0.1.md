@@ -1,10 +1,14 @@
 ---
-aliases: 
 Date: 16-06-2025
+aliases: null
+id: Position tester v0.0.1
 tags:
-  - python
-  - full_script
-  - WholeCode
+- ai
+- full_script
+- project
+- python
+- robotics
+- WholeCode
 ---
 # Position tester v0.0.1
  ```python

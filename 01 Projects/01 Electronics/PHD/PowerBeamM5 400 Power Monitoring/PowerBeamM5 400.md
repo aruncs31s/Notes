@@ -1,10 +1,11 @@
 ---
-id: PowerBeamM5 400
 aliases: []
+id: PowerBeamM5 400
 tags:
-  - "[]:w"
+- '[]:w'
+- electronics
+- project
 ---
-
 # Power Beam M5 400
 
 #### IP Configurations

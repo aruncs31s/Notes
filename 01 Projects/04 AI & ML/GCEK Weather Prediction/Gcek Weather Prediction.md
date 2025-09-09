@@ -6,9 +6,9 @@ Target Date: '2024-09-23'
 aliases: []
 id: Gcek Weather Prediction
 tags:
-- ai
-- project
 - ml
+- project
+- ai
 ---
 # Gcek Weather Prediction
 

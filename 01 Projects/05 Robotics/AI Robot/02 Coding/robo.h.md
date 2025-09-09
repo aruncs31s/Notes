@@ -1,9 +1,13 @@
 ---
-aliases: 
 Date: 24-05-2025
+aliases: null
+id: robo.h
 tags:
-  - c_lib
-  - ai_robot
+- c_lib
+- project
+- ai
+- ai_robot
+- robotics
 ---
 # robo.h
 ## Constructor 

@@ -1,9 +1,10 @@
 ---
-id: Full Code
 aliases: []
-tags: []
+id: Full Code
+tags:
+- website
+- project
 ---
-
 ```javascript
 document.addEventListener("DOMContentLoaded", function () {
   const current_node = document

@@ -1,7 +1,12 @@
 ---
-"\raliases":
+"\raliases": null
 Date: 11-04-25
+aliases: []
 complete: false
+id: Navbar
+tags:
+- website
+- project
 ---
 # Navbar
 ```tsx

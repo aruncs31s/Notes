@@ -1,9 +1,12 @@
 ---
+aliases: []
+id: Flask Backend
 tags:
-  - es_website
-  - backend
+- backend
+- es_website
+- website
+- project
 ---
-
 # Flask Backend 
 - [[YAML Conversion]]
 

@@ -1,13 +1,14 @@
 ---
+Status: dropped
+aliases: []
 complete: false
 cssclasses:
-  - wide-page
+- wide-page
+id: ESP32 Expansion Board
 tags:
-  - project
-  - electronics
-Status: dropped
+- electronics
+- project
 ---
-
 # ESP32 Expansion Board
 
 >[!SUMMARY|right]+ Table of Contents

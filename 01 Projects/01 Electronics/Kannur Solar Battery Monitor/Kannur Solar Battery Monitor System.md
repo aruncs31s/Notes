@@ -10,8 +10,8 @@ github:
 - https://github.com/aruncs31s/Kannur-Solar-Battery-Monitoring-System
 id: 06010-2024-Smart-City
 tags:
-- project
 - electronics
+- project
 ---
 # Kannur Solar Battery Monitor System
 

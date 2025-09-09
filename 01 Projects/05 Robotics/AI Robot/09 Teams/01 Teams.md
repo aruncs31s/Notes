@@ -1,7 +1,12 @@
 ---
+aliases: []
 dg-publish: true
+id: 01 Teams
+tags:
+- ai
+- project
+- robotics
 ---
-
 # Teams 
 
 

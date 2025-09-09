@@ -1,15 +1,17 @@
 ---
-id: Signal Power Monitoring
-aliases:
-  - signal power
-tags:
-  - project,communication,antenna
 Completed: false
-Starting Date: "2024-07-01"
+Starting Date: '2024-07-01'
 Status: false
-Target Date: "2024-10-28"
+Target Date: '2024-10-28'
+aliases:
+- signal power
+id: Signal Power Monitoring
+tags:
+- electronics
+- communication
+- project
+- antenna
 ---
-
 ### Ledger
 
 | Date       | Item                  | Price |

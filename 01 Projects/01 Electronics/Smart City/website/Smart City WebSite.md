@@ -1,7 +1,9 @@
 ---
-id: Smart City WebSite
 aliases: []
-tags: []
+id: Smart City WebSite
+tags:
+- electronics
+- project
 ---
 # Smart City Website
 - [[01 Projects/01 Electronics/Smart City/website/Home Page]]

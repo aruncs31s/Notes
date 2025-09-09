@@ -4,9 +4,9 @@ aliases: null
 dg-publish: true
 id: 02 Coding
 tags:
-- ai
-- project
 - robotics
+- project
+- ai
 ---
 # Coding 
 - [[replay tester]]

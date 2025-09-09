@@ -1,12 +1,13 @@
 ---
-id: Main
-aliases:
-  - mini-project
-tags:
-  - project
-  - mini-project
 Starting Date: 2024-01-26
 Target Date: 2024-04-07
+aliases:
+- mini-project
+id: Main
+tags:
+- electronics
+- mini-project
+- project
 ---
 # Iot Based Smart Energy Management System
 

@@ -1,6 +1,11 @@
 ---
-aliases: 
-Date: "17-05-2025"
+Date: 17-05-2025
+aliases: null
+id: 05 Human Interaction
+tags:
+- ai
+- project
+- robotics
 ---
 # 05 HUman Interaction
 

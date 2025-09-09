@@ -1,20 +1,20 @@
 ---
-id: 18-01-25-Project
-aliases:
-  - AI Car
-tags:
-  - project
-  - electronics
-  - ai
-  - ml
-GithubLink: https://github.com/aruncs31s/AI-Based-Accident-Avoidance-System-AI-BAAS
-Status: Done
-cssclasses:
-  - wide-page
-dg-publish: true
-Starting Date: 2025-02-18
-TargetDate: 2025-02-13
 DoneDate: 2025-03-31
+GithubLink: https://github.com/aruncs31s/AI-Based-Accident-Avoidance-System-AI-BAAS
+Starting Date: 2025-02-18
+Status: Done
+TargetDate: 2025-02-13
+aliases:
+- AI Car
+cssclasses:
+- wide-page
+dg-publish: true
+id: 18-01-25-Project
+tags:
+- ml
+- electronics
+- project
+- ai
 ---
 # APAAS
 - [[01 Projects/01 Electronics/AI-powered accident avoidance System/Versions|Versions]]

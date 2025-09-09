@@ -1,12 +1,12 @@
 ---
+aliases: null
 id: lms
-aliases: 
 tags:
-  - project
-  - es_website
-  - lms
+- es_website
+- website
+- project
+- lms
 ---
-
 ## Features Needed
 
 * User Accounts: Who is taking the course?

@@ -7,9 +7,9 @@ aliases:
 - gcek dashboard
 id: dashboard
 tags:
+- dashboard
 - website
 - gcek
 - project
-- dashboard
 ---
 # GCEK Weather Dashboard

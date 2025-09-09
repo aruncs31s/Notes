@@ -1,3 +1,12 @@
+---
+aliases: []
+id: Position Testing
+tags:
+- project
+- robotics
+- ai
+---
+
 # Position Testing
 
 ```python

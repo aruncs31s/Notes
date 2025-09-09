@@ -1,9 +1,12 @@
 ---
 aliases:
-  - smart city home page
+- smart city home page
+id: Home Page
+tags:
+- electronics
+- project
 tech: flask
 ---
-
 # Home Page
 - [[01 Projects/01 Electronics/Smart City/website/Device Page]]
 

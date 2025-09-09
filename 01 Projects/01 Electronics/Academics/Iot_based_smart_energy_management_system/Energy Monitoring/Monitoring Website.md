@@ -1,3 +1,11 @@
+---
+aliases: []
+id: Monitoring Website
+tags:
+- project
+- electronics
+---
+
 # Monitoring Website
 Created : 2024-05-03 20:25
 

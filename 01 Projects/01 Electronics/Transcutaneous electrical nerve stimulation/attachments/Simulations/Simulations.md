@@ -1,3 +1,11 @@
+---
+aliases: []
+id: Simulations
+tags:
+- project
+- electronics
+---
+
 ![[Pasted image 20241124170831.png]]
 - It becomes stable after $75ms$ .
 - but requires **4.9V**

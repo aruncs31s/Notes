@@ -1,14 +1,14 @@
 ---
-id: APIs
 aliases: []
-tags:
-  - smartcity
-  - website
 cssclasses:
-  - wide-page
+- wide-page
 dg-publish: true
+id: APIs
+tags:
+- smartcity
+- website
+- project
 ---
-
 ## Fetching Data
 
 Used functions ->

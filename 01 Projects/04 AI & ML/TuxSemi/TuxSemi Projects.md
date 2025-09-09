@@ -2,10 +2,9 @@
 aliases: []
 id: TuxSemi Projects
 tags:
-- ai
 - ml
+- ai
 ---
-
 # TuxSemi Projects
 - [[AI ChatBot]]
 - 

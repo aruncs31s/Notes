@@ -1,3 +1,11 @@
+---
+aliases: []
+id: Slected Device.css
+tags:
+- project
+- website
+---
+
 ```css
 @import './base.css';
 

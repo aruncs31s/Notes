@@ -1,15 +1,16 @@
 ---
 aliases:
-  - smart city home page
-tech: flask
+- smart city home page
 cssclasses:
-  - wide-page
-tags:
-  - website
-  - smartcity
+- wide-page
 dg-publish: true
+id: Home Page
+tags:
+- smartcity
+- website
+- project
+tech: flask
 ---
-
 # Home Page
 >[!blank|right-small]+ Pages 
 >There are mainly 4 pages , `Home` , `devices`,`info`, and `about`

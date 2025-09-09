@@ -1,14 +1,14 @@
 ---
-id: database
 aliases: []
-tags:
-  - website
-  - smartcity
 cssclasses:
-  - wide-page
+- wide-page
 dg-publish: true
+id: database
+tags:
+- smartcity
+- website
+- project
 ---
-
 # Database
 
 - [ ] Check if is there any way to minimize the use of database in this project #fix

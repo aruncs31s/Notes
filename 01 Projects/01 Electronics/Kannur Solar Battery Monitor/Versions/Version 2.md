@@ -1,6 +1,10 @@
 ---
-aliases: 
 Date: 08-01-25
+aliases: null
+id: Version 2
+tags:
+- electronics
+- project
 ---
 # Version 2
 This version is the improved version of [[Version 1]] 

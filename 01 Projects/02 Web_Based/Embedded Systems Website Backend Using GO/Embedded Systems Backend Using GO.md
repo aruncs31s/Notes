@@ -1,12 +1,13 @@
 ---
-tags:
-  - "#backend"
-  - "#go"
-  - "#website"
-  - "#project"
+aliases: []
 dg-publish: true
+id: Embedded Systems Backend Using GO
+tags:
+- go
+- backend
+- website
+- project
 ---
-
 # Embedded Systems Backend Using Go
 
 ## Project Structure

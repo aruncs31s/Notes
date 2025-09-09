@@ -1,3 +1,10 @@
+---
+aliases: []
+id: Versions
+tags:
+- electronics
+---
+
 # Using ESP32
 ## V1
 ![[img_aibaas_car.jpg|400x500]]

@@ -1,19 +1,21 @@
 ---
-dg-publish: true
-id: 20-11-2024-Project
-aliases: 
-tags:
- - project,Electronics
 Date:
+  End: 17-12-2024
   Starting: 20-11-2024
   Target: 03-12-2024
-  End: 17-12-2024
 Status:
-  Working_ON: true
   Completed: true
-github: 
-cssClasses: wide-page
+  Working_ON: true
+aliases: null
 cssClass: image-gallery
+cssClasses: wide-page
+dg-publish: true
+github: null
+id: 20-11-2024-Project
+tags:
+- electronics
+- project
+- Electronics
 ---
 # Transcutaneous electrical nerve stimulation 
 

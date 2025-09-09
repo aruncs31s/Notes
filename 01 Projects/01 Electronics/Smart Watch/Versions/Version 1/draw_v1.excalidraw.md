@@ -1,9 +1,11 @@
 ---
-
-excalidraw-plugin: parsed
-tags: [excalidraw]
 alias: help_diagram
-
+aliases: []
+excalidraw-plugin: parsed
+id: draw_v1.excalidraw
+tags:
+- electronics
+- excalidraw
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
 

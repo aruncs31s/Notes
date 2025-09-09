@@ -1,14 +1,14 @@
 ---
-aliases:
-  - esp now
-tags:
-  - "#project"
-  - electronics
-cssclasses:
-  - wide-page
 Status: Done
+aliases:
+- esp now
+cssclasses:
+- wide-page
+id: Node to Node Communication
+tags:
+- electronics
+- project
 ---
-
 # Node to Node Communication
 >[!SUMMARY]- Table of Contents
 >- [[Node to Node Communication#Node to Node Communication|Node to Node Communication]]

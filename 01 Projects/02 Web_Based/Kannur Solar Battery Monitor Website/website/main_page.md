@@ -1,11 +1,11 @@
 ---
+aliases: null
 id: main_page
-aliases: 
 tags:
-  - website
-  - smartcity
+- smartcity
+- website
+- project
 ---
-
 # Main Page
 
 ```bash

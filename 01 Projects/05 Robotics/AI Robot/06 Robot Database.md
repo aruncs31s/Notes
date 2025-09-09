@@ -1,6 +1,11 @@
 ---
-aliases: 
-Date: "28-05-2025"
+Date: 28-05-2025
+aliases: null
+id: 06 Robot Database
+tags:
+- ai
+- project
+- robotics
 ---
 # Robot Database
 

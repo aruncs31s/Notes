@@ -1,9 +1,12 @@
 ---
-dg-publish: true
-aliases:
 Date: 24-10-2024
+aliases: null
+dg-publish: true
+id: Version 1
+tags:
+- electronics
+- project
 ---
-
 # Version 1
 
 - [ ] change to h2

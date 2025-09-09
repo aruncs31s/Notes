@@ -1,7 +1,10 @@
 ---
+aliases: []
+id: Projects Page
 tags:
-  - es_website
-  - frontend
+- frontend
+- es_website
+- website
+- project
 ---
-
 # Projects Page

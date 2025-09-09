@@ -1,21 +1,21 @@
 ---
-id: 29-11-2024-Project
-aliases:
-  - Smart Watch
-tags:
-  - project,
 Date:
-  Started: "03-04-2024"
-  Target: "01-01-2025"
+  Started: 03-04-2024
+  Target: 01-01-2025
 Status:
   Completed: false
   Working_ON: true
+aliases:
+- Smart Watch
 cssclasses:
-  - wide-page
+- wide-page
 dg-publish: true
 github: https://github.com/aruncs31s/Smart-Watch-for-Ladies-Protection
+id: 29-11-2024-Project
+tags:
+- electronics
+- project
 ---
-
 # Smart Watch for Ladies Protection
 
 - [[Smart Watch Versions]]

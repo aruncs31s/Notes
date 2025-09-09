@@ -1,3 +1,11 @@
+---
+aliases: []
+id: PIR Sensor
+tags:
+- project
+- electronics
+---
+
 [Source](https://www.electronicwings.com/esp32/pir-sensor-interfacing-with-esp32)
 - [Introduction]()
 - [Interfacing]()

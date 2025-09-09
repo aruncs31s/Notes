@@ -1,7 +1,12 @@
 ---
+aliases: []
 dg-publish: true
+id: Understanding Servos
+tags:
+- ai
+- project
+- robotics
 ---
-
 # Understanding Servos 
 ## Their Rotation (Sweep)
 **Sweep**: the shaft of a RC servo motor back and forth across 180 degrees

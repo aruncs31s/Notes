@@ -2,11 +2,10 @@
 aliases: []
 id: AI Chat Bot
 tags:
+- ml
 - project
 - ai
-- ml
 ---
-
 # AI Chat Bot
 
 ## Initial Idea

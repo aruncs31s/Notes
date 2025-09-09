@@ -1,3 +1,11 @@
+---
+aliases: []
+id: Energy Monitoring
+tags:
+- project
+- electronics
+---
+
 ### Contents
 - [Introduction]()
 - [Tasks]()

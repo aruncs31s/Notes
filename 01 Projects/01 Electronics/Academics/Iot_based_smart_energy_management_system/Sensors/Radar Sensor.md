@@ -1,3 +1,11 @@
+---
+aliases: []
+id: Radar Sensor
+tags:
+- project
+- electronics
+---
+
 # RCWL-0516 Radar Sensor
 ### Introduction
 - The [PIR sensor](https://lastminuteengineers.com/pir-sensor-arduino-tutorial/) , because they only detect movement from living things, they will generate fewer false alarms.

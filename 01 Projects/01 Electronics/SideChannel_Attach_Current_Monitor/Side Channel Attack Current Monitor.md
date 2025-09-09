@@ -1,21 +1,20 @@
 ---
-id: Side Channel Attack Current Monitor
-aliases:
-  - differential power analysis
-  - sidechannel attack
-tags:
-  - project
-  - embedded
-  - cryptography
-  - electronics
 Date:
-  Started: "12-10-2024"
+  Started: 12-10-2024
 GithubLink: https://github.com/aruncs31s/Amplifier-Circuit-For-Side-Channel-DPA-
 Status:
   Completed: false
   Working_ON: true
+aliases:
+- differential power analysis
+- sidechannel attack
+id: Side Channel Attack Current Monitor
+tags:
+- embedded
+- electronics
+- cryptography
+- project
 ---
-
 # Side Channel Attack Current Monitor
 
 - [[09 Projects/GCE_Kannur/Kannur Solar Battery Monitor/Versions]]

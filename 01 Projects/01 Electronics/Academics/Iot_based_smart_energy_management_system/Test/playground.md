@@ -1,3 +1,11 @@
+---
+aliases: []
+id: playground
+tags:
+- project
+- electronics
+---
+
 
 ```bash
 

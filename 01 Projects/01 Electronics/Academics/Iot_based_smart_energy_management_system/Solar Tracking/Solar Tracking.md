@@ -1,9 +1,10 @@
 ---
-id: Solar Tracking
 aliases: []
-tags: []
+id: Solar Tracking
+tags:
+- electronics
+- project
 ---
-
 ## Solar Tracking
 - [Introduction](Introduction.md)
 - [Tasks](#tasks)

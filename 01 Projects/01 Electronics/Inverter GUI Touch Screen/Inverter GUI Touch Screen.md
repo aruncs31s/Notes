@@ -1,13 +1,14 @@
 ---
-id: project template
 aliases: []
-tags: []
 creation_date: 2025-07-21 15:42
 github: nill
+id: project template
 modification_date: Monday 21st July 2025 15:42:43
 project_type: electronics
+tags:
+- electronics
+- project
 ---
-
 # Inverter GUI Touch Screen
 
 > [!multi-column]+

@@ -1,3 +1,10 @@
+---
+aliases: []
+id: Ledger
+tags:
+- electronics
+---
+
 # Ledger
 ### Version 1
 Purchased Dates : 

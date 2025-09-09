@@ -1,3 +1,11 @@
+---
+aliases: []
+id: Selected Device.html
+tags:
+- project
+- website
+---
+
 ```html
 {% extends "base.html" %}
 

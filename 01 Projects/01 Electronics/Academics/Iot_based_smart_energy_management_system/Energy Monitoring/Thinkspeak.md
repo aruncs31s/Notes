@@ -1,9 +1,10 @@
 ---
-id: Thinkspeak
 aliases: []
-tags: []
+id: Thinkspeak
+tags:
+- electronics
+- project
 ---
-
 # Thinkspeak
 
 Created : 2024-05-04 02:13

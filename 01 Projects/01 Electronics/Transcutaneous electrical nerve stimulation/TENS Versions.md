@@ -1,10 +1,13 @@
 ---
-dg-publish: true
-aliases: 
 Date: 23-11-2024
+aliases: null
 cssClasses: wide-page
+dg-publish: true
+id: TENS Versions
+tags:
+- electronics
+- project
 ---
-
 # TENS Versions
 ## Initial Design 
 ![[TENS Design.excalidraw|900x100]]

@@ -1,3 +1,12 @@
+---
+aliases: []
+id: Frigate
+tags:
+- project
+- robotics
+- ai
+---
+
 ## Homeassistant Integration
 **requires** : MQTT , HACS 
 ```bash

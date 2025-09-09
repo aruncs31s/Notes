@@ -1,11 +1,13 @@
 ---
-id: Walking
-aliases: 
-tags: 
+aliases: null
 dg-publish: true
-widepa:
+id: Walking
+tags:
+- ai
+- project
+- robotics
+widepa: null
 ---
-
 # Walking
 
 The key to walking is to adjust the center of mass.

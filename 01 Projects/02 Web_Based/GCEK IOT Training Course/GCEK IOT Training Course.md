@@ -1,14 +1,14 @@
 ---
-dg-publish: true
-id: 11-04-25-Project
-aliases: 
-tags:
-  - project
-  - website
-github: 
-cssclasses:
-  - wide-page
 Status: Dropped
+aliases: null
+cssclasses:
+- wide-page
+dg-publish: true
+github: null
+id: 11-04-25-Project
+tags:
+- website
+- project
 ---
 # GCEK IOT Training Course
 

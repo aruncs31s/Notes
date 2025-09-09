@@ -1,9 +1,10 @@
 ---
-id: analog_interfacing
 aliases: []
-tags: []
+id: analog_interfacing
+tags:
+- electronics
+- project
 ---
-
 #### Analog Interfacing
 
 - [Introduction](#introduction)

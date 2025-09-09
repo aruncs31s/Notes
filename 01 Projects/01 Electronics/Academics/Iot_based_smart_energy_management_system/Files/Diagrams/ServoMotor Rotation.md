@@ -1,8 +1,11 @@
 ---
-
+aliases: []
 excalidraw-plugin: parsed
-tags: [excalidraw]
-
+id: ServoMotor Rotation
+tags:
+- electronics
+- project
+- excalidraw
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 

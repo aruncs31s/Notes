@@ -1,6 +1,11 @@
 ---
-aliases: 
-Date: "16-06-2025"
+Date: 16-06-2025
+aliases: null
+id: replay tester
+tags:
+- ai
+- project
+- robotics
 ---
 # replay tester
 

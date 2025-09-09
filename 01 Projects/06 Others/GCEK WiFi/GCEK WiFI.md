@@ -1,15 +1,15 @@
 ---
-id: Project name
-aliases:
-  - auto login
-tags:
-  - gcek,project
 Completed: false
 Starting Date: 2024-09-14
 Status: false
 Target Date: 2024-09-23
+aliases:
+- auto login
+id: Project name
+tags:
+- gcek
+- project
 ---
-
 # GCEK WiFi
 
 #tasks

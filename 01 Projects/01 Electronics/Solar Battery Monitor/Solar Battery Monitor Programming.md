@@ -6,8 +6,8 @@ cssclasses:
 - wide-page
 id: Solar Battery Monitor Programming
 tags:
-- project
 - electronics
+- project
 ---
 # Solar Battery Monitor Programming
 - [[#Relay Interfacing]]

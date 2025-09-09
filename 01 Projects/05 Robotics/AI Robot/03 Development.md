@@ -5,9 +5,9 @@ cssclasses:
 dg-publish: true
 id: 03 Development
 tags:
-- ai
-- project
 - robotics
+- project
+- ai
 ---
 # Development 
 - [[Angle table]]

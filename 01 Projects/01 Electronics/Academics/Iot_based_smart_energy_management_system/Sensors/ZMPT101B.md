@@ -1,3 +1,11 @@
+---
+aliases: []
+id: ZMPT101B
+tags:
+- project
+- electronics
+---
+
 <h2 align="center">ZMPT101B</h2>
 
 #### Contents

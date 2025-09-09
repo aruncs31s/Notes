@@ -1,3 +1,11 @@
+---
+aliases: []
+id: Servo Motor
+tags:
+- project
+- electronics
+---
+
 <h2 align="center">Servo Motor</h2>
 
 - [Introduction]()

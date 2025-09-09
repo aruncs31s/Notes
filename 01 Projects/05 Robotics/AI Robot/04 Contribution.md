@@ -1,7 +1,13 @@
 ---
-dg-publish: true
+aliases: []
 cssclasses:
-  - wide-page
+- wide-page
+dg-publish: true
+id: 04 Contribution
+tags:
+- ai
+- project
+- robotics
 ---
 # Contribution
 <ul style="display:flex;text-align:center;justify-content:space-around;list-style:none;padding:0;" >

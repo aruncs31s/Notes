@@ -1,9 +1,13 @@
 ---
+aliases: []
+id: robo-movements.h
 tags:
-  - c_lib
-  - ai_robot
+- c_lib
+- project
+- ai
+- ai_robot
+- robotics
 ---
-
 # Robo-Movements.h
 
 

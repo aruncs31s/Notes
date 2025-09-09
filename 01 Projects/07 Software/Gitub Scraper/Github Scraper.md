@@ -1,9 +1,10 @@
 ---
+aliases: []
+id: Github Scraper
 tags:
-  - project
-  - software
+- software
+- project
 ---
-
 # Github Scraper
 
 > [!check]+ **Things Done**

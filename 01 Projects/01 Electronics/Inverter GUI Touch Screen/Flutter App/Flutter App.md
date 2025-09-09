@@ -1,3 +1,11 @@
+---
+aliases: []
+id: Flutter App
+tags:
+- project
+- electronics
+---
+
 # Flutter Battery Monitor App
 - [[Battery Level]]
 

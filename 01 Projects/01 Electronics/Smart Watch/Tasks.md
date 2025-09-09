@@ -1,9 +1,11 @@
 ---
-
+aliases: []
+id: Tasks
 kanban-plugin: board
-
+tags:
+- electronics
+- project
 ---
-
 ## Tasks To do
 
 - [ ] GSM Interfacing

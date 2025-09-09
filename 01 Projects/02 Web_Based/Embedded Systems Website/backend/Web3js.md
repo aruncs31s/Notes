@@ -1,9 +1,12 @@
 ---
+aliases: []
+id: Web3js
 tags:
-  - es_website
-  - backend
+- backend
+- es_website
+- website
+- project
 ---
-
 # Web3js Backend 
  > [!summary]- **Why**
  > -  decentralized, no passwords.

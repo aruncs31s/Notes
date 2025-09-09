@@ -1,7 +1,10 @@
 ---
-dg-publish: true
-aliases:
 Date: 23-10-2024
+aliases: null
+dg-publish: true
+id: Versions
+tags:
+- electronics
 ---
 # Versions
 The version 2 and 3 are in parallel and tries to bring different technologies that are not included in the version 1 , which only has the ability to monitor the battery voltage.

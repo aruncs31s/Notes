@@ -1,8 +1,12 @@
 ---
+aliases: []
+id: YAML Conversion
 tags:
-  - es_website
-  - backend
-  - idea_1
+- es_website
+- project
+- backend
+- website
+- idea_1
 ---
 # YAML Conversion
 So the initial idea is to conver a standard readme into a YAML frontmatter format that can be used in a static site component in our [[Embedded Systems Website]] 

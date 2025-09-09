@@ -1,14 +1,15 @@
 ---
-id: 02 Flask APIs
 aliases:
-  - es backend flask api
+- es backend flask api
+id: 02 Flask APIs
 tags:
-  - api
-  - flask
-  - es_website
-  - backend
+- flask
+- es_website
+- api
+- project
+- backend
+- website
 ---
-
 # Flask APIs
 >[!blank]
 >- [x] `/api/login` ✅ 2025-07-10

@@ -7,8 +7,8 @@ Target Date: 2024-09-20
 aliases: []
 id: AI ChatBot
 tags:
-- project
 - ml
+- project
 - ai
 ---
 # AI Chat Bot

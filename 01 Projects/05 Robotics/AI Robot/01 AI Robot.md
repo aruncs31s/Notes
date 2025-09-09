@@ -8,10 +8,10 @@ dg-publish: true
 id: 9-PROJECT
 status: not_done
 tags:
-- robotics
 - ai
-- project
 - status/open
+- project
+- robotics
 ---
 # AI Robot
 

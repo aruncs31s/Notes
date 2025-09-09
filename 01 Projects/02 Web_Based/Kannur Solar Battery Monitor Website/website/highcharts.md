@@ -1,3 +1,11 @@
+---
+aliases: []
+id: highcharts
+tags:
+- project
+- website
+---
+
 ```JS
 
 function createChart(containerId, title, yAxisTitle, seriesName) {

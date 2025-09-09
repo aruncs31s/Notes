@@ -1,3 +1,11 @@
+---
+aliases: []
+id: Relay Module
+tags:
+- project
+- electronics
+---
+
 
 <h2 align="center" id="relaymodule">Relay Module</h2>
 

@@ -1,12 +1,13 @@
 ---
-id: Smart City WebSite
-aliases: 
-tags:
-  - "#smartcity"
-  - website
+aliases: null
 cssclasses:
-  - wide-page
+- wide-page
 dg-publish: true
+id: Smart City WebSite
+tags:
+- smartcity
+- website
+- project
 ---
 # Smart City Website
 >[!blank|right-small]+ Pages 

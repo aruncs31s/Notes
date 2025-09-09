@@ -1,7 +1,9 @@
 ---
-id: Voice Assistant
 aliases: []
-tags: []
+id: Voice Assistant
+tags:
+- ai
+- project
+- robotics
 ---
-
 # Voice Assistant

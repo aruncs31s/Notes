@@ -1,3 +1,11 @@
+---
+aliases: []
+id: LDR Sensor
+tags:
+- project
+- electronics
+---
+
 <h2 align="center">LDR Sensor</h2>
 
 - [Introduction]()

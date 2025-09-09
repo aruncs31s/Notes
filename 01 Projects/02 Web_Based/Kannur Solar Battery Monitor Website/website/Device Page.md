@@ -1,15 +1,15 @@
 ---
-id: Device Page
 aliases:
-  - smart city device page
-tags:
-  - website
-  - smartcity
+- smart city device page
 cssclasses:
-  - wide-page
+- wide-page
 dg-publish: true
+id: Device Page
+tags:
+- smartcity
+- website
+- project
 ---
-
 > [!blank|right-small]+ Pages
 > There are mainly 4 pages , `Home` , `devices`,`info`, and `about`
 >

@@ -1,11 +1,13 @@
 ---
+aliases: []
 dg-publish: true
 id: es_website_gcek_backend
 tags:
-  - es_website
-  - backend
+- backend
+- es_website
+- website
+- project
 ---
-
 # Backend
 - [[Flask Backend]]
 - Using [[Web3 Based Backend]]   👎

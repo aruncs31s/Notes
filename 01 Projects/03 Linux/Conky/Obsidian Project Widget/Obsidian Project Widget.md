@@ -1,13 +1,12 @@
 ---
-id: Obsidian Project Widget
-aliases: 
-tags:
-  - "#project"
-  - linux
 Status:
-  - Active
+- Active
+aliases: null
+id: Obsidian Project Widget
+tags:
+- project
+- linux
 ---
-
 # Obsidian Project Widget
 
 ## Features

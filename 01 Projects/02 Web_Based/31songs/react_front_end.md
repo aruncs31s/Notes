@@ -1,3 +1,11 @@
+---
+aliases: []
+id: react_front_end
+tags:
+- project
+- website
+---
+
 # 31Songs React Frontend Documentation
 
 ## 📋 Project Overview
