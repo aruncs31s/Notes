@@ -72,7 +72,7 @@ Out of my cage, like a bird in the night
 I know I'm changing, I know I'm changing  
 
 >[!abstract]- *Explanation*
-> When you don't care about what other people s
+> When you don't care about what other people think about you , you can unleash your full potential, its like when you are 
 
 
 In, into something big  
