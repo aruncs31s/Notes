@@ -4,8 +4,9 @@ aliases: []
 tags:
   - coding
   - go
-cssclasses: 
+cssclasses:
 dg-publish: true
+cssClass: wide-page
 ---
 # Gin
 
