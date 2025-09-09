@@ -83,7 +83,7 @@ It possible
 
 
 >[!abstract]- *Explanation*
-> Never compare your self to others , compare your own versions , how much i have improved , from time to time , and never stay down.
+> Never compare yourself to others, compare your own versions, how much I have improved from time to time, and never stay down.
 
 
 
