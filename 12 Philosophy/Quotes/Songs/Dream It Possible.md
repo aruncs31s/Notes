@@ -24,12 +24,12 @@ Don't make us who we are
 So I'll dream, until I make it real  
 And all I see is stars  
 
->[!abstract]*Explanation*
+>[!abstract]- *Explanation*
 >When you really want something , all you do is dream about it every single day , until its real and no longer just a dream, its when dream come to reality. And when we are working on our dreams we no longer see the problems we face as set backs , we see them as challenges that need to be solved. 
 
 It's not until you fall that you fly  
 
->[!abstract]*Explanation*
+>[!abstract]- *Explanation*
 > "If you do what you do , you get what you get." you will always achieve that extra when you do what other people don't, and everyone is scared at first , but the fear is not come to stay , it came to test that do you really, actually want this.
 
 
@@ -79,9 +79,8 @@ In, into something big
 Better than before  
 
 
-
->[!abstract]*Explanation*
->not , staying inside a box and explore new thing
+>[!abstract]- *Explanation*
+> Never compare your self to otheres 
 
 
 
