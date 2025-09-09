@@ -14,7 +14,7 @@ TargetDate: 2025-02-13
 DoneDate: 2025-03-31
 ---
 # APAAS
-- [[01 Projects/01 Electronics/AI-powered accident avoidance System/Versions|Versions]]
+- [[01 Projects/01 Electronics/AI Powered Accident Avoidance System/Versions|Versions]]
 >[!SUMMARY|right] Table of Contents
 >- [[AI Powered Accident Avoidance System#APAAS|APAAS]]
 >    - [[AI Powered Accident Avoidance System#Components|Components]]
