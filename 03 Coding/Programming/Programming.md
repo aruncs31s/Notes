@@ -8,7 +8,8 @@ dg-publish: true
 ---
 # Programming
 
-- [ ] Chec
+- [[Domain-Driven Design]]
+- [ ] Checkout Domain-Driven Design.
 ## Programming Paradigm
 2 types `Imperative` and `Declerativer`
 
