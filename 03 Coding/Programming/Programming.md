@@ -8,6 +8,7 @@ dg-publish: true
 ---
 # Programming
 
+- [ ] Chec
 ## Programming Paradigm
 2 types `Imperative` and `Declerativer`
 
