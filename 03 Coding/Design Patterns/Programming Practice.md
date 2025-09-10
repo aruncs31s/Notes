@@ -6,10 +6,10 @@ tags:
   - design_pattern
 ---
 
-
+# Forwarding methods (**delegation layer**)
 
 **“Repository facade that delegates to reader and writer implementations.”**
-In clean architecture/DDD lingo, you’d say:
+> In architecture/DDD lingo
 - `staffExperienceRepository` is the **aggregate repository**.
 - `staffExperienceReader` / `staffExperienceWriter` are **specialized repositories**.
 - These wrapper methods are just **forwarders**, ensuring the high-level interface is satisfied.
