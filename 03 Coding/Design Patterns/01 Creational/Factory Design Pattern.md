@@ -171,23 +171,10 @@ flowchart LR
 
 
 ## Practical Example in API 
-
- ```go
- # Simplified Factory Pattern Usage
-
   
 
 This document explains how to use the simplified factory pattern without database adapters while maintaining clean architecture.
-
-  
-
 ## Overview
-
-  
-
-The simplified approach removes the database adapter complexity while keeping the benefits of the factory pattern:
-
-  
 
 - **SimpleRepositoryFactory**: Creates repository instances using direct GORM dependencies
 
@@ -195,80 +182,39 @@ The simplified approach removes the database adapter complexity while keeping th
 
 - **Singleton Database Manager**: Manages database connections efficiently
 
-  
-
 ## Key Benefits
 
-  
 
-1. **Reduced Complexity**: No database adapter layer to maintain
-
-2. **Factory Pattern**: Clean dependency injection and object creation
-
-3. **Singleton Database**: Efficient database connection management
-
-4. **Mixed Repository Support**: Handles both GORM and interface-based repositories seamlessly
+1. **Factory Pattern**: Clean dependency injection and object creation
+2. **Singleton Database**: Efficient database connection management
+3. **Mixed Repository Support**: Handles both GORM and interface-based repositories seamlessly
 
   
 
 ## Usage Examples
 
-  
-
 ### Basic Usage
 
-  
 
 ```go
-
 // Get database connection
-
 dbManager := initializers.GetDatabaseManager()
-
 db := dbManager.GetDB()
-
-  
-
 // Create factories
-
 repoFactory := factory.NewSimpleRepositoryFactory(db)
-
 serviceFactory := factory.NewSimpleServiceFactory(repoFactory, db)
-
-  
-
 // Create services
-
 staffProfileService := serviceFactory.CreateStaffProfileService()
-
 staffQualificationService := serviceFactory.CreateStaffQualificationService()
-
 ```
-
-  
-
 ### Convenience Factory
-
-  
-
 ```go
-
 // One-liner factory creation
-
 serviceFactory := factory.NewGormSimpleServiceFactory(db)
-
 ```
-
-  
-
 ### Individual Repository Creation
-
-  
-
 ```go
-
 repoFactory := factory.NewSimpleRepositoryFactory(db)
-
   
 
 // Create specific repositories
@@ -455,5 +401,4 @@ DB_TYPE=mysql
 
 DATABASE_URL=user:password@tcp(localhost:3306)/database?charset=utf8mb4&parseTime=true&loc=Local
 
-```
- ```
+``` 
