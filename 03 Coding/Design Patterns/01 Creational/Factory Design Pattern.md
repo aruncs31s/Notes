@@ -167,3 +167,293 @@ flowchart LR
     style A fill:#2962FF
 
 ```
+
+
+
+## Practical Example in API 
+
+ ```go
+ # Simplified Factory Pattern Usage
+
+  
+
+This document explains how to use the simplified factory pattern without database adapters while maintaining clean architecture.
+
+  
+
+## Overview
+
+  
+
+The simplified approach removes the database adapter complexity while keeping the benefits of the factory pattern:
+
+  
+
+- **SimpleRepositoryFactory**: Creates repository instances using direct GORM dependencies
+
+- **SimpleServiceFactory**: Creates service instances using the repository factory
+
+- **Singleton Database Manager**: Manages database connections efficiently
+
+  
+
+## Key Benefits
+
+  
+
+1. **Reduced Complexity**: No database adapter layer to maintain
+
+2. **Factory Pattern**: Clean dependency injection and object creation
+
+3. **Singleton Database**: Efficient database connection management
+
+4. **Mixed Repository Support**: Handles both GORM and interface-based repositories seamlessly
+
+  
+
+## Usage Examples
+
+  
+
+### Basic Usage
+
+  
+
+```go
+
+// Get database connection
+
+dbManager := initializers.GetDatabaseManager()
+
+db := dbManager.GetDB()
+
+  
+
+// Create factories
+
+repoFactory := factory.NewSimpleRepositoryFactory(db)
+
+serviceFactory := factory.NewSimpleServiceFactory(repoFactory, db)
+
+  
+
+// Create services
+
+staffProfileService := serviceFactory.CreateStaffProfileService()
+
+staffQualificationService := serviceFactory.CreateStaffQualificationService()
+
+```
+
+  
+
+### Convenience Factory
+
+  
+
+```go
+
+// One-liner factory creation
+
+serviceFactory := factory.NewGormSimpleServiceFactory(db)
+
+```
+
+  
+
+### Individual Repository Creation
+
+  
+
+```go
+
+repoFactory := factory.NewSimpleRepositoryFactory(db)
+
+  
+
+// Create specific repositories
+
+staffRepo := repoFactory.CreateStaffRepository()
+
+staffDetailRepo := repoFactory.CreateStaffDetailRepository()
+
+staffQualificationRepo := repoFactory.CreateStaffQualificationsRepository()
+
+```
+
+  
+
+## Available Services
+
+  
+
+### From SimpleServiceFactory:
+
+- `CreateStaffProfileService()` - Manages staff profiles
+
+- `CreateStaffQualificationService()` - Manages staff qualifications  
+
+- `CreateProfileDataMapper()` - Maps profile DTOs to models
+
+- `CreateStaffDataMapper()` - Maps staff DTOs to models
+
+  
+
+### From SimpleRepositoryFactory:
+
+- `CreateStaffRepository()` - Core staff operations
+
+- `CreateStaffDetailRepository()` - Staff detail operations
+
+- `CreateStaffAdditionalDetailRepository()` - Additional details
+
+- `CreateStaffExtraDetailRepository()` - Extra details
+
+- `CreateStaffServiceBreakRepository()` - Service breaks
+
+- `CreateStaffPayScaleRepository()` - Pay scale management
+
+- `CreateStaffProfileRepository()` - Profile operations
+
+- `CreateStaffQualificationsRepository()` - Qualification operations
+
+  
+
+## Database Connection Management
+
+  
+
+The singleton database manager handles:
+
+  
+
+- **Connection pooling** for efficient resource usage
+
+- **Auto-migration** for database schema updates
+
+- **Health checks** for monitoring database status
+
+- **Environment-based configuration** (MySQL/MariaDB/SQLite)
+
+  
+
+```go
+
+// Check database health
+
+if err := dbManager.Health(); err != nil {
+
+    log.Fatalf("Database health check failed: %v", err)
+
+}
+
+```
+
+  
+
+## Repository Implementation Details
+
+  
+
+The factory automatically handles different repository constructor signatures:
+
+  
+
+- **Direct GORM repositories** (StaffAdditionalDetail, StaffExtraDetail, etc.) - Use `*gorm.DB` directly
+
+- **Interface-based repositories** (Staff, StaffDetail, StaffQualifications) - Use database adapter internally
+
+  
+
+This mixed approach allows for gradual migration while maintaining compatibility.
+
+  
+
+## Migration from Complex Factory
+
+  
+
+If you were using the previous complex factory with database adapters:
+
+  
+
+### Before:
+
+```go
+
+dbAdapter := interfaces.NewGormDatabaseAdapter(db)
+
+repoFactory := factory.NewRepositoryFactory(dbAdapter)
+
+serviceFactory := factory.NewServiceFactory(repoFactory, dbAdapter)
+
+```
+
+  
+
+### After:
+
+```go
+
+repoFactory := factory.NewSimpleRepositoryFactory(db)
+
+serviceFactory := factory.NewSimpleServiceFactory(repoFactory, db)
+
+// Or simply:
+
+serviceFactory := factory.NewGormSimpleServiceFactory(db)
+
+```
+
+  
+
+## Error Handling
+
+  
+
+Always check for database connection health:
+
+  
+
+```go
+
+dbManager := initializers.GetDatabaseManager()
+
+if err := dbManager.Health(); err != nil {
+
+    return fmt.Errorf("database not available: %v", err)
+
+}
+
+```
+
+  
+
+## Configuration
+
+  
+
+The database manager reads configuration from environment variables:
+
+  
+
+```bash
+
+DB_TYPE=sqlite                    # or "mysql", "mariadb"
+
+DATABASE_URL=./test.db           # SQLite path or MySQL DSN
+
+```
+
+  
+
+For MySQL/MariaDB:
+
+```bash
+
+DB_TYPE=mysql
+
+DATABASE_URL=user:password@tcp(localhost:3306)/database?charset=utf8mb4&parseTime=true&loc=Local
+
+```
+ ```
