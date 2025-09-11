@@ -174,7 +174,7 @@ flowchart LR
   
 
 This document explains how to use the simplified factory pattern without database adapters while maintaining clean architecture.
-## Overview
+### Overview
 
 - **SimpleRepositoryFactory**: Creates repository instances using direct GORM dependencies
 
@@ -182,7 +182,7 @@ This document explains how to use the simplified factory pattern without databas
 
 - **Singleton Database Manager**: Manages database connections efficiently
 
-## Key Benefits
+### Key Benefits
 
 
 1. **Factory Pattern**: Clean dependency injection and object creation
@@ -191,7 +191,7 @@ This document explains how to use the simplified factory pattern without databas
 
   
 
-## Usage Examples
+### Usage Examples
 
 ### Basic Usage
 
@@ -215,96 +215,48 @@ serviceFactory := factory.NewGormSimpleServiceFactory(db)
 ### Individual Repository Creation
 ```go
 repoFactory := factory.NewSimpleRepositoryFactory(db)
-  
-
 // Create specific repositories
-
 staffRepo := repoFactory.CreateStaffRepository()
-
 staffDetailRepo := repoFactory.CreateStaffDetailRepository()
-
 staffQualificationRepo := repoFactory.CreateStaffQualificationsRepository()
-
 ```
+### Available Services
 
   
 
-## Available Services
-
-  
-
-### From SimpleServiceFactory:
-
+#### From SimpleServiceFactory:
 - `CreateStaffProfileService()` - Manages staff profiles
-
 - `CreateStaffQualificationService()` - Manages staff qualifications  
-
 - `CreateProfileDataMapper()` - Maps profile DTOs to models
-
 - `CreateStaffDataMapper()` - Maps staff DTOs to models
-
-  
-
-### From SimpleRepositoryFactory:
+#### From SimpleRepositoryFactory:
 
 - `CreateStaffRepository()` - Core staff operations
-
 - `CreateStaffDetailRepository()` - Staff detail operations
-
 - `CreateStaffAdditionalDetailRepository()` - Additional details
-
 - `CreateStaffExtraDetailRepository()` - Extra details
-
 - `CreateStaffServiceBreakRepository()` - Service breaks
-
 - `CreateStaffPayScaleRepository()` - Pay scale management
-
 - `CreateStaffProfileRepository()` - Profile operations
-
 - `CreateStaffQualificationsRepository()` - Qualification operations
 
-  
-
-## Database Connection Management
-
-  
+### Database Connection Management
 
 The singleton database manager handles:
-
-  
-
 - **Connection pooling** for efficient resource usage
-
 - **Auto-migration** for database schema updates
-
 - **Health checks** for monitoring database status
-
 - **Environment-based configuration** (MySQL/MariaDB/SQLite)
 
-  
-
 ```go
-
 // Check database health
-
 if err := dbManager.Health(); err != nil {
-
     log.Fatalf("Database health check failed: %v", err)
-
 }
-
 ```
 
-  
-
-## Repository Implementation Details
-
-  
-
+### Repository Implementation Details
 The factory automatically handles different repository constructor signatures:
-
-  
-
 - **Direct GORM repositories** (StaffAdditionalDetail, StaffExtraDetail, etc.) - Use `*gorm.DB` directly
 
 - **Interface-based repositories** (Staff, StaffDetail, StaffQualifications) - Use database adapter internally
