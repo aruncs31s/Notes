@@ -12,45 +12,66 @@ tags:: [[+Daily Notes]]
 
 # <% moment(tp.file.title,'YYYY-MM-DD').format("dddd, MMMM DD, YYYY") %>
 
-<< [[Timestamps/<% tp.date.now("YYYY", -1) %>/<% tp.date.now("MM-MMMM", -1) %>/<% tp.date.now("DD-MM-YYYY", -1) %>|Yesterday]] | [[Timestamps/<% tp.date.now("YYYY", 1) %>/<% tp.date.now("MM-MMMM", 1) %>/<% tp.date.now("DD-MM-YYYY", 1) %>|Tomorrow]] >>
+← [[<% tp.date.now("YYYY-MM-DD", -1) %>|Yesterday]] | [[<% tp.date.now("YYYY-MM-DD", 1) %>|Tomorrow]] →
 
 ---
 
-## Tasks Done
+## 📋 Tasks
 
+### Today's Tasks
 ```tasks
-done on <% tp.date.now("YYYY-MM-DD") %>
-
+not done
+due on <% tp.date.now("YYYY-MM-DD") %>
 ```
 
-## 📅 Daily Questions
+### Completed Today
+```tasks
+done on <% tp.date.now("YYYY-MM-DD") %>
+```
 
-##### 🙌 One thing I'm excited about right now is...
+## 📅 Daily Reflection
 
--
+##### 🙌 What am I excited about today?
 
-##### 🚀 One+ thing I plan to accomplish today is...
+- 
 
-- [ ]
+##### 🎯 What do I want to accomplish today?
 
-##### 👎 One thing I'm struggling with today is...
+- [ ] 
+- [ ] 
+- [ ] 
 
-- ***
+##### 🤔 What challenges am I facing?
+
+- 
+
+##### 🌟 What am I grateful for?
+
+- 
 
 ## 📝 Notes
 
-- <% tp.file.cursor() %>
+<% tp.file.cursor() %>
 
 ---
 
-### Notes created today
+## 📊 Today's Activity
 
+### Notes Created Today
 ```dataview
-List FROM "" WHERE file.cday = date("<% tp.date.now("YYYY-MM-DD") %>") SORT file.ctime asc
+LIST
+FROM ""
+WHERE file.cday = date("<% tp.date.now("YYYY-MM-DD") %>")
+SORT file.ctime ASC
 ```
 
-### Notes last touched today
-
+### Notes Modified Today
 ```dataview
-List FROM "" WHERE file.mday = date("<% tp.date.now("YYYY-MM-DD") %>") SORT file.mtime asc
+LIST
+FROM ""
+WHERE file.mday = date("<% tp.date.now("YYYY-MM-DD") %>") AND file.cday != date("<% tp.date.now("YYYY-MM-DD") %>")
+SORT file.mtime DESC
 ```
+
+---
+*Created: <% tp.date.now("YYYY-MM-DD HH:mm") %>*
