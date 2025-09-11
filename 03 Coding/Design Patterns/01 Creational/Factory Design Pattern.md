@@ -258,99 +258,46 @@ if err := dbManager.Health(); err != nil {
 ### Repository Implementation Details
 The factory automatically handles different repository constructor signatures:
 - **Direct GORM repositories** (StaffAdditionalDetail, StaffExtraDetail, etc.) - Use `*gorm.DB` directly
-
 - **Interface-based repositories** (Staff, StaffDetail, StaffQualifications) - Use database adapter internally
-
-  
-
 This mixed approach allows for gradual migration while maintaining compatibility.
-
-  
-
-## Migration from Complex Factory
-
-  
-
+### Migration from Complex Factory
 If you were using the previous complex factory with database adapters:
-
-  
-
 ### Before:
 
 ```go
-
 dbAdapter := interfaces.NewGormDatabaseAdapter(db)
-
 repoFactory := factory.NewRepositoryFactory(dbAdapter)
-
 serviceFactory := factory.NewServiceFactory(repoFactory, dbAdapter)
-
 ```
-
-  
-
-### After:
+#### After:
 
 ```go
-
 repoFactory := factory.NewSimpleRepositoryFactory(db)
-
 serviceFactory := factory.NewSimpleServiceFactory(repoFactory, db)
-
 // Or simply:
-
 serviceFactory := factory.NewGormSimpleServiceFactory(db)
-
 ```
-
-  
-
-## Error Handling
-
-  
-
+### Error Handling
 Always check for database connection health:
-
-  
-
 ```go
-
 dbManager := initializers.GetDatabaseManager()
-
 if err := dbManager.Health(); err != nil {
-
     return fmt.Errorf("database not available: %v", err)
-
 }
-
 ```
 
   
 
-## Configuration
-
-  
-
+### Configuration
 The database manager reads configuration from environment variables:
-
-  
-
 ```bash
-
 DB_TYPE=sqlite                    # or "mysql", "mariadb"
-
 DATABASE_URL=./test.db           # SQLite path or MySQL DSN
-
 ```
-
-  
 
 For MySQL/MariaDB:
 
 ```bash
-
 DB_TYPE=mysql
-
 DATABASE_URL=user:password@tcp(localhost:3306)/database?charset=utf8mb4&parseTime=true&loc=Local
-
 ``` 
