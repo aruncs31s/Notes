@@ -8,6 +8,11 @@ Date: "15-06-2025"
 dg-publish: true
 ---
 # Modules
+```bash
+git add -A
+
+```
+
 
 ```python
 from .gui import gui_main 
