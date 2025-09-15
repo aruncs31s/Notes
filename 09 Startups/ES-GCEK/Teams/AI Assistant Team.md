@@ -4,7 +4,10 @@ Roles :
 1. Designer : Designs the software and implements higher level components
 2. Developer : Implements the logic using programming language
 3. Tester : Performs tests and Unit tests , to ensure the program works in all expected conditions 
-
+---
+Requirements :
+1. Designer : Think 
+2. 
 
 
 
