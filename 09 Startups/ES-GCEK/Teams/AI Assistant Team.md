@@ -14,7 +14,7 @@ Requirements :
 
 ```python
 def get_details(all_details: list[dict[str, str]] | str) -> dict[str, str]:
-	detail:  list[dict[str, str]] | str = [detail for e]
+	detail:  list[dict[str, str]] | str = [detail for detail in list(all_details) if detail else {} ]
 ```
 
 
