@@ -8,7 +8,7 @@ tags:
 dg-publish: true
 ---
 # Teams 
-
+- [[AI Assistant Team]]
 ```sql
 TOTAL WORKING MEMBERS: 10
 
