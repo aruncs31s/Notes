@@ -13,9 +13,9 @@ Requirements :
 ### Self Test 
 
 ```python
-def get_details(all_d: list[dict[str, str]] | ) -> list[dict[str, str]]:
-	cars:  list[dict[str, str]] | str = [[detail if detail["valid"] else {} for detail in all_d]]
-	return detail
+def get_cars(cars: list[dict[str, str]] | ) -> list[dict[str, str]]:
+	cars:  list[dict[str, str]] | str = [[c if c["valid"] else {} for c in cars]]
+	return cars
 ```
 
 
