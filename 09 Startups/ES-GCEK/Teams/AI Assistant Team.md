@@ -6,9 +6,15 @@ Roles :
 3. Tester : Performs tests and Unit tests , to ensure the program works in all expected conditions 
 ---
 Requirements :
-1. Designer : Think 
-2. Developer : Act  (Inter)
+1. Designer : Think (Advanced Python + Integration)
+2. Developer : Act  (Intermediate Python)
 3. Tester : Find (Minimal Python)
+
+### Self Test 
+
+```python
+
+```
 
 
 
