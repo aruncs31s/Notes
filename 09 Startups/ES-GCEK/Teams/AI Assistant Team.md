@@ -11,8 +11,8 @@ Requirements :
 3. Tester : Find (Minimal Python)
 
 ### Self Test 
-
-If you understand why all this `str` and ``
+### Pro
+If you understand why all this `str` and `list` , `dict` stuff , you are a pro.
 ```python
 def get_cars(cars: list[dict[str, str]] | None) -> list[dict[str, str]]:
     if cars is None:
@@ -21,6 +21,13 @@ def get_cars(cars: list[dict[str, str]] | None) -> list[dict[str, str]]:
 
 ```
 
+### Intermediate
+
+```
+class Dog:
+	def __init__():
+		super().__init__
+```
 
 
 ```sql
