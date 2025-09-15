@@ -7,7 +7,8 @@ Roles :
 ---
 Requirements :
 1. Designer : Think 
-2. 
+2. Developer : Act  (Inter)
+3. Tester : Find (Minimal Python)
 
 
 
