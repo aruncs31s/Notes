@@ -12,10 +12,13 @@ Requirements :
 
 ### Self Test 
 
+If you understand why all this `str` and ``
 ```python
-def get_cars(cars: list[dict[str, str]] | list | None ) -> list[dict[str, str]]:
-	cars:  list[dict[str, str]] | str = [c if c["valid"] else {} for c in cars]
-	return cars 
+def get_cars(cars: list[dict[str, str]] | None) -> list[dict[str, str]]:
+    if cars is None:
+        return []
+    return [c if c.get("valid") else {} for c in cars]
+
 ```
 
 
