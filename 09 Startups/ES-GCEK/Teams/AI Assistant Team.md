@@ -22,7 +22,7 @@ def get_cars(cars: list[dict[str, str]] | None) -> list[dict[str, str]]:
 ```
 
 ### Intermediate
-If you see thats the issue here , you can c
+If you see thats the issue here , you can call yourself an intermediate.
 
 ```
 class Dog:
@@ -31,6 +31,16 @@ class Dog:
 		pass
 ```
 
+### Begginer
+
+
+```
+a = 10
+b = 4
+
+def 
+
+```
 
 
 ```sql
