@@ -33,10 +33,10 @@ class Dog:
 
 ### Begginer
 
-
+> 
 ```
 a = 10
-b = "4"
+b = 10
 
 def multiply(a,b):
 	return a * b
