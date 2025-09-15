@@ -22,12 +22,15 @@ def get_cars(cars: list[dict[str, str]] | None) -> list[dict[str, str]]:
 ```
 
 ### Intermediate
+If you see thats the issue here , you can c
 
 ```
 class Dog:
 	def __init__():
-		super().__init__
+		super().__init__():
+		pass
 ```
+
 
 
 ```sql
