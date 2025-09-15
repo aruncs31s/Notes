@@ -13,8 +13,8 @@ Requirements :
 ### Self Test 
 
 ```python
-def get_detail(details: list[dict[str, str]] | str) -> dict[str, str]:
-	
+def get_details(all_details: list[dict[str, str]] | str) -> dict[str, str]:
+	detail:  list[dict[str, str]] | str = [detail for e]
 ```
 
 
