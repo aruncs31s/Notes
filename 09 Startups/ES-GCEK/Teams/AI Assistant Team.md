@@ -13,8 +13,9 @@ Requirements :
 ### Self Test 
 
 ```python
-def get_details(all_details: list[dict[str, str]] | str) -> dict[str, str]:
+def get_details(all_details: list[dict[str, str]] | str | None) -> list[dict[str, str]] | None:
 	detail:  list[dict[str, str]] | str = [[detail if detail["valid"] else {} for detail in all_details]]
+	return detail
 ```
 
 
