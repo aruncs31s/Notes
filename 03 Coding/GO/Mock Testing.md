@@ -81,3 +81,19 @@ assert.Equal(t, 1, got)
     
     - Asserts that the parsed response body (`got`) equals `1` (the expected ID from the path param).
     - If `got` isn't `1`, the test fails. This verifies the handler correctly processed the input and returned the right output.
+
+```go
+// mock getrequest
+func MockJsonGet(c *gin.Context, params gin.Params, u url.Values) {
+	c.Request.Method = "GET"
+	c.Request.Header.Set("Content-Type", "application/json")
+	c.Set("user_id", 1)
+
+	// set path params
+	c.Params = params
+
+	// set query params
+	c.Request.URL.RawQuery = u.Encode()
+}
+
+```
