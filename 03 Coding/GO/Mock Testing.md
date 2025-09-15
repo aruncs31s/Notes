@@ -45,4 +45,16 @@ params := []gin.Param{
 		Value: "1",
 	},
 ```
--  configure query params
+- configure query params
+```go
+u := url.Values{}
+u.Add("foo", "bar")
+```
+
+```go
+MockJsonGet(ctx, params, u)
+GetUserId(ctx)
+assert.EqualValues(t, http.StatusOK, w.Code)
+got, _ := strconv.Atoi(w.Body.String())
+assert.Equal(t, 1, got)
+```
