@@ -6,8 +6,9 @@ In Go, the `go test` command identifies test files based on their filename pat
 >	- take a `*testing.T` parameter
 
 
-
+FILE: main_test.go
 
 ```go
-
+func TestGetUserId(t *testing.T) {
+}
 ```
