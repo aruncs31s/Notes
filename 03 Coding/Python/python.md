@@ -12,6 +12,7 @@ dg-publish: true
 - [[pySDR]]
 - [[Json handling]]
 - [[requests]]
+- [[Python GIL]]
 ## Frameworks
 - [[Flask]]
 ️
