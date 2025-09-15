@@ -64,7 +64,6 @@ assert.Equal(t, 1, got)
     - Calls the helper function `MockJsonGet` to configure the mock Gin context (`ctx`) with the simulated HTTP request details.
     - It sets up the request as a GET method, adds path parameters (e.g., [id=1](vscode-file://vscode-app/c:/Users/arunc/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html)), query parameters (e.g., `foo=bar`), and other mock data. This prepares the context as if a real request to `/user/1?foo=bar` was made.
 2. **[GetUserId(ctx)](vscode-file://vscode-app/c:/Users/arunc/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html)**:
-    
     - Invokes the actual [GetUserId](vscode-file://vscode-app/c:/Users/arunc/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html) handler function (from [main.go](vscode-file://vscode-app/c:/Users/arunc/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html)) with the mocked context.
     - The handler reads the path param ([id=1](vscode-file://vscode-app/c:/Users/arunc/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html)), query param (`foo=bar`), converts the ID to an integer, and writes a JSON response (e.g., `{"value": 1}` or just `1` as the body) with status 200 OK.
     - The response is captured by the `httptest.ResponseRecorder` (`w`), not sent over the network.
@@ -95,5 +94,4 @@ func MockJsonGet(c *gin.Context, params gin.Params, u url.Values) {
 	// set query params
 	c.Request.URL.RawQuery = u.Encode()
 }
-
 ```
