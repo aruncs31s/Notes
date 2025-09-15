@@ -13,7 +13,8 @@ Requirements :
 ### Self Test 
 
 ```python
-def get_detail(details: list[dict[str, str]] | str) -> 
+def get_detail(details: list[dict[str, str]] | str) -> dict[str, str]:
+	
 ```
 
 
