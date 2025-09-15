@@ -21,3 +21,8 @@ Refactorers : 1
 | [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil) | Tester     | ✅      |               |
 | [Sneha-SJ-05](https://github.com/orgs/Embedded-Systems-GCEK/people/Sneha-SJ-05)          | Tester     | ✅      |               |
 | [Albertjoe007](https://github.com/orgs/Embedded-Systems-GCEK/people/Albertjoe010)        | Refactorer | ❌      |               |
+> New Members 
+
+DATE: 15-09-2025
+
+1. Swetha P
