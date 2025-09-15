@@ -1,5 +1,13 @@
 # [AI Assistant Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/ai-assistant-team)
 
+Roles : 
+1. Designer : Designs the software and im
+2. Developer
+3. Tester 
+
+
+
+
 ```sql
 MEMBERS: 9
 Designers: 2
@@ -29,4 +37,4 @@ DATE: 15-09-2025
 2. [Amarnath P](https://github.com/amarnath749)
 3. [Saif](https://github.com/Saifali1256)
 4. [Surjith CSE](https://github.comm/Surjith-ap)
-5. 
+
