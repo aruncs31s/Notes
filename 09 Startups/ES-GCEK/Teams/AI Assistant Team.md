@@ -13,9 +13,9 @@ Requirements :
 ### Self Test 
 
 ```python
-def get_cars(cars: list[dict[str, str]] | ) -> list[dict[str, str]]:
-	cars:  list[dict[str, str]] | str = [[c if c["valid"] else {} for c in cars]]
-	return cars
+def get_cars(cars: list[dict[str, str]] | list | None ) -> list[dict[str, str]]:
+	cars:  list[dict[str, str]] | str = [c if c["valid"] else {} for c in cars]
+	return cars 
 ```
 
 
