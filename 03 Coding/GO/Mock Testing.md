@@ -17,7 +17,7 @@ func TestGetUserId(t *testing.T) {
 
 
 ## In Go
-
+> - "github.com/stretchr/testify/assert"
 ```go
 import (
 	"net/http"
@@ -28,4 +28,10 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
 )
+```
+
+
+```go
+	w := httptest.NewRecorder()
+	ctx := GetTestGinContext(w)
 ```
