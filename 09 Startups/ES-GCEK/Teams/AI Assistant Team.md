@@ -36,10 +36,10 @@ class Dog:
 > 
 ```
 a = 10
-b = 10
-
-def multiply(a,b):
-	return a * b
+if a = 10:
+	b = 10
+	c = 10
+print(a+b+c)
 
 ```
 
