@@ -32,6 +32,17 @@ import (
 
 
 ```go
-	w := httptest.NewRecorder()
-	ctx := GetTestGinContext(w)
+w := httptest.NewRecorder()
+ctx := GetTestGinContext(w)
 ```
+
+- Add Parameters.
+```go
+//configure path params
+params := []gin.Param{
+	{
+		Key:   "id",
+		Value: "1",
+	},
+```
+-  configure query params
