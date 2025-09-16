@@ -201,3 +201,12 @@ major, minor, patch = chardet_version.split(".")[:3]
 ```
 
 #### `next()`
+```python
+try:
+	qualification_to_update = [qualification for i in qualifications if i.get("id") == qualification_id][0]
+except IndexError:
+	qualification_to_update = None
+	exit(1)
+        
+qualification_to_update = next((q for q in qualifications if q.get("id") == qualification_id), None)
+```
