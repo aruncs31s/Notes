@@ -200,3 +200,4 @@ major, minor, patch = chardet_version.split(".")[:3]
 
 ```
 
+#### `next()`
