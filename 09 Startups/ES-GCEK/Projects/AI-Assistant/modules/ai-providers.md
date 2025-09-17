@@ -312,7 +312,14 @@ def ask(self, prompt: str) -> str:
   # Don't return anything - let subclasses handle the actual response
   return ""  # Return empty string instead of None
 ```
+#### `name()`
 
+```python
+@property
+@abstractmethod
+def name(self) -> str:
+    """Abstract method that must be implemented by subclasses"""
+    pass
 ##### Why? 
 See below example sent by @abhayagovind 
 
