@@ -422,7 +422,6 @@ while True:
     messages.append({"role": "assistant", "content": ai_reply})
 ```
 
-Now look at the refactored version with less `print()` statements 
 
 
 ###### Issues 
