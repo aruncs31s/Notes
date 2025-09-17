@@ -372,7 +372,22 @@ import os
 import requests
 
 ```
-
+2. Obtains the `GITHUB_TOKEN` from .env file (environment variable)
+```python
+token = os.getenv("GITHUB_TOKEN")
+if not token:
+    raise ValueError("GITHUB_TOKEN not found.")
+```
+3. Sets url and headers for the API request
+```python
+url = "https://models.github.ai/inference/chat/completions"
+headers = {
+    "Authorization": f"Bearer {token}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "X-GitHub-Api-Version": "2023-11-28"
+}
+```
 
 
 Now look at the refactored version with less `print()` statements 
