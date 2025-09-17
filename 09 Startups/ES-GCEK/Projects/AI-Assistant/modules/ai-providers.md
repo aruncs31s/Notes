@@ -314,7 +314,7 @@ dg-publish: true
 ```
 
 Why? 
-Se below example sent by @abhayagovind 
+See below example sent by @abhayagovind 
 
 ```python
 import os
@@ -364,8 +364,49 @@ while True:
     messages.append({"role": "assistant", "content": ai_reply})
 ```
 
+Now look at the refactored version with less `print()` statements 
 
 
+```python
+import os
+import requests
+
+token = os.getenv("GITHUB_TOKEN")
+if not token:
+    raise ValueError("GITHUB_TOKEN not found.")
+
+url = "https://models.github.ai/inference/chat/completions"
+headers = {
+    "Authorization": f"Bearer {token}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "X-GitHub-Api-Version": "2023-11-28"
+}
+
+messages = [
+    {"role": "system", "content": "You are a helpful AI voice/text assistant"}
+]
 
 
+while True:
+    user_input = input("You: ")
+    if user_input.lower() in ["exit", "quit"]:
+        break
 
+
+    messages.append({"role": "user", "content": user_input})
+
+    payload = {
+        "model": "meta/Llama-4-Scout-17B-16E-Instruct",
+        "messages": messages,
+        "max_tokens": 500,
+        "temperature": 0.7
+    }
+
+    response = requests.post(url, headers=headers, json=payload).json()
+
+    ai_reply = response["choices"][0]["message"]["content"]
+
+    print("AI:", ai_reply, "\n")
+    messages.append({"role": "assistant", "content": ai_reply})
+```
