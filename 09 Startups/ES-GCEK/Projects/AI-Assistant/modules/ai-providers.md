@@ -422,10 +422,12 @@ while True:
     messages.append({"role": "assistant", "content": ai_reply})
 ```
 
-
+Features:
+1. History is maintained
 
 ###### Issues 
-1. 
+1. if the response is is invalid or the API server is down, it will crash.
+2. 
 
 ```python
 import os
