@@ -294,7 +294,9 @@ dg-publish: true
 > ```
 
 ## Methods 
-
+- [[ai-providers#Abstract Methods|Abstract Methods]]
+	- [[ai-providers#`ask()`|ask]]
+	- [[ai-providers#`name()`|name]]
 ### Abstract Methods
 
 #### `ask()`
