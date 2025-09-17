@@ -293,9 +293,11 @@ dg-publish: true
 >         return self._last_answer_time  
 > ```
 
-## 
+## Methods 
+
+### Abstract Methods
 
 
-## How to implement a New AI-Provider 
+
 
 
