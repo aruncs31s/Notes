@@ -37,14 +37,12 @@ If you don't understand the above to , then consider yourself a beginner.
 
 ---
 
-
 ```sql
 MEMBERS: 9
 Designers: 2
-Developers: 4
+Developers: 5
 Testers: 2
 Refactorers : 1 
-
 ```
 
 [Whatsapp Group Link](https://chat.whatsapp.com/Ga3031FhGwwFcBlmVDQV36)
