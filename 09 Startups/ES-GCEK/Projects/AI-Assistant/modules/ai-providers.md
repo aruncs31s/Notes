@@ -427,7 +427,18 @@ Features:
 
 ###### Issues 
 1. if the response is is invalid or the API server is down, it will crash.
-2. 
+2. I would have to run this program directly ,
+
+like 
+```bash
+python llama.py
+```
+
+###### Minor Modification 
+
+Lets look at 
+
+
 
 ```python
 import os
