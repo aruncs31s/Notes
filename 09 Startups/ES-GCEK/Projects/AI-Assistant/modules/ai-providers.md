@@ -312,6 +312,8 @@ def ask(self, prompt: str) -> str:
   # Don't return anything - let subclasses handle the actual response
   return ""  # Return empty string instead of None
 ```
+- This ask automatically adds the user message to the messages list.
+- 
 #### `name()`
 
 ```python
@@ -330,7 +332,7 @@ def _call_api(self, message: list[dict[str, str]] | str) -> str:
     """Abstract method that must be implemented by subclasses to handle actual API calls"""
     pass
 ```
-
+- Every ai_provider might have different API call mechanism, so you have to implement it youself so that , it can be called by the generic ask method.
 
 ##### Why? 
 See below example sent by @abhayagovind 
