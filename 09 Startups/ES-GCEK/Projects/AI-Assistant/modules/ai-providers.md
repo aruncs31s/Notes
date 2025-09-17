@@ -489,7 +489,7 @@ Now the user can import this function
 ```python
 from llama import ask
 answer = ask("What is the capital of France?")
-print(answer)
+print(f"🤖 Llama > {answer}")
 ```
 
 ^5452c3
@@ -671,3 +671,8 @@ And if you compare it with the refactored version .
 
 ![[#^5452c3]]
 
+You can see the refactored one has less code but since its a function , if you want to add more and more ai providers you would have to do this 
+
+```python
+
+```
