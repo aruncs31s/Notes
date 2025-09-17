@@ -24,7 +24,7 @@ def get_cars(cars: list[dict[str, str]] | None) -> list[dict[str, str]]:
 ### Intermediate
 If you see thats the issue here , you can call yourself an intermediate.
 
-```
+```python
 class Dog:
 	def __init__():
 		super().__init__():
@@ -35,15 +35,7 @@ class Dog:
 
 
 
-> 
-```
-a = 10
-if a = 10:
-	b = 10
-	c = 10
-print(a+b+c)
-
-```
+---
 
 
 ```sql
