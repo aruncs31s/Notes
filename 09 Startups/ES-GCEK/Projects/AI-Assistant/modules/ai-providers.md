@@ -674,5 +674,15 @@ And if you compare it with the refactored version .
 You can see the refactored one has less code but since its a function , if you want to add more and more ai providers you would have to do this 
 
 ```python
+from ai_providers.llama import ask as ask_llama
+from ai_providers.ollama import ask as ask_ollama
+from ai_providers.cohere import ask as ask_cohere
 
+question = "Hello! My name is Arun CS"
+answer = ask_llama(question)
+print(f"🤖 Llama > {answer}")
+answer = ask_ollama(question)
+print(f"🤖 Ollama > {answer}")
+answer = ask_cohere(question)
+print(f"🤖 Cohere > {answer}")
 ```
