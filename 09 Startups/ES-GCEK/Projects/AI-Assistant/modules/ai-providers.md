@@ -313,7 +313,7 @@ dg-publish: true
         return ""  # Return empty string instead of None
 ```
 
-Why? 
+##### Why? 
 See below example sent by @abhayagovind 
 
 ```python
@@ -364,6 +364,17 @@ while True:
     messages.append({"role": "assistant", "content": ai_reply})
 ```
 
+###### Explanation 
+
+1. She imports required modules. 
+```python
+import os
+import requests
+
+```
+
+
+
 Now look at the refactored version with less `print()` statements 
 
 
@@ -387,15 +398,11 @@ messages = [
     {"role": "system", "content": "You are a helpful AI voice/text assistant"}
 ]
 
-
 while True:
     user_input = input("You: ")
     if user_input.lower() in ["exit", "quit"]:
         break
-
-
     messages.append({"role": "user", "content": user_input})
-
     payload = {
         "model": "meta/Llama-4-Scout-17B-16E-Instruct",
         "messages": messages,
