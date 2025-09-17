@@ -659,17 +659,13 @@ so to use this new implementation with minimal code is.
 ```python
 from ai_providers.llama import Llama
   questions = [
-      ,
+      "Hello! My name is Arun CS",
       "What's my name?",
   ]
 
-    llama = Llama()
+llama = Llama()
+answer = llama.ask(q)
 
-    for i, q in enumerate(questions, 1):
-        print(f"\n🐸 Arun > {q}")
-        answer = llama.ask(q)
-        print(f"🤖 Llama > {answer}")
-        print(f"⏳ Response Time {i}: {llama.response_time:.2f} seconds")
 
     print("\n" + "=" * 50)
     print("📚 FULL CONVERSATION HISTORY:")
