@@ -301,16 +301,16 @@ dg-publish: true
 
 ```python
 @abstractmethod
-    def ask(self, prompt: str) -> str:
-        """Abstract method that must be implemented by subclasses"""
-        # Check for stop signal at the beginning
-        if hasattr(self, '_stop_event') and self._stop_event.is_set():
-            return "Request was cancelled due to timeout"
+def ask(self, prompt: str) -> str:
+  """Abstract method that must be implemented by subclasses"""
+  # Check for stop signal at the beginning
+  if hasattr(self, '_stop_event') and self._stop_event.is_set():
+      return "Request was cancelled due to timeout"
 
-        message = {"role": "user", "content": prompt}
-        self._messages.append(message)
-        # Don't return anything - let subclasses handle the actual response
-        return ""  # Return empty string instead of None
+  message = {"role": "user", "content": prompt}
+  self._messages.append(message)
+  # Don't return anything - let subclasses handle the actual response
+  return ""  # Return empty string instead of None
 ```
 
 ##### Why? 
@@ -460,7 +460,7 @@ messages = [
     {"role": "system", "content": "You are a helpful AI voice/text assistant"}
 ]
 
-def ask(prompt: str) -> :
+def ask(prompt: str,max_tokens: int =) -> :
     user_input = prompt
     if user_input.lower() in ["exit", "quit"]:
         return ""
