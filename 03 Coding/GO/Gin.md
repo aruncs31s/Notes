@@ -10,7 +10,7 @@ dg-publish: true
 ---
 # Gin
 - [[Mock Testing]]
-- [[JWT]]
+- [[03 Coding/GO/JWT]]
 - [[httprouter]]
 - [[Gin CORS]]
 - https://github.com/julienschmidt/httprouter/blob/master/router.go
