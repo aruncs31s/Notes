@@ -609,7 +609,7 @@ if __name__ == "__main__":
         print(f"  {key.replace('_', ' ').title()}: {value}")
 ```
 
-The example below is an example code for Ollama implemented using AiProvider..
+The example below is an example code for Ollama implemented using AIProvider.
 
 ```python
 if __name__ == "__main__":
@@ -652,4 +652,10 @@ Implementation: `Llama`
 
 ```python
 llama = Llama()
+```
+
+
+so to use this new implementation with minimal code is.
+```python
+
 ```
