@@ -492,6 +492,8 @@ answer = ask("What is the capital of France?")
 print(answer)
 ```
 
+^5452c3
+
 Now is simple to use in other projects.
 
 you can customize `max_tokens` and `temperature`.
@@ -644,7 +646,7 @@ Do you see any difference
 
 IMPLEMENTATION: `Ollama`
 
-````python
+```python
 ollama = Ollama()
 ```
 
@@ -662,7 +664,10 @@ question = "Hello! My name is Arun CS"
 llama = Llama()
 answer = llama.ask(question)
 print(f"🤖 Llama > {answer}")
-
 ```
 
+
 And if you compare it with the refactored version .
+
+![[#^5452c3]]
+
