@@ -686,3 +686,23 @@ print(f"🤖 Ollama > {answer}")
 answer = ask_cohere(question)
 print(f"🤖 Cohere > {answer}")
 ```
+
+and if it was done using the class based approach 
+
+```python
+from ai_providers.llama import Llama
+from ai_providers.ollama import Ollama
+from ai_providers.cohere import Cohere
+question = "Hello! My name is Arun CS"
+llama = Llama()
+ollama = Ollama()
+cohere = Cohere()
+
+answer = llama.ask(question)
+print(f"🤖 Llama > {answer}")
+answer = ollama.ask(question)
+print(f"🤖 Ollama > {answer}")
+answer = cohere.ask(question)
+print(f"🤖 Cohere > {answer}")
+```
+
