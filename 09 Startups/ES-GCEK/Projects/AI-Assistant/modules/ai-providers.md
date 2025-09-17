@@ -388,7 +388,40 @@ headers = {
     "X-GitHub-Api-Version": "2023-11-28"
 }
 ```
+4. Creates a message list for history.
+```python
+messages = [
+    {"role": "system", "content": "You are a helpful AI voice/text assistant"}
+]
+```
 
+5. Uses a while loop and continuesly asks for user input until "exit" or "quit" is typed.
+```python
+while True:
+    user_input = input("You: ")
+    if user_input.lower() in ["exit", "quit"]:
+        print("👋 Goodbye!")
+        break
+
+
+    messages.append({"role": "user", "content": user_input})
+
+    payload = {
+        "model": "meta/Llama-4-Scout-17B-16E-Instruct",
+        "messages": messages,
+        "max_tokens": 500,
+        "temperature": 0.7
+    }
+
+    response = requests.post(url, headers=headers, json=payload).json()
+
+    ai_reply = response["choices"][0]["message"]["content"]
+
+    print("AI:", ai_reply, "\n")
+
+
+    messages.append({"role": "assistant", "content": ai_reply})
+```
 
 Now look at the refactored version with less `print()` statements 
 
