@@ -658,8 +658,11 @@ llama = Llama()
 so to use this new implementation with minimal code is.
 ```python
 from ai_providers.llama import Llama
-question = "Hello! My name is Arun CS",
+question = "Hello! My name is Arun CS"
 llama = Llama()
 answer = llama.ask(question)
 print(f"🤖 Llama > {answer}")
+
 ```
+
+And if you compare it with the refactored version .
