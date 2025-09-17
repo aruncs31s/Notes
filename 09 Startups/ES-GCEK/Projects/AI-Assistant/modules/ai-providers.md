@@ -657,5 +657,26 @@ llama = Llama()
 
 so to use this new implementation with minimal code is.
 ```python
+from ai_providers.llama import Llama
+  questions = [
+      ,
+      "What's my name?",
+  ]
 
+    llama = Llama()
+
+    for i, q in enumerate(questions, 1):
+        print(f"\n🐸 Arun > {q}")
+        answer = llama.ask(q)
+        print(f"🤖 Llama > {answer}")
+        print(f"⏳ Response Time {i}: {llama.response_time:.2f} seconds")
+
+    print("\n" + "=" * 50)
+    print("📚 FULL CONVERSATION HISTORY:")
+    llama.show_conversation_history()
+
+    print("\n📊 CONVERSATION STATISTICS:")
+    stats = llama.get_conversation_stats()
+    for key, value in stats.items():
+        print(f"  {key.replace('_', ' ').title()}: {value}")
 ```
