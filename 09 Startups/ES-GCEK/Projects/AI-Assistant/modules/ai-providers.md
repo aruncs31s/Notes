@@ -8,6 +8,23 @@ tags:
 dg-publish: true
 ---
 # AI-Providers
+
+>[!SUMMARY]+ Table of Contents
+>- [[ai-providers#AI-Providers|AI-Providers]]
+>    - [[ai-providers#Methods |Methods ]]
+>        - [[ai-providers#Abstract Methods|Abstract Methods]]
+>            - [[ai-providers#`ask()`|`ask()`]]
+>            - [[ai-providers#`name()`|`name()`]]
+>            - [[ai-providers#`_call_api()`|`_call_api()`]]
+>                - [[ai-providers#Why? |Why? ]]
+>                    - [[ai-providers#Explanation|Explanation]]
+>                    - [[ai-providers#Issues |Issues ]]
+>                    - [[ai-providers#Minor Modification |Minor Modification ]]
+>    - [[ai-providers#Using AIProvider Class|Using AIProvider Class]]
+>- [[ai-providers#Custom Imports|Custom Imports]]
+>            - [[ai-providers#Testing|Testing]]
+
+
 > [!abstract]- **Full Code**
 > ```python
 > 
@@ -297,6 +314,7 @@ dg-publish: true
 - [[ai-providers#Abstract Methods|Abstract Methods]]
 	- [[ai-providers#`ask()`|ask]]
 	- [[ai-providers#`name()`|name]]
+	- [[ai-providers#`_call_api()`|call_api]]
 ### Abstract Methods
 
 #### `ask()`
