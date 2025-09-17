@@ -477,5 +477,8 @@ def ask(prompt: str, max_tokens: int = 500, temperature: float = 0.7) -> str:
     ai_reply = response["choices"][0]["message"]["content"]
 
     print("AI:", ai_reply, "\n")
-    messages.append({"role": "assistant", "content": ai_reply})
-```
+
+    if len(messages) >= 10:
+      messages.pop(1)
+    messages.append({"role": "assistant", "content": ai_reply})
+
