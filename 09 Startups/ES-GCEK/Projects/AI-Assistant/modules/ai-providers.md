@@ -705,4 +705,4 @@ print(f"🤖 Ollama > {answer}")
 answer = cohere.ask(question)
 print(f"🤖 Cohere > {answer}")
 ```
-
+Both looks same but the class based approach is more extensible and maintainale, for example if you want to ask an ai
