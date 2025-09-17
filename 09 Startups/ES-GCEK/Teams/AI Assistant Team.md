@@ -1,5 +1,7 @@
 # [AI Assistant Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/ai-assistant-team)
 
+
+
 Roles : 
 1. Designer : Designs the software and implements higher level components
 2. Developer : Implements the logic using programming language
@@ -45,16 +47,6 @@ If you don't understand the above to , then consider yourself a beginner.
 | Testers     | 2     | 2            |
 | Refactorers | 1     | 1            |
 | Total       |       | 8            |
-|             |       |              |
-
-```sql
-TOTAL MEMBERS: 9
----------------
-Designers: 2
-Developers: 6
-Testers: 2
-Refactorers : 1 
-```
 
 [Whatsapp Group Link](https://chat.whatsapp.com/Ga3031FhGwwFcBlmVDQV36)
 
@@ -68,11 +60,13 @@ Refactorers : 1
 | [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil) | Tester              | ✅      |               |
 | [Sneha-SJ-05](https://github.com/orgs/Embedded-Systems-GCEK/people/Sneha-SJ-05)          | Tester              | ✅      |               |
 | [Albertjoe007](https://github.com/orgs/Embedded-Systems-GCEK/people/Albertjoe010)        | Refactorer          | ❌      |               |
-> New Members 
+|                                                                                          |                     |        |               |
+### New Members 
 
 DATE: 15-09-2025
 
 1. [Swetha P](https://github.com/Swethap1991)
 2. [Amarnath P](https://github.com/amarnath749)
 3. [Saif](https://github.com/Saifali1256)
-4. [Surjith
+4. [Surjith CSE](https://github.comm/Surjith-ap)
+
