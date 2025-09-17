@@ -481,4 +481,14 @@ def ask(prompt: str, max_tokens: int = 500, temperature: float = 0.7) -> str:
     if len(messages) >= 10:
       messages.pop(1)
     messages.append({"role": "assistant", "content": ai_reply})
+    return ai_reply
+```
+
+Now the user can import this function 
+
+```python
+from llama import ask
+anse = ask("What is the capital of France?")
+print(response)
+```
 
