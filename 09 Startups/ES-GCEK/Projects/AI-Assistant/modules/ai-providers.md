@@ -320,6 +320,18 @@ def ask(self, prompt: str) -> str:
 def name(self) -> str:
     """Abstract method that must be implemented by subclasses"""
     pass
+```
+- Just to get the name of your implementation
+#### `_call_api()`
+
+```python
+@abstractmethod
+def _call_api(self, message: list[dict[str, str]] | str) -> str:
+    """Abstract method that must be implemented by subclasses to handle actual API calls"""
+    pass
+```
+
+
 ##### Why? 
 See below example sent by @abhayagovind 
 
