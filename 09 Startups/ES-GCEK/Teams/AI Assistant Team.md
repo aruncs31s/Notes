@@ -38,10 +38,14 @@ If you don't understand the above to , then consider yourself a beginner.
 ---
 
 
-| Type      | Count | Unique Count |
-| --------- | ----- | ------------ |
-| Designers | 2     | 2            |
-|           |       |              |
+| Type        | Count | Unique Count |
+| ----------- | ----- | ------------ |
+| Designers   | 2     | 2            |
+| Developers  | 6     | 3            |
+| Testers     | 2     | 2            |
+| Refactorers | 1     | 1            |
+| Total       |       | 8            |
+|             |       |              |
 
 ```sql
 TOTAL MEMBERS: 9
@@ -71,5 +75,4 @@ DATE: 15-09-2025
 1. [Swetha P](https://github.com/Swethap1991)
 2. [Amarnath P](https://github.com/amarnath749)
 3. [Saif](https://github.com/Saifali1256)
-4. [Surjith CSE](https://github.comm/Surjith-ap)
-
+4. [Surjith
