@@ -1,5 +1,12 @@
-# [AI Assistant Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/ai-assistant-team)
+---
+dg-publish: true
+cssclasses:
+  - wide-page
+---
 
+
+
+# [AI Assistant Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/ai-assistant-team)
 
 
 Roles : 
