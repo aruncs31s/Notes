@@ -579,6 +579,63 @@ class Llama(AIProvider):
 ```
 
 
-##### Testing
+#### Testing
 
 ```python
+if __name__ == "__main__":
+    print("🤖 Testing GitHub Llama with Memory/Context")
+    print("=" * 50)
+
+    questions = [
+        "Hello! My name is Arun CS",
+        "What's my name?",
+    ]
+
+    llama = Llama()
+
+    for i, q in enumerate(questions, 1):
+        print(f"\n🐸 Arun > {q}")
+        answer = llama.ask(q)
+        print(f"🤖 Llama > {answer}")
+        print(f"⏳ Response Time {i}: {llama.response_time:.2f} seconds")
+
+    print("\n" + "=" * 50)
+    print("📚 FULL CONVERSATION HISTORY:")
+    llama.show_conversation_history()
+
+    print("\n📊 CONVERSATION STATISTICS:")
+    stats = llama.get_conversation_stats()
+    for key, value in stats.items():
+        print(f"  {key.replace('_', ' ').title()}: {value}")
+```
+
+The example below is an implementation of Ollama AIProvider class.
+
+```python
+if __name__ == "__main__":
+    
+    print(f"🤖 Testing {str(Ollama.name).capitalize()} with Memory/Context")
+    print("=" * 50)
+
+    questions = [
+        "Hello! My name is Arun CS",
+        "What's my name?",
+    ]
+
+    ollama = Ollama()
+
+    for i, q in enumerate(questions, 1):
+        print(f"\n🐸 Arun > {q}")
+        answer = ollama.ask(q)
+        print(f"🤖 Ollama > {answer}")
+        print(f"⏳ Response Time {i}: {ollama.response_time:.2f} seconds")
+
+    print("\n" + "=" * 50)
+    print("📚 FULL CONVERSATION HISTORY:")
+    ollama.show_conversation_history()
+
+    print("\n📊 CONVERSATION STATISTICS:")
+    stats = ollama.get_conversation_stats()
+    for key, value in stats.items():
+        print(f"  {key.replace('_', ' ').title()}: {value}")
+```
