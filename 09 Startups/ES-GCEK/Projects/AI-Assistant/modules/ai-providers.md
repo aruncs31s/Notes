@@ -705,4 +705,16 @@ print(f"🤖 Ollama > {answer}")
 answer = cohere.ask(question)
 print(f"🤖 Cohere > {answer}")
 ```
-Both looks same but the class based approach is more extensible and maintainale, for example if you want to ask an ai
+Both looks same but the class based approach is more extensible and maintainale, for example if you want to ask an ai_provider, randomly you can do this 
+
+```python
+import random
+from ai_providers.llama import Llama
+from ai_providers.ollama import Ollama
+from ai_providers.cohere import Cohere
+
+ai_providers = [Llama(), Ollama(), Cohere()]
+question = "Hello! My name is Arun CS"
+selected_provider = random.choice(ai_providers)
+answer = selected_provider.ask(question)
+print(f"🤖 {selected_provider.name} > {answer}" )
