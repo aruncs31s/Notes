@@ -37,10 +37,16 @@ If you don't understand the above to , then consider yourself a beginner.
 
 ---
 
+
+| Team          |     |     |
+| ------------- | --- | --- |
+| TOTAL MEMBERS | 9   |     |
+
 ```sql
-MEMBERS: 9
+TOTAL MEMBERS: 9
+---------------
 Designers: 2
-Developers: 5
+Developers: 6
 Testers: 2
 Refactorers : 1 
 ```
