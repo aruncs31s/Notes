@@ -46,6 +46,7 @@ If you don't understand the above to , then consider yourself a beginner.
 
 ---
 
+## Teams
 
 | Type        | Count | Unique Count |
 | ----------- | ----- | ------------ |
