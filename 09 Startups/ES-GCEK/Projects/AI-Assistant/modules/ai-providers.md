@@ -297,6 +297,26 @@ dg-publish: true
 
 ### Abstract Methods
 
+#### `ask()`
+
+```python
+@abstractmethod
+    def ask(self, prompt: str) -> str:
+        """Abstract method that must be implemented by subclasses"""
+        # Check for stop signal at the beginning
+        if hasattr(self, '_stop_event') and self._stop_event.is_set():
+            return "Request was cancelled due to timeout"
+
+        message = {"role": "user", "content": prompt}
+        self._messages.append(message)
+        # Don't return anything - let subclasses handle the actual response
+        return ""  # Return empty string instead of None
+```
+
+Why? 
+Se below example sent by abhaya
+
+
 
 
 
