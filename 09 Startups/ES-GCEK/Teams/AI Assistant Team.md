@@ -38,9 +38,10 @@ If you don't understand the above to , then consider yourself a beginner.
 ---
 
 
-| Team          |     |     |
-| ------------- | --- | --- |
-| TOTAL MEMBERS | 9   |     |
+| Type      | Count | Unique Count |
+| --------- | ----- | ------------ |
+| Designers | 2     | 2            |
+|           |       |              |
 
 ```sql
 TOTAL MEMBERS: 9
