@@ -364,7 +364,7 @@ while True:
     messages.append({"role": "assistant", "content": ai_reply})
 ```
 
-###### Explanation 
+###### Explanation
 
 1. She imports required modules. 
 ```python
@@ -403,7 +403,6 @@ while True:
         print("👋 Goodbye!")
         break
 
-
     messages.append({"role": "user", "content": user_input})
 
     payload = {
@@ -425,6 +424,9 @@ while True:
 
 Now look at the refactored version with less `print()` statements 
 
+
+###### Issues 
+1. 
 
 ```python
 import os
