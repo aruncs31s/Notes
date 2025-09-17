@@ -717,4 +717,8 @@ ai_providers = [Llama(), Ollama(), Cohere()]
 question = "Hello! My name is Arun CS"
 selected_provider = random.choice(ai_providers)
 answer = selected_provider.ask(question)
-print(f"🤖 {selected_provider.name} > {answer}" )
+print(f"🤖 {selected_provider.name} > {answer}"  )
+``` 
+
+In this way you can easily add more ai providers without changing the code structure.
+
