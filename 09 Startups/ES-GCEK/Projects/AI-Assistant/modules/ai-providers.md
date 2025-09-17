@@ -460,7 +460,7 @@ messages = [
     {"role": "system", "content": "You are a helpful AI voice/text assistant"}
 ]
 
-def ask(prompt: str,max_tokens: int =) -> :
+def ask(prompt: str, max_tokens: int = 500, temperature: float = 0.7) -> str:
     user_input = prompt
     if user_input.lower() in ["exit", "quit"]:
         return ""
@@ -468,12 +468,12 @@ def ask(prompt: str,max_tokens: int =) -> :
     payload = {
         "model": "meta/Llama-4-Scout-17B-16E-Instruct",
         "messages": messages,
-        "max_tokens": 500,
-        "temperature": 0.7
+        "max_tokens": max_tokens,
+        "temperature": temperature
     }
-
+    
     response = requests.post(url, headers=headers, json=payload).json()
-
+    response.raise_for_status()  
     ai_reply = response["choices"][0]["message"]["content"]
 
     print("AI:", ai_reply, "\n")
