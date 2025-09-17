@@ -488,7 +488,16 @@ Now the user can import this function
 
 ```python
 from llama import ask
-anse = ask("What is the capital of France?")
-print(response)
+answer = ask("What is the capital of France?")
+print(answer)
 ```
 
+Now is simple to use in other projects.
+
+you can customize `max_tokens` and `temperature`.
+
+```python
+from llama import ask
+answer = ask("What is the capital of France?", max_tokens=1000, temperature=0.5)
+print(answer)
+````
