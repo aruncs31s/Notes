@@ -31,8 +31,8 @@ class Dog:
 		pass
 ```
 
-### Begginer
-
+### Beginner
+If you don't understand the above to , then consider yourself a beginner.
 
 
 ---
