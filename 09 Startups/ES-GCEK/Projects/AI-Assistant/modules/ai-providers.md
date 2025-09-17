@@ -436,7 +436,7 @@ python llama.py
 
 ###### Minor Modification 
 
-Lets look at 
+Lets look at a refactored version
 
 
 
@@ -460,10 +460,10 @@ messages = [
     {"role": "system", "content": "You are a helpful AI voice/text assistant"}
 ]
 
-while True:
-    user_input = input("You: ")
+def ask(prompt: str) -> :
+    user_input = prompt
     if user_input.lower() in ["exit", "quit"]:
-        break
+        return ""
     messages.append({"role": "user", "content": user_input})
     payload = {
         "model": "meta/Llama-4-Scout-17B-16E-Instruct",
