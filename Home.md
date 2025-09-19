@@ -2,7 +2,8 @@
 id: Home
 aliases: []
 tags: []
-cssclasses: 
+cssclasses:
+  - wide-page
 dg-publish: true
 ---
 # HOME
@@ -59,7 +60,6 @@ filter: "today | overdue"
 > > FROM #project
 > > LIMIT 7
 > > ```
-
 >
 > > [!float|wide-3]+ Notes
 > >
@@ -81,7 +81,6 @@ filter: "today | overdue"
 > > not done
 > > path includes Work/
 > > ```
-
 >
 > > [!success|wide-3]+ Done
 > >
