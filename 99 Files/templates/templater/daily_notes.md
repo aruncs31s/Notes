@@ -10,7 +10,7 @@ dg-publish: true
 ---
 tags:: [[+Daily Notes]]
 
-# <% moment(tp.file.title,'YYYY-MM-DD').format("dddd, MMMM DD, YYYY") %>
+# <% moment(tp.file.title, 'YYYY-MM-DD').format("dddd, MMMM Do, YYYY") %>
 
 ← [[<% tp.date.now("YYYY-MM-DD", -1) %>|Yesterday]] | [[<% tp.date.now("YYYY-MM-DD", 1) %>|Tomorrow]] →
 
@@ -31,21 +31,21 @@ done on <% tp.date.now("YYYY-MM-DD") %>
 
 ## 📅 Daily Reflection
 
-##### 🙌 What am I excited about today?
+### 🙌 What am I excited about today?
 
 - 
 
-##### 🎯 What do I want to accomplish today?
+### 🎯 What do I want to accomplish today?
 
 - [ ] 
 - [ ] 
 - [ ] 
 
-##### 🤔 What challenges am I facing?
+### 🤔 What challenges am I facing?
 
 - 
 
-##### 🌟 What am I grateful for?
+### 🌟 What am I grateful for?
 
 - 
 
@@ -61,7 +61,7 @@ done on <% tp.date.now("YYYY-MM-DD") %>
 ```dataview
 LIST
 FROM ""
-WHERE file.cday = date("<% tp.date.now("YYYY-MM-DD") %>")
+WHERE dateformat(file.ctime, "yyyy-MM-dd") = "<% tp.date.now("YYYY-MM-DD") %>"
 SORT file.ctime ASC
 ```
 
@@ -69,7 +69,7 @@ SORT file.ctime ASC
 ```dataview
 LIST
 FROM ""
-WHERE file.mday = date("<% tp.date.now("YYYY-MM-DD") %>") AND file.cday != date("<% tp.date.now("YYYY-MM-DD") %>")
+WHERE dateformat(file.mtime, "yyyy-MM-dd") = "<% tp.date.now("YYYY-MM-DD") %>" AND dateformat(file.ctime, "yyyy-MM-dd") != "<% tp.date.now("YYYY-MM-DD") %>"
 SORT file.mtime DESC
 ```
 
