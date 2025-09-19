@@ -51,7 +51,7 @@ done on <% tp.date.now("YYYY-MM-DD") %>
 
 ## 📝 Notes
 
-<% tp.file.cursor() %>
+<% tp.file.cursor() %><%* app.workspace.activeLeaf.view.editor?.focus(); %>
 
 ---
 
