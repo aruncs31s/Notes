@@ -10,7 +10,7 @@ dg-publish: true
 ---
 tags:: [[+Daily Notes]]
 
-# <% moment(tp.file.title, 'YYYY-MM-DD').format("dddd, MMMM Do, YYYY") %>
+# <% tp.date.now("dddd, MMMM Do, YYYY") %>
 
 ← [[<% tp.date.now("YYYY-MM-DD", -1) %>|Yesterday]] | [[<% tp.date.now("YYYY-MM-DD", 1) %>|Tomorrow]] →
 
