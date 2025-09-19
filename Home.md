@@ -31,18 +31,25 @@ path includes 98 Private/Todo.md
 ```
 
 
-> [!todo] Just DO
+> [!multi-column]
 >
-> ```tasks
-> due on today
-> ```
+> > [!note|wide-3]+ Just DO
+> >
+> > ```dataview
+>> due on today
+> > ```
+>
+> > [!float|wide-3]+  Completed
+> >
+> > ```dataview
+>>done on today
+> > ```
 
-
+> [!todo] 
 
 > [!note] Completed
 >
 > ```tasks
-> done on today
 > ```
 
 ---
