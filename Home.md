@@ -27,7 +27,6 @@ WHERE typeof(due) = "date"
 
 ```tasks
 path includes 98 Private/Todo.md
-
 ```
 
 ```todoist
