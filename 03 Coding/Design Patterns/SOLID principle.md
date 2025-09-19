@@ -22,6 +22,8 @@ dg-publish: true
 ## 1. Single Responsibility Principle (SRP) 
 > Principle states that a class or module should **have only one reason** to change
 
+^7527e8
+
 >  The essence of the Single Responsibility Principle lies in the limitation of responsibilities of an entity (class, function, package, or module). It should concentrate on a single task and encapsulate all the elements necessary for executing the specified task.
 >  - [Source](https://medium.com/@radhakrishnan.nit/single-responsibility-principle-in-golang-89a4a75f6fc4)
 - it encourages developers to create modular and reusable code by dividing each component into a single responsibility. This helps in making the code more maintainable, testable, and easier to understand,
