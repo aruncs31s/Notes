@@ -35,22 +35,15 @@ path includes 98 Private/Todo.md
 >
 > > [!note|wide-3]+ Just DO
 > >
-> > ```dataview
+> > ```tasks
 >> due on today
 > > ```
 >
 > > [!float|wide-3]+  Completed
 > >
-> > ```dataview
+> > ```tasks
 >>done on today
 > > ```
-
-> [!todo] 
-
-> [!note] Completed
->
-> ```tasks
-> ```
 
 ---
 
@@ -102,7 +95,7 @@ path includes 98 Private/Todo.md
 > > not done
 > > path includes 09 Startups
 > > ```
-
+>
 >
 > > [!success|wide-3]+ Done
 > >
@@ -126,13 +119,14 @@ CALENDAR file.ctime
 > > import os as win
 > > win.system("cd C:/Users/arunc/Git/Notes && dir && git pull origin main")
 > > ```
-
 >
 > > [!NOTE]- **Linux**
 > >
 > > ```bash
 > > cd /home/aruncs/Notes/ && git add -A ; git commit -m "automated backup" ; git push origin main
 > > ```
+
+
 
 ## All Tasks
 
