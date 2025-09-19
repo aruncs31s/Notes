@@ -30,23 +30,19 @@ WHERE typeof(due) = "date"
 path includes 98 Private/Todo.md
 ```
 
-```todoist
-filter: "today | overdue"
-
-```
 
 > [!todo] Just DO
 >
 > ```tasks
-> not done
 > due on today
 > ```
+
+
 
 > [!note] Completed
 >
 > ```tasks
-> done
-> due on today
+> done on today
 > ```
 
 ---
