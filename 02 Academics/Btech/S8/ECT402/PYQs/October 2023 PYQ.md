@@ -212,3 +212,127 @@ Transmitter (Tx) at left, ionospheric layer with increasing N upward, ray bendin
 ### 10.9 Distinction: Refraction vs True Reflection
 Physically the process is continuous refraction due to gradient in electron density, but for engineering design it is often treated as a specular reflection at a "virtual height" to simplify path calculations.
 
+## 11. (a) Features of GSM System Architecture (with block diagram)
+
+GSM (Global System for Mobile Communications) architecture is divided into subsystems that separate radio access, switching, subscriber data, and operations. Core features include digital TDMA structure, SIM-based authentication, hierarchical cell planning, roaming, and standardized interfaces.
+
+### Major Subsystems
+1. MS (Mobile Station): Mobile Equipment (ME) + SIM (Subscriber Identity Module) storing IMSI, Ki, and user data.
+2. BSS (Base Station Subsystem): Provides radio interface.
+	 - BTS (Base Transceiver Station): RF transceivers, handles channel coding, modulation.
+	 - BSC (Base Station Controller): Manages radio resources, handovers within BSS, power control, frequency hopping.
+3. NSS / Core Network (Network Switching Subsystem): Switching and subscriber management.
+	 - MSC (Mobile Switching Centre): Call control, mobility management, interworking to PSTN/ISDN.
+	 - HLR (Home Location Register): Permanent subscriber profiles, service data.
+	 - VLR (Visitor Location Register): Temporary location and service data for roaming subscribers.
+	 - AuC (Authentication Center): Generates triplets (RAND, SRES, Kc).
+	 - EIR (Equipment Identity Register): Lists valid/invalid IMEI equipment.
+4. OSS (Operations Support System): Network management, performance, configuration, alarms.
+
+### Supporting Interfaces
+- Um: Air interface (MS ↔ BTS)
+- Abis: BTS ↔ BSC (often over E1/T1 with LAPD signaling)
+- A: BSC ↔ MSC
+- MAP over SS7: Signaling for HLR/VLR/AuC database transactions
+
+### Key Features Summary
+- Digital TDMA (8 time slots per 200 kHz carrier)
+- Frequency reuse with planned cluster sizes
+- Support for voice, SMS, low-rate data (CSD, GPRS extension later)
+- SIM-based portability & security (A3/A8 algorithms)
+- Mobility management: location updating, handover (intra-BTS, inter-BTS, inter-MSC)
+- Power control & discontinuous transmission (DTX) for battery and interference management
+- Encryption on air interface (A5 family)
+
+### Simplified ASCII Block Diagram
+```
+	[ MS ]
+		|
+	 Um
+		|
+	[ BTS ] -- Abis -- [ BSC ] -- A -- [ MSC ] -- PSTN/ISDN
+																	|
+																MAP (SS7)
+						------------------------------
+						|      |       |       |     |
+					[HLR]  [VLR]   [AuC]   [EIR]  [OSS]
+```
+
+### Functional Flow (Call Origination Example)
+1. MS sends channel request on RACH (random access). 
+2. BTS relays request; BSC assigns SDCCH.
+3. Authentication & ciphering via HLR/AuC (SRES, Kc).
+4. MSC performs call setup (ISUP if PSTN destination).
+5. Traffic channel (TCH) allocated; handovers managed by BSC/MSC as user moves.
+
+### Security & Mobility Highlights
+- TMSI used instead of IMSI over air to preserve anonymity.
+- Location areas reduce signaling load via periodic updates.
+- Handover criteria: Rx level/quality, timing advance, BTS load.
+
+## 11. (b) Cell Splitting and Sectoring for Capacity & Coverage Improvement
+
+Both techniques are interference management strategies that increase capacity without new spectrum by improving frequency reuse efficiency.
+
+### Cell Splitting
+Divides a congested large cell into several smaller cells with reduced radius (R → R/2 etc.). Each smaller cell uses lower transmit power to maintain cluster interference constraints.
+
+#### Effects
+1. Increased capacity: More cells → more channels reused within same geographic area.
+2. Higher handover rate: Users traverse more cell boundaries.
+3. Power and antenna height reduction required to limit coverage footprint.
+4. Smaller cells better match traffic hotspots (microcells, picocells).
+
+#### Capacity Scaling (Idealized)
+Channel reuse count ∝ Number of cells. If radius reduced by factor a (a>1), area per cell scales as 1/a², so theoretical capacity gain ≈ a² (ignoring edge effects and guard channels).
+
+### Sectoring
+Replaces an omnidirectional cell antenna with multiple directional antennas (e.g., 3 sectors of 120°, or 6 sectors of 60°). Each sector acts like a smaller cell in azimuth, reducing co-channel interference by narrowing beam patterns.
+
+#### Benefits
+1. Improves carrier-to-interference ratio (C/I) enabling smaller cluster size N.
+2. Increases capacity: If cluster size drops from N_old to N_new, capacity gain ≈ N_old / N_new.
+3. Lower interference improves quality and data rates.
+
+#### Trade-offs
+- Additional hardware: Multiple antennas, feeders, combiners.
+- More complex planning: Sector ID, neighbor lists.
+- Potential for increased handovers at sector boundaries.
+
+### Combined Approach
+Often applied together: split overloaded cells and sector each daughter cell for finer interference control and incremental capacity gains.
+
+### Illustrative ASCII Diagrams
+Cell Splitting (one macrocell → 4 microcells):
+```
+	 _______
+	/       \          After splitting:
+ /         \        __________   __________
+ \         /       /          \ /          \
+	\_______/       /            X            \
+									\__________/ \__________/
+```
+
+Sectoring (120° sectors):
+```
+		/\
+	 /  \   (Each wedge = separate sector)
+	/____\
+	\    /
+	 \  /
+		\/
+```
+
+### Quantitative Example
+Suppose original cluster size N=7 with omni cells. After 3-sectoring, improved C/I permits N=4. Capacity gain ≈ 7/4 ≈ 1.75× (75% increase) for same spectrum. Further splitting reducing radius by 1.5 adds ≈ 1.5² = 2.25×; combined ≈ 1.75 × 2.25 ≈ 3.94× theoretical (practical lower due to overhead).
+
+### Key Distinctions
+| Aspect | Cell Splitting | Sectoring |
+|--------|----------------|-----------|
+| Goal | Increase channel count by more cells | Improve C/I enabling lower reuse factor |
+| Method | Physically add new BTS sites (smaller radius) | Replace omni antenna with directional panels |
+| Impact on Handovers | Increases inter-cell handovers | Adds intra-site (inter-sector) handovers |
+| CapEx | High (sites, backhaul) | Moderate (antennas, RF) |
+| Primary Limitation | Site acquisition, interference planning | Diminishing returns beyond 6 sectors |
+
+
