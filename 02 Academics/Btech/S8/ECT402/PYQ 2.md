@@ -22,6 +22,11 @@ dg-publish: true
 ## Ans 
 
 ### 1.  Grade Of Service (GOS)
+
+> [!info]- Short Answer
+> **GOS:** Probability of call blocking/delay due to insufficient resources. Lower GOS = better quality.
+> **Trunking:** Dynamic channel sharing among multiple users from a common pool for efficient resource utilization.
+
 - **Definition:** Measure of quality in telecommunications.
 - **Key Point:** Probability of a call being blocked or delayed due to insufficient resources.
 - **Indicator:** Lower GOS = better quality (fewer blocked calls or delays).
@@ -42,6 +47,10 @@ Trunking is a method used in telecommunications to efficiently utilize communica
 ---
 
 ### 2. WPAN Standards
+
+> [!info]- Short Answer
+> Main WPAN standards: **Bluetooth** (IEEE 802.15.1), **ZigBee** (IEEE 802.15.4), **Infrared** (IrDA), and **Ultra-Wideband** (UWB) for short-range wireless communication.
+
 - **IEEE 802.15.1 (Bluetooth):**
   - Most widely used WPAN standard for short-range wireless communication.
   - Supports voice, data, and multimedia transmission between devices.
@@ -60,6 +69,11 @@ WPAN standards include Bluetooth (IEEE 802.15.1), ZigBee (IEEE 802.15.4), Infrar
 
 ---
 ### 3. Fraunhofer Distance
+
+> [!info]- Short Answer
+> **Formula:** $d_f = \frac{2D^2}{\lambda}$ = $\frac{2(1)^2}{1/3}$ = **6 meters**
+> **Significance:** Boundary between near-field and far-field regions; beyond this distance, antenna radiation pattern becomes stable.
+
 - **Formula:**
   $$
   d_f = \frac{2D^2}{\lambda}
@@ -87,6 +101,11 @@ WPAN standards include Bluetooth (IEEE 802.15.1), ZigBee (IEEE 802.15.4), Infrar
 ---
 
 ### 4. Coherence Bandwidth
+
+> [!info]- Short Answer
+> **Definition:** Range of frequencies over which channel appears "flat" (non-selective fading).
+> **Formula:** $B_c \approx \frac{1}{5\tau_{rms}}$ - inversely related to RMS delay spread.
+
 - **Definition:**
   - Coherence bandwidth ($B_c$) is a statistical measure of the range of frequencies over which the channel can be considered "flat" or non-selective, meaning all frequency components experience similar fading.
   - It indicates the maximum frequency separation over which two signals will experience correlated or similar channel effects.
@@ -110,6 +129,10 @@ WPAN standards include Bluetooth (IEEE 802.15.1), ZigBee (IEEE 802.15.4), Infrar
 ---
 
 ### 5. Total Bandwidth for Multi-Carrier Modulation (Non-Overlapping Subchannels)
+
+> [!info]- Short Answer
+> **Formula:** $B_{total} = N \times B_{sub}$
+> Total bandwidth = Number of subchannels × Bandwidth per subchannel (plus guard bands)
 
 - **Definition:**
   - Multi-carrier modulation divides the available spectrum into multiple non-overlapping subchannels, each carrying a portion of the data.
