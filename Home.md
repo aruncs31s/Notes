@@ -8,7 +8,8 @@ dg-publish: true
 ---
 # HOME
 
-- [[Projects]]
+- [[Projects]] 
+- [[Electronics]]
 
 ```widgets
 type: quote
