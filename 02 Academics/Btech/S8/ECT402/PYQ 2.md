@@ -202,6 +202,7 @@ WPAN standards include Bluetooth (IEEE 802.15.1), ZigBee (IEEE 802.15.4), Infrar
 
 ![[Recording 20250920212700.m4a]]
 
+![PAPR](https://youtu.be/F4LAZTdm_b8?si=f5KhHxuIQfKPerK7)
 
 - **Definition:**
   - PAPR[^17] is the ratio of the peak instantaneous power to the average power of an OFDM signal.
