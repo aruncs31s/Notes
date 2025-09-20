@@ -107,5 +107,34 @@ WPAN standards include Bluetooth (IEEE 802.15.1), ZigBee (IEEE 802.15.4), Infrar
   - If the signal bandwidth is less than the coherence bandwidth, the channel is considered flat fading (frequency non-selective).
   - If the signal bandwidth exceeds the coherence bandwidth, the channel exhibits frequency-selective fading.
 
+---
 
-### 
+### 5. Total Bandwidth for Multi-Carrier Modulation (Non-Overlapping Subchannels)
+
+- **Definition:**
+  - Multi-carrier modulation divides the available spectrum into multiple non-overlapping subchannels, each carrying a portion of the data.
+  - Each subchannel operates at a different frequency with its own bandwidth.
+
+- **Total Bandwidth Calculation:**
+  - For N non-overlapping subchannels, each with bandwidth $B_{sub}$:
+  $$
+  B_{total} = N \times B_{sub}
+  $$
+  where:
+  - $B_{total}$ = total bandwidth required
+  - $N$ = number of subchannels
+  - $B_{sub}$ = bandwidth of each subchannel
+
+- **Key Characteristics:**
+  - **Guard Bands:** Additional bandwidth may be required between subchannels to prevent interference.
+  - **Spectral Efficiency:** Lower than overlapping schemes (like OFDM) due to guard bands.
+  - **Simplicity:** Easier implementation compared to overlapping subcarrier systems.
+
+- **Example:**
+  - If 4 subchannels each require 10 kHz bandwidth:
+  - Total bandwidth = 4 × 10 kHz = 40 kHz (plus guard bands)
+
+- **Applications:**
+  - Frequency Division Multiple Access (FDMA)
+  - Traditional multi-carrier systems
+  - Satellite communication systems
