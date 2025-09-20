@@ -171,6 +171,10 @@ WPAN standards include Bluetooth (IEEE 802.15.1), ZigBee (IEEE 802.15.4), Infrar
 > **PAPR:** Ratio of peak instantaneous power to average power in OFDM signals. High PAPR causes amplifier saturation and distortion.
 > **Reduction Methods:** Clipping, coding, tone reservation, active constellation extension, partial transmit sequences.
 
+
+![[Recording 20250920212700.m4a]]
+
+
 - **Definition:**
   - PAPR[^17] is the ratio of the peak instantaneous power to the average power of an OFDM signal.
   - It represents how much the signal power varies from its average value.
@@ -179,6 +183,7 @@ WPAN standards include Bluetooth (IEEE 802.15.1), ZigBee (IEEE 802.15.4), Infrar
   $$
   PAPR = \frac{P_{peak}}{P_{average}} = \frac{\max|x(t)|^2}{E[|x(t)|^2]}
   $$
+
   where:
   - $P_{peak}$ = peak instantaneous power
   - $P_{average}$ = average power
