@@ -248,7 +248,7 @@ GSM (Global System for Mobile Communications) architecture is divided into subsy
 ### GSM Architecture (Mermaid Diagram)
 ```mermaid
 flowchart LR
-	MS[MS\n(ME + SIM)] -->|Um| BTS
+	MS[MS ME + SIM] -->|Um| BTS
 	BTS -->|Abis| BSC
 	BSC -->|A| MSC
 	MSC --> PSTN[(PSTN/ISDN)]
