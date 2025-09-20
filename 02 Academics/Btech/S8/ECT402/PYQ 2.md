@@ -27,12 +27,12 @@ dg-publish: true
 > **GOS:** Probability of call blocking/delay due to insufficient resources. Lower GOS = better quality.
 > **Trunking:** Dynamic channel sharing among multiple users from a common pool for efficient resource utilization.
 
-- **Definition:** Measure of quality in telecommunications.
+- **Definition:** Measure of quality in telecommunications[^1].
 - **Key Point:** Probability of a call being blocked or delayed due to insufficient resources.
 - **Indicator:** Lower GOS = better quality (fewer blocked calls or delays).
 
 **Grade of Service (GOS):**
-Grade of Service (GOS) is a measure used in telecommunications to describe the quality of service provided to users. It is defined as the probability of a call being blocked or delayed due to insufficient resources (e.g., bandwidth, channels) at the time of the call. A lower GOS indicates a better quality of service, as it means that users are less likely to experience blocked calls or delays.
+Grade of Service (GOS) is a measure used in telecommunications to describe the quality of service provided to users. It is defined as the probability of a call being blocked or delayed due to insufficient resources (e.g., bandwidth[^2], channels) at the time of the call. A lower GOS indicates a better quality of service, as it means that users are less likely to experience blocked calls or delays.
 
 ---
 
@@ -52,15 +52,15 @@ Trunking is a method used in telecommunications to efficiently utilize communica
 > Main WPAN standards: **Bluetooth** (IEEE 802.15.1), **ZigBee** (IEEE 802.15.4), **Infrared** (IrDA), and **Ultra-Wideband** (UWB) for short-range wireless communication.
 
 - **IEEE 802.15.1 (Bluetooth):**
-  - Most widely used WPAN standard for short-range wireless communication.
+  - Most widely used WPAN[^3] standard for short-range wireless communication.
   - Supports voice, data, and multimedia transmission between devices.
 - **IEEE 802.15.4 (ZigBee):**
   - Designed for low-power, low-data-rate applications such as sensor networks and home automation.
-  - Provides secure networking and supports mesh topology.
-- **Infrared (IrDA):**
+  - Provides secure networking and supports mesh topology[^4].
+- **Infrared (IrDA[^5]):**
   - Uses infrared light for short-range, point-to-point communication.
   - Common in remote controls and some legacy devices.
-- **Ultra-Wideband (UWB):**
+- **Ultra-Wideband (UWB[^6]):**
   - Offers high data rates over short distances.
   - Used for precise location tracking and multimedia streaming.
 
@@ -95,7 +95,7 @@ WPAN standards include Bluetooth (IEEE 802.15.1), ZigBee (IEEE 802.15.4), Infrar
       $$
 
 - **Significance:**
-  - The Fraunhofer distance marks the boundary between the near-field and far-field regions of an antenna.
+  - The Fraunhofer distance marks the boundary between the near-field[^7] and far-field[^8] regions of an antenna.
   - Beyond this distance, the antenna's radiation pattern becomes stable and predictable.
 
 ---
@@ -107,11 +107,11 @@ WPAN standards include Bluetooth (IEEE 802.15.1), ZigBee (IEEE 802.15.4), Infrar
 > **Formula:** $B_c \approx \frac{1}{5\tau_{rms}}$ - inversely related to RMS delay spread.
 
 - **Definition:**
-  - Coherence bandwidth ($B_c$) is a statistical measure of the range of frequencies over which the channel can be considered "flat" or non-selective, meaning all frequency components experience similar fading.
+  - Coherence bandwidth ($B_c$) is a statistical measure of the range of frequencies over which the channel can be considered "flat" or non-selective[^9], meaning all frequency components experience similar fading[^10].
   - It indicates the maximum frequency separation over which two signals will experience correlated or similar channel effects.
 
 - **Relation to RMS Delay Spread:**
-  - Coherence bandwidth is inversely related to the root mean square (rms) delay spread ($\tau_{rms}$) of the channel.
+  - Coherence bandwidth is inversely related to the root mean square (rms) delay spread[^11] ($\tau_{rms}$) of the channel.
   - A smaller delay spread results in a larger coherence bandwidth, and vice versa.
 
 - **Formula:**
@@ -123,8 +123,8 @@ WPAN standards include Bluetooth (IEEE 802.15.1), ZigBee (IEEE 802.15.4), Infrar
   - $\tau_{rms}$ = rms delay spread of the channel
 
 - **Significance:**
-  - If the signal bandwidth is less than the coherence bandwidth, the channel is considered flat fading (frequency non-selective).
-  - If the signal bandwidth exceeds the coherence bandwidth, the channel exhibits frequency-selective fading.
+  - If the signal bandwidth is less than the coherence bandwidth, the channel is considered flat fading[^12] (frequency non-selective).
+  - If the signal bandwidth exceeds the coherence bandwidth, the channel exhibits frequency-selective fading[^13].
 
 ---
 
@@ -149,8 +149,8 @@ WPAN standards include Bluetooth (IEEE 802.15.1), ZigBee (IEEE 802.15.4), Infrar
   - $B_{sub}$ = bandwidth of each subchannel
 
 - **Key Characteristics:**
-  - **Guard Bands:** Additional bandwidth may be required between subchannels to prevent interference.
-  - **Spectral Efficiency:** Lower than overlapping schemes (like OFDM) due to guard bands.
+  - **Guard Bands[^14]:** Additional bandwidth may be required between subchannels to prevent interference.
+  - **Spectral Efficiency:** Lower than overlapping schemes (like OFDM[^15]) due to guard bands.
   - **Simplicity:** Easier implementation compared to overlapping subcarrier systems.
 
 - **Example:**
@@ -158,6 +158,27 @@ WPAN standards include Bluetooth (IEEE 802.15.1), ZigBee (IEEE 802.15.4), Infrar
   - Total bandwidth = 4 × 10 kHz = 40 kHz (plus guard bands)
 
 - **Applications:**
-  - Frequency Division Multiple Access (FDMA)
+  - Frequency Division Multiple Access (FDMA[^16])
   - Traditional multi-carrier systems
   - Satellite communication systems
+
+---
+
+## Footnotes
+
+[^1]: **Telecommunications**: Communication over a distance by cable, telegraph, telephone, or broadcasting
+[^2]: **Bandwidth**: The range of frequencies within a given band that can carry a signal
+[^3]: **WPAN**: Wireless Personal Area Network - network for interconnecting devices centered on an individual person's workspace
+[^4]: **Mesh Topology**: Network topology where each node connects to several others, creating multiple paths for data
+[^5]: **IrDA**: Infrared Data Association - set of protocols for infrared communications
+[^6]: **UWB**: Ultra-Wideband - radio technology for short-range, high-bandwidth communications
+[^7]: **Near-field**: Region close to antenna where electromagnetic field behavior is complex and distance-dependent
+[^8]: **Far-field**: Region far from antenna where electromagnetic waves behave as plane waves
+[^9]: **Non-selective**: Channel that affects all frequency components equally (flat frequency response)
+[^10]: **Fading**: Variation in signal amplitude/phase due to multipath propagation
+[^11]: **RMS Delay Spread**: Statistical measure of multipath delay spread in wireless channels
+[^12]: **Flat Fading**: Fading that affects all frequency components of signal equally
+[^13]: **Frequency-selective Fading**: Fading that affects different frequency components differently
+[^14]: **Guard Bands**: Unused frequency bands that separate communication channels to prevent interference
+[^15]: **OFDM**: Orthogonal Frequency Division Multiplexing - method of encoding digital data on multiple carrier frequencies
+[^16]: **FDMA**: Frequency Division Multiple Access - channel access method where users are assigned different frequency bands
