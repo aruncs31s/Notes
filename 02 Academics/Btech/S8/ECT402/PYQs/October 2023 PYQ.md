@@ -1,18 +1,10 @@
 # October 2023 PYQ Answers
 
----
-id: toc
-aliases: []
-tags:
-  - files
-  - templates
-  - templater
-dg-publish: true
----
+
 >[!SUMMARY]+ Table of Contents
 >- [[October 2023 PYQ#October 2023 PYQ Answers|October 2023 PYQ Answers]]
->    - [[October 2023 PYQ#1. Compare and contrast the analog and digital cellular systems|1. Compare and contrast the analog and digital cellular systems]]
->    - [[October 2023 PYQ#2. What are the methods adopted for hand-off procedures?|2. What are the methods adopted for hand-off procedures?]]
+>    -   [[October 2023 PYQ#1. Compare and contrast the analog and digital cellular systems|1. Compare and contrast the analog and digital cellular systems]]
+>    -  [[October 2023 PYQ#2. What are the methods adopted for hand-off procedures?|2. What are the methods adopted for hand-off procedures?]]
 >    - [[October 2023 PYQ#3. How does fading occur? Derive the expression for doppler shift.|3. How does fading occur? Derive the expression for doppler shift.]]
 >    - [[October 2023 PYQ#4. Power and Voltage Calculation|4. Power and Voltage Calculation]]
 >    - [[October 2023 PYQ#5. How is the outage probability computed for a wireless channel?|5. How is the outage probability computed for a wireless channel?]]
