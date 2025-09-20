@@ -171,24 +171,25 @@ where θ_i is the angle of incidence at the equivalent flat layer (from the norm
 ### 10.4 Skip Distance
 The skip distance is the minimum ground range from the transmitter at which a sky wave of a given frequency returns to Earth on its first hop. For frequencies just below MUF, the virtual reflection height is high and the ray returns far away, creating a "skip zone" (no coverage) between the end of ground wave and the first sky wave return point.
 
-### 10.5 Simplified ASCII Ray Diagram
+### 10.5 Ionospheric Ray Path (Mermaid Diagram)
 
-Transmitter (Tx) at left, ionospheric layer with increasing N upward, ray bending progressively:
+Transmitter (Tx) at left, ray enters ionosphere, bends until horizontal turning point, then returns.
 
-```
-	 Ionosphere (electron density ↑ with height)
-		  N ↑
-		  |                 . (turning point where θ=90°)
-		  |              .'
-		  |           .'
-		  |        .'
-		  |     .'
-		  |  .'
----------'----------------------------------  (Approx lower boundary of layer)
-	Tx  / )  Upward ray enters layer
-		/  )  θ increases as n decreases
-	  /  )
-	 /  )  Ray becomes horizontal then returns
+```mermaid
+graph LR
+		A[Tx (Ground)] --> B((Entry into<br/>lower ionosphere))
+		B --> C((Higher electron<br/>density zone))
+		C --> D((Turning point<br/>θ = 90°))
+		D --> E((Descending path))
+		E --> F[Return to Earth]
+		subgraph Ionosphere Gradient
+			B
+			C
+			D
+			E
+		end
+		classDef layer fill:#eef,stroke:#449;
+		class B,C,D,E layer;
 ```
 
 ### 10.6 Key Relations Summary
@@ -244,18 +245,24 @@ GSM (Global System for Mobile Communications) architecture is divided into subsy
 - Power control & discontinuous transmission (DTX) for battery and interference management
 - Encryption on air interface (A5 family)
 
-### Simplified ASCII Block Diagram
-```
-	[ MS ]
-		|
-	 Um
-		|
-	[ BTS ] -- Abis -- [ BSC ] -- A -- [ MSC ] -- PSTN/ISDN
-																	|
-																MAP (SS7)
-						------------------------------
-						|      |       |       |     |
-					[HLR]  [VLR]   [AuC]   [EIR]  [OSS]
+### GSM Architecture (Mermaid Diagram)
+```mermaid
+flowchart LR
+	MS[MS\n(ME + SIM)] -->|Um| BTS
+	BTS -->|Abis| BSC
+	BSC -->|A| MSC
+	MSC --> PSTN[(PSTN/ISDN)]
+	MSC -->|MAP/SS7| HLR
+	MSC -->|MAP/SS7| VLR
+	MSC -->|Auth Req| AuC
+	MSC -->|IMEI Check| EIR
+	MSC --> OSS[OSS]
+	classDef core fill:#ffe9cc,stroke:#c76;
+	classDef access fill:#e0f7ff,stroke:#07a;
+	classDef db fill:#f0e5ff,stroke:#715;
+	class MS,BTS,BSC access;
+	class MSC,PSTN core;
+	class HLR,VLR,AuC,EIR db;
 ```
 
 ### Functional Flow (Call Origination Example)
@@ -302,25 +309,31 @@ Replaces an omnidirectional cell antenna with multiple directional antennas (e.g
 ### Combined Approach
 Often applied together: split overloaded cells and sector each daughter cell for finer interference control and incremental capacity gains.
 
-### Illustrative ASCII Diagrams
-Cell Splitting (one macrocell → 4 microcells):
-```
-	 _______
-	/       \          After splitting:
- /         \        __________   __________
- \         /       /          \ /          \
-	\_______/       /            X            \
-									\__________/ \__________/
+### Illustrative Diagrams (Mermaid)
+
+Cell Splitting (one macrocell into four smaller microcells):
+```mermaid
+graph TB
+	A((Macrocell)) --> B1((Microcell 1))
+	A --> B2((Microcell 2))
+	A --> B3((Microcell 3))
+	A --> B4((Microcell 4))
+	classDef macro fill:#fdebd0,stroke:#d35400;
+	classDef micro fill:#e8f8f5,stroke:#148f77;
+	class A macro;
+	class B1,B2,B3,B4 micro;
 ```
 
-Sectoring (120° sectors):
-```
-		/\
-	 /  \   (Each wedge = separate sector)
-	/____\
-	\    /
-	 \  /
-		\/
+Sectoring (120° sectors example):
+```mermaid
+graph LR
+	C((Cell Site)) --> S1((Sector 1\n120°))
+	C --> S2((Sector 2\n120°))
+	C --> S3((Sector 3\n120°))
+	classDef site fill:#f4ecf7,stroke:#7d3c98;
+	classDef sector fill:#ebf5fb,stroke:#2e86c1;
+	class C site;
+	class S1,S2,S3 sector;
 ```
 
 ### Quantitative Example
