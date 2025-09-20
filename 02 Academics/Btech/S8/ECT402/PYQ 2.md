@@ -19,7 +19,7 @@ dg-publish: true
 
 ## Ans 
 
-### Grade Of Service (GOS)
+### 1.  Grade Of Service (GOS)
 - **Definition:** Measure of quality in telecommunications.
 - **Key Point:** Probability of a call being blocked or delayed due to insufficient resources.
 - **Indicator:** Lower GOS = better quality (fewer blocked calls or delays).
@@ -29,7 +29,7 @@ Grade of Service (GOS) is a measure used in telecommunications to describe the q
 
 ---
 
-### Trunking
+#### Trunking
 - **Definition:** Efficient channel utilization in telecommunications.
 - **Key Point:** Multiple users share a pool of channels, dynamically allocated as needed.
 - **Benefit:** Optimizes resource usage and improves system capacity, especially with bursty or unpredictable traffic.
@@ -39,7 +39,7 @@ Trunking is a method used in telecommunications to efficiently utilize communica
 
 ---
 
-### WPAN Standards
+### 2. WPAN Standards
 - **IEEE 802.15.1 (Bluetooth):**
   - Most widely used WPAN standard for short-range wireless communication.
   - Supports voice, data, and multimedia transmission between devices.
