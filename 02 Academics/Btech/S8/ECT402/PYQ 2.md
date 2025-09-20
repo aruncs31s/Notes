@@ -171,6 +171,34 @@ WPAN standards include Bluetooth (IEEE 802.15.1), ZigBee (IEEE 802.15.4), Infrar
 > **PAPR:** Ratio of peak instantaneous power to average power in OFDM signals. High PAPR causes amplifier saturation and distortion.
 > **Reduction Methods:** Clipping, coding, tone reservation, active constellation extension, partial transmit sequences.
 
+> [!note]- Deep Explanation
+> **What is PAPR?**
+> - **Average Power**: Like steady power consumption of a light bulb
+> - **Peak Power**: Like sudden power surge when turning on a microwave
+> - **PAPR**: Ratio between these - how much power "spikes" compared to normal
+> 
+> **The OFDM Problem:**
+> - OFDM combines many subcarriers (sine waves) simultaneously
+> - When sine waves align constructively → very high amplitude spikes
+> - When they align destructively → low amplitudes
+> - **Worst case**: N subcarriers can create PAPR of N:1 (e.g., 64 subcarriers = 18 dB PAPR)
+> 
+> **Why High PAPR is Bad:**
+> - **Power Amplifier Limits**: Amplifiers have "linear region" - peaks exceed this → distortion
+> - **Like pouring gallon through cup-sized funnel** - doesn't work properly
+> - **Real consequences**: Signal corruption, interference, wasted power, expensive components
+> 
+> **Reduction Techniques Explained:**
+> - **Clipping**: Cut off peaks (simple but introduces distortion)
+> - **PTS**: Try different phase rotations, pick lowest PAPR version
+> - **SLM**: Create multiple signal versions, select best one
+> - **Tone Reservation**: Reserve subcarriers for "anti-peak" signals
+> - **Active Constellation**: Allow constellation points to move outward to reduce peaks
+> 
+> **Real-World Impact:**
+> - WiFi example: Without PAPR reduction need 100W amplifier for 10W average
+> - With 6dB PAPR reduction: Only need 25W amplifier → 75% power savings
+> - **Critical for**: Battery life, heat management, cost-effective infrastructure
 
 ![[Recording 20250920212700.m4a]]
 
