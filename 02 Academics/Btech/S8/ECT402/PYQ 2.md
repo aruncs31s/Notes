@@ -16,6 +16,7 @@ dg-publish: true
 3. Find the Fraunhofer distance for an antenna with maximum dimension of one meter and operating frequency of 900MHz. What is the significance of Fraunhofer distance?
 4. What is meant by coherence bandwidth of the channel? Define coherence bandwidth in terms of rms delay spread of the channel.
 5. What is the total bandwidth required for multi carrier modulation implementation with non-overlapping subchannels?
+6. What is Peak-to-Average Power-Ratio (PAPR) in OFDM system? How can it be reduced?
 
 ---
 
@@ -164,6 +165,61 @@ WPAN standards include Bluetooth (IEEE 802.15.1), ZigBee (IEEE 802.15.4), Infrar
 
 ---
 
+### 6. Peak-to-Average Power-Ratio (PAPR) in OFDM System
+
+> [!info]- Short Answer
+> **PAPR:** Ratio of peak instantaneous power to average power in OFDM signals. High PAPR causes amplifier saturation and distortion.
+> **Reduction Methods:** Clipping, coding, tone reservation, active constellation extension, partial transmit sequences.
+
+- **Definition:**
+  - PAPR[^17] is the ratio of the peak instantaneous power to the average power of an OFDM signal.
+  - It represents how much the signal power varies from its average value.
+
+- **Mathematical Expression:**
+  $$
+  PAPR = \frac{P_{peak}}{P_{average}} = \frac{\max|x(t)|^2}{E[|x(t)|^2]}
+  $$
+  where:
+  - $P_{peak}$ = peak instantaneous power
+  - $P_{average}$ = average power
+  - $x(t)$ = OFDM signal in time domain
+  - $E[\cdot]$ = expectation operator
+
+- **Problems Caused by High PAPR:**
+  - **Amplifier Saturation:** Power amplifiers[^18] operate in non-linear region
+  - **Signal Distortion:** Clipping and intermodulation distortion
+  - **Spectral Regrowth:** Out-of-band emissions
+  - **Reduced Efficiency:** Lower power amplifier efficiency
+  - **Increased Cost:** Need for high-dynamic-range components
+
+- **PAPR Reduction Techniques:**
+
+  **1. Signal Distortion Techniques:**
+  - **Clipping[^19]:** Limit signal amplitude to threshold value
+  - **Peak Windowing:** Apply window function to reduce peaks
+  - **Companding:** Compress large signals, expand small signals
+
+  **2. Coding Techniques:**
+  - **Block Coding:** Use error-correcting codes to avoid high-PAPR sequences
+  - **Complementary Sequences:** Use sequences with low autocorrelation
+
+  **3. Multiple Signal Representation:**
+  - **Partial Transmit Sequences (PTS[^20]):** Partition data into sub-blocks with different phase rotations
+  - **Selected Mapping (SLM[^21]):** Generate multiple candidate signals and select lowest PAPR
+  - **Interleaving:** Rearrange data to reduce peak correlation
+
+  **4. Probabilistic Techniques:**
+  - **Tone Reservation[^22]:** Reserve some subcarriers for PAPR reduction
+  - **Active Constellation Extension[^23]:** Extend constellation points to reduce peaks
+  - **Tone Injection:** Add specific tones to cancel peaks
+
+- **Trade-offs:**
+  - **Complexity vs Performance:** More sophisticated methods offer better PAPR reduction but higher complexity
+  - **Data Rate vs PAPR:** Some methods reduce data rate (overhead) for PAPR reduction
+  - **BER vs PAPR:** Signal distortion methods may increase bit error rate
+
+---
+
 ## Footnotes
 
 [^1]: **Telecommunications**: Communication over a distance by cable, telegraph, telephone, or broadcasting
@@ -182,3 +238,10 @@ WPAN standards include Bluetooth (IEEE 802.15.1), ZigBee (IEEE 802.15.4), Infrar
 [^14]: **Guard Bands**: Unused frequency bands that separate communication channels to prevent interference
 [^15]: **OFDM**: Orthogonal Frequency Division Multiplexing - method of encoding digital data on multiple carrier frequencies
 [^16]: **FDMA**: Frequency Division Multiple Access - channel access method where users are assigned different frequency bands
+[^17]: **PAPR**: Peak-to-Average Power Ratio - measure of power variation in communication signals
+[^18]: **Power Amplifiers**: Electronic devices that increase the power of a signal while preserving its waveform
+[^19]: **Clipping**: Signal processing technique that limits signal amplitude to prevent saturation
+[^20]: **PTS**: Partial Transmit Sequences - PAPR reduction technique using phase rotation of data sub-blocks
+[^21]: **SLM**: Selected Mapping - technique that generates multiple signal representations and selects the best one
+[^22]: **Tone Reservation**: Method reserving specific subcarriers exclusively for PAPR reduction
+[^23]: **Active Constellation Extension**: Technique that extends constellation points outward to reduce signal peaks
