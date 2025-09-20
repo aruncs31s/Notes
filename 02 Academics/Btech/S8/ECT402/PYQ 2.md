@@ -15,6 +15,8 @@ dg-publish: true
 2. What are the standards used for implementing Wireless Personnel Area Network (WPAN)?
 3. Find the Fraunhofer distance for an antenna with maximum dimension of one meter and operating frequency of 900MHz. What is the significance of Fraunhofer distance?
 4. What is meant by coherence bandwidth of the channel? Define coherence bandwidth in terms of rms delay spread of the channel.
+5. What is the total bandwidth required for multi carrier modulation implementation with non-overlapping subchannels?
+
 ---
 
 ## Ans 
@@ -57,7 +59,7 @@ Trunking is a method used in telecommunications to efficiently utilize communica
 WPAN standards include Bluetooth (IEEE 802.15.1), ZigBee (IEEE 802.15.4), Infrared (IrDA), and Ultra-Wideband (UWB). These standards enable short-range wireless communication between devices, each suited for specific applications such as data transfer, automation, and location tracking.
 
 ---
-### Fraunhofer Distance
+### 3. Fraunhofer Distance
 - **Formula:**
   $$
   d_f = \frac{2D^2}{\lambda}
@@ -84,7 +86,7 @@ WPAN standards include Bluetooth (IEEE 802.15.1), ZigBee (IEEE 802.15.4), Infrar
 
 ---
 
-### Coherence Bandwidth
+### 4. Coherence Bandwidth
 - **Definition:**
   - Coherence bandwidth ($B_c$) is a statistical measure of the range of frequencies over which the channel can be considered "flat" or non-selective, meaning all frequency components experience similar fading.
   - It indicates the maximum frequency separation over which two signals will experience correlated or similar channel effects.
@@ -105,3 +107,5 @@ WPAN standards include Bluetooth (IEEE 802.15.1), ZigBee (IEEE 802.15.4), Infrar
   - If the signal bandwidth is less than the coherence bandwidth, the channel is considered flat fading (frequency non-selective).
   - If the signal bandwidth exceeds the coherence bandwidth, the channel exhibits frequency-selective fading.
 
+
+### 
