@@ -147,3 +147,68 @@ f_p = (1/(2π)) √(N e²/(ε₀ m))
 Critical frequency f_c = f_p_max = (1/(2π)) √(N_max e²/(ε₀ m))
 
 Substituting constants: f_c ≈ 9 √N_max kHz (for N_max in 10^6 electrons/m³)
+
+## 10. Explain the mechanism of wave bending (refraction) in the ionosphere
+
+When a high-frequency (HF) radio wave enters the ionosphere, it encounters a medium whose refractive index varies with altitude due to changing electron density. Instead of reflecting abruptly like from a metallic surface, the wave is gradually refracted (bent) back toward the Earth. When the bending is sufficient that the ray returns to the ground, we term it (loosely) as having been "reflected" by the ionosphere.
+
+### 10.1 Basic Mechanism (Gradual Refraction)
+1. Electron density N(h) increases with height (up to a peak) in an ionospheric layer (e.g., E, F1, F2).
+2. The plasma (Appleton) refractive index (neglecting Earth's magnetic field and collisions for simplicity) is:
+	n = √(1 - (f_p^2 / f^2)) ,  where  f_p = 9√N   (f_p in Hz if N in electrons/m³ / 10^6)
+3. As the wave penetrates to regions of higher N, f_p increases, so (f_p/f) increases and n decreases.
+4. By Snell's law for a stratified medium:  n(h) sin θ(h) = constant = n_0 sin θ_0 . As n decreases with altitude, sin θ must increase, causing θ (the angle from the normal) to increase; hence the ray bends away from the normal (toward the Earth surface direction).
+5. At some altitude h_c, θ → 90° (wave becomes horizontal). Beyond that point propagation upward would require sin θ > 1 (impossible), so the energy is returned downward.
+
+### 10.2 Critical Frequency and Vertical Incidence
+For vertical incidence (θ_0 = 0 ⇒ sin θ_0 = 0), Snell's law does not invoke angular bending; the wave penetrates until n → 0. The condition n = 0 gives f = f_p(max) = f_c (critical frequency) for that layer. Thus vertically incident waves with f > f_c pass through the layer into higher regions of the ionosphere / space; those with f < f_c are returned.
+
+### 10.3 Oblique Incidence and Maximum Usable Frequency (MUF)
+For an oblique path of range D with reflection from a layer of maximum electron density N_max (critical frequency f_c):
+MUF ≈ f_c / cos θ_i  (secant law)
+where θ_i is the angle of incidence at the equivalent flat layer (from the normal). Higher MUF allows longer skip distances for the same layer.
+
+### 10.4 Skip Distance
+The skip distance is the minimum ground range from the transmitter at which a sky wave of a given frequency returns to Earth on its first hop. For frequencies just below MUF, the virtual reflection height is high and the ray returns far away, creating a "skip zone" (no coverage) between the end of ground wave and the first sky wave return point.
+
+### 10.5 Simplified ASCII Ray Diagram
+
+Transmitter (Tx) at left, ionospheric layer with increasing N upward, ray bending progressively:
+
+```
+	 Ionosphere (electron density ↑ with height)
+		  N ↑
+		  |                 . (turning point where θ=90°)
+		  |              .'
+		  |           .'
+		  |        .'
+		  |     .'
+		  |  .'
+---------'----------------------------------  (Approx lower boundary of layer)
+	Tx  / )  Upward ray enters layer
+		/  )  θ increases as n decreases
+	  /  )
+	 /  )  Ray becomes horizontal then returns
+```
+
+### 10.6 Key Relations Summary
+1. Refractive index (simplified): n ≈ √(1 - (f_p/f)^2)
+2. Plasma (critical) frequency: f_p = (1/2π) √(N e^2 / (ε_0 m_e)) ≈ 9√N   (Hz, N in electrons/m³ / 10^6)
+3. Snell's law in stratified ionosphere: n(h) sin θ(h) = constant
+4. Critical frequency (vertical incidence): f_c = f_p(max)
+5. MUF (single hop, flat layer approximation): MUF ≈ f_c / cos θ_i
+
+### 10.7 Factors Affecting Bending
+- Time of day (solar ionization increases daytime electron density)
+- Solar activity (sunspots enhance N_max → higher f_c and MUF)
+- Season and latitude (affect recombination rates)
+- Magnetic field and collisions (refine the index via full Appleton-Hartree equation)
+
+### 10.8 Practical Significance
+- Enables long-distance HF communication beyond the horizon
+- Determines optimal operating frequency window: between Lowest Usable Frequency (LUF) and MUF
+- Knowledge of bending guides frequency selection to avoid skip zones and maximize coverage
+
+### 10.9 Distinction: Refraction vs True Reflection
+Physically the process is continuous refraction due to gradient in electron density, but for engineering design it is often treated as a specular reflection at a "virtual height" to simplify path calculations.
+
