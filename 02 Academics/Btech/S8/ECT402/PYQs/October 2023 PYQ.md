@@ -18,7 +18,9 @@
 
 ## 1. Compare and contrast the analog and digital cellular systems
 
-*Analog Cellular Systems (e.g., AMPS):**
+**Short Answer:** Analog systems use analog modulation with lower capacity, poorer quality and weak security; digital systems use digital modulation/coding for higher spectral efficiency, better voice quality, data services, and strong security.
+
+**Analog Cellular Systems (e.g., AMPS):**
 - Use analog modulation techniques for voice transmission
 - Lower spectral efficiency and capacity
 - Prone to interference and eavesdropping
@@ -34,6 +36,8 @@
 
 ## 2. What are the methods adopted for hand-off procedures?
 
+**Short Answer:** Cellular systems use hard hand-off (break-before-make), soft hand-off (make-before-break in CDMA), and softer hand-off (between sectors of same site) to maintain continuity while managing interference and resource use.
+
 The main hand-off methods are:
 
 1. **Hard Hand-off:** The connection to the current cell is broken before establishing connection with the new cell. Used in GSM.
@@ -43,6 +47,8 @@ The main hand-off methods are:
 3. **Softer Hand-off:** A type of soft hand-off where the mobile connects to multiple sectors of the same cell site.
 
 ## 3. How does fading occur? Derive the expression for doppler shift.
+
+**Short Answer:** Fading results from multipath components adding with time-varying phase; Doppler shift for a path is f_d = (v/c) f cosθ where θ is the angle between motion and arrival direction.
 
 **Fading Occurrence:**
 Fading occurs due to multipath propagation where signals arrive at the receiver via multiple paths with different delays, amplitudes, and phases. This causes constructive and destructive interference, leading to variations in signal strength.
@@ -60,6 +66,8 @@ Where:
 - θ = angle between velocity and line of sight
 
 ## 4. Power and Voltage Calculation
+
+**Short Answer:** Received power ≈ 0.702 nW (7.02×10⁻¹0 W) giving V_rms ≈ 0.187 mV across 50 Ω using Friis equation.
 
 Given:
 - P_t = 50 W
@@ -84,6 +92,8 @@ V_rms = √(P_r × R) = √(7.02 × 10^-10 × 50) = √(3.51 × 10^-8) = 1.87 ×
 
 ## 5. How is the outage probability computed for a wireless channel?
 
+**Short Answer:** Outage probability is P_out = Pr{γ < γ_th}; for Rayleigh fading P_out = 1 - exp(-γ_th/γ_avg).
+
 Outage probability is the probability that the received signal quality falls below an acceptable threshold.
 
 For a Rayleigh fading channel, the outage probability is:
@@ -97,6 +107,8 @@ This represents the probability that the instantaneous SNR γ < γ_th.
 
 ## 6. Explain the significance of using cyclic prefix in an OFDM system
 
+**Short Answer:** The cyclic prefix prevents ISI and enables simple per-subcarrier equalization by converting the multipath channel's linear convolution into circular convolution.
+
 The cyclic prefix (CP) is a guard interval added to each OFDM symbol to combat inter-symbol interference (ISI).
 
 **Significance:**
@@ -106,6 +118,8 @@ The cyclic prefix (CP) is a guard interval added to each OFDM symbol to combat i
 - Trades bandwidth efficiency for robustness against delay spread
 
 ## 7. Differentiate between microdiversity and macrodiversity
+
+**Short Answer:** Microdiversity combines closely spaced antennas to mitigate small-scale fading; macrodiversity combines signals from geographically separated sites to combat shadowing and large-scale variations.
 
 **Microdiversity:**
 - Combines signals from multiple antennas at the same location
@@ -120,6 +134,8 @@ The cyclic prefix (CP) is a guard interval added to each OFDM symbol to combat i
 - Used in soft hand-off procedures
 
 ## 8. Compare pros and cons of linear equalizer over non-linear equalizer
+
+**Short Answer:** Linear equalizers are simpler and low-complexity but underperform in severe ISI/nonlinear scenarios; nonlinear equalizers (DFE, MLSE) offer better performance at the cost of higher complexity and possible error propagation.
 
 **Linear Equalizer:**
 *Pros:*
@@ -146,6 +162,8 @@ The cyclic prefix (CP) is a guard interval added to each OFDM symbol to combat i
 
 ## 9. Deduce the expression for critical frequency of an ionised region
 
+**Short Answer:** The critical frequency equals the maximum plasma frequency: f_c = (1/2π)√(N_max e²/(ε₀ m_e)) ≈ 9√N_max kHz (N_max in 10⁶ electrons/m³).
+
 The critical frequency f_c is the maximum frequency that can be reflected by an ionized layer.
 
 For a parabolic electron density profile, the critical frequency is:
@@ -165,6 +183,8 @@ Critical frequency f_c = f_p_max = (1/(2π)) √(N_max e²/(ε₀ m))
 Substituting constants: f_c ≈ 9 √N_max kHz (for N_max in 10^6 electrons/m³)
 
 ## 10. Explain the mechanism of wave bending (refraction) in the ionosphere
+
+**Short Answer:** Gradual increase in electron density with altitude lowers refractive index, bending the ray away from the normal until it becomes horizontal (turning point) and returns to Earth.
 
 When a high-frequency (HF) radio wave enters the ionosphere, it encounters a medium whose refractive index varies with altitude due to changing electron density. Instead of reflecting abruptly like from a metallic surface, the wave is gradually refracted (bent) back toward the Earth. When the bending is sufficient that the ray returns to the ground, we term it (loosely) as having been "reflected" by the ionosphere.
 
@@ -231,6 +251,8 @@ Physically the process is continuous refraction due to gradient in electron dens
 
 ## 11. (a) Features of GSM System Architecture (with block diagram)
 
+**Short Answer:** GSM comprises MS, BSS, NSS/Core, and OSS linked by standardized interfaces (Um, Abis, A, MAP) delivering secure, roaming-capable digital voice/SMS and data with SIM-based authentication.
+
 GSM (Global System for Mobile Communications) architecture is divided into subsystems that separate radio access, switching, subscriber data, and operations. Core features include digital TDMA structure, SIM-based authentication, hierarchical cell planning, roaming, and standardized interfaces.
 
 ### Major Subsystems
@@ -294,6 +316,8 @@ flowchart LR
 - Handover criteria: Rx level/quality, timing advance, BTS load.
 
 ## 11. (b) Cell Splitting and Sectoring for Capacity & Coverage Improvement
+
+**Short Answer:** Cell splitting shrinks cell radius to reuse frequencies more often; sectoring uses directional antennas to reduce interference—together they raise capacity without extra spectrum.
 
 Both techniques are interference management strategies that increase capacity without new spectrum by improving frequency reuse efficiency.
 
@@ -367,6 +391,8 @@ Suppose original cluster size N=7 with omni cells. After 3-sectoring, improved C
 
 ## 12. (a) Channel Assignment Strategies in Cellular Systems
 
+**Short Answer:** Strategies range from fixed (simple, inflexible) to dynamic (complex, adaptive), with hybrids and borrowing improving hotspot performance while managing interference.
+
 Efficient allocation of limited radio channels among cells is critical to maximize capacity while minimizing interference and blocking probability. Three principal strategies are used:
 
 ### 1. Fixed Channel Assignment (FCA)
@@ -407,6 +433,8 @@ Efficient allocation of limited radio channels among cells is critical to maximi
 | Hybrid | Moderate-High | Good | Low | Mixed (plan + adapt) |
 
 ## 12. (b) Features of 4G Wireless Networks
+
+**Short Answer:** 4G delivers all-IP flat architecture with OFDMA/SC-FDMA, MIMO, carrier aggregation, low latency, high data rates, QoS differentiation, and efficient spectrum use.
 
 Fourth Generation (4G) systems (e.g., LTE / LTE-Advanced, WiMAX evolution) introduced an all-IP, high-throughput, low-latency architecture supporting seamless mobility and broadband multimedia.
 
