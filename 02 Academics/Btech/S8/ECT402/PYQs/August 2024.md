@@ -434,3 +434,32 @@ Critical frequency for vertical incidence corresponds to \( f_c = f_p = 3.92\,\t
 **Short Answer:** \( f_c = 3.92\,\text{MHz} \); maximum electron density \( \approx 1.9\times10^{11}\,\text{m}^{-3} \) (\(1.9\times10^{5}\,\text{cm}^{-3}\)).
 
 ---
+## 20. (a) Influence of Earth’s Magnetic Field on Ionospheric Propagation (7 Marks)
+**Answer:** The geomagnetic field causes the ionospheric plasma to become anisotropic, splitting an incident wave into ordinary (O) and extraordinary (X) magneto-ionic modes with distinct refractive indices given approximately by the Appleton-Hartree equation. Consequences:
+
+1. Birefringence (Mode Splitting): Different phase velocities for O & X modes → differential phase shift.
+2. Faraday Rotation: Linear polarization rotates as it propagates; rotation angle \( \theta_F = 2.36 \times 10^4 \int N_e B_{||} / f^2 \, dl \) (radians, f in Hz) causing polarization mismatch losses if uncorrected.
+3. Differential Absorption: Collision and gyro-frequency terms produce slightly different attenuation in D/E layers for each mode.
+4. Critical Frequency Modification: Effective cutoff differs slightly for O and X modes (X-mode supports slightly higher penetration frequency), impacting HF frequency planning.
+5. Dispersion & Group Delay: Different group refractive indices → timing dispersion relevant to wideband pulses.
+6. Circular Polarization Preference: At certain frequencies near gyro-frequency harmonics, one circular component may be preferentially absorbed/reflected.
+
+**Mitigation / Use:** Use circularly polarized antennas to average rotation, implement frequency diversity, apply real-time ionospheric sounding for frequency management, exploit Faraday rotation for remote sensing of electron content (TEC estimation).
+
+**Short Answer:** Magnetic field creates anisotropic magneto-ionic medium → O/X mode splitting, Faraday rotation, altered critical frequencies, and differential absorption/dispersion.
+
+---
+## 20. (b) Required Receiving Antenna Height (6 Marks)
+**Answer:** Given distance between antennas \( d = 65\,\text{km} \), transmit antenna height \( h_t = 100\,\text{m} \). Using effective Earth radius factor \(k = 4/3\), radio horizon for each antenna (approx, with heights in meters, distance in km):
+$$ d \approx 3.57 (\sqrt{h_t} + \sqrt{h_r}) $$
+Solve for \( h_r \):
+\( 65 = 3.57 (\sqrt{100} + \sqrt{h_r}) = 3.57 (10 + \sqrt{h_r}) \Rightarrow 65/3.57 = 10 + \sqrt{h_r} \).
+Compute: \(65/3.57 \approx 18.207 \Rightarrow \sqrt{h_r} \approx 8.207 \Rightarrow h_r \approx 67.4\,\text{m}.\)
+
+Check without k-factor (geometric Earth): constant ≈ 3.57 already incorporates k=4/3. If severe refraction differs, result would adjust slightly.
+
+**Result:** Required receiving antenna height ≈ 67 m for LOS path over 65 km with 100 m transmit antenna under standard atmosphere (k=4/3).
+
+**Short Answer:** \( h_r \approx 67\,\text{m} \) to achieve a 65 km radio horizon with \( h_t = 100\,\text{m} \).
+
+---
