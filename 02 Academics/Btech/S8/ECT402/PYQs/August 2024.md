@@ -1,36 +1,3 @@
-1 Determine the number of channels per cluster and the total channel capacity for a 
-cellular telephone area composed of 10 clusters with seven cells in each cluster 
-and 10 channels in each cell.
-(3)
-Answer: Channels per cluster = 7 cells × 10 channels = 70. Total physical channels deployed in the entire service area = 70 × 10 clusters = 700 channel positions (frequencies/time-slots). Only 70 are unique (reused 10 times). Capacity gain arises from spatial reuse.
-2 What is cell splitting? How does it improve system performance? (3)
-Answer: Cell splitting subdivides an overloaded large cell into smaller micro/mini cells using lower antenna heights and reduced transmit power, shrinking reuse distance so channels can be reassigned more frequently. Benefits: increases capacity (more Erlangs/km²), reduces call blocking, lowers handset transmit power, improves SINR through reduced path loss. Trade-offs: more handoffs, higher infrastructure and planning cost.
-3 What is fading? List various types of small scale fading. (3)
-Answer: Fading is rapid fluctuation of the amplitude/phase (or envelope/SNR) of a received signal due to multipath propagation and/or Doppler from motion. Small-scale fading classifications: (a) Frequency perspective: flat vs frequency-selective; (b) Time perspective: fast vs slow; (c) Statistical envelope models: Rayleigh, Rician, Nakagami-m, Weibull; (d) Mechanism descriptors: multipath (delay spread) vs Doppler (time selectivity) induced.
-4 A transmitter radiates a sinusoidal carrier frequency of 3GHz. For a vehicle 
-moving at a speed of 72Kmph, compute the received frequency if the mobile is 
-moving 
-i) Directly towards the transmitter 
-ii) Directly away from the transmitter 
-(3)
-Answer: Speed v = 72 km/h = 20 m/s. Wavelength λ = c/f = 3×10^8 / 3×10^9 = 0.1 m. Maximum Doppler shift f_D = v/λ = 20 / 0.1 = 200 Hz. (i) Towards: f_r = 3 000 000 000 + 200 = 3 000 000 200 Hz. (ii) Away: f_r = 3 000 000 000 − 200 = 2 999 999 800 Hz.
-5 Describe cyclic prefix. Why is cyclic prefix required in OFDM? (3)
-Answer: The cyclic prefix (CP) copies the last L_CP samples of an OFDM symbol and prepends them as a guard interval. If L_CP ≥ channel delay spread (L_h−1), the linear convolution becomes circular, preserving subcarrier orthogonality after FFT. Functions: (1) Eliminates ISI between consecutive OFDM symbols; (2) Converts frequency-selective channel into per-subcarrier complex gain; (3) Provides tolerance to timing offset. Cost: reduces spectral/energy efficiency by overhead fraction L_CP/(N + L_CP).
-6 Define average error probability and outage probability. (3)
-Answer: Average error probability: P_e,avg = E[ P_e(γ) ] = ∫ P_e(γ) f_γ(γ) dγ over the fading SNR PDF—gives long-term BER/SER performance. Outage probability: P_out = Pr{γ < γ_th} (or capacity C < C_req) = F_γ(γ_th); it measures the fraction of time the link fails a minimum QoS (SNR/rate) requirement.
-7 Describe the selection combining technique used in diversity receivers. (3)
-Answer: Selection Combining (SC) monitors L diversity branches (antennas/frequencies) and selects the one with the highest instantaneous SNR (or envelope). Output SNR = max(γ_1,...,γ_L). For i.i.d. Rayleigh fading with mean γ̄: P_out(γ_th) = [1 − e^{−γ_th/γ̄}]^L. Pros: simplest RF chain after selection, low power. Cons: Lower performance than MRC (loses cumulative SNR), requires branch SNR measurement and fast switching.
-8 Define equalization in the context of digital communication systems. Differentiate 
-between linear and nonlinear equalization techniques.
-(3)
-Answer: Equalization mitigates intersymbol interference (ISI) introduced by a band-limited/multipath channel by approximating or adapting the inverse channel response. Linear equalizers (ZF, MMSE) apply a linear FIR/IIR filter: simple, fixed latency, but ZF amplifies noise in spectral nulls; MMSE trades residual ISI vs noise enhancement. Nonlinear equalizers (Decision Feedback Equalizer, MLSE/Viterbi) use previous symbol decisions or sequence estimation: better performance in severe ISI, reduced noise enhancement, but higher complexity and possible error propagation (DFE) or exponential state growth (MLSE).
-9 What are the advantages and limitations of ground wave propagation for longdistance communication?
-(3)
-Answer: Advantages: follows earth’s curvature enabling beyond-line-of-sight at LF/MF (<2–3 MHz); relatively stable over time; useful for maritime & navigation; diffraction aids coverage behind obstacles. Limitations: high attenuation over poor-conductivity ground; efficiency drops sharply with frequency (not viable at VHF+); large antennas required (λ-scale); limited bandwidth/data rate; susceptible to man‑made noise at low frequencies.
-10 Define critical frequency and maximum usable frequency and establish the 
-relation between them. 
-(3)
-Answer: Critical frequency f_c of an ionospheric layer: highest frequency that will be reflected (returned to Earth) for vertical incidence; f_c (MHz) ≈ 9 √(N_max) where N_max is peak electron density (electrons/m³ ×10^{-12}). Maximum Usable Frequency (MUF) for an oblique path with incidence angle θ relative to the normal: MUF = f_c / cos θ = f_c sec θ. Thus MUF ≥ f_c; larger hop distances (shallower incidence) increase MUF.
 ## 1. Channel capacity per cluster & total system capacity (3 Marks)
 **Answer:** Channels per cluster = 7 cells × 10 channels = 70. Total deployed channel instances = 70 × 10 clusters = 700 (only 70 unique reused 10×). Spatial reuse multiplies capacity without extra spectrum.
 
@@ -177,5 +144,67 @@ Often expressed as \(Q = D/R = 6\) for the selected cluster size.
 **Results:** Minimum feasible cluster size \(N = 12\); reuse factor (distance ratio) \(Q = 6\); achieved SIR ≈ 23.35 dB (> 23 dB requirement).
 
 **Short Answer:** \(N=12\), \(Q=6\), SIR ≈ 23.35 dB (meets 23 dB target).
+
+---
+## 14. (a) Impulse Response Model of a Multipath Channel (7 Marks)
+**Answer:** A wide-sense stationary uncorrelated scattering (WSSUS) baseband channel with L discrete resolvable paths is modeled as
+$$ h(t,\tau) = \sum_{l=1}^{L} \alpha_l(t) \, \delta(\tau - \tau_l) $$
+where: \(\tau_l\) = excess delay of path l, \(\alpha_l(t)= a_l e^{j\phi_l(t)}\) complex gain (amplitude fading + phase), and \(\delta(\cdot)\) Dirac delta. For time-varying Doppler shifts \(f_{D,l}\):
+$$ \alpha_l(t) = a_l e^{j(2\pi f_{D,l} t + \phi_{0,l})} $$
+The received baseband signal (ignoring noise) for input \(s(t)\):
+$$ r(t) = \int h(t,\tau) s(t-\tau) d\tau = \sum_{l=1}^{L} \alpha_l(t) s(t-\tau_l) $$
+If paths form a continuum, impulse response becomes stochastic process:
+$$ h(t,\tau) = \sum_k \alpha_k(t) \delta(\tau - \tau_k) \;\Rightarrow\; R_h(t; \Delta t, \Delta \tau) = E[h(t,\tau) h^*(t+\Delta t, \tau+\Delta \tau)] $$
+WSSUS assumption: uncorrelated for distinct delays →
+$$ R_h(\Delta t, \tau) = P_h(\tau) R_t(\Delta t) $$
+with power delay profile (PDP) \(P_h(\tau) = E[|h(t,\tau)|^2]\). Transfer function (time-varying frequency response):
+$$ H(t,f) = \int h(t,\tau) e^{-j2\pi f\tau} d\tau = \sum_{l=1}^{L} \alpha_l(t) e^{-j2\pi f \tau_l} $$
+**Short Answer:** Discrete multipath channel: \(h(t,\tau)=\sum_l \alpha_l(t)\delta(\tau-\tau_l)\); output is sum of time-varying scaled, delayed replicas of input.
+
+---
+## 14. (b) Flat vs Frequency-Selective Fading (4 Marks)
+**Answer:**
+| Aspect | Flat Fading | Frequency-Selective Fading |
+|--------|-------------|-----------------------------|
+| Relation of signal BW (B_s) to coherence bandwidth (B_c) | \(B_s \ll B_c\) | \(B_s > B_c\) |
+| Channel effect | Single complex gain multiplies entire signal | Different subbands experience different gains (amplitude/phase distortion) |
+| ISI Presence | Negligible (symbol duration >> delay spread) | Significant ISI (delay spread comparable to / larger than symbol time) |
+| Equalization Need | Simple (one-tap) or none | Requires multi-tap equalizer or multicarrier (OFDM) |
+| Diversity Opportunity | Limited frequency diversity | Exploitable frequency diversity across subcarriers |
+| BER Variation | All frequencies fade together | Some frequencies deep fade, others strong |
+| Mitigation | Power control, time/frequency interleaving | OFDM + coding + adaptive bit loading, RAKE/DFE |
+**Short Answer:** Flat fading = bandwidth narrower than channel coherence → uniform gain, no ISI; frequency-selective = signal spans multiple fading taps → distortion + ISI, requiring equalization/multicarrier.
+
+---
+## 14. (c) Coherence Time Calculation (3 Marks)
+**Answer:** Given velocity v = 50 m/s, carrier f_c = 1800 MHz. Wavelength: \(\lambda = c/f_c = 3\times10^8 / 1.8\times10^9 = 0.1667\,\text{m}\). Maximum Doppler shift: \(f_D = v/\lambda = 50 / 0.1667 \approx 300\,\text{Hz}\). Approximate coherence time (common empirical): \(T_c \approx \frac{1}{2 f_D} = \frac{1}{600} \approx 1.67\,\text{ms}\). (Alternate Jakes form \(0.423/f_D \approx 1.41\,\text{ms}\); either acceptable if stated.)
+**Short Answer:** \(f_D \approx 300\,\text{Hz}\); \(T_c \approx 1.4\text{–}1.7\,\text{ms}\) depending on formula used.
+
+---
+## 15. (a) Average BER of BPSK in Rayleigh Flat Fading (8 Marks)
+**Answer:** Conditional BER of coherent BPSK over AWGN at instantaneous SNR \(\gamma\): \(P_b(\gamma) = Q(\sqrt{2\gamma})\). For Rayleigh flat fading (slow or symbol-rate variation) with average SNR \(\bar{\gamma}\), the PDF: \(f_\gamma(\gamma) = \frac{1}{\bar{\gamma}} e^{-\gamma/\bar{\gamma}}\). Average BER:
+$$ \bar{P_b} = \int_0^{\infty} Q(\sqrt{2\gamma}) \frac{1}{\bar{\gamma}} e^{-\gamma/\bar{\gamma}} d\gamma $$
+Closed form identity: \( \int_0^{\infty} Q(\sqrt{a x}) e^{-b x} dx = \frac{1}{2b} \left(1 - \sqrt{\frac{b}{b+a/2}}\right) \) with \(a=2, b=1/\bar{\gamma}\). Thus:
+$$ \bar{P_b} = \frac{1}{2}\left(1 - \sqrt{\frac{\bar{\gamma}}{1+\bar{\gamma}}}\right) = \frac{1}{2}\left(1 - \sqrt{\frac{\text{SNR}_{avg}}{1+\text{SNR}_{avg}}}\right) $$
+Applies when symbol duration ≥ channel coherence time (independent fading per symbol) or slow enough that each symbol sees quasi-static gain but interleaving spans many fades.
+**Short Answer:** \(\bar{P_b} = \tfrac{1}{2}\left(1 - \sqrt{\bar{\gamma}/(1+\bar{\gamma})}\right)\).
+
+---
+## 15. (b) Required Average SNR for BER < 10^{-4} with 95% Reliability (— Marks)
+**Answer:** Target: BER threshold \(P_b^{th} = 10^{-4}\). From 15(a): \(\bar{P_b}(\bar{\gamma}) = \frac{1}{2}\left(1 - \sqrt{\frac{\bar{\gamma}}{1+\bar{\gamma}}}\right)\). Solve for \(\bar{\gamma}\) meeting \(\bar{P_b} = 10^{-4}\):
+Set \(1 - \sqrt{\frac{\bar{\gamma}}{1+\bar{\gamma}}} = 2\times10^{-4} \Rightarrow \sqrt{\frac{\bar{\gamma}}{1+\bar{\gamma}}} = 1 - 2\times10^{-4} = 0.9998\).
+Square: \(\frac{\bar{\gamma}}{1+\bar{\gamma}} = 0.9996 \Rightarrow \bar{\gamma} = 0.9996(1+\bar{\gamma}) \Rightarrow \bar{\gamma} - 0.9996 \bar{\gamma} = 0.9996 \Rightarrow 0.0004 \bar{\gamma} = 0.9996 \Rightarrow \bar{\gamma} = 2499 \approx 2.5\times10^{3}\).
+In dB: \(10 \log_{10}(2499) \approx 34.0\,\text{dB}\).
+
+However requirement adds 95% reliability: Probability that average BER < 10^{-4} should be ≥0.95. In quasi-static (slow) fading, instantaneous SNR \(\gamma\) is exponential with mean \(\bar{\gamma}\). Condition \(P_b(\gamma) = Q(\sqrt{2\gamma}) < 10^{-4}\) roughly needs instantaneous \(\gamma \gtrsim 8.4\) dB (since AWGN BPSK BER 10^{-4} ≈ Q(√(2γ)) ⇒ √(2γ) ≈ Q^{-1}(10^{-4}) ≈ 3.719 ⇒ γ ≈ (3.719^2)/2 ≈ 6.92 ≈ 8.4 dB when accounting for approximation). Using threshold \(\gamma_{th} \approx 7\) dB (≈5 in linear) to 8 dB for margin.
+
+Reliability constraint: \(P\{\gamma > \gamma_{th}\} = e^{-\gamma_{th}/\bar{\gamma}} \ge 0.95 \Rightarrow e^{-\gamma_{th}/\bar{\gamma}} \ge 0.95 \Rightarrow \bar{\gamma} \ge \gamma_{th} / (-\ln 0.95) \).
+Take \(\gamma_{th} = 6.9\) (linear) (≈ 8.4 dB):
+\(-\ln 0.95 = 0.051293\) ⇒ \(\bar{\gamma} \ge 6.9 / 0.051293 ≈ 134.6\) (≈ 21.3 dB).
+
+Conservative design uses higher of two computations: 34 dB (from average BER formula) vs 21 dB (from reliability of instantaneous threshold). Because average BER formula already integrates fading, the 34 dB solution ensures \(\bar{P_b}\le 10^{-4}\) unconditionally; 95% reliability of instantaneous criterion alone underestimates requirement.
+
+**Result:** Required average SNR ≈ 34 dB (linear ≈ 2.5×10^3) to achieve average BER < 10^{-4}. Reliability note: If instead interpreting “95% of time BER < 10^{-4}” under instantaneous AWGN mapping, ~21 dB would suffice, but strict average target dictates ~34 dB.
+**Short Answer:** \(\bar{\gamma} \approx 2.5\times10^{3}\) (≈34 dB) for \(\bar{P_b}<10^{-4}\); 95% instantaneous criterion alone would give ≈21 dB.
 
 ---
