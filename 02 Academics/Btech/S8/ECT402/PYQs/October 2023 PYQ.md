@@ -11,7 +11,6 @@
 - [ ] [[October 2023 PYQ#8. Compare pros and cons of linear equalizer over non-linear equalizer|8. Compare pros and cons of linear equalizer over non-linear equalizer]]
 - [ ] [[October 2023 PYQ#9. Deduce the expression for critical frequency of an ionised region|9. Deduce the expression for critical frequency of an ionised region]]
 - [ ] [[October 2023 PYQ#10. Explain the mechanism of wave bending (refraction) in the ionosphere|10. Explain the mechanism of wave bending (refraction) in the ionosphere]]
-
 - [ ] [[October 2023 PYQ#11. (a) Features of GSM System Architecture (with block diagram)|11. (a) Features of GSM System Architecture (with block diagram)]]
 - [ ] [[October 2023 PYQ#11. (b) Cell Splitting and Sectoring for Capacity & Coverage Improvement|11. (b) Cell Splitting and Sectoring for Capacity & Coverage Improvement]]
 - [ ] [[October 2023 PYQ#12. (a) Channel Assignment Strategies in Cellular Systems|12. (a) Channel Assignment Strategies in Cellular Systems]]
