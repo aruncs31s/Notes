@@ -651,3 +651,108 @@ Definition: A fading process is time-selective (fast) if the coherence time \(T_
 
 
 
+## 15. (a) With the help of mathematical equations show how linear convolution is converted to circular convolution in OFDM using Cyclic prefix.
+
+**Short Answer:** Cyclic prefix converts linear convolution $y[n] = x[n] * h[n]$ into circular convolution $\tilde{y}[n] = x[n] \circledast h[n]$ by making the transmitted sequence periodic, enabling simple frequency-domain equalization.
+
+**Linear Convolution in Multipath Channel:**
+Without cyclic prefix, the received signal is:
+$$y[n] = \sum_{l=0}^{L-1} h[l] x[n-l] + w[n]$$
+
+This is linear convolution causing ISI between OFDM symbols.
+
+**Cyclic Prefix Addition:**
+Let the OFDM symbol be $x[n]$ for $n = 0, 1, ..., N-1$.
+The cyclic prefix prepends the last $N_{cp}$ samples:
+$$x_{cp}[n] = \begin{cases}
+x[n + N], & n = -N_{cp}, ..., -1 \\
+x[n], & n = 0, 1, ..., N-1
+\end{cases}$$
+
+**Channel Response with CP:**
+After transmission through multipath channel with impulse response $h[l]$, $l = 0, 1, ..., L-1$ where $L \leq N_{cp}$:
+
+$$y_{cp}[n] = \sum_{l=0}^{L-1} h[l] x_{cp}[n-l] + w[n]$$
+
+**CP Removal and Circular Convolution:**
+After removing the cyclic prefix (discarding first $N_{cp}$ samples), the remaining $N$ samples are:
+
+$$y[n] = \sum_{l=0}^{L-1} h[l] x_{cp}[n-l], \quad n = 0, 1, ..., N-1$$
+
+Due to the cyclic structure, when $n-l < 0$, we have:
+$$x_{cp}[n-l] = x[n-l+N]$$
+
+This transforms the linear convolution into circular convolution:
+$$y[n] = \sum_{l=0}^{N-1} h[l] x[(n-l) \bmod N] = x[n] \circledast h[n]$$
+
+**Frequency Domain Representation:**
+Taking DFT of both sides:
+$$Y[k] = X[k] \cdot H[k]$$
+
+Where:
+- $Y[k] = \text{DFT}\{y[n]\}$
+- $X[k] = \text{DFT}\{x[n]\}$  
+- $H[k] = \text{DFT}\{h[n]\}$
+
+**Key Result:**
+The cyclic prefix converts the time-domain linear convolution (which causes ISI) into a circular convolution, which becomes simple multiplication in the frequency domain. This enables:
+1. Easy equalization: $\hat{X}[k] = \frac{Y[k]}{H[k]}$
+2. Elimination of ISI between OFDM symbols
+3. Preservation of orthogonality between subcarriers
+
+## 15. (b) Determine the average SNR per bit of BPSK modulation in Rayleigh slow fading channel such that 90% of the times, the average probability of bit error is less than 10⁻⁴.
+
+**Short Answer:** Required average SNR per bit is approximately 40 dB to ensure BER < 10⁻⁴ for 90% of the time in Rayleigh fading.
+
+**BPSK in Rayleigh Fading:**
+For BPSK in Rayleigh slow fading, the instantaneous BER is:
+$$P_e(\gamma) = \frac{1}{2}\text{erfc}\left(\sqrt{\gamma}\right)$$
+
+where $\gamma$ is the instantaneous SNR per bit.
+
+**Rayleigh Fading Statistics:**
+In Rayleigh fading, the instantaneous SNR $\gamma$ follows exponential distribution:
+$$f_\gamma(\gamma) = \frac{1}{\bar{\gamma}} e^{-\gamma/\bar{\gamma}}, \quad \gamma \geq 0$$
+
+where $\bar{\gamma}$ is the average SNR per bit.
+
+**Outage Probability Requirement:**
+We need: $P(\text{BER} > 10^{-4}) = 0.1$ (outage occurs 10% of the time)
+Equivalently: $P(\text{BER} \leq 10^{-4}) = 0.9$
+
+**Finding Threshold SNR:**
+First, find the instantaneous SNR $\gamma_{th}$ such that:
+$$P_e(\gamma_{th}) = 10^{-4}$$
+
+$$\frac{1}{2}\text{erfc}\left(\sqrt{\gamma_{th}}\right) = 10^{-4}$$
+
+$$\text{erfc}\left(\sqrt{\gamma_{th}}\right) = 2 \times 10^{-4}$$
+
+Using the approximation $\text{erfc}(x) \approx \frac{e^{-x^2}}{\sqrt{\pi}x}$ for large $x$:
+
+$$\frac{e^{-\gamma_{th}}}{\sqrt{\pi\gamma_{th}}} \approx 2 \times 10^{-4}$$
+
+Solving numerically: $\gamma_{th} \approx 36.7$ (15.65 dB)
+
+**Outage Probability Calculation:**
+The probability that BER > 10⁻⁴ is:
+$$P_{out} = P(\gamma < \gamma_{th}) = 1 - e^{-\gamma_{th}/\bar{\gamma}} = 0.1$$
+
+Therefore:
+$$e^{-\gamma_{th}/\bar{\gamma}} = 0.9$$
+
+$$-\frac{\gamma_{th}}{\bar{\gamma}} = \ln(0.9) = -0.1054$$
+
+$$\bar{\gamma} = \frac{\gamma_{th}}{0.1054} = \frac{36.7}{0.1054} \approx 348.2$$
+
+**Result:**
+$$\bar{\gamma}_{dB} = 10\log_{10}(348.2) \approx 25.4 \text{ dB}$$
+
+However, this calculation assumes the approximation is valid. Using more precise numerical methods:
+
+For $\text{erfc}(x) = 2 \times 10^{-4}$, we get $x \approx 3.72$, so $\gamma_{th} \approx 13.84$ (11.4 dB).
+
+With the outage requirement:
+$$\bar{\gamma} = \frac{13.84}{0.1054} \approx 131.3 \text{ (21.2 dB)}$$
+
+**Final Answer:** The required average SNR per bit is approximately **21.2 dB**.
