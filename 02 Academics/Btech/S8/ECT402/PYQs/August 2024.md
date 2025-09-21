@@ -212,4 +212,86 @@ Conservative design uses higher of two computations: 34 dB (from average BER for
 **Result:** Required average SNR ≈ 34 dB (linear ≈ 2.5×10^3) to achieve average BER < 10^{-4}. Reliability note: If instead interpreting “95% of time BER < 10^{-4}” under instantaneous AWGN mapping, ~21 dB would suffice, but strict average target dictates ~34 dB.
 **Short Answer:** \(\bar{\gamma} \approx 2.5\times10^{3}\) (≈34 dB) for \(\bar{P_b}<10^{-4}\); 95% instantaneous criterion alone would give ≈21 dB.
 
+## 16. (a) Implementation of an OFDM System (8 Marks)
+**Answer:** Orthogonal Frequency Division Multiplexing (OFDM) transmits data in parallel over N mutually orthogonal narrowband subcarriers, converting a frequency-selective wideband channel into N approximately flat subchannels enabling simple one-tap equalization per subcarrier.
+
+**Key Transmitter Steps:**
+1. Bit Source & Channel Coding (FEC): Input bits → encoder (e.g., convolutional / LDPC / Polar) + interleaver.
+2. Modulation Mapping: Groups of k bits → complex QAM symbols \(X_k\) for subcarriers k = 0…N−1.
+3. (Optional) Pilot & Null Insertion: Allocate pilot subcarriers for channel estimation; DC null and guard subcarriers at spectrum edges.
+4. IFFT (Size N): Time-domain OFDM symbol \( x[n] = \frac{1}{N} \sum_{k=0}^{N-1} X_k e^{j2\pi kn/N} \), n=0…N−1.
+5. Cyclic Prefix (CP) Addition: Prepend last L_CP samples of x[n] to front → length N+L_CP. CP length ≥ channel max delay spread ensures circular convolution: \( y[n] = h * x[n] \Rightarrow Y_k = H_k X_k + W_k \).
+6. DAC, RF Upconversion, Power Amplifier → Antenna.
+
+**Receiver Steps (Inverse):** RF downconvert → ADC → CP Removal → N-point FFT to recover \(Y_k\). Estimate channel using pilots (\(\hat{H}_k\)); Equalize one-tap (ZF: \(\hat{X}_k = Y_k/\hat{H}_k\); MMSE variant) → Demapper (LLRs) → De-interleaver → FEC Decoder → Bit Sink.
+
+**Orthogonality & Subcarrier Spacing:** \( \Delta f = 1/T_u \) (useful symbol duration). Orthogonality: \( \int_0^{T_u} e^{j2\pi (k-m) t / T_u} dt = 0, k \ne m \). Guard interval (CP) prevents ISI & ICI if channel delay spread < CP.
+
+**Time/Freq Representation:**
+Time-domain sample complexity O(N log N) via FFT vs serial single-carrier equalizer requiring long adaptive filters in frequency-selective channels.
+
+**Mermaid Block Diagram (Transmitter & Receiver):**
+```mermaid
+flowchart LR
+	A[Bits] --> B[Channel Coding & Interleaving]
+	B --> C[QAM Mapper]
+	C --> D[Pilot & Null Insertion]
+	D --> E[IFFT N]
+	E --> F[Cyclic Prefix Add]
+	F --> G[D/A + RF Upconversion]
+	G --> H[(Channel)]
+	H --> I[RF Down + A/D]
+	I --> J[CP Removal]
+	J --> K[FFT N]
+	K --> L[Channel Estimation]
+	L --> M[One-Tap Equalizer]
+	M --> N[QAM Demapper LLR]
+	N --> O[De-interleave & FEC Decode]
+	O --> P[Recovered Bits]
+```
+
+**Mathematical Model:** After CP removal: \( r[n] = \sum_{l=0}^{L_h-1} h_l x[(n - l) \text{ mod } N] + w[n] \). FFT: \( Y_k = H_k X_k + W_k \). Simplifies equalization relative to time-domain multi-tap inversion.
+
+**Advantages:** Robust to frequency-selective fading; flexible allocation; simple per-subcarrier equalization; supports adaptive modulation & coding (AMC); facilitates MIMO (per-subcarrier spatial processing).
+
+**Limitations:** High PAPR (needs back-off in PA); sensitivity to frequency offset & phase noise; CP overhead reduces spectral efficiency; out-of-band leakage (needs windowing/filtering for spectral masks).
+
+**Short Answer:** OFDM maps coded bits to QAM symbols, inserts pilots, applies IFFT, adds CP for circular convolution, then transmits; receiver removes CP, FFTs, estimates channel, one-tap equalizes, demaps, and decodes.
+
+---
+## 16. (b) Peak-to-Average Power Ratio (PAPR) in OFDM & Reduction (7 Marks)
+**Answer:** PAPR quantifies dynamic range of OFDM waveform:
+$$ \text{PAPR} = \frac{\max_{0 \le t < T}|x(t)|^2}{E[|x(t)|^2]} $$
+Discrete (oversampled) variant: \( \text{PAPR} = \max_n |x[n]|^2 / (\frac{1}{N}\sum_n |x[n]|^2) \). High PAPR arises from coherent addition of many independently modulated subcarriers (central limit → near-complex Gaussian samples; amplitude ≈ Rayleigh). Leads to PA inefficiency & nonlinear distortion (spectral regrowth, EVM, BER degradation).
+
+**Statistical Characterization (CCDF):** Probability PAPR exceeds threshold z: \( \text{CCDF}(z) = P\{\text{PAPR} > z\} \). For ideal i.i.d. subcarriers (Nyquist sampling) approximate: \( \text{CCDF}(z) \approx 1 - (1 - e^{-z})^M \) with M ≈ number of (independent) time-domain samples (often > N due to oversampling factor). Tail behavior drives amplifier back-off design.
+
+**PAPR Reduction Techniques:**
+1. Clipping & Filtering: Limit amplitude peaks; simple; causes in-band distortion (BER) + out-of-band radiation (needs iterative filtering).
+2. Companding (µ-law, exponential): Nonlinear compression then expansion; lowers peaks, raises average power (noise enhancement risk).
+3. Selective Mapping (SLM): Multiply symbol vector by U different phase sequences; choose candidate with lowest PAPR. Need to send side information (log2 U bits). Complexity scales with U.
+4. Partial Transmit Sequences (PTS): Partition subcarriers into disjoint subblocks; optimize phase factors to minimize peak; requires side info; combinatorial search (heuristics used).
+5. Tone Reservation (TR): Reserve a small set of subcarriers; optimize their symbols (often via convex methods) to cancel peaks; no distortion; spectral efficiency loss.
+6. Tone Injection (TI): Map constellation points to alternative lattice points to reduce peaks; increases average transmit power & complexity.
+7. Active Constellation Extension (ACE): Expand outer constellation points within decision regions to lower PAPR; minimal side info; modest complexity.
+8. DFT-Spread OFDM (SC-FDMA in LTE uplink): Applies DFT precoding before subcarrier mapping → single-carrier like envelope (lower PAPR) at cost of reduced scheduling flexibility across frequency.
+9. Coding Techniques: Use specially designed block codes guaranteeing upper PAPR bounds; rate loss & design complexity.
+10. Windowing/Filtering & Pulse Shaping: Smooth transitions to slightly mitigate peaks (limited standalone effect).
+
+**Technique Trade-offs Summary:**
+| Method | Distortion? | Side Info | Complexity | Spectral Efficiency Impact | Typical PAPR dB Gain |
+|--------|-------------|----------|------------|----------------------------|----------------------|
+| Clipping + Filtering | Yes (in-band) | No | Low | None (possible regrowth mask penalty) | 3–5 dB |
+| Companding | Yes | No | Low-Med | None | 3–6 dB |
+| SLM | No (chosen signal) | Yes | U IFFTs | Slight (side info) | 2–6 dB (depends U) |
+| PTS | No (chosen signal) | Yes | High (phase search) | Slight | 3–7 dB |
+| Tone Reservation | No | No | Optimization per symbol | Reserves tones | 3–6 dB |
+| Tone Injection | No (power ↑) | No | Mapping search | Power ↑ (amp back-off) | 3–6 dB |
+| ACE | Minimal | No | Iterative | Negligible | 3–5 dB |
+| DFT-Spread OFDM | Structural | No | One DFT/IDFT | Changes resource mapping | 2–4 dB |
+
+**Design Considerations:** Combine moderate clipping with digital pre-distortion (DPD) for PA efficiency; in uplink choose SC-FDMA to reduce UE PAPR; downlink may use SLM/PTS selectively for high-order modulation carriers.
+
+**Short Answer:** PAPR = peak instantaneous power / average power of OFDM symbol; high due to many summed subcarriers. Reduce via clipping/filtering, SLM, PTS, tone reservation/injection, ACE, companding, or DFT-spreading (SC-FDMA) depending on distortion, complexity, and side info trade-offs.
+
 ---
