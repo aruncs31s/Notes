@@ -27,7 +27,7 @@
 
 ---
 ## 8. Linear vs nonlinear equalization (3 Marks)
-**Answer:** Equalization combats ISI by approximating inverse channel. Linear (ZF, MMSE): simpler, fixed latency; ZF noise enhancement, MMSE residual ISI tradeoff. Nonlinear (DFE, MLSE): better performance in severe ISI; costs complexity & potential error propagation (DFE) or exponential states (MLSE).
+**Answer:** Equalization combats ISI by approximating inverse channel. Linear (ZF[^ZF], MMSE[^MMSE]): simpler, fixed latency; ZF noise enhancement, MMSE residual ISI tradeoff. Nonlinear (DFE[^DFE], MLSE[^MLSE]): better performance in severe ISI; costs complexity & potential error propagation (DFE) or exponential states (MLSE).
 
 ---
 ## 9. Ground wave propagation pros & limits (3 Marks)
@@ -35,7 +35,7 @@
 
 ---
 ## 10. Critical frequency & MUF relation (3 Marks)
-**Answer:** Critical frequency f_c ≈ 9√(N_max) (MHz). MUF for incidence angle θ: MUF = f_c / cos θ = f_c sec θ ≥ f_c. Shallower incidence (longer path) increases MUF.
+**Answer:** Critical frequency f_c ≈ 9√(N_max) (MHz). MUF[^MUF] for incidence angle θ: MUF = f_c / cos θ = f_c sec θ ≥ f_c. Shallower incidence (longer path) increases MUF.
 
 ---
 ## Part B (50 Marks)
@@ -46,15 +46,8 @@
 |------------|------------|---------------|------------------------|-----------------------------|-------------------------|------------------------------|
 | 2G (GSM/IS-95) | ~1991–2000 | Circuit voice + low-rate SMS/data (GPRS/EDGE) | TDMA/FDMA (GSM), CDMA (IS-95) | Tens–100 kbps (EDGE ~200 kbps) | Digital modulation, SIM-based auth, basic encryption, frequency reuse optimization | Limited data throughput; circuit-switched core |
 | 3G (UMTS/CDMA2000) | ~2001–2010 | Voice + packet data + multimedia (video calls) | W-CDMA / CDMA2000 | Few Mbps (HSPA+ peak ~10–40 Mbps) | Wideband spreading, soft handoff, improved spectral efficiency, core packet integration | Still moderate latency; fragmented enhancements |
-| 4G (LTE) | ~2009–2020 | All-IP broadband: high-rate data, VoIP, streaming HD | OFDMA (DL), SC-FDMA (UL), MIMO | 100+ Mbps (LTE-A: 1 Gbps peak) | Orthogonal subcarriers, scalable bandwidth, MIMO spatial multiplexing, carrier aggregation, flat IP core (EPC) | Capacity/latency constraints for massive devices & URLLC |
-| 5G (NR) | 2019– | Enhanced Mobile Broadband (eMBB), Ultra-Reliable Low-Latency (URLLC), Massive mMTC | OFDM-based flexible numerology (sub-6 GHz + mmWave), massive MIMO, beamforming | Multi-Gbps (mmWave), <1 ms air latency target | Network slicing, SDN/NFV virtualization, edge computing (MEC), dynamic TTI, massive MIMO beam steering, DSS | Deployment complexity, backhaul demand, energy efficiency, security scaling |
-**Answer:**
-| Generation | Approx Era | Core Services | Access / Air Interface | Peak/User Data Rate (order) | Key Technology Enablers | Limitations Driving Next Gen |
-|------------|------------|---------------|------------------------|-----------------------------|-------------------------|------------------------------|
-| 2G (GSM/IS-95) | ~1991–2000 | Circuit voice + low-rate SMS/data (GPRS/EDGE) | TDMA/FDMA (GSM), CDMA (IS-95) | Tens–100 kbps (EDGE ~200 kbps) | Digital modulation, SIM-based auth, basic encryption, frequency reuse optimization | Limited data throughput; circuit-switched core |
-| 3G (UMTS/CDMA2000) | ~2001–2010 | Voice + packet data + multimedia (video calls) | W-CDMA / CDMA2000 | Few Mbps (HSPA+ peak ~10–40 Mbps) | Wideband spreading, soft handoff, improved spectral efficiency, core packet integration | Still moderate latency; fragmented enhancements |
-| 4G (LTE) | ~2009–2020 | All-IP broadband: high-rate data, VoIP, streaming HD | OFDMA (DL), SC-FDMA (UL), MIMO | 100+ Mbps (LTE-A: 1 Gbps peak) | Orthogonal subcarriers, scalable bandwidth, MIMO spatial multiplexing, carrier aggregation, flat IP core (EPC) | Capacity/latency constraints for massive devices & URLLC |
-| 5G (NR) | 2019– | Enhanced Mobile Broadband (eMBB), Ultra-Reliable Low-Latency (URLLC), Massive mMTC | OFDM-based flexible numerology (sub-6 GHz + mmWave), massive MIMO, beamforming | Multi-Gbps (mmWave), <1 ms air latency target | Network slicing, SDN/NFV virtualization, edge computing (MEC), dynamic TTI, massive MIMO beam steering, DSS | Deployment complexity, backhaul demand, energy efficiency, security scaling |
+| 4G (LTE) | ~2009–2020 | All-IP broadband: high-rate data, VoIP, streaming HD | OFDMA[^OFDMA] (DL), SC-FDMA[^SCFDMA] (UL), MIMO[^MIMO] | 100+ Mbps (LTE-A: 1 Gbps peak) | Orthogonal subcarriers, scalable bandwidth, MIMO spatial multiplexing, carrier aggregation, flat IP core (EPC) | Capacity/latency constraints for massive devices & URLLC[^URLLC] |
+| 5G (NR) | 2019– | Enhanced Mobile Broadband (eMBB[^EMBB]), Ultra-Reliable Low-Latency (URLLC), Massive mMTC[^MMTC] | OFDM-based flexible numerology (sub-6 GHz + mmWave), massive MIMO, beamforming | Multi-Gbps (mmWave), <1 ms air latency target | Network slicing, SDN[^SDN]/NFV[^NFV] virtualization, edge computing (MEC[^MEC]), dynamic TTI[^TTI], massive MIMO beam steering, DSS[^DSS] | Deployment complexity, backhaul demand, energy efficiency, security scaling |
 
 **Capabilities Progression:**
 1. Shift from circuit-switched voice (2G) → packet-integrated (3G) → pure IP flat core (4G) → cloud-native, sliceable, service-based architecture (5G).
@@ -72,13 +65,13 @@ Bluetooth is a short-range wireless technology (typically 10 m for Class 2) desi
 **Main Roles in PAN Evolution:** Cable replacement (HID, audio), formation of ad hoc piconets, enabling body-area sensor networks, and supporting audio streaming (A2DP, LE Audio) and beaconing (BLE advertisements) for proximity services.
 
 **Distinguishing Features:**
-1. Frequency Band: 2.4 GHz ISM using frequency hopping spread spectrum (FHSS); LE uses adaptive channel selection among 40 channels (2 MHz spacing).
+1. Frequency Band: 2.4 GHz ISM using frequency hopping spread spectrum (FHSS[^FHSS]); LE (BLE[^BLE]) uses adaptive channel selection among 40 channels (2 MHz spacing).
 2. Topology: Piconet (1 master + up to 7 active slaves); scatternet by interconnecting piconets; BLE supports star & broadcast modes.
 3. Power Classes: Multiple Tx power levels (Class 1 up to ~100 mW; Class 2 ~2.5 mW typical) enabling energy-efficient operation.
 4. Low Energy (BLE): Optimized for very low duty cycle devices (years of battery life) via short connection events and advertising channels.
-5. Profiles & Interoperability: Standardized profiles (HFP, A2DP, GATT) simplify multi-vendor ecosystem integration.
-6. Security: Pairing modes (Just Works, Passkey, Numeric Comparison), AES-CCM link layer encryption.
-7. Latency & Throughput: Classic BR/EDR up to ~3 Mbps raw; BLE 5 long-range (coded PHY) trades rate for robustness; direction finding (AoA/AoD) for positioning.
+5. Profiles & Interoperability: Standardized profiles (HFP, A2DP[^A2DP], GATT) simplify multi-vendor ecosystem integration.
+6. Security: Pairing modes (Just Works, Passkey, Numeric Comparison), AES-CCM[^AESCCM] link layer encryption.
+7. Latency & Throughput: Classic BR/EDR up to ~3 Mbps raw; BLE 5 long-range (coded PHY) trades rate for robustness; direction finding (AoA/AoD[^AOA]) for positioning.
 8. Coexistence: Adaptive hopping mitigates interference vs static channels used by Wi-Fi.
 
 **Comparison vs Other Wireless:**
@@ -95,9 +88,9 @@ Handoff (handover) transfers an ongoing call/data session from one cell/base sta
 
 **Key Types:**
 1. Hard Handoff (Break-Before-Make): Used in traditional GSM / early cellular. Connection to old BS is released before new one established. Simpler resource control but brief interruption; more noticeable at cell edges with rapid fading.
-2. Soft Handoff (Make-Before-Break): In CDMA / some 3G systems; mobile simultaneously connected to multiple BSs (active set) combining signals (RAKE). Provides macro-diversity, smoother transitions, improves Eb/N0.
+2. Soft Handoff (Make-Before-Break): In CDMA / some 3G systems; mobile simultaneously connected to multiple BSs (active set) combining signals (RAKE[^RAKE]). Provides macro-diversity, smoother transitions, improves Eb/N0.
 3. Softer Handoff: Between sectors of the same physical BS (different sector antennas). Combines at baseband internally; reduces backhaul signaling overhead vs inter-BS soft handoff.
-4. Horizontal vs Vertical Handoff: Horizontal within same RAT (e.g., LTE cell to LTE cell); Vertical across different RATs (e.g., LTE → Wi‑Fi) for load balancing or coverage extension.
+4. Horizontal vs Vertical Handoff: Horizontal within same RAT[^RAT] (e.g., LTE cell to LTE cell); Vertical across different RATs (e.g., LTE → Wi‑Fi) for load balancing or coverage extension.
 5. Intra-frequency vs Inter-frequency (or Inter-band) Handoff: Same carrier frequency vs different carriers—latter requires retuning and measurement gaps (e.g., LTE inter-frequency measurement events). 
 6. Forced / Emergency Handoff: Triggered by rapid deterioration (e.g., power below threshold, interference spike) to prevent call drop.
 
@@ -107,7 +100,7 @@ Handoff (handover) transfers an ongoing call/data session from one cell/base sta
 | Challenge | Impact | Technique Response |
 |-----------|--------|--------------------|
 | Rapid signal fluctuation (fading) | Premature or late handoff → drops/ping-pong | Hysteresis margins, time-to-trigger, filtering of measurements |
-| Interference / edge SINR drop | Degraded QoS | Soft/softer handoff diversity gain; interference coordination (ICIC, eICIC) |
+| Interference / edge SINR drop | Degraded QoS | Soft/softer handoff diversity gain; interference coordination (ICIC[^ICIC], eICIC[^EICIC]) |
 | High-speed mobility (Doppler) | Reduced channel coherence time | Adaptive measurement intervals, predictive mobility, fast HO signaling |
 | Load imbalance | Congestion in popular cells | Load-aware / cell range expansion; vertical HO to Wi‑Fi/5G small cells |
 | Heterogeneous layers (macro/pico/femto) | Coverage holes or ping-pong | Layer-specific thresholds and bias (cell selection offset) |
@@ -119,7 +112,7 @@ Handoff (handover) transfers an ongoing call/data session from one cell/base sta
 ## 12. (b) Optimal Cluster Size N and Reuse Factor Q (8 Marks)
 **Question Restatement:** Digital TDMA system, required worst-case SIR ≥ 23 dB. Path loss exponent n = 4. Number of first-tier co-channel interferers i_0 = 6 (omnidirectional cells). Determine smallest cluster size N meeting SIR, then compute reuse factor Q.
 
-**SIR Model (Co-Channel Interference, Equal Powers):**
+**SIR Model (Co-Channel Interference, Equal Powers)[^SIR]:**
 For large distance ratio (D/R), approximate
 $$ \text{SIR} \approx \frac{(D/R)^n}{i_0} $$
 with \(n=4\), \(i_0=6\).
@@ -153,7 +146,7 @@ Often expressed as \(Q = D/R = 6\) for the selected cluster size.
 
 ---
 ## 14. (a) Impulse Response Model of a Multipath Channel (7 Marks)
-**Answer:** A wide-sense stationary uncorrelated scattering (WSSUS) baseband channel with L discrete resolvable paths is modeled as
+**Answer:** A wide-sense stationary uncorrelated scattering (WSSUS[^WSSUS]) baseband channel with L discrete resolvable paths is modeled as
 $$ h(t,\tau) = \sum_{l=1}^{L} \alpha_l(t) \, \delta(\tau - \tau_l) $$
 where: \(\tau_l\) = excess delay of path l, \(\alpha_l(t)= a_l e^{j\phi_l(t)}\) complex gain (amplitude fading + phase), and \(\delta(\cdot)\) Dirac delta. For time-varying Doppler shifts \(f_{D,l}\):
 $$ \alpha_l(t) = a_l e^{j(2\pi f_{D,l} t + \phi_{0,l})} $$
@@ -163,7 +156,7 @@ If paths form a continuum, impulse response becomes stochastic process:
 $$ h(t,\tau) = \sum_k \alpha_k(t) \delta(\tau - \tau_k) \;\Rightarrow\; R_h(t; \Delta t, \Delta \tau) = E[h(t,\tau) h^*(t+\Delta t, \tau+\Delta \tau)] $$
 WSSUS assumption: uncorrelated for distinct delays →
 $$ R_h(\Delta t, \tau) = P_h(\tau) R_t(\Delta t) $$
-with power delay profile (PDP) \(P_h(\tau) = E[|h(t,\tau)|^2]\). Transfer function (time-varying frequency response):
+with power delay profile (PDP[^PDP]) \(P_h(\tau) = E[|h(t,\tau)|^2]\). Transfer function (time-varying frequency response):
 $$ H(t,f) = \int h(t,\tau) e^{-j2\pi f\tau} d\tau = \sum_{l=1}^{L} \alpha_l(t) e^{-j2\pi f \tau_l} $$
 **Short Answer:** Discrete multipath channel: \(h(t,\tau)=\sum_l \alpha_l(t)\delta(\tau-\tau_l)\); output is sum of time-varying scaled, delayed replicas of input.
 
@@ -188,7 +181,7 @@ $$ H(t,f) = \int h(t,\tau) e^{-j2\pi f\tau} d\tau = \sum_{l=1}^{L} \alpha_l(t) e
 
 ---
 ## 15. (a) Average BER of BPSK in Rayleigh Flat Fading (8 Marks)
-**Answer:** Conditional BER of coherent BPSK over AWGN at instantaneous SNR \(\gamma\): \(P_b(\gamma) = Q(\sqrt{2\gamma})\). For Rayleigh flat fading (slow or symbol-rate variation) with average SNR \(\bar{\gamma}\), the PDF: \(f_\gamma(\gamma) = \frac{1}{\bar{\gamma}} e^{-\gamma/\bar{\gamma}}\). Average BER:
+**Answer:** Conditional BER of coherent BPSK over AWGN[^AWGN] at instantaneous SNR \(\gamma\): \(P_b(\gamma) = Q[^QFUNC](\sqrt{2\gamma})\). For Rayleigh flat fading (slow or symbol-rate variation) with average SNR \(\bar{\gamma}\), the PDF: \(f_\gamma(\gamma) = \frac{1}{\bar{\gamma}} e^{-\gamma/\bar{\gamma}}\). Average BER:
 $$ \bar{P_b} = \int_0^{\infty} Q(\sqrt{2\gamma}) \frac{1}{\bar{\gamma}} e^{-\gamma/\bar{\gamma}} d\gamma $$
 Closed form identity: \( \int_0^{\infty} Q(\sqrt{a x}) e^{-b x} dx = \frac{1}{2b} \left(1 - \sqrt{\frac{b}{b+a/2}}\right) \) with \(a=2, b=1/\bar{\gamma}\). Thus:
 $$ \bar{P_b} = \frac{1}{2}\left(1 - \sqrt{\frac{\bar{\gamma}}{1+\bar{\gamma}}}\right) = \frac{1}{2}\left(1 - \sqrt{\frac{\text{SNR}_{avg}}{1+\text{SNR}_{avg}}}\right) $$
@@ -217,7 +210,7 @@ Conservative design uses higher of two computations: 34 dB (from average BER for
 **Answer:** Orthogonal Frequency Division Multiplexing (OFDM) transmits data in parallel over N mutually orthogonal narrowband subcarriers, converting a frequency-selective wideband channel into N approximately flat subchannels enabling simple one-tap equalization per subcarrier.
 
 **Key Transmitter Steps:**
-1. Bit Source & Channel Coding (FEC): Input bits → encoder (e.g., convolutional / LDPC / Polar) + interleaver.
+1. Bit Source & Channel Coding (FEC[^FEC]): Input bits → encoder (e.g., convolutional / LDPC / Polar) + interleaver.
 2. Modulation Mapping: Groups of k bits → complex QAM symbols \(X_k\) for subcarriers k = 0…N−1.
 3. (Optional) Pilot & Null Insertion: Allocate pilot subcarriers for channel estimation; DC null and guard subcarriers at spectrum edges.
 4. IFFT (Size N): Time-domain OFDM symbol \( x[n] = \frac{1}{N} \sum_{k=0}^{N-1} X_k e^{j2\pi kn/N} \), n=0…N−1.
@@ -253,9 +246,9 @@ flowchart LR
 
 **Mathematical Model:** After CP removal: \( r[n] = \sum_{l=0}^{L_h-1} h_l x[(n - l) \text{ mod } N] + w[n] \). FFT: \( Y_k = H_k X_k + W_k \). Simplifies equalization relative to time-domain multi-tap inversion.
 
-**Advantages:** Robust to frequency-selective fading; flexible allocation; simple per-subcarrier equalization; supports adaptive modulation & coding (AMC); facilitates MIMO (per-subcarrier spatial processing).
+**Advantages:** Robust to frequency-selective fading; flexible allocation; simple per-subcarrier equalization; supports adaptive modulation & coding (AMC[^AMC]); facilitates MIMO (per-subcarrier spatial processing).
 
-**Limitations:** High PAPR (needs back-off in PA); sensitivity to frequency offset & phase noise; CP overhead reduces spectral efficiency; out-of-band leakage (needs windowing/filtering for spectral masks).
+**Limitations:** High PAPR (needs back-off in PA); sensitivity to frequency offset & phase noise; CP overhead reduces spectral efficiency; out-of-band leakage (needs windowing/filtering for spectral masks); potential EVM[^EVM] degradation under PA nonlinearity.
 
 **Short Answer:** OFDM maps coded bits to QAM symbols, inserts pilots, applies IFFT, adds CP for circular convolution, then transmits; receiver removes CP, FFTs, estimates channel, one-tap equalizes, demaps, and decodes.
 
@@ -291,13 +284,13 @@ Discrete (oversampled) variant: \( \text{PAPR} = \max_n |x[n]|^2 / (\frac{1}{N}\
 | ACE | Minimal | No | Iterative | Negligible | 3–5 dB |
 | DFT-Spread OFDM | Structural | No | One DFT/IDFT | Changes resource mapping | 2–4 dB |
 
-**Design Considerations:** Combine moderate clipping with digital pre-distortion (DPD) for PA efficiency; in uplink choose SC-FDMA to reduce UE PAPR; downlink may use SLM/PTS selectively for high-order modulation carriers.
+**Design Considerations:** Combine moderate clipping with digital pre-distortion (DPD[^DPD]) for PA efficiency; in uplink choose SC-FDMA to reduce UE PAPR; downlink may use SLM/PTS selectively for high-order modulation carriers.
 
 **Short Answer:** PAPR = peak instantaneous power / average power of OFDM symbol; high due to many summed subcarriers. Reduce via clipping/filtering, SLM, PTS, tone reservation/injection, ACE, companding, or DFT-spreading (SC-FDMA) depending on distortion, complexity, and side info trade-offs.
 
 ---
 ## 17. (a) Alamouti Scheme for 2×2 MIMO (7 Marks)
-**Answer:** The classic Alamouti Space-Time Block Code (STBC) provides full diversity gain with simple linear combiner. For 2 Tx, 1 or more Rx antennas, code rate = 1.
+**Answer:** The classic Alamouti Space-Time Block Code (STBC[^STBC]) provides full diversity gain with simple linear combiner. For 2 Tx, 1 or more Rx antennas, code rate = 1.
 
 **Transmit Encoding (2 Time Slots):** For complex symbols \(s_1, s_2\):
 Time slot t: Antenna 1 → \(s_1\), Antenna 2 → \(s_2\)
@@ -353,7 +346,7 @@ Thus each symbol sees sum of squared magnitudes (diversity order up to 4 with 2 
 
 ---
 ## 18. (a) Role of LMS Algorithm in Adaptive Equalization (7 Marks)
-**Answer:** The Least Mean Squares (LMS) algorithm adapts filter tap weights to minimize the mean square error (MSE) between equalizer output and a desired reference (training symbols or decision-directed estimates), counteracting time-varying ISI in dispersive channels with low computational complexity.
+**Answer:** The Least Mean Squares (LMS) algorithm adapts filter tap weights to minimize the mean square error (MSE[^MSE]) between equalizer output and a desired reference (training symbols or decision-directed estimates), counteracting time-varying ISI in dispersive channels with low computational complexity.
 
 **Equalizer Structure:** FIR with weight vector \(\mathbf{w}[n]\); input vector \(\mathbf{x}[n] = [x[n], x[n-1], ..., x[n-L+1]]^T\). Output: \( y[n] = \mathbf{w}^H[n] \mathbf{x}[n] \). Error: \( e[n] = d[n] - y[n] \), where \(d[n]\) is known training symbol (or tentative decision for decision-directed mode).
 
@@ -380,14 +373,14 @@ Step size \(\mu\) controls convergence vs stability. Approximate stability bound
 | Transmit Power Budget | Low & constrained (battery devices) | Higher (BS mains powered) |
 | Peak-to-Average Constraints | Critical (PAPR mitigations e.g., SC-FDMA) | Less restrictive (OFDMA widely used) |
 | Multiple Access Mechanism | SC-FDMA (LTE), UL OFDMA (5G), random access preambles | OFDMA / resource blocks scheduled |
-| Channel Estimation | BS estimates per-user UL channel from pilots | UEs estimate DL channel from reference signals; BS relies on feedback (CQI, PMI, RI) |
+| Channel Estimation | BS estimates per-user UL channel from pilots | UEs estimate DL channel from reference signals; BS relies on feedback (CQI[^CQI], PMI[^PMI], RI[^RI]) |
 | Reciprocity Use | In TDD, UL estimates reused for DL precoding (after calibration) | FDD lacks reciprocity (needs feedback) |
 | Interference Profile | Interference from other UEs (power-controlled) | Inter-cell interference dominant; intra-cell managed by precoding |
 | Scheduling Objective | Fairness vs battery vs latency; limited feedback overhead | Throughput maximization + QoS classes; rich CSI allows beamforming |
 | Power Control | Fast closed-loop to mitigate near-far | DL power shaping across beams/subcarriers |
 | MIMO Processing | Uplink combining (receive beamforming) at BS | Downlink precoding / beamforming at BS |
 | Mobility Impact | Timing advance needed; random access collisions | Doppler affects CSI aging & beam tracking |
-| HARQ Timing | UL grants & ACK/NACK windows; device timing constraints | DL scheduling + UE ACK/NACK feedback |
+| HARQ Timing | UL grants & ACK/NACK windows; device timing constraints | DL scheduling + UE ACK/NACK feedback (HARQ[^HARQ]) |
 | Resource Constraints | UE RF chains limited (fewer antennas) | BS massive MIMO arrays feasible |
 
 **Challenges:**
@@ -463,3 +456,57 @@ Check without k-factor (geometric Earth): constant ≈ 3.57 already incorporates
 **Short Answer:** \( h_r \approx 67\,\text{m} \) to achieve a 65 km radio horizon with \( h_t = 100\,\text{m} \).
 
 ---
+## Footnotes / Glossary
+[^SINR]: Signal-to-Interference-plus-Noise Ratio.
+[^DOPPLER]: Doppler shift: observed frequency change due to relative motion (\(f_D = v/\lambda\)).
+[^RAYLEIGH]: Rayleigh fading: envelope distribution when many small independent scattered components, no dominant LOS.
+[^RICIAN]: Rician fading: fading with a dominant LOS (K-factor ratio of LOS to scattered power).
+[^OFDM]: Orthogonal Frequency Division Multiplexing: multicarrier modulation with orthogonal subcarriers spaced at \(1/T_u\).
+[^CP]: Cyclic Prefix: guard interval copying tail of symbol to preserve circular convolution.
+[^ISI]: Inter-Symbol Interference: overlap of adjacent symbols due to channel dispersion.
+[^SNR]: Signal-to-Noise Ratio (often average received SNR \(\bar{\gamma}\)).
+[^BER]: Bit Error Rate.
+[^SER]: Symbol Error Rate.
+[^OUTAGE]: Outage probability: probability instantaneous metric (SNR, capacity) falls below required threshold.
+[^ZF]: Zero Forcing equalizer: inverts channel ignoring noise enhancement.
+[^MMSE]: Minimum Mean Square Error equalizer: balances noise enhancement vs residual ISI.
+[^DFE]: Decision Feedback Equalizer: nonlinear equalizer using past detected symbols to cancel postcursor ISI.
+[^MLSE]: Maximum Likelihood Sequence Estimation: optimal sequence detection (e.g., Viterbi) minimizing sequence error.
+[^MUF]: Maximum Usable Frequency for ionospheric reflection at a given path (oblique incidence).
+[^OFDMA]: Orthogonal Frequency Division Multiple Access: multiuser version of OFDM allocating subcarriers/time.
+[^SCFDMA]: Single Carrier FDMA (DFT-spread OFDM): lower PAPR uplink scheme (LTE).
+[^EMBB]: Enhanced Mobile Broadband (5G service category).
+[^URLLC]: Ultra-Reliable Low-Latency Communications (5G KPI class).
+[^MMTC]: Massive Machine-Type Communications (IoT-focused 5G service class).
+[^MIMO]: Multiple-Input Multiple-Output antenna system.
+[^SDN]: Software-Defined Networking separating control & data planes.
+[^NFV]: Network Functions Virtualization: implementing network functions as software on commodity hardware.
+[^MEC]: Multi-access Edge Computing: localized compute near RAN to reduce latency.
+[^TTI]: Transmission Time Interval: scheduling unit duration (flexible in 5G numerology).
+[^DSS]: Dynamic Spectrum Sharing: LTE & NR coexistence in same band dynamically.
+[^FHSS]: Frequency Hopping Spread Spectrum.
+[^BLE]: Bluetooth Low Energy.
+[^A2DP]: Advanced Audio Distribution Profile (Bluetooth audio streaming).
+[^AESCCM]: AES Counter with CBC-MAC mode (encryption + integrity).
+[^AOA]: Angle of Arrival / Angle of Departure (direction finding methods).
+[^RAKE]: Receiver combining multipath components in spread-spectrum.
+[^RAT]: Radio Access Technology (e.g., LTE, NR, Wi-Fi).
+[^ICIC]: Inter-Cell Interference Coordination.
+[^EICIC]: Enhanced ICIC (e.g., Almost Blank Subframes in LTE).
+[^SIR]: Signal-to-Interference Ratio (noise ignored vs SINR).
+[^WSSUS]: Wide-Sense Stationary Uncorrelated Scattering channel model.
+[^PDP]: Power Delay Profile: average power vs excess delay.
+[^BPSK]: Binary Phase Shift Keying.
+[^AWGN]: Additive White Gaussian Noise channel model.
+[^QFUNC]: Q-function: tail probability of standard normal distribution.
+[^FEC]: Forward Error Correction coding.
+[^AMC]: Adaptive Modulation and Coding.
+[^EVM]: Error Vector Magnitude: modulation accuracy metric.
+[^DPD]: Digital Pre-Distortion: linearizes PA by inverse modeling its nonlinearity.
+[^STBC]: Space-Time Block Code.
+[^LMS]: Least Mean Squares adaptive algorithm.
+[^MSE]: Mean Square Error.
+[^CQI]: Channel Quality Indicator feedback (quantized SINR info in LTE/NR).
+[^PMI]: Precoding Matrix Indicator (preferred precoder index feedback).
+[^RI]: Rank Indicator (preferred MIMO layer count feedback).
+[^HARQ]: Hybrid Automatic Repeat reQuest combining FEC with retransmissions.
