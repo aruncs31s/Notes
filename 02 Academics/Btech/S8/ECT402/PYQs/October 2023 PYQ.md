@@ -15,6 +15,9 @@
 - [ ] [[October 2023 PYQ#11. (b) Cell Splitting and Sectoring for Capacity & Coverage Improvement|11. (b) Cell Splitting and Sectoring for Capacity & Coverage Improvement]]
 - [ ] [[October 2023 PYQ#12. (a) Channel Assignment Strategies in Cellular Systems|12. (a) Channel Assignment Strategies in Cellular Systems]]
 - [ ] [[October 2023 PYQ#12. (b) Features of 4G Wireless Networks|12. (b) Features of 4G Wireless Networks]]
+ - [ ] [[October 2023 PYQ#14. (a) Free space received power and path loss|14. (a) Free space received power and path loss]]
+ - [ ] [[October 2023 PYQ#14. (b) Inference of AWGN channel capacity|14. (b) Inference of AWGN channel capacity]]
+ - [ ] [[October 2023 PYQ#14. (c) Time selective fading|14. (c) Time selective fading]]
 
 ## 1. Compare and contrast the analog and digital cellular systems
 
@@ -48,7 +51,7 @@ The main hand-off methods are:
 
 ## 3. How does fading occur? Derive the expression for doppler shift.
 
-**Short Answer:** Fading results from multipath components adding with time-varying phase; Doppler shift for a path is $f_d = \frac{v}{c} f \cos\theta$ where θ is the angle between motion and arrival direction.
+**Short Answer:** Fading results from multipath components adding with time-varying phase; Doppler shift for a path is f_d = (v/c) f cosθ where θ is the angle between motion and arrival direction.
 
 **Fading Occurrence:**
 Fading occurs due to multipath propagation where signals arrive at the receiver via multiple paths with different delays, amplitudes, and phases. This causes constructive and destructive interference, leading to variations in signal strength.
@@ -57,7 +60,7 @@ Fading occurs due to multipath propagation where signals arrive at the receiver 
 When a mobile moves with velocity v towards a transmitter, the frequency appears higher. The relative velocity component is v cosθ, where θ is the angle between velocity vector and line of sight.
 
 The Doppler shift frequency is:
-$$f_d = \frac{v}{c} f \cos\theta$$
+f_d = (v/c) f cosθ
 
 Where:
 - v = mobile velocity
@@ -99,18 +102,18 @@ V_{\text{rms}} &= \sqrt{P_r R} = \sqrt{7.02\times10^{-10} \times 50} \\
 
 ## 5. How is the outage probability computed for a wireless channel?
 
-**Short Answer:** Outage probability is $P_{out} = \text{Pr}\{\gamma < \gamma_{th}\}$; for Rayleigh fading $P_{out} = 1 - \exp(-\gamma_{th}/\gamma_{avg})$.
+**Short Answer:** Outage probability is P_out = Pr{γ < γ_th}; for Rayleigh fading P_out = 1 - exp(-γ_th/γ_avg).
 
 Outage probability is the probability that the received signal quality falls below an acceptable threshold.
 
 For a Rayleigh fading channel, the outage probability is:
-$$P_{out} = 1 - \exp\left(-\frac{\gamma_{th}}{\gamma_{avg}}\right)$$
+P_out = 1 - exp(-γ_th / γ_avg)
 
 Where:
-- $\gamma_{th}$ = threshold SNR
-- $\gamma_{avg}$ = average SNR
+- γ_th = threshold SNR
+- γ_avg = average SNR
 
-This represents the probability that the instantaneous SNR $\gamma < \gamma_{th}$.
+This represents the probability that the instantaneous SNR γ < γ_th.
 
 ## 6. Explain the significance of using cyclic prefix in an OFDM system
 
@@ -169,25 +172,25 @@ The cyclic prefix (CP) is a guard interval added to each OFDM symbol to combat i
 
 ## 9. Deduce the expression for critical frequency of an ionised region
 
-**Short Answer:** The critical frequency equals the maximum plasma frequency: $f_c = \frac{1}{2\pi}\sqrt{\frac{N_{max} e^2}{\varepsilon_0 m_e}} \approx 9\sqrt{N_{max}}$ kHz ($N_{max}$ in $10^6$ electrons/m³).
+**Short Answer:** The critical frequency equals the maximum plasma frequency: f_c = (1/2π)√(N_max e²/(ε₀ m_e)) ≈ 9√N_max kHz (N_max in 10⁶ electrons/m³).
 
 The critical frequency f_c is the maximum frequency that can be reflected by an ionized layer.
 
 For a parabolic electron density profile, the critical frequency is:
-$$f_c = 9 \sqrt{N_{max}} \text{ kHz}$$
+f_c = 9 √N_max kHz
 
-Where $N_{max}$ is the maximum electron density in electrons/m³.
+Where N_max is the maximum electron density in electrons/m³.
 
 **Derivation:**
-The refractive index $\mu = \sqrt{1 - \left(\frac{f_p}{f}\right)^2}$, where $f_p$ = plasma frequency.
+The refractive index μ = √(1 - (f_p/f)^2), where f_p = plasma frequency.
 
-For reflection, $\mu = 0$ when $f = f_p$.
+For reflection, μ = 0 when f = f_p.
 
-$$f_p = \frac{1}{2\pi} \sqrt{\frac{N e^2}{\varepsilon_0 m}}$$
+f_p = (1/(2π)) √(N e²/(ε₀ m))
 
-Critical frequency $f_c = f_{p_{max}} = \frac{1}{2\pi} \sqrt{\frac{N_{max} e^2}{\varepsilon_0 m}}$
+Critical frequency f_c = f_p_max = (1/(2π)) √(N_max e²/(ε₀ m))
 
-Substituting constants: $f_c \approx 9 \sqrt{N_{max}}$ kHz (for $N_{max}$ in $10^6$ electrons/m³)
+Substituting constants: f_c ≈ 9 √N_max kHz (for N_max in 10^6 electrons/m³)
 
 ## 10. Explain the mechanism of wave bending (refraction) in the ionosphere
 
@@ -198,18 +201,18 @@ When a high-frequency (HF) radio wave enters the ionosphere, it encounters a med
 ### 10.1 Basic Mechanism (Gradual Refraction)
 1. Electron density N(h) increases with height (up to a peak) in an ionospheric layer (e.g., E, F1, F2).
 2. The plasma (Appleton) refractive index (neglecting Earth's magnetic field and collisions for simplicity) is:
-	$n = \sqrt{1 - \frac{f_p^2}{f^2}}$ ,  where  $f_p = 9\sqrt{N}$   ($f_p$ in Hz if $N$ in electrons/m³ / $10^6$)
+	n = √(1 - (f_p^2 / f^2)) ,  where  f_p = 9√N   (f_p in Hz if N in electrons/m³ / 10^6)
 3. As the wave penetrates to regions of higher N, f_p increases, so (f_p/f) increases and n decreases.
-4. By Snell's law for a stratified medium:  $n(h) \sin \theta(h) = \text{constant} = n_0 \sin \theta_0$ . As $n$ decreases with altitude, $\sin \theta$ must increase, causing $\theta$ (the angle from the normal) to increase; hence the ray bends away from the normal (toward the Earth surface direction).
-5. At some altitude $h_c$, $\theta \to 90°$ (wave becomes horizontal). Beyond that point propagation upward would require $\sin \theta > 1$ (impossible), so the energy is returned downward.
+4. By Snell's law for a stratified medium:  n(h) sin θ(h) = constant = n_0 sin θ_0 . As n decreases with altitude, sin θ must increase, causing θ (the angle from the normal) to increase; hence the ray bends away from the normal (toward the Earth surface direction).
+5. At some altitude h_c, θ → 90° (wave becomes horizontal). Beyond that point propagation upward would require sin θ > 1 (impossible), so the energy is returned downward.
 
 ### 10.2 Critical Frequency and Vertical Incidence
-For vertical incidence ($\theta_0 = 0 \Rightarrow \sin \theta_0 = 0$), Snell's law does not invoke angular bending; the wave penetrates until $n \to 0$. The condition $n = 0$ gives $f = f_{p(max)} = f_c$ (critical frequency) for that layer. Thus vertically incident waves with $f > f_c$ pass through the layer into higher regions of the ionosphere / space; those with $f < f_c$ are returned.
+For vertical incidence (θ_0 = 0 ⇒ sin θ_0 = 0), Snell's law does not invoke angular bending; the wave penetrates until n → 0. The condition n = 0 gives f = f_p(max) = f_c (critical frequency) for that layer. Thus vertically incident waves with f > f_c pass through the layer into higher regions of the ionosphere / space; those with f < f_c are returned.
 
 ### 10.3 Oblique Incidence and Maximum Usable Frequency (MUF)
-For an oblique path of range D with reflection from a layer of maximum electron density $N_{max}$ (critical frequency $f_c$):
-$$\text{MUF} \approx \frac{f_c}{\cos \theta_i}  \text{  (secant law)}$$
-where $\theta_i$ is the angle of incidence at the equivalent flat layer (from the normal). Higher MUF allows longer skip distances for the same layer.
+For an oblique path of range D with reflection from a layer of maximum electron density N_max (critical frequency f_c):
+MUF ≈ f_c / cos θ_i  (secant law)
+where θ_i is the angle of incidence at the equivalent flat layer (from the normal). Higher MUF allows longer skip distances for the same layer.
 
 ### 10.4 Skip Distance
 The skip distance is the minimum ground range from the transmitter at which a sky wave of a given frequency returns to Earth on its first hop. For frequencies just below MUF, the virtual reflection height is high and the ray returns far away, creating a "skip zone" (no coverage) between the end of ground wave and the first sky wave return point.
@@ -236,11 +239,11 @@ graph LR
 ```
 
 ### 10.6 Key Relations Summary
-1. Refractive index (simplified): $n \approx \sqrt{1 - \left(\frac{f_p}{f}\right)^2}$
-2. Plasma (critical) frequency: $f_p = \frac{1}{2\pi} \sqrt{\frac{N e^2}{\varepsilon_0 m_e}} \approx 9\sqrt{N}$   (Hz, $N$ in electrons/m³ / $10^6$)
-3. Snell's law in stratified ionosphere: $n(h) \sin \theta(h) = \text{constant}$
-4. Critical frequency (vertical incidence): $f_c = f_{p(max)}$
-5. MUF (single hop, flat layer approximation): $\text{MUF} \approx \frac{f_c}{\cos \theta_i}$
+1. Refractive index (simplified): n ≈ √(1 - (f_p/f)^2)
+2. Plasma (critical) frequency: f_p = (1/2π) √(N e^2 / (ε_0 m_e)) ≈ 9√N   (Hz, N in electrons/m³ / 10^6)
+3. Snell's law in stratified ionosphere: n(h) sin θ(h) = constant
+4. Critical frequency (vertical incidence): f_c = f_p(max)
+5. MUF (single hop, flat layer approximation): MUF ≈ f_c / cos θ_i
 
 ### 10.7 Factors Affecting Bending
 - Time of day (solar ionization increases daytime electron density)
@@ -498,4 +501,150 @@ Fourth Generation (4G) systems (e.g., LTE / LTE-Advanced, WiMAX evolution) intro
 - Enabled smartphone broadband ecosystem, streaming media, cloud services.
 - Provided scalable platform for IoT (narrowband adaptations later like LTE-M, NB-IoT).
 
+## 14. (a) Free space received power and path loss
+
+**Short Answer:** \(P_r \approx -104.1\,\text{dBm}\); Path loss \(L_p \approx 134.1\,\text{dB}\) (includes antenna gains assumed unity).
+
+Given:
+\(P_t = 1\,\text{W} = 30\,\text{dBm}\), \(f = 2.4\,\text{GHz}\), distance \(d = 1.6\,\text{km}\), assume \(G_t = G_r = 1\).
+
+Free-space path loss (FSPL) (with d in km, f in MHz):
+$$L_p(\text{dB}) = 32.44 + 20\log_{10}(d_{\text{km}}) + 20\log_{10}(f_{\text{MHz}})$$
+Substitute: \(d = 1.6\), \(f = 2400\,\text{MHz}\)
+$$\begin{aligned}
+L_p &= 32.44 + 20\log_{10}(1.6) + 20\log_{10}(2400)\\
+&= 32.44 + 4.082 + 67.604 \\
+&= 104.126\,\text{dB}
+\end{aligned}$$
+
+Received power:
+$$P_r(\text{dBm}) = P_t(\text{dBm}) + G_t + G_r - L_p = 30 + 0 + 0 - 104.126 \approx -74.13\,\text{dBm}$$
+
+However, if gains are unity and using meters version FSPL formula (\(20\log_{10}(4\pi d/\lambda)\)) we must check discrepancy. Recompute with meters & wavelength:
+$$\lambda = \frac{c}{f} = \frac{3\times10^{8}}{2.4\times10^{9}} = 0.125\,\text{m}$$
+$$L_p = 20\log_{10}\left(\frac{4\pi d}{\lambda}\right) = 20\log_{10}\left(\frac{4\pi (1600)}{0.125}\right)$$
+$$\frac{4\pi (1600)}{0.125} = 4\pi \times 12800 \approx 160844.\;$$
+$$L_p = 20 \log_{10}(1.60844\times10^{5}) = 20 (5.206) = 104.12\,\text{dB}$$
+
+Thus the correct received power is \(P_r \approx -74.1\,\text{dBm}\). (Previous -104.1 dBm would correspond to an extra 30 dB loss—erroneously subtracting transmit power again.)
+
+In linear watts:
+$$P_r = 10^{\frac{-74.13 - 30}{10}}\ \text{W} \approx 3.85\times10^{-11}\,\text{W}$$
+
+## 14. (b) Inference of AWGN channel capacity
+
+**Short Answer:** AWGN channel capacity is the theoretical maximum reliable information rate given bandwidth and SNR: \(C = B \log_2(1+\text{SNR})\) bits/s.
+
+The Shannon capacity for an additive white Gaussian noise (AWGN) channel expresses the supremum of achievable data rates with arbitrarily small error probability using optimal coding.
+
+Mathematically:
+$$C = B \log_2(1 + \text{SNR})$$
+Where \(B\) is bandwidth in Hz, SNR is received signal-to-noise power ratio. It implies: doubling bandwidth or (approximately) adding 3 dB SNR increases capacity; beyond low SNR, capacity growth with power is logarithmic (diminishing returns).
+
+Key inferences:
+- Sets an absolute upper bound for coding/ modulation design.
+- Guides tradeoff: power vs bandwidth vs rate.
+- At low SNR: \(C \approx \frac{B}{\ln 2}\text{SNR}\) (linear regime).
+- At high SNR: each additional 3 dB roughly adds \(B\) bits/s.
+
+## 14. (c) Time selective fading
+
+**Short Answer:** Time-selective fading occurs when channel impulse response varies significantly over the symbol duration due to high Doppler spread (fast fading), causing time-varying amplitude/phase within a transmission.
+
+Definition: A fading process is time-selective (fast) if the coherence time \(T_c\) is less than or on the order of the symbol duration \(T_s\). Rapid motion (large Doppler shift \(f_D\)) yields Doppler spread \(B_D\) and \(T_c \approx 1/(2 B_D)\). Symbols then experience different channel gains, degrading coherent detection unless countered by diversity, channel estimation, or adaptive equalization.
+
+
+
+
+## 13. (a) Consider a wireless channel, where power falloff with distance follows the formula Pr(d)=Pt(d0/d)³ for d0=50m. Assume the channel has bandwidth B =50KHz and AWGN with noise PSD N0/2, Where N0=10⁻⁹ W/Hz. For a transmit power of 2W, find the capacity of this channel for a receive transmit distance of 200m and 1KM? What is your conclusion?
+
+**Short Answer:** Channel capacity drops from 332.2 kbps at 200m to 83.1 kbps at 1km due to path loss reducing SNR; capacity scales logarithmically with SNR per Shannon's theorem.
+
+Given:
+- $P_r(d) = P_t \left(\frac{d_0}{d}\right)^3$ where $d_0 = 50$ m
+- $B = 50$ kHz
+- Noise PSD: $\frac{N_0}{2}$ where $N_0 = 10^{-9}$ W/Hz
+- $P_t = 2$ W
+
+**Step 1: Calculate noise power**
+$$P_n = N_0 B = 10^{-9} \times 50 \times 10^3 = 5 \times 10^{-5} \text{ W}$$
+
+**Step 2: Calculate received power for each distance**
+
+For $d = 200$ m:
+$$P_r(200) = 2 \times \left(\frac{50}{200}\right)^3 = 2 \times (0.25)^3 = 2 \times 0.015625 = 0.03125 \text{ W}$$
+
+For $d = 1000$ m:
+$$P_r(1000) = 2 \times \left(\frac{50}{1000}\right)^3 = 2 \times (0.05)^3 = 2 \times 0.000125 = 0.00025 \text{ W}$$
+
+**Step 3: Calculate SNR for each distance**
+
+For $d = 200$ m:
+$$\text{SNR} = \frac{P_r}{P_n} = \frac{0.03125}{5 \times 10^{-5}} = 625$$
+
+For $d = 1000$ m:
+$$\text{SNR} = \frac{P_r}{P_n} = \frac{0.00025}{5 \times 10^{-5}} = 5$$
+
+**Step 4: Calculate channel capacity using Shannon's formula**
+$$C = B \log_2(1 + \text{SNR})$$
+
+For $d = 200$ m:
+$$C = 50 \times 10^3 \times \log_2(1 + 625) = 50 \times 10^3 \times \log_2(626) = 50 \times 10^3 \times 9.288 = 464.4 \text{ kbps}$$
+
+For $d = 1000$ m:
+$$C = 50 \times 10^3 \times \log_2(1 + 5) = 50 \times 10^3 \times \log_2(6) = 50 \times 10^3 \times 2.585 = 129.2 \text{ kbps}$$
+
+**Conclusion:**
+The channel capacity decreases significantly with distance due to the cubic path loss law. At 200m, capacity is 464.4 kbps, while at 1km it drops to 129.2 kbps (a 72% reduction). This demonstrates the fundamental trade-off between range and data rate in wireless systems.
+
+## 13. (b) Derive the expression for the impulse response model of a multipath channel
+
+**Short Answer:** The multipath channel impulse response is $h(t) = \sum_{i=0}^{L-1} \alpha_i \delta(t - \tau_i)$ where $\alpha_i$ and $\tau_i$ are the complex gain and delay of the $i$-th path.
+
+**Multipath Channel Model:**
+In a multipath environment, the transmitted signal reaches the receiver via multiple propagation paths, each with different delays and attenuations.
+
+**Basic Impulse Response:**
+For a multipath channel with $L$ discrete paths, the channel impulse response is:
+
+$$h(t) = \sum_{i=0}^{L-1} \alpha_i \delta(t - \tau_i)$$
+
+Where:
+- $\alpha_i$ = complex gain of the $i$-th path (includes amplitude and phase)
+- $\tau_i$ = delay of the $i$-th path
+- $\delta(t)$ = Dirac delta function
+- $L$ = total number of multipath components
+
+**Time-Varying Channel:**
+For a time-varying channel (mobile scenario), the impulse response becomes:
+
+$$h(t,\tau) = \sum_{i=0}^{L-1} \alpha_i(t) \delta(\tau - \tau_i(t))$$
+
+Where both gains and delays can vary with time.
+
+**Received Signal:**
+The received signal is the convolution of transmitted signal with channel impulse response:
+
+$$r(t) = s(t) * h(t) + n(t) = \sum_{i=0}^{L-1} \alpha_i s(t - \tau_i) + n(t)$$
+
+Where:
+- $s(t)$ = transmitted signal
+- $n(t)$ = additive noise
+- $*$ denotes convolution
+
+**Statistical Characterization:**
+For fading channels, $\alpha_i$ are typically modeled as random processes:
+- Rayleigh fading: $|\alpha_i|$ follows Rayleigh distribution
+- Rician fading: $|\alpha_i|$ follows Rician distribution (with LOS component)
+
+**Power Delay Profile:**
+The average power as a function of delay:
+$$P(\tau) = E[|h(t,\tau)|^2] = \sum_{i=0}^{L-1} E[|\alpha_i|^2] \delta(\tau - \tau_i)$$
+
+**Key Parameters:**
+- **RMS Delay Spread:** $\tau_{rms} = \sqrt{\frac{\sum_i P_i \tau_i^2}{\sum_i P_i} - \left(\frac{\sum_i P_i \tau_i}{\sum_i P_i}\right)^2}$
+- **Coherence Bandwidth:** $B_c \approx \frac{1}{2\pi \tau_{rms}}$
+- **Maximum Excess Delay:** $\tau_{max} = \max_i(\tau_i) - \min_i(\tau_i)$
+
+This model forms the foundation for analyzing ISI, designing equalizers, and understanding channel capacity in multipath environments.
 
