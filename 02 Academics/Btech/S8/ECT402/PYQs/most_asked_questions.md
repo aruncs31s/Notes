@@ -34,19 +34,33 @@ Topics included if they appear (explicitly or implicitly) in ≥2 papers or form
 | Trunking / Erlang Formulas              | Blocking probability & efficiency              | [[May 2024.md#11. (b) Trunking & Grade of Service (3 Marks)]] · [[PYQ 2.md#1.  Grade Of Service (GOS)]] |
 
 ## Quick Reference Formula Snippets
-| Topic                    | Key Formula                                      |     |                  |     |       |
-| ------------------------ | ------------------------------------------------ | --- | ---------------- | --- | ----- |
-| Frequency Reuse Distance | \(D = R\sqrt{3N}\)                               |     |                  |     |       |
-| Friis (Received Power)   | \(P_r = P_t G_t G_r (\frac{\lambda}{4\pi d})^2\) |     |                  |     |       |
-| Rayleigh Outage          | \(P_{out} = 1 - e^{-\gamma_{th}/\bar{\gamma}}\)  |     |                  |     |       |
-| Ergodic Capacity         | \(C_{erg} = \mathbb{E}[B\log_2(1+\gamma)]\)      |     |                  |     |       |
-| Shannon (AWGN)           | \(C = B\log_2(1+\text{SNR})\)                    |     |                  |     |       |
-| BPSK BER AWGN            | \(P_b = Q(\sqrt{2E_b/N_0})\)                     |     |                  |     |       |
-| Coherence Bandwidth      | \(B_c \approx 1/(5\tau_{rms})\)                  |     |                  |     |       |
-| Two-Ray Crossover        | \(d_c \approx 4\pi h_t h_r / \lambda\)           |     |                  |     |       |
-| Erlang B                 | \(B(C,A)=\frac{A^C/C!}{\sum_{k=0}^C A^k/k!}\)    |     |                  |     |       |
-| PAPR                     | \(\max                                           | x   | ^2 / \mathbb{E}[ | x   | ^2]\) |
-| Doppler Shift            | \(f_D = (v/c) f \cos \theta\)                    |     |                  |     |       |
+| Topic | Key Formula |
+|-------|-------------|
+| Frequency Reuse Distance | $D = R\sqrt{3N}$ |
+| Friis (Received Power) | $P_r = P_t G_t G_r \left(\frac{\lambda}{4\pi d}\right)^2$ |
+| Rayleigh Outage | $P_{out} = 1 - e^{-\gamma_{th}/\bar{\gamma}}$ |
+| Ergodic Capacity | $C_{erg} = \mathbb{E}[B\log_2(1+\gamma)]$ |
+| Shannon (AWGN) | $C = B\log_2(1+\text{SNR})$ |
+| BPSK BER (AWGN) | $P_b = Q(\sqrt{2E_b/N_0})$ |
+| Coherence Bandwidth | $B_c \approx 1/(5\tau_{rms})$ |
+| Two-Ray Crossover Distance | $d_c \approx \frac{4\pi h_t h_r}{\lambda}$ |
+| Erlang B | $B(C,A)=\dfrac{A^C/C!}{\sum_{k=0}^C A^k/k!}$ |
+| PAPR | $\text{PAPR}= \dfrac{\max_t |x(t)|^2}{\mathbb{E}[|x(t)|^2]}$ |
+| Doppler Shift | $f_D = \frac{v}{c} f \cos \theta$ |
+
+### Block Form (Obsidian Copy Friendly)
+You can also paste these standalone:
+$$D = R\sqrt{3N}$$
+$$P_r = P_t G_t G_r \left(\frac{\lambda}{4\pi d}\right)^2$$
+$$P_{out} = 1 - e^{-\gamma_{th}/\bar{\gamma}}$$
+$$C_{erg} = \mathbb{E}[B\log_2(1+\gamma)]$$
+$$C = B\log_2(1+\text{SNR})$$
+$$P_b = Q\!\left(\sqrt{\frac{2E_b}{N_0}}\right)$$
+$$B_c \approx \frac{1}{5\tau_{rms}}$$
+$$d_c \approx \frac{4\pi h_t h_r}{\lambda}$$
+$$B(C,A)=\frac{A^C/C!}{\sum_{k=0}^C A^k/k!}$$
+$$\text{PAPR}= \frac{\max_t |x(t)|^2}{\mathbb{E}[|x(t)|^2]}$$
+$$f_D = \frac{v}{c} f \cos \theta$$
 
 ## High-Yield Study Sequence
 1. Link Fundamentals: Friis, path loss extensions (two-ray).
