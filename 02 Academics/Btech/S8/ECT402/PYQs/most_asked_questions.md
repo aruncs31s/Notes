@@ -12,6 +12,27 @@ Topics included if they appear (explicitly or implicitly) in ≥2 papers or form
 
 ## Top Recurring Themes & Linked Source Questions
 
+### Theme Completion Checklist
+Mark each theme as you finish revising (tick and optionally add date or a quick note):
+- [ ] Frequency Reuse & Capacity – derive reuse distance (D=R√3N), SIR vs N, capacity per cluster.
+- [ ] Cell Splitting & Sectoring – triggers (traffic, QoS), effect on interference & handoffs.
+- [ ] Trunking & Grade of Service – compute blocking with Erlang B; interpret offered traffic.
+- [ ] Interference Types – co-channel vs adjacent; mitigation (reuse planning, filtering, guard bands).
+- [ ] Fading (Small-Scale / Multipath) – Rayleigh/Rician basics; causes of amplitude variation.
+- [ ] Doppler / Time Selectivity – calculate Doppler shift & coherence time for sample speeds.
+- [ ] Outage Probability – Rayleigh outage P_out formula; fade margin meaning.
+- [ ] Link Budget / Friis – step-by-step received power including antenna gains, path loss, misc losses.
+- [ ] Diversity Techniques – selection vs MRC conceptually; macro vs micro examples.
+- [ ] Equalization (Linear vs Nonlinear) – ZF, MMSE tradeoffs; when DFE/MLSE preferred.
+- [ ] Cyclic Prefix / OFDM – orthogonality condition Δf=1/T_u; CP length criterion ≥ max delay spread.
+- [ ] PAPR in OFDM – compute sample PAPR; list at least 3 reduction techniques with pros/cons.
+- [ ] Channel Capacity – Shannon vs ergodic; when to use outage notion.
+- [ ] Multiple Access Comparison – resource axis & key limitation for FDMA/TDMA/CDMA/OFDMA.
+- [ ] Generational Evolution – one defining advancement per generation (1G→5G if desired).
+- [ ] Ionospheric Propagation – critical frequency derivation; simple refractive index expression.
+- [ ] Two-Ray / Path Loss Models – breakpoint distance and near/far region exponents.
+- [ ] Trunking / Erlang (Reinforce) – second pass to solidify formulas & quick estimation heuristics.
+
 | Theme                                   | Core Idea / Focus                              | Source Question Links |
 | --------------------------------------- | ---------------------------------------------- | --------------------- |
 | Frequency Reuse & Capacity              | Reuse patterns, cluster size, capacity scaling | [[October 2023 PYQ#11. (b) Cell Splitting and Sectoring for Capacity & Coverage Improvement]] · [[May 2024.md#1. Frequency reuse (3 Marks)]] · [[May 2024.md#11. (a) Capacity with 4-cell reuse (60 MHz total) (3 Marks)]] |
