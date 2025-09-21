@@ -1,4 +1,5 @@
-# October 2023 PYQ Answers
+# ECT402 - Wireless Communication Systems
+## October 2023 PYQ Answers
 
 
 - [x] [[October 2023 PYQ#1. Compare and contrast the analog and digital cellular systems|1. Compare and contrast the analog and digital cellular systems]] ✅ 2025-09-21
