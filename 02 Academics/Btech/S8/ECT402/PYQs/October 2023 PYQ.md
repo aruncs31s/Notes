@@ -65,9 +65,9 @@ Where:
 - f = carrier frequency
 - θ = angle between velocity and line of sight
 
-## 4. Assume a receiver is located 10km away from a 50W transmitter. Given f = 900 MHz, Gt = 1 and Gr= 2. Find the power at receiver and RMS voltage at receiver antenna matched with 50 Ω resistor.
+## 4. Assume a receiver is located 10 km away from a 50 W transmitter. Given f = 900 MHz, G_t = 1 and G_r = 2. Find the power at receiver and RMS voltage at receiver antenna matched with 50 Ω resistor.
 
-**Short Answer:** Received power ≈ 0.702 nW (7.02×10⁻¹0 W) giving V_rms ≈ 0.187 mV across 50 Ω using Friis equation.
+**Short Answer:** Received power ≈ 0.702 nW (\(7.02\times10^{-10}\) W) giving \(V_{\text{rms}} \approx 0.187\,\text{mV}\) across 50 Ω using Friis equation.
 
 Given:
 - P_t = 50 W
@@ -76,19 +76,26 @@ Given:
 - G_t = 1
 - G_r = 2
 
-First, wavelength λ = c/f = 3 × 10^8 / 9 × 10^8 = 0.333 m
+First, wavelength:
+$$\lambda = \frac{c}{f} = \frac{3\times10^{8}}{9\times10^{8}} = 0.333\ \text{m}$$
 
 Using Friis transmission equation:
-P_r = P_t G_t G_r (λ/(4πd))^2
+$$P_r = P_t G_t G_r \left(\frac{\lambda}{4\pi d}\right)^2$$
 
-P_r = 50 × 1 × 2 × (0.333/(4 × 3.1416 × 10000))^2
-P_r = 100 × (0.333/125663.7)^2
-P_r = 100 × (2.65 × 10^-6)^2
-P_r = 100 × 7.02 × 10^-12
-P_r = 7.02 × 10^-10 W = 0.702 nW
+Substitution steps:
+$$\begin{aligned}
+P_r &= 50 \times 1 \times 2 \left(\frac{0.333}{4\pi (10000)}\right)^2 \\
+&= 100 \left(\frac{0.333}{125663.7}\right)^2 \\
+&= 100 (2.65\times10^{-6})^{2} \\
+&= 100 (7.02\times10^{-12}) \\
+&= 7.02\times10^{-10}\ \text{W} = 0.702\ \text{nW}
+\end{aligned}$$
 
 RMS voltage across 50 Ω resistor:
-V_rms = √(P_r × R) = √(7.02 × 10^-10 × 50) = √(3.51 × 10^-8) = 1.87 × 10^-4 V
+$$\begin{aligned}
+V_{\text{rms}} &= \sqrt{P_r R} = \sqrt{7.02\times10^{-10} \times 50} \\
+&= \sqrt{3.51\times10^{-8}} = 1.87\times10^{-4}\ \text{V} = 0.187\ \text{mV}
+\end{aligned}$$
 
 ## 5. How is the outage probability computed for a wireless channel?
 
