@@ -31,7 +31,49 @@ Answer: Advantages: follows earth’s curvature enabling beyond-line-of-sight at
 relation between them. 
 (3)
 Answer: Critical frequency f_c of an ionospheric layer: highest frequency that will be reflected (returned to Earth) for vertical incidence; f_c (MHz) ≈ 9 √(N_max) where N_max is peak electron density (electrons/m³ ×10^{-12}). Maximum Usable Frequency (MUF) for an oblique path with incidence angle θ relative to the normal: MUF = f_c / cos θ = f_c sec θ. Thus MUF ≥ f_c; larger hop distances (shallower incidence) increase MUF.
-Part B (50 Marks)
+## 1. Channel capacity per cluster & total system capacity (3 Marks)
+**Answer:** Channels per cluster = 7 cells × 10 channels = 70. Total deployed channel instances = 70 × 10 clusters = 700 (only 70 unique reused 10×). Spatial reuse multiplies capacity without extra spectrum.
+
+---
+## 2. Cell splitting & performance improvement (3 Marks)
+**Answer:** Divides a large congested cell into smaller low-power cells reducing reuse distance so frequencies are reassigned more often. Benefits: higher capacity (more Erlangs/km²), lower blocking, improved SINR, reduced handset Tx power. Trade-offs: more handoffs, higher site/backhaul/optimization cost.
+
+---
+## 3. Fading definition & small-scale types (3 Marks)
+**Answer:** Rapid amplitude/phase fluctuation from multipath + motion/Doppler. Types: Flat vs frequency-selective; Fast vs slow; Statistical (Rayleigh, Rician, Nakagami-m); Mechanistic (delay-spread / Doppler dominated). 
+
+---
+## 4. Doppler shift at 3 GHz for 72 km/h (3 Marks)
+**Answer:** v = 72 km/h = 20 m/s; λ = 0.1 m; f_D = v/λ = 200 Hz. Received: Towards ≈ 3 000 000 200 Hz; Away ≈ 2 999 999 800 Hz.
+
+---
+## 5. Cyclic prefix role in OFDM (3 Marks)
+**Answer:** CP copies last L_CP samples to front making linear channel convolution circular if CP ≥ max delay spread. Eliminates ISI, preserves subcarrier orthogonality enabling one-tap equalization; adds overhead L_CP/(N+L_CP).
+
+---
+## 6. Average error probability vs outage probability (3 Marks)
+**Answer:** Average error probability: expectation of conditional error over SNR PDF (long-term BER/SER). Outage probability: P{γ < γ_th} (or capacity < target)—fraction of time QoS unmet.
+
+---
+## 7. Selection Combining diversity (3 Marks)
+**Answer:** Picks branch with max instantaneous SNR: γ_out = max(γ_i). Rayleigh outage: P_out = [1 - e^{-γ_th/γ̄}]^L. Pros: simple/low power. Cons: lower gain than MRC; needs SNR measurement & switch.
+
+---
+## 8. Linear vs nonlinear equalization (3 Marks)
+**Answer:** Equalization combats ISI by approximating inverse channel. Linear (ZF, MMSE): simpler, fixed latency; ZF noise enhancement, MMSE residual ISI tradeoff. Nonlinear (DFE, MLSE): better performance in severe ISI; costs complexity & potential error propagation (DFE) or exponential states (MLSE).
+
+---
+## 9. Ground wave propagation pros & limits (3 Marks)
+**Answer:** Pros: beyond LOS via earth-following diffraction, reliable LF/MF coverage, maritime/navigation utility. Limits: strong attenuation over poor ground, inefficiency at higher f, large λ-scale antennas, narrow bandwidth, high noise susceptibility.
+
+---
+## 10. Critical frequency & MUF relation (3 Marks)
+**Answer:** Critical frequency f_c ≈ 9√(N_max) (MHz). MUF for incidence angle θ: MUF = f_c / cos θ = f_c sec θ ≥ f_c. Shallower incidence (longer path) increases MUF.
+
+---
+## Part B (50 Marks)
+
+## 11. (a) Evolution of Wireless Generations: 2G → 3G → 4G → 5G (8 Marks)
 \n+## 11. (a) Evolution of Wireless Generations: 2G → 3G → 4G → 5G (8 Marks)
 **Answer:**
 | Generation | Approx Era | Core Services | Access / Air Interface | Peak/User Data Rate (order) | Key Technology Enablers | Limitations Driving Next Gen |
