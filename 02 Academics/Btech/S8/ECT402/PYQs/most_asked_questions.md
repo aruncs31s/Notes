@@ -12,7 +12,7 @@ Topics included if they appear (explicitly or implicitly) in ≥2 papers or form
 
 ## Top Recurring Themes & Linked Source Questions
 
-### Theme Completion Checklist
+### Completion Checklist
 Mark each theme as you finish revising (tick and optionally add date or a quick note):
 - [ ] Frequency Reuse & Capacity – derive reuse distance (D=R√3N), SIR vs N, capacity per cluster.
 - [ ] Cell Splitting & Sectoring – triggers (traffic, QoS), effect on interference & handoffs.
