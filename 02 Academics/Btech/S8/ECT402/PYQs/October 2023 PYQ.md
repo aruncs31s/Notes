@@ -48,7 +48,7 @@ The main hand-off methods are:
 
 ## 3. How does fading occur? Derive the expression for doppler shift.
 
-**Short Answer:** Fading results from multipath components adding with time-varying phase; Doppler shift for a path is f_d = (v/c) f cosθ where θ is the angle between motion and arrival direction.
+**Short Answer:** Fading results from multipath components adding with time-varying phase; Doppler shift for a path is $f_d = \frac{v}{c} f \cos\theta$ where θ is the angle between motion and arrival direction.
 
 **Fading Occurrence:**
 Fading occurs due to multipath propagation where signals arrive at the receiver via multiple paths with different delays, amplitudes, and phases. This causes constructive and destructive interference, leading to variations in signal strength.
@@ -57,7 +57,7 @@ Fading occurs due to multipath propagation where signals arrive at the receiver 
 When a mobile moves with velocity v towards a transmitter, the frequency appears higher. The relative velocity component is v cosθ, where θ is the angle between velocity vector and line of sight.
 
 The Doppler shift frequency is:
-f_d = (v/c) f cosθ
+$$f_d = \frac{v}{c} f \cos\theta$$
 
 Where:
 - v = mobile velocity
@@ -99,18 +99,18 @@ V_{\text{rms}} &= \sqrt{P_r R} = \sqrt{7.02\times10^{-10} \times 50} \\
 
 ## 5. How is the outage probability computed for a wireless channel?
 
-**Short Answer:** Outage probability is P_out = Pr{γ < γ_th}; for Rayleigh fading P_out = 1 - exp(-γ_th/γ_avg).
+**Short Answer:** Outage probability is $P_{out} = \text{Pr}\{\gamma < \gamma_{th}\}$; for Rayleigh fading $P_{out} = 1 - \exp(-\gamma_{th}/\gamma_{avg})$.
 
 Outage probability is the probability that the received signal quality falls below an acceptable threshold.
 
 For a Rayleigh fading channel, the outage probability is:
-P_out = 1 - exp(-γ_th / γ_avg)
+$$P_{out} = 1 - \exp\left(-\frac{\gamma_{th}}{\gamma_{avg}}\right)$$
 
 Where:
-- γ_th = threshold SNR
-- γ_avg = average SNR
+- $\gamma_{th}$ = threshold SNR
+- $\gamma_{avg}$ = average SNR
 
-This represents the probability that the instantaneous SNR γ < γ_th.
+This represents the probability that the instantaneous SNR $\gamma < \gamma_{th}$.
 
 ## 6. Explain the significance of using cyclic prefix in an OFDM system
 
@@ -169,25 +169,25 @@ The cyclic prefix (CP) is a guard interval added to each OFDM symbol to combat i
 
 ## 9. Deduce the expression for critical frequency of an ionised region
 
-**Short Answer:** The critical frequency equals the maximum plasma frequency: f_c = (1/2π)√(N_max e²/(ε₀ m_e)) ≈ 9√N_max kHz (N_max in 10⁶ electrons/m³).
+**Short Answer:** The critical frequency equals the maximum plasma frequency: $f_c = \frac{1}{2\pi}\sqrt{\frac{N_{max} e^2}{\varepsilon_0 m_e}} \approx 9\sqrt{N_{max}}$ kHz ($N_{max}$ in $10^6$ electrons/m³).
 
 The critical frequency f_c is the maximum frequency that can be reflected by an ionized layer.
 
 For a parabolic electron density profile, the critical frequency is:
-f_c = 9 √N_max kHz
+$$f_c = 9 \sqrt{N_{max}} \text{ kHz}$$
 
-Where N_max is the maximum electron density in electrons/m³.
+Where $N_{max}$ is the maximum electron density in electrons/m³.
 
 **Derivation:**
-The refractive index μ = √(1 - (f_p/f)^2), where f_p = plasma frequency.
+The refractive index $\mu = \sqrt{1 - \left(\frac{f_p}{f}\right)^2}$, where $f_p$ = plasma frequency.
 
-For reflection, μ = 0 when f = f_p.
+For reflection, $\mu = 0$ when $f = f_p$.
 
-f_p = (1/(2π)) √(N e²/(ε₀ m))
+$$f_p = \frac{1}{2\pi} \sqrt{\frac{N e^2}{\varepsilon_0 m}}$$
 
-Critical frequency f_c = f_p_max = (1/(2π)) √(N_max e²/(ε₀ m))
+Critical frequency $f_c = f_{p_{max}} = \frac{1}{2\pi} \sqrt{\frac{N_{max} e^2}{\varepsilon_0 m}}$
 
-Substituting constants: f_c ≈ 9 √N_max kHz (for N_max in 10^6 electrons/m³)
+Substituting constants: $f_c \approx 9 \sqrt{N_{max}}$ kHz (for $N_{max}$ in $10^6$ electrons/m³)
 
 ## 10. Explain the mechanism of wave bending (refraction) in the ionosphere
 
@@ -198,18 +198,18 @@ When a high-frequency (HF) radio wave enters the ionosphere, it encounters a med
 ### 10.1 Basic Mechanism (Gradual Refraction)
 1. Electron density N(h) increases with height (up to a peak) in an ionospheric layer (e.g., E, F1, F2).
 2. The plasma (Appleton) refractive index (neglecting Earth's magnetic field and collisions for simplicity) is:
-	n = √(1 - (f_p^2 / f^2)) ,  where  f_p = 9√N   (f_p in Hz if N in electrons/m³ / 10^6)
+	$n = \sqrt{1 - \frac{f_p^2}{f^2}}$ ,  where  $f_p = 9\sqrt{N}$   ($f_p$ in Hz if $N$ in electrons/m³ / $10^6$)
 3. As the wave penetrates to regions of higher N, f_p increases, so (f_p/f) increases and n decreases.
-4. By Snell's law for a stratified medium:  n(h) sin θ(h) = constant = n_0 sin θ_0 . As n decreases with altitude, sin θ must increase, causing θ (the angle from the normal) to increase; hence the ray bends away from the normal (toward the Earth surface direction).
-5. At some altitude h_c, θ → 90° (wave becomes horizontal). Beyond that point propagation upward would require sin θ > 1 (impossible), so the energy is returned downward.
+4. By Snell's law for a stratified medium:  $n(h) \sin \theta(h) = \text{constant} = n_0 \sin \theta_0$ . As $n$ decreases with altitude, $\sin \theta$ must increase, causing $\theta$ (the angle from the normal) to increase; hence the ray bends away from the normal (toward the Earth surface direction).
+5. At some altitude $h_c$, $\theta \to 90°$ (wave becomes horizontal). Beyond that point propagation upward would require $\sin \theta > 1$ (impossible), so the energy is returned downward.
 
 ### 10.2 Critical Frequency and Vertical Incidence
-For vertical incidence (θ_0 = 0 ⇒ sin θ_0 = 0), Snell's law does not invoke angular bending; the wave penetrates until n → 0. The condition n = 0 gives f = f_p(max) = f_c (critical frequency) for that layer. Thus vertically incident waves with f > f_c pass through the layer into higher regions of the ionosphere / space; those with f < f_c are returned.
+For vertical incidence ($\theta_0 = 0 \Rightarrow \sin \theta_0 = 0$), Snell's law does not invoke angular bending; the wave penetrates until $n \to 0$. The condition $n = 0$ gives $f = f_{p(max)} = f_c$ (critical frequency) for that layer. Thus vertically incident waves with $f > f_c$ pass through the layer into higher regions of the ionosphere / space; those with $f < f_c$ are returned.
 
 ### 10.3 Oblique Incidence and Maximum Usable Frequency (MUF)
-For an oblique path of range D with reflection from a layer of maximum electron density N_max (critical frequency f_c):
-MUF ≈ f_c / cos θ_i  (secant law)
-where θ_i is the angle of incidence at the equivalent flat layer (from the normal). Higher MUF allows longer skip distances for the same layer.
+For an oblique path of range D with reflection from a layer of maximum electron density $N_{max}$ (critical frequency $f_c$):
+$$\text{MUF} \approx \frac{f_c}{\cos \theta_i}  \text{  (secant law)}$$
+where $\theta_i$ is the angle of incidence at the equivalent flat layer (from the normal). Higher MUF allows longer skip distances for the same layer.
 
 ### 10.4 Skip Distance
 The skip distance is the minimum ground range from the transmitter at which a sky wave of a given frequency returns to Earth on its first hop. For frequencies just below MUF, the virtual reflection height is high and the ray returns far away, creating a "skip zone" (no coverage) between the end of ground wave and the first sky wave return point.
@@ -236,11 +236,11 @@ graph LR
 ```
 
 ### 10.6 Key Relations Summary
-1. Refractive index (simplified): n ≈ √(1 - (f_p/f)^2)
-2. Plasma (critical) frequency: f_p = (1/2π) √(N e^2 / (ε_0 m_e)) ≈ 9√N   (Hz, N in electrons/m³ / 10^6)
-3. Snell's law in stratified ionosphere: n(h) sin θ(h) = constant
-4. Critical frequency (vertical incidence): f_c = f_p(max)
-5. MUF (single hop, flat layer approximation): MUF ≈ f_c / cos θ_i
+1. Refractive index (simplified): $n \approx \sqrt{1 - \left(\frac{f_p}{f}\right)^2}$
+2. Plasma (critical) frequency: $f_p = \frac{1}{2\pi} \sqrt{\frac{N e^2}{\varepsilon_0 m_e}} \approx 9\sqrt{N}$   (Hz, $N$ in electrons/m³ / $10^6$)
+3. Snell's law in stratified ionosphere: $n(h) \sin \theta(h) = \text{constant}$
+4. Critical frequency (vertical incidence): $f_c = f_{p(max)}$
+5. MUF (single hop, flat layer approximation): $\text{MUF} \approx \frac{f_c}{\cos \theta_i}$
 
 ### 10.7 Factors Affecting Bending
 - Time of day (solar ionization increases daytime electron density)
