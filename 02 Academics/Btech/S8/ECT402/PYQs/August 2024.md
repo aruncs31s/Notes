@@ -40,6 +40,7 @@
 ---
 ## Part B (50 Marks)
 
+## 11. (a) Evolution of Wireless Generations: 2G → 3G → 4G → 5G (8 Marks)
 **Answer:**
 | Generation | Approx Era | Core Services | Access / Air Interface | Peak/User Data Rate (order) | Key Technology Enablers | Limitations Driving Next Gen |
 |------------|------------|---------------|------------------------|-----------------------------|-------------------------|------------------------------|
@@ -293,5 +294,143 @@ Discrete (oversampled) variant: \( \text{PAPR} = \max_n |x[n]|^2 / (\frac{1}{N}\
 **Design Considerations:** Combine moderate clipping with digital pre-distortion (DPD) for PA efficiency; in uplink choose SC-FDMA to reduce UE PAPR; downlink may use SLM/PTS selectively for high-order modulation carriers.
 
 **Short Answer:** PAPR = peak instantaneous power / average power of OFDM symbol; high due to many summed subcarriers. Reduce via clipping/filtering, SLM, PTS, tone reservation/injection, ACE, companding, or DFT-spreading (SC-FDMA) depending on distortion, complexity, and side info trade-offs.
+
+---
+## 17. (a) Alamouti Scheme for 2×2 MIMO (7 Marks)
+**Answer:** The classic Alamouti Space-Time Block Code (STBC) provides full diversity gain with simple linear combiner. For 2 Tx, 1 or more Rx antennas, code rate = 1.
+
+**Transmit Encoding (2 Time Slots):** For complex symbols \(s_1, s_2\):
+Time slot t: Antenna 1 → \(s_1\), Antenna 2 → \(s_2\)
+Time slot t+T: Antenna 1 → \(-s_2^*\), Antenna 2 → \( s_1^*\)
+
+Code matrix (rows=time, columns=Tx):
+\[\mathbf{S} = \begin{bmatrix} s_1 & s_2 \\ -s_2^* & s_1^* \end{bmatrix}\]
+Orthogonality: \( \mathbf{S}^H \mathbf{S} = (|s_1|^2 + |s_2|^2) \mathbf{I}_2 \).
+
+**Channel Model (2×2):** Let first receive antenna channels: \(h_{1}, h_{2}\) from Tx1, Tx2; second receive antenna: \(g_{1}, g_{2}\). Assume quasi-static flat fading over two time slots.
+
+Received signals (Rx antenna 1):
+\( y_{1} = h_1 s_1 + h_2 s_2 + n_{1} \)
+\( y_{2} = -h_1 s_2^* + h_2 s_1^* + n_{2} \)
+Similarly for second Rx: \( z_{1} = g_1 s_1 + g_2 s_2 + n'_{1} \), \( z_{2} = -g_1 s_2^* + g_2 s_1^* + n'_{2} \).
+
+Form decision statistics (combine conjugate of second slot):
+\[ \tilde{s}_1 = h_1^* y_1 + h_2 y_2^* + g_1^* z_1 + g_2 z_2^* = (|h_1|^2 + |h_2|^2 + |g_1|^2 + |g_2|^2) s_1 + \tilde{n}_1 \]
+\[ \tilde{s}_2 = h_2^* y_1 - h_1 y_2^* + g_2^* z_1 - g_1 z_2^* = (|h_1|^2 + |h_2|^2 + |g_1|^2 + |g_2|^2) s_2 + \tilde{n}_2 \]
+
+Thus each symbol sees sum of squared magnitudes (diversity order up to 4 with 2 Rx). Simple linear combining (no ML search) yields optimal detection for this orthogonal design.
+
+**Properties:**
+| Aspect | Value |
+|--------|-------|
+| Code rate | 1 (two symbols over two slots) |
+| Diversity order (with R Rx) | 2R |
+| Decoding | Linear combining + scalar decisions |
+| Complexity | Low |
+| Assumptions | Channel constant over code block (2 slots) |
+| Limitations | Extends to >2 Tx only with rate<1 orthogonal codes (e.g., rate 3/4 for 3 or 4 Tx) |
+
+**Short Answer:** Alamouti maps \([s_1,s_2]\) over two antennas & two times as \(\begin{bmatrix}s_1 & s_2\\ -s_2^* & s_1^*\end{bmatrix}\); linear combining gives full transmit diversity with rate 1 and simple decoding.
+
+---
+## 17. (b) Multiple Access Methods Comparison (8 Marks)
+**Answer:** Multiple access partitions shared medium in frequency, time, code, or subcarrier resources.
+
+| Attribute | FDMA | TDMA | CDMA | OFDMA |
+|-----------|------|------|------|-------|
+| Resource Dimension | Separate frequency bands | Time slots in a frame | Spread-spectrum codes over full band | Orthogonal subcarriers (frequency bins + time symbols) |
+| User Separation | Guard bands | Guard times / sync | Low cross-correlation codes (orthogonal/pseudo-random) | Subcarrier allocation (dynamic) |
+| Spectral Efficiency | Moderate (guard bands waste) | Higher than FDMA; frame overhead | High (frequency reuse factor 1) but interference-limited | High; flexible allocation & adaptive modulation |
+| Power Control Importance | Moderate | Moderate (for uplink fairness) | Critical (near-far problem) | Important (but less severe than CDMA; per subcarrier adaptation) |
+| Complexity | Low | Moderate (synchronization) | High (RAKE, multiuser detection) | High (FFT, scheduling, CQI feedback) |
+| Resilience to Fading | Frequency-selective per user channel | Slot-level variations; frequency diversity limited | Frequency diversity inherent (spreading) + multipath combining | Fine-grained frequency diversity via scheduling & coding |
+| Interference Nature | Adjacent channel & IMD | Co-channel timeslot collisions if unsync | Multiple access interference (MAI) + self-jam | Inter-carrier interference if sync errors |
+| QoS Flexibility | Limited | Moderate via slot allocation | Harder (code & power adjustments) | High (dynamic subcarrier/time allocation) |
+| Typical Use | 1G analog / some satellite | 2G GSM | 3G (W-CDMA, cdma2000) | 4G/5G downlink & uplink (OFDMA / SC-FDMA) |
+| Guard Overheads | Guard bands | Guard periods | Code orthogonality degradation with load | CP + pilot overhead |
+
+**Short Answer:** FDMA splits spectrum; TDMA splits time; CDMA overlays users via codes needing power control; OFDMA assigns orthogonal subcarriers/time slots enabling adaptive, high spectral efficiency.
+
+---
+## 18. (a) Role of LMS Algorithm in Adaptive Equalization (7 Marks)
+**Answer:** The Least Mean Squares (LMS) algorithm adapts filter tap weights to minimize the mean square error (MSE) between equalizer output and a desired reference (training symbols or decision-directed estimates), counteracting time-varying ISI in dispersive channels with low computational complexity.
+
+**Equalizer Structure:** FIR with weight vector \(\mathbf{w}[n]\); input vector \(\mathbf{x}[n] = [x[n], x[n-1], ..., x[n-L+1]]^T\). Output: \( y[n] = \mathbf{w}^H[n] \mathbf{x}[n] \). Error: \( e[n] = d[n] - y[n] \), where \(d[n]\) is known training symbol (or tentative decision for decision-directed mode).
+
+**LMS Weight Update:**
+$$ \mathbf{w}[n+1] = \mathbf{w}[n] + \mu \, e^*[n] \, \mathbf{x}[n] $$
+Step size \(\mu\) controls convergence vs stability. Approximate stability bound: \( 0 < \mu < 2/\lambda_{max} \) (largest eigenvalue of input autocorrelation matrix \(\mathbf{R}\)). Practical heuristic: \( \mu \lesssim 1/(5 L P_x) \) where \(P_x\) is input power.
+
+**Operation Phases:**
+1. Training (known sequence) for fast initial convergence.
+2. Decision-Directed tracking (replace \(d[n]\) with sliced \(\hat{s}[n]\)) to follow slow channel variations.
+
+**Why LMS:** Low complexity O(L) per symbol vs RLS (O(L^2)); robust, easily implemented in hardware/DSP. Converges to vicinity of Wiener solution with excess MSE (misadjustment) \(M \approx \frac{\mu}{2} \text{Tr}(\mathbf{R})\).
+
+**Variants:** Normalized LMS (NLMS) uses adaptive step: \( \mathbf{w}[n+1] = \mathbf{w}[n] + \frac{\mu}{\epsilon + \|\mathbf{x}[n]\|^2} e^*[n] \mathbf{x}[n] \); improves convergence under power fluctuations. Other: RLS (faster, higher complexity), CMA (blind), DD-LMS (tracking), VSLMS (variable step size).
+
+**Short Answer:** LMS iteratively updates equalizer taps via \(\mathbf{w}_{n+1}=\mathbf{w}_n+\mu e^*_n \mathbf{x}_n\) to minimize ISI-induced MSE with low complexity and adaptive tracking.
+
+---
+## 18. (b) Uplink vs Downlink in Multiuser Systems (8 Marks)
+**Answer:** Uplink (UL, user→base station) and downlink (DL, base station→users) differ in power asymmetry, channel estimation direction, interference structure, and scheduling constraints.
+
+| Aspect | Uplink (UL) | Downlink (DL) |
+|--------|-------------|---------------|
+| Transmit Power Budget | Low & constrained (battery devices) | Higher (BS mains powered) |
+| Peak-to-Average Constraints | Critical (PAPR mitigations e.g., SC-FDMA) | Less restrictive (OFDMA widely used) |
+| Multiple Access Mechanism | SC-FDMA (LTE), UL OFDMA (5G), random access preambles | OFDMA / resource blocks scheduled |
+| Channel Estimation | BS estimates per-user UL channel from pilots | UEs estimate DL channel from reference signals; BS relies on feedback (CQI, PMI, RI) |
+| Reciprocity Use | In TDD, UL estimates reused for DL precoding (after calibration) | FDD lacks reciprocity (needs feedback) |
+| Interference Profile | Interference from other UEs (power-controlled) | Inter-cell interference dominant; intra-cell managed by precoding |
+| Scheduling Objective | Fairness vs battery vs latency; limited feedback overhead | Throughput maximization + QoS classes; rich CSI allows beamforming |
+| Power Control | Fast closed-loop to mitigate near-far | DL power shaping across beams/subcarriers |
+| MIMO Processing | Uplink combining (receive beamforming) at BS | Downlink precoding / beamforming at BS |
+| Mobility Impact | Timing advance needed; random access collisions | Doppler affects CSI aging & beam tracking |
+| HARQ Timing | UL grants & ACK/NACK windows; device timing constraints | DL scheduling + UE ACK/NACK feedback |
+| Resource Constraints | UE RF chains limited (fewer antennas) | BS massive MIMO arrays feasible |
+
+**Challenges:**
+- UL: Near-far effect, tight power control loops, random access collisions, limited UE antenna count, energy efficiency.
+- DL: Accurate CSI acquisition under mobility, inter-cell interference (especially at edges), scheduling fairness, massive MIMO beam management.
+
+**Short Answer:** Uplink is power/feedback constrained with BS-side combining and strong power control; downlink leverages higher BS power & precoding but depends on timely CSI feedback or reciprocity.
+
+---
+## 19. (a) Derivation of Ionospheric Refractive Index Expression (9 Marks)
+**Answer:** The ionosphere is a weakly ionized plasma. For an EM wave of angular frequency \(\omega\) propagating in a cold, collisionless, unmagnetized plasma (ignoring Earth's magnetic field initially), electron motion satisfies:
+$$ m_e \frac{d^2 x}{dt^2} = -e E_0 e^{-j\omega t} $$
+Solution: \( x = \frac{e}{m_e \omega^2} E_0 e^{-j\omega t} \). Induced current density: \( J = -n_e e \frac{dx}{dt} = j \frac{n_e e^2}{m_e \omega} E_0 e^{-j\omega t} \). Polarization \( P = \epsilon_0 \chi_e E \) gives effective permittivity:
+$$ \epsilon = \epsilon_0 \left(1 - \frac{\omega_p^2}{\omega^2} \right), \qquad \omega_p^2 = \frac{n_e e^2}{\epsilon_0 m_e} $$
+Refractive index squared: \( n^2 = \frac{\epsilon}{\epsilon_0} = 1 - \frac{\omega_p^2}{\omega^2} = 1 - \frac{f_p^2}{f^2} \) where plasma frequency \( f_p = \omega_p / (2\pi) \).
+
+Including collisions (electron-neutral) with collision frequency \( \nu \):
+$$ n^2 = 1 - \frac{\omega_p^2}{\omega (\omega + j\nu)} $$
+Under Earth's magnetic field (Appleton-Hartree):
+$$ n^2 = 1 - \frac{X}{1 - jZ \mp \frac{Y_T^2}{2(1 - X - jZ)} + \sqrt{\left(\frac{Y_T^2}{2(1 - X - jZ)}\right)^2 + Y_L^2}} $$
+Simplified ordinary-wave (ignoring magnetic splitting & collisions for most HF critical frequency calculations):
+$$ n \approx \sqrt{1 - \frac{f_p^2}{f^2}} $$
+Wave reflects (refracted back) when the term under square root becomes zero ⇒ cutoff/critical frequency \( f_c = f_p \).
+
+**Short Answer:** Neglecting collisions & magnetic field: \( n = \sqrt{1 - f_p^2/f^2} \) with \( f_p = 9\sqrt{N_e} \) kHz (\(N_e\) in electrons/cm³).
+
+---
+## 19. (b) Maximum Ionic Density & Critical Frequency (6 Marks)
+**Answer:** Given refractive index \( n = 0.92 \) at frequency \( f = 10\,\text{MHz} \). Using \( n^2 = 1 - f_p^2/f^2 \):
+$$ f_p = f \sqrt{1 - n^2} = 10\,\text{MHz} \times \sqrt{1 - 0.92^2} $$
+Compute: \( 0.92^2 = 0.8464 \Rightarrow 1 - 0.8464 = 0.1536 \). \( \sqrt{0.1536} = 0.3920 \).
+Thus \( f_p = 10 \times 0.3920 = 3.92\,\text{MHz} \).
+
+Plasma frequency relation (with electron density in m^{-3}):
+$$ f_p(\text{Hz}) = 8.98 \times 10^3 \sqrt{N_e(\text{cm}^{-3})} = 8.98 \sqrt{N_e(\text{m}^{-3})/10^{12}}\,\text{MHz} $$
+Solve for maximum electron (ionic) density \(N_{max}\):
+\( N_{max} = \left( \frac{f_p}{8.98\,\text{kHz}} \right)^2 \text{ cm}^{-3} = \left( \frac{3.92\times10^6}{8.98\times10^3} \right)^2 \approx (436.4)^2 \approx 1.90\times10^{5}\,\text{cm}^{-3} \).
+Convert to m^{-3}: \( 1.90\times10^{5} \times 10^{6} = 1.90\times10^{11}\,\text{m}^{-3} \).
+
+Critical frequency for vertical incidence corresponds to \( f_c = f_p = 3.92\,\text{MHz} \) (this is the layer's critical frequency; the probing 10 MHz wave has refractive index <1 and would pass if not at lower angle). Given the wave at 10 MHz sees n=0.92, the layer would reflect frequencies below 3.92 MHz at vertical incidence.
+
+**Results:** \( f_p = f_c \approx 3.92\,\text{MHz} \); \( N_{max} \approx 1.9 \times 10^{11}\,\text{m}^{-3} \).
+
+**Short Answer:** \( f_c = 3.92\,\text{MHz} \); maximum electron density \( \approx 1.9\times10^{11}\,\text{m}^{-3} \) (\(1.9\times10^{5}\,\text{cm}^{-3}\)).
 
 ---
