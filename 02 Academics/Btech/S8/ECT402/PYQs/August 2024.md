@@ -3,23 +3,23 @@
 
 ---
 ## 2. Cell splitting & performance improvement (3 Marks)
-**Answer:** Divides a large congested cell into smaller low-power cells reducing reuse distance so frequencies are reassigned more often. Benefits: higher capacity (more Erlangs/km²), lower blocking, improved SINR, reduced handset Tx power. Trade-offs: more handoffs, higher site/backhaul/optimization cost.
+**Answer:** Divides a large congested cell into smaller low-power cells reducing reuse distance so frequencies are reassigned more often. Benefits: higher capacity (more Erlangs/km²), lower blocking, improved SINR[^SINR], reduced handset Tx power. Trade-offs: more handoffs, higher site/backhaul/optimization cost.
 
 ---
 ## 3. Fading definition & small-scale types (3 Marks)
-**Answer:** Rapid amplitude/phase fluctuation from multipath + motion/Doppler. Types: Flat vs frequency-selective; Fast vs slow; Statistical (Rayleigh, Rician, Nakagami-m); Mechanistic (delay-spread / Doppler dominated). 
+**Answer:** Rapid amplitude/phase fluctuation from multipath + motion/Doppler[^DOPPLER]. Types: Flat vs frequency-selective; Fast vs slow; Statistical (Rayleigh[^RAYLEIGH], Rician[^RICIAN], Nakagami-m); Mechanistic (delay-spread / Doppler dominated). 
 
 ---
 ## 4. Doppler shift at 3 GHz for 72 km/h (3 Marks)
 **Answer:** v = 72 km/h = 20 m/s; λ = 0.1 m; f_D = v/λ = 200 Hz. Received: Towards ≈ 3 000 000 200 Hz; Away ≈ 2 999 999 800 Hz.
 
 ---
-## 5. Cyclic prefix role in OFDM (3 Marks)
-**Answer:** CP copies last L_CP samples to front making linear channel convolution circular if CP ≥ max delay spread. Eliminates ISI, preserves subcarrier orthogonality enabling one-tap equalization; adds overhead L_CP/(N+L_CP).
+## 5. Cyclic prefix role in OFDM[^OFDM] (3 Marks)
+**Answer:** CP[^CP] copies last L_CP samples to front making linear channel convolution circular if CP ≥ max delay spread. Eliminates ISI[^ISI], preserves subcarrier orthogonality enabling one-tap equalization; adds overhead L_CP/(N+L_CP).
 
 ---
 ## 6. Average error probability vs outage probability (3 Marks)
-**Answer:** Average error probability: expectation of conditional error over SNR PDF (long-term BER/SER). Outage probability: P{γ < γ_th} (or capacity < target)—fraction of time QoS unmet.
+**Answer:** Average error probability: expectation of conditional error over SNR[^SNR] PDF (long-term BER[^BER]/SER[^SER]). Outage probability[^OUTAGE]: P{γ < γ_th} (or capacity < target)—fraction of time QoS unmet.
 
 ---
 ## 7. Selection Combining diversity (3 Marks)
