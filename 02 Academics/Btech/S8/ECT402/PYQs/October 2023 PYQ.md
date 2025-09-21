@@ -756,3 +756,138 @@ With the outage requirement:
 $$\bar{\gamma} = \frac{13.84}{0.1054} \approx 131.3 \text{ (21.2 dB)}$$
 
 **Final Answer:** The required average SNR per bit is approximately **21.2 dB**.
+## 16. (a) How can the subcarrier fading be mitigated in multicarrier modulation system?
+
+**Short Answer:** Subcarrier fading is mitigated through frequency diversity (coding across subcarriers), adaptive modulation, power/bit loading, interleaving, and MIMO techniques to exploit frequency selectivity.
+
+**Subcarrier Fading Problem:**
+In multicarrier systems like OFDM, different subcarriers experience independent fading due to frequency selectivity. Some subcarriers may be in deep fade while others have good channel conditions.
+
+**Mitigation Techniques:**
+
+### 1. Frequency Diversity
+- **Forward Error Correction (FEC):** Spread coded bits across multiple subcarriers
+- **Interleaving:** Distribute data symbols across frequency domain to decorrelate fading
+- **Repetition Coding:** Transmit same information on multiple subcarriers
+
+### 2. Adaptive Modulation and Coding (AMC)
+- **Bit Loading:** Allocate more bits to subcarriers with better SNR
+- **Power Loading:** Allocate more power to subcarriers with poor channel conditions
+- **Water-filling Algorithm:** Optimal power allocation based on channel state information
+
+Mathematical formulation for water-filling:
+$$P_k = \max\left(0, \mu - \frac{1}{|H_k|^2}\right)$$
+where $P_k$ is power allocated to subcarrier $k$, $H_k$ is channel gain, and $\mu$ is water level.
+
+### 3. Channel Coding Across Subcarriers
+- **Convolutional Codes:** Encode across frequency domain
+- **Reed-Solomon Codes:** Correct burst errors affecting multiple subcarriers
+- **LDPC/Turbo Codes:** Provide strong error correction capability
+
+### 4. MIMO Techniques
+- **Spatial Diversity:** Use multiple antennas to create independent fading paths
+- **Beamforming:** Direct energy toward receiver to improve SNR
+- **Space-Frequency Coding:** Combine spatial and frequency diversity
+
+### 5. Pilot-Based Channel Estimation
+- **Pilot Subcarriers:** Known symbols for channel estimation
+- **Interpolation:** Estimate channel for data subcarriers from pilot measurements
+- **Wiener Filtering:** Optimal channel estimation in frequency domain
+
+### 6. Subcarrier Grouping
+- **Resource Block Allocation:** Group adjacent subcarriers with similar channel conditions
+- **Chunk-based Allocation:** Allocate contiguous subcarriers to users
+
+**Performance Improvement:**
+These techniques transform the frequency-selective channel into multiple parallel flat-fading channels, enabling:
+- Reduced BER through diversity gain
+- Increased spectral efficiency via adaptive techniques
+- Robust performance in multipath environments
+
+## 16. (b) Explain the techniques employed to reduce PAPR in OFDM.
+
+**Short Answer:** PAPR reduction techniques include clipping, coding methods (SLM, PTS), tone reservation/injection, companding, and active constellation extension to limit peak power while maintaining performance.
+
+**PAPR Problem in OFDM:**
+Peak-to-Average Power Ratio (PAPR) occurs when multiple subcarriers add constructively, creating high instantaneous power peaks that can saturate power amplifiers and cause nonlinear distortion.
+
+PAPR is defined as:
+$$\text{PAPR} = \frac{\max_{0 \leq t \leq T} |x(t)|^2}{E[|x(t)|^2]}$$
+
+**PAPR Reduction Techniques:**
+
+### 1. Signal Distortion Techniques
+
+#### Clipping
+- **Hard Clipping:** Limit signal amplitude to threshold $A$:
+$$x_{clipped}(t) = \begin{cases}
+x(t), & |x(t)| \leq A \\
+A \cdot \frac{x(t)}{|x(t)|}, & |x(t)| > A
+\end{cases}$$
+
+- **Soft Clipping:** Gradual amplitude limitation using smooth functions
+- **Drawback:** Introduces in-band distortion and out-of-band radiation
+
+#### Companding
+- **μ-law/A-law Companding:** Compress large amplitudes, expand small ones
+- **Transform:** $F(x) = \frac{\mu x}{1 + \mu |x|}$ (μ-law)
+- **Advantage:** Reduces PAPR while maintaining signal characteristics
+
+### 2. Coding Techniques
+
+#### Selected Mapping (SLM)
+- Generate $U$ different representations of same data using different phase sequences
+- Select representation with lowest PAPR
+- **Phase Sequence:** $\phi^{(u)} = [\phi_0^{(u)}, \phi_1^{(u)}, ..., \phi_{N-1}^{(u)}]$
+- **Modified Symbol:** $X_k^{(u)} = X_k \cdot e^{j\phi_k^{(u)}}$
+- **PAPR Reduction:** $\approx 3$ dB for $U = 16$ sequences
+
+#### Partial Transmit Sequence (PTS)
+- Partition subcarriers into $V$ disjoint subblocks
+- Multiply each subblock by rotation factor $b_v$
+- **Optimized Signal:** $x = \sum_{v=1}^{V} b_v \cdot x^{(v)}$
+- **Search:** Find optimal $\{b_v\}$ to minimize PAPR
+
+### 3. Multiple Signal Representation
+
+#### Tone Reservation (TR)
+- Reserve specific subcarriers for PAPR reduction
+- **Peak Reduction Signal:** $c(t) = \sum_{k \in R} C_k e^{j2\pi kt/T}$
+- **Transmitted Signal:** $x_{TR}(t) = x(t) + c(t)$
+- **Constraint:** Reserved tones carry no data information
+
+#### Tone Injection (TI)
+- Expand constellation points to create multiple representations
+- Each data symbol mapped to set of equivalent points
+- Select point that minimizes PAPR
+
+### 4. Probabilistic Techniques
+
+#### Active Constellation Extension (ACE)
+- Extend outer constellation points away from origin
+- **Extended Points:** Move in direction that reduces PAPR
+- **Advantage:** No data rate loss, no side information required
+
+#### Interleaving
+- **Random Interleaving:** Randomize subcarrier allocation
+- **Block Interleaving:** Systematic reordering of data symbols
+- **Effect:** Decorrelate subcarrier phases to reduce peak probability
+
+### 5. Hybrid Approaches
+- **SLM + PTS:** Combine benefits of both techniques
+- **Clipping + Filtering:** Reduce peaks then filter out-of-band emissions
+- **Coding + Clipping:** Use error correction to handle clipping distortion
+
+**Performance Comparison:**
+| Technique | PAPR Reduction | Complexity | Data Rate Loss | Side Information |
+|-----------|----------------|------------|----------------|------------------|
+| Clipping | 3-4 dB | Low | No | No |
+| SLM | 2-3 dB | Medium | No | Yes |
+| PTS | 2-4 dB | High | No | Yes |
+| TR | 4-5 dB | Medium | Yes | No |
+| ACE | 1-2 dB | Low | No | No |
+
+**Trade-offs:**
+- **Complexity vs Performance:** More sophisticated techniques offer better PAPR reduction but higher computational cost
+- **Data Rate vs PAPR:** Some techniques sacrifice spectral efficiency for PAPR reduction
+- **Distortion vs Reduction:** Aggressive techniques may introduce signal distortion
