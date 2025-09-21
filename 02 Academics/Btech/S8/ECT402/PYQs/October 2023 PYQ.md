@@ -16,7 +16,7 @@
 - [ ] [[October 2023 PYQ#12. (a) Channel Assignment Strategies in Cellular Systems|12. (a) Channel Assignment Strategies in Cellular Systems]]
 - [ ] [[October 2023 PYQ#12. (b) Features of 4G Wireless Networks|12. (b) Features of 4G Wireless Networks]]
 
-# 1. Compare and contrast the analog and digital cellular systems
+## 1. Compare and contrast the analog and digital cellular systems
 
 *Analog Cellular Systems (e.g., AMPS):**
 - Use analog modulation techniques for voice transmission
