@@ -40,8 +40,13 @@
 ---
 ## Part B (50 Marks)
 
-## 11. (a) Evolution of Wireless Generations: 2G → 3G → 4G → 5G (8 Marks)
-\n+## 11. (a) Evolution of Wireless Generations: 2G → 3G → 4G → 5G (8 Marks)
+**Answer:**
+| Generation | Approx Era | Core Services | Access / Air Interface | Peak/User Data Rate (order) | Key Technology Enablers | Limitations Driving Next Gen |
+|------------|------------|---------------|------------------------|-----------------------------|-------------------------|------------------------------|
+| 2G (GSM/IS-95) | ~1991–2000 | Circuit voice + low-rate SMS/data (GPRS/EDGE) | TDMA/FDMA (GSM), CDMA (IS-95) | Tens–100 kbps (EDGE ~200 kbps) | Digital modulation, SIM-based auth, basic encryption, frequency reuse optimization | Limited data throughput; circuit-switched core |
+| 3G (UMTS/CDMA2000) | ~2001–2010 | Voice + packet data + multimedia (video calls) | W-CDMA / CDMA2000 | Few Mbps (HSPA+ peak ~10–40 Mbps) | Wideband spreading, soft handoff, improved spectral efficiency, core packet integration | Still moderate latency; fragmented enhancements |
+| 4G (LTE) | ~2009–2020 | All-IP broadband: high-rate data, VoIP, streaming HD | OFDMA (DL), SC-FDMA (UL), MIMO | 100+ Mbps (LTE-A: 1 Gbps peak) | Orthogonal subcarriers, scalable bandwidth, MIMO spatial multiplexing, carrier aggregation, flat IP core (EPC) | Capacity/latency constraints for massive devices & URLLC |
+| 5G (NR) | 2019– | Enhanced Mobile Broadband (eMBB), Ultra-Reliable Low-Latency (URLLC), Massive mMTC | OFDM-based flexible numerology (sub-6 GHz + mmWave), massive MIMO, beamforming | Multi-Gbps (mmWave), <1 ms air latency target | Network slicing, SDN/NFV virtualization, edge computing (MEC), dynamic TTI, massive MIMO beam steering, DSS | Deployment complexity, backhaul demand, energy efficiency, security scaling |
 **Answer:**
 | Generation | Approx Era | Core Services | Access / Air Interface | Peak/User Data Rate (order) | Key Technology Enablers | Limitations Driving Next Gen |
 |------------|------------|---------------|------------------------|-----------------------------|-------------------------|------------------------------|
