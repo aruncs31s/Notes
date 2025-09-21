@@ -32,3 +32,108 @@ relation between them.
 (3)
 Answer: Critical frequency f_c of an ionospheric layer: highest frequency that will be reflected (returned to Earth) for vertical incidence; f_c (MHz) ≈ 9 √(N_max) where N_max is peak electron density (electrons/m³ ×10^{-12}). Maximum Usable Frequency (MUF) for an oblique path with incidence angle θ relative to the normal: MUF = f_c / cos θ = f_c sec θ. Thus MUF ≥ f_c; larger hop distances (shallower incidence) increase MUF.
 Part B (50 Marks)
+\n+## 11. (a) Evolution of Wireless Generations: 2G → 3G → 4G → 5G (8 Marks)
+**Answer:**
+| Generation | Approx Era | Core Services | Access / Air Interface | Peak/User Data Rate (order) | Key Technology Enablers | Limitations Driving Next Gen |
+|------------|------------|---------------|------------------------|-----------------------------|-------------------------|------------------------------|
+| 2G (GSM/IS-95) | ~1991–2000 | Circuit voice + low-rate SMS/data (GPRS/EDGE) | TDMA/FDMA (GSM), CDMA (IS-95) | Tens–100 kbps (EDGE ~200 kbps) | Digital modulation, SIM-based auth, basic encryption, frequency reuse optimization | Limited data throughput; circuit-switched core |
+| 3G (UMTS/CDMA2000) | ~2001–2010 | Voice + packet data + multimedia (video calls) | W-CDMA / CDMA2000 | Few Mbps (HSPA+ peak ~10–40 Mbps) | Wideband spreading, soft handoff, improved spectral efficiency, core packet integration | Still moderate latency; fragmented enhancements |
+| 4G (LTE) | ~2009–2020 | All-IP broadband: high-rate data, VoIP, streaming HD | OFDMA (DL), SC-FDMA (UL), MIMO | 100+ Mbps (LTE-A: 1 Gbps peak) | Orthogonal subcarriers, scalable bandwidth, MIMO spatial multiplexing, carrier aggregation, flat IP core (EPC) | Capacity/latency constraints for massive devices & URLLC |
+| 5G (NR) | 2019– | Enhanced Mobile Broadband (eMBB), Ultra-Reliable Low-Latency (URLLC), Massive mMTC | OFDM-based flexible numerology (sub-6 GHz + mmWave), massive MIMO, beamforming | Multi-Gbps (mmWave), <1 ms air latency target | Network slicing, SDN/NFV virtualization, edge computing (MEC), dynamic TTI, massive MIMO beam steering, DSS | Deployment complexity, backhaul demand, energy efficiency, security scaling |
+
+**Capabilities Progression:**
+1. Shift from circuit-switched voice (2G) → packet-integrated (3G) → pure IP flat core (4G) → cloud-native, sliceable, service-based architecture (5G).
+2. Spectral efficiency improvements via modulation + coding + MIMO + carrier aggregation.
+3. Latency reduction: multi-100 ms (2G) → ~100 ms (3G) → ~<30 ms (4G user plane) → sub-10 ms (5G eMBB) → sub-1 ms (URLLC scenarios).
+4. Device density scaling to support IoT (mMTC) in 5G.
+
+**Short Answer:** 2G: digital voice/SMS; 3G: packet data & multimedia; 4G: all-IP broadband with OFDMA+MIMO; 5G: unified platform for eMBB, URLLC, mMTC using flexible numerology, massive MIMO, network slicing.
+
+---
+## 11. (b) Bluetooth in Personal Area Networks (PANs) (8 Marks)
+**Answer:**
+Bluetooth is a short-range wireless technology (typically 10 m for Class 2) designed for low-power personal area networking among devices (headsets, wearables, peripherals, IoT sensors). It complements higher-power WLAN (Wi‑Fi) and cellular by focusing on low energy consumption, simple pairing, and modest throughput.
+
+**Main Roles in PAN Evolution:** Cable replacement (HID, audio), formation of ad hoc piconets, enabling body-area sensor networks, and supporting audio streaming (A2DP, LE Audio) and beaconing (BLE advertisements) for proximity services.
+
+**Distinguishing Features:**
+1. Frequency Band: 2.4 GHz ISM using frequency hopping spread spectrum (FHSS); LE uses adaptive channel selection among 40 channels (2 MHz spacing).
+2. Topology: Piconet (1 master + up to 7 active slaves); scatternet by interconnecting piconets; BLE supports star & broadcast modes.
+3. Power Classes: Multiple Tx power levels (Class 1 up to ~100 mW; Class 2 ~2.5 mW typical) enabling energy-efficient operation.
+4. Low Energy (BLE): Optimized for very low duty cycle devices (years of battery life) via short connection events and advertising channels.
+5. Profiles & Interoperability: Standardized profiles (HFP, A2DP, GATT) simplify multi-vendor ecosystem integration.
+6. Security: Pairing modes (Just Works, Passkey, Numeric Comparison), AES-CCM link layer encryption.
+7. Latency & Throughput: Classic BR/EDR up to ~3 Mbps raw; BLE 5 long-range (coded PHY) trades rate for robustness; direction finding (AoA/AoD) for positioning.
+8. Coexistence: Adaptive hopping mitigates interference vs static channels used by Wi-Fi.
+
+**Comparison vs Other Wireless:**
+- Wi‑Fi: Higher throughput, higher power, infrastructure oriented; Bluetooth: lower power, simpler, PAN-focused.
+- Zigbee: Mesh + ultra-low data rates; Bluetooth: broader device ecosystem and audio support.
+- NFC: Very short range (cm) for secure tap; Bluetooth: meters-range sustained links.
+
+**Short Answer:** Bluetooth enables low-power short-range device interconnection using frequency hopping and standardized profiles; BLE adds ultra-low energy modes and proximity services—differentiated from Wi‑Fi (throughput) and Zigbee (mesh, lower rate) by ecosystem breadth and audio/data versatility.
+
+---
+## 12. (a) Handoff Techniques & Seamless Mobility (8 Marks)
+**Answer:**
+Handoff (handover) transfers an ongoing call/data session from one cell/base station (BS) or channel to another to maintain link quality and continuity as a user moves or radio conditions change.
+
+**Key Types:**
+1. Hard Handoff (Break-Before-Make): Used in traditional GSM / early cellular. Connection to old BS is released before new one established. Simpler resource control but brief interruption; more noticeable at cell edges with rapid fading.
+2. Soft Handoff (Make-Before-Break): In CDMA / some 3G systems; mobile simultaneously connected to multiple BSs (active set) combining signals (RAKE). Provides macro-diversity, smoother transitions, improves Eb/N0.
+3. Softer Handoff: Between sectors of the same physical BS (different sector antennas). Combines at baseband internally; reduces backhaul signaling overhead vs inter-BS soft handoff.
+4. Horizontal vs Vertical Handoff: Horizontal within same RAT (e.g., LTE cell to LTE cell); Vertical across different RATs (e.g., LTE → Wi‑Fi) for load balancing or coverage extension.
+5. Intra-frequency vs Inter-frequency (or Inter-band) Handoff: Same carrier frequency vs different carriers—latter requires retuning and measurement gaps (e.g., LTE inter-frequency measurement events). 
+6. Forced / Emergency Handoff: Triggered by rapid deterioration (e.g., power below threshold, interference spike) to prevent call drop.
+
+**Trigger Metrics:** RSSI / RSRP, quality (C/I, SINR, RSRQ), timing advance, bit/block error rates, load conditions, predicted trajectory.
+
+**Challenges Addressed & Mitigation:**
+| Challenge | Impact | Technique Response |
+|-----------|--------|--------------------|
+| Rapid signal fluctuation (fading) | Premature or late handoff → drops/ping-pong | Hysteresis margins, time-to-trigger, filtering of measurements |
+| Interference / edge SINR drop | Degraded QoS | Soft/softer handoff diversity gain; interference coordination (ICIC, eICIC) |
+| High-speed mobility (Doppler) | Reduced channel coherence time | Adaptive measurement intervals, predictive mobility, fast HO signaling |
+| Load imbalance | Congestion in popular cells | Load-aware / cell range expansion; vertical HO to Wi‑Fi/5G small cells |
+| Heterogeneous layers (macro/pico/femto) | Coverage holes or ping-pong | Layer-specific thresholds and bias (cell selection offset) |
+| Multi-RAT coexistence | Suboptimal user experience | Policy-based vertical handoff decision engines |
+
+**Short Answer:** Hard HO breaks then makes; soft/softer HO maintain parallel links for diversity; vertical HO changes RAT; intelligent triggering (hysteresis, time-to-trigger, load-aware metrics) preserves seamless connectivity and reduces drops and ping-pong events.
+
+---
+## 12. (b) Optimal Cluster Size N and Reuse Factor Q (8 Marks)
+**Question Restatement:** Digital TDMA system, required worst-case SIR ≥ 23 dB. Path loss exponent n = 4. Number of first-tier co-channel interferers i_0 = 6 (omnidirectional cells). Determine smallest cluster size N meeting SIR, then compute reuse factor Q.
+
+**SIR Model (Co-Channel Interference, Equal Powers):**
+For large distance ratio (D/R), approximate
+$$ \text{SIR} \approx \frac{(D/R)^n}{i_0} $$
+with \(n=4\), \(i_0=6\).
+
+Let required linear SIR = \(\Gamma = 10^{23/10} = 10^{2.3} \approx 199.53\) (≈ 200).
+
+Thus:
+$$ \frac{(D/R)^4}{6} \ge 199.53 \;\Rightarrow\; (D/R)^4 \ge 1197.2 $$
+$$ D/R \ge (1197.2)^{1/4} $$
+Fourth root: \( (1197.2)^{1/2} \approx 34.60^{1/2} \approx 5.885\) (since \(34.60\) square root of 1197.2; refine: \(\sqrt{34.60}=5.885\)).
+
+Reuse geometry for hexagonal cells: \( D/R = \sqrt{3N} \).
+So:
+$$ \sqrt{3N} \ge 5.885 \;\Rightarrow\; 3N \ge 34.64 \;\Rightarrow\; N \ge 11.55 $$
+
+Cluster size N must be an integer of the form \(N = i^2 + ij + j^2\), where \(i,j\) integers. Candidate values near ≥ 11.55: 12, 13. Valid hex cluster numbers: 1,3,4,7,9,12,13,16,... Smallest ≥ 11.55 is 12.
+
+Therefore choose \( N = 12 \).
+
+Compute actual SIR check:
+$$ D/R = \sqrt{3\times 12} = \sqrt{36} = 6 $$
+$$ \text{SIR}_{linear} = \frac{6^4}{6} = \frac{1296}{6} = 216 $$
+$$ \text{SIR}_{dB} = 10\log_{10}(216) \approx 23.35\,\text{dB} \ge 23\,\text{dB (meets)} $$
+
+Reuse Factor / Reuse Ratio:
+Often expressed as \(Q = D/R = 6\) for the selected cluster size.
+
+**Results:** Minimum feasible cluster size \(N = 12\); reuse factor (distance ratio) \(Q = 6\); achieved SIR ≈ 23.35 dB (> 23 dB requirement).
+
+**Short Answer:** \(N=12\), \(Q=6\), SIR ≈ 23.35 dB (meets 23 dB target).
+
+---
