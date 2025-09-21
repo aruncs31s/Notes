@@ -891,3 +891,295 @@ A \cdot \frac{x(t)}{|x(t)|}, & |x(t)| > A
 - **Complexity vs Performance:** More sophisticated techniques offer better PAPR reduction but higher computational cost
 - **Data Rate vs PAPR:** Some techniques sacrifice spectral efficiency for PAPR reduction
 - **Distortion vs Reduction:** Aggressive techniques may introduce signal distortion
+
+## 17. (a) Describe the working principle of a Zero Forcing Equaliser with the help of a neat diagram.
+
+**Short Answer:** Zero Forcing Equalizer inverts the channel frequency response to eliminate ISI by setting $W(f) = \frac{1}{H(f)}$, forcing the combined response to unity but amplifying noise at channel nulls.
+
+**Working Principle:**
+The Zero Forcing (ZF) equalizer completely eliminates intersymbol interference (ISI) by inverting the channel frequency response. It forces the combined channel-equalizer response to be flat across all frequencies.
+
+**System Model:**
+```mermaid
+graph LR
+    A[Input Data<br/>s[n]] --> B[Channel<br/>H(f)]
+    B --> C[+]
+    D[Noise<br/>n[n]] --> C
+    C --> E[ZF Equalizer<br/>W(f)]
+    E --> F[Output<br/>ŝ[n]]
+    
+    classDef channel fill:#e1f5fe,stroke:#0277bd;
+    classDef equalizer fill:#f3e5f5,stroke:#7b1fa2;
+    classDef noise fill:#fff3e0,stroke:#f57c00;
+    
+    class B channel;
+    class E equalizer;
+    class D noise;
+```
+
+**Mathematical Formulation:**
+The received signal in frequency domain:
+$$Y(f) = H(f)S(f) + N(f)$$
+
+**ZF Equalizer Design:**
+The equalizer frequency response is:
+$$W(f) = \frac{1}{H(f)}$$
+
+**Equalized Output:**
+$$\hat{S}(f) = W(f)Y(f) = \frac{Y(f)}{H(f)} = S(f) + \frac{N(f)}{H(f)}$$
+
+**Time Domain Implementation:**
+For discrete-time system with channel impulse response $h[n]$ and equalizer $w[n]$:
+$$\sum_{k=0}^{L-1} w[k]h[n-k] = \delta[n]$$
+
+This gives the ZF condition: $(w * h)[n] = \delta[n]$
+
+**Matrix Form:**
+For a channel with memory $L$, the ZF solution is:
+$$\mathbf{w} = (\mathbf{H}^H\mathbf{H})^{-1}\mathbf{H}^H\mathbf{e}_0$$
+
+Where $\mathbf{H}$ is the channel matrix and $\mathbf{e}_0 = [1, 0, 0, ...]^T$
+
+**Advantages:**
+- Complete ISI elimination
+- Simple implementation
+- No residual interference
+
+**Disadvantages:**
+- Noise amplification at channel nulls (where $|H(f)| \approx 0$)
+- May be unstable for channels with deep fades
+- High computational complexity for adaptive implementation
+
+**Performance:**
+The output SNR is:
+$$\text{SNR}_{out} = \frac{|S(f)|^2}{\sigma_n^2/|H(f)|^2}$$
+
+When $|H(f)|$ is small, noise is significantly amplified.
+
+## 17. (b) Derive the expression for received SNR of transmitter diversity with 2×2 Alamouti scheme.
+
+**Short Answer:** For 2×2 Alamouti scheme, the received SNR is $\text{SNR} = \frac{E_s}{N_0}(|h_{11}|^2 + |h_{12}|^2 + |h_{21}|^2 + |h_{22}|^2)$, providing full diversity gain.
+
+**Alamouti 2×2 System Model:**
+- 2 transmit antennas, 2 receive antennas
+- Channel matrix $\mathbf{H}$ with elements $h_{ij}$ (from TX antenna $j$ to RX antenna $i$)
+
+**Alamouti Encoding:**
+For symbols $s_1, s_2$, the transmission matrix is:
+$$\mathbf{S} = \begin{bmatrix}
+s_1 & -s_2^* \\
+s_2 & s_1^*
+\end{bmatrix}$$
+
+**Channel Model:**
+$$\mathbf{H} = \begin{bmatrix}
+h_{11} & h_{12} \\
+h_{21} & h_{22}
+\end{bmatrix}$$
+
+**Received Signal:**
+At time $t$:
+$$\mathbf{r}_1 = \mathbf{H}\begin{bmatrix} s_1 \\ s_2 \end{bmatrix} + \mathbf{n}_1 = \begin{bmatrix} h_{11}s_1 + h_{12}s_2 + n_{11} \\ h_{21}s_1 + h_{22}s_2 + n_{21} \end{bmatrix}$$
+
+At time $t+1$:
+$$\mathbf{r}_2 = \mathbf{H}\begin{bmatrix} -s_2^* \\ s_1^* \end{bmatrix} + \mathbf{n}_2 = \begin{bmatrix} -h_{11}s_2^* + h_{12}s_1^* + n_{12} \\ -h_{21}s_2^* + h_{22}s_1^* + n_{22} \end{bmatrix}$$
+
+**Alamouti Decoding:**
+The decision variables are:
+$$\tilde{s}_1 = h_{11}^*r_{11} + h_{21}^*r_{21} + h_{12}r_{12}^* + h_{22}r_{22}^*$$
+$$\tilde{s}_2 = h_{12}^*r_{11} + h_{22}^*r_{21} - h_{11}r_{12}^* - h_{21}r_{22}^*$$
+
+**Substituting received signals:**
+$$\tilde{s}_1 = (|h_{11}|^2 + |h_{21}|^2 + |h_{12}|^2 + |h_{22}|^2)s_1 + \tilde{n}_1$$
+
+Where the effective noise is:
+$$\tilde{n}_1 = h_{11}^*n_{11} + h_{21}^*n_{21} + h_{12}n_{12}^* + h_{22}n_{22}^*$$
+
+**Noise Power Calculation:**
+$$E[|\tilde{n}_1|^2] = (|h_{11}|^2 + |h_{21}|^2 + |h_{12}|^2 + |h_{22}|^2)N_0$$
+
+**Received SNR:**
+The SNR for symbol $s_1$ is:
+$$\text{SNR}_1 = \frac{E_s \cdot (|h_{11}|^2 + |h_{21}|^2 + |h_{12}|^2 + |h_{22}|^2)^2}{(|h_{11}|^2 + |h_{21}|^2 + |h_{12}|^2 + |h_{22}|^2)N_0}$$
+
+**Simplifying:**
+$$\text{SNR}_1 = \frac{E_s}{N_0}(|h_{11}|^2 + |h_{21}|^2 + |h_{12}|^2 + |h_{22}|^2)$$
+
+**Final Result:**
+$$\text{SNR} = \frac{E_s}{N_0}\sum_{i=1}^{2}\sum_{j=1}^{2}|h_{ij}|^2$$
+
+**Key Properties:**
+- Full diversity order of 4 (2×2 = 4 paths)
+- SNR is sum of all channel gains squared
+- Same result for both symbols $s_1$ and $s_2$
+- No rate loss compared to single antenna transmission
+
+## 18. (a) Describe the steps to compute tap weights iteratively in LMS algorithm.
+
+**Short Answer:** LMS algorithm updates tap weights using $\mathbf{w}(n+1) = \mathbf{w}(n) + \mu e^*(n)\mathbf{x}(n)$ where $e(n) = d(n) - \mathbf{w}^H(n)\mathbf{x}(n)$ is the error signal.
+
+**LMS Algorithm Steps:**
+
+### Step 1: Initialization
+Initialize tap weights and parameters:
+- Weight vector: $\mathbf{w}(0) = \mathbf{0}$ or small random values
+- Step size: $\mu$ (typically $0 < \mu < \frac{2}{\lambda_{max}}$ where $\lambda_{max}$ is maximum eigenvalue of input correlation matrix)
+- Filter length: $L$ (number of taps)
+
+### Step 2: Input Signal Processing
+At time $n$, form input vector:
+$$\mathbf{x}(n) = [x(n), x(n-1), ..., x(n-L+1)]^T$$
+
+### Step 3: Filter Output Computation
+Calculate filter output:
+$$y(n) = \mathbf{w}^H(n)\mathbf{x}(n) = \sum_{k=0}^{L-1} w_k^*(n)x(n-k)$$
+
+### Step 4: Error Calculation
+Compute instantaneous error:
+$$e(n) = d(n) - y(n) = d(n) - \mathbf{w}^H(n)\mathbf{x}(n)$$
+
+Where $d(n)$ is the desired response.
+
+### Step 5: Weight Update
+Update tap weights using gradient descent:
+$$\mathbf{w}(n+1) = \mathbf{w}(n) + \mu e^*(n)\mathbf{x}(n)$$
+
+Or component-wise:
+$$w_k(n+1) = w_k(n) + \mu e^*(n)x(n-k), \quad k = 0,1,...,L-1$$
+
+### Step 6: Iteration
+Repeat steps 2-5 for each new input sample.
+
+**Algorithm Summary:**
+```
+Initialize: w(0) = 0, choose μ
+For n = 0, 1, 2, ...
+    1. Form input vector x(n)
+    2. Compute output: y(n) = w^H(n)x(n)
+    3. Compute error: e(n) = d(n) - y(n)
+    4. Update weights: w(n+1) = w(n) + μe*(n)x(n)
+End
+```
+
+**Key Properties:**
+- **Convergence:** Converges in mean square if $0 < \mu < \frac{2}{\text{tr}[\mathbf{R}]}$
+- **Stability:** Stable if step size is properly chosen
+- **Computational Complexity:** $O(L)$ per iteration
+- **Tracking:** Can track slowly varying channels
+
+**Step Size Selection:**
+$$\mu_{opt} = \frac{1}{\text{tr}[\mathbf{R}]} \quad \text{(for fastest convergence)}$$
+
+Where $\mathbf{R} = E[\mathbf{x}(n)\mathbf{x}^H(n)]$ is the input correlation matrix.
+
+## 18. (b) Compare and contrast any three types of multiple access methods adopted in wireless communication system.
+
+**Short Answer:** FDMA separates users by frequency, TDMA by time slots, and CDMA by unique codes—each offering different capacity, complexity, and interference characteristics.
+
+**Comparison of Multiple Access Methods:**
+
+### 1. Frequency Division Multiple Access (FDMA)
+
+**Principle:** Users are separated by assigning different frequency bands.
+
+**Characteristics:**
+- Each user gets dedicated frequency channel
+- Continuous transmission in assigned band
+- Guard bands prevent adjacent channel interference
+- Simple implementation with analog systems
+
+**Advantages:**
+- No timing synchronization required
+- Low complexity receivers
+- Suitable for analog systems
+- Reduced near-far problem
+
+**Disadvantages:**
+- Inefficient spectrum utilization (guard bands)
+- Fixed channel allocation
+- Limited capacity
+- Susceptible to frequency-selective fading
+
+### 2. Time Division Multiple Access (TDMA)
+
+**Principle:** Users share same frequency but transmit in different time slots.
+
+**Characteristics:**
+- Periodic frame structure with time slots
+- Each user assigned specific time slots
+- Requires precise timing synchronization
+- Digital transmission required
+
+**Advantages:**
+- Efficient spectrum utilization
+- Flexible capacity allocation
+- Easy to implement encryption
+- Power control benefits
+
+**Disadvantages:**
+- Requires precise synchronization
+- Guard time overhead
+- Burst transmission affects battery life
+- Vulnerable to timing errors
+
+### 3. Code Division Multiple Access (CDMA)
+
+**Principle:** Users share same frequency and time but use unique spreading codes.
+
+**Characteristics:**
+- Spread spectrum technique
+- Each user has unique pseudo-random code
+- All users transmit simultaneously
+- Interference appears as noise
+
+**Advantages:**
+- High capacity (soft capacity limit)
+- Inherent frequency diversity
+- Soft handoff capability
+- Enhanced security
+- Graceful degradation
+
+**Disadvantages:**
+- Near-far problem requires power control
+- Complex receivers
+- Self-interference limits capacity
+- Requires accurate power control
+
+**Detailed Comparison Table:**
+
+| Aspect | FDMA | TDMA | CDMA |
+|--------|------|------|------|
+| **Separation Method** | Frequency | Time | Code |
+| **Spectrum Efficiency** | Low (guard bands) | Medium | High |
+| **Capacity** | Fixed, limited | Fixed per frame | Soft limit, high |
+| **Synchronization** | Not required | Critical | Code sync required |
+| **Power Control** | Not critical | Moderate | Critical |
+| **Handoff** | Hard handoff | Hard handoff | Soft handoff |
+| **Near-Far Problem** | Minimal | Moderate | Severe |
+| **Implementation** | Simple | Moderate | Complex |
+| **Interference Type** | Adjacent channel | Co-channel | Multiple access |
+| **Security** | Low | Medium | High |
+| **Examples** | AMPS, FM radio | GSM, IS-136 | IS-95, WCDMA |
+
+**Mathematical Representations:**
+
+**FDMA:** $s_i(t) = \sqrt{2P_i}\text{Re}[d_i(t)e^{j2\pi f_i t}]$
+
+**TDMA:** $s_i(t) = \sqrt{2P_i}d_i(t)p_i(t)\cos(2\pi f_c t)$
+
+**CDMA:** $s_i(t) = \sqrt{2P_i}d_i(t)c_i(t)\cos(2\pi f_c t)$
+
+Where:
+- $P_i$ = power of user $i$
+- $d_i(t)$ = data signal
+- $f_i$ = carrier frequency (FDMA)
+- $p_i(t)$ = time slot pulse (TDMA)  
+- $c_i(t)$ = spreading code (CDMA)
+
+**Capacity Analysis:**
+- **FDMA:** $C = \frac{B}{B_{ch}}$ channels
+- **TDMA:** $C = \frac{T_{frame}}{T_{slot}}$ users per frame
+- **CDMA:** $C \approx \frac{W/R}{E_b/N_0}$ (interference limited)
+
+**Conclusion:**
+Each multiple access method has distinct advantages and is suitable for different applications. Modern systems often use hybrid approaches (e.g., GSM uses FDMA+TDMA, LTE uses OFDMA) to combine benefits of multiple techniques.
