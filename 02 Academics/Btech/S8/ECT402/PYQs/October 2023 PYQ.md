@@ -65,7 +65,7 @@ Where:
 - f = carrier frequency
 - θ = angle between velocity and line of sight
 
-## 4. Power and Voltage Calculation
+## 4. Assume a receiver is located 10km away from a 50W transmitter. Given f = 900 MHz, Gt = 1 and Gr= 2. Find the power at receiver and RMS voltage at receiver antenna matched with 50 Ω resistor.
 
 **Short Answer:** Received power ≈ 0.702 nW (7.02×10⁻¹0 W) giving V_rms ≈ 0.187 mV across 50 Ω using Friis equation.
 
