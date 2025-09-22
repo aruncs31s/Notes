@@ -15,7 +15,7 @@ dg-publish: true
 
 - [[Old_NOTES/Academics/Btech/S6/Information Theory And Coding/Module 1|Module 1]]
 - [[01 Academics/Btech/S6/Information Theory And Coding/Module 2|Module 2]]
-- [[Module 5]]
+- [[02 Academics/Btech/S6/Information Theory And Coding/Module 5]]
 - [[PYQ]]
 - Shannon Limit
 

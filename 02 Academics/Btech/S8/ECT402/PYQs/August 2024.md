@@ -42,6 +42,7 @@
 
 ## 11. (a) Evolution of Wireless Generations: 2G → 3G → 4G → 5G (8 Marks)
 **Answer:**
+
 | Generation | Approx Era | Core Services | Access / Air Interface | Peak/User Data Rate (order) | Key Technology Enablers | Limitations Driving Next Gen |
 |------------|------------|---------------|------------------------|-----------------------------|-------------------------|------------------------------|
 | 2G (GSM/IS-95) | ~1991–2000 | Circuit voice + low-rate SMS/data (GPRS/EDGE) | TDMA/FDMA (GSM), CDMA (IS-95) | Tens–100 kbps (EDGE ~200 kbps) | Digital modulation, SIM-based auth, basic encryption, frequency reuse optimization | Limited data throughput; circuit-switched core |

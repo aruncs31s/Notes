@@ -9,7 +9,7 @@ tags:
 dg-publish: true
 ---
 # Module 1
-## Syllabus 
+## Module 1 Syllabus 
 
  - **Introduction to Wireless Communication Systems**
 - [x] Generations: 2G, 3G, 4G, 5G. ✅ 2025-04-18
@@ -102,7 +102,7 @@ mindmap
 - [[1G]]
 - [[2G]]
 - [[3G]]
-- [[4G ]]
+- [[4G]]
 - [[5G]]
 
 ```dataview
@@ -147,10 +147,10 @@ from #generations
 
 ![](https://cdn.britannica.com/76/276-050-7BFF196F/position-light-electromagnetic-spectrum-range-right.jpg)
 
-## The Cellular Concept
+## **Cellular System Design Fundamentals**
 - It replaces the single big transmitter (high  power) transmitter with many low power transmitter(cells) 
 
-### Making Call
+- Making Call
 
 ```mermaid
 graph LR
@@ -161,12 +161,11 @@ A[Mobile] & AB[Mobile] & ABB[Mobile] --> B(Base Transceiver Station) --> C[MSC] 
 - MSC -> mobile switching center , mobile telecommunication switching center
 - Base Transceiver
 ### Frequency Reuse (Frequency Planning)
-The design process of selecting and allocating channel groups for all of the cellular base stations within a system is called frequency reuse or frequency planning. It involves dividing a geographical area into smaller regions, called  cells, and assigning the same set of frequencies to different cells that are spaced sufficiently apart.
 
+
+The design process of selecting and allocating channel groups for all of the cellular base stations within a system is called frequency reuse or frequency planning. It involves dividing a geographical area into smaller regions, called  cells, and assigning the same set of frequencies to different cells that are spaced sufficiently apart.
 ### Hand-Off
 Q. What are the methods adopted for hand-off procedures
-
->[!Note] Hand-off
 
 ![[Pasted image 20250419190411.png]]
 A hard handoff occurs when the old connection is broken before a new connection is activated
@@ -182,3 +181,4 @@ Q.  how does fading occur , derive the expression for doplar shift
 *It is the application of multiplexing*
 1. [[FDMA]]
 
+![[Screenshot_2025_0921_183750.png]]

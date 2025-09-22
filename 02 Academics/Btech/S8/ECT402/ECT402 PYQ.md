@@ -23,14 +23,12 @@ dg-publish: true
 
 #### 2. what are the methods adopted for hand-off procedure?
 
-#### 3. 
 
 #### Module 1
 1. Describe the features of the GSM system architecture with the help of a neat
 block diagram.
 
  
-##, Q1
 Assume a receiver is located 10Km away from a 50W transmitter. Given f = 900MHz , Gt = 1 and Gr=2. Find the power at the receiver and RMS voltage at receiver antenna matched with $50\ohm$ resistor.
  
  **ANS1** we have
