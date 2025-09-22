@@ -9,6 +9,8 @@ tags:
 dg-publish: true
 ---
 # Module 1
+## Syllabus 
+
  - **Introduction to Wireless Communication Systems**
 - [x] Generations: 2G, 3G, 4G, 5G. ✅ 2025-04-18
 - [x] Wireless LAN, ✅ 2025-04-18
