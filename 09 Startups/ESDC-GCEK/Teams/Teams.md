@@ -25,8 +25,8 @@ cssclasses:
 ## Project: Humanoid Robot
 
 
-- [[AI Assistant Team]]
-- [[AI Assistant UI Team]]
+- ![[AI Assistant Team]]
+- ![[AI Assistant UI Team]]
 - [[Hardware Team]]
 - [[Software Team]]
 ## Project: ESDC Website
