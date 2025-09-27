@@ -33,14 +33,13 @@ cssclasses:
 
 #### Current Active Members
 >[!TODO]- Tasks
->- [ ] Find Niv's realname.
+>- [x] Find Niv's realname. ✅ 2025-09-27
 >- [ ] Update this list 📅 2025-10-01
 >- [ ] Promote , devs to designers 📅 2025-09-30
 
-
-1. Nivin ? Nived 
-2. Shibina K
-3. Abhaya Govind
-4. Arun CS
-5. Sangeeth Binu
-6. Meenakshi Poyil 
+1. Abhaya Govind
+2. Arun CS
+3. Sangeeth Binu
+4. Meenakshi Poyil 
+5. Nivedh
+6. Shibina K
