@@ -5,9 +5,9 @@ tags:
   - esdc
   - software
 ---
-
-
 # [Software Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/software)
+
+- [ ] Update this before 29-09-2025
 
 | Name                                                                                     | Role                 | Status |
 | ---------------------------------------------------------------------------------------- | -------------------- | ------ |

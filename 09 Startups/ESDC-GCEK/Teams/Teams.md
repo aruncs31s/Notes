@@ -10,6 +10,7 @@ cssclasses:
   - wide-page
 ---
 # Teams 
+- [ ] Create an index with specific user 📅 
 
 #### Project: Humanoid Robot
 - [[AI Assistant Team]]
