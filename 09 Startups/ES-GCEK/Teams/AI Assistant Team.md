@@ -40,15 +40,13 @@ Requirements :
 >### Beginner
 >If you don't understand the above to , then consider yourself a beginner.
 
-
 ---
-
 ## Current Teams
 
 | Type        | Count | Unique Count |
 | ----------- | ----- | ------------ |
-| Designers   | 2     | 2            |
-| Developers  | 6     | 3            |
+| Designers   | 1     | 1            |
+| Developers  | 1     | 3            |
 | Testers     | 2     | 2            |
 | Refactorers | 1     | 1            |
 | Total       |       | 8            |
