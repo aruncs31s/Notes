@@ -4,6 +4,7 @@ cssclasses:
   - wide-page
 ---
 # [AI Assistant Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/ai-assistant-team)
+[Whatsapp Group Link](https://chat.whatsapp.com/Ga3031FhGwwFcBlmVDQV36) 
 
 
 Roles : 
