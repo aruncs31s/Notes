@@ -4,8 +4,7 @@ cssclasses:
   - wide-page
 ---
 # [AI Assistant Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/ai-assistant-team)
-[Whatsapp Group Link](https://chat.whatsapp.com/Ga3031FhGwwFcBlmVDQV36) 
-
+>[Whatsapp Group Link](https://chat.whatsapp.com/Ga3031FhGwwFcBlmVDQV36) 
 
 Roles : 
 1. Designer : Designs the software and implements higher level components
@@ -44,7 +43,6 @@ Requirements :
 ---
 ## Current Teams
 
-[Whatsapp Group Link](https://chat.whatsapp.com/Ga3031FhGwwFcBlmVDQV36)
 
 | Name                                                                                     | Role                | Status | Contributions |
 | ---------------------------------------------------------------------------------------- | ------------------- | ------ | ------------- |

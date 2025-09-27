@@ -1,16 +1,3 @@
-## [AI Assistant Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/ai-assistant-team)
-
-```sql
-MEMBERS: 9
-Designers: 2
-Developers: 4
-Testers: 2
-Refactorers : 1 
-
-```
-
-
-
 # [AI Assistant UI Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/user-interface-team)
 
 ```sql
