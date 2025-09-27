@@ -10,7 +10,7 @@ cssclasses:
   - wide-page
 ---
 # Teams 
-- [[Active Memebers]]
+- [[Active Members]]
 
 
 >[!TODO]- Tasks 
@@ -22,13 +22,15 @@ cssclasses:
 >- [ ] Remove all the teams and inheritance
 
 
-### Project: Humanoid Robot
+## Project: Humanoid Robot
 
 
 - [[AI Assistant Team]]
 - [[AI Assistant UI Team]]
 - [[Hardware Team]]
 - [[Software Team]]
+## Project: ESDC Website
+
 - [[Web Team]]
 
 #### Current Active Members
