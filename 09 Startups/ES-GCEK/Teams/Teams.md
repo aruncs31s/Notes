@@ -8,7 +8,11 @@ tags:
 dg-publish: true
 ---
 # Teams 
+
+#### Project: Humanoid Robot
 - [[AI Assistant Team]]
+- [[Hardware Team]]
+- [[]]
 ```sql
 TOTAL WORKING MEMBERS: 10
 
