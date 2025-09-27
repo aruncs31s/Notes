@@ -11,13 +11,16 @@ cssclasses:
 ---
 # Teams 
 
+
 >[!TODO]+ Tasks 
 >- [ ] Create an index with specific user 📅 2025-09-30 
 >- [ ] Update github teams 
 >- [ ] Update Whatsapp 
 
+### Active Members
 
-#### Project: Humanoid Robot
+
+### Project: Humanoid Robot
 - [[AI Assistant Team]]
 - [[AI Assistant UI Team]]
 - [[Hardware Team]]
