@@ -12,10 +12,11 @@ cssclasses:
 # Teams 
 
 
->[!TODO]+ Tasks 
+>[!TODO]- Tasks 
 >- [ ] Create an index with specific user 📅 2025-09-30 
 >- [ ] Update github teams 
->- [ ] Update Whatsapp 
+>- [ ] Update Whatsapp Group, 
+>- [ ] Include Whatsappp group link in each 
 
 ### Active Members
 
