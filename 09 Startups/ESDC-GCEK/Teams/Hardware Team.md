@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 #  [Hardware Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/hardware-team)
 
 ```sql
