@@ -1,15 +1,6 @@
 
 ## [Web Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/web-team)
 
-```sql
-MEMBERS: 7
-Designers: 3
-Developers: 6
-Refactorers : -
-Nill : 1
-
-```
-
 | Name                                                                                          | Role                 | Status | Contributions |
 | --------------------------------------------------------------------------------------------- | -------------------- | ------ | ------------- |
 | [Arun cs](https://github.com/orgs/Embedded-Systems-GCEK/people/aruncs31s)                     | Designer , Developer | ❌      |               |
