@@ -9,7 +9,6 @@ dg-publish: true
 ---
 # Embedded Systems GCEK Projects
 
-
 ## AI-Robot
 
 ### Sub Projects
