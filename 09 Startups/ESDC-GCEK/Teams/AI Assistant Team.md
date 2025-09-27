@@ -60,6 +60,8 @@ Requirements :
 | [Albertjoe007](https://github.com/orgs/Embedded-Systems-GCEK/people/Albertjoe010)        | Refactorer          | ❌      |               |
 |                                                                                          |                     |        |               |
 
+✅ -> Currently Active
+❌ -> Currently Not Active
 ### New Members, Not In Working Team.
 
 DATE: 15-09-2025
