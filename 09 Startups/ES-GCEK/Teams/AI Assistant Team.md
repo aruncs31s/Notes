@@ -43,14 +43,6 @@ Requirements :
 ---
 ## Current Teams
 
-| Type        | Count | Unique Count |
-| ----------- | ----- | ------------ |
-| Designers   | 1     | 1            |
-| Developers  | 1     | 3            |
-| Testers     | 2     | 2            |
-| Refactorers | 1     | 1            |
-| Total       |       | 8            |
-
 [Whatsapp Group Link](https://chat.whatsapp.com/Ga3031FhGwwFcBlmVDQV36)
 
 | Name                                                                                     | Role                | Status | Contributions |
@@ -59,9 +51,9 @@ Requirements :
 | [vyshnav kp](https://github.com/orgs/Embedded-Systems-GCEK/people/vyshnav8486)           | Designer, Developer | ✅      |               |
 | [Abhaya Govind](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhayaGovind)       | Developer           | ✅      |               |
 | [Dhanashyam Babu](https://github.com/orgs/Embedded-Systems-GCEK/people/dhanashyam18)     | Developer           | ✅      |               |
-| [Nivedh-r](https://github.com/orgs/Embedded-Systems-GCEK/people/Nivedh-r)                | Developer           | ✅      |               |
-| [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil) | Tester              | ✅      |               |
-| [Sneha-SJ-05](https://github.com/orgs/Embedded-Systems-GCEK/people/Sneha-SJ-05)          | Tester              | ✅      |               |
+| [Nivedh-r](https://github.com/orgs/Embedded-Systems-GCEK/people/Nivedh-r)                | Developer           | ❌      |               |
+| [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil) | Tester              | ❌      |               |
+| [Sneha-SJ-05](https://github.com/orgs/Embedded-Systems-GCEK/people/Sneha-SJ-05)          | Tester              | ❌      |               |
 | [Albertjoe007](https://github.com/orgs/Embedded-Systems-GCEK/people/Albertjoe010)        | Refactorer          | ❌      |               |
 |                                                                                          |                     |        |               |
 ### New Members 
