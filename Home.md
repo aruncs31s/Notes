@@ -8,7 +8,7 @@ dg-publish: true
 ---
 # HOME
 
-- [[Projects]] 
+- [[01 Projects/Projects]] 
 - [[Electronics]]
 
 ```widgets
