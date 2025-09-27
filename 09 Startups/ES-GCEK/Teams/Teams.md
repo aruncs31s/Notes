@@ -6,13 +6,17 @@ tags:
   - es-gcek
   - teams
 dg-publish: true
+cssclasses:
+  - wide-page
 ---
 # Teams 
 
+> Working Members -> 6.
 
-| Team |     |
-| ---- | --- |
-|      |     |
+| Team | Members | Active Members |
+| ---- | ------- | -------------- |
+|      |         |                |
+|      |         |                |
 
 
 
