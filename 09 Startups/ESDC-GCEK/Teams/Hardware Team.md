@@ -1,15 +1,12 @@
 ---
 dg-publish: true
+tags:
+  - ai
+  - robotics
+  - hardware
+  - esdc
 ---
-
-#  [Hardware Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/hardware-team)
-
-```sql
-MEMBERS: 7
-Designer: 3
-Builder: 4
-
-```
+# [Hardware Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/hardware-team)
 
 | Name                                                                                     | Role     | Status | Contributions |
 | ---------------------------------------------------------------------------------------- | -------- | ------ | ------------- |

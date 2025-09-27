@@ -1,3 +1,11 @@
+---
+dg-publish: true
+tags:
+  - ai
+  - esdc
+  - software
+---
+
 
 # [Software Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/software)
 
