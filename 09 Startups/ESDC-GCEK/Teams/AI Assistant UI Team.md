@@ -2,7 +2,8 @@
 tags:
   - esdc
   - teams
-  - linear_integrated_circuits
+  - ai_ui
+dg-publish: true
 ---
 
 # [AI Assistant UI Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/user-interface-team)

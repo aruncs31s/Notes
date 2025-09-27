@@ -2,6 +2,10 @@
 dg-publish: true
 cssclasses:
   - wide-page
+tags:
+  - ai
+  - teams
+  - esdc
 ---
 # [AI Assistant Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/ai-assistant-team)
 >[Whatsapp Group Link](https://chat.whatsapp.com/Ga3031FhGwwFcBlmVDQV36) 
@@ -55,6 +59,7 @@ Requirements :
 | [Sneha-SJ-05](https://github.com/orgs/Embedded-Systems-GCEK/people/Sneha-SJ-05)          | Tester              | ❌      |               |
 | [Albertjoe007](https://github.com/orgs/Embedded-Systems-GCEK/people/Albertjoe010)        | Refactorer          | ❌      |               |
 |                                                                                          |                     |        |               |
+
 ### New Members, Not In Working Team.
 
 DATE: 15-09-2025
