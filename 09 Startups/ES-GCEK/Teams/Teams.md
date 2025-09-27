@@ -9,12 +9,18 @@ dg-publish: true
 ---
 # Teams 
 
+
+| Team |     |
+| ---- | --- |
+|      |     |
+
+
+
 #### Project: Humanoid Robot
 - [[AI Assistant Team]]
 - [[Hardware Team]]
-- [[]]
+- [[Software Team]]
 ```sql
-TOTAL WORKING MEMBERS: 10
 
 ```
 
