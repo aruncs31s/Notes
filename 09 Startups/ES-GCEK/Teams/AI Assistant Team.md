@@ -48,15 +48,15 @@ Requirements :
 | Name                                                                                     | Role                | Status | Contributions |
 | ---------------------------------------------------------------------------------------- | ------------------- | ------ | ------------- |
 | [Arun cs](https://github.com/orgs/Embedded-Systems-GCEK/people/aruncs31s)                | Designer, Developer | ✅      |               |
-| [vyshnav kp](https://github.com/orgs/Embedded-Systems-GCEK/people/vyshnav8486)           | Designer, Developer | ✅      |               |
+| [vyshnav kp](https://github.com/orgs/Embedded-Systems-GCEK/people/vyshnav8486)           | Designer, Developer | ❌      |               |
 | [Abhaya Govind](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhayaGovind)       | Developer           | ✅      |               |
-| [Dhanashyam Babu](https://github.com/orgs/Embedded-Systems-GCEK/people/dhanashyam18)     | Developer           | ✅      |               |
+| [Dhanashyam Babu](https://github.com/orgs/Embedded-Systems-GCEK/people/dhanashyam18)     | Developer           | ❌      |               |
 | [Nivedh-r](https://github.com/orgs/Embedded-Systems-GCEK/people/Nivedh-r)                | Developer           | ❌      |               |
 | [Meenakshi Poyyil](https://github.com/orgs/Embedded-Systems-GCEK/people/MeenakshiPoyyil) | Tester              | ❌      |               |
 | [Sneha-SJ-05](https://github.com/orgs/Embedded-Systems-GCEK/people/Sneha-SJ-05)          | Tester              | ❌      |               |
 | [Albertjoe007](https://github.com/orgs/Embedded-Systems-GCEK/people/Albertjoe010)        | Refactorer          | ❌      |               |
 |                                                                                          |                     |        |               |
-### New Members 
+### New Members, Not In Working Team.
 
 DATE: 15-09-2025
 
