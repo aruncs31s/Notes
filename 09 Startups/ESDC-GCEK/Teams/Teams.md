@@ -23,8 +23,18 @@ cssclasses:
 
 
 ### Project: Humanoid Robot
+
+
 - [[AI Assistant Team]]
 - [[AI Assistant UI Team]]
 - [[Hardware Team]]
 - [[Software Team]]
 - [[Web Team]]
+
+#### Current Active Members
+>[!TODO]
+1. Nivin ? Nived 
+2. Shibina K
+3. Abhaya Govind
+4. Arun CS
+5. 
