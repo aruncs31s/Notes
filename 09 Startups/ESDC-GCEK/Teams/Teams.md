@@ -25,10 +25,10 @@ cssclasses:
 ## Project: Humanoid Robot
 
 
-- ![[AI Assistant Team]]
-- ![[AI Assistant UI Team]]
-- [[Hardware Team]]
-- [[Software Team]]
+ ![[AI Assistant Team]]
+![[AI Assistant UI Team]]
+ ![[Hardware Team]]
+![[Software Team]]
 ## Project: ESDC Website
 
 - [[Web Team]]
