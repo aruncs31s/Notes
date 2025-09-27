@@ -1,7 +1,1 @@
 # ESDC
-
-## Tasks Left. 
-
-```dataview
-
-```
