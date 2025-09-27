@@ -10,7 +10,12 @@ cssclasses:
   - wide-page
 ---
 # Teams 
-- [ ] Create an index with specific user 📅 
+
+>[!TODO]+ Tasks 
+>- [ ] Create an index with specific user 📅 2025-09-30 
+>- [ ] Update github teams 
+>- [ ] Update Whatsapp 
+
 
 #### Project: Humanoid Robot
 - [[AI Assistant Team]]
