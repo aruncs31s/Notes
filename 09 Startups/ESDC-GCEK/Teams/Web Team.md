@@ -1,5 +1,15 @@
+---
+dg-publish: true
+cssclasses:
+  - wide-page
+tags:
+  - teams
+  - web
+  - esdc
+---
 
-## [Web Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/web-team)
+
+# [Web Team](https://github.com/orgs/Embedded-Systems-GCEK/teams/web-team)
 
 | Name                                                                                          | Role                 | Status | Contributions |
 | --------------------------------------------------------------------------------------------- | -------------------- | ------ | ------------- |
