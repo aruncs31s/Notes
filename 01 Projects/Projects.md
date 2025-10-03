@@ -1,12 +1,13 @@
 ---
+banner: "01 Projects/Common/banner.jpg"
 id: Projects
 aliases: []
 tags:
   - projects
-banner: "01 Projects/Common/banner.jpg"
 cssclasses: 
 dg-publish: true
 ---
+
 # Projects
 
 > [!summary]- _All Projects_
