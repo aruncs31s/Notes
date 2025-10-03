@@ -19,13 +19,6 @@ quote: When you stare into the abyss, the abyss stares back at you.
 
 ## Tasks
 
-![[Cal_mon_friday.excalidraw|1000x300]]
-
-```dataview
-CALENDAR due
-WHERE typeof(due) = "date"
-
-```
 
 ```tasks
 path includes 98 Private/Todo.md
@@ -107,11 +100,6 @@ path includes 98 Private/Todo.md
 
 ## Files
 
-```dataview
-CALENDAR file.ctime
-
-```
-
 > [!IMPORTANT]- **Keep It up to date**
 >
 > > [!NOTE]- **Windows**
@@ -126,8 +114,6 @@ CALENDAR file.ctime
 > > ```bash
 > > cd /home/aruncs/Notes/ && git add -A ; git commit -m "automated backup" ; git push origin main
 > > ```
-
-
 
 ## All Tasks
 
