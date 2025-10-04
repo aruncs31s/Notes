@@ -14,4 +14,4 @@
 ## 3. IoT-Based Home Automation using NodeMCU and Blynk
 ### Components 
 1. 2 Channel Relay Module [Link](https://amzn.in/d/5vSCXKz) Price: ₹ 119.00
-
+2. [Link](https://amzn.in/d/2mSiWTW) Price: ₹ 220.00 
