@@ -9,4 +9,5 @@
 
 ## 2. Smart Irrigation System using Arduino and soil moisture sensors
 ### Components
-- HS-S33A, Soil Moisture Sensor [Link]()
+- HS-S33A, Soil Moisture Sensor [Link](https://robu.in/product/hs-s33a-soil-moisture-sensor/) Price: ₹ 89.00
+- 
