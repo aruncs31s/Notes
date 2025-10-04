@@ -13,3 +13,4 @@
 
 ## 3. IoT-Based Home Automation using NodeMCU and Blynk
 ### Components 
+1. 2 Ca
