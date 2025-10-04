@@ -1,18 +1,6 @@
 # Uploads
 ```bash
-#!/bin/bash
-
-# File Upload API Test Script
-# This script demonstrates how to test the file upload endpoints
-
-BASE_URL="http://localhost:8080"
-
-echo "================================"
-echo "File Upload API Test"
-echo "================================"
-echo ""
-
-# Test 1: Upload a single image
+BASE_URL="http://localhost:9999"
 echo "Test 1: Uploading a single image..."
 echo "Command: curl -X POST $BASE_URL/api/files/upload/image -F \"image=@test_image.jpg\""
 echo ""
