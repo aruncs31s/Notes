@@ -3,7 +3,6 @@ id: admin
 aliases: []
 tags: []
 ---
-
 # Admin
 
 ## Tasks
