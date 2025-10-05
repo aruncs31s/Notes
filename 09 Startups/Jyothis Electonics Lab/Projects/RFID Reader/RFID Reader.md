@@ -4,7 +4,8 @@
 ![RFID Reader](RFID%20Reader.png)
 ### Features
 - [[08 Electronics/Embedded Systems/communication/UART|UART]]
-- 
+- [[08 Electronics/Embedded Systems/communication/I2C|I2C]]
+- [[SPI]]
 
 | Pin | Function / Description |
 |-----|----------------------|
