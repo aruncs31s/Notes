@@ -2,6 +2,7 @@
 # RFID Interfacing
 
 ![RFID Reader](RFID%20Reader.png)
+![RFID Reader](RFID%20Reader-1.png)
 ### Features
 - [[08 Electronics/Embedded Systems/communication/UART|UART]]
 - [[08 Electronics/Embedded Systems/communication/I2C|I2C]]
@@ -17,5 +18,5 @@
 | RST                 | Reset pin for the module                                                                                           |
 | VCC                 | Supply pin for the module (2.5V–3.3V), must be connected to Arduino 3.3V                                           |
 
-![RFID Reader](RFID%20Reader-1.png)
+
 
