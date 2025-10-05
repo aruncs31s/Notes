@@ -38,3 +38,11 @@ void loop()
 }
 
 ```
+
+## Writing
+
+`MFRC522::StatusCode`
+
+
+```cpp
+```
