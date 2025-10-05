@@ -2,6 +2,9 @@
 # RFID Interfacing
 
 ![RFID Reader](RFID%20Reader.png)
+### Features
+- [[08 Electronics/Embedded Systems/communication/UART|UART]]
+- 
 
 | Pin | Function / Description |
 |-----|----------------------|
