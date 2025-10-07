@@ -1,13 +1,11 @@
 ---
-id: S7_PYQ
-aliases: []
 tags:
   - academics
   - btech
   - s7
-dg-publish: true
+  - pyq
 ---
-# ISE
+# ISE - Previous Year Questions
 
 ## Part  A 
 1. With suitable examples differentiate between unsafe act and unsafe conditions (3) referred to construction industry.
