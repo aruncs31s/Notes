@@ -36,70 +36,11 @@ dg-publish: true
 ## Syllabus 
 
 
-
-> [!multi-column]
->
-> > [!info]+ Module 1
-> 
->
-> > [!info]+ Module 5
-> > **Microwaves:**
-> >
-> > - Introduction,
-> > - Advantages,
-> > - Cavity Resonators
-> > - Derivation of resonance frequency of Rectangular cavity.
-> >   Single cavity klystron
-> > - Reflex Klystron Oscillators:
-> >   - Derivation of Power output,
-> >   - efficiency and admittance.
-> > - Magnetron oscillators:
-> >   - Cylindrical magnetron,
-> >   - Cyclotron angular frequency,
-> >   - Power output and efficiency.
-> > - Travelling Wave Tube:
-> >   - Slow wave structures,
-> >   - Helix TWT,
-> >   - Amplification process,
-> >   - Derivation of convection current,
-> >   - axialelectric field,
-> >   - wave modes and gain.
-
->[!multi-column]
->
->>[!info]+ Module 4 **Rectangular Resonator and MW Tubes**
->> **Microwave Introductions**
->>- [ ] Advantages
->>- [ ] Cavity Resonator
->>- [ ] Derivation of Resonance Fre.
->>**Single cavity klystron- Reflex Klystron**
->>Oscillators:
->> - [ ]	Derivation of Power output
->> - [ ] efficiency and admittance. 
->> **Magnetron oscillators**
->> - [ ] Cylindrical magnetron,
->> - [ ] Cyclotron angular frequency,
->> - [ ] Power output and efficiency.
->>**Travelling Wave Tubes**
->>- [ ] Slow wave structures,
->>- [ ] Helix TWT,
->>- [ ] Amplification process,
->>- [ ] Derivation of convection current,
->>- [ ] axial electric field,
->>- [ ] wave modes and gain
-> 
->> [!info]+ Module 3
->
->> [!info]+ Module 2 **Broad band antenna**
->> - Principle of Log periodic antenna array and design,
->> - Helical antenna:
->> 	- types and design.
->> - Designof Microstrip Rectangular Patchantennas and
->> feeding methods.
->> -  Principles of Horn,
->> - Parabolic dish antenna (expression for E, H and Gain without derivation),
->> - Mobile phone antenna 
->> - – Inverted F antenna.
+Basic antenna parameters: gain, directivity, beam width and effective aperture
+calculations, effective height, wave polarization, radiation resistance, radiation
+efficiency, antenna field zones. Duality and Principles of reciprocity, Helmholtz
+theorem (derivation required), Field, directivity and radiation resistance of a short
+dipole and half wave dipole (far field derivation).
 
 ## Classes
 1. [[#Resonator|07.08.2024 9:05AM]]
