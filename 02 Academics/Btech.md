@@ -8,14 +8,14 @@ dg-publish: true
 ---
 # Btech
 
-## Exan
+## Exam
 
 ```dataview
-TABLE
+TABLE 
+from supply
 ExamDate as "Date of Exam MM/DD/YYYY"
 WHERE ExamDate 
 SORT ExamDate asc
-
 ```
 
 ## Supplementary
