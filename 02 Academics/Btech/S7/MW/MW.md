@@ -12,12 +12,30 @@ cssclasses:
 ExamDate: 2024-11-22
 dg-publish: true
 ---
-# Micro Wave and Antenas
-- [[02 Academics/Btech/S3/ECT205-NT/Module 1]]
+# Micro Wave and Antennas
+
+>[!SUMMARY]+ Table of Contents
+>- [[MW#Micro Wave and Antennas|Micro Wave and Antennas]]
+>    - [[MW#Syllabus |Syllabus ]]
+>    - [[MW#Classes|Classes]]
+>    - [[MW#Module 1 |Module 1 ]]
+>                - [[MW#Types of antenas|Types of antenas]]
+>            - [[MW#Thevenin Equivalent of Antennan System in Tx Mode |Thevenin Equivalent of Antennan System in Tx Mode ]]
+>    - [[MW#Module 2|Module 2]]
+>            - [[MW#Resonator|Resonator]]
+>                - [[MW#Cavity Resonator |Cavity Resonator ]]
+>                - [[MW#Q factor|Q factor]]
+>            - [[MW#Rectangular Cavity Resonator|Rectangular Cavity Resonator]]
+>    - [[MW#Module 2 |Module 2 ]]
+>    - [[MW#Module 4 RECTANGULAR RESONATOR AND MICROWAVE TUBES|Module 4 RECTANGULAR RESONATOR AND MICROWAVE TUBES]]
+>    - [[MW#References|References]]
+
+
 - [[MWA Series Exam 2]]
-- [[30-10-2024]]
 
 ## Syllabus 
+
+
 
 > [!multi-column]
 >
