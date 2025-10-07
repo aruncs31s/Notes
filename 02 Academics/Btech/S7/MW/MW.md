@@ -16,6 +16,8 @@ dg-publish: true
 
 ## Syllabus 
 
+![]
+
 ### Module 1
 
 - Basic antenna parameters: gain, directivity, beam width and effective aperture calculations, effective height, wave polarization, radiation resistance, radiation efficiency, antenna field zones.
