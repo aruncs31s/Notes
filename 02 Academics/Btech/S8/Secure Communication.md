@@ -1,44 +1,45 @@
 ---
-id: Secure Communication
-aliases: []
 tags:
   - academics
   - btech
   - s8
-dg-publish: true
 ---
 # Secure Communication
 
-### Security Attacks
+## Security Attacks
 
 ```mermaid
 graph TB
-A[ Security Attacks] --> B[Snooping] & C[Modification] & D[Denial Of Service]
-
+A[Security Attacks] --> B[Snooping] & C[Modification] & D[Denial Of Service]
 ```
 
-#### Routing Control
+### Types of Attacks
+1. **Snooping** - Unauthorized access to data
+2. **Modification** - Altering data in transit
+3. **Denial of Service** - Preventing legitimate access
 
-#### Notarization
+## Security Mechanisms
 
-#### Acces Control
+### Routing Control
+Controls the path data takes through the network
 
-eg : { pins, passwd}
+### Notarization
+Third-party verification of data authenticity
 
-- Relationship between Security Serives and Mechanism
+### Access Control
+Restricts access to authorized users only
+- Examples: PINs, passwords
 
-| Security Services    | Mechanisms                        |
-| -------------------- | --------------------------------- |
-| Data Confidentiality | Encipherment and Routting COntrol |
-| Data Integrity       |                                   |
-| Authentication       |                                   |
-| Non-reproduction     |                                   |
-| Access Control       |                                   |
+## Security Services and Mechanisms
 
-#### 27-01-25
-- Hill Cypher
+| Security Services    | Mechanisms                         |
+| -------------------- | ---------------------------------- |
+| Data Confidentiality | Encipherment and Routing Control   |
+| Data Integrity       | Digital Signatures, Hash Functions |
+| Authentication       | Passwords, Biometrics, Tokens      |
+| Non-repudiation      | Digital Signatures, Notarization   |
+| Access Control       | ACLs, PINs, Passwords              |
+
+## Related Topics
 - [[Hill Cypher]]
-$$
-
-$$
 

@@ -1,12 +1,8 @@
 ---
-id: Hill_Cypher
-aliases: []
 tags:
   - academics
   - btech
   - s8
-Date: 27-01-25
-dg-publish: true
 ---
 # Hill Cypher
 
