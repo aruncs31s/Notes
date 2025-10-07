@@ -6,15 +6,14 @@ tags:
 cssclasses: 
 dg-publish: true
 ---
-# Btech
+# B Tech
 
-## Exam
 
 ```dataview
 TABLE 
-from supply
+
 ExamDate as "Date of Exam MM/DD/YYYY"
-WHERE ExamDate 
+WHERE ExamDate and supply
 SORT ExamDate asc
 ```
 
@@ -24,7 +23,7 @@ SORT ExamDate asc
 
 | Subjet                                                                        | Date              |     |
 | ----------------------------------------------------------------------------- | ----------------- | --- |
-| [[MFE]]                                                                    | [[4/01/2025]]<br> |     |
+| [[MFE]]                                                                       | [[4/01/2025]]<br> |     |
 | [[01 Academics/Btech/S6/ElectroMagnetics/Electromagnetics\|Electromagnetics]] | [[17/12/2024]]    |     |
 | [[Information Theory And Coding]]                                             | [[31/12/2024]]    |     |
 | [[01 Academics/Btech/S6/Embedded Systems/Embedded Systems\|Embedded Systems]] | [[02/01/2025]]    |     |
