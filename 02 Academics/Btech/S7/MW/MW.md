@@ -61,6 +61,25 @@ dg-publish: true
 - Design of Broadside, End fire and Dolph Chebyshev arrays
 - Concept of Phased array
 
+### Module 4
+
+- Microwaves: Introduction, advantages
+- Cavity Resonators: Derivation of resonance frequency of Rectangular cavity
+- Single cavity klystron
+- Reflex Klystron Oscillators: Derivation of Power output, efficiency and admittance
+- Magnetron oscillators: Cylindrical magnetron, Cyclotron angular frequency, Power output and efficiency
+- Travelling Wave Tube: Slow wave structures, Helix TWT, Amplification process, Derivation of convection current, axial electric field, wave modes and gain
+
+### Module 5
+
+- Microwave Hybrid circuits: Scattering parameters, Waveguide Tees- Magic tees, Hybrid rings
+- Formulation of S-matrix
+- Directional couplers: Two hole directional couplers, S-matrix
+- Circulators and Isolators
+- Phase Shifter
+- Microwave Semiconductor Devices: Amplifiers using MESFET
+- Principle of Gunn diodes: Different modes, Principle of operation Gunn Diode Oscillators
+
 ## Classes
 1. [[#Resonator|07.08.2024 9:05AM]]
 
