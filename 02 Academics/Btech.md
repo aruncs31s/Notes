@@ -1,53 +1,26 @@
 ---
-id: Btech
-aliases: []
 tags:
   - academics
-cssclasses: 
-dg-publish: true
+  - btech
 ---
-# B Tech
+# B Tech Notes
 
+## Semester 8
+- [[Secure Communication]]
+- [[Hill Cypher]]
 
-```dataview
-TABLE 
+## Semester 7
+- [[ISE]]
+- [[S7 PYQ]]
 
-ExamDate as "Date of Exam MM/DD/YYYY"
-WHERE ExamDate and supply
-SORT ExamDate asc
-```
+## Semester 6 (Supplementary)
+- [[MFE]]
+- [[Electromagnetics]]
+- [[Information Theory And Coding]]
+- [[Embedded Systems]]
 
-## Supplementary
-
-### S6
-
-| Subjet                                                                        | Date              |     |
-| ----------------------------------------------------------------------------- | ----------------- | --- |
-| [[MFE]]                                                                       | [[4/01/2025]]<br> |     |
-| [[01 Academics/Btech/S6/ElectroMagnetics/Electromagnetics\|Electromagnetics]] | [[17/12/2024]]    |     |
-| [[Information Theory And Coding]]                                             | [[31/12/2024]]    |     |
-| [[01 Academics/Btech/S6/Embedded Systems/Embedded Systems\|Embedded Systems]] | [[02/01/2025]]    |     |
-|                                                                               |                   |     |
-|                                                                               |                   |     |
-### S5
-
-| Course                               | Date       |
-| ------------------------------------ | ---------- |
-| [[DM]]                               | 12/12/2024 |
-| [[Analog and Digital Communication]] | 2/12/2024  |
-| [[Control Systems]]                  | 5/12/2024  |
-| [[Digital Signal Processing]]        | 28/11/2024 |
-|                                      |            |
-
-## Exam
-
-| Course                          | Date                 | Time |
-| ------------------------------- | -------------------- | ---- |
-| [[MW]]                          | 22/11/2024 (Friday)  |      |
-| [[Optical Fibre Communication]] | 26/11/2024 (Tuesday) |      |
-| [[Python For Engineers]]        | 29/11/2024 (Friday)  |      |
-| [[ISE]]                      | 03/12/2024 (Tuesday) |      |
-
-## References
-
-1.
+## Semester 5 (Supplementary)
+- [[DM]]
+- [[Analog and Digital Communication]]
+- [[Control Systems]]
+- [[Digital Signal Processing]]

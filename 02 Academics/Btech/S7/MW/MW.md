@@ -35,12 +35,31 @@ dg-publish: true
 
 ## Syllabus 
 
+### Module 1
 
-Basic antenna parameters: gain, directivity, beam width and effective aperture
-calculations, effective height, wave polarization, radiation resistance, radiation
-efficiency, antenna field zones. Duality and Principles of reciprocity, Helmholtz
-theorem (derivation required), Field, directivity and radiation resistance of a short
-dipole and half wave dipole (far field derivation).
+- Basic antenna parameters: gain, directivity, beam width and effective aperture calculations, effective height, wave polarization, radiation resistance, radiation efficiency, antenna field zones.
+- Duality and Principles of reciprocity
+- Helmholtz theorem (derivation required)
+- Field, directivity and radiation resistance of a short dipole and half wave dipole (far field derivation).
+
+### Module 2
+
+- Broad band antenna: Principle of Log periodic antenna array and design
+- Helical antenna: types and design
+- Design of Microstrip Rectangular Patch Antennas and feeding methods
+- Principles of Horn, Parabolic dish antenna (expression for E, H and Gain without derivation)
+- Mobile phone antenna – Inverted F antenna
+
+### Module 3
+
+- Arrays of point sources
+- Field of two isotropic point sources
+- Principle of pattern multiplication
+- Linear arrays of 'n' isotropic point sources
+- Array factor
+- Grating lobes
+- Design of Broadside, End fire and Dolph Chebyshev arrays
+- Concept of Phased array
 
 ## Classes
 1. [[#Resonator|07.08.2024 9:05AM]]
