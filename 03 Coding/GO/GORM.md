@@ -8,6 +8,7 @@ cssclasses:
 dg-publish: true
 ---
 # GORM
+- [[Eager Loading]]
 - [[Using SOLID Principle]]
 - [[Relations]]
 
