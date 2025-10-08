@@ -555,5 +555,50 @@ func RealSwap(a *int, b *int) {
 
 ```
 
+
+
+```go
+package main
+
+import (
+	"fmt"
+	"reflect"
+)
+
+type User struct {
+	Name string `json:"user_name" validate:"required,min=3"`
+	Age  int    `json:"user_age"`
+	City string `json:"-"` // "-" indicates the field should be ignored for this tag
+}
+
+func main() {
+	user := User{Name: "Alice", Age: 30, City: "New York"}
+
+	// Get the reflect.Type of the struct
+	// If 'user' is a pointer, use .Elem() to get the underlying struct type
+	typ := reflect.TypeOf(user)
+
+	fmt.Println("Struct Field Names and 'json' Tag Values:")
+	// Iterate over each field in the struct
+	for i := 0; i < typ.NumField(); i++ {
+		field := typ.Field(i) // Get the StructField at index i
+
+		// Get the field name
+		fieldName := field.Name
+
+		// Get the value of the "json" tag
+		jsonTag := field.Tag.Get("json")
+
+		fmt.Printf("Field Name: %s, JSON Tag: %s\n", fieldName, jsonTag)
+	}
+
+	fmt.Println("\nAccessing a specific tag key (e.g., 'validate'):")
+	// Accessing a specific field by name and its tag
+	if field, ok := typ.FieldByName("Name"); ok {
+		validateTag := field.Tag.Get("validate")
+		fmt.Printf("Field 'Name', Validate Tag: %s\n", validateTag)
+	}
+}
+```
 ## References
 1. _Learning Go: An Idiomatic Approach to Real-World Go Programming_
