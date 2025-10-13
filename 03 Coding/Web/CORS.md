@@ -51,3 +51,19 @@ app.listen(3000, () => {
 - `Access-Control-Request-Private-Network-Allowed-By-Default-Reason`: Provides a reason for why the request is allowed by default to access private network resources.
 - `Access-Control-Request-Private-Network-Not-Allowed-By-Default-Reason`: Provides a reason for why the request is not allowed by default to access private network resources.
 - 
+```go
+	r.Use(cors.New(cors.Config{
+		AllowOriginFunc: func(origin string) bool {
+			return strings.HasSuffix(origin, "localhost") ||
+				origin == "https://etlab-backend-go.onrender.com" ||
+				origin == "http://localhost:4200" ||
+				origin == "http://192.168.29.111:4200"
+		},
+		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
+		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization", "sentry-trace", "baggage"},
+		ExposeHeaders:    []string{"Content-Length", "Access-Control-Allow-Origin", "Access-Control-Allow-Headers", "Content-Type"},
+		AllowCredentials: true,
+	}))
+	// JWT Middleware
+	r.Use(middleware.SetCors())
+```

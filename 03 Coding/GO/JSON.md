@@ -70,3 +70,4 @@ ID         int       `json:"id" gorm:"column:id;primaryKey"`
 - In the database, it's stored in a column named "id"
 - It's configured as the primary key of the table
 
+## Custom Unmarshal
