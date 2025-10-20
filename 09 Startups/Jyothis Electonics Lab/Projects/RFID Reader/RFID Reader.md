@@ -20,6 +20,9 @@
 | VCC                 | Supply pin for the module (2.5V–3.3V), must be connected to Arduino 3.3V                                           |
 
 
-Ishansai
-Abhinavram
+## Students 
+
+
+**Ishansai**
+**Abhinavram**
 
