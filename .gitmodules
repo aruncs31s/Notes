@@ -4,3 +4,6 @@
 [submodule "03 Coding"]
 	path = 03 Coding
 	url = https://github.com/aruncs31s/Coding-Notes
+[submodule "01 Project"]
+	path = 01 Project
+	url = https://github.com/aruncs31s/Project-Notes
