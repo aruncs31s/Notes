@@ -7,7 +7,12 @@ dg-publish: true
 ---
 # Projects
 - [[Embedded Systems Website]]
-## Coding
+# Coding
 - [[03 Coding/01 C/C]]
 	- [[Pointers]]
 
+# Startups 
+- [[ESDC]]
+	- [[IoT Based Energy Meter]]
+	- [[09 Startups/ESDC-GCEK/Projects/AI-Assistant/AI-Assistant|AI-Assistant]]
+	- 
