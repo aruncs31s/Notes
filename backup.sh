@@ -1,5 +1,6 @@
+# Update Script
+# Made by Arun CS
 #!/usr/bin/env bash
-
 git add -A
 git commit -m "update from arch linux"
 git pull origin main
