@@ -1,9 +1,20 @@
-.obsidian/plugins/digitalgarden/data.json
-.obsidian/plugins/todoist-sync-plugin 
-.obsidian/todoist-token
-.obsidian/plugins/github-copilot/data.json
-# 98\ Private
-.obsidian/workspace.json
-*/*.DS_Store
-.obsidian
-# 98\ Private.lnk
+# Obsidian
+.obsidian/
+
+# macOS
+.DS_Store
+*/.DS_Store
+**/.DS_Store
+
+# Trash folder contents
+.trash/
+
+# Environment files (if contains sensitive data)
+.env
+
+# Large media files (consider using Git LFS for these)
+*.m4a
+*.mp3
+
+# Screenshots in root (should be in 99 Files/attachments)
+Screenshot*.png
