@@ -5,6 +5,15 @@ dg-publish: true
 
 Objective: Create a simple current measuring project using **esp8266 and current sensor**.
 
+## Prerequisites.
+
+1. Basic C. 
+2. ADC Working
+	1. ADC Resolution 
+	2. Converting ADC Value to Voltage
+	3. ESP8266 Operating Voltage
+3. Potential Divider (Voltage Divider)
+
 ### Phase 1
 
 | Name                   | Task                            | Date           | Status |
@@ -13,8 +22,6 @@ Objective: Create a simple current measuring project using **esp8266 and current
 | [[Anamika VV]]         | Create a simple circuit diagram | 2025-12-11 + 6 | 🕐     |
 
 #### Create a Sude Code
-First of all , if you dont know coding, its okey, or if you do know how to code but dont remember the syntax me neither. So what can you do about it. If you think about it you know may know how to code it , but no actually remember the syntax so right that down. 
-Eg:
 
 1. Initialize the Micro Controller
 2. Initialize the Current Sensor
