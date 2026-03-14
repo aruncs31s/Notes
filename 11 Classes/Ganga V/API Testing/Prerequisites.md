@@ -6,6 +6,9 @@
 4. PUT
 5. POST
 6. DELETE
+7. Authentication (AuthN)
+8. Authorization?? (AuthZ)
+
 
 ```json
 {
