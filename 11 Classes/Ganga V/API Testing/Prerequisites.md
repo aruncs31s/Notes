@@ -15,3 +15,16 @@
 	"value_2": "kaveri"
 }
 ```
+
+
+```json
+{
+	"key": "v",
+	"value": "ganaga",
+	"key": "k",
+	"value_2": "kaveri"
+}
+```
+
+## 1. `JSON` 
+- []Keys Must be ? ***Unique*** 
