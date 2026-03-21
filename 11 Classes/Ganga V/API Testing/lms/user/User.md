@@ -60,3 +60,6 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzQzNjcxNTMsInJvbGUiOiJ0ZWFjaGV
   "user_id": "b29d1271-ee44-43f5-afaa-eb695e91fe1f"
 }
 ```
+
+
+## Steps 
