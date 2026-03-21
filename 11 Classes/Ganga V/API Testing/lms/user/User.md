@@ -39,3 +39,24 @@ class LoginResponse:
 
 - test file name?? 
 - test funcitons naming. 
+
+
+---
+
+1. Python Modules 
+2. `__init__.py` 
+3. module structuring.
+4. Api Contract.
+5. Fixtures
+
+```json
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzQzNjcxNTMsInJvbGUiOiJ0ZWFjaGVyIiwidXNlcl9pZCI6ImIyOWQxMjcxLWVlNDQtNDNmNS1hZmFhLWViNjk1ZTkxZmUxZiJ9.zC6Bre9dcPTqWUU_SvR5Qc8yeYKLd2RszaAC9pRT9Bg
+```
+
+```json
+{
+  "exp": 1774367153,
+  "role": "teacher",
+  "user_id": "b29d1271-ee44-43f5-afaa-eb695e91fe1f"
+}
+```
