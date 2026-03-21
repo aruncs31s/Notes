@@ -43,9 +43,9 @@ class LoginResponse:
 
 ---
 
-1. Python Modules 
-2. `__init__.py` 
-3. module structuring.
+1. [x] Python Modules ✅ 2026-03-21
+2. [x] `__init__.py` ✅ 2026-03-21
+3. [ ] module structuring.
 4. Api Contract.
 5. Fixtures
 
