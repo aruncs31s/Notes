@@ -1,5 +1,6 @@
 
->[!SUMMARY]+ Table of Contents
+
+> [!SUMMARY]+Table of Contents
 <%*
     let headers = await tp.file.content
         .split('\n') // split file into lines

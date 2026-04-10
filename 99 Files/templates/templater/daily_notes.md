@@ -1,12 +1,13 @@
 ---
-id: daily_notes
-aliases: []
+title: "<% tp.date.now("dddd, MMMM Do, YYYY") %>"
 tags:
-  - files
-  - templates
-  - templater
-created: <% tp.file.creation_date() %>
+  - "daily_notes"
+cssclasses:
+  - wide-page
 dg-publish: true
+aliases: []
+created: 2025-11-04T00:33:55.767992
+updated: 2025-11-04T00:33:55.768005
 ---
 tags:: [[+Daily Notes]]
 
@@ -16,7 +17,10 @@ tags:: [[+Daily Notes]]
 
 ---
 
-## 📋 Tasks
+
+
+## Tasks
+
 
 ### Today's Tasks
 ```tasks
@@ -24,38 +28,41 @@ not done
 due on <% tp.date.now("YYYY-MM-DD") %>
 ```
 
+
 ### Completed Today
 ```tasks
 done on <% tp.date.now("YYYY-MM-DD") %>
 ```
 
-## 📅 Daily Reflection
 
-### 🙌 What am I excited about today?
+## Daily Reflection
+
+
+### excited about?
 
 - 
 
-### 🎯 What do I want to accomplish today?
+###  accomplish today?
 
 - [ ] 
 - [ ] 
 - [ ] 
 
-### 🤔 What challenges am I facing?
 
-- 
+### challenges?
 
-### 🌟 What am I grateful for?
 
-- 
 
-## 📝 Notes
+## Notes
 
 <%* app.workspace.activeLeaf.view.editor?.focus(); %>
 
 ---
 
-## 📊 Today's Activity
+
+
+## Today's Activity
+
 
 ### Notes Created Today
 ```dataview
@@ -64,6 +71,7 @@ FROM ""
 WHERE dateformat(file.ctime, "yyyy-MM-dd") = "<% tp.date.now("YYYY-MM-DD") %>"
 SORT file.ctime ASC
 ```
+
 
 ### Notes Modified Today
 ```dataview
@@ -74,4 +82,5 @@ SORT file.mtime DESC
 ```
 
 ---
+
 *Created: <% tp.date.now("YYYY-MM-DD HH:mm") %>*
