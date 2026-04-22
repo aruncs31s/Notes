@@ -1,7 +1,10 @@
 ---
 id: 05-Parameterized-Tests
-tags: [pytest, parametrized, testing]
-dg-publish: false
+tags:
+  - pytest
+  - parametrized
+  - testing
+dg-publish: true
 ---
 
 # Parameterized Tests

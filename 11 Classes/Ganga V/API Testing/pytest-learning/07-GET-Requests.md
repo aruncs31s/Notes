@@ -1,7 +1,10 @@
 ---
 id: 07-GET-Requests
-tags: [api, get, http]
-dg-publish: false
+tags:
+  - api
+  - get
+  - http
+dg-publish: true
 ---
 
 # Testing GET Requests

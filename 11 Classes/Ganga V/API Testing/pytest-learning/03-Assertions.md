@@ -1,7 +1,9 @@
 ---
 id: 03-Assertions
-tags: [pytest, assertions]
-dg-publish: false
+tags:
+  - pytest
+  - assertions
+dg-publish: true
 ---
 
 # Assertions

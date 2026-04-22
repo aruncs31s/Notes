@@ -1,7 +1,10 @@
 ---
 id: 02-Running-Tests
-tags: [pytest, cli, running-tests]
-dg-publish: false
+tags:
+  - pytest
+  - cli
+  - running-tests
+dg-publish: true
 ---
 
 # Running Tests

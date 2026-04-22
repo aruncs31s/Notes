@@ -1,7 +1,10 @@
 ---
 id: 08-POST-Requests
-tags: [api, post, http]
-dg-publish: false
+tags:
+  - api
+  - post
+  - http
+dg-publish: true
 ---
 
 # Testing POST Requests

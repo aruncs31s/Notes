@@ -1,7 +1,10 @@
 ---
 id: 09-Response-Assertions
-tags: [api, assertions, response]
-dg-publish: false
+tags:
+  - api
+  - assertions
+  - response
+dg-publish: true
 ---
 
 # Response Assertions

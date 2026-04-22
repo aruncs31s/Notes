@@ -1,7 +1,9 @@
 ---
 id: 04-Fixtures
-tags: [pytest, fixtures]
-dg-publish: false
+tags:
+  - pytest
+  - fixtures
+dg-publish: true
 ---
 
 # Fixtures

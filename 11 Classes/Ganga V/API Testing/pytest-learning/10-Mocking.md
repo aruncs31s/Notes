@@ -1,7 +1,10 @@
 ---
 id: 10-Mocking
-tags: [mocking, unittest, api]
-dg-publish: false
+tags:
+  - mocking
+  - unittest
+  - api
+dg-publish: true
 ---
 
 # Mocking

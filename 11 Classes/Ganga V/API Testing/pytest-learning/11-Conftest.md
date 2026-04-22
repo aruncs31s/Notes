@@ -1,7 +1,10 @@
 ---
 id: 11-Conftest
-tags: [pytest, conftest, fixtures]
-dg-publish: false
+tags:
+  - pytest
+  - conftest
+  - fixtures
+dg-publish: true
 ---
 
 # Shared Fixtures with conftest.py

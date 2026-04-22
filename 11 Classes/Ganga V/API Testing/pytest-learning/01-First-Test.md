@@ -1,7 +1,10 @@
 ---
 id: 01-First-Test
-tags: [pytest, basics, first-test]
-dg-publish: false
+tags:
+  - pytest
+  - basics
+  - first-test
+dg-publish: true
 ---
 
 # Your First Test

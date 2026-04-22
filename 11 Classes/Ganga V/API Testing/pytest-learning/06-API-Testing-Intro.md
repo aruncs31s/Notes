@@ -1,7 +1,10 @@
 ---
 id: 06-API-Testing-Intro
-tags: [api, testing, rest]
-dg-publish: false
+tags:
+  - api
+  - testing
+  - rest
+dg-publish: true
 ---
 
 # API Testing Introduction

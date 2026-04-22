@@ -1,21 +1,80 @@
 ---
 id: Pytest-Learning
-tags: [pytest, python, testing, api-testing]
+tags:
+  - pytest
+  - python
+  - testing
+  - api-testing
 cssclasses: []
-dg-publish: false
+dg-publish: true
+dg-home: true
 ---
 
 # Pytest Learning Path
+![[README.png]]
 
-Welcome to the pytest learning journey! This folder contains comprehensive notes for learning pytest for API testing.
+These are separate notes you can go one by one.
+
+Refresh Python and REST API Basics.
+- [[11 Classes/Ganga V/API Testing/pytest-learning/python/python|python]]
+	- [[01-Variables]] - Variables & Data Types
+	- [[02-Operations]] - String, List, Dictionary operations
+	- [[03-Control-Flow]] - If-else, For, While loops
+	- [[04-Functions]] - Functions, args, kwargs
+	- [[05-Comprehensions]] - List & Dict comprehensions
+	- [[06-Classes]] - OOP classes
+	- [[07-Modules]] - datetime, requests, mock
+	- [[08-Exception-Handling]] - Try-except, raise
+	- [[09-JSON]] - JSON parsing
+	- [[10-Files]] - File I/O
+	- [[11-Built-in-Functions]] - Built-in functions
+	- [[12-Testing-Patterns]] - Testing assertions
+
+- [[11 Classes/Ganga V/API Testing/pytest-learning/rest-api-learning/README|REST API Basics]]
+	- [[00-REST-API-Intro]] - What is REST?
+	- [[01-HTTP-Methods]] - GET, POST, PUT, DELETE
+	- [[02-Status-Codes]] - HTTP status codes
+	- [[03-Headers]] - HTTP headers
+	- [[04-Authentication]] - Auth methods
+	- [[05-URL-Design]] - Endpoint naming
+	- [[06-Versioning]] - API versioning
+	- [[07-Error-Handling]] - Error responses
+	- [[08-Rate-Limiting]] - Rate limiting
+	- [[09-Best-Practices]] - Design guidelines
+	- [[10-Documentation]] - API docs
+	- [[11-Testing]] - Testing REST APIs
+
+
+---
+
+- [[00-Setup]]
+- [[01-First-Test]]
+- [[02-Running-Tests]]
+- [[03-Assertions]]
+- [[04-Fixtures]]
+- [[05-Parameterized-Tests]]
+- [[06-API-Testing-Intro]]
+- [[07-GET-Requests]]
+- [[08-POST-Requests]]
+- [[09-Response-Assertions]]
+- [[10-Mocking]]
+- [[11-Conftest]]
+- [[12-Marks-And-Config]]
+
 
 ## Overview
 
 - **Goal**: Learn pytest for API testing
-- **Duration**: 10 weeks (1-2 hours/week)
+- **Duration**: 10 weeks ( 1 hour/week)
 - **Level**: Beginner Python
 
 ## Learning Path
+
+### Phase 0: Refresh (Week 0)
+
+- [[11 Classes/Ganga V/API Testing/pytest-learning/python/python|python]]
+Just read through this.
+
 
 ### Phase 1: Foundations (Weeks 1-2)
 

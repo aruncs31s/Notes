@@ -1,7 +1,10 @@
 ---
 id: 12-Marks-And-Config
-tags: [pytest, marks, configuration]
-dg-publish: false
+tags:
+  - pytest
+  - marks
+  - configuration
+dg-publish: true
 ---
 
 # Markers & Configuration
