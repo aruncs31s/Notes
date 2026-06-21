@@ -19,7 +19,7 @@ Objective: Create a simple current measuring project using **esp8266 and current
 | Name                   | Task                            | Date           | Status |
 | ---------------------- | ------------------------------- | -------------- | ------ |
 | [[Fathimath Safah KT]] | Create a sudo code              | 2025-12-11 + 5 | 🕐     |
-| [[Anamika VV]]         | Create a simple circuit diagram | 2025-12-11 + 6 | 🕐     |
+| [[11 Classes/Git by Doing/Participating/Anamika VV]]         | Create a simple circuit diagram | 2025-12-11 + 6 | 🕐     |
 
 #### Create a Sude Code
 
