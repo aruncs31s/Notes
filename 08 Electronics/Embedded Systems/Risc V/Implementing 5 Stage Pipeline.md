@@ -27,7 +27,7 @@ The 5 stages being used are[^1]
 >
 >>[!note]+ Tasks
 >> - [ ] RTL
->>  - [x] MIPS ✅ 2024-08-09
+>>  - [x] MIPS  2024-08-09
 >>  - [ ] Types of instruction 
 
 >[!info] MIPS

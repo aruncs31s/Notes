@@ -16,23 +16,23 @@
 │   IMAGE GALLERY         │    PRODUCT INFORMATION          │
 │                         │                                 │
 │  ┌─────────────────┐    │  Arduino Starter Kit            │
-│  │   Main Image    │    │  ★★★★★ 4.5 (128 reviews)      │
+│  │   Main Image    │    │   4.5 (128 reviews)      │
 │  │                 │    │                                 │
 │  │                 │    │  $45.99                         │
 │  └─────────────────┘    │  In Stock: 25 units             │
 │                         │                                 │
 │  [□] [□] [□] [□]       │  Quantity: [−] [1] [+]         │
 │  Thumbnails             │                                 │
-│                         │  [Add to Cart] [❤ Wishlist]   │
+│                         │  [Add to Cart] [ Wishlist]   │
 │                         │                                 │
 │                         ├─────────────────────────────────┤
 │                         │ AVAILABLE COUPONS               │
 │                         │                                 │
-│                         │ 🏷️ ARDUINO10                   │
+│                         │  ARDUINO10                   │
 │                         │ 10% off on Arduino kits         │
 │                         │ Discount: 10%    [Apply]       │
 │                         │                                 │
-│                         │ 🏷️ STARTER5                    │
+│                         │  STARTER5                    │
 │                         │ $5 off on any order             │
 │                         │ Discount: $5     [Apply]       │
 │                         │                                 │
@@ -48,14 +48,14 @@
 ┌─────────────────────────┬─────────────────────────────────┐
 │ FEATURES                │ SPECIFICATIONS                  │
 ├─────────────────────────┼─────────────────────────────────┤
-│ ✓ Easy to use           │ Microcontroller: ATmega328     │
-│ ✓ Open-source           │ Operating Voltage: 5V          │
-│ ✓ Compatible sensors    │ Digital I/O Pins: 14           │
-│ ✓ Communication options │ PWM Pins: 6                    │
-│ ✓ Integrated LED        │ Analog Input Pins: 6           │
-│ ✓ USB connection        │ Memory: 32KB Flash, 2KB SRAM   │
-│ ✓ Reset button          │ Clock Speed: 16 MHz            │
-│ ✓ Community support     │ Dimensions: 73.66 x 53.34 mm  │
+│  Easy to use           │ Microcontroller: ATmega328     │
+│  Open-source           │ Operating Voltage: 5V          │
+│  Compatible sensors    │ Digital I/O Pins: 14           │
+│  Communication options │ PWM Pins: 6                    │
+│  Integrated LED        │ Analog Input Pins: 6           │
+│  USB connection        │ Memory: 32KB Flash, 2KB SRAM   │
+│  Reset button          │ Clock Speed: 16 MHz            │
+│  Community support     │ Dimensions: 73.66 x 53.34 mm  │
 │                         │ Weight: 25g                     │
 └─────────────────────────┴─────────────────────────────────┘
 
@@ -63,13 +63,13 @@
 │ CUSTOMER REVIEWS                                            │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│ Average Rating: ★★★★★ 4.5 out of 5                        │
+│ Average Rating:  4.5 out of 5                        │
 │ Based on 128 customer reviews                              │
 │                                                             │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│ John Doe ✓ Verified Purchase                               │
-│ ★★★★★ October 10, 2025                                    │
+│ John Doe  Verified Purchase                               │
+│  October 10, 2025                                    │
 │                                                             │
 │ "Perfect for beginners!"                                   │
 │                                                             │
@@ -78,8 +78,8 @@
 │                                                             │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│ Jane Smith ✓ Verified Purchase                             │
-│ ★★★★☆ October 5, 2025                                     │
+│ Jane Smith  Verified Purchase                             │
+│  October 5, 2025                                     │
 │                                                             │
 │ "Good value for money"                                     │
 │                                                             │
@@ -88,8 +88,8 @@
 │                                                             │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│ Mike Johnson ✓ Verified Purchase                           │
-│ ★★★★★ September 28, 2025                                  │
+│ Mike Johnson  Verified Purchase                           │
+│  September 28, 2025                                  │
 │                                                             │
 │ "Amazing kit!"                                             │
 │                                                             │
@@ -109,7 +109,7 @@
 │ ├──────────────┤  ├──────────────┤  ├──────────────┤      │
 │ │ESP32 Dev     │  │Sensor Kit    │  │Breadboard Set│      │
 │ │Hardware      │  │Components    │  │Components    │      │
-│ │★★★★☆ (189)  │  │★★★★☆ (95)   │  │★★★★☆ (110)  │      │
+│ │ (189)  │  │ (95)   │  │ (110)  │      │
 │ │$12.99        │  │$29.99        │  │$15.99        │      │
 │ │[Details]     │  │[Details]     │  │[Details]     │      │
 │ └──────────────┘  └──────────────┘  └──────────────┘      │
@@ -143,7 +143,7 @@
 
 ┌─────────────────────┐
 │ Product Name        │
-│ ★★★★★ 4.5 (128)   │
+│  4.5 (128)   │
 │                     │
 │ $45.99              │
 │ In Stock: 25        │
@@ -151,17 +151,17 @@
 │ Qty: [−] [1] [+]   │
 │                     │
 │ [Add to Cart]       │
-│ [❤ Wishlist]       │
+│ [ Wishlist]       │
 └─────────────────────┘
 
 ┌─────────────────────┐
 │ COUPONS             │
 │                     │
-│ 🏷️ ARDUINO10       │
+│  ARDUINO10       │
 │ 10% off             │
 │ [Apply]             │
 │                     │
-│ 🏷️ STARTER5        │
+│  STARTER5        │
 │ $5 off              │
 │ [Apply]             │
 └─────────────────────┘
@@ -169,9 +169,9 @@
 ┌─────────────────────┐
 │ FEATURES            │
 │                     │
-│ ✓ Easy to use       │
-│ ✓ Open-source       │
-│ ✓ Compatible...     │
+│  Easy to use       │
+│  Open-source       │
+│  Compatible...     │
 │ ... (more)          │
 └─────────────────────┘
 
@@ -189,11 +189,11 @@
 ┌─────────────────────┐
 │ REVIEWS             │
 │                     │
-│ ★★★★★ 4.5          │
+│  4.5          │
 │ (128 reviews)       │
 │                     │
 │ John Doe            │
-│ ★★★★★              │
+│               │
 │ Perfect for...      │
 │ ... (more)          │
 └─────────────────────┘

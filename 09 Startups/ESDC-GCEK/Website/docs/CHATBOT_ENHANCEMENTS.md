@@ -1,12 +1,12 @@
-# 🎨 Chatbot Enhancements - Beautiful & Playful Design
+#  Chatbot Enhancements - Beautiful & Playful Design
 
-## ✨ What's New?
+##  What's New?
 
-### 🎭 Visual Enhancements
+###  Visual Enhancements
 
 #### 1. **Animated Toggle Button**
 
-- 🤖 Robot icon instead of generic comment icon
+-  Robot icon instead of generic comment icon
 - Smooth bounce-in animation on load
 - Playful hover effects with rotation (10deg) and scale (1.15x)
 - Pulsing ring animation that radiates outward
@@ -14,7 +14,7 @@
 
 #### 2. **Enhanced Header**
 
-- 🌟 Animated robot avatar with floating effect
+-  Animated robot avatar with floating effect
 - Wiggling bot icon animation
 - Subtle shine effect across the header background
 - Improved status indicator with pulse wave animation
@@ -22,7 +22,7 @@
 
 #### 3. **Message Bubbles**
 
-- 👤 User and bot avatars beside each message
+-  User and bot avatars beside each message
 - Smooth slide-in animation for new messages
 - Hover effects that lift messages slightly
 - Better shadows and borders for depth
@@ -30,7 +30,7 @@
 
 #### 4. **Quick Action Buttons**
 
-- 🎉 Emoji icons for each action (Events, Challenges, Resources, Join Us)
+-  Emoji icons for each action (Events, Challenges, Resources, Join Us)
 - Circular ripple effect on hover
 - Bouncy scale animation
 - Gradient background transition
@@ -38,7 +38,7 @@
 
 #### 5. **Input Section**
 
-- ✨ Animated glow border at the top
+-  Animated glow border at the top
 - Larger, more comfortable input field
 - Smooth focus animations with scale effect
 - Enhanced send button with rotation (15deg) on hover
@@ -46,12 +46,12 @@
 
 #### 6. **Container**
 
-- 🌈 Animated gradient border that rotates colors
+-  Animated gradient border that rotates colors
 - Bouncy entrance animation
 - Larger size for better readability (380px → 400px)
 - Enhanced shadows for depth
 
-### 🎬 Animations Added
+###  Animations Added
 
 1. **bounceIn** - Toggle button entrance
 2. **pulseRing** - Pulsing effect on toggle
@@ -64,7 +64,7 @@
 9. **headerShine** - Subtle shine across header
 10. **fadeInUp** - Quick actions entrance
 
-### 🎨 Color Enhancements
+###  Color Enhancements
 
 - **Primary Gradient**: `#667eea` → `#764ba2` (Purple)
 - **Secondary Gradient**: `#f093fb` → `#f5576c` (Pink)
@@ -72,7 +72,7 @@
 - Improved dark mode support
 - Softer, more playful color palette
 
-### 🚀 User Experience Improvements
+###  User Experience Improvements
 
 1. **Better Visual Feedback**
    - All interactive elements respond to hover
@@ -80,7 +80,7 @@
    - Clear affordances for clickable items
 
 2. **Personality**
-   - Friendly greeting with emojis 👋🚀
+   - Friendly greeting with emojis 
    - Robot avatar that feels alive
    - Playful animations that don't distract
    - Engaging quick action buttons
@@ -91,7 +91,7 @@
    - Maintained ARIA labels
    - Keyboard-friendly interactions
 
-### 📱 Responsive Design
+###  Responsive Design
 
 All enhancements maintain full responsiveness:
 
@@ -99,18 +99,18 @@ All enhancements maintain full responsiveness:
 - Tablet friendly (< 768px)
 - Desktop enhanced (> 768px)
 
-## 🎯 Key Features
+##  Key Features
 
-- ✅ Smooth, playful animations
-- ✅ Avatar-based messaging
-- ✅ Enhanced visual hierarchy
-- ✅ Better color gradients
-- ✅ Improved hover effects
-- ✅ Professional yet friendly design
-- ✅ Dark mode support
-- ✅ Performance optimized
+-  Smooth, playful animations
+-  Avatar-based messaging
+-  Enhanced visual hierarchy
+-  Better color gradients
+-  Improved hover effects
+-  Professional yet friendly design
+-  Dark mode support
+-  Performance optimized
 
-## 💡 Tips for Further Customization
+##  Tips for Further Customization
 
 1. **Change Colors**: Modify gradient values in the CSS
 2. **Adjust Animations**: Tweak timing and easing functions
@@ -118,7 +118,7 @@ All enhancements maintain full responsiveness:
 4. **Custom Avatars**: Replace robot/user icons with custom images
 5. **Sound Effects**: Add subtle sounds for interactions
 
-## 🎨 Design Philosophy
+##  Design Philosophy
 
 The new design follows these principles:
 
@@ -128,4 +128,4 @@ The new design follows these principles:
 - **Personality**: The bot feels alive and friendly
 - **Accessibility First**: Beautiful and usable for everyone
 
-Enjoy your new beautiful and playful chatbot! 🎉
+Enjoy your new beautiful and playful chatbot! 

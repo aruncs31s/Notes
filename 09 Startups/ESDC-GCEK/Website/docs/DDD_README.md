@@ -1,26 +1,26 @@
-# 🏗️ ESDC Project - DDD Architecture
+#  ESDC Project - DDD Architecture
 
-## ✅ Implementation Complete!
+##  Implementation Complete!
 
 Your project now follows **Domain-Driven Design (DDD)** principles with proper layered architecture.
 
-## 📁 New Structure
+##  New Structure
 
 ```
 src/
-├── domain/              # ✅ Domain Layer - Business Logic
+├── domain/              #  Domain Layer - Business Logic
 │   ├── entities/        # Business entities (User, Challenge, Project, Event)
 │   ├── value-objects/   # Value objects (Email, Points, Difficulty)
 │   ├── services/        # Domain services
 │   ├── events/          # Domain events & event bus
 │   └── repositories/    # Repository interfaces
 │
-├── application/         # ✅ Application Layer - Use Cases
+├── application/         #  Application Layer - Use Cases
 │   ├── use-cases/       # Application use cases
 │   ├── ApplicationService.js  # Main facade for UI
 │   └── Container.js     # Dependency injection
 │
-├── infrastructure/      # ✅ Infrastructure Layer - External Services
+├── infrastructure/      #  Infrastructure Layer - External Services
 │   ├── api/            # API client
 │   └── repositories/   # Repository implementations
 │
@@ -31,7 +31,7 @@ src/
     └── hooks/
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Import ApplicationService (Main API)
 ```javascript
@@ -58,7 +58,7 @@ if (result.success) {
 }
 ```
 
-## 📚 Documentation
+##  Documentation
 
 | Document | Purpose |
 |----------|---------|
@@ -67,9 +67,9 @@ if (result.success) {
 | [DDD_IMPLEMENTATION_SUMMARY.md](./DDD_IMPLEMENTATION_SUMMARY.md) | What was implemented |
 | [DDD_ANALYSIS.md](./DDD_ANALYSIS.md) | Original analysis and recommendations |
 
-## 🎯 What Problems Were Solved
+##  What Problems Were Solved
 
-### ✅ Before → After
+###  Before → After
 
 | Issue | Before | After |
 |-------|--------|-------|
@@ -81,7 +81,7 @@ if (result.success) {
 | **Domain Events** | None | Event-driven architecture with 10 events |
 | **Architecture** | Mixed concerns | Clean layered architecture |
 
-## 🔧 Common Operations
+##  Common Operations
 
 ### Users
 ```javascript
@@ -122,7 +122,7 @@ await applicationService.getUserRank(userId);
 await applicationService.getAdminStats();
 ```
 
-## 💎 Domain Entities with Business Logic
+##  Domain Entities with Business Logic
 
 ### User Entity
 ```javascript
@@ -164,7 +164,7 @@ event.registerParticipant();
 event.isFull(); // true/false
 ```
 
-## 🎪 Domain Events
+##  Domain Events
 
 ```javascript
 import { eventBus } from '@/domain';
@@ -179,7 +179,7 @@ eventBus.subscribe('ChallengeCompleted', async (event) => {
 });
 ```
 
-## 🔄 Migration Guide
+##  Migration Guide
 
 ### Update Your Components
 
@@ -196,7 +196,7 @@ const result = await applicationService.getAllUsers();
 const users = result.data;
 ```
 
-## 📦 Example Component
+##  Example Component
 
 ```javascript
 import { useState, useEffect } from 'react';
@@ -234,13 +234,13 @@ const UsersPage = () => {
 };
 ```
 
-## 🎓 Learn More
+##  Learn More
 
 - **Quick Reference**: [DDD_QUICK_REFERENCE.md](./DDD_QUICK_REFERENCE.md)
 - **Full Guide**: [DDD_IMPLEMENTATION_GUIDE.md](./DDD_IMPLEMENTATION_GUIDE.md)
 - **Example Component**: [src/pages/AdminPanel-DDD.jsx](./src/pages/AdminPanel-DDD.jsx)
 
-## 🛠️ Key Files
+##  Key Files
 
 | File | Purpose |
 |------|---------|
@@ -249,20 +249,20 @@ const UsersPage = () => {
 | `src/domain/index.js` | Domain layer exports |
 | `src/infrastructure/index.js` | Infrastructure layer exports |
 
-## ✨ Features
+##  Features
 
-- ✅ Repository Pattern (4 repositories)
-- ✅ Rich Domain Model (4 entities)
-- ✅ Value Objects (4 types)
-- ✅ Domain Services (3 services)
-- ✅ Domain Events (10 events)
-- ✅ Use Cases (7 use cases)
-- ✅ Application Facade
-- ✅ Dependency Injection
-- ✅ Event-Driven Architecture
-- ✅ Proper Layered Architecture
+-  Repository Pattern (4 repositories)
+-  Rich Domain Model (4 entities)
+-  Value Objects (4 types)
+-  Domain Services (3 services)
+-  Domain Events (10 events)
+-  Use Cases (7 use cases)
+-  Application Facade
+-  Dependency Injection
+-  Event-Driven Architecture
+-  Proper Layered Architecture
 
-## 📝 Next Steps
+##  Next Steps
 
 1. **Update existing components** to use `ApplicationService`
 2. **Remove old API references** from `services/api.js`
@@ -270,7 +270,7 @@ const UsersPage = () => {
 4. **Add more use cases** as needed
 5. **Subscribe to domain events** for side effects
 
-## 🎉 Benefits
+##  Benefits
 
 - **Maintainable**: Clear separation of concerns
 - **Testable**: Each layer can be tested independently

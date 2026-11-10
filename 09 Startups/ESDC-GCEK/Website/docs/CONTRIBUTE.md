@@ -1,6 +1,6 @@
 # Contributers Notes
 
-Hi there! 👋 , I am Arun CS , i want to develop this website into something usefull , me and my friends are working when ever we get time to develop this website as fast as possible.
+Hi there!  , I am Arun CS , i want to develop this website into something usefull , me and my friends are working when ever we get time to develop this website as fast as possible.
 
 ## Little Motivation
 

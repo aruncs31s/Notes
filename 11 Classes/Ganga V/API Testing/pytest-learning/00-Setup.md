@@ -22,7 +22,7 @@ A **virtual environment** is an isolated Python environment that keeps your proj
 Project A needs: django==3.0
 Project B needs: django==4.0
 
-System Python has: django==2.0  ❌ Conflict!
+System Python has: django==2.0   Conflict!
 ```
 So its better to separate these two.
 
@@ -30,9 +30,9 @@ So its better to separate these two.
 ### With Virtual Environments
 
 ```
-Project A venv: django==3.0   ✅
-Project B venv: django==4.0   ✅
-System Python: django==2.0    ✅
+Project A venv: django==3.0   
+Project B venv: django==4.0   
+System Python: django==2.0    
 ```
 
 ### Benefits

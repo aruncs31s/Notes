@@ -1,12 +1,12 @@
 # Project Detail Interactive Modals
 
-## 📋 Overview
+##  Overview
 
 Enhanced the Project Detail page with **interactive modals** that provide detailed information about project stats, contributors, technologies, and tags. Users can now click on various elements to explore more details and navigate to related content.
 
-## ✨ Features Added
+##  Features Added
 
-### 1. **Likes Modal** 🎯
+### 1. **Likes Modal** 
 
 - **Trigger**: Click "Who Liked" button or Likes stat
 - **Shows**: List of users who liked the project
@@ -16,7 +16,7 @@ Enhanced the Project Detail page with **interactive modals** that provide detail
   - Date when they liked the project
   - Empty state for no likes yet
 
-### 2. **Contributors Modal** 👥
+### 2. **Contributors Modal** 
 
 - **Trigger**: Click Contributors stat or any contributor card
 - **Shows**: Detailed information about all contributors
@@ -29,7 +29,7 @@ Enhanced the Project Detail page with **interactive modals** that provide detail
   - Role badges
   - Grid layout for easy viewing
 
-### 3. **Technologies Modal** 💻
+### 3. **Technologies Modal** 
 
 - **Trigger**: Click Technologies stat or "View Details" button
 - **Shows**: All technologies used in the project
@@ -41,7 +41,7 @@ Enhanced the Project Detail page with **interactive modals** that provide detail
   - **"Docs" button** → Opens documentation
   - **"View All Courses" button** → Navigate to courses page
 
-### 4. **Tags Modal** 🏷️
+### 4. **Tags Modal** 
 
 - **Trigger**: Click Tags stat, "View All" button, or "+X more" badge
 - **Shows**: All project tags
@@ -52,17 +52,17 @@ Enhanced the Project Detail page with **interactive modals** that provide detail
   - Info banner explaining functionality
   - Navigates to `/projects?tag=tagname`
 
-## 🎨 UI/UX Enhancements
+##  UI/UX Enhancements
 
 ### Clickable Elements
 
 All interactive elements now have:
 
-- ✅ Cursor pointer on hover
-- ✅ Visual feedback (color change, scale, shadow)
-- ✅ Tooltips explaining functionality
-- ✅ Smooth animations
-- ✅ Border highlights
+-  Cursor pointer on hover
+-  Visual feedback (color change, scale, shadow)
+-  Tooltips explaining functionality
+-  Smooth animations
+-  Border highlights
 
 ### Visual Indicators
 
@@ -78,7 +78,7 @@ All interactive elements now have:
 - Touch-friendly interactions
 - Proper scrolling behavior
 
-## 📁 Files Created
+##  Files Created
 
 ```
 src/
@@ -94,7 +94,7 @@ src/
     └── ProjectModals.css          # Modal-specific styles
 ```
 
-## 🔄 Files Modified
+##  Files Modified
 
 ### `src/pages/ProjectDetail.tsx`
 
@@ -114,7 +114,7 @@ src/
 - Added `.action-btn-clickable` styles
 - Enhanced hover effects and transitions
 
-## 🚀 Usage Examples
+##  Usage Examples
 
 ### Opening Modals
 
@@ -159,7 +159,7 @@ src/
 </button>
 ```
 
-## 🎯 User Interactions
+##  User Interactions
 
 ### Before Clicking
 
@@ -181,7 +181,7 @@ src/
 | Click "Learn [Tech]"    | Goes to courses page for that technology |
 | Click Contributor Card  | Opens contributors modal                 |
 
-## 🔗 Integration Points
+##  Integration Points
 
 ### Course Page Integration
 
@@ -200,7 +200,7 @@ navigate(tech.courseLink);
 navigate(`/projects?tag=${encodeURIComponent(tag.name)}`);
 ```
 
-## 📊 Data Structure
+##  Data Structure
 
 ### Expected Props
 
@@ -245,7 +245,7 @@ interface Tag {
 }
 ```
 
-## 🎨 Color System
+##  Color System
 
 All modals use the centralized color system:
 
@@ -269,7 +269,7 @@ All modals use the centralized color system:
 --color-info: var(--sky);
 ```
 
-## 🔧 TODO / Future Enhancements
+##  TODO / Future Enhancements
 
 ### API Integration
 
@@ -300,17 +300,17 @@ All modals use the centralized color system:
 - [ ] ARIA labels for screen readers
 - [ ] High contrast mode support
 
-## 📱 Mobile Experience
+##  Mobile Experience
 
 All modals are optimized for mobile:
 
-- ✅ Full-screen on small devices
-- ✅ Touch-friendly tap targets (min 44x44px)
-- ✅ Swipe-to-dismiss functionality
-- ✅ Proper z-index stacking
-- ✅ Scroll lock when modal is open
+-  Full-screen on small devices
+-  Touch-friendly tap targets (min 44x44px)
+-  Swipe-to-dismiss functionality
+-  Proper z-index stacking
+-  Scroll lock when modal is open
 
-## 🐛 Testing Checklist
+##  Testing Checklist
 
 - [ ] Modals open and close correctly
 - [ ] Escape key closes modals
@@ -322,14 +322,14 @@ All modals are optimized for mobile:
 - [ ] Animations are smooth
 - [ ] No console errors
 
-## 📝 Notes
+##  Notes
 
 1. **LikesModal** currently shows empty state - needs backend integration
 2. **TechnologiesModal** assumes courses page exists at `/courses`
 3. **TagsModal** navigation requires Projects page to support `?tag=` query param
 4. All modals support dark mode via CSS variables
 
-## 🎓 Learning Resources
+##  Learning Resources
 
 Users can now:
 
@@ -338,4 +338,4 @@ Users can now:
 3. Click "Docs" → Open documentation
 4. Click "View All Courses" → Browse all available courses
 
-This creates a seamless learning journey from project details to educational content! 🚀
+This creates a seamless learning journey from project details to educational content! 

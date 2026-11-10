@@ -17,8 +17,8 @@ dg-publish: true
 > We know **similar** charges repel each other and **opposite** charges attract eachother but  why the protons inside and atom not repelling each other ? 
 > - One thing that the strong Nuclear force experienced by protons and nutrons so the `strong nuclear force` will exceed force experienced due to the charges(electric force)
 
-- [x] Laws of motion ✅2025-07-04/03:36 
-- [x] Principle of relativity ✅2025-07-04/03:36 
+- [x] Laws of motion 2025-07-04/03:36 
+- [x] Principle of relativity 2025-07-04/03:36 
 - [ ] Tenzer
 - [ ] 
 The vector itself is independant of which co-ordinate system we use.

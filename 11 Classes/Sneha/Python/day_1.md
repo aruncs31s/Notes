@@ -15,12 +15,12 @@ date: 2025-09-03
 ### Syllabus 
 
 - Basic coding skills
-	- [x] Working with data types, ✅ 2025-09-03
-	- [x] Keywords, ✅ 2025-09-03
-	- [x] Variables and Operators, ✅ 2025-09-03
+	- [x] Working with data types,  2025-09-03
+	- [x] Keywords,  2025-09-03
+	- [x] Variables and Operators,  2025-09-03
 - working with numeric data,
-	- [x] Type conversions, ✅ 2025-09-03
-	- [x] Input, Processing, ✅ 2025-09-03
+	- [x] Type conversions,  2025-09-03
+	- [x] Input, Processing,  2025-09-03
 	- and Output, Formatting output.
 - Data Types
 	- String,
@@ -290,7 +290,7 @@ a >> 1  # 0
 
 ```
 
-- [ ] explain biwise `not` 🏁 delete 
+- [ ] explain biwise `not`  delete 
 
 #### Assignment Operators
 

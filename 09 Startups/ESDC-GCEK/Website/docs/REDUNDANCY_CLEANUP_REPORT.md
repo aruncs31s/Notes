@@ -1,6 +1,6 @@
-# 🗑️ Redundant Files Cleanup Report
+#  Redundant Files Cleanup Report
 
-## 📊 Summary
+##  Summary
 
 Found **multiple categories** of redundant files in your project:
 
@@ -12,9 +12,9 @@ Found **multiple categories** of redundant files in your project:
 
 ---
 
-## 🔴 Critical Redundancies
+##  Critical Redundancies
 
-### 1. Admin Panel Duplicates ⚠️ HIGH PRIORITY
+### 1. Admin Panel Duplicates  HIGH PRIORITY
 
 **Files:**
 
@@ -25,9 +25,9 @@ Found **multiple categories** of redundant files in your project:
 
 **Recommendation:**
 
-- ✅ **Keep:** `AdminPanel-DDD.tsx` (uses proper DDD architecture)
-- ❌ **Delete:** `AdminPanel.tsx` (old approach)
-- 📝 **Action:** Rename `AdminPanel-DDD.tsx` to `AdminPanel.tsx` after deletion
+-  **Keep:** `AdminPanel-DDD.tsx` (uses proper DDD architecture)
+-  **Delete:** `AdminPanel.tsx` (old approach)
+-  **Action:** Rename `AdminPanel-DDD.tsx` to `AdminPanel.tsx` after deletion
 
 **Used by:**
 \`\`\`typescript
@@ -37,7 +37,7 @@ const AdminPanel = lazy(() => import('@/pages/AdminPanel'));
 
 ---
 
-### 2. User Model Duplicates ⚠️ HIGH PRIORITY
+### 2. User Model Duplicates  HIGH PRIORITY
 
 **Files:**
 
@@ -59,13 +59,13 @@ const AdminPanel = lazy(() => import('@/pages/AdminPanel'));
 
 **Recommendation:**
 
-- ✅ **Keep:** `/src/domain/entities/User.ts` (DDD entity)
-- ❌ **Delete:** `/src/models/user.ts`
-- 📝 **Action:** Update imports from `models/user` to `domain/entities/User`
+-  **Keep:** `/src/domain/entities/User.ts` (DDD entity)
+-  **Delete:** `/src/models/user.ts`
+-  **Action:** Update imports from `models/user` to `domain/entities/User`
 
 ---
 
-### 3. Login Component Duplicates ⚠️ MEDIUM PRIORITY
+### 3. Login Component Duplicates  MEDIUM PRIORITY
 
 **Files:**
 
@@ -76,8 +76,8 @@ const AdminPanel = lazy(() => import('@/pages/AdminPanel'));
 
 **Recommendation:**
 
-- ✅ **Keep:** `Login.tsx` (full page component)
-- ⚠️ **Check:** `LoginForm.tsx` - verify if it's used anywhere
+-  **Keep:** `Login.tsx` (full page component)
+-  **Check:** `LoginForm.tsx` - verify if it's used anywhere
 - If not used: **Delete** `LoginForm.tsx`
 
 **Verification needed:**
@@ -87,7 +87,7 @@ grep -r "LoginForm" src/ --exclude-dir=node_modules
 
 ---
 
-### 4. Supabase Dependencies ⚠️ MEDIUM PRIORITY
+### 4. Supabase Dependencies  MEDIUM PRIORITY
 
 **Found in:**
 
@@ -122,7 +122,7 @@ npm uninstall @supabase/supabase-js
 
 ---
 
-### 5. Mixed File Extensions ⚠️ LOW PRIORITY
+### 5. Mixed File Extensions  LOW PRIORITY
 
 **Files:**
 
@@ -137,38 +137,38 @@ npm uninstall @supabase/supabase-js
 
 ---
 
-## 📋 Complete Redundancy List
+##  Complete Redundancy List
 
 ### Files to Delete:
 
 \`\`\`
-❌ src/pages/AdminPanel.tsx (keep AdminPanel-DDD.tsx)
-❌ src/models/user.ts (use domain/entities/User.ts)
-❌ src/models/projects.ts (use domain/entities/Project.ts)
-⚠️ src/components/LoginForm.tsx (verify usage first)
+ src/pages/AdminPanel.tsx (keep AdminPanel-DDD.tsx)
+ src/models/user.ts (use domain/entities/User.ts)
+ src/models/projects.ts (use domain/entities/Project.ts)
+ src/components/LoginForm.tsx (verify usage first)
 \`\`\`
 
 ### Files to Rename:
 
 \`\`\`
-📝 src/pages/AdminPanel-DDD.tsx → src/pages/AdminPanel.tsx
+ src/pages/AdminPanel-DDD.tsx → src/pages/AdminPanel.tsx
 \`\`\`
 
 ### Files to Convert:
 
 \`\`\`
-🔄 src/pages/Search.jsx → src/pages/Search.tsx
+ src/pages/Search.jsx → src/pages/Search.tsx
 \`\`\`
 
 ### Dependencies to Remove:
 
 \`\`\`
-📦 @supabase/supabase-js
+ @supabase/supabase-js
 \`\`\`
 
 ---
 
-## 🛠️ Cleanup Script
+##  Cleanup Script
 
 Here's a step-by-step cleanup plan:
 
@@ -264,7 +264,7 @@ rmdir src/models/
 
 ---
 
-## 🎯 Impact Analysis
+##  Impact Analysis
 
 ### Before Cleanup:
 
@@ -276,15 +276,15 @@ rmdir src/models/
 
 ### After Cleanup:
 
-- **Single source of truth:** ✅
-- **Clear architecture:** ✅ (DDD only)
-- **Consistent imports:** ✅
-- **Smaller bundle size:** ✅
-- **Easier maintenance:** ✅
+- **Single source of truth:** 
+- **Clear architecture:**  (DDD only)
+- **Consistent imports:** 
+- **Smaller bundle size:** 
+- **Easier maintenance:** 
 
 ---
 
-## ⚠️ Important Notes
+##  Important Notes
 
 ### Before Deleting Anything:
 
@@ -296,15 +296,15 @@ rmdir src/models/
 
 ### Safe Deletion Order:
 
-1. ✅ Remove Supabase (safest - not used)
-2. ✅ Remove duplicate models (after updating imports)
-3. ✅ Remove old AdminPanel (after testing DDD version)
-4. ⚠️ Check LoginForm usage before deleting
-5. ✅ Convert Search.jsx to .tsx
+1.  Remove Supabase (safest - not used)
+2.  Remove duplicate models (after updating imports)
+3.  Remove old AdminPanel (after testing DDD version)
+4.  Check LoginForm usage before deleting
+5.  Convert Search.jsx to .tsx
 
 ---
 
-## 🔍 Verification Commands
+##  Verification Commands
 
 After cleanup, verify everything works:
 
@@ -329,7 +329,7 @@ npm run test
 
 ---
 
-## 📊 Statistics
+##  Statistics
 
 ### Current State:
 
@@ -354,7 +354,7 @@ npm run test
 
 ---
 
-## 🚀 Next Steps
+##  Next Steps
 
 1. **Read this report carefully**
 2. **Run the automated cleanup script** (see below)
@@ -364,29 +364,29 @@ npm run test
 
 ---
 
-## 🤖 Automated Cleanup Script
+##  Automated Cleanup Script
 
 Create this file: `cleanup-redundancy.sh`
 
 \`\`\`bash
 #!/bin/bash
 
-echo "🧹 Starting redundancy cleanup..."
+echo " Starting redundancy cleanup..."
 
 # Backup
 
-echo "📦 Creating backup..."
+echo " Creating backup..."
 git add .
 git commit -m "Backup before redundancy cleanup" || echo "No changes to backup"
 
 # Remove Supabase
 
-echo "🗑️ Removing Supabase..."
+echo " Removing Supabase..."
 npm uninstall @supabase/supabase-js
 
 # Update imports (manual verification needed)
 
-echo "⚠️ Manual step required:"
+echo " Manual step required:"
 echo " Update imports in:"
 echo " - src/pages/AdminPanel.tsx"
 echo " - src/services/api.ts"
@@ -399,19 +399,19 @@ read -p "Press enter after updating imports..."
 
 # Delete redundant files
 
-echo "🗑️ Deleting redundant files..."
+echo " Deleting redundant files..."
 rm -f src/models/user.ts
 rm -f src/models/projects.ts
 rm -f src/pages/AdminPanel.tsx
 
 # Rename DDD version
 
-echo "📝 Renaming AdminPanel-DDD.tsx..."
+echo " Renaming AdminPanel-DDD.tsx..."
 mv src/pages/AdminPanel-DDD.tsx src/pages/AdminPanel.tsx
 
 # Check LoginForm usage
 
-echo "🔍 Checking LoginForm usage..."
+echo " Checking LoginForm usage..."
 if ! grep -rq "LoginForm" src/ --exclude-dir=node_modules; then
 echo " LoginForm not used, deleting..."
 rm -f src/components/LoginForm.tsx
@@ -422,16 +422,16 @@ fi
 # Clean up empty directories
 
 if [ -d "src/models" ] && [ -z "\$(ls -A src/models)" ]; then
-echo "🗑️ Removing empty models directory..."
+echo " Removing empty models directory..."
 rmdir src/models/
 fi
 
-echo "✅ Cleanup complete!"
+echo " Cleanup complete!"
 echo ""
-echo "🔍 Running verification..."
+echo " Running verification..."
 npm run type-check
 echo ""
-echo "✅ Done! Please test your application."
+echo " Done! Please test your application."
 \`\`\`
 
 Make it executable:
@@ -442,7 +442,7 @@ chmod +x cleanup-redundancy.sh
 
 ---
 
-## ✅ Checklist
+##  Checklist
 
 - [ ] Read this report
 - [ ] Backup current work (git commit)

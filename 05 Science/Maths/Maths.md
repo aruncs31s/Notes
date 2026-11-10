@@ -23,5 +23,5 @@ dg-publish: true
 - [[Linear Transformations]]
 
 #todo  
-- [ ] 🔼 Arrange this in correct order and catagorize accordingly
+- [ ]  Arrange this in correct order and catagorize accordingly
 

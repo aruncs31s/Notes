@@ -41,7 +41,7 @@ Use the `> [!multi-column]` for multi column layout and need to put a `>` before
 >> - In cursus turpis massa tincidunt dui ut ornare lectus.
 >
 >> [!todo]+
->> - [x] Define Use Case ✅ 2024-07-31
+>> - [x] Define Use Case  2024-07-31
 >> - [ ] Craft User Story
 >> - [ ] Develop draft sketches
 

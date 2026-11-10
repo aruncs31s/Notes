@@ -1,43 +1,43 @@
 # Users Page - Quick Reference
 
-## 🔗 Access
+##  Access
 **URL**: `http://localhost:5173/users`  
 **Menu**: Click "Users" in navigation bar
 
-## 📁 Files
+##  Files
 - **Page**: `src/pages/Users.jsx`
 - **Styles**: `src/styles/profile.css`
 - **Route**: Added to `src/App.jsx`
 - **Nav Link**: Added to `src/components/Navbar.jsx`
 
-## ⚡ Key Features
+##  Key Features
 
 | Feature | Description |
 |---------|-------------|
-| 🔍 Search | Real-time search by name, username, email |
-| 🎭 Filter | Filter by role (All/Admin/User/Moderator) |
-| 📊 Sort | By name, points, challenges, or date |
-| 🎨 Views | Toggle between grid and list layouts |
-| 📈 Stats | Community statistics dashboard |
-| 📱 Responsive | Works on mobile, tablet, desktop |
+|  Search | Real-time search by name, username, email |
+|  Filter | Filter by role (All/Admin/User/Moderator) |
+|  Sort | By name, points, challenges, or date |
+|  Views | Toggle between grid and list layouts |
+|  Stats | Community statistics dashboard |
+|  Responsive | Works on mobile, tablet, desktop |
 
-## 🎮 Controls
+##  Controls
 
 ```
 ┌─────────────────────────────────────────┐
 │ Search: [________]  Filter: [All Roles] │
-│ Sort: [Name ▼]      View: [⊞] [☰]      │
+│ Sort: [Name ▼]      View: [⊞] []      │
 └─────────────────────────────────────────┘
 ```
 
-## 📊 Mock Data
+##  Mock Data
 - **8 sample users** included
 - Realistic names and profiles
 - Points: 750-2500
 - Challenges: 11-35
 - 1 admin, 7 regular users
 
-## 🎨 Layouts
+##  Layouts
 
 ### Grid (Default)
 ```css
@@ -51,7 +51,7 @@ flex-direction: column;
 gap: 20px;
 ```
 
-## 🔌 API Integration
+##  API Integration
 ```javascript
 // Endpoint
 GET /api/admin/users
@@ -60,7 +60,7 @@ GET /api/admin/users
 const users = await adminAPI.getUsers();
 ```
 
-## 🎯 User Object
+##  User Object
 ```javascript
 {
   id: Number,
@@ -76,7 +76,7 @@ const users = await adminAPI.getUsers();
 }
 ```
 
-## 💡 Quick Actions
+##  Quick Actions
 
 1. **Search**: Type to filter instantly
 2. **Filter**: Select role from dropdown
@@ -84,20 +84,20 @@ const users = await adminAPI.getUsers();
 4. **View**: Click grid/list icons
 5. **Stats**: Scroll to bottom
 
-## 📱 Responsive Breakpoints
+##  Responsive Breakpoints
 
 - **Desktop**: > 992px (3-4 columns)
 - **Tablet**: 768-992px (2-3 columns)
 - **Mobile**: < 768px (1-2 columns)
 - **Small**: < 576px (1 column)
 
-## ✅ Status
-✅ Production Ready  
-✅ No Errors  
-✅ Fully Responsive  
-✅ Documented
+##  Status
+ Production Ready  
+ No Errors  
+ Fully Responsive  
+ Documented
 
-## 📚 Docs
+##  Docs
 - Full Guide: `docs/Users-Page.md`
 - Summary: `USERS_PAGE_SUMMARY.md`
 - ProfileCard: `docs/ProfileCard.md`

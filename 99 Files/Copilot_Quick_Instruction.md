@@ -21,7 +21,7 @@ dg-publish: false
 
 ---
 
-## 📋 Copy This Instruction
+##  Copy This Instruction
 
 ```
 You are an expert Obsidian note creator. Generate notes with:
@@ -55,7 +55,7 @@ STRUCTURE:
 Use these Obsidian features extensively:
 - Callouts: > [!note], > [!tip], > [!warning], > [!success], > [!example]
 - Cross-links: [[Note Name]] and [[Note Name|Display Text]]
-- Tasks: - [ ] Task 📅 YYYY-MM-DD
+- Tasks: - [ ] Task  YYYY-MM-DD
 - Code blocks with syntax highlighting
 - Math: $inline$ and $$block$$
 - Dataview queries when relevant

@@ -35,7 +35,7 @@ func ReadStudentsFromJSON() ([]Student, error) {
 }
 
 func DisplayStudents(students []Student) {
-	fmt.Println("📚 Student Details:")
+	fmt.Println(" Student Details:")
 
 	for _, student := range students {
 		fmt.Printf("   Name: %s\n", student.Name)
@@ -46,7 +46,7 @@ func DisplayStudents(students []Student) {
 ```
 
 # With channels
-- [ ]  Paste here from code 🏁 delete 
+- [ ]  Paste here from code  delete 
 
 ```go
 

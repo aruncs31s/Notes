@@ -98,20 +98,20 @@ Use semantic variables instead of raw colors:
 ### In CSS Files
 
 ```css
-/* ✅ CORRECT - Use semantic variables */
+/*  CORRECT - Use semantic variables */
 .my-component {
   background-color: var(--color-bg-secondary);
   color: var(--color-text-primary);
   border: 1px solid var(--color-border);
 }
 
-/* ✅ ALSO CORRECT - Use accent colors */
+/*  ALSO CORRECT - Use accent colors */
 .my-button {
   background-color: var(--color-primary);
   color: var(--color-text-primary);
 }
 
-/* ❌ AVOID - Hardcoded colors */
+/*  AVOID - Hardcoded colors */
 .my-old-component {
   background-color: #1a1a1a;
   color: white;
@@ -187,7 +187,7 @@ The following elements are automatically styled using theme variables:
 ### Example: Automatic Button Styling
 
 ```tsx
-// ✅ Automatically styled with pitch black theme
+//  Automatically styled with pitch black theme
 <button>Submit</button>
 
 // Results in:
@@ -256,14 +256,14 @@ document.documentElement.classList.toggle('light-theme');
 
 ## Best Practices
 
-### ✅ DO
+###  DO
 
 - Use semantic variables: `var(--color-primary)`, `var(--color-bg-secondary)`
 - Use Tailwind utilities when possible: `className="bg-primary text-pitch-white"`
 - Keep styles in CSS files, not inline
 - Use descriptive class names: `.card`, `.button-primary`
 
-### ❌ DON'T
+###  DON'T
 
 - Hardcode colors: `background-color: #1a1a1a;`
 - Mix old and new color systems

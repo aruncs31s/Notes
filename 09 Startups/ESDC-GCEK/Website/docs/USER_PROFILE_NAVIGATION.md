@@ -1,10 +1,10 @@
 # User Profile Modal - Interactive Navigation Feature
 
-## 🎯 Overview
+##  Overview
 
 The User Profile Modal now includes **clickable navigation** to detail pages. When users view someone's profile, they can click on any project, event, product, or course to navigate directly to that item's detail page.
 
-## ✨ New Features
+##  New Features
 
 ### 1. **Clickable Projects**
 
@@ -41,7 +41,7 @@ The User Profile Modal now includes **clickable navigation** to detail pages. Wh
 - Shows category badges and earned dates
 - Shimmer animation for legendary achievements
 
-## 🎨 Visual Design
+##  Visual Design
 
 ### Project Cards
 
@@ -52,7 +52,7 @@ The User Profile Modal now includes **clickable navigation** to detail pages. Wh
 ├─────────────────────────────┤
 │ Project Title               │
 │ Description (2 lines)       │
-│ ❤️ 45  👁️ 234              │ ← Likes & Views
+│  45   234              │ ← Likes & Views
 │ [Tag] [Tag] [Tag]           │
 │                             │
 │ [Overlay on hover]          │ ← "View Project" with icon
@@ -63,10 +63,10 @@ The User Profile Modal now includes **clickable navigation** to detail pages. Wh
 
 ```
 ┌────────────────────────────────────────┐
-│ [📅]  Event Title                  [→] │ ← Icon & Arrow
+│ []  Event Title                  [→] │ ← Icon & Arrow
 │       Event Description                │
-│       [👤 participant] [completed]     │
-│       📅 Jan 15, 2024                  │
+│       [ participant] [completed]     │
+│        Jan 15, 2024                  │
 └────────────────────────────────────────┘
 ```
 
@@ -78,7 +78,7 @@ The User Profile Modal now includes **clickable navigation** to detail pages. Wh
 ├─────────────────────────────┤
 │ Product Name                │
 │ Description (2 lines)       │
-│ 📦 10 in stock  ✅ 5 sold  │
+│  10 in stock   5 sold  │
 │ [Category Badge]            │
 │                             │
 │ [Overlay on hover]          │ ← "View Product"
@@ -89,15 +89,15 @@ The User Profile Modal now includes **clickable navigation** to detail pages. Wh
 
 ```
 ┌────────────────────────────────────────┐
-│ [🎓]  Course Title                 [→] │
+│ []  Course Title                 [→] │
 │       Course Description               │
-│       👨‍🏫 Dr. Smith                     │
+│       ‍ Dr. Smith                     │
 │       [Progress Bar ━━━━━━░░░░] 65%    │
-│       [📚 in_progress]                 │
+│       [ in_progress]                 │
 └────────────────────────────────────────┘
 ```
 
-## 🔄 Navigation Flow
+##  Navigation Flow
 
 ```
 User Profile Modal
@@ -109,7 +109,7 @@ Modal closes & navigates to /projects/:id
 Project Detail Page opens
 ```
 
-## 💻 Implementation Details
+##  Implementation Details
 
 ### Navigation Handlers
 
@@ -151,7 +151,7 @@ const handleCourseClick = (courseId: number) => {
 </div>
 ```
 
-## 📊 Mock Data Structure
+##  Mock Data Structure
 
 ### Projects
 
@@ -220,7 +220,7 @@ const handleCourseClick = (courseId: number) => {
 }
 ```
 
-## 🎨 CSS Classes
+##  CSS Classes
 
 ### Interactive States
 
@@ -243,7 +243,7 @@ const handleCourseClick = (courseId: number) => {
 - `.rarity-epic` - Purple gradient
 - `.rarity-legendary` - Gold gradient with shimmer
 
-## ♿ Accessibility Features
+##  Accessibility Features
 
 ### Keyboard Navigation
 
@@ -260,7 +260,7 @@ onKeyPress={(e) => e.key === 'Enter' && handleClick()}
 - Status announcements
 - Progress indicators
 
-## 📱 Responsive Behavior
+##  Responsive Behavior
 
 ### Desktop (> 768px)
 
@@ -281,7 +281,7 @@ onKeyPress={(e) => e.key === 'Enter' && handleClick()}
 - Touch optimized
 - Larger tap targets
 
-## 🚀 Usage Example
+##  Usage Example
 
 ### From Team Component
 
@@ -298,7 +298,7 @@ onKeyPress={(e) => e.key === 'Enter' && handleClick()}
 // → ProjectDetail page opens
 ```
 
-## 🔗 Required Routes
+##  Required Routes
 
 Make sure these routes exist in your application:
 
@@ -310,7 +310,7 @@ Make sure these routes exist in your application:
 <Route path="/courses/:id" element={<CourseDetail />} />
 ```
 
-## 📊 Statistics Summary
+##  Statistics Summary
 
 Each user profile now includes:
 
@@ -320,7 +320,7 @@ Each user profile now includes:
 - **3 sample courses** (2 completed, 1 in progress)
 - **4 sample achievements** (different rarity levels)
 
-## 🎯 Key Benefits
+##  Key Benefits
 
 1. **Seamless Navigation** - One click to view details
 2. **Visual Feedback** - Hover effects indicate clickability
@@ -329,7 +329,7 @@ Each user profile now includes:
 5. **Responsive** - Works on all device sizes
 6. **Performance** - Smooth animations and transitions
 
-## 🔧 Customization
+##  Customization
 
 ### Change Navigation Paths
 
@@ -360,7 +360,7 @@ const handleProjectClick = (projectId: number) => {
 }
 ```
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Cards Not Clickable?
 
@@ -380,7 +380,7 @@ const handleProjectClick = (projectId: number) => {
 - Verify class names match
 - Test on different browsers
 
-## 📝 Next Steps
+##  Next Steps
 
 1. **Backend Integration**: Replace mock data with API calls
 2. **Error Handling**: Add error states for navigation
@@ -393,4 +393,4 @@ const handleProjectClick = (projectId: number) => {
 **Created**: October 15, 2025  
 **Last Updated**: October 15, 2025  
 **Version**: 2.0.0  
-**Status**: ✅ Production Ready
+**Status**:  Production Ready

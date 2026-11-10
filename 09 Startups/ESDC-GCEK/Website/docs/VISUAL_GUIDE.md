@@ -199,17 +199,17 @@
 └───────────────────────────────────────────┘
 
 ┌─ Success ──────────────────────────────────┐
-│ ✓ Success message with green accent       │
+│  Success message with green accent       │
 │   Background: rgba(81, 207, 102, 0.1)     │
 └────────────────────────────────────────────┘
 
 ┌─ Warning ──────────────────────────────────┐
-│ ⚠ Warning message with yellow accent      │
+│  Warning message with yellow accent      │
 │   Background: rgba(255, 215, 0, 0.1)      │
 └────────────────────────────────────────────┘
 
 ┌─ Danger ───────────────────────────────────┐
-│ ✗ Error message with red accent           │
+│  Error message with red accent           │
 │   Background: rgba(255, 107, 107, 0.1)    │
 └────────────────────────────────────────────┘
 ```
@@ -297,17 +297,17 @@ BEFORE (Light Theme)              AFTER (Pitch Black Theme)
 Excellent Contrast (WCAG AAA)
 ────────────────────────────────────
 White Text (#ffffff) on Black (#000000)
-Ratio: 21:1 ✓ Perfect
+Ratio: 21:1  Perfect
 
 Good Contrast (WCAG AA)
 ────────────────────────────────────
 Light Gray (#e0e0e0) on Black (#000000)
-Ratio: 15.3:1 ✓ Excellent
+Ratio: 15.3:1  Excellent
 
 Secondary Contrast (WCAG AA)
 ────────────────────────────────────
 Muted Gray (#b0b0b0) on Black (#000000)
-Ratio: 9.3:1 ✓ Good
+Ratio: 9.3:1  Good
 ```
 
 ### Color Accents
@@ -315,13 +315,13 @@ Ratio: 9.3:1 ✓ Good
 ```
 Primary Action (Blue)
 ────────────────────────────────────
-#7da6ff on #000000 = 5.8:1 ✓ Good
+#7da6ff on #000000 = 5.8:1  Good
 
 Status Colors
 ────────────────────────────────────
-Success (#51cf66): Contrast 7.2:1 ✓
-Warning (#ffd700): Contrast 9.0:1 ✓
-Danger (#ff6b6b): Contrast 5.1:1 ✓
+Success (#51cf66): Contrast 7.2:1 
+Warning (#ffd700): Contrast 9.0:1 
+Danger (#ff6b6b): Contrast 5.1:1 
 ```
 
 ---
@@ -509,23 +509,23 @@ Typical Layout Changes:
 ## Accessibility Features
 
 ```
-✓ Sufficient Contrast
+ Sufficient Contrast
   Text: 4.5:1 minimum (AA standard)
   Large Text: 3:1 minimum
 
-✓ Focus States
+ Focus States
   Visible focus ring on all interactive elements
   Clear keyboard navigation
 
-✓ Color + Text
+ Color + Text
   Don't rely on color alone
   Always add icons or text labels
 
-✓ Reduced Motion
+ Reduced Motion
   Respect prefers-reduced-motion
   Disable animations if user requests
 
-✓ Semantic HTML
+ Semantic HTML
   Proper heading hierarchy (h1 → h6)
   Link text is descriptive
   Form labels associated with inputs
@@ -533,7 +533,7 @@ Typical Layout Changes:
 
 ---
 
-**Visual Guide Complete** ✨
+**Visual Guide Complete** 
 
 Use this guide for:
 

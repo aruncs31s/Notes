@@ -13,7 +13,7 @@ dg-publish: true
 
 ### 17-01-25
 
-- [x] QT Creater ✅2025-07-04/03:36 
+- [x] QT Creater 2025-07-04/03:36 
 - SpectraAlyyzer Grain NEO -> NIR
 - E-Nam
 - Zeutec

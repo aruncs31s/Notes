@@ -63,9 +63,9 @@ $$H(s) = \frac{Y(s)}{X(s)} = \frac{\text{Output}}{\text{Input}}$$
 
 ### 3. **Stability Analysis**
 - **Pole locations** determine system behavior:
-  - **Left half-plane (LHP)**: Stable ✓
-  - **Imaginary axis**: Marginally stable ⚠️
-  - **Right half-plane (RHP)**: Unstable ✗
+  - **Left half-plane (LHP)**: Stable 
+  - **Imaginary axis**: Marginally stable 
+  - **Right half-plane (RHP)**: Unstable 
 
 ### 4. **Frequency Response**
 - Set $s = j\omega$ to get **Bode plots** and **Nyquist diagrams**
@@ -109,7 +109,7 @@ The Laplace Transform is a **generalization** of the Fourier Transform:
 Oliver Heaviside used Laplace transform **intuitively** before rigorous mathematical proof!
 - He treated $\frac{d}{dt}$ as multiplication by $s$
 - Physicists/engineers thought he was "cheating"
-- Math people proved him right decades later ✓
+- Math people proved him right decades later 
 
 ### 5. **One-Sided vs Two-Sided Transform**
 - **One-sided** (what we use): $\int_0^{\infty}$ - assumes causality (systems can't respond before input)
@@ -129,17 +129,17 @@ $$\mathcal{L}\{f'(t)\} = sF(s) - f(0)$$
 
 ## What People Get Wrong
 
-### ❌ **Misconception 1: "Laplace = Fourier"**
+###  **Misconception 1: "Laplace = Fourier"**
 - **Wrong:** They're the same transform, just different variables
 - **Right:** Laplace is more general; Fourier is a special case when $\sigma = 0$
 - **Impact:** Can't use Fourier for unstable systems, rising exponentials, or transients
 
-### ❌ **Misconception 2: "$s$ is Frequency"**
+###  **Misconception 2: "$s$ is Frequency"**
 - **Wrong:** $s = j\omega$ (treating it as pure frequency)
 - **Right:** $s = \sigma + j\omega$ (damping + frequency)
 - **Impact:** Misunderstanding poles/zeros and stability regions
 
-### ❌ **Misconception 3: "Laplace Transform Solves Everything"**
+###  **Misconception 3: "Laplace Transform Solves Everything"**
 - **Wrong:** It's a magic wand for all differential equations
 - **Right:** Requires:
   - System is **linear** and **time-invariant (LTI)**
@@ -147,24 +147,24 @@ $$\mathcal{L}\{f'(t)\} = sF(s) - f(0)$$
   - Causal system (or two-sided transform)
 - **Impact:** Leads to incorrect analysis of nonlinear systems
 
-### ❌ **Misconception 4: "Poles Must Be in LHP for Stability"**
+###  **Misconception 4: "Poles Must Be in LHP for Stability"**
 - **Wrong:** Poles on imaginary axis are unstable
 - **Right:** Simple poles on imaginary axis = marginal stability (oscillates forever)
 - **Correct statement:** Poles in LHP = stable; poles on axis or RHP = not stable
 - **Impact:** Incorrect control system design
 
-### ❌ **Misconception 5: "You Can Ignore the Region of Convergence (ROC)"**
+###  **Misconception 5: "You Can Ignore the Region of Convergence (ROC)"**
 - **Wrong:** Any transfer function works with any initial conditions
 - **Right:** ROC matters! Different initial conditions = different valid regions
 - **Example:** $H(s) = \frac{1}{s-a}$ is different for $\text{Re}(s) > a$ vs $\text{Re}(s) < a$
 - **Impact:** Especially important in digital signal processing and inverse transforms
 
-### ❌ **Misconception 6: "Laplace Transform is Only for DC or Step Inputs"**
+###  **Misconception 6: "Laplace Transform is Only for DC or Step Inputs"**
 - **Wrong:** Works with step functions only
 - **Right:** Works with **any** causal signal: ramps, impulses, sinusoids, exponentials, noise
 - **Impact:** Can analyze circuits under any realistic input condition
 
-### ❌ **Misconception 7: "Partial Fraction Decomposition is Easy"**
+###  **Misconception 7: "Partial Fraction Decomposition is Easy"**
 - **Wrong:** Just split into simple fractions and you're done
 - **Right:** Requires careful handling of:
   - Repeated poles

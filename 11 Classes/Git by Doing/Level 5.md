@@ -163,7 +163,7 @@ graph LR
 >> name = Dog
 >>```
 
-- [ ] check this is true if not modify it.  🏁 delete 
+- [ ] check this is true if not modify it.   delete 
 **FAQ: Where these name and mail id used**
 - Others can easily verify who made the commit.
 - And it is required for features like `git blame`, which shows who last modified each line of a file.
@@ -176,7 +176,7 @@ You have already learned about `git commit` and `git log` in [[Level 3]] , right
 ![alt text](imgs_for_3/image-8.png)
 We can use this `git log` and `git blame` to identify who made some specific 
 For example you can check if someone named `zeidan` had made any commit , and what they have changed , for the time beeing we will not focus on `git blame` it will be coverd in another level
-- [ ] mention in which level the `git blame` is covered. 🏁 delete  
+- [ ] mention in which level the `git blame` is covered.  delete  
 
 ```bash
 git log --author=zeidan

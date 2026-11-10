@@ -1,10 +1,10 @@
-# 🎮 Games Hub - Classic Arcade Games Collection
+#  Games Hub - Classic Arcade Games Collection
 
 Welcome to the ESDC Games Hub! A collection of classic arcade games built with React.
 
-## 🕹️ Available Games
+##  Available Games
 
-### 1. 🐍 Snake (1976)
+### 1.  Snake (1976)
 - **Difficulty:** Easy
 - **Players:** 1 Player
 - **Controls:** Arrow Keys
@@ -12,7 +12,7 @@ Welcome to the ESDC Games Hub! A collection of classic arcade games built with R
 - Game speeds up as you score more points
 - Persistent high score tracking
 
-### 2. 🧱 Tetris (1984)
+### 2.  Tetris (1984)
 - **Difficulty:** Medium
 - **Players:** 1 Player
 - **Controls:** 
@@ -24,7 +24,7 @@ Welcome to the ESDC Games Hub! A collection of classic arcade games built with R
 - Increases difficulty every 10 lines cleared
 - Persistent high score tracking
 
-### 3. 🏓 Pong (1972)
+### 3.  Pong (1972)
 - **Difficulty:** Easy
 - **Players:** 1-2 Players
 - **Controls:** Mouse movement or Arrow Up/Down
@@ -32,7 +32,7 @@ Welcome to the ESDC Games Hub! A collection of classic arcade games built with R
 - First to 5 points wins
 - AI difficulty adapts to ball position
 
-### 4. 🎯 Breakout (1976)
+### 4.  Breakout (1976)
 - **Difficulty:** Medium
 - **Players:** 1 Player
 - **Controls:** Mouse movement or Arrow Left/Right
@@ -40,7 +40,7 @@ Welcome to the ESDC Games Hub! A collection of classic arcade games built with R
 - 3 lives to complete the level
 - Colorful brick patterns with increasing difficulty
 
-### 5. 🧠 Memory Match (1959)
+### 5.  Memory Match (1959)
 - **Difficulty:** Easy
 - **Players:** 1 Player
 - **Controls:** Mouse clicks
@@ -48,7 +48,7 @@ Welcome to the ESDC Games Hub! A collection of classic arcade games built with R
 - Track your moves and time
 - Beat your best time and move count
 
-### 6. 🎵 Simon Says (1978)
+### 6.  Simon Says (1978)
 - **Difficulty:** Medium
 - **Players:** 1 Player
 - **Controls:** Mouse clicks
@@ -57,7 +57,7 @@ Welcome to the ESDC Games Hub! A collection of classic arcade games built with R
 - Game speeds up as you progress
 - Web Audio API for authentic sounds
 
-## 🎨 Features
+##  Features
 
 - **Modern UI:** Beautiful gradient-based card design for the games hub
 - **Dark Mode Support:** All games support both light and dark themes
@@ -67,7 +67,7 @@ Welcome to the ESDC Games Hub! A collection of classic arcade games built with R
 - **Accessible Controls:** Multiple control methods (keyboard, mouse)
 - **Sound Effects:** Simon Says includes authentic audio feedback
 
-## 📁 File Structure
+##  File Structure
 
 ```
 src/
@@ -85,7 +85,7 @@ src/
     └── games.css                 # All game styles
 ```
 
-## 🚀 Routes
+##  Routes
 
 - `/games` - Games hub (card grid with all games)
 - `/games/snake` - Snake game
@@ -95,7 +95,7 @@ src/
 - `/games/memory` - Memory Match game
 - `/games/simon` - Simon Says game
 
-## 🎯 Usage
+##  Usage
 
 Users can access the games through:
 1. Click "Games" in the navigation bar
@@ -103,7 +103,7 @@ Users can access the games through:
 3. Click on any game card to play
 4. Use the "Back to Games" button to return to the hub
 
-## 🛠️ Technical Details
+##  Technical Details
 
 - **React Hooks:** useState, useEffect, useCallback, useRef
 - **React Router:** Dynamic routing for each game
@@ -112,13 +112,13 @@ Users can access the games through:
 - **CSS Grid & Flexbox:** Responsive layouts
 - **CSS Animations:** Smooth transitions and effects
 
-## 📱 Responsive Breakpoints
+##  Responsive Breakpoints
 
 - **Desktop:** Full size (1200px+)
 - **Tablet:** Scaled layouts (768px - 1199px)
 - **Mobile:** Optimized for small screens (< 768px)
 
-## 🎨 Color Schemes
+##  Color Schemes
 
 Each game has its own unique gradient theme:
 - Snake: Purple/Violet gradient
@@ -128,7 +128,7 @@ Each game has its own unique gradient theme:
 - Memory: Pink/Yellow gradient
 - Simon: Cyan/Purple gradient
 
-## 🏆 High Score Storage
+##  High Score Storage
 
 High scores are stored in localStorage with the following keys:
 - `snakeHighScore`
@@ -138,7 +138,7 @@ High scores are stored in localStorage with the following keys:
 - `memoryBestMoves`
 - `simonHighScore`
 
-## 📝 Future Enhancements
+##  Future Enhancements
 
 Potential additions:
 - Multiplayer support for Pong
@@ -150,6 +150,6 @@ Potential additions:
 - Sound effects for all games
 - Custom themes and skins
 
-## 🎮 Enjoy Gaming!
+##  Enjoy Gaming!
 
 Have fun playing these classic arcade games and try to beat your high scores!

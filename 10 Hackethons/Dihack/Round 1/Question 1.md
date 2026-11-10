@@ -116,6 +116,6 @@ $$
 ![[Pasted image 20241016212724.png]]
 
 #### Designing A Astable Multi-Vibrator 
-- [x] Need to receive from Amarnath ✅2025-07-04/03:36 
+- [x] Need to receive from Amarnath 2025-07-04/03:36 
 
 - [[Method 2]]

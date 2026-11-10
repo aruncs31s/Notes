@@ -1,17 +1,17 @@
-# 📱 Chatbot Mobile Responsive Fix
+#  Chatbot Mobile Responsive Fix
 
-## 🐛 Problem
+##  Problem
 
 The chatbot was causing horizontal scrolling on mobile devices, breaking the responsive UI.
 
-## 🔍 Root Causes
+##  Root Causes
 
 1. **Fixed Width**: `w-[440px]` forced a 440px width even on small screens
 2. **Fixed Height**: `h-[634px]` didn't adapt to mobile viewport
 3. **Fixed Positioning**: Right margin and positioning didn't account for mobile
 4. **No Breakpoints**: No responsive classes for mobile vs desktop
 
-## ✅ Fixes Applied
+##  Fixes Applied
 
 ### 1. **Responsive Chat Window**
 
@@ -98,7 +98,7 @@ Added `break-words` and `flex-1` to prevent text overflow:
 className = 'leading-relaxed break-words flex-1';
 ```
 
-## 📐 Responsive Breakpoints
+##  Responsive Breakpoints
 
 Using Tailwind's `sm:` breakpoint (640px):
 
@@ -122,7 +122,7 @@ Using Tailwind's `sm:` breakpoint (640px):
 - **Gaps**: `gap-3`
 - **Avatars**: `w-8 h-8`
 
-## 🎨 Visual Layout
+##  Visual Layout
 
 ### Mobile View (< 640px)
 
@@ -132,10 +132,10 @@ Using Tailwind's `sm:` breakpoint (640px):
 │ Powered by ESDC     │
 ├─────────────────────┤
 │                     │
-│ ✨ AI               │
+│  AI               │
 │    Hi, how can...   │ ← Text wraps properly
 │                     │
-│ 👤 You              │
+│  You              │
 │    Hello there!     │
 │                     │
 │                     │ ← Dynamic height
@@ -153,10 +153,10 @@ Using Tailwind's `sm:` breakpoint (640px):
                     │ Powered by ESDC   │
                     ├───────────────────┤
                     │                   │
-                    │ ✨ AI             │
+                    │  AI             │
                     │    Hi, how can... │
                     │                   │
-                    │ 👤 You            │
+                    │  You            │
                     │    Hello there!   │
                     │                   │
                     ├───────────────────┤
@@ -164,7 +164,7 @@ Using Tailwind's `sm:` breakpoint (640px):
                     └───────────────────┘
 ```
 
-## 🔧 Technical Details
+##  Technical Details
 
 ### Dynamic Height Calculation
 
@@ -189,9 +189,9 @@ className = 'flex-shrink-0'; // Send button stays fixed width
 - **Chat Container**: `overflow-y-auto` for vertical scrolling only
 - **Messages**: `break-words` prevents text overflow
 
-## 🧪 Testing Checklist
+##  Testing Checklist
 
-### ✅ Mobile (< 640px)
+###  Mobile (< 640px)
 
 - [x] No horizontal scrolling
 - [x] Chat window fills screen
@@ -200,19 +200,19 @@ className = 'flex-shrink-0'; // Send button stays fixed width
 - [x] Send button visible and clickable
 - [x] Toggle button doesn't overflow
 
-### ✅ Tablet (≥ 640px, < 1024px)
+###  Tablet (≥ 640px, < 1024px)
 
 - [x] Chat window has fixed size
 - [x] Positioned correctly (bottom-right)
 - [x] Doesn't overflow viewport
 
-### ✅ Desktop (≥ 1024px)
+###  Desktop (≥ 1024px)
 
 - [x] Chat window maintains 440px width
 - [x] All spacing is correct
 - [x] Hover effects work
 
-## 📱 Viewport-Specific Styles
+##  Viewport-Specific Styles
 
 ### Extra Small (< 640px)
 
@@ -238,27 +238,27 @@ className = 'flex-shrink-0'; // Send button stays fixed width
 }
 ```
 
-## 🎯 Key Improvements
+##  Key Improvements
 
-1. **✅ No More Horizontal Scroll**
+1. ** No More Horizontal Scroll**
    - Mobile: Uses full width (`w-full`)
    - Desktop: Uses fixed width (`sm:w-[440px]`)
 
-2. **✅ Better Mobile UX**
+2. ** Better Mobile UX**
    - Full screen on mobile for better focus
    - Proper text wrapping
    - Touch-friendly spacing
 
-3. **✅ Consistent Behavior**
+3. ** Consistent Behavior**
    - Smooth transition between breakpoints
    - All Tailwind responsive classes
 
-4. **✅ Accessibility**
+4. ** Accessibility**
    - Readable text on all screen sizes
    - Proper touch targets (44px minimum)
    - No overflow issues
 
-## 🚀 How to Test
+##  How to Test
 
 ### Method 1: Browser DevTools
 
@@ -282,7 +282,7 @@ className = 'flex-shrink-0'; // Send button stays fixed width
 3. Try typing and sending messages
 4. Verify no scroll, proper layout
 
-## 📊 Breakpoint Reference
+##  Breakpoint Reference
 
 | Screen Size | Width   | Tailwind  | Chatbot Behavior  |
 | ----------- | ------- | --------- | ----------------- |
@@ -293,13 +293,13 @@ className = 'flex-shrink-0'; // Send button stays fixed width
 | Laptop      | 1024px  | md:       | Fixed 440px popup |
 | Desktop     | 1440px+ | lg:       | Fixed 440px popup |
 
-## 🎉 Result
+##  Result
 
 The chatbot is now **fully responsive**:
 
-- ✅ **Mobile**: No horizontal scroll, full-screen experience
-- ✅ **Tablet**: Fixed-size popup, properly positioned
-- ✅ **Desktop**: Original design maintained
-- ✅ **All Devices**: Text wraps, no overflow, smooth UX
+-  **Mobile**: No horizontal scroll, full-screen experience
+-  **Tablet**: Fixed-size popup, properly positioned
+-  **Desktop**: Original design maintained
+-  **All Devices**: Text wraps, no overflow, smooth UX
 
-Test it at different screen sizes to see the responsive behavior! 📱💻🖥️
+Test it at different screen sizes to see the responsive behavior! 

@@ -12,11 +12,11 @@ The Users page displays all community members in a beautiful grid or list layout
 
 ## Features
 
-### 🎨 View Modes
+###  View Modes
 - **Grid View**: Cards displayed in responsive grid (default)
 - **List View**: Cards displayed in horizontal list layout
 
-### 🔍 Search & Filter
+###  Search & Filter
 - **Search**: Search users by name, username, or email
 - **Role Filter**: Filter by user role (All, Admin, User, Moderator)
 - **Sort Options**:
@@ -25,13 +25,13 @@ The Users page displays all community members in a beautiful grid or list layout
   - By Challenges Completed (most first)
   - By Join Date (most recent first)
 
-### 📊 Statistics
+###  Statistics
 - Total Members count
 - Total Points earned by all users
 - Total Challenges Solved
 - Number of Admins
 
-### 📱 Responsive Design
+###  Responsive Design
 - Desktop: Multi-column grid layout
 - Tablet: Adjusted column count
 - Mobile: Single column, stacked layout
@@ -141,7 +141,7 @@ const handleUserClick = (user) => {
 ## Empty State
 
 When no users match the filters:
-- Displays magnifying glass emoji 🔍
+- Displays magnifying glass emoji 
 - Shows "No users found" message
 - Provides "Clear Filters" button
 - Resets search and filters
@@ -272,11 +272,11 @@ Planned features:
 
 ## Accessibility
 
-- ✅ Keyboard navigation support
-- ✅ ARIA labels on interactive elements
-- ✅ Screen reader friendly
-- ✅ High contrast mode compatible
-- ✅ Focus indicators on inputs
+-  Keyboard navigation support
+-  ARIA labels on interactive elements
+-  Screen reader friendly
+-  High contrast mode compatible
+-  Focus indicators on inputs
 
 ## Browser Support
 
@@ -371,4 +371,4 @@ For issues or questions:
 
 **Created:** October 5, 2025  
 **Version:** 1.0.0  
-**Status:** ✅ Ready for production
+**Status:**  Ready for production

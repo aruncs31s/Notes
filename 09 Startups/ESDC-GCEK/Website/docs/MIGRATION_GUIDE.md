@@ -1,12 +1,12 @@
 # Architecture Migration Guide
 
-## 🎯 Overview
+##  Overview
 
 This document outlines the migration from the old structure to the new feature-based architecture.
 
-## 📊 Migration Progress
+##  Migration Progress
 
-### ✅ Completed
+###  Completed
 
 - [x] TypeScript strict mode configuration
 - [x] Path aliases setup
@@ -17,20 +17,20 @@ This document outlines the migration from the old structure to the new feature-b
 - [x] UI component library foundation
 - [x] Environment configuration (.env.example)
 
-### 🚧 In Progress
+###  In Progress
 
 - [ ] Moving existing components to features
 - [ ] Fixing TypeScript errors
 - [ ] Testing infrastructure setup
 
-### 📋 Todo
+###  Todo
 
 - [ ] Complete feature module migrations
 - [ ] Add comprehensive tests
 - [ ] Documentation updates
 - [ ] CI/CD pipeline
 
-## 🗂️ New Structure
+##  New Structure
 
 \`\`\`
 src/
@@ -64,26 +64,26 @@ src/
 └── application/ # DDD - Keep existing
 \`\`\`
 
-## 🔄 Migration Steps
+##  Migration Steps
 
-### Phase 1: Foundation (COMPLETED) ✅
+### Phase 1: Foundation (COMPLETED) 
 
 1. Updated TypeScript config with strict mode
 2. Added path aliases to tsconfig.json and vite.config.ts
 3. Created .env.example
 4. Created new directory structure
 
-### Phase 2: Core Application (COMPLETED) ✅
+### Phase 2: Core Application (COMPLETED) 
 
 1. Created app/providers/AppProviders.tsx
 2. Created app/router with lazy loading
 3. Created new app/App.tsx
 4. Created shared utilities and constants
 
-### Phase 3: Feature Modules (IN PROGRESS) 🚧
+### Phase 3: Feature Modules (IN PROGRESS) 
 
 1. Move auth components:
-   - ✅ Created features/auth/components/AuthProvider.tsx
+   -  Created features/auth/components/AuthProvider.tsx
    - ⏳ Move Login.tsx to features/auth/components/
    - ⏳ Move Register.tsx to features/auth/components/
    - ⏳ Create features/auth/components/index.ts
@@ -130,7 +130,7 @@ import { User } from '@/domain/entities/User';
 3. Remove old services/ folder (use features)
 4. Update documentation
 
-## 📝 Import Path Examples
+##  Import Path Examples
 
 ### Before
 
@@ -150,7 +150,7 @@ import { User } from '@/domain/entities/User';
 import { Button } from '@/shared/components/ui';
 \`\`\`
 
-## 🚀 Usage Guide
+##  Usage Guide
 
 ### Using Path Aliases
 
@@ -185,7 +185,7 @@ export const MyComponent = () => { /_ ... _/ }
 export { MyComponent } from './MyComponent';
 \`\`\`
 
-## ⚠️ Important Notes
+##  Important Notes
 
 1. **Keep DDD layers**: Don't remove domain/, infrastructure/, application/
 2. **Gradual migration**: Move files incrementally, test as you go
@@ -193,14 +193,14 @@ export { MyComponent } from './MyComponent';
 4. **Type safety**: Fix TypeScript errors as they appear
 5. **Test coverage**: Add tests for migrated code
 
-## 🐛 Known Issues
+##  Known Issues
 
 1. Some imports still reference old paths - needs update
 2. TypeScript strict mode reveals previously hidden errors
 3. Lazy loading requires proper Suspense boundaries
 4. Some feature flags not properly typed
 
-## 📚 Next Steps
+##  Next Steps
 
 1. Run \`npm install\` to ensure all dependencies are installed
 2. Run \`npm run type-check\` to see TypeScript errors
@@ -208,7 +208,7 @@ export { MyComponent } from './MyComponent';
 4. Add tests as you migrate
 5. Update main.tsx to use new app/App.tsx
 
-## 🔧 Commands
+##  Commands
 
 \`\`\`bash
 
@@ -229,7 +229,7 @@ npm run build
 npm run test
 \`\`\`
 
-## 📞 Need Help?
+##  Need Help?
 
 - Check the DDD documentation in /docs
 - Review existing feature modules for examples

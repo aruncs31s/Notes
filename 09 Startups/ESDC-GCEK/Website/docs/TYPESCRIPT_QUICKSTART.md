@@ -1,6 +1,6 @@
 # TypeScript Quick Start Guide
 
-## ✅ Migration Complete!
+##  Migration Complete!
 
 Your codebase has been successfully migrated to TypeScript. All `.js` and `.jsx` files have been converted to `.ts` and `.tsx`.
 

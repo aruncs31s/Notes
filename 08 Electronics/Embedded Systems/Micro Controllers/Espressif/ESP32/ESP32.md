@@ -90,7 +90,7 @@ It shows that if i have to flash the firmware to the **ESP32** i have to make th
 >[!important] After the boot
 >The important thing here to note is that the strapping **pins can be used after the boot** , because the value of the strapping pins will be checked only at the time of **boot**
 
-- [ ] Need to further research about the boot mode and how it effects when i want to simply programm it using the [[CH340C]] . 📅 2025-04-30
+- [ ] Need to further research about the boot mode and how it effects when i want to simply programm it using the [[CH340C]] .  2025-04-30
 
 ## GPIO
 

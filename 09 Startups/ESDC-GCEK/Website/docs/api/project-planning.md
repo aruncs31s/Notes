@@ -12,7 +12,7 @@ A comprehensive project management system similar to GitHub Projects, Jira, and 
 
 ---
 
-## 🎯 Core Features (30+ Features)
+##  Core Features (30+ Features)
 
 ### 1. **Board Management**
 

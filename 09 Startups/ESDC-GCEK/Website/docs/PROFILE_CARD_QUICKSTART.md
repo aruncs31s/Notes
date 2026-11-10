@@ -1,6 +1,6 @@
 # ProfileCard Quick Start Guide
 
-## 🚀 Getting Started in 3 Steps
+##  Getting Started in 3 Steps
 
 ### Step 1: Import the Component
 ```jsx
@@ -22,14 +22,14 @@ function MyComponent() {
 return <ProfileCard user={user} />;
 ```
 
-## 📸 See It in Action
+##  See It in Action
 
 Visit the demo page to see live examples:
 ```
 http://localhost:5173/profile-card-demo
 ```
 
-## 🎨 Common Use Cases
+##  Common Use Cases
 
 ### 1. Simple Profile Display
 ```jsx
@@ -74,7 +74,7 @@ http://localhost:5173/profile-card-demo
 </div>
 ```
 
-## 💡 Tips
+##  Tips
 
 1. **User Object**: The component works with various user object formats - it automatically detects and uses available fields.
 
@@ -84,26 +84,26 @@ http://localhost:5173/profile-card-demo
 
 4. **Dark Mode**: Fully supports your app's dark/light mode toggle.
 
-## 📚 Need More Help?
+##  Need More Help?
 
 - **Full Documentation**: `docs/ProfileCard.md`
 - **Examples**: `src/components/ProfileCardExamples.jsx`
 - **Demo Page**: `/profile-card-demo` route
 
-## ✨ Features Included
+##  Features Included
 
-- ✅ Beautiful gradient header
-- ✅ Avatar with fallback
-- ✅ GitHub integration
-- ✅ Role badges
-- ✅ Statistics display
-- ✅ Edit functionality
-- ✅ Responsive design
-- ✅ Dark mode support
-- ✅ Smooth animations
-- ✅ Accessible
+-  Beautiful gradient header
+-  Avatar with fallback
+-  GitHub integration
+-  Role badges
+-  Statistics display
+-  Edit functionality
+-  Responsive design
+-  Dark mode support
+-  Smooth animations
+-  Accessible
 
-## 🔧 Props Reference
+##  Props Reference
 
 | Prop | Type | Default | Required |
 |------|------|---------|----------|
@@ -114,7 +114,7 @@ http://localhost:5173/profile-card-demo
 | stats | Object | {} | No |
 | className | String | '' | No |
 
-## 🎯 Minimal User Object
+##  Minimal User Object
 
 The minimum required user data:
 ```javascript
@@ -134,4 +134,4 @@ All other fields are optional and will be displayed if available:
 - completedChallenges
 - joinedDate
 
-Happy coding! 🚀
+Happy coding! 

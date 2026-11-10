@@ -6,7 +6,7 @@ This document tracks important architectural decisions and the reasoning behind 
 
 ## ADR-001: Adopt Domain-Driven Design
 
-**Status**: ✅ Accepted  
+**Status**:  Accepted  
 **Date**: October 2025  
 **Deciders**: Development Team
 
@@ -33,31 +33,31 @@ Adopt Domain-Driven Design (DDD) with strict layered architecture:
 
 #### Positive
 
-- ✅ Clear separation of concerns
-- ✅ Business logic is testable in isolation
-- ✅ Easier to understand and maintain
-- ✅ Scalable architecture
-- ✅ Domain-focused development
-- ✅ Reusable business logic
+-  Clear separation of concerns
+-  Business logic is testable in isolation
+-  Easier to understand and maintain
+-  Scalable architecture
+-  Domain-focused development
+-  Reusable business logic
 
 #### Negative
 
-- ⚠️ Learning curve for team members
-- ⚠️ More files and structure
-- ⚠️ Initial setup overhead
-- ⚠️ Requires discipline to maintain
+-  Learning curve for team members
+-  More files and structure
+-  Initial setup overhead
+-  Requires discipline to maintain
 
 #### Neutral
 
-- 📝 Need comprehensive documentation
-- 📝 Requires code review enforcement
-- 📝 Team training needed
+-  Need comprehensive documentation
+-  Requires code review enforcement
+-  Team training needed
 
 ---
 
 ## ADR-002: ApplicationService Facade Pattern
 
-**Status**: ✅ Accepted  
+**Status**:  Accepted  
 **Date**: October 2025  
 **Deciders**: Development Team
 
@@ -91,17 +91,17 @@ const result = await applicationService.createUser(userData);
 
 #### Positive
 
-- ✅ Simple API for UI developers
-- ✅ Consistent error handling
-- ✅ Easy to refactor internals
-- ✅ Clear layer boundaries
-- ✅ Single source of truth
-- ✅ Easy to document
+-  Simple API for UI developers
+-  Consistent error handling
+-  Easy to refactor internals
+-  Clear layer boundaries
+-  Single source of truth
+-  Easy to document
 
 #### Negative
 
-- ⚠️ Additional abstraction layer
-- ⚠️ Potential for god object if not managed
+-  Additional abstraction layer
+-  Potential for god object if not managed
 
 #### Mitigation
 
@@ -113,7 +113,7 @@ const result = await applicationService.createUser(userData);
 
 ## ADR-003: Value Objects for Domain Concepts
 
-**Status**: ✅ Accepted  
+**Status**:  Accepted  
 **Date**: October 2025  
 **Deciders**: Development Team
 
@@ -137,11 +137,11 @@ Create Value Objects for domain concepts:
 - `DateRange` instead of separate dates
 
 ```typescript
-// ❌ Before
+//  Before
 const email: string = 'user@example.com';
 const points: number = 100;
 
-// ✅ After
+//  After
 const email = new Email('user@example.com'); // Validates automatically
 const points = new Points(100); // Cannot be negative
 ```
@@ -150,29 +150,29 @@ const points = new Points(100); // Cannot be negative
 
 #### Positive
 
-- ✅ Built-in validation
-- ✅ Type safety
-- ✅ Self-documenting code
-- ✅ Encapsulated business rules
-- ✅ Immutability
-- ✅ Easy to test
+-  Built-in validation
+-  Type safety
+-  Self-documenting code
+-  Encapsulated business rules
+-  Immutability
+-  Easy to test
 
 #### Negative
 
-- ⚠️ More classes to manage
-- ⚠️ Learning curve
-- ⚠️ Conversion overhead
+-  More classes to manage
+-  Learning curve
+-  Conversion overhead
 
 #### Neutral
 
-- 📝 Need conversion methods (toString, getValue)
-- 📝 Require understanding of value objects
+-  Need conversion methods (toString, getValue)
+-  Require understanding of value objects
 
 ---
 
 ## ADR-004: Event-Driven Architecture
 
-**Status**: ✅ Accepted  
+**Status**:  Accepted  
 **Date**: October 2025  
 **Deciders**: Development Team
 
@@ -217,17 +217,17 @@ eventBus.subscribe('UserCreated', async (event) => {
 
 #### Positive
 
-- ✅ Loose coupling
-- ✅ Easy to add/remove side effects
-- ✅ Better scalability
-- ✅ Clear audit trail
-- ✅ Testable in isolation
+-  Loose coupling
+-  Easy to add/remove side effects
+-  Better scalability
+-  Clear audit trail
+-  Testable in isolation
 
 #### Negative
 
-- ⚠️ Harder to debug (async flow)
-- ⚠️ Event ordering can be tricky
-- ⚠️ Need monitoring/logging
+-  Harder to debug (async flow)
+-  Event ordering can be tricky
+-  Need monitoring/logging
 
 #### Mitigation
 
@@ -239,7 +239,7 @@ eventBus.subscribe('UserCreated', async (event) => {
 
 ## ADR-005: Repository Pattern for Data Access
 
-**Status**: ✅ Accepted  
+**Status**:  Accepted  
 **Date**: October 2025  
 **Deciders**: Development Team
 
@@ -278,28 +278,28 @@ class ApiUserRepository implements IUserRepository {
 
 #### Positive
 
-- ✅ Loose coupling
-- ✅ Easy to test (mock repositories)
-- ✅ Can switch data sources
-- ✅ Clear abstraction
-- ✅ Domain doesn't know about API
+-  Loose coupling
+-  Easy to test (mock repositories)
+-  Can switch data sources
+-  Clear abstraction
+-  Domain doesn't know about API
 
 #### Negative
 
-- ⚠️ Additional abstraction
-- ⚠️ More interfaces to maintain
-- ⚠️ Need DTO transformations
+-  Additional abstraction
+-  More interfaces to maintain
+-  Need DTO transformations
 
 #### Neutral
 
-- 📝 Need clear interface definitions
-- 📝 Repository methods should be domain-focused
+-  Need clear interface definitions
+-  Repository methods should be domain-focused
 
 ---
 
 ## ADR-006: TypeScript Strict Mode
 
-**Status**: ✅ Accepted  
+**Status**:  Accepted  
 **Date**: October 2025  
 **Deciders**: Development Team
 
@@ -325,17 +325,17 @@ Enable TypeScript strict mode:
 
 #### Positive
 
-- ✅ Catch errors at compile time
-- ✅ Better IDE support
-- ✅ Self-documenting code
-- ✅ Easier refactoring
-- ✅ Confidence in changes
+-  Catch errors at compile time
+-  Better IDE support
+-  Self-documenting code
+-  Easier refactoring
+-  Confidence in changes
 
 #### Negative
 
-- ⚠️ More typing overhead
-- ⚠️ Learning curve
-- ⚠️ Migration effort for existing code
+-  More typing overhead
+-  Learning curve
+-  Migration effort for existing code
 
 #### Mitigation
 
@@ -347,7 +347,7 @@ Enable TypeScript strict mode:
 
 ## ADR-007: TanStack Query for Server State
 
-**Status**: ✅ Accepted  
+**Status**:  Accepted  
 **Date**: October 2025  
 **Deciders**: Development Team
 
@@ -381,28 +381,28 @@ const { data: users, isLoading } = useQuery({
 
 #### Positive
 
-- ✅ Less boilerplate
-- ✅ Automatic caching
-- ✅ Better UX (background refetching)
-- ✅ Unified patterns
-- ✅ DevTools for debugging
+-  Less boilerplate
+-  Automatic caching
+-  Better UX (background refetching)
+-  Unified patterns
+-  DevTools for debugging
 
 #### Negative
 
-- ⚠️ Additional dependency
-- ⚠️ Learning curve
-- ⚠️ Need to understand caching
+-  Additional dependency
+-  Learning curve
+-  Need to understand caching
 
 #### Neutral
 
-- 📝 Need guidelines for cache keys
-- 📝 Document invalidation strategies
+-  Need guidelines for cache keys
+-  Document invalidation strategies
 
 ---
 
 ## ADR-008: Tailwind CSS for Styling
 
-**Status**: ✅ Accepted  
+**Status**:  Accepted  
 **Date**: October 2025  
 **Deciders**: Development Team
 
@@ -428,17 +428,17 @@ Use Tailwind CSS:
 
 #### Positive
 
-- ✅ Fast development
-- ✅ Consistent design
-- ✅ Small bundle size
-- ✅ No CSS naming issues
-- ✅ Easy to maintain
+-  Fast development
+-  Consistent design
+-  Small bundle size
+-  No CSS naming issues
+-  Easy to maintain
 
 #### Negative
 
-- ⚠️ Long class names
-- ⚠️ Learning curve
-- ⚠️ Need custom configuration
+-  Long class names
+-  Learning curve
+-  Need custom configuration
 
 #### Mitigation
 
@@ -450,7 +450,7 @@ Use Tailwind CSS:
 
 ## ADR-009: Monorepo Structure (Future)
 
-**Status**: 🔄 Proposed  
+**Status**:  Proposed  
 **Date**: October 2025  
 **Deciders**: TBD
 
@@ -475,16 +475,16 @@ Consider migrating to monorepo structure:
 
 #### Positive
 
-- ✅ Code sharing
-- ✅ Better organization
-- ✅ Reusable packages
-- ✅ Consistent types
+-  Code sharing
+-  Better organization
+-  Reusable packages
+-  Consistent types
 
 #### Negative
 
-- ⚠️ Complex setup
-- ⚠️ Build complexity
-- ⚠️ Learning curve
+-  Complex setup
+-  Build complexity
+-  Learning curve
 
 **Status**: Proposed for future consideration
 
@@ -492,7 +492,7 @@ Consider migrating to monorepo structure:
 
 ## ADR-010: Component Testing Strategy
 
-**Status**: ✅ Accepted  
+**Status**:  Accepted  
 **Date**: October 2025  
 **Deciders**: Development Team
 
@@ -524,15 +524,15 @@ Use Vitest + Testing Library:
 
 #### Positive
 
-- ✅ Fast feedback
-- ✅ High confidence
-- ✅ Good coverage
-- ✅ Easy to maintain
+-  Fast feedback
+-  High confidence
+-  Good coverage
+-  Easy to maintain
 
 #### Negative
 
-- ⚠️ Time to write tests
-- ⚠️ Need to maintain tests
+-  Time to write tests
+-  Need to maintain tests
 
 **Coverage Goal**: 80% for domain layer
 

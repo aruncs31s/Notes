@@ -15,6 +15,6 @@ Started: 26-01-25
 
 ### Installition
 
-- [x] Platform IO ✅ 2025-07-04
-- [x] Arduino CLI ✅ 2025-07-04
-- [x] Arduino IDE ✅ 2025-07-04
+- [x] Platform IO  2025-07-04
+- [x] Arduino CLI  2025-07-04
+- [x] Arduino IDE  2025-07-04

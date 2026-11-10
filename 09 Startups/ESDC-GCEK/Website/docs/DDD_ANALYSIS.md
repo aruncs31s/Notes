@@ -10,13 +10,13 @@
 
 The ESDC React frontend project **partially follows** Domain-Driven Design principles, but there are significant gaps that prevent it from being a fully compliant DDD architecture. The project shows some good practices but lacks the proper layered architecture, domain logic encapsulation, and separation of concerns that DDD requires.
 
-**Overall Grade:** 🟡 **C+ (Partially Compliant)**
+**Overall Grade:**  **C+ (Partially Compliant)**
 
 ---
 
 ## 1. Current Architecture Analysis
 
-### ✅ Strengths
+###  Strengths
 
 1. **Basic Domain Model Exists**
    - `src/models/user.js` - User entity with validation and business logic
@@ -32,15 +32,15 @@ The ESDC React frontend project **partially follows** Domain-Driven Design princ
    - `src/contexts/AuthContext.jsx` - Application state management
    - Custom hooks (`src/hooks/useAuth.js`) for reusable logic
 
-### ❌ Critical Issues
+###  Critical Issues
 
 1. **Missing Core DDD Concepts**
-   - ❌ No Repository Pattern
-   - ❌ No Domain Services
-   - ❌ No Aggregates/Aggregate Roots
-   - ❌ No Value Objects (beyond enums)
-   - ❌ No Domain Events
-   - ❌ No Bounded Contexts
+   -  No Repository Pattern
+   -  No Domain Services
+   -  No Aggregates/Aggregate Roots
+   -  No Value Objects (beyond enums)
+   -  No Domain Events
+   -  No Bounded Contexts
 
 2. **Improper Layer Separation**
    - Business logic mixed in UI components
@@ -61,7 +61,7 @@ The ESDC React frontend project **partially follows** Domain-Driven Design princ
 
 **Issues:**
 ```jsx
-// ❌ BAD: Business logic in UI component (Users.jsx)
+//  BAD: Business logic in UI component (Users.jsx)
 useEffect(() => {
   let result = [...users];
   if (searchTerm) {
@@ -89,7 +89,7 @@ useEffect(() => {
 ### 2.2 Application Layer (Missing!)
 **Expected Location:** `src/application/` or `src/use-cases/`
 
-**Status:** ❌ **NOT IMPLEMENTED**
+**Status:**  **NOT IMPLEMENTED**
 
 Should contain:
 - Use cases/application services
@@ -133,12 +133,12 @@ export class CreateUserUseCase {
 
 **Analysis:**
 
-✅ **Good Practices:**
+ **Good Practices:**
 - User entity has behavior methods
 - Validation logic encapsulated
 - Factory methods present
 
-❌ **Issues:**
+ **Issues:**
 ```javascript
 // Current: Only one entity
 export class User {
@@ -174,7 +174,7 @@ export class User {
 
 **Issues:**
 ```javascript
-// ❌ Direct API calls without repository abstraction
+//  Direct API calls without repository abstraction
 export const adminAPI = {
   getUsers: async() => {
     const response = await api.get('/api/admin/users');
@@ -190,7 +190,7 @@ export const adminAPI = {
 
 **Should be:**
 ```javascript
-// ✅ Repository pattern
+//  Repository pattern
 export class UserRepository {
   constructor(apiClient) {
     this.api = apiClient;
@@ -234,20 +234,20 @@ export class UserRepository {
 ## 3. DDD Principles Compliance
 
 ### 3.1 Ubiquitous Language
-**Score:** 🟡 **Partial**
+**Score:**  **Partial**
 
-✅ Good:
+ Good:
 - `User`, `Challenge`, `Project`, `Event` - clear domain terms
 - `USER_ROLES`, `USER_STATUS` - domain constants
 
-❌ Issues:
+ Issues:
 - Generic names like `CreateModal`, `Dashboard`
 - Mix of technical and business terms
 
 ---
 
 ### 3.2 Bounded Contexts
-**Score:** ❌ **Not Implemented**
+**Score:**  **Not Implemented**
 
 No clear bounded contexts defined. The application should be divided into:
 
@@ -275,7 +275,7 @@ No clear bounded contexts defined. The application should be divided into:
 ---
 
 ### 3.3 Aggregates and Aggregate Roots
-**Score:** ❌ **Not Implemented**
+**Score:**  **Not Implemented**
 
 **What's needed:**
 
@@ -317,7 +317,7 @@ export class Challenge {
 ---
 
 ### 3.4 Value Objects
-**Score:** 🟡 **Minimal**
+**Score:**  **Minimal**
 
 Only enums exist. Need proper value objects:
 
@@ -370,7 +370,7 @@ export class Points {
 ---
 
 ### 3.5 Domain Services
-**Score:** ❌ **Not Implemented**
+**Score:**  **Not Implemented**
 
 **What's needed:**
 
@@ -410,7 +410,7 @@ export class UserRegistrationService {
 ---
 
 ### 3.6 Domain Events
-**Score:** ❌ **Not Implemented**
+**Score:**  **Not Implemented**
 
 **What's needed:**
 
@@ -459,7 +459,7 @@ export class ChallengeCompletedEventHandler {
 ---
 
 ### 3.7 Repository Pattern
-**Score:** ❌ **Not Implemented**
+**Score:**  **Not Implemented**
 
 Current code directly calls API services. Should use repositories:
 
@@ -817,15 +817,15 @@ The project has **basic domain models** and **service layers**, but lacks the co
 
 | DDD Concept | Status | Priority |
 |-------------|--------|----------|
-| Entities | 🟡 Partial (User only) | High |
-| Value Objects | ❌ Missing | High |
-| Aggregates | ❌ Missing | High |
-| Repositories | ❌ Missing | Critical |
-| Domain Services | ❌ Missing | High |
-| Domain Events | ❌ Missing | Medium |
-| Bounded Contexts | ❌ Missing | Medium |
-| Application Layer | ❌ Missing | Critical |
-| Ubiquitous Language | 🟡 Partial | Low |
+| Entities |  Partial (User only) | High |
+| Value Objects |  Missing | High |
+| Aggregates |  Missing | High |
+| Repositories |  Missing | Critical |
+| Domain Services |  Missing | High |
+| Domain Events |  Missing | Medium |
+| Bounded Contexts |  Missing | Medium |
+| Application Layer |  Missing | Critical |
+| Ubiquitous Language |  Partial | Low |
 
 ### Recommendations
 

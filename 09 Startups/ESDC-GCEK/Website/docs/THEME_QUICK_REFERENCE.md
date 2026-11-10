@@ -152,13 +152,13 @@
 
 These elements automatically use the theme:
 
-- ✅ All headings (`<h1>` - `<h6>`)
-- ✅ Paragraphs (`<p>`)
-- ✅ Links (`<a>`)
-- ✅ Forms (`<input>`, `<textarea>`, `<select>`, `<button>`)
-- ✅ Tables
-- ✅ Alerts & notifications
-- ✅ Badges & tags
+-  All headings (`<h1>` - `<h6>`)
+-  Paragraphs (`<p>`)
+-  Links (`<a>`)
+-  Forms (`<input>`, `<textarea>`, `<select>`, `<button>`)
+-  Tables
+-  Alerts & notifications
+-  Badges & tags
 
 No extra CSS needed!
 

@@ -157,12 +157,12 @@ updated: <% tp.date.now("YYYY-MM-DDTHH:mm") %>
 
 # <% tp.file.title %> Model
 
-- [ ] Link To SQL Table 🍽
-- [ ] Create repository ✨
-- [ ] Create service ✨
-- [ ] Create interface ✨
-- [ ] Create Handler ✨
-- [ ] Create Tests ✨
+- [ ] Link To SQL Table 
+- [ ] Create repository 
+- [ ] Create service 
+- [ ] Create interface 
+- [ ] Create Handler 
+- [ ] Create Tests 
 
 
 > [!note]- Purpose
@@ -183,7 +183,7 @@ type Staff struct {
     // Optional Fields
     StaffID uint   `gorm:"column:staff_id"`
     Status uint8 `gorm:"column:status"`
-    // Must Have Fields ✨
+    // Must Have Fields 
 	CreatedAt time.Time `gorm:"column:created_at"`
 	UpdatedAt time.Time `gorm:"column:updated_at"`
     CreatedBy uint   `gorm:"column:created_by"`

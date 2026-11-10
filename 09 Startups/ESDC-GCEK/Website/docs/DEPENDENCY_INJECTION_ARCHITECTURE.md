@@ -1,6 +1,6 @@
 # Dependency Injection & Current Architecture
 
-## 📋 Table of Contents
+##  Table of Contents
 1. [Overview](#overview)
 2. [Architecture Layers](#architecture-layers)
 3. [Dependency Injection Container](#dependency-injection-container)
@@ -12,19 +12,19 @@
 
 ---
 
-## 🎯 Overview
+##  Overview
 
 The application follows **Domain-Driven Design (DDD)** principles with a **Dependency Injection (DI)** pattern implemented through a custom container. This ensures:
 
-- ✅ **Loose Coupling**: Components depend on interfaces, not implementations
-- ✅ **Testability**: Easy to mock dependencies for unit testing
-- ✅ **Maintainability**: Single place to manage all dependencies
-- ✅ **Flexibility**: Easy to swap implementations
-- ✅ **Single Responsibility**: Each layer has clear boundaries
+-  **Loose Coupling**: Components depend on interfaces, not implementations
+-  **Testability**: Easy to mock dependencies for unit testing
+-  **Maintainability**: Single place to manage all dependencies
+-  **Flexibility**: Easy to swap implementations
+-  **Single Responsibility**: Each layer has clear boundaries
 
 ---
 
-## 🏗️ Architecture Layers
+##  Architecture Layers
 
 ```
 ┌────────────────────────────────────────────────────────────┐
@@ -84,7 +84,7 @@ The application follows **Domain-Driven Design (DDD)** principles with a **Depen
 
 ---
 
-## 🔧 Dependency Injection Container
+##  Dependency Injection Container
 
 ### Location
 `src/application/Container.ts`
@@ -176,7 +176,7 @@ export default container;
 
 ---
 
-## 🎭 Application Service (Facade Pattern)
+##  Application Service (Facade Pattern)
 
 ### Location
 `src/application/ApplicationService.ts`
@@ -250,7 +250,7 @@ export default applicationService;
 
 ---
 
-## 🔄 Dependency Flow
+##  Dependency Flow
 
 ### Example: Creating a User
 
@@ -339,7 +339,7 @@ this.services.set('createUserUseCase',
 
 ---
 
-## 💡 Usage Examples
+##  Usage Examples
 
 ### Example 1: Simple User Creation (UI Component)
 
@@ -431,11 +431,11 @@ const Chatbot = () => {
 
 ---
 
-## ✅ Best Practices
+##  Best Practices
 
 ### 1. Always Use ApplicationService in UI Components
 
-❌ **Don't:**
+ **Don't:**
 ```typescript
 import userRepository from '@/infrastructure/repositories/UserRepository';
 
@@ -443,7 +443,7 @@ import userRepository from '@/infrastructure/repositories/UserRepository';
 const users = await userRepository.findAll();
 ```
 
-✅ **Do:**
+ **Do:**
 ```typescript
 import applicationService from '@/application/ApplicationService';
 
@@ -479,7 +479,7 @@ async sendNotification(data: any) {
 
 ### 3. Keep Business Logic in Domain Layer
 
-❌ **Don't:**
+ **Don't:**
 ```typescript
 // Business logic in UI component
 const calculateUserRank = (users: User[], targetUser: User) => {
@@ -488,7 +488,7 @@ const calculateUserRank = (users: User[], targetUser: User) => {
 };
 ```
 
-✅ **Do:**
+ **Do:**
 ```typescript
 // Business logic in domain service
 class LeaderboardService {
@@ -537,7 +537,7 @@ eventBus.subscribe('UserCreated', async (event) => {
 
 ---
 
-## 🧪 Testing Strategy
+##  Testing Strategy
 
 ### Unit Testing with Dependency Injection
 
@@ -645,7 +645,7 @@ describe('User Creation Integration', () => {
 
 ---
 
-## 🔍 Troubleshooting
+##  Troubleshooting
 
 ### Issue: "Service not found in container"
 
@@ -689,7 +689,7 @@ const mockRepository = {
 
 ---
 
-## 📊 Dependency Graph
+##  Dependency Graph
 
 ```
 Container (Singleton)
@@ -719,7 +719,7 @@ ApplicationService (Facade)
 
 ---
 
-## 📚 Related Documentation
+##  Related Documentation
 
 - [DDD Implementation Summary](./DDD_IMPLEMENTATION_SUMMARY.md)
 - [DDD Implementation Guide](./DDD_IMPLEMENTATION_GUIDE.md)
@@ -728,14 +728,14 @@ ApplicationService (Facade)
 
 ---
 
-## 🎉 Conclusion
+##  Conclusion
 
 The Dependency Injection architecture provides:
 
-✅ **Loose Coupling**: Components depend on abstractions, not concrete implementations  
-✅ **High Testability**: Easy to mock dependencies for unit tests  
-✅ **Maintainability**: Single place (Container) to manage all dependencies  
-✅ **Flexibility**: Easy to swap implementations without changing consumers  
-✅ **Scalability**: New features follow established patterns  
+ **Loose Coupling**: Components depend on abstractions, not concrete implementations  
+ **High Testability**: Easy to mock dependencies for unit tests  
+ **Maintainability**: Single place (Container) to manage all dependencies  
+ **Flexibility**: Easy to swap implementations without changing consumers  
+ **Scalability**: New features follow established patterns  
 
 The ApplicationService facade provides a simple, consistent API for UI components while maintaining clean architecture principles underneath.

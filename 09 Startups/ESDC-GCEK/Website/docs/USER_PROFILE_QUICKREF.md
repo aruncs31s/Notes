@@ -1,6 +1,6 @@
 # User Profile Feature - Quick Reference
 
-## 🎯 Quick Start
+##  Quick Start
 
 ### What Was Implemented?
 
@@ -13,7 +13,7 @@ A complete user profile system that allows users to click on team members and vi
 
 ---
 
-## 📁 Files Created
+##  Files Created
 
 1. **Types**: `/src/types/userProfile.ts`
    - Extended user profile type definitions
@@ -30,7 +30,7 @@ A complete user profile system that allows users to click on team members and vi
 4. **Documentation**:
    - `/docs/USER_PROFILE_FEATURE.md` - Complete implementation guide
 
-## 📁 Files Modified
+##  Files Modified
 
 1. `/src/components/Team.tsx`
    - Added click handlers for team members
@@ -43,7 +43,7 @@ A complete user profile system that allows users to click on team members and vi
 
 ---
 
-## 🔧 How It Works
+##  How It Works
 
 ### User Flow:
 
@@ -80,7 +80,7 @@ Team Component
 
 ---
 
-## 💻 Usage Example
+##  Usage Example
 
 ```typescript
 import { useState } from 'react';
@@ -133,29 +133,29 @@ const YourComponent = () => {
 
 ---
 
-## 🎨 UI Features
+##  UI Features
 
 ### UserQuickModal
 
-- ✅ Clean, minimalist design
-- ✅ Avatar with role badge
-- ✅ Contact information grid
-- ✅ Responsive layout
-- ✅ Call-to-action button
+-  Clean, minimalist design
+-  Avatar with role badge
+-  Contact information grid
+-  Responsive layout
+-  Call-to-action button
 
 ### UserProfileModal
 
-- ✅ Gradient cover image
-- ✅ Large profile avatar with streak badge
-- ✅ 8 statistical cards
-- ✅ Tab-based navigation (6 tabs)
-- ✅ Smooth animations
-- ✅ Fully responsive design
-- ✅ Keyboard accessible (Escape to close)
+-  Gradient cover image
+-  Large profile avatar with streak badge
+-  8 statistical cards
+-  Tab-based navigation (6 tabs)
+-  Smooth animations
+-  Fully responsive design
+-  Keyboard accessible (Escape to close)
 
 ---
 
-## 🔌 Backend Integration (TODO)
+##  Backend Integration (TODO)
 
 ### Required API Endpoints:
 
@@ -203,7 +203,7 @@ setUserProfile(profile);
 
 ---
 
-## 📊 Stats Displayed
+##  Stats Displayed
 
 1. **Projects**: Total and completed projects
 2. **Events**: Events attended/organized
@@ -218,7 +218,7 @@ setUserProfile(profile);
 
 ---
 
-## 📱 Responsive Design
+##  Responsive Design
 
 ### Breakpoints:
 
@@ -228,9 +228,9 @@ setUserProfile(profile);
 
 ---
 
-## 🎯 Current Status
+##  Current Status
 
-### ✅ Completed:
+###  Completed:
 
 - All type definitions
 - Both modal components
@@ -238,14 +238,14 @@ setUserProfile(profile);
 - Complete styling
 - Documentation
 
-### 🔄 Pending (Backend):
+###  Pending (Backend):
 
 - API integration
 - Real data for all tabs
 - Activity timeline
 - Stats calculation
 
-### 🚀 Future Features:
+###  Future Features:
 
 - Follow/unfollow users
 - Direct messaging
@@ -255,7 +255,7 @@ setUserProfile(profile);
 
 ---
 
-## 🐛 Common Issues & Solutions
+##  Common Issues & Solutions
 
 ### Modal not opening?
 
@@ -277,7 +277,7 @@ setUserProfile(profile);
 
 ---
 
-## 📝 Key Props
+##  Key Props
 
 ### UserQuickModal:
 
@@ -303,7 +303,7 @@ setUserProfile(profile);
 
 ---
 
-## 🔗 Related Components
+##  Related Components
 
 Can be integrated with:
 
@@ -317,7 +317,7 @@ Can be integrated with:
 
 ---
 
-## 📚 Additional Resources
+##  Additional Resources
 
 - Full Documentation: `/docs/USER_PROFILE_FEATURE.md`
 - Type Definitions: `/src/types/userProfile.ts`

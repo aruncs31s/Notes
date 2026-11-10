@@ -5,7 +5,7 @@ tags: [excalidraw]
 excalidraw-plugin: parsed
 dg-publish: true
 ---
-==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
+==  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ==
 
 # Text Elements
 v.w ^hn5nnGgG

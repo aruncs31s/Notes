@@ -2,7 +2,7 @@
 
 Complete API endpoint specifications for the ESDC Frontend application.
 
-## 📚 Documentation Structure
+##  Documentation Structure
 
 - **[Authentication APIs](./auth.md)** - User authentication and authorization
 - **[User APIs](./user.md)** - User management and profile operations
@@ -11,14 +11,14 @@ Complete API endpoint specifications for the ESDC Frontend application.
 - **[Event APIs](./event.md)** - Event management
 - **[Chatbot APIs](./chatbot.md)** - AI chatbot integration
 
-## 🔗 Base URL
+##  Base URL
 
 ```
 Development: http://localhost:9090
 Production: https://esdc-backend.onrender.com
 ```
 
-## 🔐 Authentication
+##  Authentication
 
 All authenticated endpoints require a Bearer token in the Authorization header:
 
@@ -26,7 +26,7 @@ All authenticated endpoints require a Bearer token in the Authorization header:
 Authorization: Bearer <token>
 ```
 
-## 📋 Response Format
+##  Response Format
 
 All API responses follow this standard format:
 
@@ -50,14 +50,14 @@ All API responses follow this standard format:
 }
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 1. Review the specific API documentation for your feature
 2. Implement the endpoint according to specifications
 3. Test with the provided request/response examples
 4. Handle all error cases documented
 
-## 📝 Implementation Checklist
+##  Implementation Checklist
 
 For each endpoint, ensure:
 
@@ -70,7 +70,7 @@ For each endpoint, ensure:
 - [ ] Logging for debugging
 - [ ] Rate limiting (if applicable)
 
-## 🔍 Status Codes
+##  Status Codes
 
 - `200` - Success
 - `201` - Created

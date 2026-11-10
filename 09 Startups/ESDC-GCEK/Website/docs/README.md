@@ -2,11 +2,11 @@
 
 A modern React application for the Embedded Systems Design Club (ESDC) built with Vite, featuring authentication, theme switching, and responsive design.
 
-## 🏗️ Architecture
+##  Architecture
 
 This project follows **Domain-Driven Design (DDD)** with strict layered architecture.
 
-📖 **[Read the Architecture Documentation](./ARCHITECTURE.md)** - **MUST READ** for all developers
+ **[Read the Architecture Documentation](./ARCHITECTURE.md)** - **MUST READ** for all developers
 
 Key architectural documents:
 
@@ -47,23 +47,23 @@ npm run lint
 
 ```
 src/
-├── domain/              # 🟢 Domain Layer - Business Logic
+├── domain/              #  Domain Layer - Business Logic
 │   ├── entities/        # Business entities (User, Challenge, Project, Event)
 │   ├── value-objects/   # Value objects (Email, Points, Difficulty)
 │   ├── services/        # Domain services
 │   ├── events/          # Domain events & event bus
 │   └── repositories/    # Repository interfaces
 │
-├── application/         # 🔵 Application Layer - Use Cases
+├── application/         #  Application Layer - Use Cases
 │   ├── use-cases/       # Application use cases
 │   ├── ApplicationService.ts  # Main facade for UI
 │   └── Container.ts     # Dependency injection
 │
-├── infrastructure/      # 🟡 Infrastructure Layer - External Services
+├── infrastructure/      #  Infrastructure Layer - External Services
 │   ├── api/            # API clients
 │   └── repositories/   # Repository implementations
 │
-├── app/                # 🔴 Presentation Layer - Application Setup
+├── app/                #  Presentation Layer - Application Setup
 │   ├── providers/      # React context providers
 │   └── router/         # Route configuration
 │
@@ -76,11 +76,11 @@ src/
 **Important**: Always use `ApplicationService` from UI components. Never access repositories or infrastructure directly.
 
 ```typescript
-// ✅ Correct
+//  Correct
 import applicationService from '@/application/ApplicationService';
 const users = await applicationService.getAllUsers();
 
-// ❌ Wrong
+//  Wrong
 import { userRepository } from '@/infrastructure';
 const users = await userRepository.findAll();
 ```

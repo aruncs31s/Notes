@@ -1,16 +1,16 @@
-# 🎨 Chatbot Style Update - Minimalist Design
+#  Chatbot Style Update - Minimalist Design
 
-## ✨ What Changed?
+##  What Changed?
 
 The chatbot has been completely redesigned with a **clean, minimalist, and professional** style using Tailwind CSS utility classes.
 
-## 🔄 Major Changes
+##  Major Changes
 
 ### 1. **Removed Dependencies**
 
-- ❌ Removed `react-icons` dependencies (FaComments, FaTimes, FaPaperPlane, etc.)
-- ✅ Added inline SVG icons as React components
-- ❌ No longer using `chatbot.css` file (all styles are now inline with Tailwind)
+-  Removed `react-icons` dependencies (FaComments, FaTimes, FaPaperPlane, etc.)
+-  Added inline SVG icons as React components
+-  No longer using `chatbot.css` file (all styles are now inline with Tailwind)
 
 ### 2. **New Design Features**
 
@@ -58,21 +58,21 @@ Three new icon components:
 
 ### 5. **Removed Features**
 
-- ❌ Quick action buttons
-- ❌ Clear chat button
-- ❌ Complex animations
-- ❌ Gradient backgrounds
-- ❌ Playful emojis in greeting
-- ❌ Floating effects
-- ❌ Multiple color themes
+-  Quick action buttons
+-  Clear chat button
+-  Complex animations
+-  Gradient backgrounds
+-  Playful emojis in greeting
+-  Floating effects
+-  Multiple color themes
 
 ### 6. **Simplified Greeting**
 
 Changed from:
 
 ```
-"Hi there! 👋 I'm the ESDC Assistant, your friendly coding companion!
-How can I help you today? 🚀"
+"Hi there!  I'm the ESDC Assistant, your friendly coding companion!
+How can I help you today? "
 ```
 
 To:
@@ -81,7 +81,7 @@ To:
 "Hi, how can I help you today?"
 ```
 
-## 🎯 Design Philosophy
+##  Design Philosophy
 
 ### Old Design (Playful & Animated)
 
@@ -93,13 +93,13 @@ To:
 
 ### New Design (Minimalist & Professional)
 
-- ✅ Clean black & white color scheme
-- ✅ Simple, subtle animations
-- ✅ Professional tone
-- ✅ Focus on content
-- ✅ Better readability
+-  Clean black & white color scheme
+-  Simple, subtle animations
+-  Professional tone
+-  Focus on content
+-  Better readability
 
-## 📋 Technical Details
+##  Technical Details
 
 ### Stack
 
@@ -126,7 +126,7 @@ className="fixed bottom-4 right-4 inline-flex items-center
 - **Added**: Inline Tailwind classes
 - **Result**: Smaller bundle, faster load times
 
-## 🚀 Benefits
+##  Benefits
 
 1. **Performance**
    - No custom CSS file to load
@@ -148,7 +148,7 @@ className="fixed bottom-4 right-4 inline-flex items-center
    - Cleaner code
    - Easier to understand
 
-## 📱 Responsive Design
+##  Responsive Design
 
 The new design maintains responsiveness:
 
@@ -157,7 +157,7 @@ The new design maintains responsiveness:
 - Scrollable message area
 - Proper spacing on all screens
 
-## 🎨 Color Palette
+##  Color Palette
 
 | Element           | Color          | Tailwind Class         |
 | ----------------- | -------------- | ---------------------- |
@@ -170,7 +170,7 @@ The new design maintains responsiveness:
 | Send Button       | Black          | `bg-black`             |
 | Send Button Hover | Very Dark Gray | `hover:bg-[#111827E6]` |
 
-## 🔧 Customization Guide
+##  Customization Guide
 
 ### Change Colors
 
@@ -196,10 +196,10 @@ className = '... w-[500px] h-[700px] ...';
 - Add message timestamps
 - Add message reactions
 
-## ⚠️ Note
+##  Note
 
 The old `chatbot.css` file is no longer used and can be safely removed if not needed by other components.
 
-## 🎉 Result
+##  Result
 
 A clean, professional, and modern chatbot interface that focuses on usability and content rather than decorative elements. Perfect for professional applications while still being approachable and easy to use.

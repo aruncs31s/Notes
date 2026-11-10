@@ -84,18 +84,18 @@ Where:
 
 A **pole-zero diagram** (or pole map) plots poles and zeros in the complex $s$-plane.
 
-- **✕** = Pole
+- **** = Pole
 - **⊙** = Zero
 
 ```
         jω (imaginary axis)
         ↑
         |
-   ✕    |    ⊙
-   ⊙    |  ✕
+       |    ⊙
+   ⊙    |  
 --------|-------- σ (real axis)
         |
-   ✕    |    ⊙
+       |    ⊙
         |
 ```
 
@@ -103,9 +103,9 @@ A **pole-zero diagram** (or pole map) plots poles and zeros in the complex $s$-p
 
 | Region | Behavior | Stability |
 |--------|----------|-----------|
-| **Left Half-Plane (LHP)** | Exponential decay | ✓ Stable |
-| **Imaginary Axis** | Oscillation (undamped) | ⚠️ Marginally stable |
-| **Right Half-Plane (RHP)** | Exponential growth | ✗ Unstable |
+| **Left Half-Plane (LHP)** | Exponential decay |  Stable |
+| **Imaginary Axis** | Oscillation (undamped) |  Marginally stable |
+| **Right Half-Plane (RHP)** | Exponential growth |  Unstable |
 
 ---
 
@@ -257,7 +257,7 @@ $$V_{out}(s) = \frac{V_{in}(s)}{RCs + 1}$$
 $$H(s) = \frac{V_{out}(s)}{V_{in}(s)} = \frac{1}{RCs + 1} = \frac{1/RC}{s + 1/RC}$$
 
 ### Step 4: Poles & Zeros
-- **Pole**: $s = -\frac{1}{RC}$ (LHP → Stable ✓)
+- **Pole**: $s = -\frac{1}{RC}$ (LHP → Stable )
 - **Zero**: None
 - **Cutoff frequency**: $f_c = \frac{1}{2\pi RC}$
 
@@ -301,7 +301,7 @@ Vin ─────L─────┬─────┐
 $$H(s) = \frac{Ls}{Ls + R} = \frac{s}{s + R/L}$$
 
 ### Poles & Zeros
-- **Pole**: $s = -\frac{R}{L}$ (LHP → Stable ✓)
+- **Pole**: $s = -\frac{R}{L}$ (LHP → Stable )
 - **Zero**: $s = 0$ (at origin)
 
 ### Frequency Response
@@ -443,7 +443,7 @@ New transfer function:
 $$H(s) = \frac{-1/(RC)}{s + 1/(R_f C)}$$
 
 Now we have:
-- **Pole**: $s = -\frac{1}{R_f C}$ (in LHP → Stable ✓)
+- **Pole**: $s = -\frac{1}{R_f C}$ (in LHP → Stable )
 - Integrator behavior at low frequencies, but stable!
 
 ---
@@ -476,12 +476,12 @@ Where typically $z > p$ (zero to the right of pole).
 
 | Pole Type | Location | Effect | Stability | Example |
 |-----------|----------|--------|-----------|---------|
-| Real, negative | $s = -a$ (LHP) | Exponential decay | ✓ Stable | RC filter |
-| Real, positive | $s = +a$ (RHP) | Exponential growth | ✗ Unstable | Runaway |
-| Complex conjugate | $-\sigma \pm j\omega$ (LHP) | Damped oscillation | ✓ Stable | RLC circuit |
-| Complex conjugate | $\pm j\omega$ (imaginary) | Sustained oscillation | ⚠️ Marginal | LC circuit |
-| At origin | $s = 0$ | Integration (drift) | ⚠️ Marginal | Integrator |
-| Repeated | Multiple at $-a$ (LHP) | Multiple exponentials | ✓ Stable | High-order filters |
+| Real, negative | $s = -a$ (LHP) | Exponential decay |  Stable | RC filter |
+| Real, positive | $s = +a$ (RHP) | Exponential growth |  Unstable | Runaway |
+| Complex conjugate | $-\sigma \pm j\omega$ (LHP) | Damped oscillation |  Stable | RLC circuit |
+| Complex conjugate | $\pm j\omega$ (imaginary) | Sustained oscillation |  Marginal | LC circuit |
+| At origin | $s = 0$ | Integration (drift) |  Marginal | Integrator |
+| Repeated | Multiple at $-a$ (LHP) | Multiple exponentials |  Stable | High-order filters |
 
 ---
 
@@ -521,28 +521,28 @@ Where typically $z > p$ (zero to the right of pole).
 
 ## Common Mistakes in System Modeling
 
-### ❌ Mistake 1: Forgetting Initial Conditions
+###  Mistake 1: Forgetting Initial Conditions
 - **Wrong**: Assuming all initial conditions are zero
 - **Right**: Include $f(0)$, $f'(0)$, etc. in Laplace transform
 - **Impact**: Completely wrong transient response
 
-### ❌ Mistake 2: Ignoring Parasitics
+###  Mistake 2: Ignoring Parasitics
 - **Wrong**: Ideal resistors, capacitors, inductors
 - **Right**: Real components have parasitic resistance, inductance, capacitance
 - **Impact**: May miss instabilities and nonlinear behavior
 
-### ❌ Mistake 3: Wrong Pole Count
+###  Mistake 3: Wrong Pole Count
 - **Rule**: For stable system, **number of poles ≥ number of zeros**
 - **Wrong**: More zeros than poles
 - **Impact**: System physically unrealizable
 
-### ❌ Mistake 4: Pole-Zero Cancellation
+###  Mistake 4: Pole-Zero Cancellation
 - **Theory**: $(s+a)$ in numerator and denominator cancel
 - **Practice**: Never perfect due to component tolerances
 - **Hidden pole**: System still affected by "cancelled" pole
 - **Impact**: Hidden instability at high frequencies
 
-### ❌ Mistake 5: Confusing Stable ≠ Good Performance
+###  Mistake 5: Confusing Stable ≠ Good Performance
 - **Right**: Stable poles in LHP guarantee bounded response
 - **Wrong**: Thinking all stable systems work well
 - **Reality**: Poles close to imaginary axis = oscillatory, ringing, slow settling

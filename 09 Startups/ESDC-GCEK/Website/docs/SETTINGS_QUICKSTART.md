@@ -56,19 +56,19 @@ function MyComponent() {
 
 | Feature | Key | Default | Category |
 |---------|-----|---------|----------|
-| Chatbot | `chatbot` | ✅ | Core |
-| Chat Room | `chatroom` | ✅ | Community |
-| Games | `games` | ✅ | Content |
-| Shop | `shop` | ✅ | Commerce |
-| Blog | `blog` | ✅ | Content |
-| Events | `events` | ✅ | Community |
-| Challenges | `challenges` | ✅ | Community |
-| Resources | `resources` | ✅ | Content |
-| Leaderboard | `leaderboard` | ✅ | Community |
-| Projects | `projects` | ✅ | Community |
-| LMS | `lms` | ✅ | Content |
-| Notifications | `notifications` | ✅ | Core |
-| Products | `products` | ✅ | Commerce |
+| Chatbot | `chatbot` |  | Core |
+| Chat Room | `chatroom` |  | Community |
+| Games | `games` |  | Content |
+| Shop | `shop` |  | Commerce |
+| Blog | `blog` |  | Content |
+| Events | `events` |  | Community |
+| Challenges | `challenges` |  | Community |
+| Resources | `resources` |  | Content |
+| Leaderboard | `leaderboard` |  | Community |
+| Projects | `projects` |  | Community |
+| LMS | `lms` |  | Content |
+| Notifications | `notifications` |  | Core |
+| Products | `products` |  | Commerce |
 
 ## API Reference
 
@@ -140,8 +140,8 @@ localStorage key: "appSettings"
 ```
 
 ## Tips
-- 💡 Settings persist across sessions
-- 🔄 Some changes require page reload
-- 🎨 Dark mode compatible
-- 📱 Mobile responsive
-- ⚡ Type-safe with TypeScript
+-  Settings persist across sessions
+-  Some changes require page reload
+-  Dark mode compatible
+-  Mobile responsive
+-  Type-safe with TypeScript

@@ -285,7 +285,7 @@ async getUserEvents(userId: string): Promise<UserEvent[]> {
 
 ## Current Implementation Status
 
-### ✅ Completed
+###  Completed
 
 - [x] Type definitions for all user profile data
 - [x] UserQuickModal component with basic info
@@ -298,7 +298,7 @@ async getUserEvents(userId: string): Promise<UserEvent[]> {
 - [x] Stats grid with 8 stat cards
 - [x] Modal state management
 
-### 🔄 To Be Implemented (Backend Dependent)
+###  To Be Implemented (Backend Dependent)
 
 - [ ] API integration for fetching user profile data
 - [ ] Projects tab content with actual data
@@ -310,7 +310,7 @@ async getUserEvents(userId: string): Promise<UserEvent[]> {
 - [ ] Like/unlike functionality
 - [ ] User stats calculation on backend
 
-### 🎯 Future Enhancements
+###  Future Enhancements
 
 - [ ] Share profile functionality
 - [ ] Follow/Unfollow users

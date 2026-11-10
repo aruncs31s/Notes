@@ -1,6 +1,6 @@
 # Quick Responsive Design Guide
 
-## 🎯 Key Principles Applied
+##  Key Principles Applied
 
 ### 1. Mobile-First Grid Pattern
 ```css
@@ -25,7 +25,7 @@ Desktop → Tablet → Mobile
 1.05rem → 0.95rem → 0.9rem (Buttons)
 ```
 
-## 📱 Testing Commands
+##  Testing Commands
 
 ```bash
 # Start dev server
@@ -36,7 +36,7 @@ npm run dev
 # 2. Access from mobile: http://YOUR_IP:5173
 ```
 
-## 🔍 Browser DevTools Testing
+##  Browser DevTools Testing
 
 ### Chrome/Edge
 1. Press `F12` or `Cmd+Option+I` (Mac)
@@ -51,7 +51,7 @@ npm run dev
 - iPad: 768 × 1024
 - iPad Pro: 1024 × 1366
 
-## ✅ Quick Checklist
+##  Quick Checklist
 
 ### Navigation
 - [ ] Hamburger menu works
@@ -77,7 +77,7 @@ npm run dev
 - [ ] Hover effects work on desktop
 - [ ] Tap effects work on mobile
 
-## 🐛 Common Issues & Fixes
+##  Common Issues & Fixes
 
 ### Issue: Horizontal Scroll
 ```css
@@ -104,7 +104,7 @@ grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
 padding-top: 70px; /* Height of fixed navbar */
 ```
 
-## 🎨 CSS Variables for Consistency
+##  CSS Variables for Consistency
 
 ```css
 /* Use existing variables */
@@ -115,7 +115,7 @@ var(--surface0)    /* Borders */
 var(--subtext0)    /* Secondary text */
 ```
 
-## 📦 Files Modified
+##  Files Modified
 
 ### Core Responsive Files
 - `src/styles/responsive.css` - Main responsive styles
@@ -134,7 +134,7 @@ var(--subtext0)    /* Secondary text */
 - `src/components/Login.css`
 - `src/components/ProfilePopup.css`
 
-## 🚀 Performance Tips
+##  Performance Tips
 
 1. **Images**: Use responsive images
    ```html
@@ -152,7 +152,7 @@ var(--subtext0)    /* Secondary text */
 
 3. **Font Loading**: Already optimized with Google Fonts
 
-## 🔧 Adding New Responsive Components
+##  Adding New Responsive Components
 
 ### Template for New Component
 ```css
@@ -181,14 +181,14 @@ var(--subtext0)    /* Secondary text */
 }
 ```
 
-## 📚 Resources
+##  Resources
 
 - [MDN Responsive Design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
 - [CSS Tricks - Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [Web.dev - Responsive Images](https://web.dev/responsive-images/)
 - [iOS Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/)
 
-## 💡 Pro Tips
+##  Pro Tips
 
 1. **Test on Real Devices**: Emulators are good, but real devices are better
 2. **Use Chrome Remote Debugging**: Debug mobile browsers from desktop
@@ -196,7 +196,7 @@ var(--subtext0)    /* Secondary text */
 4. **Monitor Performance**: Use Lighthouse for mobile performance audits
 5. **Test Different Orientations**: Portrait and landscape modes
 
-## 🎯 Next Steps
+##  Next Steps
 
 1. Test on actual mobile devices
 2. Run Lighthouse audit for mobile

@@ -19,9 +19,9 @@ Refactorers : 0
 
 | Name                                                                                     | Role               | Status | Contributions |
 | ---------------------------------------------------------------------------------------- | ------------------ | ------ | ------------- |
-| [Arun cs](https://github.com/orgs/Embedded-Systems-GCEK/people/aruncs31s)                | Designer           | ✅      |               |
-| [Abhaya Govind](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhayaGovind)       | Designer,Developer | ❌      |               |
+| [Arun cs](https://github.com/orgs/Embedded-Systems-GCEK/people/aruncs31s)                | Designer           |       |               |
+| [Abhaya Govind](https://github.com/orgs/Embedded-Systems-GCEK/people/AbhayaGovind)       | Designer,Developer |       |               |
 
-✅ -> Currently Done any Contribution 
-❌ -> Currently Has not done any Contribution
+ -> Currently Done any Contribution 
+ -> Currently Has not done any Contribution
 

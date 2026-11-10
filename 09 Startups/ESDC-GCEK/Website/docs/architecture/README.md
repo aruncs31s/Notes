@@ -6,7 +6,7 @@ This directory contains comprehensive architectural documentation that **must be
 
 ---
 
-## 📖 Quick Start
+##  Quick Start
 
 **New to the project?** Read these in order:
 
@@ -17,21 +17,21 @@ This directory contains comprehensive architectural documentation that **must be
    - Best practices and anti-patterns
    - **Estimated reading time**: 30 minutes
 
-2. **[GUIDELINES.md](./GUIDELINES.md)** 📋 **MANDATORY**
+2. **[GUIDELINES.md](./GUIDELINES.md)**  **MANDATORY**
    - Strict coding guidelines
    - Layer responsibilities (MUST/MUST NOT)
    - Code review checklist
    - Enforcement rules
    - **Estimated reading time**: 20 minutes
 
-3. **[PATTERNS.md](./PATTERNS.md)** 🎯 **REFERENCE**
+3. **[PATTERNS.md](./PATTERNS.md)**  **REFERENCE**
    - Design patterns with examples
    - Code templates
    - React patterns
    - Common implementations
    - **Estimated reading time**: 30 minutes (use as reference)
 
-4. **[ADR.md](./ADR.md)** 📝 **CONTEXT**
+4. **[ADR.md](./ADR.md)**  **CONTEXT**
    - Architecture Decision Records
    - Why we made certain choices
    - Trade-offs and consequences
@@ -39,7 +39,7 @@ This directory contains comprehensive architectural documentation that **must be
 
 ---
 
-## 📚 Complete Documentation Structure
+##  Complete Documentation Structure
 
 ### Root Level
 
@@ -90,7 +90,7 @@ This directory contains comprehensive architectural documentation that **must be
 
 ---
 
-## 🎯 By Role
+##  By Role
 
 ### For New Developers
 
@@ -140,7 +140,7 @@ This directory contains comprehensive architectural documentation that **must be
 
 ---
 
-## 🔍 By Topic
+##  By Topic
 
 ### Understanding DDD
 
@@ -174,7 +174,7 @@ This directory contains comprehensive architectural documentation that **must be
 
 ---
 
-## 📋 Common Tasks
+##  Common Tasks
 
 ### "I need to add a new feature"
 
@@ -219,21 +219,21 @@ Reference: [DDD_QUICK_REFERENCE.md](../DDD_QUICK_REFERENCE.md)
 
 ---
 
-## 🚀 Quick Reference
+##  Quick Reference
 
 ### Import Patterns
 
 ```typescript
-// ✅ Correct - Use ApplicationService from UI
+//  Correct - Use ApplicationService from UI
 import applicationService from '@/application/ApplicationService';
 
-// ✅ Correct - Use domain types for annotations
+//  Correct - Use domain types for annotations
 import { User, UserRole } from '@/domain';
 
-// ❌ Wrong - Never import infrastructure from UI
+//  Wrong - Never import infrastructure from UI
 import { userRepository } from '@/infrastructure';
 
-// ❌ Wrong - Never import domain services from UI
+//  Wrong - Never import domain services from UI
 import { ChallengeEvaluationService } from '@/domain/services';
 ```
 
@@ -266,29 +266,29 @@ if (result.success) {
 
 ---
 
-## ⚠️ Important Rules
+##  Important Rules
 
 ### MUST Follow
 
-1. ✅ Use ApplicationService from UI components
-2. ✅ Put business logic in domain layer
-3. ✅ Use value objects for domain concepts
-4. ✅ Handle all errors properly
-5. ✅ Write tests for domain logic
-6. ✅ Follow layer dependencies
+1.  Use ApplicationService from UI components
+2.  Put business logic in domain layer
+3.  Use value objects for domain concepts
+4.  Handle all errors properly
+5.  Write tests for domain logic
+6.  Follow layer dependencies
 
 ### MUST NOT Do
 
-1. ❌ Access repositories directly from UI
-2. ❌ Put business logic in components
-3. ❌ Skip error handling
-4. ❌ Use primitives for domain concepts
-5. ❌ Violate layer boundaries
-6. ❌ Skip tests
+1.  Access repositories directly from UI
+2.  Put business logic in components
+3.  Skip error handling
+4.  Use primitives for domain concepts
+5.  Violate layer boundaries
+6.  Skip tests
 
 ---
 
-## 📞 Getting Help
+##  Getting Help
 
 ### Questions?
 
@@ -308,13 +308,13 @@ Found an error? Have a suggestion?
 
 ---
 
-## 📊 Documentation Health
+##  Documentation Health
 
 ### Last Major Update
 
 - **Date**: October 2025
 - **Version**: 1.0
-- **Status**: ✅ Current
+- **Status**:  Current
 
 ### Review Schedule
 
@@ -330,9 +330,9 @@ Found an error? Have a suggestion?
 
 ---
 
-## 📈 Adoption Progress
+##  Adoption Progress
 
-### Phase 1: Documentation ✅
+### Phase 1: Documentation 
 
 - [x] Create ARCHITECTURE.md
 - [x] Create GUIDELINES.md
@@ -340,14 +340,14 @@ Found an error? Have a suggestion?
 - [x] Create ADR.md
 - [x] Create this index
 
-### Phase 2: Training 🔄
+### Phase 2: Training 
 
 - [ ] Team training session
 - [ ] Code review training
 - [ ] Pair programming sessions
 - [ ] Documentation review
 
-### Phase 3: Enforcement 📋
+### Phase 3: Enforcement 
 
 - [ ] Add to PR template
 - [ ] Update code review guidelines
@@ -356,23 +356,23 @@ Found an error? Have a suggestion?
 
 ---
 
-## 📝 Feedback
+##  Feedback
 
 This documentation is maintained by the team, for the team. Your feedback is valuable!
 
 **Good documentation should be**:
 
-- ✅ Easy to find
-- ✅ Easy to understand
-- ✅ Accurate and up-to-date
-- ✅ Practical with examples
-- ✅ Enforced consistently
+-  Easy to find
+-  Easy to understand
+-  Accurate and up-to-date
+-  Practical with examples
+-  Enforced consistently
 
 If this documentation doesn't meet these standards, let us know!
 
 ---
 
-## 🎓 Learning Path
+##  Learning Path
 
 ### Week 1: Foundations
 
@@ -402,6 +402,6 @@ If this documentation doesn't meet these standards, let us know!
 
 **Last Updated**: October 2025  
 **Version**: 1.0  
-**Status**: ✅ Active
+**Status**:  Active
 
 **Questions?** Check the docs or ask the team!

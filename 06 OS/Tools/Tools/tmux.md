@@ -233,8 +233,8 @@ bind-key -n M-q display-menu -x W -y S \
     "New Window"                         ␍ new-window \
     "Kill Window"                        k "killw"  \
     "Choose Window"                      w choose-window \
-    "Previous Window"                    🡠 previous-window \
-    "Next Window"                        🡢 next-window \
+    "Previous Window"                     previous-window \
+    "Next Window"                         next-window \
     "Swap Window Right"                  ↑ "swap-window -t -1" \
     "Swap Window Left"                   ↓ "swap-window -t +1" \
     "Horizontal Split"                   v "split-window -h" \

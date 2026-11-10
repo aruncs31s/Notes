@@ -29,64 +29,64 @@ This document provides **strict guidelines** that all developers must follow whe
 
 ### Domain Layer - MUST
 
-✅ **MUST** contain all business logic  
-✅ **MUST** have no external dependencies  
-✅ **MUST** validate domain rules  
-✅ **MUST** use value objects for domain concepts  
-✅ **MUST** publish domain events for significant changes
+ **MUST** contain all business logic  
+ **MUST** have no external dependencies  
+ **MUST** validate domain rules  
+ **MUST** use value objects for domain concepts  
+ **MUST** publish domain events for significant changes
 
 ### Domain Layer - MUST NOT
 
-❌ **MUST NOT** depend on any other layer  
-❌ **MUST NOT** import React or UI libraries  
-❌ **MUST NOT** make API calls  
-❌ **MUST NOT** access localStorage/sessionStorage  
-❌ **MUST NOT** have framework-specific code
+ **MUST NOT** depend on any other layer  
+ **MUST NOT** import React or UI libraries  
+ **MUST NOT** make API calls  
+ **MUST NOT** access localStorage/sessionStorage  
+ **MUST NOT** have framework-specific code
 
 ### Application Layer - MUST
 
-✅ **MUST** orchestrate use cases  
-✅ **MUST** coordinate domain objects  
-✅ **MUST** use dependency injection  
-✅ **MUST** handle application-level transactions  
-✅ **MUST** return structured results
+ **MUST** orchestrate use cases  
+ **MUST** coordinate domain objects  
+ **MUST** use dependency injection  
+ **MUST** handle application-level transactions  
+ **MUST** return structured results
 
 ### Application Layer - MUST NOT
 
-❌ **MUST NOT** contain business logic  
-❌ **MUST NOT** import UI components  
-❌ **MUST NOT** directly access infrastructure  
-❌ **MUST NOT** have UI concerns
+ **MUST NOT** contain business logic  
+ **MUST NOT** import UI components  
+ **MUST NOT** directly access infrastructure  
+ **MUST NOT** have UI concerns
 
 ### Infrastructure Layer - MUST
 
-✅ **MUST** implement repository interfaces  
-✅ **MUST** handle all external I/O  
-✅ **MUST** transform between domain and DTOs  
-✅ **MUST** manage API communication  
-✅ **MUST** handle network errors
+ **MUST** implement repository interfaces  
+ **MUST** handle all external I/O  
+ **MUST** transform between domain and DTOs  
+ **MUST** manage API communication  
+ **MUST** handle network errors
 
 ### Infrastructure Layer - MUST NOT
 
-❌ **MUST NOT** contain business logic  
-❌ **MUST NOT** be accessed directly from UI  
-❌ **MUST NOT** expose implementation details
+ **MUST NOT** contain business logic  
+ **MUST NOT** be accessed directly from UI  
+ **MUST NOT** expose implementation details
 
 ### Presentation Layer - MUST
 
-✅ **MUST** only use ApplicationService  
-✅ **MUST** handle UI state only  
-✅ **MUST** display data  
-✅ **MUST** handle user interactions  
-✅ **MUST** show loading/error states
+ **MUST** only use ApplicationService  
+ **MUST** handle UI state only  
+ **MUST** display data  
+ **MUST** handle user interactions  
+ **MUST** show loading/error states
 
 ### Presentation Layer - MUST NOT
 
-❌ **MUST NOT** contain business logic  
-❌ **MUST NOT** access repositories directly  
-❌ **MUST NOT** access infrastructure directly  
-❌ **MUST NOT** import domain services  
-❌ **MUST NOT** make direct API calls
+ **MUST NOT** contain business logic  
+ **MUST NOT** access repositories directly  
+ **MUST NOT** access infrastructure directly  
+ **MUST NOT** import domain services  
+ **MUST NOT** make direct API calls
 
 ---
 
@@ -103,14 +103,14 @@ Presentation → Application → Domain ← Infrastructure
 **Example - Correct**:
 
 ```typescript
-// ✅ Component importing application service
+//  Component importing application service
 import applicationService from '@/application/ApplicationService';
 ```
 
 **Example - Violation**:
 
 ```typescript
-// ❌ Domain importing infrastructure
+//  Domain importing infrastructure
 import { apiClient } from '@/infrastructure/api';
 ```
 
@@ -121,7 +121,7 @@ Never create circular dependencies between modules.
 **Example - Violation**:
 
 ```typescript
-// ❌ File A imports B, B imports A
+//  File A imports B, B imports A
 // A.ts
 import { B } from './B';
 
@@ -136,7 +136,7 @@ Always use path aliases, never relative paths more than one level deep.
 **Example - Correct**:
 
 ```typescript
-// ✅ Using path alias
+//  Using path alias
 import { User } from '@/domain/entities/User';
 import applicationService from '@/application/ApplicationService';
 ```
@@ -144,7 +144,7 @@ import applicationService from '@/application/ApplicationService';
 **Example - Violation**:
 
 ```typescript
-// ❌ Deep relative path
+//  Deep relative path
 import { User } from '../../../domain/entities/User';
 ```
 
@@ -159,7 +159,7 @@ Each class/function should have one reason to change.
 **Example - Violation**:
 
 ```typescript
-// ❌ Too many responsibilities
+//  Too many responsibilities
 class UserComponent {
   fetchUsers() {}
   validateUser() {}
@@ -171,7 +171,7 @@ class UserComponent {
 **Example - Correct**:
 
 ```typescript
-// ✅ Single responsibility
+//  Single responsibility
 class UserList {
   // Only responsible for displaying users
   render() {}
@@ -185,7 +185,7 @@ All functions, variables, and parameters must have explicit types.
 **Example - Violation**:
 
 ```typescript
-// ❌ No types
+//  No types
 const handleSubmit = (data) => {
   return data.username;
 };
@@ -194,7 +194,7 @@ const handleSubmit = (data) => {
 **Example - Correct**:
 
 ```typescript
-// ✅ Explicit types
+//  Explicit types
 const handleSubmit = (data: UserFormData): string => {
   return data.username;
 };
@@ -207,7 +207,7 @@ Use named constants for all magic values.
 **Example - Violation**:
 
 ```typescript
-// ❌ Magic numbers
+//  Magic numbers
 if (user.points > 1000) {
   // What does 1000 mean?
 }
@@ -216,7 +216,7 @@ if (user.points > 1000) {
 **Example - Correct**:
 
 ```typescript
-// ✅ Named constant
+//  Named constant
 const EXPERT_THRESHOLD = 1000;
 if (user.points > EXPERT_THRESHOLD) {
   // Clear meaning
@@ -230,7 +230,7 @@ Use descriptive names that reveal intent.
 **Example - Violation**:
 
 ```typescript
-// ❌ Unclear names
+//  Unclear names
 const x = await f(id);
 const arr = x.map((i) => i.n);
 ```
@@ -238,7 +238,7 @@ const arr = x.map((i) => i.n);
 **Example - Correct**:
 
 ```typescript
-// ✅ Clear names
+//  Clear names
 const user = await getUserById(id);
 const usernames = users.map((user) => user.username);
 ```
@@ -250,7 +250,7 @@ Favor pure functions without side effects.
 **Example - Correct**:
 
 ```typescript
-// ✅ Pure function
+//  Pure function
 const calculateTotal = (items: Item[]): number => {
   return items.reduce((sum, item) => sum + item.price, 0);
 };
@@ -271,7 +271,7 @@ Each component should do one thing well.
 **Example - Violation**:
 
 ```typescript
-// ❌ Component doing too much
+//  Component doing too much
 const Dashboard = () => {
   // Fetches users, challenges, projects
   // Renders complex UI
@@ -283,7 +283,7 @@ const Dashboard = () => {
 **Example - Correct**:
 
 ```typescript
-// ✅ Focused components
+//  Focused components
 const Dashboard = () => {
   return (
     <>
@@ -302,7 +302,7 @@ Extract complex logic to custom hooks.
 **Example - Correct**:
 
 ```typescript
-// ✅ Hook for data fetching
+//  Hook for data fetching
 const useUsers = () => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -329,7 +329,7 @@ Always define a TypeScript interface for props.
 **Example - Correct**:
 
 ```typescript
-// ✅ Props interface
+//  Props interface
 interface UserCardProps {
   user: User;
   onEdit: (userId: string) => void;
@@ -348,14 +348,14 @@ Use CSS classes or Tailwind, not inline styles.
 **Example - Violation**:
 
 ```typescript
-// ❌ Inline styles
+//  Inline styles
 <div style={{ color: 'red', fontSize: '16px' }}>Text</div>
 ```
 
 **Example - Correct**:
 
 ```typescript
-// ✅ CSS classes
+//  CSS classes
 <div className="text-red-500 text-base">Text</div>
 ```
 
@@ -374,7 +374,7 @@ Use TanStack Query for server state, not useState.
 **Example - Correct**:
 
 ```typescript
-// ✅ TanStack Query for server state
+//  TanStack Query for server state
 const { data: users, isLoading } = useQuery({
   queryKey: ['users'],
   queryFn: () => applicationService.getAllUsers(),
@@ -388,7 +388,7 @@ Use React Context for shared UI state.
 **Example - Correct**:
 
 ```typescript
-// ✅ Context for theme
+//  Context for theme
 const { theme, toggleTheme } = useTheme();
 ```
 
@@ -407,7 +407,7 @@ Every async operation must handle errors.
 **Example - Violation**:
 
 ```typescript
-// ❌ No error handling
+//  No error handling
 const loadUsers = async () => {
   const users = await applicationService.getAllUsers();
   setUsers(users.data);
@@ -417,7 +417,7 @@ const loadUsers = async () => {
 **Example - Correct**:
 
 ```typescript
-// ✅ Proper error handling
+//  Proper error handling
 const loadUsers = async () => {
   try {
     const result = await applicationService.getAllUsers();
@@ -440,7 +440,7 @@ Show helpful error messages to users.
 **Example - Correct**:
 
 ```typescript
-// ✅ User-friendly error
+//  User-friendly error
 if (!result.success) {
   toast.error(`Unable to create user: ${result.error}`);
 }
@@ -451,7 +451,7 @@ if (!result.success) {
 Always log errors for debugging.
 
 ```typescript
-// ✅ Error logging
+//  Error logging
 catch (error) {
   console.error('Error loading users:', error);
   // Optional: Send to error tracking service
@@ -469,7 +469,7 @@ All domain entities and services MUST have unit tests.
 **Required Coverage**: 80%+
 
 ```typescript
-// ✅ Unit test
+//  Unit test
 describe('User', () => {
   it('should activate user', () => {
     const user = new User({ status: UserStatus.PENDING });
@@ -484,7 +484,7 @@ describe('User', () => {
 Use cases should have integration tests.
 
 ```typescript
-// ✅ Integration test
+//  Integration test
 describe('CreateUserUseCase', () => {
   it('should create user with valid data', async () => {
     const useCase = new CreateUserUseCase(mockRepo);
@@ -499,7 +499,7 @@ describe('CreateUserUseCase', () => {
 Components should test user interactions and rendering.
 
 ```typescript
-// ✅ Component test
+//  Component test
 describe('UserList', () => {
   it('displays users', async () => {
     render(<UserList />);
@@ -517,7 +517,7 @@ Use descriptive test names that explain what's being tested.
 **Example - Correct**:
 
 ```typescript
-// ✅ Descriptive test name
+//  Descriptive test name
 it('should throw error when email format is invalid', () => {
   expect(() => new Email('invalid')).toThrow();
 });

@@ -2,7 +2,7 @@
 
 ## Example 1: Creating a User
 
-### ❌ Before (Without DDD)
+###  Before (Without DDD)
 ```javascript
 // Component: AdminPanel.jsx
 import { adminAPI } from '../services/api';
@@ -35,7 +35,7 @@ const AdminPanel = () => {
 - No domain events
 - Direct API dependency
 
-### ✅ After (With DDD)
+###  After (With DDD)
 ```javascript
 // Component: AdminPanel.jsx
 import applicationService from '@/application/ApplicationService';
@@ -73,7 +73,7 @@ const AdminPanel = () => {
 
 ## Example 2: Completing a Challenge
 
-### ❌ Before (Without DDD)
+###  Before (Without DDD)
 ```javascript
 // Component: ChallengesPage.jsx
 import { userAPI, adminAPI } from '../services/api';
@@ -116,7 +116,7 @@ const ChallengesPage = () => {
 - No domain events
 - Hardcoded multipliers
 
-### ✅ After (With DDD)
+###  After (With DDD)
 ```javascript
 // Component: ChallengesPage.jsx
 import applicationService from '@/application/ApplicationService';
@@ -152,7 +152,7 @@ const ChallengesPage = () => {
 
 ## Example 3: User Validation
 
-### ❌ Before (Without DDD)
+###  Before (Without DDD)
 ```javascript
 // Component: RegisterForm.jsx
 const validateForm = (formData) => {
@@ -193,7 +193,7 @@ const handleSubmit = async (formData) => {
 - No reusable validation
 - Business rules in wrong layer
 
-### ✅ After (With DDD)
+###  After (With DDD)
 ```javascript
 // Component: RegisterForm.jsx
 import applicationService from '@/application/ApplicationService';
@@ -246,7 +246,7 @@ export class User {
 
 ## Example 4: Filtering and Sorting Users
 
-### ❌ Before (Without DDD)
+###  Before (Without DDD)
 ```javascript
 // Component: UsersPage.jsx
 const [users, setUsers] = useState([]);
@@ -289,7 +289,7 @@ useEffect(() => {
 - Repeated across components
 - Hard to test
 
-### ✅ After (With DDD)
+###  After (With DDD)
 ```javascript
 // Component: UsersPage.jsx
 const [users, setUsers] = useState([]);
@@ -328,7 +328,7 @@ const filteredUsers = users.filter(user => {
 
 ## Example 5: Points Calculation
 
-### ❌ Before (Without DDD)
+###  Before (Without DDD)
 ```javascript
 // Component: scattered across multiple files
 const calculatePoints = (basePoints, difficulty) => {
@@ -352,7 +352,7 @@ user.points = user.points + points; // Just a number
 - Points are just numbers
 - No validation
 
-### ✅ After (With DDD)
+###  After (With DDD)
 ```javascript
 // Domain Layer: Difficulty.js (Value Object)
 export class Difficulty {
@@ -411,7 +411,7 @@ user.addPoints(awardPoints); // Type-safe
 
 ## Example 6: Event Registration
 
-### ❌ Before (Without DDD)
+###  Before (Without DDD)
 ```javascript
 // Component: EventsPage.jsx
 const handleRegister = async (eventId, userId) => {
@@ -447,7 +447,7 @@ const handleRegister = async (eventId, userId) => {
 - No domain events
 - Error-prone
 
-### ✅ After (With DDD)
+###  After (With DDD)
 ```javascript
 // Component: EventsPage.jsx
 const handleRegister = async (eventId, userId) => {

@@ -2,11 +2,11 @@
 
 **Version:** 1.0  
 **Last Updated:** October 2025  
-**Status:** ✅ Active - Strict Adherence Required
+**Status:**  Active - Strict Adherence Required
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 1. [Overview](#overview)
 2. [Architectural Principles](#architectural-principles)
@@ -101,7 +101,7 @@ Domain-Driven Design focuses on creating software that models the problem domain
 Objects with identity that persist over time.
 
 ```typescript
-// ✅ Good: Entity with identity and behavior
+//  Good: Entity with identity and behavior
 export class User {
   constructor(
     private readonly id: string,
@@ -136,7 +136,7 @@ export class User {
 Immutable objects defined by their attributes, not identity.
 
 ```typescript
-// ✅ Good: Value Object with validation
+//  Good: Value Object with validation
 export class Email {
   private readonly value: string;
 
@@ -183,7 +183,7 @@ export class User {
 Business logic that doesn't naturally fit in an entity or value object.
 
 ```typescript
-// ✅ Good: Domain Service
+//  Good: Domain Service
 export class ChallengeEvaluationService {
   evaluateCompletion(user: User, challenge: Challenge, submission: Submission): EvaluationResult {
     // Complex business logic spanning multiple entities
@@ -203,7 +203,7 @@ export class ChallengeEvaluationService {
 Events that represent something important that happened in the domain.
 
 ```typescript
-// ✅ Good: Domain Event
+//  Good: Domain Event
 export interface UserCreatedEvent {
   eventType: 'UserCreated';
   userId: string;
@@ -225,7 +225,7 @@ eventBus.publish({
 Abstraction for data persistence and retrieval.
 
 ```typescript
-// ✅ Good: Repository Interface
+//  Good: Repository Interface
 export interface IUserRepository {
   findById(id: string): Promise<User | null>;
   findByEmail(email: Email): Promise<User | null>;
@@ -259,11 +259,11 @@ export class ApiUserRepository implements IUserRepository {
 
 **Rules**:
 
-- ❌ NO dependencies on other layers
-- ❌ NO framework dependencies
-- ❌ NO infrastructure concerns
-- ✅ Pure TypeScript/JavaScript
-- ✅ Only business logic
+-  NO dependencies on other layers
+-  NO framework dependencies
+-  NO infrastructure concerns
+-  Pure TypeScript/JavaScript
+-  Only business logic
 
 **Structure**:
 
@@ -291,10 +291,10 @@ domain/
 
 **Rules**:
 
-- ✅ Can depend on domain layer
-- ❌ NO direct dependencies on infrastructure
-- ❌ NO UI concerns
-- ✅ Use dependency injection for repositories
+-  Can depend on domain layer
+-  NO direct dependencies on infrastructure
+-  NO UI concerns
+-  Use dependency injection for repositories
 
 **Structure**:
 
@@ -319,10 +319,10 @@ application/
 
 **Rules**:
 
-- ✅ Can depend on domain layer
-- ✅ Implements domain interfaces
-- ❌ NO direct access from presentation
-- ✅ Handle all external I/O
+-  Can depend on domain layer
+-  Implements domain interfaces
+-  NO direct access from presentation
+-  Handle all external I/O
 
 **Structure**:
 
@@ -348,10 +348,10 @@ infrastructure/
 
 **Rules**:
 
-- ✅ Only depends on application layer
-- ❌ NO direct domain or infrastructure access
-- ✅ Use ApplicationService facade
-- ✅ Handle UI state only
+-  Only depends on application layer
+-  NO direct domain or infrastructure access
+-  Use ApplicationService facade
+-  Handle UI state only
 
 **Structure**:
 
@@ -376,7 +376,7 @@ presentation/
 ```
 esdc-frontend/
 ├── src/
-│   ├── domain/                    # 🟢 Domain Layer
+│   ├── domain/                    #  Domain Layer
 │   │   ├── entities/
 │   │   │   ├── User.ts           # User aggregate root
 │   │   │   ├── Challenge.ts      # Challenge entity
@@ -401,7 +401,7 @@ esdc-frontend/
 │   │   │   └── IEventRepository.ts
 │   │   └── index.ts
 │   │
-│   ├── application/               # 🔵 Application Layer
+│   ├── application/               #  Application Layer
 │   │   ├── use-cases/
 │   │   │   ├── CreateUserUseCase.ts
 │   │   │   ├── CompleteChallengeUseCase.ts
@@ -410,7 +410,7 @@ esdc-frontend/
 │   │   ├── Container.ts          # DI container
 │   │   └── index.ts
 │   │
-│   ├── infrastructure/            # 🟡 Infrastructure Layer
+│   ├── infrastructure/            #  Infrastructure Layer
 │   │   ├── api/
 │   │   │   ├── ApiClient.ts
 │   │   │   └── endpoints.ts
@@ -422,7 +422,7 @@ esdc-frontend/
 │   │   │   └── UserDTO.ts
 │   │   └── index.ts
 │   │
-│   ├── app/                       # 🔴 Presentation Layer
+│   ├── app/                       #  Presentation Layer
 │   │   ├── providers/
 │   │   │   └── AppProviders.tsx
 │   │   ├── router/
@@ -537,10 +537,10 @@ enum UserRole {
 **Purpose**: Abstract data access
 
 ```typescript
-// ✅ Good: Use repository through application service
+//  Good: Use repository through application service
 const users = await applicationService.getAllUsers();
 
-// ❌ Bad: Direct API call from component
+//  Bad: Direct API call from component
 const response = await fetch('/api/users');
 ```
 
@@ -549,7 +549,7 @@ const response = await fetch('/api/users');
 **Purpose**: Simplified interface for complex subsystems
 
 ```typescript
-// ✅ Good: Use ApplicationService facade
+//  Good: Use ApplicationService facade
 import applicationService from '@/application/ApplicationService';
 
 const result = await applicationService.createUser(userData);
@@ -560,7 +560,7 @@ const result = await applicationService.createUser(userData);
 **Purpose**: Object creation logic
 
 ```typescript
-// ✅ Good: Factory method
+//  Good: Factory method
 class Difficulty {
   static beginner(): Difficulty {
     return new Difficulty('beginner');
@@ -577,7 +577,7 @@ class Difficulty {
 **Purpose**: Decoupled communication
 
 ```typescript
-// ✅ Good: Subscribe to domain events
+//  Good: Subscribe to domain events
 eventBus.subscribe('UserCreated', async (event) => {
   // Send welcome email
   await emailService.sendWelcome(event.userId);
@@ -589,7 +589,7 @@ eventBus.subscribe('UserCreated', async (event) => {
 **Purpose**: Interchangeable algorithms
 
 ```typescript
-// ✅ Good: Different evaluation strategies
+//  Good: Different evaluation strategies
 interface EvaluationStrategy {
   evaluate(submission: Submission): boolean;
 }
@@ -619,7 +619,7 @@ class ManualEvaluation implements EvaluationStrategy {}
 Test individual units in isolation:
 
 ```typescript
-// ✅ Good: Test domain entity
+//  Good: Test domain entity
 describe('User', () => {
   it('should activate user', () => {
     const user = new User({
@@ -640,7 +640,7 @@ describe('User', () => {
 Test layer interactions:
 
 ```typescript
-// ✅ Good: Test use case with mock repository
+//  Good: Test use case with mock repository
 describe('CreateUserUseCase', () => {
   it('should create user', async () => {
     const mockRepo = { save: jest.fn() };
@@ -661,7 +661,7 @@ describe('CreateUserUseCase', () => {
 
 ## Best Practices
 
-### ✅ DO
+###  DO
 
 1. **Use ApplicationService from UI**
 
@@ -705,12 +705,12 @@ describe('CreateUserUseCase', () => {
    });
    ```
 
-### ❌ DON'T
+###  DON'T
 
 1. **Don't Access Infrastructure Directly**
 
    ```typescript
-   // ❌ Bad
+   //  Bad
    import { userRepository } from '@/infrastructure';
    const users = await userRepository.findAll();
    ```
@@ -718,7 +718,7 @@ describe('CreateUserUseCase', () => {
 2. **Don't Put Business Logic in Components**
 
    ```typescript
-   // ❌ Bad
+   //  Bad
    const handleComplete = () => {
      let points = challenge.points;
      if (challenge.difficulty === 'hard') points *= 2;
@@ -729,26 +729,26 @@ describe('CreateUserUseCase', () => {
 3. **Don't Use Primitive Types for Domain Concepts**
 
    ```typescript
-   // ❌ Bad
+   //  Bad
    const email: string = 'user@example.com';
 
-   // ✅ Good
+   //  Good
    const email: Email = new Email('user@example.com');
    ```
 
 4. **Don't Skip Validation**
 
    ```typescript
-   // ❌ Bad
+   //  Bad
    await api.createUser({ email: formData.email });
 
-   // ✅ Good
+   //  Good
    const result = await applicationService.createUser(formData);
    ```
 
 5. **Don't Mix Layers**
    ```typescript
-   // ❌ Bad: API call in domain entity
+   //  Bad: API call in domain entity
    class User {
      async save() {
        await fetch('/api/users', {...});
@@ -765,7 +765,7 @@ describe('CreateUserUseCase', () => {
 **Problem**: Entities with no behavior, just getters/setters.
 
 ```typescript
-// ❌ Bad: Anemic model
+//  Bad: Anemic model
 class User {
   username: string;
   points: number;
@@ -778,7 +778,7 @@ class User {
   }
 }
 
-// ✅ Good: Rich domain model
+//  Good: Rich domain model
 class User {
   activate(): void {
     /* logic */
@@ -797,12 +797,12 @@ class User {
 **Problem**: Classes that know/do too much.
 
 ```typescript
-// ❌ Bad: God class
+//  Bad: God class
 class ApplicationService {
   // 50+ methods handling everything
 }
 
-// ✅ Good: Focused services
+//  Good: Focused services
 class UserApplicationService {}
 class ChallengeApplicationService {}
 ```
@@ -812,11 +812,11 @@ class ChallengeApplicationService {}
 **Problem**: Using primitives instead of value objects.
 
 ```typescript
-// ❌ Bad
+//  Bad
 const email: string = 'user@example.com';
 const points: number = 100;
 
-// ✅ Good
+//  Good
 const email: Email = new Email('user@example.com');
 const points: Points = new Points(100);
 ```
@@ -826,10 +826,10 @@ const points: Points = new Points(100);
 **Problem**: Skipping layers or wrong dependencies.
 
 ```typescript
-// ❌ Bad: UI directly accessing repository
+//  Bad: UI directly accessing repository
 import { userRepository } from '@/infrastructure';
 
-// ✅ Good: UI using application service
+//  Good: UI using application service
 import applicationService from '@/application/ApplicationService';
 ```
 
@@ -838,10 +838,10 @@ import applicationService from '@/application/ApplicationService';
 **Problem**: Domain rules in components.
 
 ```typescript
-// ❌ Bad
+//  Bad
 const canComplete = user.status === 'active' && user.points >= 100 && !user.bannedUntil;
 
-// ✅ Good
+//  Good
 const canComplete = user.canParticipateInChallenges();
 ```
 
@@ -860,10 +860,10 @@ const canComplete = user.canParticipateInChallenges();
 
 **Consequences**:
 
-- ✅ Clear separation of concerns
-- ✅ Testable business logic
-- ✅ Easier to maintain and extend
-- ⚠️ Initial learning curve
+-  Clear separation of concerns
+-  Testable business logic
+-  Easier to maintain and extend
+-  Initial learning curve
 
 ### ADR-002: Application Service Facade
 
@@ -876,10 +876,10 @@ const canComplete = user.canParticipateInChallenges();
 
 **Consequences**:
 
-- ✅ Simple API for UI developers
-- ✅ Consistent error handling
-- ✅ Easy to refactor internals
-- ⚠️ Additional abstraction layer
+-  Simple API for UI developers
+-  Consistent error handling
+-  Easy to refactor internals
+-  Additional abstraction layer
 
 ### ADR-003: Value Objects for Domain Concepts
 
@@ -892,10 +892,10 @@ const canComplete = user.canParticipateInChallenges();
 
 **Consequences**:
 
-- ✅ Built-in validation
-- ✅ Type safety
-- ✅ Self-documenting code
-- ⚠️ More classes to manage
+-  Built-in validation
+-  Type safety
+-  Self-documenting code
+-  More classes to manage
 
 ### ADR-004: Event-Driven Architecture
 
@@ -908,10 +908,10 @@ const canComplete = user.canParticipateInChallenges();
 
 **Consequences**:
 
-- ✅ Loose coupling
-- ✅ Easy to add side effects
-- ✅ Better scalability
-- ⚠️ Debugging can be harder
+-  Loose coupling
+-  Easy to add side effects
+-  Better scalability
+-  Debugging can be harder
 
 ---
 
@@ -966,13 +966,13 @@ eventBus.subscribe('UserCreated', async (event) => {
 
 This architecture is **mandatory** for all new code. Code reviews will enforce:
 
-1. ✅ No direct infrastructure access from UI
-2. ✅ Business logic in domain layer
-3. ✅ Use of ApplicationService facade
-4. ✅ Proper error handling
-5. ✅ Value objects for domain concepts
-6. ✅ No layer violations
-7. ✅ Proper testing at each layer
+1.  No direct infrastructure access from UI
+2.  Business logic in domain layer
+3.  Use of ApplicationService facade
+4.  Proper error handling
+5.  Value objects for domain concepts
+6.  No layer violations
+7.  Proper testing at each layer
 
 **Questions?** Check documentation or ask the team lead.
 

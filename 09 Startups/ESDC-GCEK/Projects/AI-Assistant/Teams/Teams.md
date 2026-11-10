@@ -10,7 +10,7 @@ tags:
 dg-publish: true
 ---
 # Teams
-- [ ] Complete this list by 📅 2025-09-03 
+- [ ] Complete this list by  2025-09-03 
 - [[Designers]]
 	- Arun CS
 - **Devs**

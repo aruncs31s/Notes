@@ -133,11 +133,11 @@ dg-publish: true
 >         
 >         self._thread.join(timeout=self._timeout)
 >         if self._thread.is_alive():
->             print(f"⚠️ {self.name} request timed out after {self._timeout} seconds")
+>             print(f" {self.name} request timed out after {self._timeout} seconds")
 >             self._stop_event.set() 
 >             self._thread.join(timeout=0.5)
 >             if self._thread.is_alive():
->                 print(f"❌ {self.name} with id {self._thread.ident} did not stop")
+>                 print(f" {self.name} with id {self._thread.ident} did not stop")
 >             self.status = AiProviderStatus.TIMEOUT
 >             # return f"Request to {self.name} timed out after {self._timeout} seconds"
 >             return ""
@@ -259,7 +259,7 @@ dg-publish: true
 >     """HACK: Refactor this. to smaller methods"""
 >     def show_conversation_history(self) -> None:
 >         """Display the current conversation history"""
->         print(f"\n📝 Conversation History ({len(self.messages)} messages):")
+>         print(f"\n Conversation History ({len(self.messages)} messages):")
 >         for i, msg in enumerate(self.messages):
 >             print(f"  {i+1}. {msg['role'].upper()}: {msg['content'][:100]}{'...' if len(msg['content']) > 100 else ''}")
 >         print()
@@ -280,11 +280,11 @@ dg-publish: true
 >         }
 >     def test_timeout(self) -> None:
 >         """Test the timeout functionality"""
->         print(f"🧪 Testing {self.name} timeout (set to {self._timeout} seconds)")
+>         print(f" Testing {self.name} timeout (set to {self._timeout} seconds)")
 >         
 >         # Test with a prompt that should complete quickly
 >         result = self.ask_with_timeout("Hello, how are you?")
->         print(f"✅ Quick response: {result[:50]}...")
+>         print(f" Quick response: {result[:50]}...")
 >         
 >         # Test with timeout by setting a very short timeout
 >         original_timeout = self._timeout
@@ -295,8 +295,8 @@ dg-publish: true
 >         result = self.ask_with_timeout("Please take your time responding to this question with a long, detailed answer that will definitely exceed the timeout.")
 >         end_time = time.time()
 >         
->         print(f"⏱️  Timeout test took: {end_time - start_time:.2f} seconds")
->         print(f"📝 Result: {result}")
+>         print(f"⏱  Timeout test took: {end_time - start_time:.2f} seconds")
+>         print(f" Result: {result}")
 >         
 >         # Restore original timeout
 >         self._timeout = original_timeout 
@@ -377,12 +377,12 @@ messages = [
     {"role": "system", "content": "You are a helpful AI voice/text assistant"}
 ]
 
-print("🤖 AI Assistant is ready! Type 'exit' to quit.\n")
+print(" AI Assistant is ready! Type 'exit' to quit.\n")
 
 while True:
     user_input = input("You: ")
     if user_input.lower() in ["exit", "quit"]:
-        print("👋 Goodbye!")
+        print(" Goodbye!")
         break
 
 
@@ -441,7 +441,7 @@ messages = [
 while True:
     user_input = input("You: ")
     if user_input.lower() in ["exit", "quit"]:
-        print("👋 Goodbye!")
+        print(" Goodbye!")
         break
 
     messages.append({"role": "user", "content": user_input})
@@ -530,7 +530,7 @@ Now the user can import this function
 ```python
 from llama import ask
 answer = ask("What is the capital of France?")
-print(f"🤖 Llama > {answer}")
+print(f" Llama > {answer}")
 ```
 
 ^5452c3
@@ -626,7 +626,7 @@ class Llama(AIProvider):
 
 ```python
 if __name__ == "__main__":
-    print("🤖 Testing GitHub Llama with Memory/Context")
+    print(" Testing GitHub Llama with Memory/Context")
     print("=" * 50)
 
     questions = [
@@ -637,16 +637,16 @@ if __name__ == "__main__":
     llama = Llama()
 
     for i, q in enumerate(questions, 1):
-        print(f"\n🐸 Arun > {q}")
+        print(f"\n Arun > {q}")
         answer = llama.ask(q)
-        print(f"🤖 Llama > {answer}")
+        print(f" Llama > {answer}")
         print(f"⏳ Response Time {i}: {llama.response_time:.2f} seconds")
 
     print("\n" + "=" * 50)
-    print("📚 FULL CONVERSATION HISTORY:")
+    print(" FULL CONVERSATION HISTORY:")
     llama.show_conversation_history()
 
-    print("\n📊 CONVERSATION STATISTICS:")
+    print("\n CONVERSATION STATISTICS:")
     stats = llama.get_conversation_stats()
     for key, value in stats.items():
         print(f"  {key.replace('_', ' ').title()}: {value}")
@@ -657,7 +657,7 @@ The example below is an example code for Ollama implemented using AIProvider.
 ```python
 if __name__ == "__main__":
     
-    print(f"🤖 Testing {str(Ollama.name).capitalize()} with Memory/Context")
+    print(f" Testing {str(Ollama.name).capitalize()} with Memory/Context")
     print("=" * 50)
 
     questions = [
@@ -668,16 +668,16 @@ if __name__ == "__main__":
     ollama = Ollama()
 
     for i, q in enumerate(questions, 1):
-        print(f"\n🐸 Arun > {q}")
+        print(f"\n Arun > {q}")
         answer = ollama.ask(q)
-        print(f"🤖 Ollama > {answer}")
+        print(f" Ollama > {answer}")
         print(f"⏳ Response Time {i}: {ollama.response_time:.2f} seconds")
 
     print("\n" + "=" * 50)
-    print("📚 FULL CONVERSATION HISTORY:")
+    print(" FULL CONVERSATION HISTORY:")
     ollama.show_conversation_history()
 
-    print("\n📊 CONVERSATION STATISTICS:")
+    print("\n CONVERSATION STATISTICS:")
     stats = ollama.get_conversation_stats()
     for key, value in stats.items():
         print(f"  {key.replace('_', ' ').title()}: {value}")
@@ -704,7 +704,7 @@ from ai_providers.llama import Llama
 question = "Hello! My name is Arun CS"
 llama = Llama()
 answer = llama.ask(question)
-print(f"🤖 Llama > {answer}")
+print(f" Llama > {answer}")
 ```
 
 
@@ -721,11 +721,11 @@ from ai_providers.cohere import ask as ask_cohere
 
 question = "Hello! My name is Arun CS"
 answer = ask_llama(question)
-print(f"🤖 Llama > {answer}")
+print(f" Llama > {answer}")
 answer = ask_ollama(question)
-print(f"🤖 Ollama > {answer}")
+print(f" Ollama > {answer}")
 answer = ask_cohere(question)
-print(f"🤖 Cohere > {answer}")
+print(f" Cohere > {answer}")
 ```
 
 and if it was done using the class based approach 
@@ -740,11 +740,11 @@ ollama = Ollama()
 cohere = Cohere()
 
 answer = llama.ask(question)
-print(f"🤖 Llama > {answer}")
+print(f" Llama > {answer}")
 answer = ollama.ask(question)
-print(f"🤖 Ollama > {answer}")
+print(f" Ollama > {answer}")
 answer = cohere.ask(question)
-print(f"🤖 Cohere > {answer}")
+print(f" Cohere > {answer}")
 ```
 Both looks same but the class based approach is more extensible and maintainale, for example if you want to ask an ai_provider, randomly you can do this 
 
@@ -758,7 +758,7 @@ ai_providers = [Llama(), Ollama(), Cohere()]
 question = "Hello! My name is Arun CS"
 selected_provider = random.choice(ai_providers)
 answer = selected_provider.ask(question)
-print(f"🤖 {selected_provider.name} > {answer}"  )
+print(f" {selected_provider.name} > {answer}"  )
 ``` 
 
 In this way you can easily add more ai providers without changing the code structure.

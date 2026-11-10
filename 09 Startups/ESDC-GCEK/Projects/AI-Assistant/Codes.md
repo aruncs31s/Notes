@@ -24,5 +24,5 @@ if __name__ == '__main__':
         try:
             start_all_servers()
         except KeyboardInterrupt:
-            print("\n👋 Goodbye!")
+            print("\n Goodbye!")
 ```

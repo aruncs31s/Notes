@@ -9,7 +9,7 @@ dg-publish: true
 ---
 # Using SOLID Principles in Go
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 
@@ -28,16 +28,16 @@ database/
 
 ---
 
-## 📦 `/models` Package
+##  `/models` Package
 
-**📖 Description**: Contains data structures and domain entities
+** Description**: Contains data structures and domain entities
 
-### 🎯 SOLID Principles Applied
+###  SOLID Principles Applied
 - **Single Responsibility**: Only defines data structures, no business logic
 - **Open/Closed**: Easy to extend with new fields without modifying existing code
 - **Dependency Inversion**: Pure data structures with no external dependencies
 
-### 📄 Code Example
+###  Code Example
 
 ```go
 package models
@@ -52,22 +52,22 @@ type Product struct {
 
 ```
 
-### 📁 Files
+###  Files
 - `product.go`: Defines the Product entity with database tags
 
 ---
 
-## 🗄️ `/repository` Package
+##  `/repository` Package
 
-**📖 Description**: Data access layer - abstracts database operations
+** Description**: Data access layer - abstracts database operations
 
-### 🎯 SOLID Principles Applied
+###  SOLID Principles Applied
 - **Single Responsibility**: Only handles data persistence operations
 - **Interface Segregation**: Small, focused interface for product operations
 - **Dependency Inversion**: Uses interfaces, not concrete implementations
 - **Open/Closed**: Can add new repositories without changing existing code
 
-### 📄 Code Example
+###  Code Example
 
 ```go
 package repository
@@ -84,22 +84,22 @@ type ProductRepository interface {
 
 ```
 
-### 📁 Files
+###  Files
 - `interfaces.go`: Defines `ProductRepository` interface
 - `product_repository.go`: Implements the interface with GORM
 
 ---
 
-## 🎛️ `/handlers` Package
+##  `/handlers` Package
 
-**📖 Description**: Business logic layer - orchestrates operations between UI and data
+** Description**: Business logic layer - orchestrates operations between UI and data
 
-### 🎯 SOLID Principles Applied
+###  SOLID Principles Applied
 - **Single Responsibility**: Handles business logic for product operations
 - **Dependency Inversion**: Depends on repository interface, not concrete implementation
 - **Open/Closed**: Can extend with new business rules without modifying core logic
 
-### 📄 Code Example
+###  Code Example
 
 ```go
 package handlers
@@ -114,21 +114,21 @@ func NewProductHandler(repo repository.ProductRepository) *ProductHandler {
 
 ```
 
-### 📁 Files
+###  Files
 - `product_handler.go`: Contains business logic and user interaction
 
 ---
 
-## 🚀 Root `/database` Package
+##  Root `/database` Package
 
-**📖 Description**: Application entry point and dependency injection
+** Description**: Application entry point and dependency injection
 
-### 🎯 SOLID Principles Applied
+###  SOLID Principles Applied
 - **Dependency Inversion**: Injects dependencies (repository into handler)
 - **Single Responsibility**: Only handles application bootstrapping
 - **Open/Closed**: Easy to swap implementations via dependency injection
 
-### 📄 Code Example
+###  Code Example
 
 ```go
 func NewApp(db *gorm.DB) *App {
@@ -142,17 +142,17 @@ func NewApp(db *gorm.DB) *App {
 
 ```
 
-### 📁 Files
+###  Files
 - `database.go`: Main application entry point and dependency wiring
 
 ---
 
-## 🤔 What is the PURPOSE of REPOSITORY Pattern?
+##  What is the PURPOSE of REPOSITORY Pattern?
 
-### 🎯 Core Purpose
+###  Core Purpose
 The Repository pattern acts as an **abstraction layer** between your business logic and data storage, providing a clean interface for data operations.
 
-### 🔍 Key Purposes
+###  Key Purposes
 
 #### 1. **Data Access Abstraction**
 
@@ -219,24 +219,24 @@ type ProductRepository interface {
 
 ```
 
-### 📊 Repository vs Direct Database Access
+###  Repository vs Direct Database Access
 
 | Aspect | Direct DB Access | Repository Pattern |
 |--------|------------------|-------------------|
-| **Testability** | ❌ Hard to test | ✅ Easy to mock |
-| **Code Reuse** | ❌ Scattered queries | ✅ Centralized logic |
-| **Database Changes** | ❌ Code changes everywhere | ✅ Change only repository |
-| **Business Logic** | ❌ Mixed with data access | ✅ Clean separation |
-| **SOLID Compliance** | ❌ Violates DIP & SRP | ✅ Follows all principles |
+| **Testability** |  Hard to test |  Easy to mock |
+| **Code Reuse** |  Scattered queries |  Centralized logic |
+| **Database Changes** |  Code changes everywhere |  Change only repository |
+| **Business Logic** |  Mixed with data access |  Clean separation |
+| **SOLID Compliance** |  Violates DIP & SRP |  Follows all principles |
 
-### 🎭 Real-World Analogy
+###  Real-World Analogy
 Think of Repository as a **librarian**:
 - You ask the librarian for a book (interface)
 - You don't care if books are stored on shelves, in a database, or digitally
 - The librarian knows how to find and retrieve books
 - If the library changes its storage system, you still ask the librarian the same way
 
-### 🏗️ How Repository Enables SOLID
+###  How Repository Enables SOLID
 
 #### Single Responsibility
 
@@ -268,7 +268,7 @@ type ProductHandler struct {
 
 ---
 
-## 🎯 Benefits of This Architecture
+##  Benefits of This Architecture
 
 | Principle | Benefit |
 |-----------|---------|
@@ -280,7 +280,7 @@ type ProductHandler struct {
 
 ---
 
-## 🔧 SOLID Principles Summary
+##  SOLID Principles Summary
 
 - **S** - Single Responsibility: Each package has one reason to change
 - **O** - Open/Closed: Open for extension, closed for modification

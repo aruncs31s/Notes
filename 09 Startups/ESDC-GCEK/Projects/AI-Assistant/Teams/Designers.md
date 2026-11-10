@@ -13,4 +13,4 @@ dg-publish: true
 ### Members
 
 ### Tasks 
-- [ ] Finish the design by tomorrow 📅 2025-09-04 
+- [ ] Finish the design by tomorrow  2025-09-04 

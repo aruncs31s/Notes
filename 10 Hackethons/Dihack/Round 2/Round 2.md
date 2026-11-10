@@ -9,9 +9,9 @@ dg-publish: true
 ---
 # Round 2
 
-- [x] Requirement Analysis ✅ 2024-12-14
-- [x] Hardware Block Diagram ✅ 2024-12-14
-- [x] Software Block Diagram ✅ 2024-12-14
+- [x] Requirement Analysis  2024-12-14
+- [x] Hardware Block Diagram  2024-12-14
+- [x] Software Block Diagram  2024-12-14
 
 ![[functional diagram.canvas|functional diagram]]
 

@@ -17,8 +17,8 @@ where file = this.file
 
 ```
 
-- [x] `.git folder` ✅ 2025-07-13
-- [x] `git clone` ✅ 2025-07-12
+- [x] `.git folder`  2025-07-13
+- [x] `git clone`  2025-07-12
 
 Task: Getting a gthub repository the right way
 

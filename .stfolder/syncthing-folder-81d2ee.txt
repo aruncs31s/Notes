@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: mgcav-aueqs
+created: 2026-11-10T18:09:18+05:30

@@ -22,7 +22,7 @@ if (!structName) {
 
 // Ask whether this table is new, being updated, or is a reference/old table.
 const options = ["New Table", "Updating Existing", "Reference/Old"];
-const icons = ["✅ New", "🛠️ Update", "♻️ Reference"];
+const icons = [" New", " Update", " Reference"];
 let state = await tp.system.suggester(options, icons, false, "Is this a new table, an update, or a reference/old table?");
 
 // Print a small badge line and inject a starter heading for each choice

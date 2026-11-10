@@ -14,7 +14,7 @@ cssclasses:
 
 
 >[!TODO]- Tasks 
->- [ ] Create an index with specific user 📅 2025-09-30 
+>- [ ] Create an index with specific user  2025-09-30 
 >- [ ] Update github teams 
 >- [ ] Update Whatsapp Group, 
 >- [ ] Include Whatsappp group link in each team note , before removing. 
@@ -35,9 +35,9 @@ cssclasses:
 
 #### Current Active Members
 >[!TODO]- Tasks
->- [x] Find Niv's realname. ✅ 2025-09-27
->- [ ] Update this list 📅 2025-10-01
->- [ ] Promote , devs to designers 📅 2025-09-30
+>- [x] Find Niv's realname.  2025-09-27
+>- [ ] Update this list  2025-10-01
+>- [ ] Promote , devs to designers  2025-09-30
 
 1. Abhaya Govind
 2. Arun CS

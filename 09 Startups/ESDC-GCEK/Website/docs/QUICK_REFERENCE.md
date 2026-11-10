@@ -1,6 +1,6 @@
-# 🚀 ESDC Frontend - Quick Reference Card
+#  ESDC Frontend - Quick Reference Card
 
-## 📦 Path Aliases (Use These!)
+##  Path Aliases (Use These!)
 
 \`\`\`typescript
 @/ → src/
@@ -12,7 +12,7 @@
 @/application → src/application/
 \`\`\`
 
-## 🎯 Common Imports
+##  Common Imports
 
 \`\`\`typescript
 // Auth
@@ -36,7 +36,7 @@ import { User } from '@/domain/entities/User';
 import { Project } from '@/domain/entities/Project';
 \`\`\`
 
-## ⚡ Quick Commands
+##  Quick Commands
 
 \`\`\`bash
 
@@ -64,7 +64,7 @@ npm run test:coverage # With coverage
 ./setup-migration.sh # Install all deps
 \`\`\`
 
-## 🧩 Component Examples
+##  Component Examples
 
 ### Button
 
@@ -85,7 +85,7 @@ onClick={handler}
 <LoadingSpinner size="sm|md|lg" />
 \`\`\`
 
-## 🔧 Utility Examples
+##  Utility Examples
 
 \`\`\`typescript
 // Date formatting
@@ -109,7 +109,7 @@ storage.auth.getToken();
 storage.auth.removeToken();
 \`\`\`
 
-## 📁 Feature Structure
+##  Feature Structure
 
 \`\`\`
 features/my-feature/
@@ -120,14 +120,14 @@ features/my-feature/
 └── index.ts # Barrel export
 \`\`\`
 
-## 🎨 Creating New Features
+##  Creating New Features
 
 1. Create folder: \`features/my-feature/\`
 2. Add structure: \`components/\`, \`hooks/\`, \`types/\`
 3. Create \`index.ts\` for exports
 4. Add routes in \`app/router/routes.tsx\`
 
-## 🧪 Writing Tests
+##  Writing Tests
 
 \`\`\`typescript
 import { describe, it, expect, vi } from 'vitest';
@@ -141,7 +141,7 @@ expect(screen.getByText('Text')).toBeInTheDocument();
 });
 \`\`\`
 
-## 🔐 Environment Variables
+##  Environment Variables
 
 \`\`\`bash
 VITE_API_BASE_URL=https://api.example.com
@@ -155,7 +155,7 @@ import.meta.env.VITE_API_BASE_URL
 // or use API_CONFIG from constants
 \`\`\`
 
-## 📊 Constants
+##  Constants
 
 \`\`\`typescript
 // Routes
@@ -172,7 +172,7 @@ FEATURE_FLAGS.CHATBOT
 FEATURE_FLAGS.EVENTS
 \`\`\`
 
-## 🚨 Common Patterns
+##  Common Patterns
 
 ### Protected Route
 
@@ -205,7 +205,7 @@ throw error;
 }
 \`\`\`
 
-## 📝 TypeScript Tips
+##  TypeScript Tips
 
 \`\`\`typescript
 // Use interfaces for objects
@@ -224,20 +224,20 @@ function get<T>(key: string): T | null { }
 const data: unknown = JSON.parse(str);
 \`\`\`
 
-## 🎯 Code Style
+##  Code Style
 
 \`\`\`typescript
-// ✅ Good
+//  Good
 import { Button } from '@/shared/components/ui';
 const MyComponent = () => { };
 export { MyComponent };
 
-// ❌ Bad
+//  Bad
 import { Button } from '../../../shared/components/ui/Button';
 export default MyComponent;
 \`\`\`
 
-## 🔄 Migration Checklist
+##  Migration Checklist
 
 - [ ] Run setup script
 - [ ] Configure .env
@@ -248,14 +248,14 @@ export default MyComponent;
 - [ ] Remove duplicates
 - [ ] Update docs
 
-## 📚 Resources
+##  Resources
 
 - **TRANSFORMATION_SUMMARY.md** - Complete overview
 - **MIGRATION_GUIDE.md** - Step-by-step guide
 - **NEW_ARCHITECTURE_README.md** - Architecture details
 - **docs/** - Feature documentation
 
-## 💡 Pro Tips
+##  Pro Tips
 
 1. Use VSCode's "Organize Imports" (Shift+Alt+O)
 2. Enable "Format on Save" in VSCode
@@ -291,4 +291,4 @@ export default MyComponent;
 
 ---
 
-**Keep this card handy! 📌**
+**Keep this card handy! **

@@ -1,6 +1,6 @@
-# 🏗️ ESDC Frontend - New Architecture
+#  ESDC Frontend - New Architecture
 
-## 📁 Project Structure
+##  Project Structure
 
 The project has been restructured following modern best practices and feature-based architecture:
 
@@ -39,7 +39,7 @@ src/
 └── integration/ # Integration tests
 \`\`\`
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Install Dependencies
 
@@ -72,7 +72,7 @@ Then edit \`.env\` with your configuration.
 npm run dev
 \`\`\`
 
-## 📝 Available Scripts
+##  Available Scripts
 
 \`\`\`bash
 npm run dev # Start development server
@@ -86,17 +86,17 @@ npm run test:ui # Run tests with UI
 npm run test:coverage # Run tests with coverage
 \`\`\`
 
-## 🎯 Key Improvements
+##  Key Improvements
 
 ### 1. **Path Aliases**
 
 Use clean imports instead of relative paths:
 
 \`\`\`typescript
-// ❌ Old way
+//  Old way
 import { useAuth } from '../../../hooks/useAuth';
 
-// ✅ New way
+//  New way
 import { useAuth } from '@/features/auth';
 \`\`\`
 
@@ -142,13 +142,13 @@ npm run format
 
 Husky ensures code quality before commits.
 
-## 📚 Documentation
+##  Documentation
 
 - [Migration Guide](./MIGRATION_GUIDE.md) - Detailed migration instructions
 - [Architecture Analysis](./docs/DDD_ANALYSIS.md) - Architecture details
 - [Feature Docs](./docs/features/) - Feature-specific documentation
 
-## 🔧 Configuration Files
+##  Configuration Files
 
 - **tsconfig.json** - TypeScript configuration with strict mode
 - **vite.config.ts** - Vite configuration with path aliases
@@ -157,7 +157,7 @@ Husky ensures code quality before commits.
 - **.eslintrc** - Linting rules
 - **.env.example** - Environment variables template
 
-## 🌟 New Features
+##  New Features
 
 ### Shared UI Components
 
@@ -186,7 +186,7 @@ import { ROUTES, API_CONFIG, STORAGE_KEYS } from '@/shared/constants';
 navigate(ROUTES.DASHBOARD);
 \`\`\`
 
-## 🧪 Testing
+##  Testing
 
 ### Unit Tests
 
@@ -209,9 +209,9 @@ render(<Button>Click me</Button>);
 expect(screen.getByText('Click me')).toBeInTheDocument();
 \`\`\`
 
-## 🔄 Migration Status
+##  Migration Status
 
-### ✅ Completed
+###  Completed
 
 - Path aliases configuration
 - TypeScript strict mode
@@ -220,20 +220,20 @@ expect(screen.getByText('Click me')).toBeInTheDocument();
 - Router with lazy loading
 - Environment configuration
 
-### 🚧 In Progress
+###  In Progress
 
 - Moving components to feature modules
 - Fixing TypeScript errors
 - Adding comprehensive tests
 
-### 📋 Todo
+###  Todo
 
 - Complete component migration
 - Add integration tests
 - Update all documentation
 - Set up CI/CD pipeline
 
-## 💡 Best Practices
+##  Best Practices
 
 1. **Use path aliases** for clean imports
 2. **Keep features isolated** - each feature is self-contained
@@ -242,7 +242,7 @@ expect(screen.getByText('Click me')).toBeInTheDocument();
 5. **Format code** before committing
 6. **Follow the DDD structure** for business logic
 
-## 🤝 Contributing
+##  Contributing
 
 1. Create a feature branch
 2. Make your changes
@@ -252,13 +252,13 @@ expect(screen.getByText('Click me')).toBeInTheDocument();
 6. Commit (pre-commit hooks will run automatically)
 7. Create a pull request
 
-## 📞 Support
+##  Support
 
 - Check [MIGRATION_GUIDE.md](./MIGRATION_GUIDE.md) for migration help
 - Review [docs/](./docs/) for detailed documentation
 - Ask questions in team discussions
 
-## 📄 License
+##  License
 
 See [LICENSE](./LICENSE) file for details.
 
@@ -266,11 +266,11 @@ See [LICENSE](./LICENSE) file for details.
 
 **Note**: This architecture transformation is designed to improve:
 
-- 📦 Code organization
-- 🧪 Testability
-- 🔄 Maintainability
-- 🚀 Performance
-- 👥 Developer experience
+-  Code organization
+-  Testability
+-  Maintainability
+-  Performance
+-  Developer experience
 
 For questions or issues, please refer to the migration guide or reach out to the team.
 \`\`\`

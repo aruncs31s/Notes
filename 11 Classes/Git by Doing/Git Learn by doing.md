@@ -112,8 +112,8 @@ Git is an example of **DVCS**, because of this , if one copy of your project fil
 
 ## Obtaining Git Repocitory
 
-- [x] Explain what is repocitory ✅ 2025-08-28
-- [x] how to upload a folder to github. ✅ 2025-08-28
+- [x] Explain what is repocitory  2025-08-28
+- [x] how to upload a folder to github.  2025-08-28
 
 ## Basics
 

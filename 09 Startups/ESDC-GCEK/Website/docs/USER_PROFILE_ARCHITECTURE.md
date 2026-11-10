@@ -39,16 +39,16 @@
 │    ║   ┌────────────────────────────────────────────────────┐  ║            │
 │    ║   │  ┌──────┐                                          │  ║            │
 │    ║   │  │Avatar│   John Doe                              │  ║            │
-│    ║   │  │ 👤   │   @johndoe                             │  ║            │
+│    ║   │  │    │   @johndoe                             │  ║            │
 │    ║   │  └──────┘   [Admin Badge]                         │  ║            │
 │    ║   └────────────────────────────────────────────────────┘  ║            │
 │    ║                                                            ║            │
-│    ║   📧 Email: john@example.com                              ║            │
-│    ║   📍 Location: San Francisco, CA                         ║            │
-│    ║   💼 Company: Tech Corp                                  ║            │
-│    ║   🔗 Website: johndoe.com                                ║            │
-│    ║   🐙 GitHub: @johndoe                                    ║            │
-│    ║   📅 Joined: January 2024                                ║            │
+│    ║    Email: john@example.com                              ║            │
+│    ║    Location: San Francisco, CA                         ║            │
+│    ║    Company: Tech Corp                                  ║            │
+│    ║    Website: johndoe.com                                ║            │
+│    ║    GitHub: @johndoe                                    ║            │
+│    ║    Joined: January 2024                                ║            │
 │    ║                                                            ║            │
 │    ║   ┌────────────────────────────────────────────────┐     ║            │
 │    ║   │         [See Full Profile Button]  ◄────────────── Click here     │
@@ -70,26 +70,26 @@
 │    ╠═══════════════════════════════════════════════════════════════════╣    │
 │    ║                                                                     ║    │
 │    ║  ┌────────────────────────────────────────────────────────────┐   ║    │
-│    ║  │         🎨 Gradient Cover Image                            │   ║    │
+│    ║  │          Gradient Cover Image                            │   ║    │
 │    ║  └────────────────────────────────────────────────────────────┘   ║    │
 │    ║         ┌──────┐                                                   ║    │
 │    ║         │Avatar│   John Doe                                       ║    │
-│    ║         │ 👤   │   @johndoe                                      ║    │
-│    ║         └──────┘   [Admin] [Rank #5] 🔥 14                       ║    │
+│    ║         │    │   @johndoe                                      ║    │
+│    ║         └──────┘   [Admin] [Rank #5]  14                       ║    │
 │    ║                                                                     ║    │
 │    ║  Bio: Full-stack developer passionate about...                    ║    │
 │    ║                                                                     ║    │
-│    ║  📧 john@example.com  📍 SF  💼 Tech Corp  🔗 Website  🐙 GitHub ║    │
+│    ║   john@example.com   SF   Tech Corp   Website   GitHub ║    │
 │    ║                                                                     ║    │
 │    ║  ┌────────────────────────────────────────────────────────────┐   ║    │
-│    ║  │           📊 STATISTICS GRID (8 Cards)                     │   ║    │
+│    ║  │            STATISTICS GRID (8 Cards)                     │   ║    │
 │    ║  ├──────┬──────┬──────┬──────┬──────┬──────┬──────┬──────┤   ║    │
 │    ║  │ 12   │ 15   │  3   │  5   │ 24   │ 18   │ 342  │ 2450 │   ║    │
 │    ║  │Proj. │Events│Prod. │Cours │Chall.│Award │Likes │Point │   ║    │
 │    ║  └──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┘   ║    │
 │    ║                                                                     ║    │
 │    ║  ┌────────────────────────────────────────────────────────────┐   ║    │
-│    ║  │ [Overview] [Projects] [Events] [Products] [Courses] [🏆]  │   ║    │
+│    ║  │ [Overview] [Projects] [Events] [Products] [Courses] []  │   ║    │
 │    ║  └────────────────────────────────────────────────────────────┘   ║    │
 │    ║                                                                     ║    │
 │    ║  ┌────────────────────────────────────────────────────────────┐   ║    │

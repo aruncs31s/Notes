@@ -123,7 +123,7 @@ Related code is colocated:
 ## Migration Path
 
 ### Phase 1: Core Modules (COMPLETED)
-- ✅ Courses Module - LMS functionality with chapter-based learning
+-  Courses Module - LMS functionality with chapter-based learning
 
 ### Phase 2: In Progress
 - ⏳ Auth Module - Login, Register, authentication

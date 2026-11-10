@@ -4,15 +4,15 @@ A modern, reusable profile card component for displaying user information in the
 
 ## Features
 
-- 🎨 Beautiful gradient header design
-- 🖼️ Avatar display with fallback placeholder
-- ⚡ Smooth hover animations
-- 📱 Fully responsive design
-- 🎭 Role badges (Admin, User, etc.)
-- 📊 Optional statistics display
-- ✏️ Optional edit functionality
-- 🌓 Dark mode support (Catppuccin theme)
-- ♿ Accessible and semantic HTML
+-  Beautiful gradient header design
+-  Avatar display with fallback placeholder
+-  Smooth hover animations
+-  Fully responsive design
+-  Role badges (Admin, User, etc.)
+-  Optional statistics display
+-  Optional edit functionality
+-  Dark mode support (Catppuccin theme)
+-  Accessible and semantic HTML
 
 ## Installation
 

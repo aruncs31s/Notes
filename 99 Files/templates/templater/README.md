@@ -24,7 +24,7 @@ Complete guide for using the 8 Obsidian Templater templates in this workspace.
 
 ## Available Templates
 
-### 1️⃣ **Handler** (`handler.md`)
+### 1 **Handler** (`handler.md`)
 For Gin HTTP handler endpoints in Go/ETLAB Backend.
 
 **When to use:**
@@ -52,7 +52,7 @@ Response DTO name: StaffResp
 
 ---
 
-### 2️⃣ **Repository** (`repository.md`)
+### 2 **Repository** (`repository.md`)
 For the repository pattern (data access layer) in Go.
 
 **When to use:**
@@ -72,7 +72,7 @@ For the repository pattern (data access layer) in Go.
 
 ---
 
-### 3️⃣ **Model** (`model.md`)
+### 3 **Model** (`model.md`)
 For Go domain models/entities.
 
 **When to use:**
@@ -91,7 +91,7 @@ For Go domain models/entities.
 
 ---
 
-### 4️⃣ **Service** (`service.md`)
+### 4 **Service** (`service.md`)
 For business logic layer (orchestration, validation).
 
 **When to use:**
@@ -112,7 +112,7 @@ For business logic layer (orchestration, validation).
 
 ---
 
-### 5️⃣ **Interface** (`interface.md`)
+### 5 **Interface** (`interface.md`)
 For Go interface/contract definitions.
 
 **When to use:**
@@ -132,7 +132,7 @@ For Go interface/contract definitions.
 
 ---
 
-### 6️⃣ **Idea** (`idea.md`)
+### 6 **Idea** (`idea.md`)
 For brainstorms, investigations, feature ideas.
 
 **When to use:**
@@ -152,7 +152,7 @@ For brainstorms, investigations, feature ideas.
 
 ---
 
-### 7️⃣ **PHP Code** (`php_code.md`)
+### 7 **PHP Code** (`php_code.md`)
 For PHP components (Laravel, custom code).
 
 **When to use:**
@@ -174,7 +174,7 @@ For PHP components (Laravel, custom code).
 
 ---
 
-### 8️⃣ **Database Design** (`database_design.md`)
+### 8 **Database Design** (`database_design.md`)
 For schema, tables, relationships, and optimization.
 
 **When to use:**
@@ -243,7 +243,7 @@ For schema, tables, relationships, and optimization.
    - Handler func: `HandleGetStaffByID`
    - Request DTO: `GetStaffByIDReq`
    - Response DTO: `StaffResp`
-4. ✅ Template inserted! Now write your code.
+4.  Template inserted! Now write your code.
 
 ### Example 2: Design a new `departments` table
 1. Create new file: `Departments Table.md`
@@ -253,7 +253,7 @@ For schema, tables, relationships, and optimization.
    - Table name: `departments`
    - Column 1: `name VARCHAR(255)` / `NOT NULL` / `Department name`
    - Optimization 1: `Add index on name for lookups`
-4. ✅ Schema documented with migration SQL ready to go.
+4.  Schema documented with migration SQL ready to go.
 
 ### Example 3: Brainstorm staff qualification filtering
 1. Create new file: `Qualification Filter Idea.md`
@@ -263,20 +263,20 @@ For schema, tables, relationships, and optimization.
    - Motivation: `Improve search/discovery for qualified staff`
    - Key point 1: `Add qualification_type column to filter queries`
    - Action item 1: `Investigate query performance with new column`
-4. ✅ Idea captured, ready for discussion.
+4.  Idea captured, ready for discussion.
 
 ---
 
 ## Tips & Best Practices
 
-### ✅ Dos
+###  Dos
 - **Use consistent naming** within your templates (e.g., always use `Staff` not `staff` or `StaffModel`)
 - **Link related notes** using `[[internal links]]` in the frontmatter or body
 - **Keep DTOs/Models in sync** – if you update a model field, update the handler/service DTO
 - **Tag consistently** – tags help Obsidian's graph and search
 - **Fill in examples** – skeleton code is great, but real examples save time later
 
-### ❌ Don'ts
+###  Don'ts
 - **Don't ignore the prompts** – they're there to guide you
 - **Don't create duplicate structures** – reuse and update existing templates
 - **Don't leave TODOs in production** – delete skeleton comments before committing

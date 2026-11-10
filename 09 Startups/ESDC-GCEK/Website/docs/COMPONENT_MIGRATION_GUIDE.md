@@ -11,15 +11,15 @@ This guide helps update existing components to use the new unified pitch black t
 Look for:
 
 ```tsx
-// ❌ Hardcoded in inline styles
+//  Hardcoded in inline styles
 style={{ backgroundColor: '#1a1a1a' }}
 
-// ❌ Hardcoded in CSS files
+//  Hardcoded in CSS files
 background-color: white;
 color: #333;
 border: 1px solid #ccc;
 
-// ✅ Using CSS variables
+//  Using CSS variables
 background-color: var(--color-bg-secondary);
 ```
 
@@ -346,11 +346,11 @@ export const Alert = ({ type, message }) => {
 
 ### High Priority (UI Components)
 
-1. ✅ Navbar.tsx / navbar.css
-2. ✅ Footer.tsx / footer.css
-3. ✅ Cards / card components
-4. ✅ Buttons / button variants
-5. ✅ Forms / form elements
+1.  Navbar.tsx / navbar.css
+2.  Footer.tsx / footer.css
+3.  Cards / card components
+4.  Buttons / button variants
+5.  Forms / form elements
 
 ### Medium Priority (Feature Pages)
 
@@ -444,4 +444,4 @@ Track completion in your project:
 | Buttons   | ⏳     | -        | -     |
 | Forms     | ⏳     | -        | -     |
 
-(✅ Done, ⏳ In Progress, 🔲 To Do)
+( Done, ⏳ In Progress,  To Do)

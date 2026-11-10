@@ -80,9 +80,9 @@
 
 ### High Priority
 
-1. ✅ Delete `/src/components/ProfilePopup.css`
-2. ✅ Delete `/src/App.css`
-3. ✅ Remove color variables from `build.css` (lines 1050-1150)
+1.  Delete `/src/components/ProfilePopup.css`
+2.  Delete `/src/App.css`
+3.  Remove color variables from `build.css` (lines 1050-1150)
 
 ### Medium Priority
 

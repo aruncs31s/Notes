@@ -5,7 +5,7 @@ The ESDC AI Chatbot is an intelligent assistant that helps users navigate the pl
 
 ## Features
 
-### ✨ Key Features
+###  Key Features
 - **Real-time Chat Interface**: Modern, responsive chat UI with smooth animations
 - **Smart Responses**: Context-aware responses to user queries
 - **Quick Actions**: Pre-defined quick action buttons for common questions
@@ -14,7 +14,7 @@ The ESDC AI Chatbot is an intelligent assistant that helps users navigate the pl
 - **Dark Mode Support**: Seamlessly adapts to light/dark theme
 - **Mobile Responsive**: Optimized for all screen sizes
 
-### 🤖 Bot Capabilities
+###  Bot Capabilities
 The chatbot can answer questions about:
 - Events and workshops
 - Coding challenges and competitions

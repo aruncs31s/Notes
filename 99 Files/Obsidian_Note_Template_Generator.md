@@ -218,9 +218,9 @@ For complex information:
 > path includes [current file path]
 > ```
 
-- [ ] Task item 1 📅 2025-01-15
+- [ ] Task item 1  2025-01-15
 - [ ] Task item 2 ⏫ 
-- [x] Completed task ✅ 2025-01-09
+- [x] Completed task  2025-01-09
 ```
 
 #### Dataview Integration

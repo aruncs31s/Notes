@@ -10,7 +10,7 @@ dg-publish: true
 ---
 # Channel Coding
 
-- [x] What is channel Coding ✅ 2024-11-02
+- [x] What is channel Coding  2024-11-02
 - [ ] How changing channel coding schemes increases efficiency
 - [ ] How can we implement a new channel coding method
 

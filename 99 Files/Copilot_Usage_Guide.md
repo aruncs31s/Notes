@@ -20,7 +20,7 @@ dg-publish: false
 > [!abstract] Summary
 > This guide explains how to use the Copilot instruction files to generate rich, well-formatted Obsidian notes with comprehensive frontmatter and full feature utilization.
 
-## 📁 Available Files
+##  Available Files
 
 ### Main Files
 
@@ -28,7 +28,7 @@ dg-publish: false
 2. **[[Copilot_Quick_Instruction]]** - Concise, copy-paste ready prompt
 3. **This Guide** - Usage instructions and tips
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Method 1: Copy-Paste Instruction
 
@@ -44,7 +44,7 @@ dg-publish: false
 2. Ask Copilot: "Based on the Obsidian template in this vault, create a note about [YOUR TOPIC]"
 3. Copilot will analyze the comprehensive template and generate accordingly
 
-## 📋 Example Prompts
+##  Example Prompts
 
 > [!example] Academic Notes
 > ```
@@ -70,7 +70,7 @@ dg-publish: false
 > - Research project planning
 > ```
 
-## 🎯 Generated Note Features
+##  Generated Note Features
 
 ### Rich Frontmatter Includes:
 - **Basic metadata**: aliases, dates, tags
@@ -90,7 +90,7 @@ dg-publish: false
 - **Math notation**: Inline and block formulas
 - **Embedded content**: Images, diagrams, notes
 
-## 🔧 Customization Tips
+##  Customization Tips
 
 ### Adapting for Different Note Types
 
@@ -120,7 +120,7 @@ The templates are designed for this vault's structure:
 - **Existing tagging** patterns and conventions
 - **Integration** with Home.md dataview queries
 
-## 📊 Quality Checklist
+##  Quality Checklist
 
 Before saving generated notes, verify:
 
@@ -144,7 +144,7 @@ Before saving generated notes, verify:
 > - [ ] Tasks use proper format with dates
 > - [ ] Math formulas render correctly
 
-## 🛠️ Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -167,7 +167,7 @@ Before saving generated notes, verify:
 > - Regular cleanup of outdated cross-links
 - Utilize dataview queries for dynamic content
 
-## 📈 Best Practices
+##  Best Practices
 
 ### Content Creation Workflow
 
@@ -188,7 +188,7 @@ Before saving generated notes, verify:
 > - Maintain consistent tagging
 > - Use dataview to find orphaned notes
 
-## 🎉 Advanced Usage
+##  Advanced Usage
 
 ### Creating Note Series
 
@@ -207,7 +207,7 @@ The templates work well with:
 - **Calendar**: For date-based organization
 - **Excalidraw**: For diagrams and sketches
 
-## 📚 Examples
+##  Examples
 
 See the test file created: `/tmp/test_react_hooks_note.md` for a complete example of what the template generates.
 

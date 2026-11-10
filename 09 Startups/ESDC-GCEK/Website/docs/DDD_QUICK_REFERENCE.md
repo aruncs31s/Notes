@@ -1,13 +1,13 @@
 # DDD Quick Reference Card
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Import ApplicationService
 ```javascript
 import applicationService from '@/application/ApplicationService';
 ```
 
-## 📋 Common Operations
+##  Common Operations
 
 ### User Operations
 ```javascript
@@ -110,7 +110,7 @@ const stats = await applicationService.getAdminStats();
 // Returns: { totalUsers, totalChallenges, totalProjects, activeUsers }
 ```
 
-## 🎯 Domain Entities
+##  Domain Entities
 
 ### User Entity
 ```javascript
@@ -198,7 +198,7 @@ event.isFull();
 event.canAcceptRegistrations();
 ```
 
-## 💎 Value Objects
+##  Value Objects
 
 ### Email
 ```javascript
@@ -255,7 +255,7 @@ range.hasEnded(); // true/false
 range.getDurationInDays(); // 365
 ```
 
-## 🎪 Domain Events
+##  Domain Events
 
 ### Subscribe to Events
 ```javascript
@@ -286,7 +286,7 @@ eventBus.subscribe('PointsAwarded', async (event) => {
 - `EventRegistration`
 - `PointsAwarded`
 
-## 🔧 Error Handling
+##  Error Handling
 
 ### Standard Pattern
 ```javascript
@@ -313,7 +313,7 @@ try {
 }
 ```
 
-## 📦 Import Patterns
+##  Import Patterns
 
 ### From Application Layer
 ```javascript
@@ -337,7 +337,7 @@ import { userRepository, challengeRepository } from '@/infrastructure';
 import apiClient from '@/infrastructure/api/ApiClient';
 ```
 
-## 🎨 Component Example
+##  Component Example
 
 ```javascript
 import { useState, useEffect } from 'react';
@@ -389,7 +389,7 @@ const MyComponent = () => {
 };
 ```
 
-## 📝 Testing Examples
+##  Testing Examples
 
 ### Test Use Case
 ```javascript
@@ -424,7 +424,7 @@ test('user can be activated', () => {
 });
 ```
 
-## 🔍 Debugging Tips
+##  Debugging Tips
 
 ### Log Entity State
 ```javascript
@@ -450,7 +450,7 @@ eventBus.subscribe('*', (event) => {
 });
 ```
 
-## 📖 Documentation Links
+##  Documentation Links
 
 - **Full Guide**: `DDD_IMPLEMENTATION_GUIDE.md`
 - **Summary**: `DDD_IMPLEMENTATION_SUMMARY.md`
